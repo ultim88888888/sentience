@@ -14,8 +14,7 @@ import time
 
 import pandas as pd
 
-from .config import CORPUS, PERSONS_DIR, REPORT_OUT, SEGMENTS_OUT, TRANSCRIPTS, HOST_PRIOR
-from .assemble import build_person_corpus, build_person_conversations
+from .config import CORPUS, REPORT_OUT, SEGMENTS_OUT, TRANSCRIPTS, HOST_PRIOR
 from .gate import gate_segment
 from .roster import Roster
 from .route import route_post, CONVERSATIONAL
@@ -54,21 +53,23 @@ def _append_segments(new_rows: list[dict]) -> None:
 
 
 def _rebuild_outputs(author: str) -> None:
+    """The ONLY deliverable is the per-post tagged-transcript dataset (jsonl) + a stats report.
+    No per-person files — the doppelganger engine matches/assembles from the jsonl itself."""
     seg = pd.read_parquet(SEGMENTS_OUT)
-    PERSONS_DIR.mkdir(parents=True, exist_ok=True)
     from .records import export as export_records
-    export_records(seg)  # CANONICAL deliverable: per-post tagged transcripts + metadata (jsonl)
-    corp = build_person_corpus(seg, min_segments=3)
-    for slug in corp:    # human-readable per-person dialogue views (the jsonl is the source of truth)
-        (PERSONS_DIR / f"{slug}.conversations.txt").write_text(build_person_conversations(seg, slug))
+    n = export_records(seg)  # canonical: attributed_transcripts.jsonl
     kept = int(seg["kept"].sum())
+    a16z_kept = (seg[(seg["is_a16z"] == True) & (seg["kept"] == True)]  # noqa: E712
+                 .groupby("slug").size().sort_values(ascending=False))
     with open(REPORT_OUT, "w") as f:
         f.write(f"# Attribution report ({dt.datetime.now(dt.timezone.utc).isoformat()})\n\n")
         f.write(f"priority author: {author}\n")
-        f.write(f"segments: {len(seg)} | kept: {kept} | dropped: {len(seg)-kept}\n")
-        f.write(f"a16z people with corpus (>=3 segs): {len(corp)}\n\n## Per-person kept chars\n")
-        for slug, text in sorted(corp.items(), key=lambda x: -len(x[1])):
-            f.write(f"- {slug}: {len(text):,}\n")
+        f.write(f"posts: {seg['post_id'].nunique()} | segments: {len(seg)} | "
+                f"kept: {kept} | dropped: {len(seg)-kept}\n")
+        f.write(f"canonical deliverable: attributed_transcripts.jsonl ({n} post records)\n\n")
+        f.write("## a16z kept segments by person (who shows up, how much)\n")
+        for slug, c in a16z_kept.items():
+            f.write(f"- {slug}: {c}\n")
 
 
 def _attribute_post(row, roster) -> list[dict]:

@@ -46,17 +46,25 @@ def _segments_for_post(row, transcript, roster, mode) -> list[dict]:
         for s in llm:
             s["method"] = "text"
         return llm
-    from .diarize import diarize_audio, transcribe_timestamped, assign_segments_to_turns
-    from .fuse import name_voices, fuse_segments
-    turns = diarize_audio(mp3)
-    tsegs = transcribe_timestamped(mp3)
-    voiced = assign_segments_to_turns(tsegs, turns)
-    llm_by_text = {s["text"]: s["speaker"] for s in llm}
-    fused = fuse_segments(voiced, name_voices(voiced, llm_by_text), llm_by_text)
-    for s in fused:
-        s["method"] = "fused"
-        s["confidence"] = 0.9 if s["agreed"] else 0.4
-    return fused
+    try:
+        from .diarize import diarize_audio, transcribe_timestamped, assign_segments_to_turns
+        from .fuse import name_voices, fuse_segments
+        turns = diarize_audio(mp3)
+        tsegs = transcribe_timestamped(mp3)
+        voiced = assign_segments_to_turns(tsegs, turns)
+        llm_by_text = {s["text"]: s["speaker"] for s in llm}
+        fused = fuse_segments(voiced, name_voices(voiced, llm_by_text), llm_by_text)
+        for s in fused:
+            s["method"] = "fused"
+            s["confidence"] = 0.9 if s["agreed"] else 0.4
+        return fused
+    except Exception as e:
+        # Per spec §5: diarization unavailable (gated model, decode error) -> degrade to
+        # text-only rather than drop the post. Logged, not silent.
+        _log(f"  diarization failed for {row.get('object_id')} ({type(e).__name__}) -> text-only")
+        for s in llm:
+            s["method"] = "text"
+        return llm
 
 def build(pilot: bool) -> pd.DataFrame:
     corpus = pd.read_parquet(CORPUS)

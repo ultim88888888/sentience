@@ -90,6 +90,12 @@ orchestrates and writes a single `findings.md`.
   the month's total attributed weight (under whichever mode is active).
 - `coverage_momentum` = `coverage_share(t) − mean(coverage_share[t−3 : t−1])`.
   First 3 months per basket are NaN (warm-up) and excluded from the test.
+- **Format weighting:** uses only date + tags + format, so all 235 posts contribute
+  regardless of body depth (videos/podcasts have thin or no transcripts — see §8). v1
+  weights every post as **1.0** (uniform): putting out any research is attention
+  allocation. `format` is carried through so a future run can down-weight videos vs full
+  essays without re-deriving the panel. Uniform is the documented default, not an
+  unexamined one.
 
 ### 3.3 `returns.py` — basket returns
 - Basket monthly return = **equal-weight mean** of its live constituents' monthly returns
@@ -177,3 +183,17 @@ per-basket-month live-constituent counts, the list of dropped tokens/months, and
 per-study verdict. **Success = an honest, reproducible answer to "is there anything here,"
 with the sample-size caveat front and center** — not a positive result. A clean "no pulse"
 across both studies is a successful outcome.
+
+Plus one visual: a **coverage heatmap** (month × basket, color = coverage_share) saved to
+`data/study/coverage_heatmap.png` and referenced from `findings.md`. It shows where a16z's
+attention sat over time independent of the trading verdict — useful on its own, and a fast
+gut-check that the signal panel is sane.
+
+## 8. Corpus content note (informs v2, not v1)
+
+The corpus is metadata-complete for all 235 posts but **body-text-shallow**: 85 articles
+have full essays (median 16k chars), only a few of 10 podcasts have full transcripts, and
+the 139 videos carry abstracts only (median 1.8k chars) — **no video transcripts**. v1 is
+unaffected (tag/date/format only). A future LLM-expert encoder (v2) would be reasoning off
+incomplete content and would first need video transcription (e.g. YouTube captions) to be
+honest. Recorded here so the gap is a known precondition, not a v2-time surprise.

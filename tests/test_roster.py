@@ -34,3 +34,19 @@ def test_ambiguous_last_name_returns_none_match():
 def test_empty_name_is_not_a16z():
     m = _roster().resolve(None)
     assert m.slug is None and m.is_a16z is False
+
+def test_unique_first_name_resolves():
+    # host thanked by first name only ("Thanks, Tim") -> resolves when unique.
+    assert _roster().resolve("Tim").slug == "tim-roughgarden"
+
+def test_ambiguous_first_name_disambiguated_by_prior():
+    df = pd.DataFrame([
+        {"slug": "justin-thaler", "name": "Justin Thaler", "title": "Research"},
+        {"slug": "justin-other", "name": "Justin Other", "title": "x"},
+    ])
+    r = Roster(df)
+    assert r.resolve("Justin").ambiguous is True                       # tie, no prior
+    assert r.resolve("Justin", prefer=["justin-thaler"]).slug == "justin-thaler"  # prior breaks tie
+
+def test_last_name_still_wins_for_single_token():
+    assert _roster().resolve("Roughgarden").slug == "tim-roughgarden"

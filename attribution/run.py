@@ -9,7 +9,8 @@ import glob
 
 import pandas as pd
 
-from .config import (AUDIO_CACHE, CORPUS, PERSONS_DIR, REPORT_OUT, SEGMENTS_OUT, TRANSCRIPTS)
+from .config import (AUDIO_CACHE, CORPUS, HOST_PRIOR, PERSONS_DIR, REPORT_OUT, SEGMENTS_OUT,
+                     TRANSCRIPTS)
 from .route import route_post, CONVERSATIONAL
 from .roster import Roster
 from .gate import gate_segment
@@ -81,13 +82,15 @@ def build(pilot: bool) -> pd.DataFrame:
     rows = []
     for _, row in merged.iterrows():
         mode = route_post(row).mode
+        # Host-prior: which a16z members host this format (disambiguates first-name thanks).
+        prior = HOST_PRIOR["podcast"] if mode == CONVERSATIONAL else HOST_PRIOR["research-seminar"]
         try:
             segs = _segments_for_post(row, row["transcript"], roster, mode)
         except Exception as e:
             _log(f"  attribution_failed {row['object_id']}: {e!r}")
             continue
         for i, s in enumerate(segs):
-            m = roster.resolve(s.get("speaker"))
+            m = roster.resolve(s.get("speaker"), prefer=prior)
             kept, reason = gate_segment(s)
             rows.append({
                 "post_id": row["object_id"], "segment_idx": i, "method": s["method"],

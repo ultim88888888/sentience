@@ -1,0 +1,39 @@
+{
+  "slug": "testy-1",
+  "name": "Testy McTest",
+  "headline": "Investing in things.",
+  "location": "United States",
+  "bio": "Investor.",
+  "experience": [
+    {
+      "title": "General Partner",
+      "company": "Acme",
+      "start": "May 2026",
+      "end": null,
+      "description": null
+    },
+    {
+      "title": "CTO",
+      "company": "Acme",
+      "start": "Feb 2023",
+      "end": "May 2026",
+      "description": null
+    },
+    {
+      "title": "Engineer",
+      "company": "Beta",
+      "start": "2016",
+      "end": "2018",
+      "description": "Lead."
+    }
+  ],
+  "education": [
+    {
+      "school": "State U",
+      "degree": "BA",
+      "field": "Philosophy",
+      "start": "2006",
+      "end": "2010"
+    }
+  ]
+}

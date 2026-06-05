@@ -276,11 +276,7 @@ class Coinglass:
         universe: dict[str, dict[str, pd.DataFrame]] = {}
         for symbol, result in zip(symbols, results):
             if isinstance(result, Exception):
-                print(
-                    f"  {symbol}: pull failed ({result!r}); skipping",
-                    file=__import__("sys").stderr,
-                    flush=True,
-                )
+                logger.warning("%s: pull failed (%r); skipping", symbol, result)
             else:
                 universe[symbol] = result
         return universe

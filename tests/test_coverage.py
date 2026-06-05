@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from study import coverage
 
@@ -32,3 +33,18 @@ def test_unmapped_tags_attribute_nowhere(synthetic_corpus, baskets_cfg):
     assert abs(shares["ZK/Privacy"] - 0.5) < 1e-9
     assert abs(shares["DeFi"] - 0.5) < 1e-9
     assert "L2/Scaling" not in shares.index or shares.get("L2/Scaling", 0) == 0
+
+
+def test_all_unmapped_posts_return_zeros(baskets_cfg):
+    corpus = pd.DataFrame({
+        "post_date": ["2024-01-10", "2024-01-20"],
+        "tags": [np.array(["unmapped"], dtype=object), np.array(["also_unmapped"], dtype=object)],
+    })
+    cov = coverage.monthly_coverage(corpus, baskets_cfg, mode="fractional")
+    assert (cov["coverage_share"] == 0.0).all()
+    assert cov["basket"].nunique() == len(baskets_cfg["tag_map"])
+
+
+def test_benchmark_basket_never_appears(synthetic_corpus, baskets_cfg):
+    cov = coverage.monthly_coverage(synthetic_corpus, baskets_cfg, mode="fractional")
+    assert "L1 Majors" not in cov["basket"].values

@@ -5,6 +5,8 @@ weights 1.0 (uniform across formats — see spec section 3.2). Two attribution m
   fractional: a post hitting k baskets contributes 1/k to each.
   full:       the post contributes 1.0 to each basket it touches.
 """
+import warnings
+
 import pandas as pd
 
 from .config import CORPUS_PARQUET, MOMENTUM_LOOKBACK
@@ -36,13 +38,15 @@ def monthly_coverage(corpus: pd.DataFrame, baskets_cfg: dict, mode: str) -> pd.D
     baskets = _signal_baskets(baskets_cfg)
 
     df = corpus.copy()
-    df["month"] = pd.to_datetime(df["post_date"], utc=True).dt.to_period("M")
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", UserWarning)  # Period has no tz; drop is intentional
+        df["month"] = pd.to_datetime(df["post_date"], utc=True).dt.to_period("M")
 
     recs = []
     for _, row in df.iterrows():
         for basket, w in _attribute(row["tags"], tag_map, mode).items():
             recs.append({"month": row["month"], "basket": basket, "weight": w})
-    weights = pd.DataFrame.from_records(recs)
+    weights = pd.DataFrame(recs, columns=["month", "basket", "weight"])
 
     # full grid of (month, basket) so absent baskets are explicit zeros
     months = pd.period_range(df["month"].min(), df["month"].max(), freq="M")
@@ -52,6 +56,7 @@ def monthly_coverage(corpus: pd.DataFrame, baskets_cfg: dict, mode: str) -> pd.D
     by_month_total = weights.groupby("month")["weight"].sum()
 
     cov = by_mb.reindex(grid, fill_value=0.0).rename("w").reset_index()
+    cov["w"] = cov["w"].astype(float)
     cov["total"] = cov["month"].map(by_month_total).fillna(0.0)
     cov["coverage_share"] = (cov["w"] / cov["total"]).where(cov["total"] > 0, 0.0)
 

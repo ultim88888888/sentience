@@ -185,3 +185,33 @@ def test_fetch_user_stops_when_page_predates_since():
     tweets = asyncio.run(collect.fetch_user(client, "eddy", since))
     assert client.advanced_search.call_count == 2  # stopped after page 2, no page 3
     assert "old" not in [t["id"] for t in tweets]  # pre-since tweet dropped
+
+
+# ── run ──────────────────────────────────────────────────────────────────────
+
+from scrapers.twitter import run as twrun
+
+
+def test_to_frame_has_columns_and_order():
+    from scrapers.twitter.config import COLUMNS
+    rows = [collect.normalize(_tweet()), collect.normalize(_tweet(id="2"))]
+    df = twrun.to_frame(rows)
+    assert list(df.columns) == COLUMNS
+    assert len(df) == 2
+    assert str(df["created_at"].dtype) == "datetime64[ns, UTC]"
+
+
+def test_to_frame_empty_is_typed():
+    from scrapers.twitter.config import COLUMNS
+    df = twrun.to_frame([])
+    assert list(df.columns) == COLUMNS
+    assert len(df) == 0
+
+
+def test_save_writes_parquet(tmp_path):
+    rows = [collect.normalize(_tweet())]
+    df = twrun.to_frame(rows)
+    path = twrun.save("eddy", df, out_dir=tmp_path)
+    assert path.exists()
+    back = pd.read_parquet(path)
+    assert back.iloc[0]["id"] == "1"

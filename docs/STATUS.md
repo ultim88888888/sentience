@@ -47,8 +47,12 @@ flows — a16z research creates awareness and narrative momentum that precedes p
 - **Study B (token level):** IC of per-token conviction signal (sum or mean of basket
   coverage) vs. forward token-relative returns. Verdict (all agg × mode combos): **no pulse**.
 
-**Smoke-test caveat:** n ≈ 40–50 basket-months. Not statistically significant. "No pulse"
-means not worth pursuing in this form — not a definitive null.
+**Smoke-test caveat:** n ≈ 40–50 basket-months. Not statistically significant (IC ≈ −0.11,
+t ≈ −1.5; ~35% of monthly rank-correlations are positive). "No pulse" means **no detectable
+signal** — the consistently-negative IC is within noise, NOT a contrarian signal, and the six
+combinations are not independent (they share one sparse corpus + overlapping baskets, so they
+are one observation viewed six ways). A full whole-pipeline audit (look-ahead, joins,
+sign/demean) confirmed the result is sound and not an artifact.
 
 **Pointers:**
 - Spec: `docs/superpowers/specs/2026-06-05-a16z-research-signal-design.md`
@@ -58,9 +62,13 @@ means not worth pursuing in this form — not a definitive null.
 
 ## Open threads (pick up here)
 
-1. **v1 verdict: no pulse across both studies and both attribution modes** — IC values are
-   small and negative (-0.03 to -0.15). Next step: decide whether to investigate lag
-   variations, format filtering (articles-only vs. all formats), or to close this signal line.
+1. **v1 verdict: no pulse across both studies and both attribution modes** — IC small/negative
+   (-0.03 to -0.15), within noise. **Root cause to address before any v2:** the corpus is too
+   sparse for this test — ~52% of months have zero posts hitting any basket, so half the
+   sample carries no cross-sectional signal at all. Options: (a) widen the corpus (more
+   sources / longer history), (b) coarsen to quarterly buckets to densify monthly gaps,
+   (c) different signal entirely, or (d) close this signal line. Lag variations / format
+   filtering are lower-value until the sparsity is fixed.
 2. **Format filter.** Corpus is video-heavy (139 videos vs 85 written articles). If "research"
    means the essays, filter `formats == 'articles'`. Not yet built — trivial to add.
 3. **More sources?** Only a16z so far. The project may want a broader crypto-research corpus.

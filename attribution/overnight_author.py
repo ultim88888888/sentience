@@ -95,13 +95,17 @@ def main() -> None:
     corpus = pd.read_parquet(CORPUS)[["object_id", "formats", "author_slugs", "title"]]
     _log(f"author {args.author}: {len(target)} transcribable posts to attribute.")
 
+    fail_count: dict[str, int] = {}
+    give_up: set = set()           # posts that failed attribution past the cap — stop retrying
+    MAX_ATTR_RETRIES = 3
+
     while True:
         attributed = _load_attributed_ids()
         tx = pd.read_parquet(TRANSCRIPTS)
         tx_ok = tx[tx["status"] == "ok"]
-        ready = tx_ok[tx_ok["object_id"].isin(target - attributed)]
-        terminal = set(tx[tx["status"].isin(["error", "unroutable", "no_audio", "unavailable",
-                                             "no_captions"])]["object_id"]) & target
+        ready = tx_ok[tx_ok["object_id"].isin(target - attributed - give_up)]
+        terminal = (set(tx[tx["status"].isin(["error", "unroutable", "no_audio", "unavailable",
+                                             "no_captions"])]["object_id"]) & target) | give_up
         if len(ready) == 0:
             remaining = target - attributed - terminal
             if not remaining:
@@ -120,7 +124,14 @@ def main() -> None:
                 _log(f"  attributed {row['object_id']} ({len(rows)} segs, {kept} kept) "
                      f"{str(row['title'])[:42]!r}")
             except Exception as e:
-                _log(f"  FAILED {row['object_id']}: {type(e).__name__}: {e}")
+                oid = row["object_id"]
+                fail_count[oid] = fail_count.get(oid, 0) + 1
+                if fail_count[oid] >= MAX_ATTR_RETRIES:
+                    give_up.add(oid)
+                    _log(f"  GAVE UP on {oid} after {fail_count[oid]} attempts: {type(e).__name__}")
+                else:
+                    _log(f"  FAILED {oid} (attempt {fail_count[oid]}/{MAX_ATTR_RETRIES}): "
+                         f"{type(e).__name__}: {str(e)[:120]}")
     _log("overnight author attribution complete.")
 
 

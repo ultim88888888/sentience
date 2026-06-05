@@ -4,6 +4,7 @@ import json
 import re
 import subprocess
 import tempfile
+import time
 
 from .config import CHUNK_CHARS, CHUNK_OVERLAP, LLM_EFFORT, LLM_MODEL
 
@@ -65,6 +66,23 @@ _PLACEHOLDER = re.compile(r"^(HOST|GUEST(_\d+)?|AUDIENCE|SPEAKER(_?\d+)?|UNKNOWN
 def _is_placeholder(name) -> bool:
     return not name or bool(_PLACEHOLDER.match(str(name).strip()))
 
+def _call_claude(prompt: str, retries: int = 4) -> str:
+    """One `claude -p` call with retry+backoff — transient API errors (overload/rate) return
+    a non-zero exit, which must NOT fail the whole post."""
+    last = ""
+    for attempt in range(1, retries + 1):
+        r = subprocess.run(
+            ["claude", "-p", "--model", LLM_MODEL, "--effort", LLM_EFFORT,
+             "--no-session-persistence"],
+            input=prompt, text=True, capture_output=True, cwd=_CLEAN_CWD)
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout
+        last = (r.stderr or r.stdout or "no output")[:200]
+        if attempt < retries:
+            time.sleep(8 * attempt)  # 8/16/24s backoff
+    raise RuntimeError(f"claude -p failed after {retries} attempts: {last}")
+
+
 def attribute(text: str, participants: list[str]) -> list[dict]:
     """Run the LLM over each chunk and merge. Names identified in earlier chunks are carried
     forward as participant hints so a speaker keeps one identity across chunk boundaries."""
@@ -73,11 +91,7 @@ def attribute(text: str, participants: list[str]) -> list[dict]:
     for ch in chunk_transcript(text):
         hint = ", ".join(dict.fromkeys(known)) or "unknown"
         prompt = PROMPT.format(participants=hint, chunk=ch["text"])
-        out = subprocess.run(
-            ["claude", "-p", "--model", LLM_MODEL, "--effort", LLM_EFFORT,
-             "--no-session-persistence"],
-            input=prompt, text=True, capture_output=True, check=True,
-            cwd=_CLEAN_CWD).stdout
+        out = _call_claude(prompt)
         segs = parse_segments(out)
         results.append(segs)
         for s in segs:  # learn real names for the next chunk's hint

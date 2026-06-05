@@ -19,6 +19,9 @@ EXCHANGE = "Binance"
 PRICE_INTERVAL = "1d"
 PRICE_LIMIT = 4500          # ~12yr daily; validated max per call
 HTTP_TIMEOUT = 60.0
+RATE_LIMIT_RETRIES = 5       # retries on rate-limit before giving up
+RATE_LIMIT_BACKOFF = 8.0     # base seconds; doubles each retry (8,16,32,...)
+REQUEST_THROTTLE = 2.5       # min seconds between live API calls
 
 # --- signal params ---
 MOMENTUM_LOOKBACK = 3        # months of trailing average for coverage_momentum

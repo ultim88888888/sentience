@@ -1,14 +1,13 @@
 # sentience — status & handoff
 
-_Last updated: 2026-06-04_
+_Last updated: 2026-06-05_
 
 ## What this project is
 
-A **research** project. Classified "both / not sure yet" at kickoff — it may stay an
-exploration space or concrete into a build. **The overarching research question is still
-TBD** — Jax said "we're gonna do some research and see where it goes." First concrete move
-was corpus collection, not a defined thesis. When the direction sharpens, run
-`/brainstorming` and land a spec in `docs/`.
+A **research** project. The overarching research question is now defined: **does a16z
+research-coverage rotation lead relative crypto-basket and token returns?** Built as a
+viability study — smoke-test framing, not a production signal. First concrete move was
+corpus collection (235 posts); the signal study (`study/`) followed.
 
 ## ⚠️ Path note
 
@@ -36,10 +35,32 @@ pip install -r scrapers/a16z_research/requirements.txt
 python -m playwright install chromium
 ```
 
+## Research question (defined 2026-06-05)
+
+**Hypothesis:** a16z coverage-rotation (measured as a basket or token's monthly share of
+research attention vs. trailing baseline) leads relative crypto returns. Mechanism: attention
+flows — a16z research creates awareness and narrative momentum that precedes price rotation.
+
+**Two studies:**
+- **Study A (basket level):** IC of `coverage_momentum` (share − trailing 3m mean) vs.
+  forward 1m and 3m basket-relative returns. Verdict (both attribution modes): **no pulse**.
+- **Study B (token level):** IC of per-token conviction signal (sum or mean of basket
+  coverage) vs. forward token-relative returns. Verdict (all agg × mode combos): **no pulse**.
+
+**Smoke-test caveat:** n ≈ 40–50 basket-months. Not statistically significant. "No pulse"
+means not worth pursuing in this form — not a definitive null.
+
+**Pointers:**
+- Spec: `docs/superpowers/specs/2026-06-05-a16z-research-signal-design.md`
+- Plan: `docs/superpowers/plans/2026-06-05-a16z-research-signal.md`
+- Package: `study/` (`config`, `coverage`, `returns`, `signal`, `study_basket`, `study_token`, `findings`, `run`)
+- Generated output: `findings.md` (repo root), `data/study/coverage_heatmap.png` (gitignored)
+
 ## Open threads (pick up here)
 
-1. **Define the research question.** This is the real next step. The corpus exists; what are
-   we actually investigating with it? Needs a brainstorm with Jax.
+1. **v1 verdict: no pulse across both studies and both attribution modes** — IC values are
+   small and negative (-0.03 to -0.15). Next step: decide whether to investigate lag
+   variations, format filtering (articles-only vs. all formats), or to close this signal line.
 2. **Format filter.** Corpus is video-heavy (139 videos vs 85 written articles). If "research"
    means the essays, filter `formats == 'articles'`. Not yet built — trivial to add.
 3. **More sources?** Only a16z so far. The project may want a broader crypto-research corpus.

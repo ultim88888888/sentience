@@ -56,11 +56,11 @@ def _append_segments(new_rows: list[dict]) -> None:
 def _rebuild_outputs(author: str) -> None:
     seg = pd.read_parquet(SEGMENTS_OUT)
     PERSONS_DIR.mkdir(parents=True, exist_ok=True)
+    from .records import export as export_records
+    export_records(seg)  # CANONICAL deliverable: per-post tagged transcripts + metadata (jsonl)
     corp = build_person_corpus(seg, min_segments=3)
-    for slug, text in corp.items():
-        (PERSONS_DIR / f"{slug}.txt").write_text(text)                       # extract (his words)
-        (PERSONS_DIR / f"{slug}.conversations.txt").write_text(             # FULL dialogues (both sides)
-            build_person_conversations(seg, slug))
+    for slug in corp:    # human-readable per-person dialogue views (the jsonl is the source of truth)
+        (PERSONS_DIR / f"{slug}.conversations.txt").write_text(build_person_conversations(seg, slug))
     kept = int(seg["kept"].sum())
     with open(REPORT_OUT, "w") as f:
         f.write(f"# Attribution report ({dt.datetime.now(dt.timezone.utc).isoformat()})\n\n")

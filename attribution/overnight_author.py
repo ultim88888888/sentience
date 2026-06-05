@@ -15,7 +15,7 @@ import time
 import pandas as pd
 
 from .config import CORPUS, PERSONS_DIR, REPORT_OUT, SEGMENTS_OUT, TRANSCRIPTS, HOST_PRIOR
-from .assemble import build_person_corpus
+from .assemble import build_person_corpus, build_person_conversations
 from .gate import gate_segment
 from .roster import Roster
 from .route import route_post, CONVERSATIONAL
@@ -58,7 +58,9 @@ def _rebuild_outputs(author: str) -> None:
     PERSONS_DIR.mkdir(parents=True, exist_ok=True)
     corp = build_person_corpus(seg, min_segments=3)
     for slug, text in corp.items():
-        (PERSONS_DIR / f"{slug}.txt").write_text(text)
+        (PERSONS_DIR / f"{slug}.txt").write_text(text)                       # extract (his words)
+        (PERSONS_DIR / f"{slug}.conversations.txt").write_text(             # FULL dialogues (both sides)
+            build_person_conversations(seg, slug))
     kept = int(seg["kept"].sum())
     with open(REPORT_OUT, "w") as f:
         f.write(f"# Attribution report ({dt.datetime.now(dt.timezone.utc).isoformat()})\n\n")

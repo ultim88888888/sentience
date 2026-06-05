@@ -7,6 +7,30 @@ dump of all guest speech. This is what prevents cross-contamination (person A's 
 never contain person B's words as if they were A's).
 """
 
+def build_person_conversations(segs, slug: str) -> str:
+    """Full labeled dialogues for every post `slug` appears in (has a kept segment).
+
+    Renders EVERY turn of those posts in order as ``Speaker: text`` — both sides of the
+    conversation — so a doppelganger can learn how the person *behaves* in dialogue (responds,
+    builds, deflects), not just what words they used. Each turn carries the speaker label the
+    attributor assigned; the person's own confidently-attributed turns are marked with ⟵.
+    """
+    df = segs.sort_values(["post_id", "segment_idx"])
+    posts = df[(df["is_a16z"] == True) & (df["slug"] == slug)  # noqa: E712
+               & (df["kept"] == True)]["post_id"].unique()
+    blocks = []
+    for pid in posts:
+        pdf = df[df["post_id"] == pid]
+        lines = [f"=== conversation: post {pid} ==="]
+        for _, r in pdf.iterrows():
+            who = str(r["speaker"] or "UNKNOWN")
+            mine = bool(r["is_a16z"]) and r["slug"] == slug and bool(r["kept"])
+            mark = "  ⟵ TARGET" if mine else ""
+            lines.append(f"{who}: {str(r['text']).strip()}{mark}")
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks)
+
+
 def build_person_corpus(segs, min_segments: int = 1) -> dict[str, str]:
     df = segs.sort_values(["post_id", "segment_idx"]).reset_index(drop=True)
     kept_a16z = df[(df["is_a16z"] == True) & (df["kept"] == True) & df["slug"].notna()]  # noqa: E712

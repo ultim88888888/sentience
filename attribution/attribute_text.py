@@ -3,8 +3,13 @@ the model call is validated in the pilot."""
 import json
 import re
 import subprocess
+import tempfile
 
 from .config import CHUNK_CHARS, CHUNK_OVERLAP, LLM_EFFORT, LLM_MODEL
+
+# Run `claude -p` from a clean dir so it doesn't inherit the project CLAUDE.md (the Fushi
+# soul) — that would contaminate attribution output. Same guard the doppelganger evals use.
+_CLEAN_CWD = tempfile.mkdtemp(prefix="attribution-llm-")
 
 def chunk_transcript(text: str, size: int = CHUNK_CHARS, overlap: int = CHUNK_OVERLAP):
     """Split into overlapping char windows so a turn isn't blindly cut."""
@@ -56,6 +61,7 @@ def attribute(text: str, participants: list[str]) -> list[dict]:
         out = subprocess.run(
             ["claude", "-p", "--model", LLM_MODEL, "--effort", LLM_EFFORT,
              "--no-session-persistence"],
-            input=prompt, text=True, capture_output=True, check=True).stdout
+            input=prompt, text=True, capture_output=True, check=True,
+            cwd=_CLEAN_CWD).stdout
         results.append(parse_segments(out))
     return merge_chunks(results)

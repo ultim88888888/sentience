@@ -1,0 +1,76 @@
+# Tracked a16z people — current source-of-truth roster for who we follow.
+# `slug` joins to data/a16z_research corpus `author_slugs`; `x_handle` feeds
+# scrapers/twitter. Curated subset of data/a16z_team/team.parquet (89 bios).
+# Created 2026-06-05. Edit freely to add/remove people.
+
+people:
+- slug: chris-dixon
+  name: Chris Dixon
+  title: Founder, Managing Partner
+  x_handle: cdixon
+  x_url: https://x.com/cdixon
+  linkedin_url: null
+  a16z_posts: 117
+- slug: miles-jennings
+  name: Miles Jennings
+  title: Head of Policy & General Counsel
+  x_handle: milesjennings
+  x_url: https://x.com/milesjennings
+  linkedin_url: null
+  a16z_posts: 92
+- slug: ali-yahya
+  name: Ali Yahya
+  title: General Partner
+  x_handle: alive_eth
+  x_url: https://x.com/alive_eth
+  linkedin_url: https://www.linkedin.com/in/ali01
+  a16z_posts: 53
+- slug: eddy-lazzarin
+  name: Eddy Lazzarin
+  title: General Partner
+  x_handle: eddylazzarin
+  x_url: https://x.com/eddylazzarin
+  linkedin_url: https://www.linkedin.com/in/eddy-lazzarin-66059749/
+  a16z_posts: 43
+- slug: scott-kominers
+  name: Scott Duke Kominers
+  title: Research
+  x_handle: skominers
+  x_url: https://x.com/skominers
+  linkedin_url: https://www.linkedin.com/in/scott-kominers/
+  a16z_posts: 41
+- slug: justin-thaler
+  name: Justin Thaler
+  title: Research
+  x_handle: SuccinctJT
+  x_url: https://x.com/SuccinctJT
+  linkedin_url: null
+  a16z_posts: 36
+- slug: guy-wuollet
+  name: Guy Wuollet
+  title: General Partner
+  x_handle: guywuolletjr
+  x_url: https://x.com/guywuolletjr
+  linkedin_url: https://www.linkedin.com/in/gdw/
+  a16z_posts: 34
+- slug: daren-matsuoka
+  name: Daren Matsuoka
+  title: Engineering
+  x_handle: DarenMatsuoka
+  x_url: https://x.com/DarenMatsuoka
+  linkedin_url: https://www.linkedin.com/in/darenmatsuoka/
+  a16z_posts: 24
+- slug: tim-roughgarden
+  name: Tim Roughgarden
+  title: Head of Research
+  x_handle: Tim_Roughgarden
+  x_url: https://x.com/Tim_Roughgarden
+  linkedin_url: https://www.linkedin.com/in/tim-roughgarden-1a594855
+  a16z_posts: 20
+- slug: jason-rosenthal
+  name: Jason Rosenthal
+  title: Operating Partner
+  x_handle: jasonrosenthal
+  x_url: https://x.com/jasonrosenthal
+  linkedin_url: https://www.linkedin.com/in/jasonprosenthal/
+  a16z_posts: 19

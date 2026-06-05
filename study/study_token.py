@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from .config import FWD_WINDOWS
-from .study_basket import information_coefficient
+from .study_basket import _verdict, information_coefficient
 
 
 def _token_to_baskets(baskets_cfg: dict) -> dict[str, list[str]]:
@@ -30,7 +30,7 @@ def token_conviction(coverage: pd.DataFrame, baskets_cfg: dict, agg: str) -> pd.
     mom = coverage.set_index(["month", "basket"])["coverage_momentum"]
 
     recs = []
-    for month in coverage["month"].unique():
+    for month in sorted(coverage["month"].unique()):
         for token, baskets in membership.items():
             vals = [mom.get((month, b)) for b in baskets]
             vals = [v for v in vals if v is not None and not pd.isna(v)]
@@ -62,17 +62,8 @@ def run_study_b(coverage: pd.DataFrame, token_returns: pd.DataFrame,
     ic = {w: information_coefficient(panel, "conviction", f"fwd_rel_{w}m")
           for w in FWD_WINDOWS}
     spreads = {w: _quartile_spread(panel, f"fwd_rel_{w}m") for w in FWD_WINDOWS}
-    pos = all(ic[w]["ic_mean"] > 0 for w in FWD_WINDOWS if not np.isnan(ic[w]["ic_mean"]))
-    any_signal = any(not np.isnan(ic[w]["ic_mean"]) for w in FWD_WINDOWS)
-    if not any_signal:
-        verdict = "inconclusive"
-    elif pos and any(s > 0 for s in spreads.values() if not np.isnan(s)):
-        verdict = "pulse"
-    elif all(ic[w]["ic_mean"] <= 0 for w in FWD_WINDOWS if not np.isnan(ic[w]["ic_mean"])):
-        verdict = "no pulse"
-    else:
-        verdict = "inconclusive"
-    return {"agg": agg, "ic": ic, "quartile_spread": spreads, "verdict": verdict}
+    return {"agg": agg, "ic": ic, "quartile_spread": spreads,
+            "verdict": _verdict(ic, spreads)}
 
 
 def _quartile_spread(panel: pd.DataFrame, fwd_col: str) -> float:
@@ -81,6 +72,8 @@ def _quartile_spread(panel: pd.DataFrame, fwd_col: str) -> float:
         if len(g) < 4:
             continue
         q = g["conviction"].quantile([0.25, 0.75])
+        # On ties (e.g. all-equal conviction) a token can fall in both long and short;
+        # spread then computes to 0.0, not NaN. Cannot occur with the real ~25-token universe.
         longs = g[g["conviction"] >= q[0.75]][fwd_col].mean()
         shorts = g[g["conviction"] <= q[0.25]][fwd_col].mean()
         spreads.append(longs - shorts)

@@ -52,24 +52,31 @@ def toy_backtest(panel: pd.DataFrame, fwd_col: str, top_k: int = 2) -> dict:
             "n_months": int(len(spreads))}
 
 
+def _verdict(ic: dict, spread_values: dict) -> str:
+    """Shared pulse/no-pulse/inconclusive verdict for both studies.
+
+    `ic` maps window -> ic-dict (with 'ic_mean'); `spread_values` maps window -> float
+    spread (NaN when that window had no backtest data). Bypass: if NO window had enough
+    constituents for the L/S backtest, treat the spread as uninformative rather than
+    contradictory — IC alone decides.
+    """
+    any_signal = any(not np.isnan(ic[w]["ic_mean"]) for w in ic)
+    if not any_signal:
+        return "inconclusive"
+    pos = all(ic[w]["ic_mean"] > 0 for w in ic if not np.isnan(ic[w]["ic_mean"]))
+    spreads_have_data = any(not np.isnan(s) for s in spread_values.values())
+    spread_ok = (not spreads_have_data) or any(
+        s > 0 for s in spread_values.values() if not np.isnan(s))
+    if pos and spread_ok:
+        return "pulse"
+    if all(ic[w]["ic_mean"] <= 0 for w in ic if not np.isnan(ic[w]["ic_mean"])):
+        return "no pulse"
+    return "inconclusive"
+
+
 def run_study_a(panel: pd.DataFrame) -> dict:
     ic = {w: information_coefficient(panel, "coverage_momentum", f"fwd_rel_{w}m")
           for w in FWD_WINDOWS}
     bt = {w: toy_backtest(panel, f"fwd_rel_{w}m") for w in FWD_WINDOWS}
-    pos_consistent = all(ic[w]["ic_mean"] > 0 for w in FWD_WINDOWS
-                         if not np.isnan(ic[w]["ic_mean"]))
-    bt_has_data = any(not np.isnan(bt[w]["mean_spread"]) for w in FWD_WINDOWS)
-    # Bypass: if no month had enough baskets for the L/S backtest (need >=2*top_k=4),
-    # treat spread as uninformative rather than contradictory — IC alone decides the verdict.
-    spread_ok = (not bt_has_data) or any(bt[w]["mean_spread"] > 0 for w in FWD_WINDOWS
-                                         if not np.isnan(bt[w]["mean_spread"]))
-    any_signal = any(not np.isnan(ic[w]["ic_mean"]) for w in FWD_WINDOWS)
-    if not any_signal:
-        verdict = "inconclusive"
-    elif pos_consistent and spread_ok:
-        verdict = "pulse"
-    elif all(ic[w]["ic_mean"] <= 0 for w in FWD_WINDOWS if not np.isnan(ic[w]["ic_mean"])):
-        verdict = "no pulse"
-    else:
-        verdict = "inconclusive"
-    return {"ic": ic, "backtest": bt, "verdict": verdict}
+    spread_values = {w: bt[w]["mean_spread"] for w in FWD_WINDOWS}
+    return {"ic": ic, "backtest": bt, "verdict": _verdict(ic, spread_values)}

@@ -21,6 +21,12 @@ def test_parse_segments_raises_on_garbage():
     with pytest.raises(ValueError):
         parse_segments("not json at all")
 
+def test_placeholder_detection():
+    from attribution.attribute_text import _is_placeholder
+    assert _is_placeholder("HOST") and _is_placeholder("GUEST_1") and _is_placeholder("AUDIENCE")
+    assert _is_placeholder("speaker_2") and _is_placeholder(None) and _is_placeholder("")
+    assert not _is_placeholder("Justin Thaler") and not _is_placeholder("Eddy Lazzarin")
+
 def test_merge_chunks_dedupes_overlap_by_text():
     a = [{"speaker": "A", "text": "hello world", "confidence": 0.9}]
     b = [{"speaker": "A", "text": "hello world", "confidence": 0.9},

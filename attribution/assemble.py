@@ -1,17 +1,36 @@
-"""Assemble clean per-person corpora from gated segments."""
+"""Assemble clean per-person corpora from gated segments.
 
-def build_person_corpus(segs) -> dict[str, str]:
-    """For each a16z slug, concatenate their kept utterances in post+segment order, keeping
-    adjacent guest turns as [GUEST] context lines so responses stay legible."""
-    df = segs.sort_values(["post_id", "segment_idx"])
-    a16z_slugs = sorted({s for s in df.loc[df["is_a16z"] == True, "slug"].dropna()})  # noqa: E712
+Each a16z person's corpus = their own kept utterances, grouped by post, with each utterance
+optionally preceded by the immediately-prior segment as a `[Q]` context line (so *responses*
+stay legible). Context is strictly LOCAL — the prior turn in the same post — never a global
+dump of all guest speech. This is what prevents cross-contamination (person A's corpus must
+never contain person B's words as if they were A's).
+"""
+
+def build_person_corpus(segs, min_segments: int = 1) -> dict[str, str]:
+    df = segs.sort_values(["post_id", "segment_idx"]).reset_index(drop=True)
+    kept_a16z = df[(df["is_a16z"] == True) & (df["kept"] == True) & df["slug"].notna()]  # noqa: E712
+    counts = kept_a16z.groupby("slug").size()
+    slugs = sorted(counts[counts >= min_segments].index)
     out = {}
-    for slug in a16z_slugs:
-        lines = []
-        for _, r in df.iterrows():
-            if r["is_a16z"] and r["slug"] == slug and r["kept"]:
-                lines.append(r["text"].strip())
-            elif not r["is_a16z"] and r["kept"]:
-                lines.append(f"[GUEST]: {r['text'].strip()}")
-        out[slug] = "\n".join(lines)
+    for slug in slugs:
+        chunks = []
+        for _, pdf in df.groupby("post_id"):
+            pdf = pdf.reset_index(drop=True)
+            mine = pdf.index[(pdf["is_a16z"] == True) & (pdf["slug"] == slug)  # noqa: E712
+                             & (pdf["kept"] == True)].tolist()
+            if not mine:
+                continue
+            lines, last = [], -10
+            for i in mine:
+                # context: the immediately-preceding segment (the prompt this answers),
+                # unless it's already this person or already emitted.
+                if i - 1 >= 0 and (i - 1) != last:
+                    prev = pdf.iloc[i - 1]
+                    if not (prev["is_a16z"] and prev["slug"] == slug):
+                        lines.append(f"[Q] {str(prev['text']).strip()}")
+                lines.append(str(pdf.iloc[i]["text"]).strip())
+                last = i
+            chunks.append("\n".join(lines))
+        out[slug] = "\n\n".join(chunks)
     return out

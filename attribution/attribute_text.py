@@ -44,24 +44,44 @@ def merge_chunks(chunk_results):
             merged.append(s)
     return merged
 
-PROMPT = """You are segmenting a transcript by speaker. Known participants: {participants}.
-Return ONLY JSON: {{"segments":[{{"speaker": <name or "HOST"/"GUEST_1">, "text": <verbatim>,
-"confidence": <0-1>}}]}}. Use a real name only when the transcript makes it unambiguous
-(introductions, thank-yous). Otherwise use stable HOST/GUEST_n labels. Be conservative:
-when unsure who is speaking, lower the confidence.
+PROMPT = """You are segmenting a transcript into speaker turns. Known participants: {participants}.
+Return ONLY JSON: {{"segments":[{{"speaker": <name-or-placeholder>, "text": <verbatim>,
+"confidence": <0-1>}}]}}.
+
+Rules:
+- Identify who speaks each turn. Once a speaker's real name is established ANYWHERE (an intro
+  like "please welcome X", a thank-you like "Thanks, Y", or the participant list above), use
+  that SAME real name for ALL of that speaker's turns — earlier and later — never a role label.
+- Use a stable placeholder (HOST, GUEST_1, GUEST_2, AUDIENCE) ONLY for a speaker whose real
+  name is genuinely never identifiable.
+- confidence = how sure you are of the identity for that turn; be conservative and lower it
+  for brief/ambiguous turns (e.g. unidentified audience questions).
 
 TRANSCRIPT:
 {chunk}"""
 
+_PLACEHOLDER = re.compile(r"^(HOST|GUEST(_\d+)?|AUDIENCE|SPEAKER(_?\d+)?|UNKNOWN)$", re.I)
+
+def _is_placeholder(name) -> bool:
+    return not name or bool(_PLACEHOLDER.match(str(name).strip()))
+
 def attribute(text: str, participants: list[str]) -> list[dict]:
-    """Run the LLM over each chunk and merge. Returns segment dicts."""
+    """Run the LLM over each chunk and merge. Names identified in earlier chunks are carried
+    forward as participant hints so a speaker keeps one identity across chunk boundaries."""
     results = []
+    known: list[str] = list(participants)
     for ch in chunk_transcript(text):
-        prompt = PROMPT.format(participants=", ".join(participants) or "unknown", chunk=ch["text"])
+        hint = ", ".join(dict.fromkeys(known)) or "unknown"
+        prompt = PROMPT.format(participants=hint, chunk=ch["text"])
         out = subprocess.run(
             ["claude", "-p", "--model", LLM_MODEL, "--effort", LLM_EFFORT,
              "--no-session-persistence"],
             input=prompt, text=True, capture_output=True, check=True,
             cwd=_CLEAN_CWD).stdout
-        results.append(parse_segments(out))
+        segs = parse_segments(out)
+        results.append(segs)
+        for s in segs:  # learn real names for the next chunk's hint
+            nm = str(s.get("speaker", "")).strip()
+            if nm and not _is_placeholder(nm) and nm not in known:
+                known.append(nm)
     return merge_chunks(results)

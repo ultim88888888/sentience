@@ -113,7 +113,7 @@ def main():
     SEGMENTS_OUT.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(SEGMENTS_OUT, index=False)
     PERSONS_DIR.mkdir(parents=True, exist_ok=True)
-    corp = build_person_corpus(df) if len(df) else {}
+    corp = build_person_corpus(df, min_segments=3) if len(df) else {}
     for slug, text in corp.items():
         (PERSONS_DIR / f"{slug}.txt").write_text(text)
     kept = int(df["kept"].sum()) if len(df) else 0

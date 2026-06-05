@@ -1,6 +1,7 @@
-"""Paginate the Algolia index for all research posts and normalize each hit."""
+"""Paginate the Algolia index for all a16z posts (every category) and normalize each hit."""
 import html as _html
 import json
+import time
 from datetime import datetime, timezone
 
 import httpx
@@ -23,29 +24,63 @@ def _headers(key: AlgoliaKey) -> dict:
     }
 
 
-def fetch_raw_hits(key: AlgoliaKey | None = None) -> list[dict]:
-    """Return every raw Algolia hit for the research category, re-minting the key if it expires."""
-    if key is None:
-        key = mint_key()
+def _paginate(client: httpx.Client, key: AlgoliaKey, facet_filters: list) -> tuple[list[dict], AlgoliaKey]:
+    """Paginate one filtered Algolia query to exhaustion. Returns (hits, possibly-rotated key)."""
     hits: list[dict] = []
     page = 0
+    backoff = 2.0
+    while True:
+        if key.expired:
+            key = mint_key()
+        body = {"query": "", "hitsPerPage": HITS_PER_PAGE, "page": page,
+                "facetFilters": facet_filters}
+        r = client.post(_query_url(key), headers=_headers(key), json=body)
+        if r.status_code in (401, 403):  # key died early -> re-mint and retry page
+            key = mint_key()
+            continue
+        if r.status_code == 429:  # Algolia rate limit -> back off and retry same page
+            time.sleep(backoff)
+            backoff = min(backoff * 2, 30.0)
+            continue
+        r.raise_for_status()
+        j = r.json()
+        hits.extend(j["hits"])
+        if page >= j["nbPages"] - 1:
+            break
+        page += 1
+        time.sleep(0.3)  # politeness between pages to stay under the rate limit
+    return hits, key
+
+
+def _category_values(client: httpx.Client, key: AlgoliaKey) -> list[str]:
+    """Enumerate the taxonomies.category facet values within the base (post_type) scope."""
+    body = {"query": "", "hitsPerPage": 0, "facetFilters": FACET_FILTERS,
+            "facets": ["taxonomies.category"]}
+    r = client.post(_query_url(key), headers=_headers(key), json=body)
+    r.raise_for_status()
+    return list((r.json().get("facets", {}).get("taxonomies.category") or {}).keys())
+
+
+def fetch_raw_hits(key: AlgoliaKey | None = None) -> list[dict]:
+    """Return every raw Algolia hit across ALL categories, deduped by objectID.
+
+    Algolia caps a single query at paginationLimitedTo (1000 by default), so a flat
+    post_type:post pull (nbHits ~1018) silently drops the tail. We paginate per-category
+    (each well under the cap) and also do the flat pull, then union by objectID — this
+    recovers categorized posts beyond position 1000 AND any uncategorized ones.
+    """
+    if key is None:
+        key = mint_key()
+    seen: dict[str, dict] = {}
     with httpx.Client(timeout=30) as client:
-        while True:
-            if key.expired:
-                key = mint_key()
-            body = {"query": "", "hitsPerPage": HITS_PER_PAGE, "page": page,
-                    "facetFilters": FACET_FILTERS}
-            r = client.post(_query_url(key), headers=_headers(key), json=body)
-            if r.status_code in (401, 403):  # key died early -> re-mint and retry page
-                key = mint_key()
-                continue
-            r.raise_for_status()
-            j = r.json()
-            hits.extend(j["hits"])
-            if page >= j["nbPages"] - 1:
-                break
-            page += 1
-    return hits
+        for cat in _category_values(client, key):
+            cat_hits, key = _paginate(client, key, [[f"taxonomies.category:{cat}"]] + FACET_FILTERS)
+            for h in cat_hits:
+                seen[h["objectID"]] = h
+        flat_hits, key = _paginate(client, key, FACET_FILTERS)  # catches uncategorized posts
+        for h in flat_hits:
+            seen[h["objectID"]] = h
+    return list(seen.values())
 
 
 def _epoch_to_iso(v) -> str | None:

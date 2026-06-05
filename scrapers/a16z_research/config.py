@@ -6,9 +6,11 @@ from pathlib import Path
 RESEARCH_URL = "https://a16zcrypto.com/posts/focus-areas/research/"
 KEY_ENDPOINT = "https://a16zcrypto.com/api/generate-key"
 
-# Algolia query that defines the "research" corpus (taxonomy category == research).
-FACET_FILTERS = [["taxonomies.category:research"], "post_type:post"]
-HITS_PER_PAGE = 100  # Algolia max per page; 235 hits -> 3 pages
+# Algolia query that defines the corpus: ALL a16zcrypto.com/posts (every category, not
+# just research). post_type:post excludes team-member/page records. ~1018 hits.
+# (Was category:research-only = 235; broadened 2026-06-05 to all categories per Jax.)
+FACET_FILTERS = [["post_type:post"]]
+HITS_PER_PAGE = 100  # Algolia max per page; ~1018 hits -> ~11 pages
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36")

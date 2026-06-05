@@ -14,12 +14,34 @@ def _log(msg: str) -> None:
     print(msg, file=sys.stderr, flush=True)
 
 
+def _merge_split_records(df: pd.DataFrame) -> pd.DataFrame:
+    """Collapse to one row per permalink, unioning multi-valued category/tag fields.
+
+    Algolia indexes one record per (post, category) — the same post appears under multiple
+    objectIDs (e.g. 2922-0/2922-1), each carrying a *different* category. Deduping naively
+    would drop categories, so we union `categories` and `tags` across a permalink's records
+    and keep the first of every other (identical) field.
+    """
+    union: dict[str, dict[str, list]] = {}
+    for permalink, cats, tags in zip(df["permalink"], df["categories"], df["tags"]):
+        acc = union.setdefault(permalink, {"categories": [], "tags": []})
+        for col, vals in (("categories", cats), ("tags", tags)):
+            for x in (vals if vals is not None else []):
+                if x not in acc[col]:
+                    acc[col].append(x)
+    out = df.drop_duplicates(subset="permalink", keep="first").reset_index(drop=True).copy()
+    out["categories"] = out["permalink"].map(lambda p: union[p]["categories"])
+    out["tags"] = out["permalink"].map(lambda p: union[p]["tags"])
+    return out
+
+
 def collect_metadata() -> pd.DataFrame:
-    _log("Minting Algolia key and paginating research index...")
+    _log("Minting Algolia key and paginating all post categories...")
     raw = algolia.fetch_raw_hits()
     records = [algolia.normalize_hit(h) for h in raw]
     df = pd.DataFrame.from_records(records)
-    _log(f"  {len(df)} research posts collected.")
+    df = _merge_split_records(df)
+    _log(f"  {len(df)} unique posts collected (across all categories).")
     return df
 
 

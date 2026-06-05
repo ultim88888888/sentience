@@ -4,16 +4,13 @@ from __future__ import annotations
 import subprocess
 from dataclasses import dataclass
 
-from .config import (JSESSIONID_OP_ITEM, LI_AT_OP_ITEM, OP_VAULT,
+from .config import (JSESSIONID_FIELD, LI_AT_FIELD, LINKEDIN_OP_ITEM, OP_VAULT,
                      SCRAPEDO_OP_ITEM, UA)
 
 
-def _op_read(item: str) -> str:
-    return subprocess.check_output(
-        ["op", "item", "get", item, "--vault", OP_VAULT,
-         "--fields", "credential", "--reveal"],
-        text=True,
-    ).strip()
+def _op_read(ref: str) -> str:
+    """Read a single secret by `op://vault/item/field` reference."""
+    return subprocess.check_output(["op", "read", ref], text=True).strip()
 
 
 @dataclass
@@ -36,7 +33,8 @@ class Auth:
 
 def load_auth() -> Auth:
     return Auth(
-        scrapedo_token=_op_read(SCRAPEDO_OP_ITEM),
-        li_at=_op_read(LI_AT_OP_ITEM),
-        jsessionid=_op_read(JSESSIONID_OP_ITEM).strip('"'),
+        scrapedo_token=_op_read(f"op://{OP_VAULT}/{SCRAPEDO_OP_ITEM}/credential"),
+        li_at=_op_read(f"op://{OP_VAULT}/{LINKEDIN_OP_ITEM}/{LI_AT_FIELD}"),
+        jsessionid=_op_read(
+            f"op://{OP_VAULT}/{LINKEDIN_OP_ITEM}/{JSESSIONID_FIELD}").strip('"'),
     )

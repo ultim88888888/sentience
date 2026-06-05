@@ -6,9 +6,10 @@ SCRAPEDO_BASE = "https://api.scrape.do/"
 SCRAPEDO_OP_ITEM = "scrape.do"
 OP_VAULT = "local"
 
-# LinkedIn auth secrets — 1Password items in vault `local` (Jax creates these).
-LI_AT_OP_ITEM = "linkedin_li_at"
-JSESSIONID_OP_ITEM = "linkedin_jsessionid"
+# LinkedIn auth secrets — one 1Password item in vault `local` with two fields.
+LINKEDIN_OP_ITEM = "linkedin-cookies"
+LI_AT_FIELD = "li-at"
+JSESSIONID_FIELD = "jsessionid"
 
 # Voyager API — LinkedIn's own internal JSON endpoint for full profile data.
 VOYAGER_PROFILE_VIEW = (

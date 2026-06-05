@@ -6,23 +6,24 @@ an authenticated session.
 
 ## Secrets (1Password vault `local`)
 
-Create two items (the scrape.do token item `scrape.do` already exists):
+One item `linkedin-cookies` with two fields (the scrape.do token item `scrape.do`
+already exists):
 
-- `linkedin_li_at` — the `li_at` cookie value.
-- `linkedin_jsessionid` — the `JSESSIONID` cookie value (looks like `ajax:12345...`).
+- field `li-at` — the `li_at` cookie value.
+- field `jsessionid` — the `JSESSIONID` cookie value (looks like `ajax:12345...`).
 
 ### Getting the cookies
 
 1. Log into linkedin.com in a browser (use a burner account — LinkedIn bans
    automation).
 2. Open DevTools → Application → Cookies → `https://www.linkedin.com`.
-3. Copy the `li_at` value → store as `linkedin_li_at` (field `credential`).
-4. Copy the `JSESSIONID` value (strip the surrounding quotes) → store as
-   `linkedin_jsessionid` (field `credential`).
+3. Copy the `li_at` value → store in field `li-at`.
+4. Copy the `JSESSIONID` value (strip the surrounding quotes) → store in field
+   `jsessionid`.
 
 Capture both in the **same** DevTools sitting — a `li_at` and `JSESSIONID` from
 different logins fail LinkedIn's CSRF check. Cookies expire periodically; when a
-run fails with an auth-expiry error, re-copy both and update the 1Password items.
+run fails with an auth-expiry error, re-copy both and update the 1Password item.
 
 ## Run
 

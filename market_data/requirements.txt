@@ -1,0 +1,5 @@
+httpx==0.28.1
+pandas==3.0.3
+pyarrow==24.0.0
+pytest==9.0.3
+pytest-asyncio==1.4.0

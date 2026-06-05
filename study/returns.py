@@ -17,6 +17,8 @@ def _monthly_returns_from_prices(prices: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame({"month": pd.Series([], dtype="period[M]"),
                              "ret": pd.Series([], dtype="float64")})
     s = prices.set_index("date")["close"].sort_index()
+    # resample("ME").last() does not forward-fill: months with no observations yield
+    # NaN, and pct_change across a NaN is dropped (data loss, never a mislabeled return).
     month_end = s.resample("ME").last()
     ret = month_end.pct_change()
     out = ret.dropna().rename("ret").reset_index()

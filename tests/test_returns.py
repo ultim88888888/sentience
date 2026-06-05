@@ -19,11 +19,16 @@ def test_basket_ineligible_when_no_live_constituents(baskets_cfg):
 
 
 def test_monthly_token_returns_from_prices():
-    # Two month-end closes -> one monthly return.
+    # Multiple daily observations per month -> resample("ME").last() must pick the
+    # month-end close. Jan ends at 100, Feb ends at 110 -> Feb return 0.10.
     prices = pd.DataFrame({
-        "date": pd.to_datetime(["2024-01-31", "2024-02-29"], utc=True),
-        "close": [100.0, 110.0],
+        "date": pd.to_datetime(
+            ["2024-01-05", "2024-01-20", "2024-01-31",
+             "2024-02-10", "2024-02-29"], utc=True),
+        "close": [90.0, 95.0, 100.0, 105.0, 110.0],
     })
     tr = returns._monthly_returns_from_prices(prices)
     feb = tr[tr["month"] == pd.Period("2024-02", "M")]["ret"].iloc[0]
     assert abs(feb - 0.10) < 1e-9
+    # Jan is the first month -> its pct_change is NaN and dropped, so only Feb remains.
+    assert tr["month"].tolist() == [pd.Period("2024-02", "M")]

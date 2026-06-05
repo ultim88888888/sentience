@@ -40,7 +40,11 @@ def test_render_findings_covers_modes_aggs_verdicts_and_caveat():
     assert HEATMAP_PNG.name in md
 
 
-def test_render_heatmap_writes_png():
+def test_render_heatmap_writes_png(tmp_path, monkeypatch):
+    # Write to a tmp path so the test never clobbers the real generated deliverable.
+    out = tmp_path / "heatmap.png"
+    monkeypatch.setattr(findings, "STUDY_DIR", tmp_path)
+    monkeypatch.setattr(findings, "HEATMAP_PNG", out)
     cov = pd.DataFrame([
         {"month": pd.Period("2024-01", "M"), "basket": "ZK/Privacy", "coverage_share": 0.5},
         {"month": pd.Period("2024-01", "M"), "basket": "DeFi", "coverage_share": 0.5},
@@ -48,9 +52,13 @@ def test_render_heatmap_writes_png():
         {"month": pd.Period("2024-02", "M"), "basket": "DeFi", "coverage_share": 0.7},
     ])
     findings.render_heatmap(cov)
-    assert HEATMAP_PNG.exists()
+    assert out.exists()
 
 
-def test_render_heatmap_empty_input_is_noop():
+def test_render_heatmap_empty_input_is_noop(tmp_path, monkeypatch):
+    out = tmp_path / "heatmap.png"
+    monkeypatch.setattr(findings, "STUDY_DIR", tmp_path)
+    monkeypatch.setattr(findings, "HEATMAP_PNG", out)
     empty = pd.DataFrame(columns=["month", "basket", "coverage_share"])
     findings.render_heatmap(empty)  # must not raise
+    assert not out.exists()

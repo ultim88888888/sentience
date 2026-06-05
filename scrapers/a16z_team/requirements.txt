@@ -1,0 +1,5 @@
+# Reuses the a16z_research scrape.do fetch layer; install its requirements too.
+# (lxml ships as a trafilatura dependency but is pinned here since this scraper
+#  uses it directly for structured HTML parsing.)
+-r ../a16z_research/requirements.txt
+lxml==6.1.1

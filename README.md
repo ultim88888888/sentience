@@ -9,6 +9,7 @@ concrete into a build. First workstream is corpus collection (a16z crypto resear
 
 - `scrapers/` — data collection
   - `a16z_research/` — scrapes all a16zcrypto.com research articles → parquet ([README](scrapers/a16z_research/README.md))
+  - `a16z_team/` — scrapes the a16zcrypto.com team roster (name, title, bio, socials) → parquet ([README](scrapers/a16z_team/README.md))
 - `data/` — collected datasets (parquet)
 - `docs/` — specs, design notes, decisions
 

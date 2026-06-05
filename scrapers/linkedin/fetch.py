@@ -1,42 +1,43 @@
-"""Fetch profiles from LinkedIn Voyager through scrape.do (sequential, low-volume)."""
+"""Fetch public LinkedIn profile HTML through scrape.do (sequential, low-volume)."""
 from __future__ import annotations
 
 import asyncio
-import json
+import subprocess
 import urllib.parse
 from dataclasses import dataclass
 
 import httpx
 
-from .auth import Auth
-from .config import (FETCH_RETRIES, FETCH_TIMEOUT, SCRAPEDO_BASE, SCRAPEDO_GEO,
-                     SCRAPEDO_SESSION_ID, VOYAGER_PROFILE_VIEW)
-
-
-class AuthExpiredError(RuntimeError):
-    """LinkedIn rejected the session — cookies need refreshing. Fatal for the run."""
+from .config import (FETCH_RETRIES, FETCH_TIMEOUT, OP_VAULT, PROFILE_URL,
+                     SCRAPEDO_BASE, SCRAPEDO_GEO, SCRAPEDO_OP_ITEM, UA)
 
 
 @dataclass
 class FetchResult:
     slug: str
     status: int
-    payload: dict | None = None    # parsed Voyager JSON on success
+    html: str = ""
     error: str | None = None
+
+
+def scrapedo_token() -> str:
+    """Read the scrape.do API token from 1Password (vault `local`)."""
+    return subprocess.check_output(
+        ["op", "read", f"op://{OP_VAULT}/{SCRAPEDO_OP_ITEM}/credential"],
+        text=True,
+    ).strip()
 
 
 def scrapedo_url(token: str, target: str) -> str:
     q = urllib.parse.quote(target, safe="")
-    # customHeaders=true forwards our auth headers; super=true = residential proxy;
-    # sessionId pins one IP; geoCode matches the account's region.
-    return (f"{SCRAPEDO_BASE}?token={token}&url={q}"
-            f"&customHeaders=true&super=true"
-            f"&geoCode={SCRAPEDO_GEO}&sessionId={SCRAPEDO_SESSION_ID}")
+    # super=true -> residential proxy (clears LinkedIn's Cloudflare WAF); geoCode
+    # pins region. No render/cookies: we want the logged-out public SSR template.
+    return f"{SCRAPEDO_BASE}?token={token}&url={q}&super=true&geoCode={SCRAPEDO_GEO}"
 
 
-async def fetch_profile(client: httpx.AsyncClient, auth: Auth, slug: str) -> FetchResult:
-    url = scrapedo_url(auth.scrapedo_token, VOYAGER_PROFILE_VIEW.format(slug=slug))
-    headers = auth.voyager_headers()
+async def fetch_profile(client: httpx.AsyncClient, token: str, slug: str) -> FetchResult:
+    url = scrapedo_url(token, PROFILE_URL.format(slug=slug))
+    headers = {"User-Agent": UA}
     last_err = None
     for attempt in range(1, FETCH_RETRIES + 1):
         try:
@@ -47,11 +48,6 @@ async def fetch_profile(client: httpx.AsyncClient, auth: Auth, slug: str) -> Fet
                 await asyncio.sleep(2 * attempt)
             continue
 
-        if r.status_code in (401, 403):
-            raise AuthExpiredError(
-                f"LinkedIn rejected the session (HTTP {r.status_code}) on '{slug}'. "
-                "Refresh linkedin_li_at / linkedin_jsessionid in 1Password.")
-
         if r.status_code in (429, 500, 502, 503, 504) and attempt < FETCH_RETRIES:
             last_err = f"upstream HTTP {r.status_code}"
             await asyncio.sleep(2 * attempt)
@@ -60,12 +56,6 @@ async def fetch_profile(client: httpx.AsyncClient, auth: Auth, slug: str) -> Fet
         if r.status_code != 200:
             return FetchResult(slug, r.status_code, error=f"HTTP {r.status_code}")
 
-        try:
-            return FetchResult(slug, 200, payload=r.json())
-        except json.JSONDecodeError:
-            # A 200 that isn't JSON is a login wall served to a dead session.
-            raise AuthExpiredError(
-                f"Got non-JSON 200 for '{slug}' (likely a login wall). "
-                "Refresh linkedin_li_at / linkedin_jsessionid in 1Password.")
+        return FetchResult(slug, 200, html=r.text or "")
 
     return FetchResult(slug, 0, error=last_err)

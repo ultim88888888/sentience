@@ -1,99 +1,68 @@
-"""Parse Voyager profileView JSON -> Profile. Pure, no network.
+"""Parse public LinkedIn profile HTML -> Profile. Pure, no network.
 
-The fixture mirrors the real profileView decoration: top-level `profile`,
-`positionView.elements`, `educationView.elements`, with Voyager date shapes.
+The primary fixture is real (trimmed) markup from a public profile, so the parser
+is tested against LinkedIn's actual SSR structure, not a hand-drawn approximation.
 """
-from scrapers.linkedin.parse import parse_profile
+from pathlib import Path
 
-FIXTURE = {
-    "profile": {
-        "firstName": "Ada",
-        "lastName": "Lovelace",
-        "headline": "Mathematician | First Programmer",
-        "locationName": "London, England, United Kingdom",
-        "summary": "Pioneer of computing.",
-    },
-    "positionView": {
-        "elements": [
-            {
-                "title": "Analyst",
-                "companyName": "Analytical Engine Project",
-                "description": "Wrote the first algorithm.",
-                "timePeriod": {
-                    "startDate": {"month": 6, "year": 1842},
-                    "endDate": {"month": 8, "year": 1843},
-                },
-            },
-            {
-                "title": "Correspondent",
-                "companyName": "Royal Society",
-                "timePeriod": {"startDate": {"year": 1840}},
-            },
-        ]
-    },
-    "educationView": {
-        "elements": [
-            {
-                "schoolName": "Self-taught",
-                "degreeName": "Mathematics",
-                "fieldOfStudy": "Analysis",
-                "timePeriod": {
-                    "startDate": {"year": 1832},
-                    "endDate": {"year": 1835},
-                },
-            }
-        ]
-    },
-}
+from scrapers.linkedin.parse import is_thin, parse_profile
+
+FIXTURE = (Path(__file__).parent / "fixtures" / "linkedin_public_profile.html").read_text()
 
 
-def test_parse_identity_and_bio():
-    p = parse_profile("ada-lovelace", FIXTURE)
-    assert p.slug == "ada-lovelace"
-    assert p.name == "Ada Lovelace"
-    assert p.headline == "Mathematician | First Programmer"
-    assert p.location == "London, England, United Kingdom"
-    assert p.bio == "Pioneer of computing."
+def test_parse_identity_and_bio_from_ldjson():
+    p = parse_profile("williamhgates", FIXTURE)
+    assert p.name == "Bill Gates"
+    assert p.headline == "Chair, Gates Foundation and Founder, Breakthrough Energy"
+    assert p.location == "Seattle, Washington, United States"
+    assert p.bio.startswith("Chair of the Gates Foundation")
+    assert is_thin(p) is False
 
 
-def test_parse_experience_with_date_formats():
-    p = parse_profile("ada-lovelace", FIXTURE)
-    assert len(p.experience) == 2
+def test_parse_experience_from_html_sections():
+    p = parse_profile("williamhgates", FIXTURE)
+    titles = [(e.title, e.company) for e in p.experience]
+    assert ("Co-chair", "Gates Foundation") in titles
+    assert ("Co-founder", "Microsoft") in titles
     first = p.experience[0]
-    assert first.title == "Analyst"
-    assert first.company == "Analytical Engine Project"
-    assert first.start == "1842-06"
-    assert first.end == "1843-08"
-    assert first.description == "Wrote the first algorithm."
-    # year-only start, no end -> present
-    second = p.experience[1]
-    assert second.start == "1840"
-    assert second.end is None
+    assert first.start == "2000"
+    assert first.end is None          # 'Present 26 years' -> None, duration stripped
 
 
-def test_parse_education():
-    p = parse_profile("ada-lovelace", FIXTURE)
-    assert len(p.education) == 1
-    edu = p.education[0]
-    assert edu.school == "Self-taught"
-    assert edu.degree == "Mathematics"
-    assert edu.field == "Analysis"
-    assert edu.start == "1832"
-    assert edu.end == "1835"
+def test_parse_education_from_html_sections():
+    p = parse_profile("williamhgates", FIXTURE)
+    schools = {e.school: e for e in p.education}
+    assert "Harvard University" in schools
+    harvard = schools["Harvard University"]
+    assert harvard.start == "1973"
+    assert harvard.end == "1975"
+    assert harvard.degree is None     # separator artifacts filtered out
 
 
-def test_parse_missing_summary_is_none():
-    payload = {"profile": {"firstName": "Grace", "lastName": "Hopper"}}
-    p = parse_profile("grace-hopper", payload)
+def test_falls_back_to_ldjson_lists_when_no_html_sections():
+    # A profile page with only the ld+json Person and no experience/education
+    # sections (e.g. a sparser public view) still yields org/school + years.
+    html = """
+    <html><head>
+    <script type="application/ld+json">
+    {"@type":"Person","name":"Grace Hopper","description":"Rear admiral.",
+     "worksFor":[{"@type":"Organization","name":"US Navy",
+                  "member":{"startDate":1943,"endDate":1986}}],
+     "alumniOf":[{"@type":"EducationalOrganization","name":"Yale",
+                  "member":{"startDate":1930,"endDate":1934}}]}
+    </script></head><body></body></html>
+    """
+    p = parse_profile("grace-hopper", html)
     assert p.name == "Grace Hopper"
+    assert p.bio == "Rear admiral."
+    assert [(e.company, e.start, e.end) for e in p.experience] == [("US Navy", "1943", "1986")]
+    assert [(e.school, e.start, e.end) for e in p.education] == [("Yale", "1930", "1934")]
+    assert is_thin(p) is False
+
+
+def test_thin_profile_detected():
+    p = parse_profile("nobody", "<html><head><title>Sign Up | LinkedIn</title></head><body></body></html>")
+    assert p.experience == []
+    assert p.education == []
     assert p.bio is None
-    assert p.experience == []
-    assert p.education == []
-
-
-def test_parse_empty_payload():
-    p = parse_profile("nobody", {})
-    assert p.slug == "nobody"
-    assert p.name is None
-    assert p.experience == []
-    assert p.education == []
+    assert is_thin(p) is True

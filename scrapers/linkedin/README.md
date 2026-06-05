@@ -1,53 +1,57 @@
 # LinkedIn Profile Scraper
 
 Low-volume client (<20 profiles) that pulls work experience, education, and bio
-for a supplied list of people, via LinkedIn's Voyager API through scrape.do with
-an authenticated session.
+for a supplied list of people, by parsing LinkedIn's **public** profile page
+fetched through scrape.do.
+
+## Why the public page
+
+LinkedIn's internal Voyager API is blocked at the edge for proxied requests
+(scrape.do returns `ROTATION_FAILED`), and the *authenticated* profile page is an
+obfuscated React DOM that rotates class names per deploy — brittle to parse.
+
+The **public** profile page, by contrast, is a crawler-facing server-rendered
+template carrying a clean schema.org `ld+json` Person node (name, bio, jobTitle,
+worksFor, alumniOf) plus stable, non-obfuscated section markup
+(`li.experience-item`, `li.education__list-item`). We fetch it via scrape.do with
+a residential proxy (`super=true`, to clear LinkedIn's Cloudflare WAF) — **no auth
+cookie, no JS render** — and parse those.
+
+### Completeness depends on the target's public visibility
+
+What the logged-out page exposes is controlled by each person's *public profile*
+setting. Public targets parse fully. Targets that have restricted their public
+profile come back thin (name/headline only or an authwall); the run **flags
+these** in `data/linkedin/_restricted.txt` so you can pull them via an
+authenticated browser (Chrome) fallback.
 
 ## Secrets (1Password vault `local`)
 
-One item `linkedin-cookies` with two fields (the scrape.do token item `scrape.do`
-already exists):
-
-- field `li-at` — the `li_at` cookie value.
-- field `jsessionid` — the `JSESSIONID` cookie value (looks like `ajax:12345...`).
-
-### Getting the cookies
-
-1. Log into linkedin.com in a browser (use a burner account — LinkedIn bans
-   automation).
-2. Open DevTools → Application → Cookies → `https://www.linkedin.com`.
-3. Copy the `li_at` value → store in field `li-at`.
-4. Copy the `JSESSIONID` value (strip the surrounding quotes) → store in field
-   `jsessionid`.
-
-Capture both in the **same** DevTools sitting — a `li_at` and `JSESSIONID` from
-different logins fail LinkedIn's CSRF check. Cookies expire periodically; when a
-run fails with an auth-expiry error, re-copy both and update the 1Password item.
+Only the scrape.do token is needed (item `scrape.do`, already present). No
+LinkedIn cookies required for the public-page route.
 
 ## Run
 
 ```bash
 # single profile (slug or full URL)
-.venv/bin/python -m scrapers.linkedin.run ada-lovelace
-.venv/bin/python -m scrapers.linkedin.run https://www.linkedin.com/in/ada-lovelace/
+.venv/bin/python -m scrapers.linkedin.run williamhgates
+.venv/bin/python -m scrapers.linkedin.run https://www.linkedin.com/in/williamhgates/
 
 # a list, one slug/URL per line
 .venv/bin/python -m scrapers.linkedin.run people.txt
 ```
 
-Output:
+Output (all under `data/linkedin/`, gitignored — profile data is personal):
 
-- `data/linkedin/raw/{slug}.json` — untouched Voyager response (durable; re-parse
-  from here, never re-scrape).
-- `data/linkedin/parsed/{slug}.json` — structured profile.
+- `raw/{slug}.html` — untouched public page (durable; re-parse from here, never
+  re-scrape).
+- `parsed/{slug}.json` — structured profile (name, headline, location, bio,
+  experience[], education[]).
+- `_restricted.txt` — slugs that came back thin, for the Chrome fallback.
 
-Both output dirs are gitignored — scraped profile data is personal and is not
-committed.
+## Maintenance note
 
-## Session-security note
-
-The run pins ONE residential IP (`SCRAPEDO_SESSION_ID` in `config.py`) geo-matched
-to the account (`SCRAPEDO_GEO`). This avoids LinkedIn's "new location" lockout —
-the real risk, not request volume. If the account normally logs in outside the US,
-change `SCRAPEDO_GEO`.
+The parser anchors on the public template's stable section classes and the
+`ld+json` block, not on the rotating obfuscated classes. If LinkedIn redesigns the
+public profile page, update `parse.py`; the saved raw HTML means re-parsing never
+requires re-scraping.

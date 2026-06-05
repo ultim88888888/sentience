@@ -1,17 +1,20 @@
-"""CLI: scrape a list of LinkedIn profiles to data/linkedin/{raw,parsed}/."""
+"""CLI: scrape public LinkedIn profiles to data/linkedin/{raw,parsed}/.
+
+Public-first: full data lands automatically for public profiles. Targets that come
+back thin (restricted for logged-out viewers) are flagged in `_restricted.txt` for
+an authenticated (Chrome) fallback pull.
+"""
 from __future__ import annotations
 
 import asyncio
-import json
 import sys
 from pathlib import Path
 
 import httpx
 
-from .auth import load_auth
-from .config import PARSED_DIR, RAW_DIR, REQUEST_DELAY
-from .fetch import AuthExpiredError, fetch_profile
-from .parse import parse_profile
+from .config import PARSED_DIR, RAW_DIR, REQUEST_DELAY, RESTRICTED_LIST
+from .fetch import fetch_profile, scrapedo_token
+from .parse import is_thin, parse_profile
 
 
 def normalize_slug(value: str) -> str:
@@ -32,25 +35,39 @@ def read_slugs(arg: str) -> list[str]:
 async def main(slugs: list[str]) -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     PARSED_DIR.mkdir(parents=True, exist_ok=True)
-    auth = load_auth()
+    token = scrapedo_token()
+    restricted: list[str] = []
+    full = 0
     async with httpx.AsyncClient(follow_redirects=True) as client:
         for i, slug in enumerate(slugs, 1):
             print(f"[{i}/{len(slugs)}] {slug}", file=sys.stderr)
-            try:
-                result = await fetch_profile(client, auth, slug)
-            except AuthExpiredError as e:
-                print(f"FATAL: {e}", file=sys.stderr)
-                raise SystemExit(2)
-            if result.status != 200 or result.payload is None:
-                print(f"  skip ({result.error})", file=sys.stderr)
+            result = await fetch_profile(client, token, slug)
+            if result.status != 200 or not result.html:
+                print(f"  FAILED ({result.error}) -> flagged", file=sys.stderr)
+                restricted.append(slug)
                 continue
-            (RAW_DIR / f"{slug}.json").write_text(json.dumps(result.payload, indent=2))
-            profile = parse_profile(slug, result.payload)
+            (RAW_DIR / f"{slug}.html").write_text(result.html)
+            profile = parse_profile(slug, result.html)
             (PARSED_DIR / f"{slug}.json").write_text(profile.model_dump_json(indent=2))
-            print(f"  ok ({len(profile.experience)} exp, {len(profile.education)} edu)",
-                  file=sys.stderr)
+            if is_thin(profile):
+                print(f"  THIN (name={profile.name!r}) -> flagged for Chrome fallback",
+                      file=sys.stderr)
+                restricted.append(slug)
+            else:
+                full += 1
+                print(f"  ok ({len(profile.experience)} exp, {len(profile.education)} edu)",
+                      file=sys.stderr)
             if i < len(slugs):
                 await asyncio.sleep(REQUEST_DELAY)
+
+    if restricted:
+        RESTRICTED_LIST.write_text("\n".join(restricted) + "\n")
+    print(f"\nDone: {full} full, {len(restricted)} thin/failed.", file=sys.stderr)
+    if restricted:
+        print(f"Thin/restricted -> {RESTRICTED_LIST} (pull via authenticated Chrome):",
+              file=sys.stderr)
+        for s in restricted:
+            print(f"  - {s}", file=sys.stderr)
 
 
 def cli() -> None:

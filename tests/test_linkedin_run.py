@@ -1,7 +1,6 @@
-"""slug normalization + orchestration smoke (fetch/auth mocked, tmp output dirs)."""
+"""slug normalization + orchestration smoke (fetch mocked, tmp output dirs)."""
 import asyncio
 
-from scrapers.linkedin.auth import Auth
 from scrapers.linkedin.fetch import FetchResult
 
 
@@ -24,52 +23,54 @@ def test_read_slugs_from_file(tmp_path):
     assert read_slugs(str(f)) == ["ada-lovelace", "grace"]
 
 
-def test_main_writes_raw_and_parsed(tmp_path, monkeypatch):
+_PUBLIC_HTML = """<html><head>
+<script type="application/ld+json">
+{"@type":"Person","name":"Ada Lovelace","description":"Analyst.",
+ "alumniOf":[{"@type":"EducationalOrganization","name":"Home","member":{"startDate":1832}}]}
+</script></head><body></body></html>"""
+
+
+def _wire(monkeypatch, tmp_path, fetch_impl):
     import scrapers.linkedin.run as run
-
-    raw, parsed = tmp_path / "raw", tmp_path / "parsed"
-    monkeypatch.setattr(run, "RAW_DIR", raw)
-    monkeypatch.setattr(run, "PARSED_DIR", parsed)
+    monkeypatch.setattr(run, "RAW_DIR", tmp_path / "raw")
+    monkeypatch.setattr(run, "PARSED_DIR", tmp_path / "parsed")
+    monkeypatch.setattr(run, "RESTRICTED_LIST", tmp_path / "_restricted.txt")
     monkeypatch.setattr(run.asyncio, "sleep", _no_sleep)
+    monkeypatch.setattr(run, "scrapedo_token", lambda: "TOK")
+    monkeypatch.setattr(run, "fetch_profile", fetch_impl)
+    return run
 
-    payload = {"profile": {"firstName": "Ada", "lastName": "Lovelace",
-                           "summary": "Pioneer."}}
 
-    async def fake_fetch(client, auth, slug):
-        return FetchResult(slug, 200, payload=payload)
+def test_main_writes_raw_html_and_parsed_json(tmp_path, monkeypatch):
+    async def fake_fetch(client, token, slug):
+        return FetchResult(slug, 200, html=_PUBLIC_HTML)
 
-    monkeypatch.setattr(run, "load_auth",
-                        lambda: Auth("TOK", "LIAT", "ajax:1"))
-    monkeypatch.setattr(run, "fetch_profile", fake_fetch)
-
+    run = _wire(monkeypatch, tmp_path, fake_fetch)
     asyncio.run(run.main(["ada-lovelace"]))
 
-    assert (raw / "ada-lovelace.json").exists()
-    parsed_file = parsed / "ada-lovelace.json"
-    assert parsed_file.exists()
-    assert "Ada Lovelace" in parsed_file.read_text()
+    assert (tmp_path / "raw" / "ada-lovelace.html").exists()
+    parsed = tmp_path / "parsed" / "ada-lovelace.json"
+    assert parsed.exists()
+    assert "Ada Lovelace" in parsed.read_text()
+    assert not (tmp_path / "_restricted.txt").exists()   # full profile, not flagged
 
 
-def test_main_skips_failed_profile_without_aborting(tmp_path, monkeypatch):
-    import scrapers.linkedin.run as run
-
-    raw, parsed = tmp_path / "raw", tmp_path / "parsed"
-    monkeypatch.setattr(run, "RAW_DIR", raw)
-    monkeypatch.setattr(run, "PARSED_DIR", parsed)
-    monkeypatch.setattr(run.asyncio, "sleep", _no_sleep)
-    monkeypatch.setattr(run, "load_auth", lambda: Auth("T", "L", "j"))
-
-    async def fake_fetch(client, auth, slug):
-        if slug == "ghost":
+def test_main_flags_thin_and_failed_profiles(tmp_path, monkeypatch):
+    async def fake_fetch(client, token, slug):
+        if slug == "ghost":          # fetch failure
             return FetchResult(slug, 404, error="HTTP 404")
-        return FetchResult(slug, 200, payload={"profile": {"firstName": "Ada"}})
+        if slug == "private":        # 200 but restricted -> thin parse
+            return FetchResult(slug, 200,
+                               html="<html><head><title>Sign Up | LinkedIn</title></head><body></body></html>")
+        return FetchResult(slug, 200, html=_PUBLIC_HTML)
 
-    monkeypatch.setattr(run, "fetch_profile", fake_fetch)
+    run = _wire(monkeypatch, tmp_path, fake_fetch)
+    asyncio.run(run.main(["ghost", "private", "ada"]))
 
-    asyncio.run(run.main(["ghost", "ada"]))
-
-    assert not (parsed / "ghost.json").exists()   # failed one skipped
-    assert (parsed / "ada.json").exists()          # batch continued
+    assert (tmp_path / "parsed" / "ada.json").exists()       # full one written
+    restricted = (tmp_path / "_restricted.txt").read_text().split()
+    assert "ghost" in restricted and "private" in restricted
+    assert "ada" not in restricted
 
 
 async def _no_sleep(_seconds):

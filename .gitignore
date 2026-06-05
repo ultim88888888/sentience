@@ -7,5 +7,5 @@ data/a16z_research/audio_cache/
 data/prices/
 data/study/
 # LinkedIn scraped profile data (personal data — do not commit)
-data/linkedin/raw/
-data/linkedin/parsed/
+data/linkedin/
+.venv

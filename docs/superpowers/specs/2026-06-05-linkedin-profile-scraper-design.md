@@ -1,11 +1,32 @@
 ---
 date: 2026-06-05
 project: sentience
-status: design
-tags: [scraper, linkedin, scrape.do, voyager]
+status: shipped
+tags: [scraper, linkedin, scrape.do, public-profile, ld-json]
 ---
 
 # LinkedIn Profile Scraper — Design
+
+> **Revision (2026-06-05, post-implementation).** The original Voyager-API design
+> below was **invalidated by live testing** and replaced with a public-page HTML
+> parse. Evidence gathered against scrape.do:
+> - **Voyager API is dead via scrape.do** — every variant (cookie-header auth,
+>   `setCookies` auth, super/no-super, render) returns `ROTATION_FAILED`
+>   ("cannot connect target url"). LinkedIn blocks proxied access to `/voyager/`
+>   at the edge, regardless of authentication.
+> - The **authenticated** profile page works via scrape.do's `setCookies`
+>   param, but its data lives in **obfuscated, per-deploy-rotating** React DOM
+>   classes — brittle to parse.
+> - The **public** profile page is a clean, crawler-facing SSR template with a
+>   schema.org `ld+json` Person node + stable section markup, and needs **no
+>   auth**. This is the shipped approach. Completeness is bounded by each
+>   target's public-profile visibility; restricted targets are flagged for an
+>   authenticated (Chrome) fallback.
+>
+> The **Approach** and **Coverage & secrets** sections below are updated to the
+> shipped design. The remaining lower sections (module layout, data flow, output,
+> testing) describe the original Voyager plan and are **superseded** — see
+> `scrapers/linkedin/README.md` and the code for the authoritative shipped detail.
 
 ## Purpose
 
@@ -19,45 +40,41 @@ concurrency, batching, or aggressive rate-limit machinery.
 
 ## Approach
 
-**Authenticated Voyager API via scrape.do.**
+**Public profile page via scrape.do, parse `ld+json` + stable HTML sections.**
 
-LinkedIn gates all profile substance (full experience, education, bio) behind
-authentication — logged-out scraping returns only a teaser plus an auth wall. So
-we carry an authenticated session.
+Fetch `https://www.linkedin.com/in/{slug}/` through scrape.do with `super=true`
+(residential proxy, to clear LinkedIn's Cloudflare WAF) and `geoCode=us` — no auth
+cookie, no JS render. The logged-out public page is a server-rendered template
+carrying:
 
-For extraction we call LinkedIn's own internal JSON API — **Voyager**, the same
-endpoint the linkedin.com web app calls — rather than parsing rendered HTML:
+- a schema.org **`ld+json` Person node** — `name`, `description` (bio),
+  `jobTitle`, `worksFor` (orgs + start years), `alumniOf` (schools + years); and
+- **stable, non-obfuscated HTML sections** — `li.experience-item`
+  (`.experience-item__title`/`__subtitle`, `.date-range`) and
+  `li.education__list-item` — for per-entry detail (title, dates, degree).
 
-```
-GET https://www.linkedin.com/voyager/api/identity/profiles/{publicId}/profileView
-```
+The parser takes name/bio from the `ld+json` and per-entry detail from the HTML
+sections, falling back to the `ld+json` worksFor/alumniOf when the HTML sections
+are absent (itself a signal the profile is restricted).
 
-It returns `positions` (experience), `educations`, and `summary` (bio) as clean
-structured JSON. No HTML parsing, smaller payloads, maps 1:1 to the target fields.
-Voyager is free (no API fee, no signup) but unofficial — same ToS gray zone as the
-overall scrape.
+### Rejected / failed alternatives
 
-scrape.do remains the proxy/transport layer; we feed it an authenticated request.
+- **Voyager API (original plan).** Blocked at the edge for proxied requests —
+  `ROTATION_FAILED` on every scrape.do variant. Dead.
+- **Authenticated HTML via scrape.do `setCookies`.** Works, but data is in
+  obfuscated per-deploy-rotating React DOM classes — brittle. Not used.
+- **LinkedIn-specialized API (Proxycurl etc.).** Clean JSON, all-profiles, but
+  paid + abandons scrape.do. Considered as fallback; deferred.
 
-### Rejected alternatives
+## Coverage & secrets
 
-- **Rendered-HTML parse.** Fetch the profile page, extract data from embedded
-  `<code>` JSON blocks. Same underlying data but brittle against constant layout
-  changes, larger payloads, no upside at our scale.
-- **LinkedIn-specialized API (Proxycurl etc.).** Clean structured JSON, sidesteps
-  all auth/cookie handling — but it isn't scrape.do, and costs money per profile.
-  Out of scope by request.
+Only the **scrape.do token** is needed (1Password item `scrape.do`, vault
+`local`). No LinkedIn cookies — the public-page route is logged-out.
 
-## Authentication & secrets
-
-The client needs, from a logged-in (burner-recommended) LinkedIn account:
-
-- `li_at` cookie — the auth session token.
-- `JSESSIONID` cookie — also the value of the required `csrf-token` request header.
-
-Both are read at runtime from **1Password vault `local`** via the `op` CLI (same
-pattern as the existing scrape.do token). scrape.do token item is `scrape.do`;
-new items `linkedin_li_at` and `linkedin_jsessionid` to be added by Jax.
+Completeness is bounded by each target's public-profile visibility. Targets that
+come back thin (restricted/authwall) are flagged in `data/linkedin/_restricted.txt`
+for an authenticated **Chrome fallback** (pulled manually via the logged-in
+session, where the data is complete regardless of public setting).
 
 Requests set `customHeaders=true` on scrape.do (which forwards our headers
 upstream) and send:

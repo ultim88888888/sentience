@@ -31,7 +31,9 @@ class _FakeResp:
 
 def test_retries_on_rate_limit_then_succeeds(monkeypatch):
     import httpx as _httpx
-    monkeypatch.setattr(coinglass.time, "sleep", lambda *_: None)
+    sleeps = []
+    monkeypatch.setattr(coinglass, "_throttle", lambda: None)
+    monkeypatch.setattr(coinglass.time, "sleep", lambda s=0: sleeps.append(s))
     monkeypatch.setattr(coinglass, "api_key", lambda: "dummy")
     good = {"code": "0", "data": [{"time": 1700000000000, "close": "100.5"}]}
     responses = iter([
@@ -43,6 +45,7 @@ def test_retries_on_rate_limit_then_succeeds(monkeypatch):
     df = coinglass.price_history("BTC", use_cache=False)
     assert len(df) == 1
     assert df["close"].iloc[0] == 100.5
+    assert len(sleeps) == 2  # two rate-limited responses -> two backoff sleeps, no wasted final sleep
 
 
 def test_genuine_error_raises_immediately(monkeypatch):

@@ -54,7 +54,8 @@ def _get_json(url: str, params: dict, label: str) -> dict:
     or if still rate-limited after RATE_LIMIT_RETRIES attempts.
     """
     headers = {"CG-API-KEY": api_key()}
-    for attempt in range(RATE_LIMIT_RETRIES + 1):
+    attempts = RATE_LIMIT_RETRIES + 1          # 1 initial call + RATE_LIMIT_RETRIES retries
+    for attempt in range(attempts):
         _throttle()
         r = httpx.get(url, params=params, headers=headers, timeout=HTTP_TIMEOUT)
         status = r.status_code
@@ -67,16 +68,18 @@ def _get_json(url: str, params: dict, label: str) -> dict:
             msg = str(payload.get("msg") or "")
             if not _is_rate_limit(status, msg):
                 raise RuntimeError(f"Coinglass error for {label}: {msg}")
+        if attempt == attempts - 1:
+            break                              # final attempt: don't sleep, fall through to raise
         wait = RATE_LIMIT_BACKOFF * (2 ** attempt)
         _log(f"  {label}: rate limited ({msg or 'HTTP 429'}); "
-             f"backoff {wait:.0f}s (attempt {attempt + 1}/{RATE_LIMIT_RETRIES})")
+             f"backoff {wait:.0f}s (attempt {attempt + 1}/{attempts})")
         time.sleep(wait)
     raise RuntimeError(f"Coinglass still rate-limited for {label} after "
                        f"{RATE_LIMIT_RETRIES} retries")
 
 
 def price_history(symbol: str, use_cache: bool = True) -> pd.DataFrame:
-    """Daily OHLC for a token's Binance USDT perp. Returns columns [date, close] (UTC).
+    """Daily close price for a token's Binance USDT perp. Returns columns [date, close] (UTC).
 
     Empty DataFrame (same columns) if the pair has no data — caller skips the constituent.
     """

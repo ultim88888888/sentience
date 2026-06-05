@@ -168,7 +168,7 @@ def test_fetch_user_walks_pages_until_exhausted():
     client = MagicMock()
     client.advanced_search = AsyncMock(side_effect=pages)
     since = datetime(2024, 1, 1, tzinfo=timezone.utc)
-    tweets = asyncio.run(collect.fetch_user(client, "eddy", since))
+    tweets = asyncio.run(collect.fetch_user(client, "eddy", since, include_retweets=False))
     assert [t["id"] for t in tweets] == ["3", "2"]
     assert client.advanced_search.call_count == 2
 
@@ -182,9 +182,39 @@ def test_fetch_user_stops_when_page_predates_since():
     client = MagicMock()
     client.advanced_search = AsyncMock(side_effect=pages)
     since = datetime(2024, 1, 1, tzinfo=timezone.utc)
-    tweets = asyncio.run(collect.fetch_user(client, "eddy", since))
+    tweets = asyncio.run(collect.fetch_user(client, "eddy", since, include_retweets=False))
     assert client.advanced_search.call_count == 2  # stopped after page 2, no page 3
     assert "old" not in [t["id"] for t in tweets]  # pre-since tweet dropped
+
+
+def test_build_query_retweets_only_adds_operators():
+    since = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    until = datetime(2024, 2, 1, tzinfo=timezone.utc)
+    q = collect.build_query("eddy", since, until, retweets_only=True)
+    assert q == ("from:eddy since_time:1704067200 until_time:1706745600 "
+                 "include:nativeretweets filter:nativeretweets")
+
+
+def test_fetch_user_includes_retweets_pass_and_dedups():
+    # advanced_search returns different pages depending on the query (base vs RT pass).
+    def fake(query, cursor=""):
+        if "filter:nativeretweets" in query:
+            return collect_page(
+                [{"id": "rt1", "createdAt": "Wed Jan 09 00:00:00 +0000 2024",
+                  "retweeted_tweet": {"id": "z"}},
+                 # duplicate of a base tweet id -> must be deduped out
+                 {"id": "3", "createdAt": "Wed Jan 10 00:00:00 +0000 2024"}],
+                False, "")
+        return collect_page(
+            [{"id": "3", "createdAt": "Wed Jan 10 00:00:00 +0000 2024"}], False, "")
+
+    client = MagicMock()
+    client.advanced_search = AsyncMock(side_effect=fake)
+    since = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    tweets = asyncio.run(collect.fetch_user(client, "eddy", since))  # include_retweets default True
+    ids = [t["id"] for t in tweets]
+    assert ids == ["3", "rt1"]  # base first, RT appended, duplicate "3" dropped
+    assert client.advanced_search.call_count == 2  # one base walk + one RT walk
 
 
 # ── run ──────────────────────────────────────────────────────────────────────

@@ -67,22 +67,20 @@ def to_unix(dt: datetime) -> int:
     return int(dt.astimezone(timezone.utc).timestamp())
 
 
-def build_query(username: str, since: datetime, until: datetime) -> str:
-    return f"from:{username} since_time:{to_unix(since)} until_time:{to_unix(until)}"
+def build_query(username: str, since: datetime, until: datetime,
+                retweets_only: bool = False) -> str:
+    q = f"from:{username} since_time:{to_unix(since)} until_time:{to_unix(until)}"
+    if retweets_only:
+        # `from:` excludes native retweets by default; these operators surface them.
+        q += " include:nativeretweets filter:nativeretweets"
+    return q
 
 
-async def fetch_user(client, username: str, since: datetime,
-                     until: datetime | None = None) -> list[dict[str, Any]]:
-    """Walk advanced_search newest→oldest until exhausted or past `since`.
-
-    Returns raw tweet dicts whose createdAt >= since. `client` is a TwitterAPI.
-    """
-    if until is None:
-        until = datetime.now(timezone.utc)
-    query = build_query(username, since, until)
+async def _walk(client, query: str, since: datetime) -> list[dict[str, Any]]:
+    """Walk advanced_search newest→oldest for one query until exhausted or past `since`."""
     out: list[dict[str, Any]] = []
     cursor = ""
-    for page_num in range(MAX_PAGES):
+    for _ in range(MAX_PAGES):
         page = await client.advanced_search(query, cursor=cursor)
         passed_floor = False
         for t in page.tweets:
@@ -94,6 +92,31 @@ async def fetch_user(client, username: str, since: datetime,
             break
         cursor = page.next_cursor
     else:
-        logger.warning("fetch_user(%s): hit MAX_PAGES=%d guard", username, MAX_PAGES)
-    logger.info("fetch_user(%s): %d tweets since %s", username, len(out), since.date())
+        logger.warning("_walk: hit MAX_PAGES=%d guard for query %r", MAX_PAGES, query)
     return out
+
+
+async def fetch_user(client, username: str, since: datetime,
+                     until: datetime | None = None,
+                     include_retweets: bool = True) -> list[dict[str, Any]]:
+    """Fetch all of a user's posts since `since` via advanced_search.
+
+    Runs the base `from:<user>` walk (originals, replies, quotes). When
+    `include_retweets` is set, a second filtered walk captures native retweets
+    (excluded by `from:` semantics), unioned and deduped by tweet id. `client`
+    is a TwitterAPI. Returns raw tweet dicts whose createdAt >= since.
+    """
+    if until is None:
+        until = datetime.now(timezone.utc)
+
+    tweets = await _walk(client, build_query(username, since, until), since)
+
+    if include_retweets:
+        rt_query = build_query(username, since, until, retweets_only=True)
+        retweets = await _walk(client, rt_query, since)
+        seen = {t.get("id") for t in tweets}
+        tweets.extend(t for t in retweets if t.get("id") not in seen)
+
+    logger.info("fetch_user(%s): %d tweets since %s (retweets=%s)",
+                username, len(tweets), since.date(), include_retweets)
+    return tweets

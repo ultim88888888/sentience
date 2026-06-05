@@ -51,7 +51,8 @@ def _parse_date(s: str) -> datetime:
 
 
 def pull(users: list[str], since: str | datetime, until: str | datetime | None = None,
-         persist: bool = True, out_dir: Path | None = None) -> dict[str, pd.DataFrame]:
+         include_retweets: bool = True, persist: bool = True,
+         out_dir: Path | None = None) -> dict[str, pd.DataFrame]:
     """Fetch all tweets since `since` for each user; optionally persist parquet each.
 
     Per-user failures are logged and skipped. Returns {username: DataFrame}.
@@ -63,7 +64,8 @@ def pull(users: list[str], since: str | datetime, until: str | datetime | None =
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
 
     async def _one(client: TwitterAPI, user: str) -> tuple[str, pd.DataFrame]:
-        raw = await collect.fetch_user(client, user, since_dt, until_dt)
+        raw = await collect.fetch_user(client, user, since_dt, until_dt,
+                                       include_retweets=include_retweets)
         return user, to_frame([collect.normalize(t) for t in raw])
 
     async def _run() -> dict[str, pd.DataFrame]:
@@ -94,8 +96,11 @@ def main() -> None:
                     help="Username (repeatable for multiple users).")
     ap.add_argument("--since", required=True, help="Start date, YYYY-MM-DD (UTC).")
     ap.add_argument("--until", default=None, help="End date, YYYY-MM-DD (UTC). Default: now.")
+    ap.add_argument("--no-retweets", action="store_true",
+                    help="Skip the second pass that captures native retweets.")
     args = ap.parse_args()
-    frames = pull(args.user, since=args.since, until=args.until)
+    frames = pull(args.user, since=args.since, until=args.until,
+                  include_retweets=not args.no_retweets)
     for user, df in frames.items():
         print(f"{user}: {len(df)} tweets", file=sys.stderr)
 

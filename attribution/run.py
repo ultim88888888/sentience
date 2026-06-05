@@ -21,8 +21,9 @@ def _log(m): print(m, flush=True)
 def _participants(row, roster: Roster) -> list[str]:
     """Known participant names for the LLM prompt: guest author(s) by slug."""
     names = []
+    raw = row.get("author_slugs")  # may be a numpy array — avoid `or` (ambiguous truthiness)
     try:
-        slugs = [s for s in list(row.get("author_slugs") or []) if s]
+        slugs = [s for s in list(raw) if s] if raw is not None else []
     except TypeError:
         slugs = []
     for slug in slugs:

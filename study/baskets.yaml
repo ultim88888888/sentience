@@ -12,7 +12,7 @@ benchmark: L1 Majors
 
 # Exact corpus tag strings -> basket. A post attributes to a basket if it carries any tag here.
 tag_map:
-  ZK/Privacy:        ["SNARKs", "zero knowledge & succinct proof systems", "cryptography"]
+  ZK/Privacy:        ["SNARKs", "zero knowledge & succinct proof systems", "zero knowledge", "Jolt", "cryptography"]
   L2/Scaling:        ["scaling & throughput", "rollups", "data availability"]
   DeFi:              ["DeFi", "auction design", "pricing", "mechanism design"]
   Staking/Consensus: ["consensus", "BFT", "proof of stake"]

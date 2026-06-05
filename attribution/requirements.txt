@@ -1,0 +1,4 @@
+pyannote.audio==3.3.2
+mlx-whisper==0.4.3
+# claude CLI must be installed and authenticated (Max subscription).
+# Free HuggingFace token (accept pyannote/speaker-diarization-3.1 license) in 1Password.

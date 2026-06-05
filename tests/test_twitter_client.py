@@ -144,3 +144,44 @@ def test_get_raises_on_error_status():
     c = twclient.TwitterAPI(http=http, limiter=limiter, semaphore=sem)
     with pytest.raises(RuntimeError, match="bad query"):
         asyncio.run(c.advanced_search("from:eddy", cursor=""))
+
+
+# ── fetch_user ───────────────────────────────────────────────────────────────
+
+def test_to_unix_utc():
+    dt = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    assert collect.to_unix(dt) == 1704067200
+
+
+def test_build_query():
+    since = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    until = datetime(2024, 2, 1, tzinfo=timezone.utc)
+    q = collect.build_query("eddylazzarin", since, until)
+    assert q == "from:eddylazzarin since_time:1704067200 until_time:1706745600"
+
+
+def test_fetch_user_walks_pages_until_exhausted():
+    pages = [
+        collect_page([{"id": "3", "createdAt": "Wed Jan 10 00:00:00 +0000 2024"}], True, "C2"),
+        collect_page([{"id": "2", "createdAt": "Wed Jan 05 00:00:00 +0000 2024"}], False, ""),
+    ]
+    client = MagicMock()
+    client.advanced_search = AsyncMock(side_effect=pages)
+    since = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    tweets = asyncio.run(collect.fetch_user(client, "eddy", since))
+    assert [t["id"] for t in tweets] == ["3", "2"]
+    assert client.advanced_search.call_count == 2
+
+
+def test_fetch_user_stops_when_page_predates_since():
+    pages = [
+        collect_page([{"id": "3", "createdAt": "Wed Jan 10 00:00:00 +0000 2024"}], True, "C2"),
+        # oldest tweet here is before `since` -> stop, do not request page 3
+        collect_page([{"id": "old", "createdAt": "Wed Dec 10 00:00:00 +0000 2023"}], True, "C3"),
+    ]
+    client = MagicMock()
+    client.advanced_search = AsyncMock(side_effect=pages)
+    since = datetime(2024, 1, 1, tzinfo=timezone.utc)
+    tweets = asyncio.run(collect.fetch_user(client, "eddy", since))
+    assert client.advanced_search.call_count == 2  # stopped after page 2, no page 3
+    assert "old" not in [t["id"] for t in tweets]  # pre-since tweet dropped

@@ -1,0 +1,19 @@
+# Tokens are Binance USDT-perp base assets (validated to exist). Overlap is intentional.
+baskets:
+  ZK/Privacy:        [ZK, STRK, MINA, SCR, MANTA, DUSK, ALT]
+  L2/Scaling:        [ARB, OP, POL, METIS, STRK, ZK, MANTA]
+  DeFi:              [UNI, AAVE, CRV, COMP, SNX, SUSHI, DYDX, PENDLE]
+  Staking/Consensus: [LDO, RPL, ETH, ATOM, EIGEN, JTO, ANKR]
+  DAOs/Governance:   [UNI, ENS, ARB, OP, AAVE, APE]
+  L1 Majors:         [BTC, ETH, SOL]
+
+# L1 Majors is the benchmark, not a signal target. It has no tag_map entry.
+benchmark: L1 Majors
+
+# Exact corpus tag strings -> basket. A post attributes to a basket if it carries any tag here.
+tag_map:
+  ZK/Privacy:        ["SNARKs", "zero knowledge & succinct proof systems", "cryptography"]
+  L2/Scaling:        ["scaling & throughput", "rollups", "data availability"]
+  DeFi:              ["DeFi", "auction design", "pricing", "mechanism design"]
+  Staking/Consensus: ["consensus", "BFT", "proof of stake"]
+  DAOs/Governance:   ["governance", "DAOs", "voting"]

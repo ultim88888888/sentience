@@ -148,7 +148,7 @@ See §7.
 
 ## 5. Walk-forward: control vs. treatment
 
-The walk-forward advances T (e.g. monthly from a chosen T0 to present), re-querying and logging the evolving view as a trajectory.
+The walk-forward advances T, re-querying and logging the evolving view as a trajectory. **Resolved parameters (approved):** **T0 = 2022-12-31**, **monthly steps** (Jan 2023 → present, ~41 steps), **fixed query bank** re-asked every step (the core market-view query + standing topic probes: L2s, ZK, stablecoins, token design, market regime). A fixed set lets the same question's answer be tracked over time and keeps Eddy-vs-foil discrimination clean (identical questions per subject).
 
 - **Control — frozen soul (v1 default):** extract the soul once at T0 (gated to ≤T0, bio truncated to ≤T0). Walk forward by advancing **memory** only; the soul is fixed. Cleanest attribution and the baseline we need.
 - **Treatment — walk-forward soul:** re-extract the soul at each step T from corpus ≤T (bio re-truncated). Captures persona drift / belief revision over time, at the cost of murkier attribution and higher compute (only the soul re-derives; memory still just accretes). Run **after** the control works, to measure whether soul-evolution adds anything.
@@ -169,7 +169,7 @@ Both modes are always time-gated: **no soul ever sees its own future.**
 The key insight that makes this tractable: **the corpus is the subject's held-out ground truth** — something the interview-based original never had. The walk-forward is therefore not just the use case; it is the eval methodology.
 
 - **Held-out prediction (primary).** Build the doppelganger ≤ T, ask it about a topic, score its answer against what the subject **actually said at T+1**. Real temporal cross-validation.
-- **Discrimination (cheap, make-or-break).** Can a judge tell this doppelganger's output from another subject's (Eddy vs. Kominers)? Can it tell doppelganger-Eddy from real held-out Eddy? If subjects converge to the same generic view, the engine captures no individual signal — **nothing else matters until this passes.**
+- **Discrimination (cheap, make-or-break).** Can a judge tell this doppelganger's output from another subject's? Can it tell doppelganger-Eddy from real held-out Eddy? If subjects converge to the same generic view, the engine captures no individual signal — **nothing else matters until this passes.** **Foils (approved):** **floor (sanity, must pass)** = Eddy vs. Scott Kominers (academic economist, 36k tweets) — if an investor and an economist aren't distinguishable, stop; **ceiling (real proof)** = Eddy vs. **Ali Yahya** (`alive_`, fellow a16z crypto GP, ~1.1k tweets + 53 research, matched corpus size) — two investors on the same sectors staying discriminable means the engine captures the person, not the role/firm voice. **Avoid Chris Dixon** as a foil — heavy base-model training-data footprint contaminates the test with leakage.
 - **Style match (measurable).** Generated text vs. held-out real text — register, function words, tics — quantified, not eyeballed.
 - **Coverage diagnostic (optional).** Over a query set, the fraction `grounded / persisted / extrapolated / abstain`. Tells us empirically — for this subject — how much the engine is recalling vs. inferring, and therefore how load-bearing the "how he thinks" layer actually is. A diagnostic, **not** an enforced ratio.
 - **Leakage check.** Cross-reference answers against the retrieval log: flag any claim relying on knowledge not in the ≤T evidence (base-model hindsight). Leakage is **measured**, not asserted.
@@ -202,12 +202,16 @@ These thinned units from the inside; they did not remove any. Re-add a mechanism
 
 ## 11. Open questions for planning
 
-1. **T0 choice and step size** for Eddy's walk-forward (data starts 2021; X is the density driver). Monthly? From when?
-2. **Query bank** for the walk-forward — fixed question set re-asked each step, or topic-targeted from what was live that month? (Fixed set makes the trajectory and discrimination cleaner.)
-3. **Discrimination foil** — second subject to build (Kominers has 20 research posts + a large X corpus; a strong contrast).
+**Resolved (approved 2026-06-05):**
+1. ~~T0 / step size~~ → **T0 = 2022-12-31, monthly** (§5).
+2. ~~Query bank~~ → **fixed set, re-asked each step** (§5).
+3. ~~Discrimination foil~~ → **Ali Yahya (ceiling) + Kominers (floor); avoid Dixon** (§7).
+
+**Still open (decide at plan time):**
 4. **Eval scoring** — LLM-judge rubric for held-out prediction; how to score "predicted his stance" without overfitting to wording.
 5. **Reply-filter threshold** and podcast `confidence` threshold — initial values, then tuned against eval.
 6. **Soul rendering** — exact format of the characterization → system context.
+7. **Module name** — final name (working: `doppelganger/` in the `sentience` repo).
 
 ---
 

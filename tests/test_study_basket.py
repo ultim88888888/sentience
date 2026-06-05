@@ -31,3 +31,21 @@ def test_verdict_pulse_on_positive_consistent():
     panel = _panel(+1)
     res = study_basket.run_study_a(panel)
     assert res["verdict"] == "pulse"
+
+
+def test_verdict_no_pulse_on_anticorrelated():
+    res = study_basket.run_study_a(_panel(-1))
+    assert res["verdict"] == "no pulse"
+
+
+def test_constant_month_is_skipped_in_ic():
+    # One month has constant signal (-> spearman NaN, skipped); valid months still counted.
+    panel = _panel(+1)
+    const_month = pd.DataFrame([
+        {"month": pd.Period("2024-07", "M"), "basket": b,
+         "coverage_momentum": 0.0, "fwd_rel_1m": float(i), "fwd_rel_3m": float(i)}
+        for i, b in enumerate(["A", "B", "C"])
+    ])
+    combined = pd.concat([panel, const_month], ignore_index=True)
+    ic = study_basket.information_coefficient(combined, "coverage_momentum", "fwd_rel_1m")
+    assert ic["n"] == 6  # the 6 original months count; the constant-signal month is skipped

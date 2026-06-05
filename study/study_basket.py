@@ -5,9 +5,11 @@ between signal rank and forward-return rank. Plus a toy long/short backtest. Sam
 is small (~40-50 basket-months); we report n alongside every statistic and never claim
 significance.
 """
+import warnings
+
 import numpy as np
 import pandas as pd
-from scipy.stats import spearmanr
+from scipy.stats import ConstantInputWarning, spearmanr
 
 from .config import FWD_WINDOWS
 
@@ -18,12 +20,14 @@ def information_coefficient(panel: pd.DataFrame, signal_col: str, fwd_col: str,
     for _, g in panel.dropna(subset=[signal_col, fwd_col]).groupby(group):
         if len(g) < 2:
             continue
-        rho, _ = spearmanr(g[signal_col], g[fwd_col])
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", ConstantInputWarning)  # constant month -> NaN, skipped below
+            rho, _ = spearmanr(g[signal_col], g[fwd_col])
         if np.isnan(rho):
             continue
         ics.append(rho)
         # hit rate: did the top-ranked-signal basket beat the cross-sectional median fwd?
-        top = g.loc[g[signal_col].idxmax()]
+        top = g.loc[g[signal_col].idxmax()]  # ties broken by label order — acceptable for a smoke test
         hits.append(1.0 if top[fwd_col] > g[fwd_col].median() else 0.0)
     ics = np.array(ics)
     return {"ic_mean": float(ics.mean()) if len(ics) else float("nan"),
@@ -55,6 +59,8 @@ def run_study_a(panel: pd.DataFrame) -> dict:
     pos_consistent = all(ic[w]["ic_mean"] > 0 for w in FWD_WINDOWS
                          if not np.isnan(ic[w]["ic_mean"]))
     bt_has_data = any(not np.isnan(bt[w]["mean_spread"]) for w in FWD_WINDOWS)
+    # Bypass: if no month had enough baskets for the L/S backtest (need >=2*top_k=4),
+    # treat spread as uninformative rather than contradictory — IC alone decides the verdict.
     spread_ok = (not bt_has_data) or any(bt[w]["mean_spread"] > 0 for w in FWD_WINDOWS
                                          if not np.isnan(bt[w]["mean_spread"]))
     any_signal = any(not np.isnan(ic[w]["ic_mean"]) for w in FWD_WINDOWS)

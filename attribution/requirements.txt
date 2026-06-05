@@ -1,4 +1,5 @@
-pyannote.audio==3.3.2
+pyannote.audio==4.0.4    # v4 works with torch 2.12; uses token= (not use_auth_token=)
 mlx-whisper==0.4.3
 # claude CLI must be installed and authenticated (Max subscription).
-# Free HuggingFace token (accept pyannote/speaker-diarization-3.1 license) in 1Password.
+# Free HuggingFace token in 1Password (op://local/huggingface/credential). MUST accept BOTH
+# gated licenses: pyannote/speaker-diarization-3.1 AND pyannote/segmentation-3.0.

@@ -19,9 +19,9 @@ def _hf_token() -> str:
     return subprocess.check_output(["op", "read", HF_TOKEN_OP], text=True).strip()
 
 def diarize_audio(mp3_path: str):
-    """Return [(start, end, voice_label)] from pyannote (local)."""
+    """Return [(start, end, voice_label)] from pyannote (local). pyannote v4 uses `token=`."""
     from pyannote.audio import Pipeline
-    pipe = Pipeline.from_pretrained(PYANNOTE_MODEL, use_auth_token=_hf_token())
+    pipe = Pipeline.from_pretrained(PYANNOTE_MODEL, token=_hf_token())
     diar = pipe(mp3_path)
     return [(seg.start, seg.end, label) for seg, _, label in diar.itertracks(yield_label=True)]
 

@@ -79,3 +79,68 @@ def test_normalize_raw_json_roundtrips():
     t = _tweet()
     row = collect.normalize(t)
     assert json.loads(row["raw_json"])["id"] == "1"
+
+
+# ── client ───────────────────────────────────────────────────────────────────
+
+from scrapers.twitter import client as twclient
+
+
+def _resp(status_code=200, payload=None):
+    r = MagicMock()
+    r.status_code = status_code
+    r.json.return_value = payload if payload is not None else {}
+    return r
+
+
+def test_api_key_reads_from_1password():
+    fake = MagicMock()
+    fake.stdout = "secret-key\n"
+    with patch("scrapers.twitter.client.subprocess.run", return_value=fake) as run:
+        assert twclient.api_key() == "secret-key"
+    assert run.call_args[0][0][:3] == ["op", "item", "get"]
+
+
+def test_advanced_search_returns_page():
+    http = MagicMock()
+    http.get = AsyncMock(return_value=_resp(payload={
+        "tweets": [{"id": "1"}],
+        "has_next_page": True,
+        "next_cursor": "CURSOR2",
+        "status": "success",
+    }))
+    limiter = twclient.RateLimiter(1000.0)
+    sem = asyncio.Semaphore(1)
+    c = twclient.TwitterAPI(http=http, limiter=limiter, semaphore=sem)
+    page = asyncio.run(c.advanced_search("from:eddy", cursor=""))
+    assert page.tweets == [{"id": "1"}]
+    assert page.has_next_page is True
+    assert page.next_cursor == "CURSOR2"
+    params = http.get.call_args.kwargs["params"]
+    assert params["query"] == "from:eddy"
+    assert params["queryType"] == "Latest"
+
+
+def test_get_retries_on_429_then_succeeds():
+    http = MagicMock()
+    http.get = AsyncMock(side_effect=[
+        _resp(status_code=429, payload={"status": "error", "msg": "rate"}),
+        _resp(payload={"tweets": [], "has_next_page": False, "next_cursor": "", "status": "success"}),
+    ])
+    limiter = twclient.RateLimiter(1000.0)
+    sem = asyncio.Semaphore(1)
+    c = twclient.TwitterAPI(http=http, limiter=limiter, semaphore=sem)
+    with patch("scrapers.twitter.client.asyncio.sleep", new=AsyncMock()):
+        page = asyncio.run(c.advanced_search("from:eddy", cursor=""))
+    assert page.has_next_page is False
+    assert http.get.call_count == 2
+
+
+def test_get_raises_on_error_status():
+    http = MagicMock()
+    http.get = AsyncMock(return_value=_resp(payload={"status": "error", "msg": "bad query"}))
+    limiter = twclient.RateLimiter(1000.0)
+    sem = asyncio.Semaphore(1)
+    c = twclient.TwitterAPI(http=http, limiter=limiter, semaphore=sem)
+    with pytest.raises(RuntimeError, match="bad query"):
+        asyncio.run(c.advanced_search("from:eddy", cursor=""))

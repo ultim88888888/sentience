@@ -1,19 +1,21 @@
 # sentience
 
-> One-line: _TBD — to be defined in first brainstorm._
+> Research project. Exploring — direction TBD. Scaffolded 2026-06-04.
 
-Status: **shell** — scaffolded 2026-06-04, not yet specified.
-
-This started as a "both / not sure yet" project: it may stay a research/exploration
-space or concrete into a build. The repo shell exists so work has a home the moment
-it does.
+Started as a "both / not sure yet" project: may stay a research/exploration space or
+concrete into a build. First workstream is corpus collection (a16z crypto research).
 
 ## Layout
 
-- `docs/` — specs, design notes, decisions local to this project
-- `src/` — code (empty until the project concretes into a build)
+- `scrapers/` — data collection
+  - `a16z_research/` — scrapes all a16zcrypto.com research articles → parquet ([README](scrapers/a16z_research/README.md))
+- `data/` — collected datasets (parquet)
+- `docs/` — specs, design notes, decisions
 
-## Next
+## Setup
 
-Define what sentience actually is. Run `/brainstorming` when the idea concretes into
-"we're going to build this," then land a spec in `docs/`.
+```bash
+python -m venv .venv && . .venv/bin/activate
+pip install -r scrapers/a16z_research/requirements.txt
+python -m playwright install chromium
+```

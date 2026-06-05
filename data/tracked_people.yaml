@@ -21,8 +21,9 @@ people:
 - slug: ali-yahya
   name: Ali Yahya
   title: General Partner
-  x_handle: alive_eth
-  x_url: https://x.com/alive_eth
+  x_handle: alive_              # renamed from alive_eth (id 14470738); old handle still on a16z team page + web
+  x_url: https://x.com/alive_
+  former_x_handle: alive_eth
   linkedin_url: https://www.linkedin.com/in/ali01
   a16z_posts: 53
 - slug: eddy-lazzarin

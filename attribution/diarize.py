@@ -19,11 +19,16 @@ def _hf_token() -> str:
     return subprocess.check_output(["op", "read", HF_TOKEN_OP], text=True).strip()
 
 def diarize_audio(mp3_path: str):
-    """Return [(start, end, voice_label)] from pyannote (local). pyannote v4 uses `token=`."""
+    """Return [(start, end, voice_label)] from pyannote (local). pyannote v4 uses `token=` and
+    returns a DiarizeOutput; we use `exclusive_speaker_diarization` (one speaker per instant —
+    clean for mapping whisper segments to turns). Falls back to the legacy Annotation API."""
     from pyannote.audio import Pipeline
     pipe = Pipeline.from_pretrained(PYANNOTE_MODEL, token=_hf_token())
-    diar = pipe(mp3_path)
-    return [(seg.start, seg.end, label) for seg, _, label in diar.itertracks(yield_label=True)]
+    out = pipe(mp3_path)
+    ann = getattr(out, "exclusive_speaker_diarization", None)
+    if ann is None:
+        ann = getattr(out, "speaker_diarization", out)  # older pyannote returned the Annotation
+    return [(seg.start, seg.end, label) for seg, _, label in ann.itertracks(yield_label=True)]
 
 def transcribe_timestamped(mp3_path: str):
     """Whisper segments WITH timestamps (we need them to align to diarization)."""

@@ -13,7 +13,9 @@ def _forward_cumulative(rets_wide: pd.DataFrame, window: int) -> pd.DataFrame:
     """rets_wide: index=month (sorted), columns=basket. Returns forward cumulative return
     over months [t+1 .. t+window], aligned back to t."""
     fwd = (1.0 + rets_wide).rolling(window).apply(lambda x: x.prod(), raw=True) - 1.0
-    # rolling is backward-looking and ends at t; shift up by `window` so it sits at t.
+    # rolling(W) at row T covers [T-W+1..T] (backward). shift(-W) pulls that value to
+    # row T-W, so the entry at signal month t represents the cumulative return [t+1..t+W].
+    # No current-month data enters the forward return.
     return fwd.shift(-window)
 
 

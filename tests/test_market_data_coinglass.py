@@ -83,7 +83,6 @@ def _make_client(semaphore_value: int = 100) -> "Coinglass":
 # 1. Rate-limiter pacing
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_rate_limiter_pacing():
     """
     With a controllable fake clock, N acquire() calls should produce waits
@@ -128,7 +127,6 @@ async def test_rate_limiter_pacing():
 # 2. OHLCV parse
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_ohlcv_parse():
     """Mocked OHLCV response parses to correct columns, types, and sort order."""
     from market_data.coinglass import Coinglass
@@ -153,7 +151,6 @@ def _assert_ohlcv_frame(df: pd.DataFrame) -> None:
 # 3. Funding parse
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_funding_parse():
     """Mocked funding response parses to correct columns and types."""
     from market_data.coinglass import Coinglass
@@ -169,7 +166,6 @@ async def test_funding_parse():
 # 4. OI parse
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_oi_parse():
     """Mocked OI response parses to correct columns and types."""
     from market_data.coinglass import Coinglass
@@ -194,7 +190,6 @@ def _assert_ohlc_frame(df: pd.DataFrame, name: str) -> None:
 # 5. Empty data
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_empty_ohlcv():
     """Empty data payload returns a correctly-typed empty frame, no exception."""
     from market_data.coinglass import Coinglass
@@ -209,7 +204,6 @@ async def test_empty_ohlcv():
     assert str(df["date"].dtype) == "datetime64[ns, UTC]", f"empty date dtype: {df['date'].dtype}"
 
 
-@pytest.mark.asyncio
 async def test_empty_funding():
     from market_data.coinglass import Coinglass
 
@@ -223,7 +217,6 @@ async def test_empty_funding():
     assert str(df["date"].dtype) == "datetime64[ns, UTC]"
 
 
-@pytest.mark.asyncio
 async def test_empty_oi():
     from market_data.coinglass import Coinglass
 
@@ -241,7 +234,6 @@ async def test_empty_oi():
 # 6. Rate-limit retry
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
 async def test_rate_limit_retry_succeeds():
     """
     When the first response is rate-limited and the second is good,
@@ -269,7 +261,6 @@ async def test_rate_limit_retry_succeeds():
     _assert_ohlcv_frame(df)
 
 
-@pytest.mark.asyncio
 async def test_rate_limit_retry_429():
     """HTTP 429 status triggers retry and eventually succeeds."""
     from market_data.coinglass import Coinglass
@@ -294,13 +285,19 @@ async def test_rate_limit_retry_429():
     _assert_ohlcv_frame(df)
 
 
-@pytest.mark.asyncio
 async def test_genuine_error_raises_runtime_error():
-    """Non-rate-limit API error raises RuntimeError immediately."""
+    """Non-rate-limit API error raises RuntimeError immediately with no retry."""
     from market_data.coinglass import Coinglass
 
     client = _make_client()
-    client._http.get = AsyncMock(return_value=_make_response({"code": "1", "msg": "Invalid symbol"}))
+    call_count = 0
+
+    async def side_effect(*args, **kwargs):
+        nonlocal call_count
+        call_count += 1
+        return _make_response({"code": "1", "msg": "Invalid symbol"})
+
+    client._http.get = side_effect
 
     with (
         patch("market_data.coinglass.asyncio.sleep", new=AsyncMock()),
@@ -308,12 +305,39 @@ async def test_genuine_error_raises_runtime_error():
     ):
         await client.ohlcv("INVALID")
 
+    assert call_count == 1, f"Expected exactly 1 call (no retry), got {call_count}"
+
 
 # ──────────────────────────────────────────────────────────────────────────────
-# 7. Concurrency bound
+# 7. Partial-failure universe
 # ──────────────────────────────────────────────────────────────────────────────
 
-@pytest.mark.asyncio
+async def test_fetch_universe_tolerates_partial_failure():
+    """fetch_universe skips failed symbols and returns only the successes."""
+    from market_data.coinglass import Coinglass
+
+    client = _make_client()
+
+    good_frames = {"ohlcv": _sample_ohlcv_df(), "funding": _sample_funding_df(), "oi": _sample_oi_df()}
+
+    async def fetch_symbol_side_effect(symbol: str):
+        if symbol == "BAD":
+            raise RuntimeError("simulated failure for BAD")
+        return good_frames
+
+    with patch.object(Coinglass, "fetch_symbol", side_effect=fetch_symbol_side_effect):
+        result = await client.fetch_universe(["GOOD1", "BAD", "GOOD2"])
+
+    assert "GOOD1" in result, "GOOD1 should be in result"
+    assert "GOOD2" in result, "GOOD2 should be in result"
+    assert "BAD" not in result, "BAD should be absent from result"
+    assert len(result) == 2
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 8. Concurrency bound
+# ──────────────────────────────────────────────────────────────────────────────
+
 async def test_concurrency_bound():
     """
     fetch_universe over 20 fake symbols never exceeds MAX_CONCURRENCY concurrent requests.
@@ -445,7 +469,6 @@ _op_available = shutil.which("op") is not None
 
 
 @pytest.mark.skipif(not _op_available, reason="1Password CLI (op) not available")
-@pytest.mark.asyncio
 async def test_live_btc_pull():
     """
     Real network call — pulls BTC only. Asserts non-empty OHLCV reaching <= 2020,

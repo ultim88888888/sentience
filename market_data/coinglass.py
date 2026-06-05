@@ -216,13 +216,10 @@ class Coinglass:
     async def ohlcv(self, symbol: str) -> pd.DataFrame:
         """Daily OHLCV for `symbol` (e.g. "BTC"). Returns tz-aware-UTC DataFrame."""
         pair = f"{symbol}USDT"
-        try:
-            payload = await self._get(
-                "/api/futures/price/history",
-                params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
-            )
-        except RuntimeError:
-            raise
+        payload = await self._get(
+            "/api/futures/price/history",
+            params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
+        )
         data = payload.get("data", [])
         if not data:
             logger.info("ohlcv(%s): empty data returned", symbol)
@@ -232,13 +229,10 @@ class Coinglass:
     async def funding(self, symbol: str) -> pd.DataFrame:
         """Daily funding-rate OHLC for `symbol`. Returns tz-aware-UTC DataFrame."""
         pair = f"{symbol}USDT"
-        try:
-            payload = await self._get(
-                "/api/futures/funding-rate/history",
-                params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
-            )
-        except RuntimeError:
-            raise
+        payload = await self._get(
+            "/api/futures/funding-rate/history",
+            params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
+        )
         data = payload.get("data", [])
         if not data:
             logger.info("funding(%s): empty data returned", symbol)
@@ -248,13 +242,10 @@ class Coinglass:
     async def open_interest(self, symbol: str) -> pd.DataFrame:
         """Daily open-interest OHLC for `symbol`. Returns tz-aware-UTC DataFrame."""
         pair = f"{symbol}USDT"
-        try:
-            payload = await self._get(
-                "/api/futures/open-interest/history",
-                params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
-            )
-        except RuntimeError:
-            raise
+        payload = await self._get(
+            "/api/futures/open-interest/history",
+            params={"exchange": EXCHANGE, "symbol": pair, "interval": INTERVAL, "limit": LIMIT},
+        )
         data = payload.get("data", [])
         if not data:
             logger.info("open_interest(%s): empty data returned", symbol)
@@ -275,10 +266,24 @@ class Coinglass:
     async def fetch_universe(
         self, symbols: list[str]
     ) -> dict[str, dict[str, pd.DataFrame]]:
-        """Fetch all three series for every symbol, all under the shared limiter/semaphore."""
+        """Fetch all three series for every symbol, all under the shared limiter/semaphore.
+
+        Per-symbol failures are logged and skipped; the returned dict contains only
+        the symbols that succeeded.
+        """
         tasks = [self.fetch_symbol(s) for s in symbols]
-        results = await asyncio.gather(*tasks)
-        return dict(zip(symbols, results))
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        universe: dict[str, dict[str, pd.DataFrame]] = {}
+        for symbol, result in zip(symbols, results):
+            if isinstance(result, Exception):
+                print(
+                    f"  {symbol}: pull failed ({result!r}); skipping",
+                    file=__import__("sys").stderr,
+                    flush=True,
+                )
+            else:
+                universe[symbol] = result
+        return universe
 
 
 # ──────────────────────────────────────────────────────────────────────────────

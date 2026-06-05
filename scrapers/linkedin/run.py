@@ -14,7 +14,7 @@ import httpx
 
 from .config import PARSED_DIR, RAW_DIR, REQUEST_DELAY, RESTRICTED_LIST
 from .fetch import fetch_profile, scrapedo_token
-from .parse import is_thin, parse_profile
+from .parse import is_restricted, parse_profile
 
 
 def normalize_slug(value: str) -> str:
@@ -49,8 +49,8 @@ async def main(slugs: list[str]) -> None:
             (RAW_DIR / f"{slug}.html").write_text(result.html)
             profile = parse_profile(slug, result.html)
             (PARSED_DIR / f"{slug}.json").write_text(profile.model_dump_json(indent=2))
-            if is_thin(profile):
-                print(f"  THIN (name={profile.name!r}) -> flagged for Chrome fallback",
+            if is_restricted(profile, result.html):
+                print(f"  RESTRICTED/THIN (name={profile.name!r}) -> flagged for Chrome fallback",
                       file=sys.stderr)
                 restricted.append(slug)
             else:

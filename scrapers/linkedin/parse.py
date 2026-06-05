@@ -20,13 +20,22 @@ from bs4 import BeautifulSoup
 from .models import Education, Experience, Profile
 
 _DASH = re.compile(r"\s*[–—-]\s*")
+# LinkedIn redacts fields for logged-out viewers of less-public profiles by
+# replacing the text with runs of asterisks ('********** ********').
+_MASK = re.compile(r"\*{3,}")
+
+
+def _unmask(t: str | None) -> str | None:
+    """None for empty or asterisk-masked (redacted) text, else the text."""
+    if not t:
+        return None
+    return None if _MASK.search(t) else t
 
 
 def _text(node) -> str | None:
     if node is None:
         return None
-    t = node.get_text(" ", strip=True)
-    return t or None
+    return _unmask(node.get_text(" ", strip=True))
 
 
 def _ld_person(soup: BeautifulSoup) -> dict:
@@ -119,7 +128,7 @@ def _experience_from_ld(person: dict) -> list[Experience]:
         start = member.get("startDate")
         end = member.get("endDate")
         out.append(Experience(
-            company=(org.get("name") or "").strip() or None,
+            company=_unmask((org.get("name") or "").strip()),
             start=str(start) if start else None,
             end=str(end) if end else None,
         ))
@@ -135,7 +144,7 @@ def _education_from_ld(person: dict) -> list[Education]:
         start = member.get("startDate")
         end = member.get("endDate")
         out.append(Education(
-            school=(org.get("name") or "").strip() or None,
+            school=_unmask((org.get("name") or "").strip()),
             start=str(start) if start else None,
             end=str(end) if end else None,
         ))
@@ -146,16 +155,19 @@ def parse_profile(slug: str, html: str) -> Profile:
     soup = BeautifulSoup(html, "html.parser")
     person = _ld_person(soup)
 
-    name = (person.get("name") or "").strip() or _text(soup.find("h1")) or None
-    bio = (person.get("description") or "").strip() or None
+    name = _unmask((person.get("name") or "").strip()) or _text(soup.find("h1"))
+    bio = _unmask((person.get("description") or "").strip())
 
     location = None
     addr = person.get("address")
     if isinstance(addr, dict):
-        location = addr.get("addressLocality") or None
+        location = _unmask(addr.get("addressLocality"))
 
     experience = _parse_experience(soup) or _experience_from_ld(person)
     education = _parse_education(soup) or _education_from_ld(person)
+    # Drop entries left empty after unmasking (redacted-only rows carry no signal).
+    experience = [e for e in experience if e.title or e.company or e.start]
+    education = [e for e in education if e.school or e.start]
 
     return Profile(
         slug=slug,
@@ -168,7 +180,14 @@ def parse_profile(slug: str, html: str) -> Profile:
     )
 
 
-def is_thin(profile: Profile) -> bool:
-    """A profile with no experience, education, or bio is likely restricted for
-    logged-out viewers — flag it for the authenticated (Chrome) fallback."""
-    return not (profile.experience or profile.education or profile.bio)
+def has_masked_content(html: str) -> bool:
+    """LinkedIn redacts fields for logged-out viewers of less-public profiles with
+    runs of asterisks. Their presence means the public page is partially withheld."""
+    return bool(re.search(r"\*{4,}", html))
+
+
+def is_restricted(profile: Profile, html: str) -> bool:
+    """Flag for the authenticated (Chrome) fallback when the public page yields no
+    usable substance (no experience/education/bio) OR LinkedIn masked its content."""
+    thin = not (profile.experience or profile.education or profile.bio)
+    return thin or has_masked_content(html)

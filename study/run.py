@@ -49,13 +49,12 @@ def main() -> None:
     basket_rets = returns_mod.basket_returns(token_rets, cfg)
 
     STUDY_DIR.mkdir(parents=True, exist_ok=True)
+    # Heatmap shows the fractional-mode coverage share — selected by name, not loop order.
+    heatmap_coverage = coverage_mod.monthly_coverage(corpus, cfg, mode="fractional")
     results = {}
-    heatmap_coverage = None
     for mode in ATTRIBUTION_MODES:
         _log(f"Running attribution mode: {mode}")
         cov = coverage_mod.monthly_coverage(corpus, cfg, mode=mode)
-        if heatmap_coverage is None:
-            heatmap_coverage = cov  # heatmap uses fractional (first) mode
         panel_a = signal_mod.basket_signal_panel(cov, basket_rets, benchmark)
         res_a = study_basket.run_study_a(panel_a)
         res_b = {agg: study_token.run_study_b(cov, token_rets, cfg, agg)

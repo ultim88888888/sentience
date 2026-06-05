@@ -18,7 +18,7 @@ Toy long/short mean spread: -0.0085 | -0.0241
 
 | signal | fwd 1m IC | fwd 3m IC |
 |---|---|---|
-| conviction (sum) | -0.041 (n=48) | -0.043 (n=46) |
+| conviction (sum) | -0.040 (n=48) | -0.043 (n=46) |
 
 Quartile long/short spread: +0.0008 | -0.0067
 
@@ -26,7 +26,7 @@ Quartile long/short spread: +0.0008 | -0.0067
 
 | signal | fwd 1m IC | fwd 3m IC |
 |---|---|---|
-| conviction (mean) | -0.028 (n=48) | -0.057 (n=46) |
+| conviction (mean) | -0.028 (n=48) | -0.056 (n=46) |
 
 Quartile long/short spread: -0.0048 | -0.0210
 
@@ -54,7 +54,7 @@ Quartile long/short spread: -0.0014 | -0.0106
 |---|---|---|
 | conviction (mean) | -0.047 (n=48) | -0.074 (n=46) |
 
-Quartile long/short spread: -0.0070 | -0.0218
+Quartile long/short spread: -0.0070 | -0.0219
 
 ## Coverage heatmap
 

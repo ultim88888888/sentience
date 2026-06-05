@@ -28,3 +28,17 @@ def test_timestamp_and_text():
     items = _by_id(load_research(FIX, "testy-mctest"))
     assert items["100-0"].timestamp.year == 2022 and items["100-0"].timestamp.tzinfo is not None
     assert "token design" in items["100-0"].text
+
+
+def test_nan_acf_falls_back_to_extracted_text(tmp_path):
+    import numpy as np
+    import pandas as pd
+
+    p = tmp_path / "a.parquet"
+    pd.DataFrame([{
+        "object_id": "n-0", "title": "t", "post_date": "2022-01-01T00:00:00+00:00",
+        "author_slugs": ["subj"], "formats": ["articles"],
+        "acf_content": np.nan, "extracted_text": "valid body here",
+    }]).to_parquet(p)
+    items = load_research(p, "subj")
+    assert len(items) == 1 and items[0].text == "valid body here"

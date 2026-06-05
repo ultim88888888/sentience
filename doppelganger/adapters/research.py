@@ -28,8 +28,9 @@ def load_research(articles_path: Path, subject_slug: str) -> list[EvidenceItem]:
         authors = _authors(r["author_slugs"])
         if subject_slug not in authors:
             continue
-        text = r.get("acf_content") or r.get("extracted_text") or ""
-        if not isinstance(text, str) or not text.strip():
+        text = next((v for v in (r.get("acf_content"), r.get("extracted_text"))
+                     if isinstance(v, str) and v.strip()), "")
+        if not text:
             continue
         solo = len(authors) == 1
         ts = pd.to_datetime(r["post_date"], utc=True).to_pydatetime()

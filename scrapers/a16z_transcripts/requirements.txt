@@ -1,0 +1,5 @@
+# In addition to the base scraper requirements (pandas, pyarrow).
+youtube-transcript-api==1.2.4
+requests==2.34.2          # scrape.do proxy/API sessions (also a yt-transcript-api dep)
+mlx-whisper==0.4.3
+# ffmpeg must also be on PATH (brew install ffmpeg) — mlx-whisper shells out to it.

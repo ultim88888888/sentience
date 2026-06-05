@@ -3,3 +3,4 @@
 .venv/
 __pycache__/
 *.pyc
+data/a16z_research/audio_cache/

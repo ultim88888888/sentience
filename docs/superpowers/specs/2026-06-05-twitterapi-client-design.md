@@ -20,13 +20,15 @@ and retweets are in scope. Output is one parquet per user, one row per tweet.
 | Incremental / resume | **Not built (v1)** | Re-scrape is idempotent and cheap. Each run overwrites `<username>.parquet`. |
 | Cross-run dedup | **Not built (v1)** | Single-run overwrite, no merge. |
 
-## Open risk (verify in sprint 1)
+## Open risk — RESOLVED (sprint 1, 2026-06-05)
 
-`advanced_search` runs on Twitter's search index. `from:<user>` reliably returns the
-user's **original tweets, replies, and quotes**, but **pure retweets** may not surface
-through search semantics. Sprint 1 includes a coverage check against a known account.
-If RTs are absent, document it and decide on a `last_tweets` supplement then — **not**
-pre-built (YAGNI).
+`advanced_search`'s `from:<user>` query **excludes native retweets** (confirmed live:
+0 retweets in the base pass vs. retweets present once `filter:nativeretweets` was added).
+Replies and quotes surface fine. **Cure (shipped, not deferred):** `fetch_user` runs a
+second pass with `include:nativeretweets filter:nativeretweets`, unioned + deduped by id —
+complete coverage stays inside `advanced_search`; the `last_tweets` supplement was not
+needed. Live-verified against `@eddylazzarin`: 631 tweets since 2025-01-01
+(407 reply / 141 quote / 82 original / 1 retweet), no dupes, date floor respected.
 
 ## API reference (as of 2026-06-05)
 

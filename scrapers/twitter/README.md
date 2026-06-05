@@ -27,12 +27,13 @@ Pulled at runtime via `op` — never hardcoded.
 Curated columns + a `raw_json` column holding the full tweet object. Type tag precedence:
 `retweet` > `quote` > `reply` > `original`. `created_at` is tz-aware UTC (`datetime64[ns, UTC]`).
 
-## Known limitation (verify per corpus)
+## Retweet coverage
 
-`advanced_search` runs on Twitter's search index. `from:<user>` reliably returns the
-user's originals, replies, and quotes; **pure retweets may be under-represented**.
-If a corpus needs guaranteed retweet coverage, supplement with `user/last_tweets`
-(capped ~3,200 historical tweets). Not built — added only if needed.
+`advanced_search`'s `from:<user>` query excludes native retweets. To capture them,
+`fetch_user` runs a **second pass** with `include:nativeretweets filter:nativeretweets`
+and unions the results (deduped by tweet id). On by default; opt out with `--no-retweets`
+(CLI) or `include_retweets=False` (`pull`). Verified live 2026-06-05 against
+`@eddylazzarin` (replies + quotes + retweets all present).
 
 ## Escape hatch
 

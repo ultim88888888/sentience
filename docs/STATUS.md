@@ -52,6 +52,23 @@ chars/post vs ~1.8k abstracts before). The one miss is a video a16z removed from
 - Re-runs **resume** from already-OK rows. mp3s cached under `data/a16z_research/audio_cache/`
   (gitignored). Run: `python -m scrapers.a16z_transcripts.run`.
 
+## DONE — twitterapi.io scraper (branch `scrape/twitterapi`)
+
+`scrapers/twitter/` scrapes **all posts for a user since a start date** (originals,
+replies, quotes, retweets) via twitterapi.io `advanced_search` → `data/twitter/<user>.parquet`,
+one row per tweet (curated columns + `raw_json`). Pure async REST, shaped like
+`market_data/coinglass.py`. Auth: 1Password item `twitterapi-io` (vault `local`) via `op`.
+
+- Run: `python -m scrapers.twitter.run --user eddylazzarin --since 2025-01-01`
+  (`--until`, `--no-retweets`, repeatable `--user` supported). Programmatic: `run.pull(...)`.
+- **Depth-first** by design: date-windowed `from:user since_time/until_time` reaches any
+  start date (no ~3,200 timeline cap). 19 unit tests (mocked), all green.
+- **Retweet finding (resolved):** `from:user` excludes native retweets; `fetch_user` adds a
+  second `filter:nativeretweets` pass, unioned + deduped by id. Live-verified 2026-06-05 vs
+  `@eddylazzarin`: 631 tweets since 2025-01-01 (407 reply / 141 quote / 82 original / 1 RT),
+  no dupes. See `scrapers/twitter/README.md` + spec `docs/superpowers/specs/2026-06-05-twitterapi-client-design.md`.
+- v1 overwrites per run; no incremental/dedup across runs (YAGNI). Branch not yet merged.
+
 ## Open threads (pick up here)
 
 1. **Define the research question.** This is the real next step. The corpus exists; what are

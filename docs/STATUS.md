@@ -36,6 +36,22 @@ pip install -r scrapers/a16z_research/requirements.txt
 python -m playwright install chromium
 ```
 
+## DONE — video + podcast transcripts (commit `ee4f862`)
+
+`scrapers/a16z_transcripts/` closes the §8 content gap: full spoken transcripts for all
+149 video/podcast posts → `data/a16z_research/transcripts.parquet` (join table on
+`object_id`; the corpus parquet is never mutated). **148/149 OK, 8.38M chars** (median 56k
+chars/post vs ~1.8k abstracts before). The one miss is a video a16z removed from YouTube.
+
+- Videos + 3 podcasts → YouTube captions; 7 YouTube-less podcasts → Simplecast audio →
+  on-device `mlx-whisper` (free, no key; needs `ffmpeg` + Apple Silicon).
+- **Both fetch legs go through scrape.do.** YouTube IP-blocks this machine after ~40 direct
+  caption pulls *and* blocks datacenter proxies → must use the **residential** proxy
+  (`super=true`). Podcast audio uses scrape.do **API mode** (follows Simplecast's 301).
+  Mechanics are non-obvious — read `scrapers/a16z_transcripts/README.md` before touching.
+- Re-runs **resume** from already-OK rows. mp3s cached under `data/a16z_research/audio_cache/`
+  (gitignored). Run: `python -m scrapers.a16z_transcripts.run`.
+
 ## Open threads (pick up here)
 
 1. **Define the research question.** This is the real next step. The corpus exists; what are

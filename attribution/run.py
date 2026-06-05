@@ -68,7 +68,7 @@ def _segments_for_post(row, transcript, roster, mode) -> list[dict]:
             s["method"] = "text"
         return llm
 
-def build(pilot: bool) -> pd.DataFrame:
+def build(pilot: bool, limit: int | None = None) -> pd.DataFrame:
     corpus = pd.read_parquet(CORPUS)
     tx = pd.read_parquet(TRANSCRIPTS)
     tx = tx[tx["status"] == "ok"]
@@ -76,10 +76,13 @@ def build(pilot: bool) -> pd.DataFrame:
     merged = tx.merge(corpus[["object_id", "formats", "author_slugs", "title"]],
                       on="object_id", how="left", suffixes=("", "_corpus"))
     if pilot:
+        # videos first (the seminar-host target; no audio needed, faster), then podcasts.
         merged = pd.concat([
-            merged[merged["formats"].astype(str).str.contains("podcast", na=False)],
             merged[merged["formats"].astype(str).str.contains("video", na=False)].head(20),
+            merged[merged["formats"].astype(str).str.contains("podcast", na=False)],
         ])
+    if limit:
+        merged = merged.head(limit)
     rows = []
     for _, row in merged.iterrows():
         mode = route_post(row).mode
@@ -104,8 +107,9 @@ def build(pilot: bool) -> pd.DataFrame:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pilot", action="store_true")
+    ap.add_argument("--limit", type=int, default=None, help="Cap to first N posts (fast pilot).")
     args = ap.parse_args()
-    df = build(pilot=args.pilot)
+    df = build(pilot=args.pilot, limit=args.limit)
     SEGMENTS_OUT.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(SEGMENTS_OUT, index=False)
     PERSONS_DIR.mkdir(parents=True, exist_ok=True)

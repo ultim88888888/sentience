@@ -14,7 +14,7 @@ TS_CACHE = DATA / "ts_transcripts"  # timestamped whisper re-transcribe (gitigno
 
 # LLM attribution — claude -p on the Max subscription ($0), Opus for precision.
 LLM_MODEL = "opus"          # resolves to claude-opus-4-8
-LLM_EFFORT = "max"
+LLM_EFFORT = "medium"       # structured extraction — max is needlessly slow (~9min/call)
 CHUNK_CHARS = 24000         # transcript chunk size for the LLM pass
 CHUNK_OVERLAP = 1500        # carry-over so a speaker turn is not split blind
 

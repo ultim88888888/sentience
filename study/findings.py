@@ -43,6 +43,8 @@ def render_markdown(results: dict) -> str:
 
 def render_heatmap(coverage: pd.DataFrame) -> None:
     """coverage: long-form [month, basket, coverage_share]. Saves HEATMAP_PNG."""
+    if coverage.empty:
+        return  # nothing to plot (never happens on real data; guards test/edge callers)
     wide = coverage.pivot(index="basket", columns="month", values="coverage_share").fillna(0.0)
     STUDY_DIR.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(max(8, wide.shape[1] * 0.18), 3 + wide.shape[0] * 0.4))

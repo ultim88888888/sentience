@@ -72,3 +72,19 @@ def test_audit_folds_smart_quotes(tmp_path):
     card.write_text('## X\nClaim. [2022-06-01] "TVL isn\'t even a particularly useful metric for lending"\n')
     rep = audit_soul(card, p, date(2022, 12, 31))
     assert rep.ok and rep.matched == 1
+
+
+def test_audit_fuzzy_matches_near_verbatim_fragment(tmp_path):
+    p = tmp_path / "ev.parquet"
+    pd.DataFrame([{"id": "1", "timestamp": pd.Timestamp("2022-06-01", tz="UTC"),
+                   "source_type": "x_original",
+                   "text": "we believe privacy unlocks a whole new region of the design space for builders"}]).to_parquet(p)
+    card = tmp_path / "soul.md"
+    # compressed/trailing-period citation of a real fragment -> grounded under fuzzy match
+    card.write_text('## X\nClaim. [2022-06-01] "Privacy unlocks a whole new region of the design space."\n')
+    rep = audit_soul(card, p, date(2022, 12, 31))
+    assert rep.ok and rep.matched == 1
+    # a true fabrication still fails
+    card.write_text('## X\nClaim. [2022-06-01] "quantum teleportation solves the oracle problem entirely"\n')
+    rep2 = audit_soul(card, p, date(2022, 12, 31))
+    assert not rep2.ok and len(rep2.hallucinated) == 1

@@ -10,9 +10,15 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from datetime import date
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import pandas as pd
+
+# A cited quote counts as grounded if at least this fraction of it appears as one
+# contiguous run inside a real evidence item. Tolerates a trailing period / 1-char
+# typographic drift while still rejecting fabrications (which score near zero).
+_MATCH_THRESHOLD = 0.85
 
 _CITE = re.compile(r'\[(\d{4}-\d{2}-\d{2})\]\s+"([^"]{3,})"')
 
@@ -50,11 +56,22 @@ _QUOTE_FOLD = str.maketrans({
     "‘": "'", "’": "'", "‚": "'", "‛": "'",  # ' ' ‚ ‛
     "“": '"', "”": '"', "„": '"', "‟": '"',  # " " „ ‟
     "′": "'", "″": '"',                                  # ′ ″
+    "—": "-", "–": "-", "―": "-",                          # em / en / horizontal-bar dashes
+    "…": "...",                                            # ellipsis
 })
 
 
 def _norm(s: str) -> str:
     return " ".join(str(s).translate(_QUOTE_FOLD).lower().split())
+
+
+def _coverage(quote_norm: str, text_norm: str) -> float:
+    """Fraction of the (normalized) quote present as one contiguous run in text."""
+    if not quote_norm:
+        return 0.0
+    m = SequenceMatcher(None, quote_norm, text_norm, autojunk=False)
+    longest = m.find_longest_match(0, len(quote_norm), 0, len(text_norm)).size
+    return longest / len(quote_norm)
 
 
 def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:
@@ -69,7 +86,7 @@ def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:
     matched, hallucinated, leaked = 0, [], []
     for c in cites:
         q = _norm(c.quote)
-        hits = [d for text, d in norm_items if q in text]
+        hits = [d for text, d in norm_items if _coverage(q, text) >= _MATCH_THRESHOLD]
         if not hits:
             hallucinated.append(c)            # quote matches no evidence item
         elif min(hits) > t0 or c.date > t0:

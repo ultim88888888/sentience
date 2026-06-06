@@ -33,3 +33,63 @@ def test_build_query_prompt_custom_query():
     system, user = build_query_prompt(SOUL, "mem", "eddy-lazzarin", date(2022, 12, 31),
                                       query="What about ZK rollups?")
     assert "What about ZK rollups?" in user
+
+
+from unittest.mock import patch
+import pandas as pd
+from doppelganger.respond import respond
+
+
+def _canned(fenced=False):
+    body = ('{"as_of":"2022-12-31","subject":"testy-mctest","abstained":false,'
+            '"sectors_excited":[{"name":"DeFi","why":"w","provenance":"grounded","citations":[{"date":"2022-06-01","quote":"q"}]}],'
+            '"sectors_concerned":[],"tokens_excited":[],"tokens_concerned":[],'
+            '"risk_regime":{"stance":"risk_on","why":"w","provenance":"grounded"},"notes":""}')
+    return f"```json\n{body}\n```" if fenced else body
+
+
+def _soul(tmp_path):
+    p = tmp_path / "soul.md"
+    p.write_text("---\nname: Testy McTest\n---\n\n## How He Thinks\nMechanism-first.")
+    return p
+
+
+def _ev(tmp_path):
+    p = tmp_path / "ev.parquet"
+    pd.DataFrame([{"id": "1", "timestamp": pd.Timestamp("2022-06-01", tz="UTC"),
+                   "source_type": "x_original", "text": "Tokens align incentives.", "context": None}]).to_parquet(p)
+    return p
+
+
+def test_respond_parses_and_writes(tmp_path):
+    with patch("doppelganger.respond.run_claude", return_value=_canned(fenced=True)):
+        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
+                       soul_path=_soul(tmp_path), evidence_path=_ev(tmp_path))
+    assert view["subject"] == "testy-mctest" and view["abstained"] is False
+    assert view["sectors_excited"][0]["name"] == "DeFi"
+    assert view["risk_regime"]["stance"] == "risk_on"
+    out = tmp_path / "testy-mctest" / "views" / "2022-12-31.json"
+    assert out.exists()
+    import json as j
+    assert j.loads(out.read_text())["subject"] == "testy-mctest"
+
+
+def test_respond_normalizes_missing_keys(tmp_path):
+    minimal = '{"sectors_excited":[]}'   # everything else missing
+    with patch("doppelganger.respond.run_claude", return_value=minimal):
+        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
+                       soul_path=_soul(tmp_path), evidence_path=_ev(tmp_path))
+    assert view["sectors_concerned"] == [] and view["tokens_excited"] == []
+    assert view["risk_regime"] == {"stance": "no_view"}
+    assert view["abstained"] is False and view["as_of"] == "2022-12-31"
+    assert view["subject"] == "testy-mctest"
+
+
+def test_respond_raises_on_non_json(tmp_path):
+    with patch("doppelganger.respond.run_claude", return_value="I cannot help with that."):
+        try:
+            respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
+                    soul_path=_soul(tmp_path), evidence_path=_ev(tmp_path))
+            assert False, "should raise"
+        except ValueError:
+            pass

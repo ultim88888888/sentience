@@ -65,3 +65,39 @@ e.g. "stated 2021-06, not revisited"); "extrapolated" = inferred from how you th
     user = (f"# YOUR RECORD — everything you've said and seen, through today ({t0.isoformat()})\n\n"
             f"{memory_text}\n\n# QUESTION\n\n{q}")
     return system, user
+
+
+_ARRAYS = ["sectors_excited", "sectors_concerned", "tokens_excited", "tokens_concerned"]
+
+
+def _parse_view(raw: str, subject: str, t0: date) -> dict:
+    i, j = raw.find("{"), raw.rfind("}")
+    if i == -1 or j == -1 or j < i:
+        raise ValueError(f"no JSON object in claude output: {raw[:200]!r}")
+    data = json.loads(raw[i:j + 1])          # json.JSONDecodeError subclasses ValueError
+    for k in _ARRAYS:
+        if not isinstance(data.get(k), list):
+            data[k] = []
+    if not isinstance(data.get("risk_regime"), dict):
+        data["risk_regime"] = {"stance": "no_view"}
+    data.setdefault("as_of", t0.isoformat())
+    data.setdefault("subject", subject)
+    data.setdefault("abstained", False)
+    data.setdefault("notes", "")
+    return data
+
+
+def respond(slug: str, t0: date, *, query: str | None = None,
+            soul_path: Path | None = None, evidence_path: Path | None = None,
+            out_dir: Path | None = None) -> dict:
+    sp = soul_path or (config.OUT_DIR / slug / "soul.md")
+    soul_md = Path(sp).read_text()
+    mv = load_memory(slug, t0, evidence_path=evidence_path)
+    system, user = build_query_prompt(soul_md, mv.text, slug, t0, query)
+    raw = run_claude(system, user)
+    view = _parse_view(raw, slug, t0)
+
+    base = Path(out_dir or config.OUT_DIR) / slug / "views"
+    base.mkdir(parents=True, exist_ok=True)
+    (base / f"{t0.isoformat()}.json").write_text(json.dumps(view, indent=2))
+    return view

@@ -73,7 +73,7 @@ A single **Opus-max** agent, one call. Prompt instructs it to:
 
 **Sizing (measured):** Eddy ≤T0 = 329 items / ~40k tokens; full corpus ~200k tokens. Both fit a single Opus context comfortably — no map-reduce, no retrieval, the whole ≤T0 corpus goes in the prompt.
 
-**Model invocation:** Opus (`claude-opus-4-x`) — exact model id, and whether via the Anthropic SDK under `op run` (programmatic) or a `claude -p --model opus` Max-subscription subprocess (no API cost, the original doppelganger project's pattern), is decided at plan time. **The plan must consult the `claude-api` reference for the current model id and SDK usage.** Default lean: Anthropic SDK under `op run`, matching the repo's `op`-injected-secret convention.
+**Model invocation (decided):** **`claude -p` subprocess on the Max subscription — no API cost.** Pattern from the original doppelganger project (`src/eval/doppelganger-runner.ts`): `claude -p --model opus --effort max --no-session-persistence`, run from an **isolated working dir** (e.g. a temp dir) so the extraction does NOT inherit this repo's / Fushi's `CLAUDE.md`. The bio + ≤T0 evidence + extraction instructions are passed as the prompt; stdout is the soul card. The plan nails the exact flags/invocation (consult `claude-api` for the current `--model` value and the doppelganger runner for the established subprocess pattern). **Not** the Anthropic SDK — chosen specifically to avoid API cost given the walk-forward fans this call out ~40× per subject.
 
 ## 5. Validation (runs now, before Units 3–5 exist)
 
@@ -107,7 +107,7 @@ Consumes Unit 1's `identity.py`/`schema.py`/`config.py`. The LLM call is isolate
 
 ## 8. Open questions for planning
 
-1. **Model invocation** — Anthropic SDK under `op run` vs. `claude -p` subprocess; exact model id (consult `claude-api`).
+1. ~~Model invocation~~ → **decided: `claude -p --model opus --effort max` subprocess, isolated dir, no API cost** (§4). Plan confirms exact `--model` value via `claude-api` + the doppelganger runner pattern.
 2. **Evidence-citation format in the card** — how quotes are marked so the audit can parse them reliably (e.g. a trailing `— [<source_type> <date>] "quote"` convention).
 3. **Audit match strictness** — substring vs. fuzzy threshold for matching a cited quote back to an evidence item (quotes may be lightly trimmed/elided in the card).
 4. **Prompt content** — the actual extraction instructions (the plan writes them; this spec fixes what they must achieve).

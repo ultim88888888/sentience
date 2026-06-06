@@ -7,6 +7,8 @@ from __future__ import annotations
 
 from datetime import date
 from pathlib import Path
+import subprocess
+import tempfile
 
 import pandas as pd
 
@@ -101,3 +103,27 @@ def build_extraction_prompt(identity: IdentityProfile, evidence: pd.DataFrame) -
         ctx_s = f" (context: {ctx})" if isinstance(ctx, str) and ctx else ""
         lines.append(f"[{d}] ({r['source_type']}){ctx_s} {r['text']}")
     return _INSTRUCTIONS, "\n".join(lines)
+
+
+CLAUDE_MODEL = "opus"
+CLAUDE_EFFORT = "max"
+CLAUDE_TIMEOUT_S = 900   # 15 min; soul extraction over a big corpus can be slow
+
+
+def _run_claude(system: str, user: str, *, workdir: Path | None = None,
+                timeout: int = CLAUDE_TIMEOUT_S) -> str:
+    """Run `claude -p` (Max subscription, no API cost) from an isolated dir.
+
+    Instructions go via --system-prompt; the large bio+evidence payload via stdin.
+    Returns stdout (stripped). Raises RuntimeError on non-zero exit.
+    """
+    wd = workdir or Path(tempfile.mkdtemp(prefix="doppelganger-soul-"))
+    Path(wd).mkdir(parents=True, exist_ok=True)
+    proc = subprocess.run(
+        ["claude", "-p", "--model", CLAUDE_MODEL, "--effort", CLAUDE_EFFORT,
+         "--system-prompt", system, "--no-session-persistence"],
+        input=user, cwd=str(wd), capture_output=True, text=True, timeout=timeout,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"claude -p exited {proc.returncode}. stderr:\n{proc.stderr}")
+    return proc.stdout.strip()

@@ -65,3 +65,20 @@ def test_score_subject_computes_lift(tmp_path):
     assert round(m["mean_lift"], 2) == 0.5            # 0.9 - 0.4 per step
     assert len(m["steps"]) == 2
     assert (tmp_path / slug / "metrics.json").exists()
+
+
+from doppelganger.score import write_memo
+
+
+def test_write_memo_renders(tmp_path):
+    metrics = {"subject": "eddy-lazzarin", "horizon_months": 6, "mean_lift": 0.25,
+               "steps": [{"date": "2022-12-31", "full_confirm_rate": 0.9, "ablation_confirm_rate": 0.65,
+                          "lift": 0.25, "missed_changes": ["picked up restaking"], "n_missed_changes": 1}],
+               "coverage": [{"date": "2022-12-31", "grounded": 13, "persisted": 0, "extrapolated": 0}]}
+    p = write_memo(metrics, out_dir=tmp_path)
+    txt = Path(p).read_text()
+    assert p == tmp_path / "eddy-lazzarin" / "findings.md"
+    assert "corpus-lift" in txt.lower() and "0.25" in txt          # headline
+    assert "2022-12-31" in txt and "0.9" in txt and "0.65" in txt  # per-step table
+    assert "picked up restaking" in txt                            # missed change
+    assert "persistence" in txt.lower() and "soul-less" in txt.lower()  # caveats stated

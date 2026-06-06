@@ -78,3 +78,56 @@ def score_subject(slug: str, *, horizon_months: int = 6, out_dir: Path | None = 
     }
     (base / "metrics.json").write_text(json.dumps(metrics, indent=2))
     return metrics
+
+
+def _fmt(x) -> str:
+    if x is None:
+        return "—"
+    if isinstance(x, float):
+        return f"{x:.2f}".rstrip("0").rstrip(".")
+    return str(x)
+
+
+def write_memo(metrics: dict, discrimination: dict | None = None, *, out_dir: Path | None = None) -> Path:
+    slug = metrics["subject"]
+    lift = metrics.get("mean_lift")
+    lines = [
+        f"# Doppelganger findings — {slug}",
+        "",
+        f"**Headline — mean corpus-lift: {_fmt(lift)}** "
+        f"(full confirm-rate minus the soul-less ablation, horizon {metrics['horizon_months']} mo).",
+        "",
+        "_Caveats (read these with the number):_ the lift nets out **persistence** "
+        "(both arms get easy credit for stable views, which partly cancels) and bounds "
+        "**model-hindsight** (the **soul-less** arm is the parametric floor — what Opus produces "
+        "with no corpus). The judge scored only from the subject's provided later statements.",
+        "",
+        "## Per-step held-out prediction",
+        "",
+        "| date | full | ablation (soul-less) | lift |",
+        "|---|---|---|---|",
+    ]
+    for s in metrics["steps"]:
+        lines.append(f"| {s['date']} | {_fmt(s['full_confirm_rate'])} | "
+                     f"{_fmt(s['ablation_confirm_rate'])} | {_fmt(s['lift'])} |")
+    lines += ["", "## Missed changes (foresight gaps)", ""]
+    any_missed = False
+    for s in metrics["steps"]:
+        for mc in s.get("missed_changes", []):
+            lines.append(f"- ({s['date']}) {mc}")
+            any_missed = True
+    if not any_missed:
+        lines.append("- none flagged")
+    lines += ["", "## Coverage trajectory (full arm)", "",
+              "| date | grounded | persisted | extrapolated |", "|---|---|---|---|"]
+    for c in metrics.get("coverage", []):
+        lines.append(f"| {c['date']} | {c['grounded']} | {c['persisted']} | {c['extrapolated']} |")
+    if discrimination is not None:
+        lines += ["", "## Discrimination", "",
+                  f"- sector overlap vs comparator: {_fmt(discrimination.get('sector_overlap'))}",
+                  f"- token overlap vs comparator: {_fmt(discrimination.get('token_overlap'))}"]
+
+    out = Path(out_dir or config.OUT_DIR) / slug / "findings.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(lines) + "\n")
+    return out

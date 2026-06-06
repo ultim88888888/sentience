@@ -22,8 +22,16 @@ def diarize_audio(mp3_path: str):
     """Return [(start, end, voice_label)] from pyannote (local). pyannote v4 uses `token=` and
     returns a DiarizeOutput; we use `exclusive_speaker_diarization` (one speaker per instant —
     clean for mapping whisper segments to turns). Falls back to the legacy Annotation API."""
+    import torch
     from pyannote.audio import Pipeline
     pipe = Pipeline.from_pretrained(PYANNOTE_MODEL, token=_hf_token())
+    # pyannote defaults to CPU even on Apple Silicon — explicitly use the Metal GPU (orders of
+    # magnitude faster; a 90-min episode is hours on CPU). Fall back to CPU if MPS rejects an op.
+    if torch.backends.mps.is_available():
+        try:
+            pipe.to(torch.device("mps"))
+        except Exception:
+            pass
     out = pipe(mp3_path)
     ann = getattr(out, "exclusive_speaker_diarization", None)
     if ann is None:

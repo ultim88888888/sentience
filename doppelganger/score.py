@@ -131,3 +131,26 @@ def write_memo(metrics: dict, discrimination: dict | None = None, *, out_dir: Pa
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(lines) + "\n")
     return out
+
+
+def discrimination_trajectory(slug_a: str, slug_b: str, *, out_dir: Path | None = None) -> dict:
+    """Discrimination between two subjects at every date BOTH have a view — the
+    'distinct minds across time' check. Returns per-date overlaps + the means."""
+    base = Path(out_dir or config.OUT_DIR)
+    da, db = base / slug_a / "views", base / slug_b / "views"
+    dates_a = {p.stem for p in da.glob("*.json")} if da.exists() else set()
+    dates_b = {p.stem for p in db.glob("*.json")} if db.exists() else set()
+
+    pairs = []
+    for ds in sorted(dates_a & dates_b):
+        va = json.loads((da / f"{ds}.json").read_text())
+        vb = json.loads((db / f"{ds}.json").read_text())
+        pairs.append({"date": ds, **discrimination(va, vb)})
+
+    so = [p["sector_overlap"] for p in pairs]
+    to = [p["token_overlap"] for p in pairs]
+    return {
+        "subject_a": slug_a, "subject_b": slug_b, "pairs": pairs,
+        "mean_sector_overlap": (sum(so) / len(so)) if so else None,
+        "mean_token_overlap": (sum(to) / len(to)) if to else None,
+    }

@@ -90,3 +90,26 @@ def test_run_cli_has_score_subcommand():
     assert ns.cmd == "score" and ns.subject == "eddy-lazzarin" and ns.horizon_months == 6
     ns2 = r.build_parser().parse_args(["score", "--subject", "x", "--horizon-months", "3"])
     assert ns2.horizon_months == 3
+
+
+def test_discrimination_trajectory(tmp_path):
+    import json
+    from doppelganger.score import discrimination_trajectory
+
+    def _v(sectors, tokens):
+        return {"sectors_excited": [{"name": s} for s in sectors], "sectors_concerned": [],
+                "tokens_excited": [{"name": t} for t in tokens], "tokens_concerned": []}
+
+    for slug, sec, tok, dates in [("a", ["ZK", "Games"], ["ETH"], ["2022-12-31", "2023-03-31"]),
+                                  ("b", ["ZK", "DAOs"], ["SOL"], ["2022-12-31", "2099-01-01"])]:
+        d = tmp_path / slug / "views"; d.mkdir(parents=True)
+        for ds in dates:
+            (d / f"{ds}.json").write_text(json.dumps(_v(sec, tok)))
+
+    out = discrimination_trajectory("a", "b", out_dir=tmp_path)
+    # only the shared date 2022-12-31 is compared
+    assert [p["date"] for p in out["pairs"]] == ["2022-12-31"]
+    assert round(out["pairs"][0]["sector_overlap"], 2) == 0.33   # {zk,games} vs {zk,daos}
+    assert out["pairs"][0]["token_overlap"] == 0.0               # eth vs sol
+    assert round(out["mean_sector_overlap"], 2) == 0.33
+    assert out["subject_a"] == "a" and out["subject_b"] == "b"

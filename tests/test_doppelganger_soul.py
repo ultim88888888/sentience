@@ -59,34 +59,6 @@ def test_build_extraction_prompt_structure():
 
 
 from unittest.mock import patch, MagicMock
-from doppelganger.soul import _run_claude
-
-
-def test_run_claude_invokes_cli_with_stdin(tmp_path):
-    fake = MagicMock(returncode=0, stdout="## Bio Lens\nok\n", stderr="")
-    with patch("doppelganger.soul.subprocess.run", return_value=fake) as mrun:
-        out = _run_claude("SYS", "USERBODY", workdir=tmp_path)
-    assert out == "## Bio Lens\nok"          # stripped
-    args, kwargs = mrun.call_args
-    cmd = args[0]
-    assert cmd[0] == "claude" and "-p" in cmd
-    assert "--model" in cmd and cmd[cmd.index("--model") + 1] == "opus"
-    assert "--effort" in cmd and cmd[cmd.index("--effort") + 1] == "max"
-    assert "--no-session-persistence" in cmd
-    assert cmd[cmd.index("--system-prompt") + 1] == "SYS"
-    assert kwargs["input"] == "USERBODY"      # big payload via stdin, not argv
-    assert str(kwargs["cwd"]) == str(tmp_path)
-
-
-def test_run_claude_raises_on_nonzero():
-    fake = MagicMock(returncode=2, stdout="", stderr="boom")
-    with patch("doppelganger.soul.subprocess.run", return_value=fake):
-        try:
-            _run_claude("SYS", "U")
-            assert False, "should have raised"
-        except RuntimeError as e:
-            assert "boom" in str(e)
-
 
 from datetime import date as _date
 from doppelganger.soul import extract_soul
@@ -94,7 +66,7 @@ from doppelganger.soul import extract_soul
 
 def test_extract_soul_writes_card_with_frontmatter(tmp_path):
     canned = "## Bio Lens\nQuant lens. [2022-06-01] \"Tokens align incentives.\"\n"
-    with patch("doppelganger.soul._run_claude", return_value=canned):
+    with patch("doppelganger.soul.run_claude", return_value=canned):
         out = extract_soul(
             "testy-mctest", _date(2022, 8, 31), out_dir=tmp_path,
             identity_path=FIX / "linkedin" / "testy-1.json", team_path=FIX / "team.parquet",

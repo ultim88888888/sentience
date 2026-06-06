@@ -1,20 +1,19 @@
 """doppelganger.soul — build the frozen-at-T0 soul card via a single claude -p pass.
 
-The LLM call is isolated in `_run_claude` so the rest is deterministically testable.
+The LLM call is isolated in `llm.run_claude` so the rest is deterministically testable.
 """
 
 from __future__ import annotations
 
 from datetime import date
 from pathlib import Path
-import subprocess
-import tempfile
 
 import pandas as pd
 
 from doppelganger import config
 from doppelganger.identity import build_identity
 from doppelganger.ingest import build_evidence_stream
+from doppelganger.llm import CLAUDE_EFFORT, CLAUDE_MODEL, run_claude
 from doppelganger.schema import IdentityProfile
 
 
@@ -105,30 +104,6 @@ def build_extraction_prompt(identity: IdentityProfile, evidence: pd.DataFrame) -
     return _INSTRUCTIONS, "\n".join(lines)
 
 
-CLAUDE_MODEL = "opus"
-CLAUDE_EFFORT = "max"
-CLAUDE_TIMEOUT_S = 900   # 15 min; soul extraction over a big corpus can be slow
-
-
-def _run_claude(system: str, user: str, *, workdir: Path | None = None,
-                timeout: int = CLAUDE_TIMEOUT_S) -> str:
-    """Run `claude -p` (Max subscription, no API cost) from an isolated dir.
-
-    Instructions go via --system-prompt; the large bio+evidence payload via stdin.
-    Returns stdout (stripped). Raises RuntimeError on non-zero exit.
-    """
-    wd = workdir or Path(tempfile.mkdtemp(prefix="doppelganger-soul-"))
-    Path(wd).mkdir(parents=True, exist_ok=True)
-    proc = subprocess.run(
-        ["claude", "-p", "--model", CLAUDE_MODEL, "--effort", CLAUDE_EFFORT,
-         "--system-prompt", system, "--no-session-persistence"],
-        input=user, cwd=str(wd), capture_output=True, text=True, timeout=timeout,
-    )
-    if proc.returncode != 0:
-        raise RuntimeError(f"claude -p exited {proc.returncode}. stderr:\n{proc.stderr}")
-    return proc.stdout.strip()
-
-
 def _frontmatter(slug: str, name: str, t0: date, evidence: pd.DataFrame) -> str:
     if len(evidence):
         span = (f"{pd.Timestamp(evidence['timestamp'].min()).date()}.."
@@ -165,7 +140,7 @@ def extract_soul(
         twitter_path=twitter_path, articles_path=articles_path, podcast_path=podcast_path,
     )
     system, user = build_extraction_prompt(identity, evidence)
-    card = _run_claude(system, user)
+    card = run_claude(system, user)
 
     base = Path(out_dir or config.OUT_DIR) / slug
     base.mkdir(parents=True, exist_ok=True)

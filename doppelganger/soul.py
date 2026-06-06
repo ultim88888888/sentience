@@ -127,3 +127,48 @@ def _run_claude(system: str, user: str, *, workdir: Path | None = None,
     if proc.returncode != 0:
         raise RuntimeError(f"claude -p exited {proc.returncode}. stderr:\n{proc.stderr}")
     return proc.stdout.strip()
+
+
+def _frontmatter(slug: str, name: str, t0: date, evidence: pd.DataFrame) -> str:
+    if len(evidence):
+        span = (f"{pd.Timestamp(evidence['timestamp'].min()).date()}.."
+                f"{pd.Timestamp(evidence['timestamp'].max()).date()}")
+    else:
+        span = ""
+    return (
+        "---\n"
+        f"subject: {slug}\n"
+        f"name: {name}\n"
+        f"t0: {t0.isoformat()}\n"
+        f"built_from:\n"
+        f"  evidence_items: {len(evidence)}\n"
+        f"  span: \"{span}\"\n"
+        f"  model: claude-opus ({CLAUDE_MODEL}/{CLAUDE_EFFORT})\n"
+        "---\n\n"
+    )
+
+
+def extract_soul(
+    slug: str, t0: date, *,
+    out_dir: Path | None = None,
+    evidence_path: Path | None = None,
+    identity_path: Path | None = None,
+    team_path: Path | None = None,
+    tracked_people_path: Path | None = None,
+    twitter_path: Path | None = None,
+    articles_path: Path | None = None,
+    podcast_path: Path | None = None,
+) -> Path:
+    identity, evidence = load_soul_inputs(
+        slug, t0, evidence_path=evidence_path, identity_path=identity_path,
+        team_path=team_path, tracked_people_path=tracked_people_path,
+        twitter_path=twitter_path, articles_path=articles_path, podcast_path=podcast_path,
+    )
+    system, user = build_extraction_prompt(identity, evidence)
+    card = _run_claude(system, user)
+
+    base = Path(out_dir or config.OUT_DIR) / slug
+    base.mkdir(parents=True, exist_ok=True)
+    path = base / "soul.md"
+    path.write_text(_frontmatter(slug, identity.name, t0, evidence) + card.strip() + "\n")
+    return path

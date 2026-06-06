@@ -86,3 +86,27 @@ def test_run_claude_raises_on_nonzero():
             assert False, "should have raised"
         except RuntimeError as e:
             assert "boom" in str(e)
+
+
+from datetime import date as _date
+from doppelganger.soul import extract_soul
+
+
+def test_extract_soul_writes_card_with_frontmatter(tmp_path):
+    canned = "## Bio Lens\nQuant lens. [2022-06-01] \"Tokens align incentives.\"\n"
+    with patch("doppelganger.soul._run_claude", return_value=canned):
+        out = extract_soul(
+            "testy-mctest", _date(2022, 8, 31), out_dir=tmp_path,
+            identity_path=FIX / "linkedin" / "testy-1.json", team_path=FIX / "team.parquet",
+            tracked_people_path=FIX / "tracked_people.yaml",
+            twitter_path=FIX / "twitter" / "testy.parquet",
+            articles_path=FIX / "articles.parquet",
+            podcast_path=FIX / "attributed_transcripts.jsonl",
+        )
+    text = Path(out).read_text()
+    assert out == tmp_path / "testy-mctest" / "soul.md"
+    assert text.startswith("---\n")                 # YAML frontmatter
+    assert "subject: testy-mctest" in text
+    assert "t0: 2022-08-31" in text
+    assert "evidence_items:" in text
+    assert "## Bio Lens" in text and "Tokens align incentives." in text

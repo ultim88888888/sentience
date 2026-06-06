@@ -110,3 +110,10 @@ def test_extract_soul_writes_card_with_frontmatter(tmp_path):
     assert "t0: 2022-08-31" in text
     assert "evidence_items:" in text
     assert "## Bio Lens" in text and "Tokens align incentives." in text
+
+
+def test_run_cli_has_soul_subcommand():
+    import doppelganger.run as r
+    parser = r.build_parser()
+    ns = parser.parse_args(["soul", "--subject", "eddy-lazzarin", "--t0", "2022-12-31"])
+    assert ns.cmd == "soul" and ns.subject == "eddy-lazzarin" and ns.t0 == "2022-12-31"

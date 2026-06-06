@@ -21,3 +21,26 @@ python -m doppelganger.run ingest --subject eddy-lazzarin
 
 ### Tuning (`doppelganger/config.py`)
 `MIN_REPLY_CONTENT_CHARS=50`, `PODCAST_MIN_CONFIDENCE=0.8` — documented defaults, eval-tuned later.
+
+## Unit 2 — Soul
+
+Builds the frozen-at-T0 "soul card" — the view-generating characterization the doppelganger
+reasons through — via a single `claude -p` pass (Max subscription, no API cost) over the
+subject's bio + evidence dated <= T0.
+
+```bash
+python -m doppelganger.run soul --subject eddy-lazzarin --t0 2022-12-31
+```
+
+Output: `data/doppelganger/<slug>/soul.md` (YAML frontmatter + views-first Markdown sections;
+every claim cites a dated quote as `[YYYY-MM-DD] "verbatim"`).
+
+Audit a card (every cited quote must exist in <= T0 evidence and not be time-leaked):
+
+```python
+from datetime import date
+from doppelganger.soul_audit import audit_soul
+rep = audit_soul("data/doppelganger/eddy-lazzarin/soul.md",
+                 "data/doppelganger/eddy-lazzarin/evidence.parquet", date(2022, 12, 31))
+print(rep.ok, rep.checked, rep.matched, len(rep.hallucinated), len(rep.leaked))
+```

@@ -45,3 +45,59 @@ def load_soul_inputs(
     ev["timestamp"] = pd.to_datetime(ev["timestamp"], utc=True)
     ev = ev[ev["timestamp"].dt.date <= t0].sort_values("timestamp").reset_index(drop=True)
     return identity, ev
+
+
+SECTIONS = [
+    "Bio Lens", "How He Thinks", "What He Believes",
+    "What He Attends To", "Open Contradictions", "How He Talks",
+]
+
+_INSTRUCTIONS = f"""You are an expert analyst building a CHARACTERIZATION of a person \
+from their own words, to be used as a lens for reconstructing their market views. \
+You are given the subject's bio and the complete record of what they said up to a cutoff date.
+
+Write a Markdown "soul card" with EXACTLY these H2 sections, in this order \
+(views first; voice last):
+
+1. ## Bio Lens — how their background shapes their analytical lens. Note where the \
+corpus CONFIRMS vs OVERRIDES what the bio alone would predict.
+2. ## How He Thinks — their reasoning *moves*, epistemic style (how they update, hedge, \
+calibrate certainty), and named frameworks / mental models. This is the priority section.
+3. ## What He Believes — durable, RECURRING convictions only (stable across the whole span). \
+Exclude one-off or volatile positions.
+4. ## What He Attends To — what they fixate on vs. dismiss.
+5. ## Open Contradictions — genuine tensions in their thinking. Preserve them; never average away.
+6. ## How He Talks — brief; lowest priority. Only register/voice that reveals how they think.
+
+RULES:
+- Ground EVERY factual claim in the evidence. Immediately after each claim, cite it inline \
+in EXACTLY this format: a bracketed ISO date then the verbatim quote in straight double quotes — \
+[<YYYY-MM-DD>] "exact quote from the evidence". Keep quotes <= 25 words, verbatim, no ellipsis.
+- Use ONLY the provided evidence. Do not use anything you know about this person from outside it. \
+Do not reference events after the cutoff.
+- Be specific and concrete. Generic statements that could describe any investor are failures.
+- Weight solo first-person evidence over co-authored/firm material.
+
+Output ONLY the Markdown soul card (starting with the first ## heading). No preamble."""
+
+
+def build_extraction_prompt(identity: IdentityProfile, evidence: pd.DataFrame) -> tuple[str, str]:
+    """Return (system_instructions, user_content). user_content is piped to claude via stdin."""
+    lines = [f"# SUBJECT: {identity.name} ({identity.slug})", ""]
+    lines.append("## BIO")
+    lines.append(f"Headline: {identity.headline or ''}")
+    lines.append(f"Current role (as of cutoff): {identity.current_role or ''}")
+    lines.append(f"Bio: {identity.bio or ''}")
+    if identity.experience:
+        lines.append("Experience: " + "; ".join(
+            f"{e.title} @ {e.company}" for e in identity.experience))
+    if identity.education:
+        lines.append("Education: " + "; ".join(
+            f"{e.degree or ''} {e.field or ''} @ {e.school}".strip() for e in identity.education))
+    lines += ["", f"## EVIDENCE ({len(evidence)} items, chronological)", ""]
+    for _, r in evidence.iterrows():
+        d = pd.Timestamp(r["timestamp"]).date().isoformat()
+        ctx = r.get("context")
+        ctx_s = f" (context: {ctx})" if isinstance(ctx, str) and ctx else ""
+        lines.append(f"[{d}] ({r['source_type']}){ctx_s} {r['text']}")
+    return _INSTRUCTIONS, "\n".join(lines)

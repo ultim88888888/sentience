@@ -18,6 +18,7 @@ from doppelganger.ingest import ingest
 from doppelganger.memory import load_memory
 from doppelganger.respond import respond
 from doppelganger.soul import extract_soul
+from doppelganger.score import score_subject, write_memo
 from doppelganger.walkforward import quarter_ends, run_walkforward
 
 
@@ -46,6 +47,10 @@ def build_parser() -> argparse.ArgumentParser:
     wf.add_argument("--start", default="2022-12-31", help="schedule start YYYY-MM-DD")
     wf.add_argument("--end", default=None, help="schedule end YYYY-MM-DD (default: latest evidence date)")
     wf.add_argument("--no-ablate", action="store_true", help="skip the soul-only ablation arm")
+
+    sc = sub.add_parser("score", help="judge the walk-forward trajectory -> metrics.json + findings.md")
+    sc.add_argument("--subject", required=True, help="subject slug, e.g. eddy-lazzarin")
+    sc.add_argument("--horizon-months", type=int, default=6, help="held-out window length (months)")
     return parser
 
 
@@ -75,6 +80,10 @@ def main() -> None:
         dates = quarter_ends(start, end)
         rows = run_walkforward(args.subject, dates, ablate=not args.no_ablate)
         print(f"{len(rows)} rows over {len(dates)} dates -> {config.OUT_DIR / args.subject / 'walkforward.json'}")
+    elif args.cmd == "score":
+        metrics = score_subject(args.subject, horizon_months=args.horizon_months)
+        memo = write_memo(metrics)
+        print(f"mean_lift={metrics['mean_lift']} -> {config.OUT_DIR / args.subject / 'metrics.json'} + {memo}")
 
 
 if __name__ == "__main__":

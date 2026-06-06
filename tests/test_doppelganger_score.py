@@ -82,3 +82,11 @@ def test_write_memo_renders(tmp_path):
     assert "2022-12-31" in txt and "0.9" in txt and "0.65" in txt  # per-step table
     assert "picked up restaking" in txt                            # missed change
     assert "persistence" in txt.lower() and "soul-less" in txt.lower()  # caveats stated
+
+
+def test_run_cli_has_score_subcommand():
+    import doppelganger.run as r
+    ns = r.build_parser().parse_args(["score", "--subject", "eddy-lazzarin"])
+    assert ns.cmd == "score" and ns.subject == "eddy-lazzarin" and ns.horizon_months == 6
+    ns2 = r.build_parser().parse_args(["score", "--subject", "x", "--horizon-months", "3"])
+    assert ns2.horizon_months == 3

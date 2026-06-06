@@ -7,6 +7,7 @@ from datetime import date
 from pathlib import Path
 
 from doppelganger import config
+from doppelganger.judge import judge_step, post_t_evidence
 
 _NAMED = ["sectors_excited", "sectors_concerned", "tokens_excited", "tokens_concerned"]
 
@@ -38,3 +39,42 @@ def coverage_trajectory(rows: list[dict]) -> list[dict]:
     return [{"date": r["date"], "grounded": r["grounded"], "persisted": r["persisted"],
              "extrapolated": r["extrapolated"]}
             for r in rows if r.get("variant") == "full"]
+
+
+def score_subject(slug: str, *, horizon_months: int = 6, out_dir: Path | None = None,
+                  evidence_path: Path | None = None) -> dict:
+    base = Path(out_dir or config.OUT_DIR) / slug
+    wf = json.loads((base / "walkforward.json").read_text())
+    ev_path = evidence_path or (base / "evidence.parquet")
+
+    steps = []
+    for ds in wf["dates"]:
+        t0 = date.fromisoformat(ds)
+        post = post_t_evidence(slug, t0, horizon_months, evidence_path=ev_path)
+        if not post:
+            continue                                   # no held-out future -> unscorable
+        row = {"date": ds, "full_confirm_rate": None, "ablation_confirm_rate": None,
+               "lift": None, "missed_changes": [], "n_missed_changes": 0}
+        for variant, sub in [("full", "views"), ("ablation", "views_ablation")]:
+            vpath = base / sub / f"{ds}.json"
+            if not vpath.exists():
+                continue
+            view = json.loads(vpath.read_text())
+            jp = base / "judge" / sub / f"{ds}.json"
+            v = judge_step(view, post, wf["subject"], t0, judge_path=jp)
+            row[f"{variant}_confirm_rate"] = v.get("confirm_rate")
+            if variant == "full":
+                row["missed_changes"] = v.get("missed_changes", [])
+                row["n_missed_changes"] = len(v.get("missed_changes", []))
+        if row["full_confirm_rate"] is not None and row["ablation_confirm_rate"] is not None:
+            row["lift"] = row["full_confirm_rate"] - row["ablation_confirm_rate"]
+        steps.append(row)
+
+    lifts = [s["lift"] for s in steps if s["lift"] is not None]
+    metrics = {
+        "subject": slug, "horizon_months": horizon_months,
+        "mean_lift": (sum(lifts) / len(lifts)) if lifts else None,
+        "steps": steps, "coverage": coverage_trajectory(wf["rows"]),
+    }
+    (base / "metrics.json").write_text(json.dumps(metrics, indent=2))
+    return metrics

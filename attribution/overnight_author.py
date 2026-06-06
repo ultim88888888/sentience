@@ -6,7 +6,12 @@ Self-terminates when every transcribable post for the author is either attribute
 terminal transcript failure. Crash-safe and resumable: re-running skips already-attributed
 posts.
 
-  python -m attribution.overnight_author --author eddy-lazzarin
+  python -m attribution.overnight_author --author eddy-lazzarin   # one author
+  python -m attribution.overnight_author --all --no-wait          # whole corpus, no polling
+
+--all targets the entire video|podcast corpus (full-roster — each post names ALL its speakers).
+--no-wait finishes once every OK-transcribed target is attributed instead of polling for
+posts that have no transcript yet (use when transcription is already complete).
 """
 import argparse
 import datetime as dt
@@ -27,15 +32,25 @@ def _log(m: str) -> None:
     print(f"{dt.datetime.now(dt.timezone.utc).isoformat()} {m}", flush=True)
 
 
-def _author_post_ids(author: str) -> set:
+def _conversational_corpus() -> pd.DataFrame:
     corpus = pd.read_parquet(CORPUS)
+    return corpus[corpus["formats"].astype(str).str.contains("video|podcast", na=False)]
+
+
+def _author_post_ids(author: str) -> set:
     def has(a):
         try:
             return author in list(a)
         except TypeError:
             return False
-    vp = corpus[corpus["formats"].astype(str).str.contains("video|podcast", na=False)]
+    vp = _conversational_corpus()
     return set(vp[vp["author_slugs"].apply(has)]["object_id"])
+
+
+def _all_post_ids() -> set:
+    """Every video|podcast post — full-roster attribution (each post names ALL its speakers,
+    so attributing the whole corpus once covers the entire a16z team)."""
+    return set(_conversational_corpus()["object_id"])
 
 
 def _load_attributed_ids() -> set:
@@ -52,7 +67,7 @@ def _append_segments(new_rows: list[dict]) -> None:
     tmp.rename(SEGMENTS_OUT)
 
 
-def _rebuild_outputs(author: str) -> None:
+def _rebuild_outputs(label: str) -> None:
     """The ONLY deliverable is the per-post tagged-transcript dataset (jsonl) + a stats report.
     No per-person files — the doppelganger engine matches/assembles from the jsonl itself."""
     seg = pd.read_parquet(SEGMENTS_OUT)
@@ -63,7 +78,7 @@ def _rebuild_outputs(author: str) -> None:
                  .groupby("slug").size().sort_values(ascending=False))
     with open(REPORT_OUT, "w") as f:
         f.write(f"# Attribution report ({dt.datetime.now(dt.timezone.utc).isoformat()})\n\n")
-        f.write(f"priority author: {author}\n")
+        f.write(f"scope: {label}\n")
         f.write(f"posts: {seg['post_id'].nunique()} | segments: {len(seg)} | "
                 f"kept: {kept} | dropped: {len(seg)-kept}\n")
         f.write(f"canonical deliverable: attributed_transcripts.jsonl ({n} post records)\n\n")
@@ -91,12 +106,21 @@ def _attribute_post(row, roster) -> list[dict]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--author", required=True, help="Roster slug to attribute (e.g. eddy-lazzarin).")
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--author", help="Roster slug to attribute (e.g. eddy-lazzarin).")
+    g.add_argument("--all", action="store_true",
+                   help="Attribute the WHOLE video|podcast corpus (full-roster). Resumable: "
+                        "skips already-attributed posts, checkpoints after each.")
+    ap.add_argument("--no-wait", action="store_true",
+                    help="Don't poll for not-yet-transcribed posts; finish once all currently "
+                         "OK-transcribed targets are attributed. Use when transcription is done.")
     args = ap.parse_args()
+    label = "all" if args.all else args.author
     roster = Roster.load()
-    target = _author_post_ids(args.author)
+    target = _all_post_ids() if args.all else _author_post_ids(args.author)
     corpus = pd.read_parquet(CORPUS)[["object_id", "formats", "author_slugs", "title"]]
-    _log(f"author {args.author}: {len(target)} transcribable posts to attribute.")
+    _log(f"scope {label}: {len(target)} transcribable posts targeted "
+         f"({len(target & _load_attributed_ids())} already attributed, will skip).")
 
     fail_count: dict[str, int] = {}
     give_up: set = set()           # posts that failed attribution past the cap — stop retrying
@@ -114,6 +138,10 @@ def main() -> None:
             if not remaining:
                 _log(f"all {len(target)} posts done (attributed or terminal). finishing.")
                 break
+            if args.no_wait:
+                _log(f"no-wait: {len(remaining)} target posts have no OK transcript; "
+                     f"skipping {sorted(remaining)[:10]}{'...' if len(remaining) > 10 else ''}.")
+                break
             _log(f"waiting for transcripts: {len(remaining)} of {len(target)} not ready yet.")
             time.sleep(POLL_SECONDS)
             continue
@@ -122,7 +150,7 @@ def main() -> None:
             try:
                 rows = _attribute_post(row, roster)
                 _append_segments(rows)
-                _rebuild_outputs(args.author)
+                _rebuild_outputs(label)
                 kept = sum(r["kept"] for r in rows)
                 _log(f"  attributed {row['object_id']} ({len(rows)} segs, {kept} kept) "
                      f"{str(row['title'])[:42]!r}")

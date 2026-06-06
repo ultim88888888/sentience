@@ -7,6 +7,7 @@ Two failure modes the audit catches:
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from datetime import date
@@ -74,10 +75,7 @@ def _coverage(quote_norm: str, text_norm: str) -> float:
     return longest / len(quote_norm)
 
 
-def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:
-    card = Path(card_path).read_text()
-    cites = parse_citations(card)
-
+def audit_citations(cites: list[Citation], evidence_path: Path, t0: date) -> AuditReport:
     ev = pd.read_parquet(evidence_path)
     ev["timestamp"] = pd.to_datetime(ev["timestamp"], utc=True)
     norm_items = [(_norm(t), pd.Timestamp(ts).date())
@@ -88,9 +86,33 @@ def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:
         q = _norm(c.quote)
         hits = [d for text, d in norm_items if _coverage(q, text) >= _MATCH_THRESHOLD]
         if not hits:
-            hallucinated.append(c)            # quote matches no evidence item
+            hallucinated.append(c)
         elif min(hits) > t0 or c.date > t0:
-            leaked.append(c)                  # only matches post-t0 items, or cites a post-t0 date
+            leaked.append(c)
         else:
             matched += 1
     return AuditReport(len(cites), matched, hallucinated, leaked)
+
+
+def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:
+    cites = parse_citations(Path(card_path).read_text())
+    return audit_citations(cites, evidence_path, t0)
+
+
+_ANSWER_ARRAYS = ["sectors_excited", "sectors_concerned", "tokens_excited", "tokens_concerned"]
+
+
+def audit_answer(view, evidence_path: Path, t0: date) -> AuditReport:
+    """Audit a market-view JSON (dict or path) — pull {date,quote} citations and check them."""
+    if isinstance(view, (str, Path)):
+        view = json.loads(Path(view).read_text())
+    cites: list[Citation] = []
+    for key in _ANSWER_ARRAYS:
+        for item in view.get(key, []) or []:
+            for c in item.get("citations", []) or []:
+                try:
+                    y, m, d = (int(x) for x in str(c["date"]).split("-"))
+                    cites.append(Citation(date(y, m, d), str(c["quote"])))
+                except (KeyError, ValueError, TypeError):
+                    continue
+    return audit_citations(cites, evidence_path, t0)

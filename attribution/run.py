@@ -9,12 +9,10 @@ import glob
 
 import pandas as pd
 
-from .config import (AUDIO_CACHE, CORPUS, HOST_PRIOR, PERSONS_DIR, REPORT_OUT, SEGMENTS_OUT,
-                     TRANSCRIPTS)
+from .config import AUDIO_CACHE, CORPUS, HOST_PRIOR, REPORT_OUT, SEGMENTS_OUT, TRANSCRIPTS
 from .route import route_post, CONVERSATIONAL
 from .roster import Roster
 from .gate import gate_segment
-from .assemble import build_person_corpus
 
 def _log(m): print(m, flush=True)
 
@@ -114,22 +112,22 @@ def main():
     df = build(pilot=args.pilot, limit=args.limit, diarize=args.diarize)
     SEGMENTS_OUT.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(SEGMENTS_OUT, index=False)
-    PERSONS_DIR.mkdir(parents=True, exist_ok=True)
-    corp = build_person_corpus(df, min_segments=3) if len(df) else {}
-    for slug, text in corp.items():
-        (PERSONS_DIR / f"{slug}.txt").write_text(text)
+    # Canonical deliverable: per-post tagged-transcript records + metadata (jsonl). No
+    # per-person files — the doppelganger engine matches/assembles from the jsonl itself.
+    from .records import export as export_records
+    n = export_records(df) if len(df) else 0
     kept = int(df["kept"].sum()) if len(df) else 0
+    a16z_kept = (df[(df["is_a16z"] == True) & (df["kept"] == True)].groupby("slug").size()  # noqa: E712
+                 .sort_values(ascending=False)) if len(df) else {}
     with open(REPORT_OUT, "w") as f:
         f.write(f"# Attribution report ({dt.datetime.now(dt.timezone.utc).isoformat()})\n\n")
-        f.write(f"- segments: {len(df)} | kept: {kept} | dropped: {len(df)-kept}\n")
-        f.write(f"- a16z people with corpus: {len(corp)}\n\n")
-        if len(df):
-            f.write("## Dropped reasons\n")
-            f.write(df[~df['kept']]['dropped_reason'].value_counts().to_string())
-            f.write("\n\n## Per-person kept chars\n")
-            for slug, text in sorted(corp.items(), key=lambda x: -len(x[1])):
-                f.write(f"- {slug}: {len(text):,}\n")
-    _log(f"Wrote {SEGMENTS_OUT} ({len(df)} segs, {kept} kept), {len(corp)} person corpora")
+        f.write(f"posts: {df['post_id'].nunique() if len(df) else 0} | segments: {len(df)} | "
+                f"kept: {kept} | dropped: {len(df)-kept}\n")
+        f.write(f"canonical deliverable: attributed_transcripts.jsonl ({n} post records)\n\n")
+        f.write("## a16z kept segments by person\n")
+        for slug, c in (a16z_kept.items() if len(df) else []):
+            f.write(f"- {slug}: {c}\n")
+    _log(f"Wrote {SEGMENTS_OUT} ({len(df)} segs, {kept} kept) + attributed_transcripts.jsonl ({n})")
 
 if __name__ == "__main__":
     main()

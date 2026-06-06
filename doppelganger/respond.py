@@ -89,15 +89,16 @@ def _parse_view(raw: str, subject: str, t0: date) -> dict:
 
 def respond(slug: str, t0: date, *, query: str | None = None,
             soul_path: Path | None = None, evidence_path: Path | None = None,
-            out_dir: Path | None = None) -> dict:
+            out_dir: Path | None = None, ablate_memory: bool = False) -> dict:
     sp = soul_path or (config.OUT_DIR / slug / "soul.md")
     soul_md = Path(sp).read_text()
-    mv = load_memory(slug, t0, evidence_path=evidence_path)
-    system, user = build_query_prompt(soul_md, mv.text, slug, t0, query)
+    memory_text = "" if ablate_memory else load_memory(slug, t0, evidence_path=evidence_path).text
+    system, user = build_query_prompt(soul_md, memory_text, slug, t0, query)
     raw = run_claude(system, user)
     view = _parse_view(raw, slug, t0)
 
-    base = Path(out_dir or config.OUT_DIR) / slug / "views"
+    subdir = "views_ablation" if ablate_memory else "views"
+    base = Path(out_dir or config.OUT_DIR) / slug / subdir
     base.mkdir(parents=True, exist_ok=True)
     (base / f"{t0.isoformat()}.json").write_text(json.dumps(view, indent=2))
     return view

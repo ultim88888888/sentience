@@ -102,3 +102,23 @@ def test_run_cli_has_respond_subcommand():
     assert ns.query is None
     ns2 = r.build_parser().parse_args(["respond", "--subject", "x", "--t0", "2022-12-31", "--query", "Q"])
     assert ns2.query == "Q"
+
+
+def test_respond_ablate_memory_uses_empty_memory_and_separate_dir(tmp_path):
+    captured = {}
+
+    def fake_run(system, user):
+        captured["user"] = user
+        return '{"sectors_excited":[{"name":"X","provenance":"extrapolated","citations":[]}]}'
+
+    with patch("doppelganger.respond.run_claude", side_effect=fake_run):
+        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
+                       soul_path=_soul(tmp_path), ablate_memory=True)
+    # written to the ablation dir, NOT the normal views dir
+    assert (tmp_path / "testy-mctest" / "views_ablation" / "2022-12-31.json").exists()
+    assert not (tmp_path / "testy-mctest" / "views" / "2022-12-31.json").exists()
+    # the record section is present but EMPTY (no memory fed)
+    assert "YOUR RECORD" in captured["user"]
+    between = captured["user"].split("YOUR RECORD", 1)[1].split("# QUESTION", 1)[0]
+    assert between.strip().splitlines()[1:] == []   # nothing between the header line and the question
+    assert view["sectors_excited"][0]["provenance"] == "extrapolated"

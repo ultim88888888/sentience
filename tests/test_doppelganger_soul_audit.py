@@ -61,3 +61,14 @@ def test_audit_flags_leaked_future_quote(tmp_path):
     card.write_text('## X\nClaim. [2023-03-01] "ZK rollups are the endgame"\n')
     rep = audit_soul(card, ev, date(2022, 12, 31))
     assert not rep.ok and len(rep.leaked) == 1
+
+
+def test_audit_folds_smart_quotes(tmp_path):
+    p = tmp_path / "ev.parquet"
+    pd.DataFrame([{"id": "1", "timestamp": pd.Timestamp("2022-06-01", tz="UTC"),
+                   "source_type": "x_original",
+                   "text": "tvl isn’t even a particularly useful metric for lending"}]).to_parquet(p)
+    card = tmp_path / "soul.md"
+    card.write_text('## X\nClaim. [2022-06-01] "TVL isn\'t even a particularly useful metric for lending"\n')
+    rep = audit_soul(card, p, date(2022, 12, 31))
+    assert rep.ok and rep.matched == 1

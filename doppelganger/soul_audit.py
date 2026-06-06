@@ -43,8 +43,18 @@ class AuditReport:
         return not self.hallucinated and not self.leaked
 
 
+# Fold typographic quotes/apostrophes so cited quotes match raw corpus text.
+# The corpus uses curly quotes (e.g. "can't", "endgame"); models tend to cite
+# with straight quotes. Without folding, real quotes read as hallucinated.
+_QUOTE_FOLD = str.maketrans({
+    "‘": "'", "’": "'", "‚": "'", "‛": "'",  # ' ' ‚ ‛
+    "“": '"', "”": '"', "„": '"', "‟": '"',  # " " „ ‟
+    "′": "'", "″": '"',                                  # ′ ″
+})
+
+
 def _norm(s: str) -> str:
-    return " ".join(str(s).lower().split())
+    return " ".join(str(s).translate(_QUOTE_FOLD).lower().split())
 
 
 def audit_soul(card_path: Path, evidence_path: Path, t0: date) -> AuditReport:

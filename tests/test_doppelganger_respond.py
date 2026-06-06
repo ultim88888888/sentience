@@ -93,3 +93,12 @@ def test_respond_raises_on_non_json(tmp_path):
             assert False, "should raise"
         except ValueError:
             pass
+
+
+def test_run_cli_has_respond_subcommand():
+    import doppelganger.run as r
+    ns = r.build_parser().parse_args(["respond", "--subject", "eddy-lazzarin", "--t0", "2022-12-31"])
+    assert ns.cmd == "respond" and ns.subject == "eddy-lazzarin" and ns.t0 == "2022-12-31"
+    assert ns.query is None
+    ns2 = r.build_parser().parse_args(["respond", "--subject", "x", "--t0", "2022-12-31", "--query", "Q"])
+    assert ns2.query == "Q"

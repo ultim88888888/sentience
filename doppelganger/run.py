@@ -13,6 +13,7 @@ from datetime import date
 
 from doppelganger.ingest import ingest
 from doppelganger.memory import load_memory
+from doppelganger.respond import respond
 from doppelganger.soul import extract_soul
 
 
@@ -30,6 +31,11 @@ def build_parser() -> argparse.ArgumentParser:
     mem = sub.add_parser("memory", help="inspect the time-gated <=T memory view for a subject")
     mem.add_argument("--subject", required=True, help="subject slug, e.g. eddy-lazzarin")
     mem.add_argument("--t0", required=True, help="cutoff date YYYY-MM-DD, e.g. 2022-12-31")
+
+    resp = sub.add_parser("respond", help="answer a market-view query as the subject at date T")
+    resp.add_argument("--subject", required=True, help="subject slug, e.g. eddy-lazzarin")
+    resp.add_argument("--t0", required=True, help="cutoff date YYYY-MM-DD, e.g. 2022-12-31")
+    resp.add_argument("--query", default=None, help="optional custom query (default: market-view survey)")
     return parser
 
 
@@ -45,6 +51,10 @@ def main() -> None:
         mv = load_memory(args.subject, date.fromisoformat(args.t0))
         print(f"n_items={mv.n_items} max_date={mv.max_date}")
         print(mv.text[:1000])
+    elif args.cmd == "respond":
+        view = respond(args.subject, date.fromisoformat(args.t0), query=args.query)
+        import json
+        print(json.dumps(view, indent=2)[:2000])
 
 
 if __name__ == "__main__":

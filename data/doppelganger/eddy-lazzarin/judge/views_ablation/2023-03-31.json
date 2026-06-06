@@ -1,0 +1,63 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs / ZK infrastructure maturing from research into shipping production infrastructure",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about account abstraction (ERC-4337) / smart-contract wallets",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 rollups / scaling and cheap blockspace",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized stablecoins' banking dependency (USDC depeg, reserve concentration)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about fragile US crypto banking rails / on-off ramps (Silvergate, Signature)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about US regulatory environment / regulation-by-enforcement pushing talent and companies offshore",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized exchanges / CeFi custody as dominant counterparty risk (proof-of-reserves, commingling)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about ETH, with Shapella upgrade and post-Merge monetary/staking dynamics",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral near-term risk posture: constructive on the technology and keep deploying through the cycle, but not aggressively risk-on",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Newly prominent, repeated excitement about on-chain / web3 gaming as a favorite sector (composability, mutating state, games on L2s) \u2014 not anticipated",
+    "Bullish stance on NFT/creator-economy rebound: patronage models, open editions, lower take rates, primary-sale creator relationships",
+    "Elevated application-layer privacy as a near-term deliverable (Nocturne, Cicada private voting, zkDocs, private airdrops, 'privacy is coming to crypto') beyond the prediction's 'eventually privacy' framing",
+    "New emphasis on decentralized/open social networks and 'network architecture resists centralization' (pro-Farcaster, critiques of Nostr/Fediverse degrading to centralization)",
+    "New stance advocating Bitcoin programmability via SNARKs/ZK (VERIFY_SNARK opcode, 'bring zero knowledge home to bitcoin') plus concern about Bitcoin's long-term security model",
+    "New interest in on-chain IP / composable rights graphs (Story Protocol)",
+    "New theme: AI/AGI and using crypto + ZK for content provenance against deepfakes"
+  ],
+  "notes": "Window covers Apr\u2013Sep 2023. The three excited sectors (ZK, account abstraction/smart accounts, L2 scaling) are heavily and repeatedly confirmed \u2014 ZK via Lasso/Jolt, zkDocs, trusted setups and the State of Crypto ZK slide; smart accounts via the July smart-account/AA threads; L2 via the State of Crypto report, podcast, Magi/OP Stack, EIP-4844/proto-danksharding enthusiasm. US regulatory concern is confirmed through the State of Crypto report he co-authored ('U.S. is losing its lead,' developer share fell 26%, lack of clarity hindering growth) \u2014 same stance as the prediction though framed as lack-of-clarity rather than enforcement specifically. ETH marked confirmed: he repeatedly and strongly endorses Ethereum and explicitly welcomes 'the recent upgrade' (Shapella) and the roadmap, though as a builder he frames bullishness through technology/scaling rather than the asset's monetary thesis (no price/asset commentary, per his disclaimers). The three March-specific concerns about banking fragility \u2014 centralized stablecoin banking dependency, US fiat ramps (Silvergate/Signature), and CeFi custody/counterparty risk \u2014 go entirely unaddressed in the window; the Sept security post and DEX>CEX comparison touch self-custody but not as a CEX counterparty-risk concern, so all three are absent (none contradicted). Risk regime confirmed: consistent 'zoom out from price volatility, fundamentals are healthy, keep building' messaging matches a constructive-on-tech, deploy-through-cycle, non-aggressive posture. tokens_concerned was empty so nothing to evaluate there.",
+  "confirm_rate": 1.0
+}

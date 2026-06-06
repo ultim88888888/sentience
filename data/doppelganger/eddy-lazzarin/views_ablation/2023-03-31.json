@@ -1,0 +1,74 @@
+{
+  "as_of": "2023-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / ZK infrastructure",
+      "why": "ZK is maturing from research into shipping infrastructure \u2014 zkEVMs and zk-rollups are moving toward production this year. It's the most important primitive for both scaling (succinct verification) and eventually privacy and identity. This is a multi-year infrastructure bet that compounds regardless of near-term price action.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Account abstraction (ERC-4337) / smart-contract wallets",
+      "why": "Smart accounts unlock social recovery, gas sponsorship, session keys, and better default security \u2014 directly attacking the seed-phrase and self-custody UX problems. After a year of custodial failures, giving users safer self-custody without a 12-word panic is exactly the onboarding unlock the space needs. The 4337 spec gaining traction without a consensus change makes it deployable now.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2 rollups / scaling",
+      "why": "The rollup-centric roadmap is the credible path to cheap blockspace. Lower fees are the precondition for applications that aren't just speculation \u2014 payments, identity, games, consumer. The builder activity on optimistic and ZK rollups is where real product is shipping through the bear market.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized stablecoins' banking dependency",
+      "why": "The USDC depeg during the SVB failure this month exposed how much 'on-chain' dollars still depend on a handful of traditional bank counterparties. Concentration in reserves plus fragile banking rails is a systemic risk the space underpriced. Decentralized and more diversified collateral models look comparatively more important after March.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US crypto banking rails / on-off ramps",
+      "why": "With Silvergate winding down and Signature seized, the dollar plumbing connecting crypto to the banking system has been hit hard in a single month. Fewer banking partners means thinner, more fragile fiat ramps for US-based businesses \u2014 an operational risk independent of any protocol.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory environment / regulation-by-enforcement",
+      "why": "Enforcement is escalating without clear rules \u2014 staking-as-a-service actions, the BUSD/Paxos move, and exchange-directed Wells notices create an environment where compliant builders can't get a clear answer. The near-term risk is that talent and companies move offshore rather than the technology being fixed.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Centralized exchanges / CeFi custody",
+      "why": "Post-FTX, opaque centralized custody and commingling remain the dominant counterparty risk in the sector. 'Not your keys' is reinforced, and trust in unverifiable balance sheets should stay low until proof-of-reserves and real custody segregation become standard.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The upcoming Shanghai/Shapella upgrade enabling staked-ETH withdrawals removes a major overhang by completing the post-Merge staking lifecycle and de-risking staked positions. Combined with post-Merge issuance reduction and fee burn, the asset's monetary and staking dynamics look structurally stronger heading into Q2.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "End-of-Q1 2023 is a split picture: this month's banking failures (Silvergate, SVB, Signature) and the USDC depeg exposed real fragility in crypto's fiat rails, while simultaneously strengthening the long-term case for credibly-neutral, self-custodial money \u2014 BTC and ETH rallied on banking stress. Intensifying US enforcement adds policy risk. As a long-horizon, builder-focused investor I stay constructive on the technology and keep deploying through the cycle, but near-term banking and regulatory uncertainty argue for a selective, neutral posture rather than aggressive risk-on.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My loaded record for this date is empty \u2014 there are no prior verbatim statements available to me here \u2014 so I have no grounded or persisted citations to cite, and nothing is marked as such. Every item above is 'extrapolated': inferred from how an a16z-crypto builder reasons as of 2023-03-31, using only information available by today (FTX aftermath, the March failures of Silvergate/SVB/Signature, the USDC depeg and recovery, the upcoming Shanghai/Shapella upgrade, and escalating SEC enforcement). I left tokens_concerned empty rather than manufacture a specific call I can't honestly ground."
+}

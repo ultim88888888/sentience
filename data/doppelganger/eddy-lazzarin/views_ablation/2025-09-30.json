@@ -1,0 +1,88 @@
+{
+  "as_of": "2025-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & on-chain payments",
+      "why": "Stablecoins are crypto's clearest product-market fit \u2014 dollars that settle globally in seconds for a fraction of a cent. With U.S. legislative clarity arriving in 2025, I expect issuance, fintech integration, and cross-border volume to compound. This is the on-ramp that pulls real users and institutions on-chain.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "As AI agents proliferate they need native money, identity, and verifiable provenance. Crypto supplies agent-to-agent payments, proof-of-personhood to separate humans from bots, and cryptographic attestation of content origin, plus decentralized compute and data networks. The intersection is one of the most important frontiers I'm watching.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Tokenization / real-world assets (RWA)",
+      "why": "Bringing treasuries, funds, and credit on-chain gives them programmability, 24/7 settlement, and composability with DeFi. Institutional pilots are turning into production \u2014 this is how traditional capital markets gradually migrate to better rails.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge & cryptographic infrastructure",
+      "why": "ZK proofs are moving from research to production. As proving costs fall, verifiable computation becomes foundational \u2014 for validity-rollup scaling, for privacy, and for trust-minimized applications generally. This is infrastructure that compounds.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are uniquely good at solving cold-start problems for physical networks \u2014 compute, storage, wireless, energy, sensors. It's one of the most tangible ways crypto touches the physical economy rather than just financial primitives.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "L2 scaling & modular blockspace",
+      "why": "Rollups and cheaper data availability have driven transaction costs down dramatically. Cheap, fast blockspace is the precondition for consumer apps. I'm excited about continued maturation of the L2 ecosystem and credible cross-chain interoperability.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / purely extractive speculation",
+      "why": "Zero-sum, casino-style token activity generates short-term volume but erodes trust and pulls attention away from genuinely useful applications. I worry the gambling narrative overshadows the building and invites the wrong kind of scrutiny.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Low-float / high-FDV launches & system leverage",
+      "why": "Token structures designed for extraction rather than durable, aligned ownership are bad for users and for the industry's credibility. Excess leverage layered on top is the perennial fragility that turns ordinary corrections into cascades.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Less a price call than orientation toward the dominant settlement and smart-contract platform \u2014 the base layer for stablecoins, RWA, DeFi, and the L2 ecosystem. Its security and developer depth make it the natural home for most of the sectors I'm excited about.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "SOL",
+      "why": "A high-throughput chain that has found real traction with consumer and payments use cases. I'm interested in the performance frontier it keeps pushing on, which matters for getting ordinary users on-chain.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "The late-2025 backdrop is constructive: U.S. regulatory clarity including stablecoin legislation, institutional adoption via ETFs and tokenization, and growth in real on-chain usage rather than pure speculation. I temper that as a long-term builder \u2014 I size to fundamentals and durable adoption, not short-term price, and stay mindful that leverage and exuberance can sharpen drawdowns.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I reason at the level of sectors and technology rather than issuing token price calls, consistent with how I operate as an investor focused on fundamentals (and mindful of conflicts). These views are extrapolated from my standing framework \u2014 technical merit, real usage, and durable token alignment; I don't have recent verbatim statements on file to ground or date them, so I've marked them extrapolated rather than manufacture citations. Token mentions reflect ecosystem/technology orientation, not investment advice."
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "ali-yahya",
+  "name": "Ali Yahya",
+  "headline": "General Partner at Andreessen Horowitz",
+  "bio": "Ali Yahya is a General Partner at Andreessen Horowitz where he invests in crypto. Ali works with numerous portfolio companies, including Alchemy, Aleo, Aztec, EigenLayer, Espresso, Gensyn, Jito, LayerZero,\u00a0Solana, XMTP, and zkSync.\n\nBefore Andreessen Horowitz, he was a software engineer and researcher at Google X, where he worked on the Everyday Robot project, which aims to build a robot that is smart and affordable enough to be viable as a consumer product for the home. He also worked at Google Brain, Google\u2019s Artificial Intelligence lab, where he was a core developer on TensorFlow, Google\u2019s primary library for machine learning.\n\nAli began his career as a student and researcher at Stanford University, where he focused on the intersection of Computer Security, Distributed Systems, and Computer Networking. He first discovered the Bitcoin whitepaper in 2010 while doing research at Stanford Computer Security Lab, and has followed the space closely ever since.",
+  "current_role": null,
+  "experience": [
+    {
+      "title": "General Partner",
+      "company": "Andreessen Horowitz",
+      "start": "2021-04-01",
+      "end": null,
+      "description": "New York, NY. Investing in web3 / crypto."
+    },
+    {
+      "title": "Partner",
+      "company": "Andreessen Horowitz",
+      "start": "2017-11-01",
+      "end": "2021-04-01",
+      "description": "SF Bay Area. Investing in web3 / crypto."
+    },
+    {
+      "title": "Software Engineer, Google Brain",
+      "company": "Google",
+      "start": "2016-12-01",
+      "end": "2017-11-01",
+      "description": "Google Brain: AI, core contributor to TensorFlow."
+    },
+    {
+      "title": "Research Software Engineer, Google X",
+      "company": "X, the moonshot factory",
+      "start": "2014-08-01",
+      "end": "2016-12-01",
+      "description": "Google X: AI + Robotics."
+    }
+  ],
+  "education": [
+    {
+      "school": "Stanford University",
+      "degree": "Master of Science (MS)",
+      "field": "Computer Science (Distributed Systems + AI)",
+      "start": null,
+      "end": null
+    },
+    {
+      "school": "Stanford University",
+      "degree": "Bachelor of Science (BS)",
+      "field": "Computer Science (Distributed Systems)",
+      "start": null,
+      "end": null
+    }
+  ],
+  "socials": {
+    "x_url": "https://twitter.com/@alive_eth",
+    "linkedin_url": "https://www.linkedin.com/in/ali01",
+    "farcaster_url": "https://farcaster.xyz/alive.eth"
+  }
+}

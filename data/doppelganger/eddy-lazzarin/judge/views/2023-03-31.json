@@ -1,0 +1,77 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs (ZK scaling + privacy) as foundational infrastructure",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games (autonomous worlds, composable player-owned economies)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social (Farcaster/XMTP, neutral user-owned protocols that resist centralization)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI + crypto as autonomous, self-owning programs that hold assets and act for themselves",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about decentralized identity / unbundled auth (SIWE, DIDs, verifiable credentials, key management)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about opaque centralized exchanges / custodians (proof-of-reserves theater; prefer self-custody/on-chain verification)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about token-first projects / 'tokenomics' consulting (token as goal rather than tool)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about platform gatekeeping (Apple's 30%, closed mobile/app stores crippling crypto-native innovation)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH (developer mindshare, clean Merge, ZK/L2 scaling roadmap)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about MKR (Maker) as exemplar of coherent risk-token design",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about BNB/Binance due to issuer opacity and unverifiable backstop",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / build-through-the-trough: price-innovation cycle, fundamentals over price, 'it's still early'",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Newly vocal pro-Bitcoin-improvement stance \u2014 advocating bringing ZK to Bitcoin and adding a VERIFY_SNARK opcode to make BTC programmable, plus warning its security model must change; the prediction was entirely ETH-centric and ignored Bitcoin.",
+    "Strong enthusiasm for optimistic rollups and the OP Stack/Optimism/Base ecosystem (built and released the Magi OP Stack client) \u2014 a broader L2 embrace than the predicted 'ZK rollups as the predominant compute layer.'",
+    "New excitement for on-chain IP / Story Protocol (an on-chain remix/attribution graph, 'multiplayer for IP') as a sector not anticipated in the prediction.",
+    "The crypto+AI angle he actually pursued was deepfake-resistance / content provenance (ZK proofs of image provenance, attestation graphs, AGI commentary), not the predicted 'autonomous self-owning programs.'",
+    "Positive engagement with proof-of-personhood (Worldcoin/World ID as complement to social-graph approaches) and account abstraction / 'smart accounts' within the identity theme.",
+    "Adopted a terminology shift, replacing 'Data Availability' with 'Data Publishing / Data Storage.'"
+  ],
+  "notes": "Window = Apr\u2013Sep 2023. Five of the predicted views recur strongly and explicitly: ZK (KZG/trusted setups, Lasso/Jolt, Halmos, ZK-for-bitcoin), on-chain games ('one of my favorite categories'), decentralized social (Dan Romero/Farcaster interview, Nostr/Fediverse centralization critiques), decentralized identity (auth/key-management as a critical prerequisite, smart accounts = identity+ownership, decentralized personhood), ETH (L2 scaling, EIP-4844), and the risk-on/price-innovation-cycle posture (State of Crypto report he co-authored; 'crypto-the-computer vs. crypto-the-casino'). Platform-gatekeeping concern is confirmed via the Apr/Jun threads on draconian App Store policies and closed corporate networks. AI+crypto marked ABSENT because, while he tweets heavily about AI, the SPECIFIC predicted stance (autonomous, self-owning, self-funding programs) never appears \u2014 his realized AI+crypto interest is deepfake/provenance, logged as a missed change. Opaque-CEX concern marked ABSENT: he never restates the FTX/proof-of-reserves critique in the window; only the adjacent positive side (self-custody advocacy in the secrets explainer, DEX>CEX framing in the report) appears, which is consistent in worldview but not a voiced concern \u2014 borderline. MKR and BNB/Binance are never mentioned (absent). Token-first/tokenomics concern not directly restated (the Aug 'very bad metric' reply targets a financial metric, closer to the fundamentals-over-price theme than the token-first critique). No claims were contradicted.",
+  "confirm_rate": 1.0
+}

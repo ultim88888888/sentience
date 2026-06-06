@@ -1,0 +1,161 @@
+{
+  "as_of": "2023-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / SNARKs",
+      "why": "ZK has moved from theory to practice and is now compounding fast: succinctness scales blockchains, validity proofs unlock privacy and verifiable compute. Lasso/Jolt cut prover overhead dramatically, and cheaper proving is the real unlock. Decades-old roots, but web3 is the forcing function.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "We've developed a new lookup argument called Lasso \ud83e\udea2 that is already 10x faster than halo2, with a clear path to 40x."
+        },
+        {
+          "date": "2022-09-16",
+          "quote": "research has accelerated radically as a result of web3."
+        }
+      ]
+    },
+    {
+      "name": "Layer-2 scaling / rollups",
+      "why": "Radically cheaper, high-quality block space is the prerequisite for the experiments that go mainstream \u2014 cheap NFTs, on-chain games, state-mutating apps. The L2 share of Ethereum fees keeps climbing, and proto-danksharding (EIP-4844) pushes it further.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "That to me is the strongest direct evidence that Ethereum is scaling"
+        }
+      ]
+    },
+    {
+      "name": "Wallet UX, smart accounts & self-sovereign identity",
+      "why": "Crypto UX hasn't really changed since 2016. Passkeys, smart accounts, embedded wallets, MPC, and smarter RPC endpoints can finally reset the frontend \u2014 better and more secure than web2, not just less bad. This is what I'm most excited to see ship in the year ahead.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "developers are actively testing and deploying new tools that could reset frontend UX (user experience) for crypto in the year ahead."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "All of these not only help web3 go more mainstream, but can make the UX better and more secure than in web2."
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "When no one in particular runs the server, modding, composability, and credible neutrality become first-class \u2014 anybody can extend the game, nobody can cheat or shut it down. They fill the Zachtronics niche and are the best stress test for cheap block space. Compute-constrained today, which is exactly why L2s matter.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-06; thesis still held, actively playing on-chain games through 2023",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        },
+        {
+          "date": "2023-04-10",
+          "quote": "Every game can be as rich and deep as Dwarf Fortress."
+        }
+      ]
+    },
+    {
+      "name": "Crypto \u00d7 AI / content provenance",
+      "why": "AI is how machines think, crypto is how machines own. As generated content floods the web, every robust way to prove the origin or history of content runs through cryptography and blockchains \u2014 and decentralized networks are a counterweight to centralized model training.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-17",
+          "quote": "Every robust method to prove the origin or history of content involves cryptography and blockchains."
+        },
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social",
+      "why": "Building on centralized social means getting rugged \u2014 cut off, replaced, blocked from monetizing. Neutral, permissionless social protocols are the platform we always wanted: sufficiently decentralized that the key components (names, follower graph) can't be closed on you.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-07; reinforced through 2023 Farcaster ecosystem work",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Opaque centralized exchanges & custodial systems",
+      "why": "Custodial, opaque systems and 'proof of reserves' theater don't actually prove solvency \u2014 no shared Merkle tree, no treatment of negative balances, no proof the addresses are controlled. Concentrated, unauditable intermediaries remain the fragile part of crypto.",
+      "provenance": "persisted",
+      "age_note": "stated 2022-11, not restated in 2023",
+      "citations": [
+        {
+          "date": "2022-11-25",
+          "quote": "Binance's system is useless and easily exploited by them."
+        }
+      ]
+    },
+    {
+      "name": "Token-first projects / 'tokenomics' consulting",
+      "why": "A token isn't a goal and a pie chart isn't a protocol. Projects that start from allocations instead of designing a protocol with a clear goal and constraints tend to be hollow. Token-first thinking is a reliable failure pattern.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-12; reiterated in my Jan-2023 token design talk",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "Launching a token isn't a goal."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Conviction in the network, not a price target. Ethereum has the developers, the mindshare, and a scaling roadmap that is visibly working \u2014 rising L2 share of fees, 4844 ahead. As a network-resource asset it's the clearest expression of that platform bet.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "That to me is the strongest direct evidence that Ethereum is scaling"
+        },
+        {
+          "date": "2022-05-17",
+          "quote": "Other layer 1 blockchains have grown rapidly over the last year, but @ethereum is the clear leader."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I fly by instruments, not sight \u2014 trust fundamentals over market sentiment. Skeptical in analysis, optimistic in action. The price-innovation cycle says winter is when the seeds are planted, and infrastructure advanced all year (the Merge, L2s, ZK). It's still early, so I build.",
+    "provenance": "grounded",
+    "age_note": "core philosophy stated 2021-01, still held",
+    "citations": [
+      {
+        "date": "2022-11-15",
+        "quote": "It's still early."
+      },
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action."
+      }
+    ]
+  },
+  "notes": "I reason in protocols and mechanisms, not tickers \u2014 I don't make short calls, so tokens_concerned is intentionally empty and the centralized-exchange worry lives at the sector level. Views as of 2023-12-31, read through the price-innovation cycle: skeptical on near-term price, constructive on the multi-year fundamentals."
+}

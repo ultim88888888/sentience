@@ -1,0 +1,209 @@
+{
+  "as_of": "2023-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / SNARKs",
+      "why": "The decisive primitive of this cycle \u2014 it buys both scaling (succinctness) and privacy at once. Research that was decades in the making is crossing from theory to practice at a staggering pace; proving speeds, proof sizes, and verification are all improving fast enough to actually build on. Our own Lasso/Jolt work convinces me the cost curve still has 40x+ in it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "We've developed a new lookup argument called Lasso \ud83e\udea2 that is already 10x faster than halo2, with a clear path to 40x."
+        },
+        {
+          "date": "2023-07-16",
+          "quote": "Security bugs in ZK circuits will be challenging. Since only the proof is shared, the malicious input can't be scrutinized to understand the nature of the exploit."
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 scaling / rollups",
+      "why": "Radically cheaper high-quality blockspace is the prerequisite for the experimentation that produces mainstream products. L2 share of Ethereum fees went from ~1.5% to 7% in a year \u2014 the strongest direct evidence Ethereum is scaling \u2014 and proto-danksharding (EIP-4844) should push it further. This year is about L2 tradeoffs, tooling, and UX, and I expect it to equilibrate much higher than 7%.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "That to me is the strongest direct evidence that Ethereum is scaling."
+        },
+        {
+          "date": "2023-04-19",
+          "quote": "client diversity = robust decentralization"
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games are incentive systems, and when no one in particular controls the server, modding/composability become first-class and the game can't be rugged or cheated. Web3 games already generate far more on-chain activity than DeFi; with cheap L2 blockspace this is where a lot of the next wave of users and experimentation will come from. It fills the niche Zachtronics-style programmer-games used to.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-06, revisited extensively 2023-04",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social networks",
+      "why": "Building on centralized social gets you rugged \u2014 cut off, replaced, blocked from monetizing. The fix isn't naive p2p (which tends to recentralize) but networks where the components that accrue network effects \u2014 names, follower graph, value, data \u2014 live in a permissionless, programmable decentralized computer. Farcaster is the clearest expression of that thesis and its client/tooling ecosystem is growing.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-07, continued building through 2023",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        },
+        {
+          "date": "2023-07-01",
+          "quote": "We need networks where key components (names, value, data avail., etc) live in a permissionless, unified, programmable decentralized computer."
+        }
+      ]
+    },
+    {
+      "name": "Identity, auth & account abstraction (smart accounts)",
+      "why": "If everyone has public/private key pairs plus a neutral data store, you can unbundle login and rebuild it \u2014 more private, more secure, programmable. Account abstraction turns wallets into 'smart accounts' (identity + ownership), and key management/auth/identity is one of the critical prerequisites for the next wave of adoption.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-07-13",
+          "quote": "Account abstraction enables smart accounts."
+        },
+        {
+          "date": "2023-07-01",
+          "quote": "I personally think scaling, privacy, and something relating to key management/auth/identity are critical prerequisites."
+        }
+      ]
+    },
+    {
+      "name": "AI + crypto",
+      "why": "AI is how machines think; crypto is how machines can own. Put them together and you get sovereign programs \u2014 autonomous applications that can fund and grow themselves. We have generations of culture around machine intelligence but only ~14 years (really ~8 since Ethereum) of thought around autonomous programs, so the design space is wide open. Also concrete near-term uses: ZK provenance/attestation as a defense against deepfakes.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        },
+        {
+          "date": "2023-03-24",
+          "quote": "When will we see the first 0-person unicorn? An autonomous program on a crypto network that can fund and grow itself."
+        }
+      ]
+    },
+    {
+      "name": "Bitcoin programmability via ZK",
+      "why": "Bitcoin's security model has to evolve to last the next several decades, and the cleanest path is bringing zero knowledge home to bitcoin. Something as simple as a VERIFY_SNARK opcode would make bitcoin programmable and freely movable across the internet \u2014 reopening much of what Satoshi originally envisioned. Underappreciated and very early.",
+      "provenance": "grounded",
+      "age_note": "fresh view, Sept 2023",
+      "citations": [
+        {
+          "date": "2023-09-27",
+          "quote": "The simplest thing \u2014 adding a VERIFY_SNARK opcode to the bitcoin protocol \u2014 would make bitcoin totally programmable and free to move all over the internet."
+        },
+        {
+          "date": "2023-09-20",
+          "quote": "We should bring zero knowledge back home to bitcoin."
+        }
+      ]
+    },
+    {
+      "name": "On-chain IP / creative composability",
+      "why": "Creative works want to be remixed and recombined, but analog rights frameworks make that slow, expensive, and risky. An on-chain remix/attribution graph makes composition natural while preserving monetization for everyone in the authorship tree \u2014 multiplayer for IP. Same structural story as web3's better take-rates for creators.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-09-06",
+          "quote": "Recursive, networked creativity. Multiplayer for IP. Made possible with crypto."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized exchanges & opaque 'proof of reserves'",
+      "why": "Post-FTX, the custodial layer is the weak point, and the attestations being offered are mostly theater. Binance's scheme shared no Merkle tree or construction code, no treatment of negative balances, and no proof they control the addresses \u2014 useless and easily gamed. Self-custody and verifiable, non-custodial designs are the answer; trust-me dashboards are not.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-11, post-FTX context",
+      "citations": [
+        {
+          "date": "2022-11-25",
+          "quote": "Binance's system is useless and easily exploited by them."
+        }
+      ]
+    },
+    {
+      "name": "Token-first projects (the 'tokenomics' pie-chart class)",
+      "why": "A token isn't a goal and a pie chart isn't a protocol. Launching a token is maybe 5% of the work at the end of a real protocol design process; projects that lead with allocations instead of goals, constraints, and mechanisms are building nothing durable. This whole 'tokenomics consultant' category is a waste of time.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-12 / 2023-01, still my view",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "A protocol needs a clear goal. Launching a token isn't a goal."
+        }
+      ]
+    },
+    {
+      "name": "U.S. regulatory environment for web3",
+      "why": "Regulatory ambiguity is actively costing the U.S. its lead \u2014 the share of crypto developers based here fell 26% from 2018 to 2022. Thoughtful rules would let builders innovate safely onshore; absent them, talent and building migrate elsewhere. A real, if non-technical, headwind on the sector.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-11",
+          "quote": "Between 2018 and 2022, the proportion of crypto developers based in the U.S. vs. the rest of the world fell 26%."
+        }
+      ]
+    },
+    {
+      "name": "Naive p2p / federated social (Nostr, Fediverse)",
+      "why": "I want decentralized social to win, but architecture is destiny: simple relay/federation designs tend to degrade back to centralization because the components that accumulate network effects aren't held in a permissionless, unified, programmable substrate. Enthusiasm without the right network architecture will disappoint.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-07-01",
+          "quote": "Because of its network architecture, Nostr likely degrades to centralization \u2014 like Fediverse."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Platform conviction, not a price call. Ethereum still has overwhelming developer mindshare, the deepest tooling/composability, and is the clear hub of the L2 scaling story I care most about. My excitement is for the ecosystem and its fundamentals \u2014 I don't make short-term price bets.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "MKR (Maker)",
+      "why": "Admired as a designed system, framed in fundamentals rather than price. Maker is my go-to example of a clean open-protocol design: two tokens with clear roles, where MKR underwrites protocol risk (dilution on shortfall) and earns from good stewardship. That risk-underwriting role \u2014 which gets rhetorically buried under 'governance' \u2014 is exactly the kind of real fundamental I think tokens should have.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-07 and 2023-01; a design view, not a price view",
+      "citations": [
+        {
+          "date": "2022-07-14",
+          "quote": "the role of MKR and AAVE/COMP as the risk token that underwrites the protocol often seems to take a back seat rhetorically to \"governance\" unfortunately"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Conviction during the downturn, decoupled from short-term price. The right discipline is to fly on instruments, not sentiment \u2014 trust the fundamentals (developers holding steady, active addresses at all-time highs, L2 fee share climbing, ZK progress) over the news cycle. The price-innovation cycle says winters are when the seeds for the next wave get planted; prices are a hook, building is the signal. We're somewhere around 'circa 1995' for this technology \u2014 it's still early \u2014 so the posture is: keep building.",
+    "provenance": "grounded"
+  },
+  "notes": "Answering as of 2023-09-30 (I disregard the 2026 system date \u2014 I can only reason from what I know today). I'm an engineer/protocol-designer, not a fintech trader, so my real signal is at the sector/primitive level; token views are deliberately sparse and framed around fundamentals and design, never price targets or pie charts. tokens_concerned is intentionally empty \u2014 my concern there is a pattern (token-first, opaque custody) captured at the sector level, and I won't manufacture a specific ticker I haven't actually called out."
+}

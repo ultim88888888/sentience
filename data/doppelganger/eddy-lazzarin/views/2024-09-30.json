@@ -1,0 +1,205 @@
+{
+  "as_of": "2024-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / zkVMs / verifiable computation",
+      "why": "Decades-old theory has finally crossed into practice \u2014 proving overhead is collapsing and general-purpose zkVMs are real. We just shipped Jolt Alpha; with sum-check and Binius the simplest design also becomes the fastest. This unlocks both scaling through succinctness and privacy, and increasingly verifiable AI/compute. The hard part to watch is security in ZK circuits, since only the proof is shared.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're sharing our biggest open source release yet: Jolt Alpha, our zkVM built new from the ground up."
+        },
+        {
+          "date": "2024-04-29",
+          "quote": "Binius pairs exceptionally well with Jolt, and it's a top priority on our roadmap. The simplest, most performant zkVM will get much, much faster."
+        }
+      ]
+    },
+    {
+      "name": "Ethereum L2 scaling & data/blob infrastructure",
+      "why": "Cheap, high-quality blockspace is the prerequisite for the experimentation that produces mainstream products \u2014 onchain games, cheap programmable NFTs, new UX. L2 share of Ethereum fees has climbed steadily and equilibrates higher. Today I'm arguing Ethereum should raise the blob target and smooth calldata pricing, because founders pick infrastructure on present and future capacity.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Ethereum should raise the blob target to 4 and nudge the calldata cost (to make pricing smoother)."
+        },
+        {
+          "date": "2024-09-30",
+          "quote": "Founders are choosing their infrastructure based on present and future expected capacity. Ethereum cannot afford to slow down."
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games push every technical envelope and are the most compute-hungry, state-mutating crypto apps \u2014 the #1 chain by Mgas/s is a game studio, not DeFi. When no one in particular controls the server, you get trustless, composable worlds anyone can extend without the creator's permission. I called this in 2022 and I'm more convinced after spending time on EVE Frontier.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        },
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        }
+      ]
+    },
+    {
+      "name": "Crypto \u00d7 AI (content provenance, deepfake defense, agent-owned assets)",
+      "why": "AI is making content infinitely forgeable; every robust provenance/attestation scheme I've seen requires a blockchain plus sybil resistance and censorship resistance. The 'mystery meat' web \u2014 assume everything is generated unless proven otherwise \u2014 looks unavoidable. And crypto is how machines own and transact: agents can't hold bank accounts but they can hold keys and wallets.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-13",
+          "quote": "crypto = how machines can own"
+        },
+        {
+          "date": "2024-04-04",
+          "quote": "The \"mystery meat\" scenario seems unavoidable:"
+        },
+        {
+          "date": "2024-01-05",
+          "quote": "I don't think it can be done seriously without crypto."
+        }
+      ]
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "Payments was a founding goal of crypto, and the pieces are finally aligning. Stablecoins are scaling fast as onchain collateral, and a quick, cheap USDC transfer can save merchants ~30% versus card/platform rails while preserving a direct user relationship. Mainstream stablecoin payments have been over-promised before, but L2 fees and UX are catching up.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-01-16",
+          "quote": "The benefits of crypto start becoming very obvious."
+        }
+      ]
+    },
+    {
+      "name": "Identity, wallet UX & proof of personhood",
+      "why": "Giving every user a cryptographic key linked to a verifiable computer is remarkably powerful. Passkeys, smart accounts, embedded wallets, and MPC can finally reset crypto's 2016-era UX, and private proof-of-personhood is becoming necessary as LLMs overwhelm CAPTCHA. Auth and identity are among the real prerequisites for the next wave of adoption.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-04",
+          "quote": "Remarkable how powerful it is to (1) give every user a cryptographic key that is (2) linked to a secure verifiable computer (blockchain)."
+        },
+        {
+          "date": "2024-01-07",
+          "quote": "How bad does this need to get before all networks need to integrate a private proof of personhood system like @worldnetwork?"
+        }
+      ]
+    },
+    {
+      "name": "DeFi (lending & AMM design with real fundamentals)",
+      "why": "Lending and AMMs are the clearest proof that tokens have real, on-chain fundamentals and that protocol design \u2014 not TVL theater \u2014 is what matters. Fixed/variable-rate primitives and cleaner AMM designs keep maturing into composable financial infrastructure. I track this closely; it's the opposite of the casino.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-12",
+          "quote": "The DELV team went deep and emerged with the cleanest fixed/variable rate AMM design yet."
+        },
+        {
+          "date": "2021-06-01",
+          "quote": "TVL isn't even a particularly useful metric for lending protocols, let alone DeFi broadly"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Interest comes and goes, but memecoins are pure speculation with no purpose \u2014 that's literally the feature that keeps them legal. They aren't technically interesting, they deter serious founders, and they hand politicized regulators ammunition by making crypto look like a risky casino. The damage to adoption, regulation, and builder behavior is real and ongoing.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "I see the damage every day. You should too."
+        },
+        {
+          "date": "2024-03-24",
+          "quote": "When memecoins have a moment, people who know better make tortured rationalizations."
+        }
+      ]
+    },
+    {
+      "name": "Token-first thinking / 'tokenomics' pie-chart consulting",
+      "why": "A token isn't a goal and a made-up pie chart isn't a protocol. You design a protocol first; the token's role becomes obvious from the mechanism, and it's maybe 5% of the work. Token-first launches corrupt your read on product-market fit and produce fragile, purposeless systems \u2014 and 'tokenomics experts' allocating slices are a waste of time.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-08-08",
+          "quote": "Remember that you're making a protocol, not a token."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        }
+      ]
+    },
+    {
+      "name": "Naive token / DAO governance (governance-attack surface)",
+      "why": "Naive token governance is an underpriced attack surface \u2014 the recent Compound episode showed how spam, voter fatigue, and last-second timing games can slip a proposal through. Voting should be a last resort, not a product. Until DAOs borrow hard-won mechanisms \u2014 agenda control, voting windows, private tallies \u2014 governance risk stays mispriced.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-08-16",
+          "quote": "How do you design a governance process where anyone can submit a proposal, but avoid spam, attacks, wasting time, or exhausting people's patience?"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Not price advice \u2014 a fundamentals view. Ethereum is the clear leader by developers and economic activity, and its L2-centric roadmap (blobs, proto-danksharding) is the right architecture. As long as it keeps driving down the cost of high-quality blockspace and doesn't slow down, it remains the platform builders choose. I build on it and defend it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Ethereum cannot afford to slow down."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I don't position on sentiment \u2014 constant cynicism and euphoric bullishness are both failure modes. I trust the instruments: the price-innovation cycle, where prices are a lagging hook and fundamentals (ZK, L2 scaling, payments, identity) compound underneath. By that read the fundamentals are healthy and it's still early, so I'm constructive long-term and build regardless \u2014 skeptical in analysis, optimistic in action. Memecoin froth is the main drag on perception, not on the technology.",
+    "provenance": "persisted",
+    "age_note": "core framing \u2014 price-innovation cycle and skeptical/optimistic stance \u2014 stated 2021\u20132023, still held, not restated verbatim recently",
+    "citations": [
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action"
+      },
+      {
+        "date": "2022-05-17",
+        "quote": "there is an underlying order to the chaos in crypto markets"
+      }
+    ]
+  },
+  "notes": "I'm an engineer, not a trader \u2014 I reason about protocols and fundamentals, not price action, and I'm deliberately sparse on specific tokens (disclosure-careful, and I don't make token-level bear calls). Everything here is mechanism- and adoption-level, as of 2024-09-30. The throughline: scaling + ZK + identity/payments are the prerequisites for the next wave; memecoins are the noise obscuring it. It's still early."
+}

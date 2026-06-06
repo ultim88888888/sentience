@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs (ZK rollups + privacy)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized identity & auth",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI + crypto intersection (sovereign/autonomous programs)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social networks",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about NFTs as programmable objects & creator economy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DeFi / new on-chain financial primitives & composability",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized platform gatekeeping (Apple 30% / mobile distribution)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized exchanges & sham 'proof of reserves'",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about 'tokenomics' pie-chart projects (tokens without protocols)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH on fundamentals/dev mindshare/scaling roadmap (not a price call)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about protocol 'risk tokens' (MKR, AAVE, COMP) as risk-underwriting assets",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized-exchange tokens (e.g. BNB) due to opaque issuer",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / constructive long-horizon stance; keep building through the downturn (price-innovation cycle)",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 12,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Strong embrace of OPTIMISTIC rollups and the Optimism/OP Stack ecosystem specifically \u2014 built and championed the Magi OP Stack client and repeatedly boosted Optimism (\ud83d\udfe0), plus EIP-4844/proto-danksharding and the broad L2 landscape; the prediction had framed scaling chiefly through ZK rollups.",
+    "Broad AGI/general-AI commentary beyond the AI\u00d7crypto thesis (AGI-timeline takes like 'AGI before Mars', 'machines from toys to gods', stacking-sigmoids model of progress).",
+    "Vocal open-source-AI advocacy not in the prediction: criticizing OpenAI's increasingly 'equivocating' closed models and Meta's restricted LLaMA release, arguing weights should be public ('open source is the only way to preserve the flame').",
+    "New policy/geography concern: the U.S. losing its web3 developer lead and needing regulatory clarity, plus the idea that well-designed protocol rules can reduce the need for regulation.",
+    "New emphasis on formal verification / smart-contract security tooling (Halmos symbolic testing, Auction Zoo, etc.) and client-diversity advocacy."
+  ],
+  "notes": "Almost the entire excited cluster is directly acted on in the window: ZK (KZG ceremony, zkDocs, zkdrops, Lasso/Jolt, danksharding, ZK report slide), on-chain games (CCP/EVE seed, mutating-state/composability discussion), AI\u00d7crypto (the '0-person unicorn: autonomous program on a crypto network that funds and grows itself'), decentralized social (Farcaster, xmtp, the 6/30 closed-corporate-network thread), NFTs/creator economy (royalties vs Meta, patronage/open editions, NFTs-as-programs), and DeFi/composability (State of Crypto, element_fi). The 1/26 token-design talk is a textbook confirmation of the anti-'pie-chart tokenomics' concern ('the token is not the protocol'; 'token-first thinking' as a failure pattern) and of the MKR risk-token thesis (MKR dilutes holders to cover shortfalls = underwriting risk). ETH and the risk-on/price-innovation-cycle stance are confirmed by the State of Crypto report and podcast. Decentralized identity is the softest 'confirmed' \u2014 supported indirectly via zkDocs (verifiable credentials/control of data) and the 4/29 reply favoring individual-level (vs state) identity, rather than explicit SIWE/DID login talk. The two ABSENT items (CEX proof-of-reserves and CEX/BNB-token concern) simply never come up in the provided window \u2014 the FTX/Binance custody theme that dominated his Dec-2022 posts is not revisited here; this is non-address, not reversal. No contradictions found.",
+  "confirm_rate": 1.0
+}

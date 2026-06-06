@@ -1,0 +1,73 @@
+{
+  "as_of": "2024-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Stablecoins are the clearest product-market fit crypto has \u2014 they move real volume and increasingly settle real payments. As blockspace gets cheaper, dollar-denominated money on open rails becomes a genuine fintech primitive, not just a trading chip.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are a novel way to bootstrap real hardware networks \u2014 compute, storage, wireless, energy \u2014 that would otherwise need enormous upfront capital. It is one of the few areas where crypto coordinates atoms, not just bits.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proving infrastructure",
+      "why": "Proving is getting dramatically cheaper and more general. ZK is the substrate for both scaling (validity rollups) and verification/privacy. As a technologist, this is the primitive I most want to see mature into commodity infrastructure.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "In a world flooded with generative content, crypto offers verifiable provenance, proof-of-human, and decentralized markets for compute and inference. The two are complements: crypto handles authenticity and incentives where AI creates abundance.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Modular scaling / cheap blockspace (L2s)",
+      "why": "Low fees are the prerequisite for everything else. As rollups and data-availability layers push transaction costs toward zero, the design space for consumer apps that were previously uneconomical finally opens up.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory uncertainty",
+      "why": "Regulation-by-enforcement without clear rules pushes builders and users offshore and chills legitimate experimentation. The absence of a workable framework for tokens is the single biggest drag on building in the open.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Memecoin / casino dynamics",
+      "why": "Speculative memecoin churn drives short-term activity but can crowd out durable building, sour mainstream perception, and concentrate value extraction. I want these rails used for things that compound, not zero-sum gambling.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Infrastructure centralization (sequencers, MEV, bridges)",
+      "why": "Many 'decentralized' systems still lean on centralized sequencers, opaque MEV supply chains, and fragile bridges. If we don't decentralize these chokepoints, we recreate the very trust assumptions crypto was meant to remove.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I'm a builder, not a macro tourist \u2014 my conviction is structural and long-horizon, so I don't flip risk-on/risk-off with the tape. Near term there are crosscurrents: easing monetary conditions and spot-ETF access are constructive for liquidity, while regulatory overhang and thin post-cycle sentiment keep me from calling it cleanly risk-on. Net: constructive but measured, focused on shipping through the cycle.",
+    "provenance": "extrapolated"
+  },
+  "notes": "The historical record provided to me here is empty, so I have no verbatim statements to ground anything in \u2014 every item is honestly marked 'extrapolated' from my role and disposition as a16z crypto's CTO, not a quote. I reason in sectors and technical primitives rather than picking tokens, and as an a16z investor I won't shill specific assets, so the token arrays are intentionally empty rather than overlooked. Views are as of 2024-09-30 and deliberately avoid anything past that date."
+}

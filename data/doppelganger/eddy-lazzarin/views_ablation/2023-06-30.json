@@ -1,0 +1,75 @@
+{
+  "as_of": "2023-06-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / zkEVMs",
+      "why": "ZK is the most important cryptographic primitive maturing right now. zkEVMs (Polygon zkEVM, zkSync Era, Scroll, Starknet) are moving from research into production this year, and ZK is dual-use: it scales Ethereum via validity proofs and unlocks verifiable computation and privacy that weren't previously possible. As a technical investor this is where I spend the most time.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2 scaling / rollups",
+      "why": "The rollup-centric roadmap is actually playing out. Arbitrum and Optimism have real usage and fee revenue, and the OP Stack and Arbitrum Orbit point to a multi-chain L2 future that settles to Ethereum. Cheap, abundant blockspace is the precondition for consumer-grade apps, so this is foundational rather than speculative.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Account abstraction (ERC-4337)",
+      "why": "ERC-4337 shipped this spring without a hard fork. Smart accounts with social recovery, gas sponsorship, batching and session keys are the realistic path to wallet UX a normal person can use. Onboarding and key management are the single biggest bottleneck to adoption, and AA attacks it directly.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social / consumer protocols",
+      "why": "Protocols like Farcaster and Lens let users own their social graph and let developers build on a shared, permissionless network instead of a walled garden. It's early, but the architecture is right and it's the kind of consumer use case that can pull in the next wave of users beyond finance.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory environment (regulation-by-enforcement)",
+      "why": "The SEC's suits against Binance and Coinbase this month, naming tokens like SOL, MATIC, ADA and SAND as securities in the complaints, is enforcement without a workable registration path. The real damage is that it pushes builders, liquidity and talent offshore. Until there's legislative clarity, US-facing projects carry a genuine overhang.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Centralized intermediaries / counterparty risk",
+      "why": "After FTX, Celsius and 3AC, the lesson is to minimize trust in opaque custodians. Concentration of activity in a handful of exchanges and stablecoin issuers remains a systemic risk, and it cuts against the whole point of self-custody and on-chain transparency.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Ethereum is the settlement layer the entire L2 and ZK roadmap is built on. Post-Merge it's a fee-burning, yield-bearing asset, and every rollup ultimately settles to and pays fees in ETH, so it's the asset most directly tied to my technical theses. This is a long-horizon view, not a near-term price call.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Tokens named in the June 2023 SEC complaints (e.g. SOL, MATIC, ADA)",
+      "why": "This is not a technology judgment \u2014 Solana's engineering in particular is impressive \u2014 but tokens named as securities in the Binance and Coinbase complaints face near-term US regulatory overhang and possible exchange delistings for US users. That's a real liquidity and access risk right now, distinct from the long-term merit of the projects.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "A long-horizon, build-through-the-bear posture. Valuations reset hard after 2022, fundamental development (ZK, L2s, account abstraction) is accelerating, and the wave of spot-Bitcoin-ETF filings led by BlackRock this month is a serious institutional and regulatory signal. This is a multi-year deploy-through-the-cycle stance rather than a near-term beta bet, and it is explicitly tempered by US regulatory risk, which is the dominant near-term uncertainty.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Reasoning as of 2023-06-30. My record here is empty, so I have no prior verbatim statements to cite \u2014 every item is marked extrapolated from how I think as a technical, long-horizon a16z crypto investor, with no fabricated quotes. I am structurally an infrastructure/builder investor, not a short-term token trader, so my sector views are higher-conviction than any single-token call. Also actively watching: restaking and shared security (EigenLayer's mainnet launch this month is a genuinely new primitive, though unproven) and modular data-availability layers."
+}

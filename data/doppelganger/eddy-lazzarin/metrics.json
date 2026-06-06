@@ -1,0 +1,71 @@
+{
+  "subject": "eddy-lazzarin",
+  "horizon_months": 6,
+  "mean_lift": 0.0,
+  "steps": [
+    {
+      "date": "2022-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Strong embrace of OPTIMISTIC rollups and the Optimism/OP Stack ecosystem specifically \u2014 built and championed the Magi OP Stack client and repeatedly boosted Optimism (\ud83d\udfe0), plus EIP-4844/proto-danksharding and the broad L2 landscape; the prediction had framed scaling chiefly through ZK rollups.",
+        "Broad AGI/general-AI commentary beyond the AI\u00d7crypto thesis (AGI-timeline takes like 'AGI before Mars', 'machines from toys to gods', stacking-sigmoids model of progress).",
+        "Vocal open-source-AI advocacy not in the prediction: criticizing OpenAI's increasingly 'equivocating' closed models and Meta's restricted LLaMA release, arguing weights should be public ('open source is the only way to preserve the flame').",
+        "New policy/geography concern: the U.S. losing its web3 developer lead and needing regulatory clarity, plus the idea that well-designed protocol rules can reduce the need for regulation.",
+        "New emphasis on formal verification / smart-contract security tooling (Halmos symbolic testing, Auction Zoo, etc.) and client-diversity advocacy."
+      ],
+      "n_missed_changes": 5
+    },
+    {
+      "date": "2023-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly vocal pro-Bitcoin-improvement stance \u2014 advocating bringing ZK to Bitcoin and adding a VERIFY_SNARK opcode to make BTC programmable, plus warning its security model must change; the prediction was entirely ETH-centric and ignored Bitcoin.",
+        "Strong enthusiasm for optimistic rollups and the OP Stack/Optimism/Base ecosystem (built and released the Magi OP Stack client) \u2014 a broader L2 embrace than the predicted 'ZK rollups as the predominant compute layer.'",
+        "New excitement for on-chain IP / Story Protocol (an on-chain remix/attribution graph, 'multiplayer for IP') as a sector not anticipated in the prediction.",
+        "The crypto+AI angle he actually pursued was deepfake-resistance / content provenance (ZK proofs of image provenance, attestation graphs, AGI commentary), not the predicted 'autonomous self-owning programs.'",
+        "Positive engagement with proof-of-personhood (Worldcoin/World ID as complement to social-graph approaches) and account abstraction / 'smart accounts' within the identity theme.",
+        "Adopted a terminology shift, replacing 'Data Availability' with 'Data Publishing / Data Storage.'"
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2023-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "New strong bitcoin emphasis not anticipated by the Ethereum-centric prediction: advocating ZK/SNARKs 'back home to bitcoin', a VERIFY_SNARK opcode to make bitcoin programmable, and arguing bitcoin's security model must change.",
+        "Shipped Lasso (new lookup argument ~10x faster than halo2) and Jolt \u2014 an explicitly ISA-/chain-agnostic zkVM (EVM, RISC-V, MIPS), a concrete major SNARK launch broader than Ethereum.",
+        "Deepfakes / AI-content provenance became a major new applied focus for crypto+ZK (long July 22 thread, Dec 17), shifting AI+crypto toward provenance/anti-fakery rather than the 'autonomous 0-person protocol' framing in the prediction.",
+        "Championed reframing 'Data Availability' as 'Data Publishing'/'Data Storage' \u2014 a new terminological/conceptual stance.",
+        "Took a notably favorable, defended stance on Worldcoin / World ID biometric proof-of-personhood as a complement to social-graph approaches.",
+        "Broadened beyond Ethereum L2: openness to app-specific chains, alternative VMs (Move, Rust) and MEV internalization (Sept 19 podcast), plus exploring Aleo's Leo private-chain stack."
+      ],
+      "n_missed_changes": 6
+    }
+  ],
+  "coverage": [
+    {
+      "date": "2022-12-31",
+      "grounded": 13,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-03-31",
+      "grounded": 11,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-06-30",
+      "grounded": 9,
+      "persisted": 3,
+      "extrapolated": 0
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "as_of": "2024-06-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge & verifiable computation (SNARKs/zkVMs)",
+      "why": "ZK has crossed from theory to practice and proving overhead is collapsing \u2014 that single advance unlocks scaling, privacy, and content provenance at once. We shipped Jolt as a free-forever public good to push general-purpose verifiable compute forward; this is the frontier I spend the most engineering time on.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're sharing our biggest open source release yet: Jolt Alpha, our zkVM built new from the ground up."
+        },
+        {
+          "date": "2024-03-31",
+          "quote": "This is why we're developing \u26a1\ufe0f Jolt, our open source proof of concept reference implementation free forever public good love letter to crypto ZK VM."
+        }
+      ]
+    },
+    {
+      "name": "Ethereum L2 scaling (rollups, proto-danksharding, superchain)",
+      "why": "Cheap, high-quality blockspace is the precondition for everything else \u2014 onchain games, cheap experimental NFTs, complex markets. L2 fee share on Ethereum keeps climbing and 4844 pushes it further. The growth of L2s is the strongest direct evidence that Ethereum is scaling.",
+      "provenance": "grounded",
+      "age_note": "grounded 2023-04, reaffirmed through 2024 via Magi/OP-stack superchain work",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "radically decreasing the cost of blocks, high quality blockspace, is a key ingredient in allowing for experimentation"
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games are incentive systems, and when no one in particular runs the server you get composability, modding as a first-class feature, and credibly-neutral worlds nobody can shut down. I've expected fully on-chain games to fill the Zachtronics-style niche, and the EVE/CCP collaboration plus L2-native titles are making it real.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto: provenance, proof-of-personhood, machine ownership",
+      "why": "As generative models flood the web with synthetic content, the only robust way to prove origin or keep bots out is cryptography and blockchains \u2014 a provenance/attestation graph plus sybil-resistant personhood. Crypto is also how autonomous programs and agents can own and transact. The 'mystery meat' default \u2014 assume generated unless proven otherwise \u2014 looks unavoidable.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-04",
+          "quote": "The \"mystery meat\" scenario seems unavoidable:"
+        },
+        {
+          "date": "2024-01-05",
+          "quote": "I don't think it can be done seriously without crypto."
+        },
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        }
+      ]
+    },
+    {
+      "name": "Crypto payments & a frontend UX reset (smart accounts, passkeys, stablecoins)",
+      "why": "Payments were a founding goal and the pieces are finally assembling \u2014 cheap stablecoin transfers that route around the ~30% platform tax, plus smart accounts, passkeys, embedded wallets, and smarter RPC that can make onboarding better and safer than web2. The frontend UX hasn't really changed since 2016; that's about to break.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "the fundamentals of user experience in crypto haven't actually changed much since 2016."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social / open networks (Farcaster et al.)",
+      "why": "Closed platforms break their promises to developers the moment they have the network effects to do so \u2014 App Store rents, API rug-pulls, deplatforming. Sufficiently decentralized social is the neutral substrate that can't be closed, where permissionless innovation actually compounds.",
+      "provenance": "grounded",
+      "age_note": "grounded 2022-07, continuity through 2024-06 (River/Propeller)",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / the casino",
+      "why": "Memecoins aren't technically interesting and the casino sets the whole industry back \u2014 it deters great founders, hands ammunition to politicized regulators, and makes crypto look like a zero-sum casino instead of a new computing platform. The interest comes and goes; the damage to adoption and builder behavior is real.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "But we shouldn't pretend that the casino doesn't set us back."
+        }
+      ]
+    },
+    {
+      "name": "Token-first thinking / 'tokenomics' pie-chart consulting",
+      "why": "A token is a tool that serves a protocol, not a goal. 'Tokenomics experts' producing made-up pie charts are doing ~none of the real work, which is protocol design \u2014 goals, constraints, mechanisms. Projects that start from the token instead of the protocol fail the 'remove the token, what breaks?' test.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-12, a standing theme I reiterated in my 2023-01 token-design talk",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "Launching a token isn't a goal."
+        }
+      ]
+    },
+    {
+      "name": "Bitcoin's long-term security & programmability roadmap",
+      "why": "I want Bitcoin to flourish for the next century, but its security model \u2014 fees eventually replacing the block subsidy \u2014 needs to change, and its lack of programmability cuts it off from the ZK techniques that could make it fully programmable and cheap to move. A stagnant roadmap here is a genuine risk.",
+      "provenance": "grounded",
+      "age_note": "stated 2023-07, not revisited recently",
+      "citations": [
+        {
+          "date": "2023-07-24",
+          "quote": "the security model of bitcoin needs to change if it's going to last the next few decades."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Not a price call \u2014 I treat ETH as the native asset/network resource of the leading smart-contract platform, with the deepest developer community and a scaling roadmap (L2s + proto-danksharding) that keeps compounding. My optimism is about the network's fundamentals, not a trade.",
+      "provenance": "persisted",
+      "age_note": "expressed optimism on Ethereum's growth 2021-02; a continuous network-fundamentals view, not restated as an asset call",
+      "citations": [
+        {
+          "date": "2021-02-25",
+          "quote": "In one year, Ethereum has grown from settling ~$373m per day to over $9b per day."
+        }
+      ]
+    },
+    {
+      "name": "MKR (Maker)",
+      "why": "I keep returning to Maker as the cleanest example of open protocol design. MKR is a real stakeholder/risk token that underwrites the system and accrues from good stewardship, with on-chain fundamentals you can actually compute. Admiration for the design and fundamentals \u2014 not a price target.",
+      "provenance": "persisted",
+      "age_note": "stated 2022-07; design/fundamentals view, not revisited as a market call",
+      "citations": [
+        {
+          "date": "2022-07-14",
+          "quote": "the role of MKR and AAVE/COMP as the risk token that underwrites the protocol"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I fly by instruments, not sentiment \u2014 the price-innovation cycle says fundamentals keep advancing through the turbulence. Right now next-gen infra is online (ZK, L2s), payments and UX are coming together, and regulatory strategy is improving, so 'there has never been a better time to build.' My discipline is to be 'skeptical in analysis and optimistic in action': despite the noise, things are proceeding according to plan. This is a builder's constructive posture, not a trading call \u2014 I'm an engineer, not here to time markets.",
+    "provenance": "grounded"
+  },
+  "notes": "Read everything here through a builder's lens: I weight protocols, mechanisms, and on-chain fundamentals over price, so the 'token' entries are network/fundamentals views, never trading recommendations. The honest throughline \u2014 it's still early, the memecoin casino is a distraction, and the durable progress is in zero-knowledge, scaling, onchain games, identity/provenance, and payments."
+}

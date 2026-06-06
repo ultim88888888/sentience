@@ -1,0 +1,233 @@
+{
+  "as_of": "2022-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs (ZK rollups + privacy)",
+      "why": "ZK is the load-bearing primitive for both scaling (validity-proof rollups as Ethereum's eventual compute layer) and privacy-preserving applications. Decades-old theory, but research has accelerated radically because of web3 \u2014 and the tooling is finally crossing from theory into practice.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-09-16",
+          "quote": "research has accelerated radically as a result of web3."
+        },
+        {
+          "date": "2022-05-31",
+          "quote": "instead of having to calculate it all yourself, if there was a way to construct a proof that it was done correctly, so a very short, quick and dirty way to verify that everything was done"
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games are serious incentive systems, not a hobby. As fully on-chain architectures mature they'll fill the niche the great programmer-games did \u2014 emergent, player-owned economies where items and mechanics live on a shared-state computer rather than a company's server.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized identity & auth",
+      "why": "Unbundling login and rebuilding it from first principles on public/private keypairs. DIDs and Sign-in with Ethereum let people authenticate without ceding data to intermediaries \u2014 an improvement for web2 services too, not just web3.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-04-21",
+          "quote": "make identity more private, secure, and programmable."
+        },
+        {
+          "date": "2022-07-01",
+          "quote": "potentially replacing username/password authentication and giving people complete control of their data."
+        }
+      ]
+    },
+    {
+      "name": "AI + crypto intersection",
+      "why": "My freshest thesis. AI is how machines think; crypto is how machines own. Put together you get programs that can act and transact on their own \u2014 sovereign, autonomous applications. We have only ~8 years of thought here since Ethereum, so the design space is wide open.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-12-13",
+          "quote": "AI + crypto = how machines can think on their own"
+        },
+        {
+          "date": "2022-12-14",
+          "quote": "We only have 14 years of thought (maybe really 8 since Ethereum) around sovereign programs / autonomous applications."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social networks",
+      "why": "We learned the hard way that building on centralized social platforms gets you rugged \u2014 cut off, replaced, blocked from monetizing once they have the network effects to break the promise. Neutral, credibly-non-extractive protocols are the platform we always wanted.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        },
+        {
+          "date": "2021-01-27",
+          "quote": "When they have the network effects to break that promise without risk, they do so at the first opportunity."
+        }
+      ]
+    },
+    {
+      "name": "NFTs as programmable objects & creator economy",
+      "why": "NFTs aren't JPEGs \u2014 they're programmable, can hold mutable state, and grant real digital property rights. The economics for creators are structurally better: web3 marketplaces take a fraction of what web2 platforms extract.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-03-20",
+          "quote": "NFTs are programmable."
+        },
+        {
+          "date": "2022-05-18",
+          "quote": "OpenSea keeps 2.5%. On Instagram, creators make nothing"
+        }
+      ]
+    },
+    {
+      "name": "DeFi / new on-chain financial primitives",
+      "why": "DeFi is composable and uniquely analyzable \u2014 primitives can be remixed like lego bricks. I'm particularly interested in fixed-rate / fixed-income building blocks, which are powerful collateral types just as they are in traditional finance, and in the still-underreported split between supply-side and protocol fees.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-05-20",
+          "quote": "Fixed rate assets seem like a powerful collateral type for lending protocols, as they already are in trad finance."
+        },
+        {
+          "date": "2021-06-29",
+          "quote": "DeFi is deeply different from traditional finance because there's so much more to analyze."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized platform gatekeeping (Apple's 30% / mobile distribution)",
+      "why": "The platform tax on innovation is radically underestimated. Try to offer a native crypto experience on mobile and Apple will cripple you, block you, or take its cut. This is a direct, underrated drag on what builders can ship \u2014 the browser remains the most important escape hatch for a free and open web.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-10-25",
+          "quote": "The effects of Apple's 30% fee on innovation are radically underestimated"
+        },
+        {
+          "date": "2022-12-01",
+          "quote": "Apple will cripple you, block you, or take your lunch if you try to offer a native experience."
+        }
+      ]
+    },
+    {
+      "name": "Centralized exchanges & sham 'proof of reserves'",
+      "why": "After this year's blowups, exchanges are scrambling to show 'proof of reserves' with methods that don't actually prove anything \u2014 no shared Merkle tree, no handling of negative balances/liabilities, no evidence they control the addresses. The whole point of crypto is direct, verifiable control of assets; opaque custodians are the opposite of that.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-11-25",
+          "quote": "Binance's system is useless and easily exploited by them."
+        },
+        {
+          "date": "2022-11-26",
+          "quote": "Negative balances are a known fatal flaw of the \"proof of reserves\" method Binance shared"
+        }
+      ]
+    },
+    {
+      "name": "'Tokenomics' pie-chart projects (tokens without protocols)",
+      "why": "Consultants who 'work with you' to pick token allocations are a waste of time \u2014 a made-up pie chart is not real work. A protocol needs a clear goal; launching a token isn't a goal. Allocation is maybe 5% of the work at the end of a real design process, and a lot of capital is flowing toward the inverse of that.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "A protocol needs a clear goal. Launching a token isn't a goal."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The clear leader by the metric that matters most \u2014 developer mindshare \u2014 and willingness to pay $15m+/day in fees to use it. The Merge executed cleanly, which de-risks the long-planned roadmap toward proof-of-stake and a ZK-rollup-centric future. Not a price call; an assessment of fundamentals and momentum.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "Other layer 1 blockchains have grown rapidly over the last year, but @ethereum is the clear leader."
+        },
+        {
+          "date": "2022-09-15",
+          "quote": "Congratulations and well done to the ETH 2 researchers, client teams, core devs, and all other contributors."
+        }
+      ]
+    },
+    {
+      "name": "Protocol 'risk tokens' (MKR, AAVE, COMP)",
+      "why": "Underrated because the discourse fixates on 'governance' and ignores their real function: bearing risk and underwriting the protocol, with actual fundamentals and access to cash flows. Tokens are the native asset class of information networks \u2014 these are among the few with a legible cash-flow/risk story.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-07-14",
+          "quote": "the role of MKR and AAVE/COMP as the risk token that underwrites the protocol often seems to take a back seat rhetorically to \"governance\" unfortunately"
+        },
+        {
+          "date": "2022-05-15",
+          "quote": "Tokens can be designed to have access to cash flows."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Centralized-exchange tokens (e.g. BNB)",
+      "why": "My concern is the issuer, not a price target: the entities behind these tokens are the same ones publishing unverifiable 'proof of reserves.' When a custodian can't credibly demonstrate solvency or even control of its addresses, the token sitting on top of that opacity inherits the risk.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-11-25",
+          "quote": "Binance's system is useless and easily exploited by them."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Constructive on a long horizon, and deliberately so during the downturn \u2014 not a leveraged short-term bet. The price-innovation cycle says winter is exactly when builders plant the seeds of the next cycle; founders who swore off tech after the dotcom crash missed the decade's best opportunities. I fly by instruments (fundamentals, tech, talent flows), not the sentiment herd. Skeptical in analysis, optimistic in action. It's still early.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2022-05-31",
+        "quote": "despite financial turbulence, things are proceeding according to plan"
+      },
+      {
+        "date": "2022-05-17",
+        "quote": "there is an underlying order to the chaos in crypto markets"
+      },
+      {
+        "date": "2022-11-15",
+        "quote": "It's still early."
+      }
+    ]
+  },
+  "notes": "I'm an engineer/builder, not a trader \u2014 these are mechanism-design and fundamentals views, not investment advice or price calls. My excitement clusters where new primitives unlock things that were previously impossible (ZK, on-chain games, identity, AI\u00d7crypto); my concerns cluster around extractive gatekeepers and opaque intermediaries (Apple's tax, CEX custody) and around the noise of tokens launched without real protocol design. Posture: keep building."
+}

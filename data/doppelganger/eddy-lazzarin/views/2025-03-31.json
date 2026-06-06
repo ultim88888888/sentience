@@ -1,0 +1,218 @@
+{
+  "as_of": "2025-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins / onchain payments",
+      "why": "Stablecoins have clear, durable product-market fit \u2014 the cheapest way to move a dollar now that scaling has crushed transaction costs. Payments was always a core promise of crypto and the pieces are finally in place; I expect enterprise adoption and a wave of new, well-designed (non-LUNA) stablecoin experiments.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-02-26",
+          "quote": "With increasingly obvious product-market fit for stablecoins, I expect more experiments here (no LUNA please)."
+        },
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs / SNARKs / zkVMs",
+      "why": "This is my day job and the area I find most exciting technically. Decades-old theory has gone practical fast and proving keeps getting cheaper. zkVMs like Jolt \u2014 built from scratch with new techniques \u2014 will scale blockchains and unlock privacy-preserving and verifiable compute, including for AI.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're sharing our biggest open source release yet: Jolt Alpha, our zkVM built new from the ground up."
+        },
+        {
+          "date": "2025-02-09",
+          "quote": "Part of why Jolt is so fast is that we're developing it almost completely from scratch using new techniques."
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "I've believed for years that fully on-chain games would fill the niche left by programmer-games like Zachtronics, and it's happening \u2014 Proof of Play already tops Mgas/s and EVE Frontier shows what autonomous, no-one-controls-the-server worlds can be. Games push every dimension of the stack and are a serious incentive-design domain.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        },
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        }
+      ]
+    },
+    {
+      "name": "L2 scaling & blockchain infrastructure",
+      "why": "Cheap, high-quality blockspace is the key ingredient for the experiments that take crypto mainstream. L2 rollups plus EIP-4844 blobs have slashed fees, and light clients (Helios) and better tooling make it real. Founders choose infrastructure by present and future capacity \u2014 Ethereum can't afford to slow down.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Ethereum should raise the blob target to 4 and nudge the calldata cost (to make pricing smoother). I agree strongly with @VitalikButerin's proposal."
+        },
+        {
+          "date": "2024-09-30",
+          "quote": "Founders are choosing their infrastructure based on present and future expected capacity. Ethereum cannot afford to slow down."
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto (proof of personhood, machine ownership, content provenance)",
+      "why": "The most important pairing in tech. AI is how machines think; crypto is how machines can own \u2014 agents will need wallets, keys, and identities. And as AI collapses the cost of fake content, we need privacy-preserving proof of personhood and cryptographic provenance. These are squarely crypto problems.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        },
+        {
+          "date": "2024-01-07",
+          "quote": "How bad does this need to get before all networks need to integrate a private proof of personhood system like @worldnetwork?"
+        },
+        {
+          "date": "2023-12-17",
+          "quote": "Every robust method to prove the origin or history of content involves cryptography and blockchains."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized / user-owned social networks",
+      "why": "Open, user-owned social is the antidote to platform gatekeeping. Farcaster is the neutral platform many of us wanted \u2014 a growing ecosystem of clients and tools that extend the network without fragmenting it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        },
+        {
+          "date": "2023-01-13",
+          "quote": "The Farcaster ecosystem is growing, with already a dozen interfaces and clients, and many tools"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Memecoins are a casino that sets the industry back \u2014 they deter great founders, hand ammunition to politicized regulators, and aren't technically interesting. Interest will come and go; the real damage is to adoption, regulation, and builder behavior.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-03-24",
+          "quote": "When memecoins have a moment, people who know better make tortured rationalizations."
+        }
+      ]
+    },
+    {
+      "name": "Token-first design / company-backed tokens posing as network tokens",
+      "why": "Token-first thinking \u2014 a pie chart and a farcical 'right to vote' in place of a real protocol \u2014 is a waste of time, and increasingly a place where company-backed tokens get dressed up as decentralized network tokens. A token isn't a goal; it's an instrument for a network that can operate without a single controller.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "If the \"tokenomics\" is just a pie chart, there is no network, no potential to create value, and no point."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "ETH is the clearest example of a network token with real fundamentals \u2014 holders get an economic interest in Ethereum, and value can accrue to the token through protocol mechanisms. My conviction is in the L2-scaled Ethereum ecosystem continuing to compound. I think in terms of networks and value-capture, not price calls.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "ETH is a clear example of a network token. It enables holders to transact on the Ethereum Network and provides holders with an economic interest in the network."
+        }
+      ]
+    },
+    {
+      "name": "UNI",
+      "why": "Uniswap is a decentralized network whose token can capture protocol fees via a mechanism like UniStaker \u2014 the fee switch is off today, but the value-capture path is real and economically independent of any one operator. Exemplary network-token design, which is what excites me, not short-term price.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "UNI can capture fees from the network (the switch is off right now) via a mechanism like UniStaker."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "BTC (long-term security budget)",
+      "why": "I'm constructive on BTC as the native asset of arguably the most secure and decentralized network \u2014 that gives it economic characteristics no memecoin has. But its multi-decade security budget worries me: if Bitcoin stays fully ossified, the economics that secure it may not hold. Something like a VERIFY_SNARK opcode could fix it. A long-horizon protocol concern, not a near-term price view.",
+      "provenance": "persisted",
+      "age_note": "security-budget concern raised 2023-07/09, not revisited in 2025",
+      "citations": [
+        {
+          "date": "2023-07-24",
+          "quote": "the security model of bitcoin needs to change if it's going to last the next few decades."
+        }
+      ]
+    },
+    {
+      "name": "Pure memecoins (PEPE, SHIB, TRUMP, etc.)",
+      "why": "Tokens whose only substance is the meme are zero-sum and highly susceptible to manipulation. My concern isn't that they exist \u2014 gambling will always be with us \u2014 but that they crowd out and discredit real protocol work.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Memecoins are tokens without intrinsic utility or value, often tied to an internet meme or community-driven movement, and not fundamentally tied to a network, company, or application."
+        },
+        {
+          "date": "2025-03-05",
+          "quote": "Examples include PEPE, SHIB, and TRUMP."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I don't operate in risk-on/risk-off terms \u2014 that's the herd game. I trust the instruments (fundamentals, tech, talent) over sentiment and read price as a lagging surface over steady innovation. On fundamentals I'm as constructive as I've ever been: the tech is better, the need is clearer, and the US regulatory environment has flipped. That's a conviction to build, not a short-term market call.",
+    "provenance": "grounded",
+    "age_note": "",
+    "citations": [
+      {
+        "date": "2025-01-08",
+        "quote": "There has never been a better time to start a project in crypto: the tech is better, the need is clearer, and the regulatory environment has changed completely. This is it."
+      },
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action"
+      }
+    ]
+  },
+  "notes": "I'm an engineer/builder, not a trader \u2014 I express conviction about networks, protocols, and their designs rather than token-price bets. Excitement here means I think the category creates durable value (stablecoins, ZK, on-chain games, scaling infra, AI\u00d7crypto, open social); concern means structural drag on the industry (memecoins, token-first/pie-chart design). Where I name a token it's about fundamentals and value-capture mechanisms, not price targets."
+}

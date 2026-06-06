@@ -1,0 +1,127 @@
+{
+  "as_of": "2024-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins have hit clear product-market fit \u2014 they're the cheapest way to move a dollar, and after this year's L2 fee collapse the unit economics finally work for real payments, not just on-chain collateral. Payments was always one of the original goals; the pieces are now in place, and I expect enterprises and SMBs to start switching off card rails.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-10-03",
+          "quote": "Everyone is talking about payments."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge / SNARKs / verifiable compute",
+      "why": "Proving overhead is dropping from ~10^9 toward 10^6, which moves SNARKs from theory into practice. With Jolt/Lasso and Binius on the roadmap, this unlocks scaling, privacy, and verifiable compute (including for AI and content provenance). Decades-old research is accelerating because of crypto.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're sharing our biggest open source release yet: Jolt Alpha, our zkVM built new from the ground up."
+        }
+      ]
+    },
+    {
+      "name": "AI + crypto (autonomous agents)",
+      "why": "AI is how machines think; crypto is how machines own. Agents can't have bank accounts but they can have wallets \u2014 they'll transact, pay each other, and pay for their own compute in a verifiably autonomous way. It's the most novel design space opening up, and it needs crypto rails plus identity/auth between agents.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "agents being able to pay each other, and even for their own compute, is what I had in mind here. It will definitely happen."
+        }
+      ]
+    },
+    {
+      "name": "Proof of personhood / private decentralized identity",
+      "why": "As AI drives the marginal cost of fake content and fake identities toward zero, we need privacy-preserving, unique (Sybil-resistant) proof of personhood. The point isn't to prove a person exists \u2014 it's to raise the cost of attacks without raising costs for real people. A non-negotiable building block for a trustworthy web, and it wants a credibly-neutral blockchain underneath.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-01-07",
+          "quote": "How bad does this need to get before all networks need to integrate a private proof of personhood system like @worldnetwork?"
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games push software's envelope and are already the highest-throughput thing on-chain. When no one in particular controls the game server, modding and composability become first-class \u2014 third parties can extend the world without breaking it. I've expected on-chain games to fill the Zachtronics-style niche, and the cheap blockspace to support it is finally arriving.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        },
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    },
+    {
+      "name": "L2 scaling & blockchain infrastructure",
+      "why": "Radically cheaper, high-quality blockspace is the prerequisite for everything else \u2014 payments, micro-priced NFTs, on-chain games, complex markets. L2 fees collapsed after EIP-4844 and throughput is up ~50x in four years. Light clients (Helios for L2s) are becoming critical for rollup interoperability. Founders pick infra on expected future capacity, so this has to keep accelerating.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Ethereum cannot afford to slow down."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation (the casino)",
+      "why": "Memecoins are explicitly purposeless \u2014 gambling, not protocols. Interest comes and goes, but the casino sets the industry back: it deters great founders, hands politicized regulators ammunition, and frames crypto as a risky casino rather than a new computing platform. They're also not technically interesting, so they don't attract builders. I see the damage every day.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Not a price call \u2014 I think in protocols, not pie charts. But ETH is the rare network token with a real economic loop: issuance pays a security budget to validators, and EIP-1559 burns capture value when blockspace is consumed. It's still the clear builder leader and the L2 ecosystem compounds its network effects. My one worry is complacency on scaling.",
+      "provenance": "persisted",
+      "age_note": "long-held conviction in Ethereum's network-token economics and leadership; settlement-growth framing stated 2021-02, not restated as a price view",
+      "citations": [
+        {
+          "date": "2021-02-25",
+          "quote": "In one year, Ethereum has grown from settling ~$373m per day to over $9b per day."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I read markets through the price-innovation cycle, not sentiment \u2014 trust the instruments (fundamentals), not the herd. Right now both are unusually aligned: ETP approvals, real regulatory momentum, L2 fees collapsed, activity at all-time highs, and builder energy clearly back. It's still early, so I'm leaning in and building aggressively. The 'risk-on' is conviction in the technology, not a short-term price prediction.",
+    "provenance": "persisted",
+    "age_note": "core framework (price-innovation cycle, 'still early'), applied to the end-2024 moment"
+  },
+  "notes": "Lens caveat: I'm an engineer/builder, not a trader, and I deliberately avoid specific token-price bets \u2014 tokens are the native asset class of information networks, so I evaluate them as protocols (goals, mechanisms, faucets/sinks), not as pie charts. Hence rich sector views and a single, carefully-framed token view. Skeptical in analysis, optimistic in action."
+}

@@ -1,0 +1,164 @@
+{
+  "as_of": "2025-06-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Payments was a founding goal of crypto and the pieces have finally come together \u2014 stablecoins have clear product-market fit, scaling cut fees to near-zero, and enterprises are next to adopt these rails. Demand even looks uncorrelated with interest rates, which tells me it's real usage, not speculation.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-10-03",
+          "quote": "Everyone is talking about payments."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs / SNARKs / zkVMs",
+      "why": "Decades-old research that has crossed from theory to practice and is compounding fast. It unlocks both scaling through succinctness and privacy, and the techniques we bet on with Jolt \u2014 sumcheck, GKR, lookups \u2014 are winning. Cheaper, faster proving makes whole new classes of verifiable computation possible.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "Jolt is getting faster and the underlying techniques we've been advocating for \u2014 sumcheck, GKR, lookups \u2014 are becoming more popular."
+        }
+      ]
+    },
+    {
+      "name": "Private, Sybil-resistant proof-of-personhood / identity",
+      "why": "AI has collapsed the marginal cost of fabricating convincing content and fake identities. The defense is a private, unique ID that's cheap for a human to get one of and nearly impossible to get two \u2014 raising attackers' costs without raising honest users'. Every network will need this.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-26",
+          "quote": "Every social network will struggle. Every person will want a network where you can tell the difference."
+        }
+      ]
+    },
+    {
+      "name": "Blockchain scaling & cheap high-quality blockspace (L2s)",
+      "why": "Radically cheaper, high-quality blockspace is the key ingredient for the experimentation that produces mainstream products. Founders pick infrastructure on present and future capacity, and more blockspace is simply good.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Founders are choosing their infrastructure based on present and future expected capacity. Ethereum cannot afford to slow down."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "More blockspace is good. L1 fees are not going to zero."
+        }
+      ]
+    },
+    {
+      "name": "Fully onchain games",
+      "why": "Games push every technology envelope, and a trustless game server \u2014 state nobody controls \u2014 unlocks composability, modding, and real player ownership you can't get otherwise. Throughput leaders are already games, and I'm deep in EVE Frontier; this niche grows as blockspace gets cheaper.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        },
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        }
+      ]
+    },
+    {
+      "name": "AI + crypto (autonomous agents that own assets)",
+      "why": "Crypto is how machines can own. Agents can't have bank accounts but they can have wallets, sign keys, and pay for their own compute \u2014 and crypto provides the guarantees and incentive design to keep autonomous AI credibly neutral. The two technologies are natural counterweights.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-05",
+          "quote": "AI agents can't have bank accounts, but they can have crypto wallets."
+        },
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation / casino dynamics",
+      "why": "Memecoins aren't technically interesting and the casino sets the industry back \u2014 deterring great founders and handing ammunition to politicized regulators. Interest comes and goes; I'm optimistic real protocols win in the end, but we shouldn't pretend the froth is harmless.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "But we shouldn't pretend that the casino doesn't set us back. Deterring great founders and giving ammo to politicized regulators has a profound effect."
+        }
+      ]
+    },
+    {
+      "name": "Company-backed tokens dressed up as decentralized network tokens",
+      "why": "Some projects call their token a network token (or even a memecoin) when its value depends entirely on one company's offchain operation. That mislabeling carries securities-like risk for holders and muddies the category that actually matters. How it works determines what it is \u2014 not the name.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Some projects even describe their token as a Network Token or memecoin when it's really Company-backed."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "I'm an engineer and builder, not a trader, and I don't make price calls \u2014 but ETH is the cleanest example of a network token with real value accrual: you pay for blockspace and the EIP-1559 burn captures value from consumption automatically. It has the clearest builder mindshare and scales through its L2 ecosystem.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-27",
+          "quote": "I think ETH is already doing (fully automatic) buybacks via the EIP-1559 burn."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "L1 tokens aren't blockspace. They're:\n\n1: the token you (usually) use to pay for blockspace\n2: the token that captures value (via burn) from consumed block space"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "This isn't a sentiment or price call \u2014 I trust the instruments (fundamentals, the price-innovation cycle) over the mood of Mr. Market, and I don't trade the cycle. But on a multi-year builder's horizon I'm as constructive as I've ever been: the tech is better, the need is clearer, and the regulatory environment has changed completely. Skeptical in analysis, optimistic in action.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2025-01-08",
+        "quote": "There has never been a better time to start a project in crypto: the tech is better, the need is clearer, and the regulatory environment has changed completely. This is it."
+      },
+      {
+        "date": "2022-05-17",
+        "quote": "there is an underlying order to the chaos in crypto markets"
+      },
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action"
+      }
+    ]
+  },
+  "notes": "I reason about technology and networks, not trades \u2014 so my real signal is in sectors, not token picks. I deliberately ignore short-term price action and look at fundamentals through the price-innovation cycle. Among tokens I won't speculate on price, but the category I respect is network tokens with genuine, programmatic value capture (ETH's burn; Uniswap's fee switch) \u2014 as opposed to memecoins or company-backed tokens. Views are as of 2025-06-30 and reflect only what I know today."
+}

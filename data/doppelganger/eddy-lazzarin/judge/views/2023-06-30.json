@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs / cryptography as the highest-conviction frontier (proving speeds, proof sizes, verifiable compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 scaling / cheap high-quality blockspace as the precondition for experimentation",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games (composability, player ownership; CCP/EVE bet)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social networks (Farcaster, open user-owned web, neutral messaging)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about self-sovereign identity / authentication (keypairs replace login, DIDs, proof-of-personhood)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI + crypto / autonomous applications (machines that own, verifiable compute, content provenance)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about closed, centralized platforms (App Store taxes, API rug-pulls, you own nothing on a corporate network)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about opaque centralized exchanges / custodians (proof-of-reserves theater, systemic trust risk)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about token-first / 'pie-chart' projects with no protocol goal",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about U.S. regulatory uncertainty pushing developers offshore",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Conviction in ETH/Ethereum as the leading open, permissionless computer and substrate of innovation (not a price call)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Admiration for MKR (Maker) as the canonical well-designed risk-underwriting token",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / build-through-the-winter posture: fundamentals over sentiment, optimistic in action, 'still early'",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "New strong bitcoin emphasis not anticipated by the Ethereum-centric prediction: advocating ZK/SNARKs 'back home to bitcoin', a VERIFY_SNARK opcode to make bitcoin programmable, and arguing bitcoin's security model must change.",
+    "Shipped Lasso (new lookup argument ~10x faster than halo2) and Jolt \u2014 an explicitly ISA-/chain-agnostic zkVM (EVM, RISC-V, MIPS), a concrete major SNARK launch broader than Ethereum.",
+    "Deepfakes / AI-content provenance became a major new applied focus for crypto+ZK (long July 22 thread, Dec 17), shifting AI+crypto toward provenance/anti-fakery rather than the 'autonomous 0-person protocol' framing in the prediction.",
+    "Championed reframing 'Data Availability' as 'Data Publishing'/'Data Storage' \u2014 a new terminological/conceptual stance.",
+    "Took a notably favorable, defended stance on Worldcoin / World ID biometric proof-of-personhood as a complement to social-graph approaches.",
+    "Broadened beyond Ethereum L2: openness to app-specific chains, alternative VMs (Move, Rust) and MEV internalization (Sept 19 podcast), plus exploring Aleo's Leo private-chain stack."
+  ],
+  "notes": "All six sector-excitement theses and the risk-on builder posture were strongly confirmed, often via concrete action: Lasso/Jolt and Halmos (ZK/security), onchain-summer + Oct-27 'high-quality blockspace is compute-bound' (L2/blockspace), 'fully on-chain games are a favorite category' + CCP/EVE playtest promotion + playing Primodium (games), defending Farcaster vs Nostr and engaging @dwr (social), smart accounts/passkeys/MPC and proof-of-personhood (identity), deepfake provenance and 'crypto-the-computer vs casino' (AI+crypto). Risk_regime confirmed by tech-tree/long-arc framing, 'timeline full of fascinating projects', TVL-is-a-bad-metric, and the forward-looking 2024 big-ideas piece. Concern axis fared worse: only 'closed centralized platforms' was revisited (Apple/Beeper sarcasm Dec 19, 'centralization limits the speed of innovation'); opaque exchanges/custodians (only a faint self-custody throughline in the Sept 11 secrets piece), pie-chart tokens (the Aug 14 TVL-bad-metric tweet is the related vanity-metrics theme, not the same stance), and U.S. regulation were not addressed = absent. Token axis is sparse by design: ETH conviction persists (onchain summer, EVM/Solidity network-effects discussion) though notably broadened toward multi-chain/bitcoin/alt-VMs and explicitly 'may not run away and win'; MKR never came up. No claims were contradicted.",
+  "confirm_rate": 1.0
+}

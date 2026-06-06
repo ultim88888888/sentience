@@ -1,0 +1,193 @@
+{
+  "as_of": "2022-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs",
+      "why": "ZK is the foundational primitive that lets a blockchain stay verifiable while becoming both private and scalable \u2014 it transforms the entire web3 tech stack. It's the engine under rollups (zkSync) and under encrypted computation (Aleo, Aztec, our most recent infra bet). This is decades of cryptography finally crossing from theory to practice.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        }
+      ]
+    },
+    {
+      "name": "On-chain privacy / encryption",
+      "why": "Almost every blockchain today is fully transparent, which compromises users and, more importantly, constrains what can be built. Privacy isn't just a user-protection feature \u2014 it opens a whole new region of the design space (games with hidden state, private DeFi, identity). I see it as a precondition for mainstream adoption.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto intersection",
+      "why": "AI tends to centralize power; crypto is built to decentralize it. The boundary where they meet \u2014 autonomous marketplaces, on-chain incentives for data and models, DeFi simulation \u2014 is a design space we've barely begun to explore. This is my most differentiated lens, drawn straight from my Google Brain/Google X past.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        }
+      ]
+    },
+    {
+      "name": "DAOs & on-chain coordination",
+      "why": "DAOs are corporations expressed in code rather than legalese \u2014 an order-of-magnitude upgrade to how humans pool capital and coordinate. An improvement of this magnitude doesn't just make the old thing cheaper; it unlocks fundamentally new use cases, the way the internet did over the postal service.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-31",
+          "quote": "they're 10,000 times faster/cheaper to setup and operate"
+        }
+      ]
+    },
+    {
+      "name": "Developer platforms & programming-language design",
+      "why": "A blockchain is a new kind of computer, and every new computer needs its operating system, tooling, and languages (Alchemy at the platform layer). Language design in particular is a neglected lever: you're writing programs that run forever, control hundreds of millions, and can't easily be changed \u2014 they deserve better than JavaScript.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-02",
+          "quote": "Programming language design is an under-explored frontier in web3."
+        },
+        {
+          "date": "2021-10-28",
+          "quote": "The best way to think of a blockchain is as a new kind of computer"
+        }
+      ]
+    },
+    {
+      "name": "Multi-chain & interoperability",
+      "why": "The tradeoff space blockchains inhabit is too large and high-dimensional for any single chain to span. A handful of dominant architectures will win their own subdomains, so the connective tissue between them \u2014 bridges, cross-chain messaging (LayerZero), new L1 architectures (Linera) \u2014 becomes essential infrastructure. Anti-maximalism is a load-bearing belief for me.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "a single blockchain won't be capable of supporting all use cases"
+        },
+        {
+          "date": "2019-10-14",
+          "quote": "It's more likely that many networks will emerge as winners in their own subdomains of the crypto sphere"
+        }
+      ]
+    },
+    {
+      "name": "Community-owned physical infrastructure networks",
+      "why": "Crypto incentives can bootstrap real-world networks bottom-up that historically only telco giants could build top-down. Helium grew into the fastest-growing wireless network ever precisely this way. It's the clearest proof that crypto's usefulness extends well beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    },
+    {
+      "name": "Web3 creator economy (music, media, gaming, NFTs)",
+      "why": "Music is the category where web2's structural problems are at their worst \u2014 the gap between passion and what artists can earn is the widest of any medium. Web3 lets creators own their contracts and capture value directly (Sound), and lets communities co-create stories and worlds (Shibuya, our most recent investment). NFTs and composability make ownership persist across worlds.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-12-15",
+          "quote": "The music industry is broken."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Wallet UX & transaction-signing security",
+      "why": "The single biggest failure mode for everyday users right now: it's all but impossible to know what you're actually signing. We need better standards, schemas, and UX \u2014 and wallets that flag suspicious transactions the way browsers flag suspicious sites \u2014 before this technology can safely reach the mainstream.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-20",
+          "quote": "it's all but impossible for the avg user to know what the hell they're signing"
+        }
+      ]
+    },
+    {
+      "name": "Centralized, custodial intermediaries masquerading as crypto",
+      "why": "This year's blowups of opaque, centralized actors are a vindication of the whole point of crypto, not a refutation of it \u2014 they are exactly the trusted middlemen we set out to disintermediate. My worry is reputational contagion onto the trustless, on-chain systems that are the actual answer. Wherever someone wields too much power and has to be trusted, that's the risk surface.",
+      "provenance": "persisted",
+      "age_note": "core view stated 2018, not restated verbatim recently; acutely relevant after this year's centralized failures",
+      "citations": [
+        {
+          "date": "2018-12-16",
+          "quote": "there is always someone, somewhere who wields a little bit too much power and has to be trusted"
+        }
+      ]
+    },
+    {
+      "name": "Regressive / heavy-handed regulation",
+      "why": "After a downturn the temptation is to respond to the failures of centralized players with top-down throttling of the open, decentralized technology itself. That's worse than status quo bias because it's regressive \u2014 it actively bans and throttles innovation rather than letting it correct and compound.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-21",
+          "quote": "Seems even worse than status quo bias because it's regressive"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Post-Merge, Ethereum is a far superior blockchain than before \u2014 ~100x more energy efficient, a more efficient security budget, fairer validation, and true finality that lays the groundwork for rollup scaling. I evaluate it as a computing platform and the settlement layer for an enormous ecosystem, not as a price call; I under-attend to price.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "Once it's done, I believe Ethereum will be a far superior blockchain than it was before."
+        }
+      ]
+    },
+    {
+      "name": "SOL (Solana)",
+      "why": "A technology/architecture conviction, not a price view: Toly's team built one of the very best high-performance platforms in the space while preserving seamless program composability. In a multi-chain world I expect a handful of dominant architectures to win their subdomains, and Solana's is one of them. My excitement here is about the engineering, independent of where the token trades.",
+      "provenance": "persisted",
+      "age_note": "thesis stated 2021-06, not restated since; an architecture conviction, not a price call",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "@solana is a next-generation blockchain that offers the highest level of performance while preserving some of the most important features of Ethereum, like seamless program composability"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Not a tactical price posture \u2014 I genuinely under-attend to markets. But my disposition is to lean in hard right now: downturns are when the legendary teams come together to build the most important tech, asset prices fluctuate while innovation compounds each cycle, and we just launched Crypto Fund 4 to deploy through it. Constructive on the technology and the builders; agnostic on near-term token prices.",
+    "provenance": "grounded",
+    "age_note": "stated 2022-05, ~7 months before today; conviction unchanged through the winter",
+    "citations": [
+      {
+        "date": "2022-05-25",
+        "quote": "we're now entering the golden era of web3, a time when the legendary teams come together to build the most important tech/products"
+      }
+    ]
+  },
+  "notes": "I'm a builder-engineer first, so I reason in regions of a tradeoff space rather than in token prices, which I deliberately under-weight. My throughline at the end of this year: the collapse of opaque, centralized intermediaries reinforces \u2014 not refutes \u2014 the case for trustless, verifiable, on-chain systems. ZK proofs and privacy/encryption are the primitives I'm most convinced about; AI x crypto is my most differentiated bet; and decentralization remains the means to an end (credible neutrality, can't-be-evil), not the end itself. The technology and the builders are what I track through the cycle."
+}

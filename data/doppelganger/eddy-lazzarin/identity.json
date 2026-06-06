@@ -1,0 +1,107 @@
+{
+  "slug": "eddy-lazzarin",
+  "name": "Eddy Lazzarin",
+  "headline": "Investing in crypto with a16z.",
+  "bio": "Eddy Lazzarin is a General Partner at a16z crypto where he focuses on our portfolio and token strategy, and on strengthening how we identify, evaluate, and support the most important new crypto networks and companies.\n\nBefore a16z crypto, Eddy was a software engineer at Netflix working on data ingestion systems, and a data engineer at Facebook working on growth analytics and modeling for Messenger.\n\nEddy has a B.A. in Philosophy-Neuroscience-Psychology and an M.S. in Computer Science (concentrating in Statistical Computing) from Washington University in St. Louis, where he researched behavioral economics and game theory with Leonard Green.",
+  "current_role": null,
+  "experience": [
+    {
+      "title": "General Partner",
+      "company": "Andreessen Horowitz",
+      "start": "2026-05-01",
+      "end": null,
+      "description": null
+    },
+    {
+      "title": "CTO, Crypto",
+      "company": "Andreessen Horowitz",
+      "start": "2023-02-01",
+      "end": "2026-05-01",
+      "description": null
+    },
+    {
+      "title": "Head of Engineering, Crypto",
+      "company": "Andreessen Horowitz",
+      "start": "2021-09-01",
+      "end": "2023-02-01",
+      "description": null
+    },
+    {
+      "title": "Data Scientist, Crypto",
+      "company": "Andreessen Horowitz",
+      "start": "2019-08-01",
+      "end": "2021-09-01",
+      "description": "Menlo Park, California, United States"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "company": "Netflix",
+      "start": "2018-06-01",
+      "end": "2019-06-01",
+      "description": "Los Gatos, California"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Facebook",
+      "start": "2016-01-01",
+      "end": "2018-06-01",
+      "description": "Menlo Park, CA. Lead Data Engineer (Analytics) for Messenger's monetization projects."
+    },
+    {
+      "title": "Senior Data Science Engineer",
+      "company": "Quid",
+      "start": "2014-04-01",
+      "end": "2015-11-01",
+      "description": "Mountain View, California"
+    },
+    {
+      "title": "Data Science Engineer",
+      "company": "Quid",
+      "start": "2011-09-01",
+      "end": "2014-04-01",
+      "description": null
+    },
+    {
+      "title": "Research Assistant",
+      "company": "Washington University in St. Louis",
+      "start": "2008-01-01",
+      "end": "2011-01-01",
+      "description": "Behavioral Economics Lab. Designed and executed psychological experiments with Dr. Leonard Green."
+    }
+  ],
+  "education": [
+    {
+      "school": "Washington University in St. Louis",
+      "degree": "Master of Science (MS)",
+      "field": "Computer Science",
+      "start": "2010-01-01",
+      "end": "2011-01-01"
+    },
+    {
+      "school": "Washington University in St. Louis",
+      "degree": "Bachelor of Arts (BA)",
+      "field": "Philosophy-Neuroscience-Psychology",
+      "start": "2006-01-01",
+      "end": "2010-01-01"
+    },
+    {
+      "school": "Ransom Everglades School",
+      "degree": null,
+      "field": null,
+      "start": null,
+      "end": null
+    },
+    {
+      "school": "Belen Jesuit Preparatory School",
+      "degree": null,
+      "field": null,
+      "start": null,
+      "end": null
+    }
+  ],
+  "socials": {
+    "x_url": "https://twitter.com/@eddylazzarin",
+    "linkedin_url": "https://www.linkedin.com/in/eddy-lazzarin-66059749/",
+    "farcaster_url": "https://farcaster.xyz/eddy"
+  }
+}

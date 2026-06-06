@@ -1,0 +1,81 @@
+{
+  "as_of": "2023-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / ZK infrastructure",
+      "why": "ZK is the most important cryptographic primitive of this decade: succinct verifiability plus selective privacy. zkEVMs maturing this year turn Ethereum scaling from a roadmap into shipping infrastructure, and the same tech underpins identity, interoperability, and verifiable compute.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Account abstraction / smart wallets",
+      "why": "ERC-4337 going live this year lets wallets finally be programmable \u2014 gas sponsorship, social recovery, session keys, custom security policies. This is the UX unlock that makes self-custody usable for normal people, which is the single biggest blocker to mainstream adoption.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Layer 2 / modular scaling (rollups)",
+      "why": "Rollups are how Ethereum scales without giving up base-layer security. With multiple zk and optimistic rollups live and fees compressing, we finally have the throughput for applications that aren't only high-value DeFi.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social / user-owned identity",
+      "why": "Open, composable social graphs let developers build on a shared network instead of renting reach from incumbents. The 2023 wave of on-chain social experiments shows real demand for user-owned identity, reputation, and portable audiences.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI x crypto (provenance & proof-of-personhood)",
+      "why": "As generative AI makes content trivially fakeable, cryptographic provenance and proof-of-humanity become essential infrastructure. Crypto rails are also the native payment and coordination layer for autonomous agents.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulation-by-enforcement",
+      "why": "The enforcement-first posture this year \u2014 actions against major US exchanges with no clear registration path \u2014 pushes builders and liquidity offshore. The absence of legislative clarity is the biggest risk to US competitiveness in this technology.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "L2 centralization / sequencer & bridge risk",
+      "why": "Most rollups still run centralized sequencers and hold upgrade keys. If we don't decentralize sequencing and harden bridges, we recreate the trust assumptions we set out to remove \u2014 and the bridge exploits of the last two years show the stakes.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculation over utility (meme / SocialFi froth)",
+      "why": "Reflexive speculation \u2014 meme tokens, points-farming, ponzi-shaped 'SocialFi' \u2014 draws attention but burns user trust and regulatory goodwill, and distracts builders from durable applications.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Ethereum is the settlement and security layer beneath most of what I'm excited about \u2014 rollups, account abstraction, on-chain apps. Post-Merge issuance and staking make it a productive base asset, and the L2-centric roadmap concentrates security and value at the base layer.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "As a long-horizon venture investor I build through cycles, not for them. Late-2023 conditions are macro risk-off \u2014 high rates, depressed activity, regulatory overhang \u2014 so I'm cautious on near-term price beta. But valuations have reset, the tourists have left, and the builders who remain are shipping the infrastructure (ZK, account abstraction, L2s) that compounds into the next cycle. Constructive on fundamentals, not chasing beta.",
+    "provenance": "extrapolated"
+  },
+  "notes": "All items are marked 'extrapolated': my provided record contains no prior dated statements, so I cannot honestly ground or cite verbatim quotes \u2014 these views are inferred from my role and theses as a16z crypto CTO as of 2023-09-30, not fabricated citations. I'm deliberately conservative on naming specific tokens given disclosure norms and the lack of grounding. Lower-conviction themes I'm also watching: DePIN, on-chain gaming infrastructure, and restaking as an emerging primitive."
+}

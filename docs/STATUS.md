@@ -1,6 +1,46 @@
 # sentience — status & handoff
 
-_Last updated: 2026-06-04_
+_Last updated: 2026-06-06_
+
+## ⚡ ACTIVE WORK — Corpus Doppelganger Engine (branch `doppelganger/engine-design`)
+
+A corpus-only "doppelganger" engine: ingest a person's public corpus (X + research +
+speaker-attributed podcast turns + LinkedIn/bio), build a frozen-at-T0 **soul**
+(characterization), and answer **time-gated walk-forward** market-view queries *as that
+person at date T*. First subjects: **Eddy Lazzarin**, **Ali Yahya** (a16z crypto GPs).
+Design docs: `docs/superpowers/specs/2026-06-05-*doppelganger*` and `.../plans/2026-06-05-*doppelganger*`.
+
+**All 5 units BUILT + tested (67 tests), on this branch (not merged to main):**
+ingestion → soul → memory → doppelganger(`respond`) → walk-forward + scorers. Module: `doppelganger/`.
+- LLM calls = `claude -p --model opus --effort max` (Max sub, no API cost) via `doppelganger/llm.py`. No SDK.
+- Generated artifacts live UNTRACKED under `data/doppelganger/<slug>/` (committed here only to carry the
+  in-progress run across machines).
+
+**Core principle (Jax-enforced):** feed the model inputs, don't script its cognition. Eval is **AGENTIC**
+— LLM-judge agents read the qualitative views; deterministic scores are only rough indicators.
+
+**Subset findings (Eddy, 3 quarters) — the real results so far:**
+- Leakage firewall holds (0 leaked everywhere). Soul-less ablation honestly labels 100% `extrapolated`,
+  0 citations → **no quote-recitation leakage**; it just guesses stable views well.
+- `confirm_rate` corpus-lift = 0 but that's **metric saturation** (stable views never contradicted), not
+  "corpus useless." Real signal = `missed_changes` (doppelganger nails persistence, misses foresight).
+- Eddy-vs-Ali discrimination: agentic judge graded **4/5 distinct** (distinct frameworks; shared themes,
+  distinct *why*). Deterministic name-overlap gave a misleading 0.0 → why the eval is agentic.
+
+**▶ NEXT STEP (resume here, esp. on the always-on Mac Mini):**
+1. Run the full quarterly walk-forward, both subjects (resumable; skips cached steps + transient failures):
+   ```bash
+   tmux new -s wf 'source .venv/bin/activate && caffeinate -i python -m doppelganger.run_full'
+   ```
+   ~several hours: the memory feed grows to ~228k tokens by 2026 (feed-all, by design — Jax: all his
+   history shapes soul + analysis context, so NO recency cap). Reattach: `tmux attach -t wf`.
+2. Then score + analyze agentically → findings:
+   ```bash
+   python -m doppelganger.run score --subject eddy-lazzarin   # + ali-yahya
+   ```
+   plus dispatch a markets-analyst agent over the trajectories for discrimination + a synthesis memo.
+3. Open question to revisit: replace the saturated `confirm_rate` headline with change-recall +
+   groundedness (agentic), per the subset finding.
 
 ## What this project is
 

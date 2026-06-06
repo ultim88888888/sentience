@@ -1,0 +1,200 @@
+{
+  "as_of": "2023-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs & applied cryptography",
+      "why": "ZK proofs are the master key to the blockchain's two deepest limitations at once: scalability (move verification off-chain via rollups) and privacy (verify without revealing). I've backed this across Aleo, Matter Labs/zkSync, Iron Fish, and Aztec, and the field is finally crossing from theory into production. I could talk about it for hours.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        },
+        {
+          "date": "2023-03-28",
+          "quote": "Loved discussing zk-proofs with @laurashin and @danboneh on the @unchained_pod. We could have gone on for hours, so much to cover."
+        }
+      ]
+    },
+    {
+      "name": "Privacy & encryption for web3",
+      "why": "Privacy isn't only about protecting user data \u2014 it unlocks a whole new region of the design space. Encrypted smart contracts make possible whole classes of applications (games with hidden state, private DeFi, identity) that fully transparent chains simply cannot support. I see it as a precondition for mainstream adoption.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2022-12-15",
+          "quote": "Encryption & privacy will be essential for blockchains to broaden their utility and gain widespread adoption."
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "AI centralizes relentlessly; crypto is built to decentralize power. The intersection is a design space we've barely begun to explore \u2014 crypto's incentive mechanisms can crowdsource data, models, and compute bottom-up to build collective intelligence no single company could marshal. A very large space; hard to dismiss outright.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2023-01-05",
+          "quote": "Crypto mechanisms can incentivize the crowdsourcing of better data sets, machine learning models, and compute."
+        }
+      ]
+    },
+    {
+      "name": "DAOs & on-chain coordination",
+      "why": "DAOs are a digitally-native upgrade to the corporation \u2014 orders of magnitude cheaper and faster to set up and run. As with the internet over postal mail, a 10,000x improvement to a coordination mechanism doesn't just make the old thing efficient; it unlocks fundamentally new use cases. Still early on tooling, standards, and legal frameworks.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-31",
+          "quote": "they're 10,000 times faster/cheaper to setup and operate"
+        }
+      ]
+    },
+    {
+      "name": "Modular / multichain scaling (L1s + L2 rollups)",
+      "why": "No single chain spans the whole tradeoff space. A handful of dominant architectures plus L2 rollups will each win their own subdomains; ZK and optimistic rollups are complementary, not categorically competitive. The post-Merge Ethereum + rollup roadmap is exactly the right shape.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "a single blockchain won't be capable of supporting all use cases"
+        },
+        {
+          "date": "2021-06-10",
+          "quote": "The tradeoff space is too big, and demand will be unbounded."
+        }
+      ]
+    },
+    {
+      "name": "Developer infrastructure & programming-language design",
+      "why": "Programming language design is an under-explored frontier in web3 \u2014 when code runs forever, controls hundreds of millions, and can't easily be changed, you don't want JavaScript. The developer flywheel (languages, tooling, platforms like Alchemy) is what bridges raw infrastructure to the mainstream apps that come next.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-02",
+          "quote": "Programming language design is an under-explored frontier in web3."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized physical infrastructure (wireless / DePIN)",
+      "why": "Crypto incentives can bootstrap real-world physical networks bottom-up rather than top-down from telco giants \u2014 Helium became the fastest-growing wireless network ever, built by ordinary people running hotspots. The clearest proof that crypto's usefulness extends well beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Cross-chain bridges with weak trust assumptions",
+      "why": "Bridges have been the single biggest locus of catastrophic hacks (Nomad and others), and too many concentrate trust in ways that violate the only question that matters \u2014 who exactly do you have to trust? I opposed deploying Uniswap to BNB Chain via Wormhole on precisely those grounds. I back interoperability (LayerZero) only where the security model is genuinely sound.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-02-05",
+          "quote": "Our rationale for opposing @Uniswap Governance Proposal 31 to deploy Uniswap on BNB Chain using Wormhole"
+        }
+      ]
+    },
+    {
+      "name": "Wallet UX & transaction signing",
+      "why": "It's all but impossible for the average user to know what the hell they're signing with today's tools. Until wallets present intelligible schemas and flag suspicious transactions the way browsers flag bad sites, this remains both a security hole and a hard ceiling on adoption.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-20",
+          "quote": "it's all but impossible for the avg user to know what the hell they're signing"
+        }
+      ]
+    },
+    {
+      "name": "Centralized, custodial, trust-based crypto (CeFi)",
+      "why": "The entire point is to go from 'don't be evil' to 'can't be evil.' Systems that quietly reintroduce a trusted intermediary you simply have to believe in recreate the exact failure modes crypto was built to remove. Trust should rest on math and incentives, not a company's reputation \u2014 a lesson the last year has made painfully concrete.",
+      "provenance": "persisted",
+      "age_note": "core framing stated 2018-12, not restated in these terms recently",
+      "citations": [
+        {
+          "date": "2018-12-16",
+          "quote": "how do we go from 'don't be evil' to 'can't be evil'?"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Post-Merge I believe Ethereum is a far superior blockchain than it was before \u2014 more energy-efficient, more secure per dollar of security budget, with true finality that lays groundwork for rollups and bridges. This is a technology and ecosystem conviction, not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-09-15",
+          "quote": "I believe Ethereum is a far superior blockchain now than it was before."
+        }
+      ]
+    },
+    {
+      "name": "NEAR",
+      "why": "We need innovation at every level of the stack, not just the core protocol \u2014 and NEAR is leading the way (JavaScript smart contracts, sharded design, trustless bridging). Conviction in the technology and team; not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-03-02",
+          "quote": "We need innovation at every level of the stack, not just the core protocol and smart contract layers. NEAR is leading the way"
+        }
+      ]
+    },
+    {
+      "name": "SOL",
+      "why": "Solana is a next-generation chain offering very high performance while preserving composability that's critical for DeFi, built by one of the very best teams in the space. A technology conviction I still hold; I haven't restated it publicly through this downturn.",
+      "provenance": "persisted",
+      "age_note": "stated 2021-06, not revisited",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "@solana is a next-generation blockchain that offers the highest level of performance while preserving some of the most important features of Ethereum, like seamless program composability"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I conspicuously under-weight token price and macro \u2014 my horizon is multi-decade. The history of crypto shows asset prices fluctuate while innovation compounds through every cycle, so even in this post-FTX winter we're continuing to deploy aggressively into builders; these are the good old days. So: risk-on on technology and teams, with no short-term price view.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2021-06-24",
+        "quote": "The history of crypto shows that asset prices may fluctuate but innovation continues to increase through each cycle."
+      },
+      {
+        "date": "2022-05-25",
+        "quote": "These are the good old days."
+      }
+    ]
+  },
+  "notes": "My lens is technology-first and framework-driven: I model domains as high-dimensional tradeoff spaces, so I default to complementarity over maximalism (ZK and optimistic rollups; many L1s, not one). Two meta-concerns color everything as of today: a hostile post-FTX environment where society can be 'vicious toward people who are trying to build something new' (2023-02-13), and the reflexive skepticism that dismisses whole branches of computer science. I deliberately under-attend to token prices, which is why my strongest views are on sectors and networks rather than coins. None of the above is investment advice."
+}

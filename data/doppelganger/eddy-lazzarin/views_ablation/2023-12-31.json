@@ -1,0 +1,103 @@
+{
+  "as_of": "2023-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Ethereum L2 rollups & blockspace scaling",
+      "why": "The rollup-centric roadmap is moving from thesis to production. EIP-4844 blob transactions, expected in the upcoming Dencun upgrade, should cut L2 data costs by orders of magnitude \u2014 that's the unlock that makes onchain apps economically viable at consumer scale. Abundant, cheap blockspace is the precondition for almost everything else I care about.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proofs / zkVMs",
+      "why": "Proving costs keep falling and general-purpose zkVMs are getting real. ZK is becoming core infrastructure for verifiable computation, succinct L2s, and privacy \u2014 not just a scaling trick. It's the most important primitive maturing in the stack right now.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Onchain UX & account abstraction",
+      "why": "ERC-4337 smart accounts, embedded wallets, and sponsored gas remove the seed-phrase-and-gas friction that has gated adoption for a decade. The application layer finally has the tools to feel like a normal product. UX, not raw throughput, is the binding constraint we can actually fix now.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Tokens are a genuinely new tool for bootstrapping real-world hardware networks \u2014 compute, wireless, storage, energy \u2014 by paying suppliers equity-like incentives before demand exists. It's one of the few areas where crypto coordinates atoms, not just bits.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "This is the clearest product-market fit in the entire space: dollars that settle globally, instantly, and cheaply. Usage is real and growing largely independent of speculation. The rails are the killer app, and they already work.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI x crypto",
+      "why": "As generative AI floods the world with synthetic content, cryptographic provenance and verifiable identity become essential, and token incentives are a credible way to coordinate scarce compute and data. The two technologies are far more complementary than people assume.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory uncertainty",
+      "why": "Regulation-by-enforcement and the absence of clear rules are pushing builders and liquidity offshore. The lack of a workable path to launch tokens or operate compliantly in the US is the single biggest drag on the domestic ecosystem heading into 2024.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculation detached from usage",
+      "why": "Too much capital and attention chase low-float / high-FDV launches and pure memecoins where price is the only product. These cycles damage credibility and end in predictable unlock-driven drawdowns. I want fundamentals \u2014 fees, users, real usage \u2014 over narrative reflexivity.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Security & exploit risk",
+      "why": "Bridge hacks and smart-contract exploits remain a recurring tax on the ecosystem and a hard blocker to mainstream and institutional trust. Until the average user can't lose everything to a single bug or bad signature, adoption stays capped.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Not a price call \u2014 a bet on the platform. The rollup-centric roadmap plus blob-based scaling makes Ethereum the settlement and data-availability base for the L2 ecosystem I'm most excited about, and the security/economic story strengthens as L2 activity grows.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "BTC",
+      "why": "The widely anticipated US spot Bitcoin ETF decision, expected in early 2024, is a market-structure catalyst more than a technology one: regulated mainstream access, likely durable inflows, and legitimization of the asset class even for those of us focused on the application layer.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins / attention-only tokens",
+      "why": "Tokens whose only fundamental is attention are negative-sum for most participants and distort how outsiders judge the whole industry. I'm structurally wary of valuations with no usage, cash flow, or technology underneath them.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Heading into 2024 the setup is constructive: the macro backdrop is turning as the Fed signals potential rate cuts, the market has recovered and de-levered since the 2022 blowups, usage and fundamentals are improving, and there are concrete near-term catalysts \u2014 the spot BTC ETF decision and Ethereum's Dencun / EIP-4844 upgrade. I hold this with a builder's caveat: my horizon is multi-year and I expect real volatility along the way. I'm constructive on the trajectory, not calling the next candle.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My logged record is empty, so every item here is 'extrapolated' \u2014 reasoned from my worldview as an a16z crypto investor as of 2023-12-31, not from dated statements I can quote, hence no citations. None of this is investment advice, and a16z holds positions across many of these areas. The specific catalysts I'm watching into early 2024 are the US spot BTC ETF decision and Ethereum's Dencun upgrade (EIP-4844 blobs)."
+}

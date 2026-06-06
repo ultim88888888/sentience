@@ -1,0 +1,59 @@
+{
+  "as_of": "2025-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "The clearest product-market fit in crypto \u2014 dollars moving onchain at scale. Improving US regulatory clarity plus fintech and institutional integration can turn settlement rails into a mainstream payments layer.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI x crypto",
+      "why": "As autonomous AI agents proliferate, crypto supplies the primitives they need: programmable payments, verifiable identity and proof-of-personhood, and provenance for content and compute. Decentralized compute and data markets are a natural fit.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Scaling & infrastructure (L2s, zero-knowledge, account abstraction)",
+      "why": "Lower fees, better UX, and cryptographic verifiability are prerequisites for consumer-scale apps. ZK is becoming a foundational primitive far beyond just scaling.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives can bootstrap real-world networks \u2014 compute, wireless, energy, storage \u2014 faster than incumbents while aligning early users as owners.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins & pure speculation",
+      "why": "Speculative churn crowds out durable building, degrades UX and trust, and risks defining the industry by its most extractive corner.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Low-float / high-FDV token structures",
+      "why": "Tiny circulating supply with large future unlocks distorts price discovery and leaves later participants holding the overhang \u2014 a design misalignment the industry should fix.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Structurally constructive on the building and adoption cycle: improving US regulatory clarity, maturing infrastructure, and real usage in stablecoins and onchain apps. This is a view on the long-term innovation trajectory, not a short-term price call.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My logged record here is empty, so every item is 'extrapolated' from how I reason as a16z crypto's CTO \u2014 long-term, builder- and infrastructure-focused \u2014 not from any specific dated statement; that is why there are no verbatim citations. I am deliberately not naming individual tokens: with no grounded record, assigning conviction to specific tokens would be manufacturing a view (and carries obvious conflict-of-interest as an investor). Views as of 2025-03-31."
+}

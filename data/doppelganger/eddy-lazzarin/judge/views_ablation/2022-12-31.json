@@ -1,0 +1,66 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs & zkEVMs as the key shipping primitive",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 rollups & the rollup-centric roadmap",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about account abstraction & smart-contract wallets (ERC-4337) as the usability unlock",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about modular blockchain architecture & data availability",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about on-chain identity, reputation & NFTs as ownership primitives",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized exchanges & opaque CeFi (custody/counterparty risk, proof-of-reserves)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about unsustainable yield & reflexive tokenomics propped up by emissions/leverage",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about US regulatory overhang pushing builders offshore (plus ongoing contagion)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Highest technical conviction in ETH as PoS settlement/DA layer (not a price call)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-off on liquid markets near-term, but constructively deploying into builders through the bear (separate tech from price)",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Large new enthusiasm for AI/LLMs/AGI and AI+crypto convergence (open-source model advocacy, GPT bots, '0-person unicorn', AGI-before-Mars) \u2014 entirely unanticipated by the prediction",
+    "Web3/on-chain gaming became a major focus: led a16z's seed into CCP's EVE-universe game and highlighted on-chain games as the top transaction driver (23x DeFi)",
+    "Decentralized social networks as a specific area of excitement (Farcaster ecosystem, XMTP) beyond the generic 'on-chain social' mention",
+    "Strong open-source-software ethos: shipped/championed a16z crypto open-source tooling (Helios, Magi, Halmos, zkdrops, Powers of Tau) and client diversity \u2014 'open source is the only way to preserve the flame'",
+    "New emphasis on smart-contract programming languages and formal verification/symbolic testing (Move, Solidity/Huff/Yul, Halmos)"
+  ],
+  "notes": "Window covers 2023-01 to 2023-06; co-authored a16z's State of Crypto 2023, which drives much of the confirmation. ZK, L2/rollups, DA (KZG ceremony, proto-danksharding/EIP-4844, danksharding+DAS research), NFTs-as-ownership/identity/reputation (token-taxonomy talk), ETH technical conviction, and the 'fundamentals strong despite price / build through the bear' posture are all strongly and repeatedly confirmed; no claim is contradicted. Account abstraction marked absent: wallet-UX is discussed (Uniswap wallet, embedded wallets) but ERC-4337/smart-contract wallets/social recovery specifically are not. CeFi concern marked absent: a broad pro-self-custody/pro-decentralization ethos is present (open vs corporate networks, DEX>CEX volume) but he never directly addresses CeFi/exchange custody, counterparty risk, or proof-of-reserves; nor does he mention the lender/DCG-Genesis contagion. Reflexive-tokenomics concern judged confirmed at stance level via his token-design critique of 'token-first thinking' and the 'organic vs speculative' framing, rather than via explicit yield/leverage commentary.",
+  "confirm_rate": 1.0
+}

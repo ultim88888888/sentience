@@ -1,0 +1,221 @@
+{
+  "as_of": "2025-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & payments",
+      "why": "The pieces have finally come together \u2014 cheap, sub-second, global dollar transfers with real product-market fit. I spent much of this year on the unsolved UX (deterministic cross-chain payouts, x402-style flows); the bottlenecks are exactly where the next builders win. People come for the savings and stay for the network: custody, programmability, composability.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-10-03",
+          "quote": "Everyone is talking about payments."
+        }
+      ]
+    },
+    {
+      "name": "Onchain privacy / confidential transactions",
+      "why": "I'll scream this forever: as crypto touches real finance, privacy stops being optional. Institutions treat it as table stakes; consumers take a functional level of privacy for granted until it's gone. The cryptography (Aztec/Noir, Railgun, Zcash-style shielding) is maturing \u2014 the UX isn't ready for normies yet, but the demand is inevitable.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-08",
+          "quote": "Now I believe the lack of privacy onchain is one of the biggest sources of friction, if not a dealbreaker, for many institutions. It's critical."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs & zkVMs",
+      "why": "Decades of theory crossing into practice at a staggering pace. Succinct verification is the substrate for scaling, privacy, and verifiable compute (incl. AI inference). The sumcheck/lookup approach we've pushed in Jolt is getting dramatically faster and simpler \u2014 a real public good for the whole stack.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-08-14",
+          "quote": "Jolt just got 6x faster. And simpler. It's probably the fastest zkVM cycle-for-cycle by a wide margin."
+        }
+      ]
+    },
+    {
+      "name": "Private proof-of-personhood / digital identity",
+      "why": "AI has crushed the marginal cost of fake content, fake context, fake accounts. The defense is a credential that's cheap to get one of and nearly impossible to get two of \u2014 privacy and uniqueness as intrinsic properties. A root of trust (World ID is the strongest example) plus a stack of private, programmable credentials on top.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-05-06",
+          "quote": "If we want to ensure tokens/rewards/credentials end up in the hands of real people (or even high-quality bots!) we need an ID system with *privacy* and *uniqueness* as intrinsic properties."
+        }
+      ]
+    },
+    {
+      "name": "Network tokens with real value accrual (fee switches, buyback-and-burn, 'closed loop')",
+      "why": "With regulatory conditions finally sane, network tokens can complete the economic loop: capture protocol revenue into the token and use issuance to fund growth. A protocol is a decentralized network-marketplace; the token is ownership in it. This is the king of token types and the design space I'm most excited to see mature.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-05-05",
+          "quote": "We finally have the chance to build economically sustainable decentralized networks."
+        },
+        {
+          "date": "2025-11-10",
+          "quote": "If the DAO agrees, Uniswap will finally become a \"closed loop\" network token: fees paid to the decentralized protocol will be captured by the token through a buyback and burn."
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto (agent payments, x402, machines that own)",
+      "why": "Crypto is how machines can own \u2014 wallets, keys, and onchain payment rails let agents transact, pay for their own compute, and coordinate. x402 makes micropayments a viable business model online for the first time. The counterbalance to centralized AI also lives here.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-25",
+          "quote": "x402 means micropayments might finally be a real business model online"
+        },
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        }
+      ]
+    },
+    {
+      "name": "Fully onchain games",
+      "why": "Games push every envelope and are a serious incentive-design domain, not a hobby. Trustless game state unlocks composability \u2014 third parties extend, remix, and own pieces of a world no single party controls. Lower fees finally make the thousands-of-state-mutations interaction model affordable.",
+      "provenance": "persisted",
+      "age_note": "thesis stated 2022-06; abiding interest, restated through 2025 via EVE Frontier playtests and ProofOfPlay \u2014 a long-horizon conviction, not a fresh trading view.",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / casino dynamics",
+      "why": "Not technically interesting, and they actively set the industry back \u2014 making crypto look like a risky casino to the public, regulators, and would-be founders, and deterring great builders. Launches have cooled in late 2025 as policy clears the way for productive uses, which is healthy, but the reputational drag is real.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "I see the damage every day. You should too."
+        }
+      ]
+    },
+    {
+      "name": "Excess leverage (perpetuals)",
+      "why": "Perp dexes are highly engineered and have absorbed a lot of the speculative demand that used to chase memecoins \u2014 fine as products. But the system is now very effective at delivering cheap leverage, which can exacerbate crashes when market makers pull back. After the late-2025 drawdown, this is where I'd be most wary.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "I think leverage is a great way to lose everything."
+        }
+      ]
+    },
+    {
+      "name": "Company-backed tokens mislabeled as decentralized / pie-chart 'tokenomics'",
+      "why": "Plenty of tokens described as network tokens (or memecoins) are really company-backed \u2014 value derives from a system one party controls, which means securities-like trust dependencies. A made-up pie chart isn't a protocol. Watch whether the value chain can actually operate without human control.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Some projects even describe their token as a Network Token or memecoin when it's really Company-backed."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        }
+      ]
+    },
+    {
+      "name": "Vanity metrics (active addresses, TVL)",
+      "why": "The headline usage numbers are easily gamed \u2014 one person can spin up endless addresses, and airdrop/reward farming is fully professionalized. We estimate real users at a small fraction of active addresses. Be skeptical of any narrative resting on these proxies.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-09-26",
+          "quote": "It's extremely obvious why \"active addresses\" is flawed in multiple ways \u2014 yet no other measure seems to be better."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "UNI",
+      "why": "Excited about the design move to a closed-loop network token \u2014 protocol fees captured by the token via buyback-and-burn, with minting available to fund growth, made possible by a lot of legal work (the DUNI). This is admiration for the token mechanism, not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "If the DAO agrees, Uniswap will finally become a \"closed loop\" network token: fees paid to the decentralized protocol will be captured by the token through a buyback and burn."
+        }
+      ]
+    },
+    {
+      "name": "ETH",
+      "why": "The canonical network token: value accrues via the EIP-1559 burn as blockspace is consumed, and activity is scaling onto L2s as fees collapse. Economically it's ownership in the marketplace that sells blockspace, not the commodity itself. A fundamentals/value-accrual view, not a price target.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-27",
+          "quote": "I think ETH is already doing (fully automatic) buybacks via the EIP-1559 burn."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "the token that captures value (via burn) from consumed block space"
+        }
+      ]
+    },
+    {
+      "name": "BTC",
+      "why": "Found a comfortable product-market fit as 'digital gold' just as demand for a store of value rose. As the native asset of the most secure, decentralized network it has economic characteristics unlike any memecoin. Constructive on the fundamentals \u2014 not a price prediction.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-02-20",
+          "quote": "being the native asset of what is arguably the most secure and decentralized network gives it economic characteristics (and potential, even if not yet realized) unlike any memecoin."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I don't trade sentiment or swing risk-on/risk-off \u2014 I read markets through the price-innovation cycle and trust fundamentals and instruments over the herd. Skeptical in analysis, optimistic in action: structurally constructive on building right now ('it's app time soon') while cautioning hard against leverage after the late-2025 drawdown. So: neutral as a trading posture, bullish on the technology.",
+    "provenance": "grounded",
+    "age_note": "",
+    "citations": [
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action"
+      },
+      {
+        "date": "2025-11-26",
+        "quote": "The winds of change are blowing across crypto. I think it's app time soon."
+      }
+    ]
+  },
+  "notes": "I'm an engineer, not a fintech guy or a trader \u2014 these are fundamentals and token-design views, not price targets. The through-line for 2025 is industry maturation: stablecoins and payments wiring up, network tokens finally able to complete their economic loop, ZK and privacy moving from theory to table stakes, and proof-of-personhood becoming necessary as AI floods the internet. Despite all that, it's still early."
+}

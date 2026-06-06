@@ -1,0 +1,73 @@
+{
+  "as_of": "2024-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins are crypto's clearest product-market fit. By end of 2024 they're settling enormous volumes and mainstream fintech is validating the rails (major payments incumbents acquiring stablecoin infrastructure). The real opportunity is dollar access in inflationary economies, near-instant cross-border settlement, and programmable money as a base layer that apps \u2014 and eventually AI agents \u2014 build on.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Crypto x AI",
+      "why": "As AI generates an overwhelming share of online content and autonomous agents proliferate, crypto supplies what AI lacks: proof of personhood to separate humans from bots, content provenance and authenticity, decentralized compute and data markets, and stablecoin rails so agents can transact natively. This is the most important new design space heading into 2025.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives can bootstrap real physical networks \u2014 compute/GPUs, storage, wireless, energy, mapping \u2014 that compete with incumbents on cost and coverage. It's one of the few areas tying token economics directly to tangible, off-chain utility rather than pure speculation.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Onchain consumer apps with real usage",
+      "why": "2024 showed crypto apps reaching genuine mainstream relevance \u2014 prediction markets during the US election being the standout \u2014 proving that onchain products can serve millions of ordinary users, not just traders, when the experience is good enough.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Wallet UX & chain abstraction",
+      "why": "The binding constraint on adoption is UX, not throughput. Embedded wallets, account abstraction, and chain abstraction that hide gas, keys, and bridging let people transact without realizing they're using crypto. A lot of the next wave of value accrues to whoever makes the experience invisible.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoin casino dynamics",
+      "why": "The explosion of zero-substance memecoin speculation is largely extractive and negative-sum for users. It crowds out builders, distorts incentives toward launch-and-dump, and damages the industry's credibility with regulators and newcomers. Speculation as the primary use case is a liability, not a feature.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "L2 / liquidity fragmentation",
+      "why": "Rollup and app-chain proliferation is splintering liquidity and users and degrading UX. Without strong interoperability and chain abstraction, fragmentation undercuts the composability that made onchain ecosystems valuable in the first place.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Low-float / high-FDV token launches",
+      "why": "The 2024 pattern of launching with tiny circulating floats and enormous fully-diluted valuations produces poor price discovery and misaligned incentives, leaving retail to absorb insider and VC unlocks. It erodes trust and is not a durable way to distribute ownership.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Heading into 2025 the setup is constructive: a materially more favorable US regulatory posture after the 2024 election, sustained institutional inflows through spot ETFs launched in 2024, and real usage growth led by stablecoins. I'm risk-on but selective \u2014 memecoin froth, high-FDV launches, and macro/rate sensitivity are the main offsets.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My internal record of dated statements is empty, so I have no verbatim quotes to cite \u2014 every item here is marked 'extrapolated' from my consistent investing worldview as of end-2024, not a freshly logged restatement. I left both token arrays empty deliberately: I hold structural sector views, but as an a16z investor I avoid conviction calls on specific tokens and have no recorded token statement to ground one. Views are as of 2024-12-31 and exclude anything after that date."
+}

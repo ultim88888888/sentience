@@ -1,0 +1,180 @@
+{
+  "as_of": "2024-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs / SNARKs / ZK VMs",
+      "why": "Decades-old theory has crossed into practice and is accelerating because of crypto. With Lasso/Jolt the overhead is collapsing, which unlocks both scaling-through-succinctness and privacy. This is the substrate for verifiable compute, content provenance, and a new class of applications. It's literally what I spend my days building.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-03-31",
+          "quote": "This is why we're developing \u26a1\ufe0f Jolt, our open source proof of concept reference implementation free forever public good love letter to crypto ZK VM."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "We've developed a new lookup argument called Lasso \ud83e\udea2 that is already 10x faster than halo2, with a clear path to 40x."
+        }
+      ]
+    },
+    {
+      "name": "Crypto \u00d7 AI (provenance, ownership, deepfake defense)",
+      "why": "We're months away from non-technical people generating convincing fakes at scale \u2014 the 'mystery meat' internet where content is assumed generated unless proven otherwise. Every robust answer (provenance graphs, attestation, sybil-resistant proof of personhood) requires a censorship-resistant verifiable computer. AI is how machines think; crypto is how machines own. The two compound.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-17",
+          "quote": "Every robust method to prove the origin or history of content involves cryptography and blockchains."
+        },
+        {
+          "date": "2024-02-02",
+          "quote": "AI + crypto = how machines can think on their own"
+        }
+      ]
+    },
+    {
+      "name": "Identity, auth & wallet UX (proof of personhood, smart accounts, passkeys)",
+      "why": "Crypto UX has barely moved since 2016, and that's the binding constraint on mainstream adoption. Smart accounts, embedded wallets, passkeys, MPC, and smarter RPC can make the experience better and more secure than web2. Pair that with a private, decentralized proof of personhood and you get the identity layer the open web has always needed \u2014 increasingly urgent as AI floods the network with fake actors.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "the fundamentals of user experience in crypto haven't actually changed much since 2016."
+        },
+        {
+          "date": "2024-01-07",
+          "quote": "How bad does this need to get before all networks need to integrate a private proof of personhood system like @worldnetwork?"
+        }
+      ]
+    },
+    {
+      "name": "Layer-2 scaling / cheap high-quality blockspace",
+      "why": "Radically lowering the cost of credibly-neutral blockspace is the single ingredient that unlocks the experimentation needed to find mainstream products \u2014 cheap NFTs, on-chain games, graph data structures, complex markets. Next-gen infra is now coming online. This is the enabling substrate beneath almost everything else I'm excited about.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-03-29",
+          "quote": "with next gen infra online, regulatory strategies improving, and UX evolving \u2014 there has never been a better time to build."
+        },
+        {
+          "date": "2023-04-16",
+          "quote": "radically decreasing the cost of blocks, high quality blockspace, is a key ingredient in allowing for experimentation"
+        }
+      ]
+    },
+    {
+      "name": "Fully on-chain games",
+      "why": "Games push the envelope in every computing wave and generate far more on-chain activity than DeFi. When no one in particular runs the server \u2014 state governed by rules set at genesis \u2014 modding, composability, and remixing become first-class. As blockspace gets cheap, this niche (the spiritual successor to the Zachtronics-style builder games I love) fills in.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-06; reaffirmed through 2023 via the on-chain games podcast and playing Primodium",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social / open networks",
+      "why": "Every closed corporate network eventually breaks its promise to creators and developers the moment it's safe to \u2014 App Store, Reddit, LinkedIn, the Fediverse degrading to centralization. The answer is networks where names, value, and data live in a permissionless, programmable, unified computer. Farcaster is the clearest live example, and the ecosystem of clients on top is exactly the permissionless innovation we wanted.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-07; sustained Farcaster building through 2023",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / casino speculation",
+      "why": "Right now the timeline is captured by memecoin fomo. People who know better spin elaborate rationalizations for what is fundamentally zero-sum, short-term casino behavior. It distracts builders and talent from the real potential, and it's the kind of froth I distrust on principle \u2014 skeptical in analysis.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-03-24",
+          "quote": "When memecoins have a moment, people who know better make tortured rationalizations."
+        }
+      ]
+    },
+    {
+      "name": "Token-first thinking / pie-chart 'tokenomics'",
+      "why": "A token is a tool, not a goal. 'Tokenomics consultants' who hand you an allocation pie chart are doing maybe 5% of the work and calling it the protocol. The right object to design is the protocol \u2014 goals, constraints, mechanisms \u2014 with the token serving long-term decentralization. The persistence of this consultant class is a drag on serious design.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-12; reaffirmed 2023-01 token-design talk",
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "A made up pie chart is not real work."
+        },
+        {
+          "date": "2022-12-10",
+          "quote": "Launching a token isn't a goal."
+        }
+      ]
+    },
+    {
+      "name": "Bitcoin's long-term security model",
+      "why": "As the block subsidy declines, Bitcoin's security budget is a real multi-decade question that too few take seriously. I think the path forward involves making it programmable and cheap to move \u2014 something like a VERIFY_SNARK opcode would revive much of what Satoshi envisioned \u2014 but absent change, ossification is a genuine risk to its survival over the next 100 years.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-07, not revisited recently",
+      "citations": [
+        {
+          "date": "2023-07-24",
+          "quote": "the security model of bitcoin needs to change if it's going to last the next few decades."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Native asset of the leading smart-contract computer and the ecosystem I build on daily \u2014 most developers, most mindshare, and a scaling roadmap (L2s, danksharding, ZK) that's executing. I hold this as a conviction in the network's fundamentals, not a tactical price call.",
+      "provenance": "persisted",
+      "age_note": "stated 2021-02; long-held Ethereum-as-leading-computer conviction, not a recent price call",
+      "citations": [
+        {
+          "date": "2021-02-25",
+          "quote": "In one year, Ethereum has grown from settling ~$373m per day to over $9b per day."
+        }
+      ]
+    },
+    {
+      "name": "MKR / DAI",
+      "why": "My canonical example of token design done right: DAI a decentralized stablecoin native to Ethereum, MKR a stakeholder token that underwrites protocol risk and is diluted on shortfall \u2014 real fundamentals and distributed risk/reward, not a pie chart. I cite it as a design exemplar of fundamentals-backed tokens, not as a buy recommendation.",
+      "provenance": "persisted",
+      "age_note": "stated 2020-12; used as my token-design exemplar through 2023-01, a fundamentals view not a price call",
+      "citations": [
+        {
+          "date": "2020-12-21",
+          "quote": "If you look at the top DAOs, most have fundamentals now."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I don't time markets \u2014 I read them through the price-innovation cycle, where prices are a lagging surface over steady fundamental progress. Skeptical in analysis, optimistic in action: I'm wary of the current memecoin-driven risk appetite, but structurally constructive on building because the infra, regulatory strategies, and UX are all advancing. Net: no tactical risk-on call, but a genuinely good time to build.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2024-03-29",
+        "quote": "there has never been a better time to build."
+      },
+      {
+        "date": "2021-01-02",
+        "quote": "the right balance is to be skeptical in analysis and optimistic in action."
+      }
+    ]
+  },
+  "notes": "I'm an engineer/builder, not a trader \u2014 these are technology-adoption views, not investment advice (see a16z disclosures). I evaluate tokens as protocol fundamentals, never pie charts. Backdrop risk I'm watching: continued US regulatory uncertainty pushing builders offshore. Vanity metrics like TVL remain a poor lens for any of this."
+}

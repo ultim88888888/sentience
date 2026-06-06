@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs / zkEVMs as the key maturing primitive",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 scaling / rollups; cheap abundant blockspace as foundational precondition for apps",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about account abstraction (ERC-4337) / smart accounts for wallet UX and onboarding",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social / consumer protocols (Farcaster, Lens) where users own the social graph",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about US regulatory environment / regulation-by-enforcement (SEC suits, builders pushed offshore, overhang)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about centralized intermediaries / counterparty risk; minimize trust in custodians, favor self-custody",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH as the settlement-layer, fee-burning/yield-bearing asset",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about tokens named in June 2023 SEC complaints (SOL, MATIC, ADA) facing regulatory overhang / delisting risk",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on, long-horizon build-through-the-bear / deploy-through-the-cycle posture with accelerating fundamental development",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Crypto \u00d7 AI and content provenance / anti-deepfake authenticity (ZK provenance trails, attestation graphs) became a major recurring new theme not anticipated in the prediction.",
+    "Privacy elevated to a primary thrust in its own right \u2014 Aleo private blockchain/Leo, privacy-preserving/decentralized ID, 'privacy is coming to crypto.'",
+    "Strong new push to make Bitcoin programmable via ZK/SNARKs ('bring zero knowledge back home to bitcoin,' a VERIFY_SNARK opcode, Bitcoin's long-term security model) \u2014 notable given the Ethereum-centric prediction.",
+    "Active engagement with proof-of-personhood / Worldcoin / World ID and decentralized identity as a prerequisite for adoption.",
+    "Heavy emphasis on smart-contract security and formal/symbolic verification tooling (Halmos, ZK-circuit bug risk, Trail of Bits, SNARK security).",
+    "His team shipped Lasso/Jolt SNARK research \u2014 producing ZK infrastructure directly, not merely investing in it.",
+    "Chain/VM pluralism and advocacy for app-specific chains (Move, Rust, Cosmos/Osmosis), a more chain-agnostic stance that slightly tempers the ETH/L2-maximalist framing.",
+    "Explicit conceptual/terminology shift from 'data availability' to 'data publishing'/'data storage.'"
+  ],
+  "notes": "All four sector-excitement theses are strongly confirmed by sustained activity: ZK/SNARKs (Lasso/Jolt, ZK circuits, Aleo), scaling/blockspace ('all compute constrained,' onchain games needing L2, data-publishing), account abstraction (smart-account thread, 2024 UX big-idea), and decentralized social/consumer protocols (Nostr critique favoring a unified decentralized computer, Farcaster engagement, Story Protocol, app-layer funding). The build-through-the-bear risk-on posture is the clearest confirmation \u2014 relentless infra/research output and explicit optimism about the pace of new projects. Both regulatory concerns (sector-level and the SOL/MATIC/ADA token call) are simply not addressed in the window \u2014 absent, not reversed; he stayed heads-down on building rather than commenting on SEC enforcement. ETH-the-asset is marked absent: he affirms the Ethereum/EVM/Solidity ecosystem's network effects but never expresses an asset-level view, and is notably pluralistic about competing VMs/chains. Claim 6 (centralized-intermediary/counterparty concern) is the weakest 'confirmed' \u2014 supported via explicit self-custody/'non-custodial fallacy' advocacy and pervasive decentralization-over-centralization framing, though the specific FTX/exchange-concentration/stablecoin systemic-risk framing never appears. No claim is contradicted.",
+  "confirm_rate": 1.0
+}

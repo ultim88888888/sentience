@@ -1,0 +1,81 @@
+{
+  "as_of": "2022-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs & zkEVMs",
+      "why": "2022 turned ZK from a research topic into shipping infrastructure \u2014 multiple EVM-compatible zk-rollups reached testnet/mainnet this year. ZK is the most important primitive in crypto right now: scalability via validity proofs plus a real path to privacy and verifiable computation. This is where I'd want the strongest technical teams concentrating.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2 rollups & the rollup-centric roadmap",
+      "why": "Post-Merge, Ethereum's scaling story runs through rollups. Optimistic and ZK rollups are absorbing real usage at a fraction of L1 cost, and data-availability improvements on the horizon (proto-danksharding/EIP-4844) make the unit economics dramatically better. The base layer becomes settlement + DA; execution moves up the stack.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Account abstraction & smart-contract wallets",
+      "why": "ERC-4337 lets us rethink key management, social recovery, gas sponsorship, and session keys without touching consensus. After a year where custodial failures wiped people out, self-custody with humane UX is the single biggest unlock for mainstream usability. Underrated heading into 2023.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Modular blockchain architecture & data availability",
+      "why": "Separating execution, settlement, consensus, and data availability into specialized layers is proving to be the right factoring. Dedicated DA and modular designs let teams optimize each layer independently \u2014 I think this architecture beats monolithic chains for general-purpose scaling.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "On-chain identity, reputation & NFTs as ownership primitives",
+      "why": "NFTs as a general ownership primitive \u2014 not just art \u2014 plus early on-chain identity and non-transferable/reputation work point to durable, non-speculative use cases. These are the building blocks for on-chain social and credentialing that don't depend on token price to be useful.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized exchanges & opaque CeFi",
+      "why": "FTX's collapse this quarter was fraud and a custody failure, not a technology failure \u2014 but it exposed how much counterparty and commingling risk sits inside centralized intermediaries. Until there is real proof-of-reserves/proof-of-liabilities and genuine segregation of customer assets, I'm deeply wary of opaque CeFi. Not your keys, not your coins.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Unsustainable yield & reflexive tokenomics",
+      "why": "Terra/UST, Celsius, and the leverage chain that took down 3AC shared one disease: yields and valuations propped up by reflexive token emissions and circular leverage rather than real economic activity. I'm skeptical of anything promising high 'risk-free' yield and of designs that depend on perpetual new inflows.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory overhang & ongoing contagion",
+      "why": "Post-FTX, expect aggressive enforcement and political pressure. The near-term danger is heavy-handed, builder-hostile rules that push legitimate teams offshore, alongside contagion still working through lenders and intermediaries into early 2023. My worry is legitimate builders getting caught in the backlash from others' fraud.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Not a price call. Post-Merge, Ethereum is proof-of-stake with sharply lower issuance and a credible rollup-centric scaling path. As the settlement and data-availability layer for the L2 ecosystem and the dominant smart-contract platform, it's the asset whose technical trajectory I have the most conviction in \u2014 the network shipped what it promised this year.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_off",
+    "why": "Near-term and for liquid markets I'm defensive: FTX just failed, Genesis/DCG contagion is still unwinding, and macro liquidity is tight. Don't touch leverage or opaque counterparties right now. But this is a liquid-market posture, not a statement about the technology \u2014 as a long-term venture investor I'm constructively deploying into builders through the bear, which is exactly when the best teams build heads-down.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My logged personal record here is empty, so every item is honestly marked 'extrapolated' \u2014 inferred from how I think as a16z crypto's CTO at the end of 2022, not from verbatim prior statements; no quotes are fabricated. I express conviction at the technology/sector level rather than trading specific tokens, which is why tokens_concerned is empty (my CeFi and tokenomics worries are captured as sector concerns). Prices have reset hard this year, but the 2022 technical milestones \u2014 the Merge, ZK going to production \u2014 make me more excited about the foundations for the next cycle than the price action would suggest."
+}

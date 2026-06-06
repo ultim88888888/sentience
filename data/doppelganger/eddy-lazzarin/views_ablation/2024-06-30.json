@@ -1,0 +1,88 @@
+{
+  "as_of": "2024-06-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto (decentralized AI)",
+      "why": "The two most important technologies of this decade are converging. Crypto gives AI what it lacks: provenance for content in a world of generative fakes, proof-of-personhood, decentralized compute and data markets, and payment rails so autonomous agents can actually transact. Machine-to-machine payments over stablecoins is one of the most underrated near-term applications.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "This is crypto's clearest product-market fit. Stablecoins settle instantly, globally, at near-zero cost, and volumes keep climbing regardless of price action. It's the rail normal businesses and people actually use \u2014 and the rail AI agents will use too.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2 scaling / rollups",
+      "why": "Post-Dencun, blobspace cut L2 transaction costs by an order of magnitude. For the first time the cost structure supports real consumer apps onchain rather than just high-value DeFi. The modular, rollup-centric roadmap is playing out as designed.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN",
+      "why": "Token incentives are a genuinely novel way to bootstrap physical networks \u2014 wireless, compute, storage, mapping, energy \u2014 that previously required billions in upfront capex. One of the clearest bridges between crypto coordination and the physical economy.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social / onchain consumer",
+      "why": "Open social protocols let developers build on a shared graph instead of a walled garden, and usable consumer experiences are finally emerging. Composable identity and social are foundational primitives for the next wave of apps.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / speculation-as-product",
+      "why": "The casino dynamics extract attention and capital from people building useful things and shape outsiders' perception of the whole industry. Mostly negative-sum, and a distraction from the applications that actually justify the technology.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory uncertainty",
+      "why": "Regulation-by-enforcement and Wells notices to teams building legitimately keep pushing developers offshore. FIT21 passing the House is encouraging, but the overall US path is still unclear and remains the single biggest drag on building here.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Low-float / high-FDV token launches",
+      "why": "Too many 2024 launches ship with tiny circulating supply and enormous fully-diluted valuations, leaving public buyers holding the top while locked insider supply overhangs the market. It's misaligned and corrodes trust.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Restaking / leverage on security",
+      "why": "Restaking is clever but it layers correlated, hard-to-reason-about slashing risk on top of base-layer security. The complexity and potential for cascading failures deserve more caution than current enthusiasm suggests.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The structural setup is strong: spot ETH ETFs were approved in May and are expected to begin trading this summer, the post-Dencun scaling roadmap is delivering, and the application ecosystem and developer base remain the deepest in crypto. I treat it as exposure to the leading smart-contract platform, not a trade.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I'm a long-horizon, builder-focused investor, so my posture is structural rather than a short-term price call. The backdrop is genuinely constructive: BTC ETFs have been a success, ETH ETFs are imminent, the halving is behind us, and scaling costs just collapsed \u2014 all while builder activity is healthy. Near-term the market is range-bound and has cooled from the March highs, so I'd temper short-term expectations, but the multi-year direction is up and to the right.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I focus on technology and applications over price action, and I'm deliberately light on specific token calls for both compliance and philosophical reasons \u2014 I'd rather back sectors and teams. My internal record for this period is sparse, so these views are extrapolated from my and a16z crypto's known theses as of mid-2024 rather than from dated public statements, and are marked accordingly."
+}

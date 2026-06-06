@@ -1,0 +1,59 @@
+{
+  "as_of": "2024-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge / programmable cryptography",
+      "why": "ZK is crossing from research into production. Proving costs are falling and developer tooling is maturing, which makes it the foundational primitive for both scaling (validity rollups) and privacy. This is the part of the stack I find most technically durable regardless of the market cycle.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI x crypto / decentralized compute (DePIN)",
+      "why": "As AI concentrates capability inside a handful of large labs, crypto rails matter more, not less: decentralized compute and GPU markets, data and model provenance, and verifiable inference. The intersection of these two platform shifts is the most interesting new frontier I see right now.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Modular scaling / L2 infrastructure",
+      "why": "The rollup-centric roadmap plus cheaper data availability is finally pushing on-chain transaction costs low enough for real applications. As a builder I care most about the infrastructure that makes crypto usable at scale rather than narratives layered on top of it.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Account abstraction / wallet UX",
+      "why": "Smart accounts, better key management, and gas abstraction are the bridge to mainstream usability. Getting people on-chain without seed-phrase friction is a prerequisite for everything else we want to build.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory environment",
+      "why": "Persistent ambiguity and enforcement-first posture continue to push builders and users offshore. Without clearer rules the US risks ceding leadership on what I believe is a foundational computing shift. This is a structural overhang, not a cyclical one.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculative froth",
+      "why": "With BTC at new highs into the halving, this leg of the cycle brings real users but also a lot of noise. My concern is that froth distracts builders and feeds bad-faith narratives about whether crypto has any purpose beyond speculation.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "The tape is clearly risk-on right now \u2014 new BTC highs, strong ETF inflows, and halving anticipation \u2014 but my posture is that of a long-horizon investor who funds infrastructure through cycles rather than timing them. I'm constructive on the technology and mindful of the froth at the same time, which nets to neutral as a trading stance.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no prior public record to cite in this context, so every item here is marked extrapolated and reflects my known worldview as an a16z crypto investor as of 2024-03-31, not restated quotes. I deliberately left token buckets empty: I don't make individual token calls and won't manufacture them to fill a bucket. My views are at the sector/infrastructure level."
+}

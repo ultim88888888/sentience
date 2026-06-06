@@ -1,0 +1,88 @@
+{
+  "as_of": "2025-06-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Clearest product-market fit in all of crypto: dollar-denominated stablecoins are becoming real payment rails for cross-border transfer, B2B settlement, and remittances at genuine scale. With US stablecoin legislation advancing, this moves from gray-market workaround to sanctioned infrastructure \u2014 the 'killer app' that touches users who never think about crypto.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "Two of the most important technologies of the decade are converging. Crypto gives AI agents native rails to hold value and transact, decentralized markets for compute and data, and \u2014 critically \u2014 proof-of-personhood/humanness as bots make it harder to tell who is real online. This is where a lot of durable, non-speculative demand will originate.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2 scaling & zero-knowledge proofs",
+      "why": "The modular roadmap is delivering: rollups are maturing, ZK proving is getting dramatically cheaper and faster, and account abstraction is finally making wallets usable. Cheap verifiable compute unlocks application categories that were economically impossible before. This is the technical fundamental I weight most heavily.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Onchain finance & real-world asset tokenization",
+      "why": "DeFi primitives are battle-tested and now meeting regulatory clarity. Tokenization of treasuries, credit, and other real-world assets brings institutional capital onchain and gives stablecoins/DeFi yield-bearing collateral. The composability advantage of doing this on open networks is real and underappreciated.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are a genuinely novel way to bootstrap real-world networks \u2014 wireless, storage, compute, energy, mapping \u2014 that would otherwise need enormous upfront capital. When the unit economics work, you get supply-side growth no centralized incumbent can match. Still early and uneven, but structurally interesting.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins & extractive speculation",
+      "why": "The pure-speculation casino is largely negative-sum, distracts builders and users from durable products, and hands critics the easiest possible argument against the whole industry. It pulls attention and liquidity away from the things that actually compound. I worry about the reputational and regulatory drag it creates at exactly the moment real usage is emerging.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "L2 fragmentation & sequencer centralization",
+      "why": "The proliferation of rollups fragments liquidity and UX, and most still run centralized sequencers with immature fraud/validity guarantees and bridge risk. Decentralizing sequencing, improving cross-chain interop, and making the security model honest to users are unsolved problems that could undercut the scaling thesis if neglected.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Security & smart-contract / bridge risk",
+      "why": "Hacks and exploits remain the most concrete way users lose money and trust. Bridges, novel DeFi composability, and rushed deployments keep producing nine-figure failures. Until formal verification, better tooling, and audited standards are the default, security is a persistent tax on adoption.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Structural conviction, not a price call: as the settlement and data-availability layer beneath the L2/ZK ecosystem, the home base for most stablecoin and DeFi activity, and the most credibly neutral, decentralized smart-contract platform, Ethereum captures value as the ecosystem above it grows. I think in terms of where durable activity settles rather than short-term tape.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "SOL",
+      "why": "A high-performance, single-state-machine L1 that has earned real consumer, payments, and DePIN usage by optimizing relentlessly for throughput and low latency. I respect the engineering bet and the application traction; it's a credible second pole of activity, again as a structural view rather than a trade.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Constructive on a multi-year horizon: the US regulatory trajectory is the most favorable it has been (stablecoin legislation advancing, a more constructive posture toward market structure), real non-speculative usage is growing fastest in stablecoins/payments, and institutional adoption is deepening. This is a builder/fundamentals stance \u2014 I'm bullish on what gets built through the cycle, not making a short-term macro or price prediction, and I stay mindful of crypto's volatility and reflexivity.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no dated record/quotes available here, so every item is provenance=extrapolated \u2014 inferred from my known worldview as a16z crypto's CTO (deeply technical, builder- and fundamentals-focused, long time horizon), not from verbatim statements. I deliberately express most conviction at the sector/technology level; the two token entries are structural ecosystem views, not endorsements or short-term calls, and I avoid singling out specific tokens to be 'concerned' about beyond the sector-level concern on memecoins/extractive speculation."
+}

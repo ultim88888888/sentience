@@ -55,3 +55,9 @@ def test_query_is_ignored_seam(tmp_path):
     queried = load_memory("x", date(2022, 12, 31), evidence_path=_ev(tmp_path), query="rollups")
     assert list(queried.items["id"]) == list(full.items["id"])   # query ignored in v1
     assert queried.text == full.text
+
+
+def test_run_cli_has_memory_subcommand():
+    import doppelganger.run as r
+    ns = r.build_parser().parse_args(["memory", "--subject", "eddy-lazzarin", "--t0", "2022-12-31"])
+    assert ns.cmd == "memory" and ns.subject == "eddy-lazzarin" and ns.t0 == "2022-12-31"

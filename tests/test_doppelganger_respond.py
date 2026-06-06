@@ -104,21 +104,23 @@ def test_run_cli_has_respond_subcommand():
     assert ns2.query == "Q"
 
 
-def test_respond_ablate_memory_uses_empty_memory_and_separate_dir(tmp_path):
+def test_respond_ablate_memory_is_soulless(tmp_path):
+    # identity.json provides the stub; soul.md must NOT be read in ablation
+    (tmp_path / "testy-mctest").mkdir(parents=True, exist_ok=True)
+    (tmp_path / "testy-mctest" / "identity.json").write_text(
+        '{"name": "Testy McTest", "headline": "Investing in tokens."}')
     captured = {}
 
     def fake_run(system, user):
+        captured["system"] = system
         captured["user"] = user
         return '{"sectors_excited":[{"name":"X","provenance":"extrapolated","citations":[]}]}'
 
     with patch("doppelganger.respond.run_claude", side_effect=fake_run):
-        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
-                       soul_path=_soul(tmp_path), ablate_memory=True)
-    # written to the ablation dir, NOT the normal views dir
+        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path, ablate_memory=True)
     assert (tmp_path / "testy-mctest" / "views_ablation" / "2022-12-31.json").exists()
-    assert not (tmp_path / "testy-mctest" / "views" / "2022-12-31.json").exists()
-    # the record section is present but EMPTY (no memory fed)
-    assert "YOUR RECORD" in captured["user"]
+    assert "Testy McTest" in captured["system"] and "Investing in tokens." in captured["system"]
+    assert "How He Thinks" not in captured["system"]      # no soul card
     between = captured["user"].split("YOUR RECORD", 1)[1].split("# QUESTION", 1)[0]
-    assert between.strip().splitlines()[1:] == []   # nothing between the header line and the question
+    assert between.strip().splitlines()[1:] == []
     assert view["sectors_excited"][0]["provenance"] == "extrapolated"

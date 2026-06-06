@@ -82,3 +82,13 @@ def test_run_walkforward_no_ablate(tmp_path):
     with patch("doppelganger.walkforward.respond", side_effect=fake_respond):
         rows = run_walkforward("s", [date(2022, 12, 31)], ablate=False, out_dir=tmp_path, evidence_path=_ev(tmp_path))
     assert len(rows) == 1 and rows[0]["variant"] == "full"
+
+
+def test_run_cli_has_walkforward_subcommand():
+    import doppelganger.run as r
+    ns = r.build_parser().parse_args(["walkforward", "--subject", "eddy-lazzarin"])
+    assert ns.cmd == "walkforward" and ns.subject == "eddy-lazzarin"
+    assert ns.start == "2022-12-31" and ns.end is None and ns.no_ablate is False
+    ns2 = r.build_parser().parse_args(["walkforward", "--subject", "x", "--start", "2023-01-01",
+                                       "--end", "2023-12-31", "--no-ablate"])
+    assert ns2.start == "2023-01-01" and ns2.end == "2023-12-31" and ns2.no_ablate is True

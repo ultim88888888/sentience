@@ -11,10 +11,14 @@ from __future__ import annotations
 import argparse
 from datetime import date
 
+import pandas as pd
+
+from doppelganger import config
 from doppelganger.ingest import ingest
 from doppelganger.memory import load_memory
 from doppelganger.respond import respond
 from doppelganger.soul import extract_soul
+from doppelganger.walkforward import quarter_ends, run_walkforward
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -36,6 +40,12 @@ def build_parser() -> argparse.ArgumentParser:
     resp.add_argument("--subject", required=True, help="subject slug, e.g. eddy-lazzarin")
     resp.add_argument("--t0", required=True, help="cutoff date YYYY-MM-DD, e.g. 2022-12-31")
     resp.add_argument("--query", default=None, help="optional custom query (default: market-view survey)")
+
+    wf = sub.add_parser("walkforward", help="run respond() across a quarterly schedule (full + ablation)")
+    wf.add_argument("--subject", required=True, help="subject slug, e.g. eddy-lazzarin")
+    wf.add_argument("--start", default="2022-12-31", help="schedule start YYYY-MM-DD")
+    wf.add_argument("--end", default=None, help="schedule end YYYY-MM-DD (default: latest evidence date)")
+    wf.add_argument("--no-ablate", action="store_true", help="skip the soul-only ablation arm")
     return parser
 
 
@@ -55,6 +65,16 @@ def main() -> None:
         view = respond(args.subject, date.fromisoformat(args.t0), query=args.query)
         import json
         print(json.dumps(view, indent=2)[:2000])
+    elif args.cmd == "walkforward":
+        start = date.fromisoformat(args.start)
+        if args.end:
+            end = date.fromisoformat(args.end)
+        else:
+            ev = pd.read_parquet(config.OUT_DIR / args.subject / "evidence.parquet")
+            end = pd.to_datetime(ev["timestamp"], utc=True).max().date()
+        dates = quarter_ends(start, end)
+        rows = run_walkforward(args.subject, dates, ablate=not args.no_ablate)
+        print(f"{len(rows)} rows over {len(dates)} dates -> {config.OUT_DIR / args.subject / 'walkforward.json'}")
 
 
 if __name__ == "__main__":

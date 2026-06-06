@@ -66,11 +66,15 @@ def run_walkforward(slug: str, dates: list[date], *, ablate: bool = True,
     for d in dates:
         for variant, ablate_mem, subdir in variants:
             vpath = base_dir / slug / subdir / f"{d.isoformat()}.json"
-            if vpath.exists():
-                view = json.loads(vpath.read_text())          # cached — no claude -p
-            else:
-                view = respond(slug, d, ablate_memory=ablate_mem, out_dir=out_dir,
-                               evidence_path=evidence_path, soul_path=soul_path)
+            try:
+                if vpath.exists():
+                    view = json.loads(vpath.read_text())          # cached — no claude -p
+                else:
+                    view = respond(slug, d, ablate_memory=ablate_mem, out_dir=out_dir,
+                                   evidence_path=evidence_path, soul_path=soul_path)
+            except Exception as e:                                # transient claude -p / parse failure
+                print(f"  [skip] {slug} {d.isoformat()} {variant}: {e}")
+                continue                                          # leave ungenerated; re-run fills the gap
             rep = audit_answer(view, ev_path, d)
             rows.append(_row(d, variant, view, rep))
 

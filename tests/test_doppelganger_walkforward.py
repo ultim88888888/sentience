@@ -84,6 +84,36 @@ def test_run_walkforward_no_ablate(tmp_path):
     assert len(rows) == 1 and rows[0]["variant"] == "full"
 
 
+def test_run_walkforward_continues_on_respond_failure(tmp_path):
+    import json
+    from datetime import date
+    from unittest.mock import patch
+    import pandas as pd
+    from doppelganger.walkforward import run_walkforward
+
+    ev = tmp_path / "s" / "ev.parquet"
+    (tmp_path / "s").mkdir(parents=True, exist_ok=True)
+    pd.DataFrame([{"id": "1", "timestamp": pd.Timestamp("2022-06-01", tz="UTC"),
+                   "source_type": "x_original", "text": "t"}]).to_parquet(ev)
+
+    def flaky_respond(slug, t0, *, ablate_memory=False, out_dir=None, **kw):
+        if ablate_memory:
+            raise RuntimeError("claude -p exited 1")          # transient failure on the ablation arm
+        d = __import__("pathlib").Path(out_dir) / slug / "views"; d.mkdir(parents=True, exist_ok=True)
+        v = {"sectors_excited": [{"name": "ZK", "provenance": "grounded", "citations": []}],
+             "sectors_concerned": [], "tokens_excited": [], "tokens_concerned": [],
+             "risk_regime": {"stance": "risk_on"}}
+        (d / f"{t0.isoformat()}.json").write_text(json.dumps(v))
+        return v
+
+    with patch("doppelganger.walkforward.respond", side_effect=flaky_respond):
+        rows = run_walkforward("s", [date(2022, 12, 31)], out_dir=tmp_path, evidence_path=ev)
+    # the full variant succeeded; the ablation variant failed but did NOT abort the run
+    variants = [r["variant"] for r in rows]
+    assert variants == ["full"]                  # only the successful row; ablation skipped
+    assert (tmp_path / "s" / "walkforward.json").exists()
+
+
 def test_run_cli_has_walkforward_subcommand():
     import doppelganger.run as r
     ns = r.build_parser().parse_args(["walkforward", "--subject", "eddy-lazzarin"])

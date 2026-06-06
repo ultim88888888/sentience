@@ -32,43 +32,43 @@ def _participants(row, roster: Roster) -> list[str]:
             names.append(hit.iloc[0]["name"])
     return names
 
-def _segments_for_post(row, transcript, roster, mode) -> list[dict]:
+def _both_engines(row, mp3, parts, roster) -> list[dict]:
+    """Corrected both-engines path (index-aligned fusion). Diarization fixes the segmentation,
+    the LLM names each segment, fuse_by_voice resolves voice->identity by majority with
+    intra-voice consistency as confidence. See docs/.../both-engines-fusion-redesign.md."""
+    from .diarize import diarize_audio, transcribe_timestamped, assign_segments_to_turns
+    from .attribute_text import attribute_segments
+    from .fuse import fuse_by_voice
+    turns = diarize_audio(mp3)
+    voiced = assign_segments_to_turns(transcribe_timestamped(mp3), turns)
+    names = attribute_segments(voiced, parts)
+    prior = HOST_PRIOR["podcast"]
+    fused, _, _ = fuse_by_voice(voiced, names, lambda n: roster.resolve(n, prefer=prior).slug)
+    out = []
+    for s in fused:
+        ident = s["identity"]
+        speaker = roster.name_for(ident) or (ident.title() if ident else "UNKNOWN")
+        out.append({"text": s["text"], "speaker": speaker, "method": "fused",
+                    "agreed": s["agree"], "confidence": s["confidence"]})
+    return out
+
+
+def _segments_for_post(row, transcript, roster, mode, diarize: bool = False) -> list[dict]:
     from .attribute_text import attribute
     parts = _participants(row, roster)
-    llm = attribute(transcript, parts)  # [{speaker,text,confidence}]
-    if mode != CONVERSATIONAL:
-        for s in llm:
-            s["method"] = "text"
-        return llm
-    # conversational: locate THIS post's cached mp3 by media_id, then diarize + fuse.
     media_id = row.get("media_id")
     mp3 = str(AUDIO_CACHE / f"{media_id}.mp3") if media_id else None
-    if not mp3 or not glob.glob(mp3):
-        _log(f"  no cached audio for {row.get('object_id')} (media_id={media_id}) -> text-only")
-        for s in llm:
-            s["method"] = "text"
-        return llm
-    try:
-        from .diarize import diarize_audio, transcribe_timestamped, assign_segments_to_turns
-        from .fuse import name_voices, fuse_segments
-        turns = diarize_audio(mp3)
-        tsegs = transcribe_timestamped(mp3)
-        voiced = assign_segments_to_turns(tsegs, turns)
-        llm_by_text = {s["text"]: s["speaker"] for s in llm}
-        fused = fuse_segments(voiced, name_voices(voiced, llm_by_text), llm_by_text)
-        for s in fused:
-            s["method"] = "fused"
-            s["confidence"] = 0.9 if s["agreed"] else 0.4
-        return fused
-    except Exception as e:
-        # Per spec §5: diarization unavailable (gated model, decode error) -> degrade to
-        # text-only rather than drop the post. Logged, not silent.
-        _log(f"  diarization failed for {row.get('object_id')} ({type(e).__name__}) -> text-only")
-        for s in llm:
-            s["method"] = "text"
-        return llm
+    if diarize and mode == CONVERSATIONAL and mp3 and glob.glob(mp3):
+        try:
+            return _both_engines(row, mp3, parts, roster)
+        except Exception as e:  # gated model / decode error -> degrade to text-only, logged
+            _log(f"  diarization failed for {row.get('object_id')} ({type(e).__name__}) -> text-only")
+    llm = attribute(transcript, parts)  # text-LLM path (default + fallback)
+    for s in llm:
+        s["method"] = "text"
+    return llm
 
-def build(pilot: bool, limit: int | None = None) -> pd.DataFrame:
+def build(pilot: bool, limit: int | None = None, diarize: bool = False) -> pd.DataFrame:
     corpus = pd.read_parquet(CORPUS)
     tx = pd.read_parquet(TRANSCRIPTS)
     tx = tx[tx["status"] == "ok"]
@@ -89,7 +89,7 @@ def build(pilot: bool, limit: int | None = None) -> pd.DataFrame:
         # Host-prior: which a16z members host this format (disambiguates first-name thanks).
         prior = HOST_PRIOR["podcast"] if mode == CONVERSATIONAL else HOST_PRIOR["research-seminar"]
         try:
-            segs = _segments_for_post(row, row["transcript"], roster, mode)
+            segs = _segments_for_post(row, row["transcript"], roster, mode, diarize=diarize)
         except Exception as e:
             _log(f"  attribution_failed {row['object_id']}: {e!r}")
             continue
@@ -108,8 +108,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pilot", action="store_true")
     ap.add_argument("--limit", type=int, default=None, help="Cap to first N posts (fast pilot).")
+    ap.add_argument("--diarize", action="store_true",
+                    help="Both-engines for podcasts (pyannote+LLM fusion). Default off (text-LLM).")
     args = ap.parse_args()
-    df = build(pilot=args.pilot, limit=args.limit)
+    df = build(pilot=args.pilot, limit=args.limit, diarize=args.diarize)
     SEGMENTS_OUT.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(SEGMENTS_OUT, index=False)
     PERSONS_DIR.mkdir(parents=True, exist_ok=True)

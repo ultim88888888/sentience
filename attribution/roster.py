@@ -22,6 +22,11 @@ class Roster:
     def load(cls) -> "Roster":
         return cls(pd.read_parquet(ROSTER, columns=["slug", "name", "title"]))
 
+    def name_for(self, slug) -> str | None:
+        """Canonical display name for a roster slug (or None if not a member)."""
+        hit = self._df[self._df["slug"] == slug]
+        return hit.iloc[0]["name"] if len(hit) else None
+
     def _match(self, row) -> Match:
         return Match(row["slug"], row["name"], row["title"], True)
 

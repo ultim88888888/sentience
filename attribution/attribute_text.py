@@ -33,6 +33,48 @@ def parse_segments(raw: str):
     obj = json.loads(m.group(0))
     return obj["segments"]
 
+
+def parse_labels(raw: str) -> dict:
+    """Extract {"labels": {"<idx>": "<speaker>"}} from an LLM reply."""
+    m = re.search(r"\{.*\}", raw, re.S)
+    if not m:
+        raise ValueError("no JSON object in LLM output")
+    return json.loads(m.group(0))["labels"]
+
+
+SEG_PROMPT = """Label who speaks each numbered transcript segment of a podcast.
+Known participants: {participants}.
+Return ONLY JSON: {{"labels": {{"<index>": "<speaker>"}}}} with an entry for EVERY index shown.
+Use a real name once identifiable (introductions, "thanks X", the participant list) and keep
+that exact same name for that speaker throughout. Use HOST/GUEST_1/GUEST_2 only for a speaker
+whose name is never identifiable.
+
+SEGMENTS:
+{numbered}"""
+
+
+def attribute_segments(segments, participants, batch: int = 60) -> list[str]:
+    """Label each pre-segmented turn (aligned to `segments` by index) with a speaker name.
+
+    Used by the both-engines path: the diarizer fixes the segmentation, the LLM only NAMES
+    each segment — so diarization voices and LLM names share one segmentation and fuse by index
+    (the v1 bug was the two paths producing different segmentations, joined by text → 4%)."""
+    names: list[str | None] = [None] * len(segments)
+    known = list(participants)
+    for start in range(0, len(segments), batch):
+        chunk = segments[start:start + batch]
+        numbered = "\n".join(f"[{start+i}] {s['text']}" for i, s in enumerate(chunk))
+        prompt = SEG_PROMPT.format(participants=", ".join(dict.fromkeys(known)) or "unknown",
+                                   numbered=numbered)
+        labels = parse_labels(_call_claude(prompt))
+        for k, v in labels.items():
+            i = int(k)
+            if 0 <= i < len(names):
+                names[i] = v
+            if v and not _is_placeholder(v) and v not in known:
+                known.append(v)
+    return names
+
 def merge_chunks(chunk_results):
     """Concatenate per-chunk segments, dropping overlap duplicates (same speaker+text)."""
     merged, seen = [], set()

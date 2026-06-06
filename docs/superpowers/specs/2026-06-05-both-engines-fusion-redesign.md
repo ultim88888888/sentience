@@ -1,6 +1,6 @@
 # Both-Engines Fusion — Redesign (investigation findings)
 
-_2026-06-05 · status: investigated + prototyped, not yet productionized · text-LLM-only ships in the meantime_
+_2026-06-05 · status: IMPLEMENTED (opt-in --diarize) · text-LLM-only remains the default_
 
 ## The bug in v1 fusion
 

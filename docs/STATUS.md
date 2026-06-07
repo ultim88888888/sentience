@@ -15,7 +15,8 @@ ingestion → soul → memory → doppelganger(`respond`) → walk-forward + sco
 - LLM calls = `claude -p --model opus --effort high` (Max sub, no API cost) via `doppelganger/llm.py`. No SDK.
   **Effort was `max` through 2026-06-06; dialed to `high` on 2026-06-07 to conserve credits.** This leaves a
   known eval confound: **Eddy was judged at `max`, Ali at `high`.**
-- Generated artifacts live UNTRACKED under `data/doppelganger/<slug>/`.
+- Generated artifacts are COMMITTED under `data/doppelganger/<slug>/` (the data *is* the deliverable,
+  same as the corpus parquets — NOT gitignored). Only transient run logs (`logs_run_full.txt`) are ignored.
 
 **Core principle (Jax-enforced):** feed the model inputs, don't script its cognition. Eval is **AGENTIC**
 — LLM-judge agents read the qualitative views; deterministic scores are only rough indicators.

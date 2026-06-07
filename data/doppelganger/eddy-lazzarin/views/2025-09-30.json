@@ -1,0 +1,211 @@
+{
+  "as_of": "2025-09-30",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Onchain privacy (ZK / MPC-based confidentiality)",
+      "why": "Lack of onchain privacy is now the biggest source of friction \u2014 often a dealbreaker \u2014 for institutions and mainstream users, who already cope by spinning up new addresses and hiding assets on exchanges. The cryptographic tools finally exist to make compliant, radical privacy the default. This is the most underrated unlock right now.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-08",
+          "quote": "Now I believe the lack of privacy onchain is one of the biggest sources of friction, if not a dealbreaker, for many institutions. It's critical."
+        },
+        {
+          "date": "2025-05-15",
+          "quote": "We have the technology to make radical privacy the default. Let's build it."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs / zkVMs (SNARKs, Jolt)",
+      "why": "ZK has moved from theory to practice on a Moore's-Law-like curve. SNARKs scale blockchains and enable verifiable, private compute. Jolt (sumcheck/lookups) keeps getting dramatically faster and simpler, and the underlying techniques are becoming the consensus approach. Verifiable computation is foundational infrastructure.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-19",
+          "quote": "I believe Jolt will be obvious next year."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "Jolt just got 6x faster. And simpler. It's probably the fastest zkVM cycle-for-cycle by a wide margin."
+        }
+      ]
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins have clear product-market fit \u2014 the cheapest way to move a dollar \u2014 and payments are finally coming together with x402, lower L2 fees, and cross-chain transfer work. The remaining problem is UX and rails (deterministic outputs, exact amounts), not the core thesis.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-25",
+          "quote": "x402 means micropayments might finally be a real business model online"
+        },
+        {
+          "date": "2024-10-03",
+          "quote": "Everyone is talking about payments."
+        }
+      ]
+    },
+    {
+      "name": "Proof of personhood / private unique identity",
+      "why": "As AI collapses the marginal cost of producing realistic content, we need privacy-preserving, Sybil-resistant unique IDs to raise the cost of attacks (spam, fraud, impersonation, airdrop farming) without raising it for real people. A private root of trust for personhood is non-negotiable for a trustworthy internet.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-05-06",
+          "quote": "If we want to ensure tokens/rewards/credentials end up in the hands of real people (or even high-quality bots!) we need an ID system with *privacy* and *uniqueness* as intrinsic properties."
+        },
+        {
+          "date": "2024-12-04",
+          "quote": "That's why the property of privacy-preserving \"uniqueness\" is the next big idea in building a web we can trust."
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto (agent wallets, agent identity, decentralized AI)",
+      "why": "Crypto is how machines can own \u2014 agents need wallets, signing keys, identity, and credibly-neutral rails to transact and coordinate, and decentralized networks are the counterweight to centralized AI. Agent identity in particular is an obvious, still-unsolved problem.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-25",
+          "quote": "*Identity for agents* is one of the most \"obvious\" future challenges for AI, yet there is still no clear effort to solve the problem."
+        },
+        {
+          "date": "2022-12-13",
+          "quote": "crypto = how machines can own"
+        }
+      ]
+    },
+    {
+      "name": "Fully onchain games",
+      "why": "Games push software in every dimension and are quietly among the highest-throughput onchain activity. Fully onchain games unlock composability and autonomous, no-one-controls-it worlds \u2014 a serious incentive-design domain, not a toy.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        },
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized social networks",
+      "why": "Open, user-owned social (e.g., Farcaster/Snapchain) is the antidote to corporate-network rug pulls. Doing it right means storing identity and the social graph in a permissionless, programmable way that resists recentralization \u2014 paired with private ID and user-controlled algorithms.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "Snapchain is how I think decentralized social networks ought to store data to max programmability + performance and min the risks of recentralization."
+        },
+        {
+          "date": "2025-07-24",
+          "quote": "Today it is impossible to build a social network without an algorithm."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Not technically interesting and largely zero-sum; worse, they shape how the public, regulators, and founders perceive crypto \u2014 making it look like a casino, deterring great builders, and arming bad-faith regulation. The interest comes and goes; the reputational damage to the industry is real.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto."
+        }
+      ]
+    },
+    {
+      "name": "Company-backed tokens marketed as network tokens",
+      "why": "Many tokens sold as 'network tokens' (or even memecoins) are really company-backed \u2014 value depends on a centralized, controllable system, so they carry securities-like trust dependencies. A made-up pie chart is not a protocol. Mislabeling misleads holders and invites legitimate legal risk.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Some projects even describe their token as a Network Token or memecoin when it's really Company-backed."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "If the \"tokenomics\" is just a pie chart, there is no network, no potential to create value, and no point."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The clearest network token: ownership of a decentralized marketplace for blockspace, with fully automatic value capture via the EIP-1559 burn that scales with demand. Not a price call \u2014 I admire the design and keep pushing Ethereum to scale (raise blob targets, lower fees) so it doesn't cede builders to faster chains.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-01",
+          "quote": "Fully automatic token buybacks using revenue from a decentralized network"
+        },
+        {
+          "date": "2025-06-27",
+          "quote": "I think ETH is already doing (fully automatic) buybacks via the EIP-1559 burn."
+        }
+      ]
+    },
+    {
+      "name": "World / World ID (WLD)",
+      "why": "Excited about the network and tech, not a price: World ID is the most promising private, unique root of trust for proof-of-personhood, and the token exists to bootstrap that ID network (and may capture fees automatically over time). In the AI era, the network that lets humans prove they're human, privately, may be the most important one.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "I believe that World ID is the most promising as the root of trust."
+        },
+        {
+          "date": "2025-05-11",
+          "quote": "The tokens are to help bootstrap the ID network, and in the future may capture fees automatically."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "BTC",
+      "why": "A long-horizon, structural concern, not a near-term market call (and it's incredible Bitcoin exists): its security budget leans increasingly on fees as the block subsidy halves, and extreme ossification limits programmability. Something like a VERIFY_SNARK opcode could make it programmable again \u2014 without changes, the multi-decade security model is in question.",
+      "provenance": "grounded",
+      "age_note": "security-model point stated 2023-07; ossification revisited 2024-12; still held",
+      "citations": [
+        {
+          "date": "2023-07-24",
+          "quote": "Many have been doing this math \u2014 the security model of bitcoin needs to change if it's going to last the next few decades."
+        },
+        {
+          "date": "2024-12-07",
+          "quote": "A side effect of bitcoin's extreme ossification is that normies believe other blockchains are also not changing or upgrading."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I don't position on risk-on/risk-off sentiment \u2014 that's the herd cycle I deliberately ignore. I trust the instruments: the price-innovation cycle, where prices are a lagging surface over steady fundamental progress. By that measure I'm constitutionally constructive \u2014 skeptical in analysis, optimistic in action \u2014 and 2025 has the best building conditions I've seen (better tech, clearer need, transformed US regulation). But that's a builder's optimism about fundamentals, not market timing, so on pure market risk I'm neutral. It's still early.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I answer as an engineer and builder, not a financier ('I'm not here to build fintech') \u2014 so 'excited/concerned' here means technologies and network-design fundamentals, not price predictions or trades. Token views (ETH, World, BTC) are about design, value capture, and security models, not targets. Disclosure: a16z and I am active onchain; this is not investment advice."
+}

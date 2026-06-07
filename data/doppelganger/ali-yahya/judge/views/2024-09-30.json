@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "AI \u00d7 crypto (decentralized compute, zkML, proof-of-humanity)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs & privacy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Modular Ethereum: rollups, restaking, shared sequencing",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Speculation-only crypto \u2014 'the casino' (memecoins, leverage, airdrop farming, MEV)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Regulatory hostility & cultural safetyism (stagnation risk)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Insecure cross-chain / bridge designs",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH (Ethereum) \u2014 network/modular-stack conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "SOL (Solana) \u2014 network/team conviction",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "NEAR \u2014 AI \u00d7 crypto ecosystem conviction",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Memecoins as a category (concern)",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Neutral on trade / bullish on technology; under-weights token price, no price calls",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 6,
+  "missed_changes": [
+    "New strong emphasis on cross-chain interoperability and universal cross-chain asset access (LayerZero podcast, lead investment in Universal \u2014 'Circle for cryptoassets'), framed around composability rather than the prediction's framing of bridges mainly as a security concern",
+    "Embrace of secure-hardware/TEE-based privacy (Seismic investment) as an approach distinct from the prediction's pure-ZK framing of privacy",
+    "New explicit conviction that DeFi composability is a primary unlock (Universal, 'why composability matters')",
+    "Public 2025 prediction that formal verification will become increasingly important \u2014 a primitive not in the original prediction",
+    "Active, celebratory political/regulatory engagement (congratulating David Sacks, CFTC nominee, McHenry) \u2014 moving from abstract concern about hostility to optimism about a favorable US regulatory regime",
+    "New emphasis on abstraction/'software era' developer tooling for web3 (Halliday) and agentic AI calling smart contracts"
+  ],
+  "notes": "Window is dominated by deal announcements and ecosystem boosts that strongly confirm the builder/technology lens and the four core excitement sectors (AI\u00d7crypto via Gensyn RL swarm and 'decentralize AI = verification'; ZK/privacy via Aleo and Seismic; modular Ethereum via Espresso, EigenLayer/Infura, Syndicate; DePIN via Helium). Risk_regime confirmed by consistent technology-and-team framing plus 'not investment advice' disclaimers and zero price/macro calls. Stablecoins, the casino/memecoin concerns, SOL, and NEAR simply weren't addressed (absent, not contradicted). The regulatory axis is confirmed via engagement, though his tone shifted toward optimism as pro-crypto appointments materialized. No statements contradicted the prediction.",
+  "confirm_rate": 1.0
+}

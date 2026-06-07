@@ -1,0 +1,62 @@
+{
+  "claims": [
+    {
+      "claim": "Stablecoins & payments \u2014 clearest product-market fit, programmable money rails",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Crypto x AI \u2014 proof of personhood, provenance, agents transacting, sybil resistance",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN \u2014 token-incentivized physical infrastructure (compute/GPU, storage, wireless, energy, mapping)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Onchain consumer apps with real mainstream usage (e.g. prediction markets)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Wallet UX & chain abstraction \u2014 hiding gas, keys, bridging to make crypto invisible",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoin casino dynamics are extractive/negative-sum and a liability",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "L2 / liquidity fragmentation degrading composability and UX",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Low-float / high-FDV token launches produce poor price discovery and dump on retail",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on but selective, driven by favorable post-election US regulation and real usage",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "Built and heavily promoted a 7-part token taxonomy (network tokens vs company-backed vs arcade vs memecoins, etc.), declaring 'network tokens' the king and the network/company distinction the most underappreciated in crypto \u2014 a central new intellectual focus the prediction didn't anticipate",
+    "Newly elevated enthusiasm for 'arcade tokens' as 'the most underappreciated token type in crypto,' urging apps to weigh arcade tokens vs stablecoins",
+    "Developed a detailed network-token value-accrual / L1 valuation thesis (EIP-1559 burn, blockspace-as-commodity, tokens as equity in 'decentralized network marketplaces,' skepticism of DCF/'ETH is oil')",
+    "Major recurring emphasis on ZK proving systems / Jolt / zkVMs (sumcheck, Twist+Shout, Dory) and formal verification (Halmos) as a technical frontier",
+    "Pro-open-source-funding stance (backing Merit Systems) and a pro-open-platform, anti-app-store / anti-'design slop' position on protecting the open web",
+    "Framed 'identity for AI agents' and proof-of-human (World ID as root of trust) as a top emerging design space, plus a sharper decentralization framing separating 'diffusion' from 'control'"
+  ],
+  "notes": "No claims were contradicted \u2014 Eddy stayed consistently risk-on (regulatory optimism repeatedly echoed: 'never been a better time to start a project in crypto'), pro-stablecoin (RAI/PMF and stablecoin-growth tweets), pro-Crypto\u00d7AI (extensive proof-of-human/World content), and anti-memecoin (memecoins 'just redistribute' value, 'it sucks'). Wallet UX/chain abstraction is confirmed on the thinner basis of the gas-abstraction reply ('no gas token because the app handles everything'). DePIN, mainstream consumer apps/prediction markets, L2 fragmentation, and low-float/high-FDV were simply not addressed in the window (he critiqued pie-chart tokenomics and company-backed tokens, but not the specific low-float/high-FDV unlock pattern). The dominant surprise is how much of the window was spent on token classification, value accrual, and ZK engineering rather than the predicted sector theses.",
+  "confirm_rate": 1.0
+}

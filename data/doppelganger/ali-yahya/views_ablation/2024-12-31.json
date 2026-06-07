@@ -1,0 +1,60 @@
+{
+  "as_of": "2024-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto convergence",
+      "why": "As AI gets exponentially more capable, the binding constraints become trust, verification, and coordination \u2014 which is exactly what crypto is for. Proof of personhood to separate humans from bots, cryptographic provenance against deepfakes, decentralized compute and data so a handful of labs don't own intelligence, and on-chain rails so autonomous agents can hold value and transact. I think crypto is the missing economic and trust layer for an AI-saturated internet, and this is the most important thing I'm watching.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives can bootstrap real-world physical networks \u2014 GPUs, wireless, energy, sensors, bandwidth \u2014 faster and more capital-efficiently than incumbents can. It's one of the clearest places where crypto coordinates real hardware and real supply rather than purely financial speculation, and AI's insatiable compute hunger makes decentralized compute especially compelling.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & crypto payment rails",
+      "why": "Stablecoins are crypto's clearest product-market fit \u2014 global, instant, programmable dollars. 2024 made that undeniable, and mainstream fintech moving onto these rails validates them. This is the on-ramp that brings the next wave of users and the settlement layer for everything from remittances to eventual AI-agent payments.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Pure memecoin speculation",
+      "why": "As an asset category it's largely zero-sum and extractive, and it both crowds out and reputationally taxes the teams building durable infrastructure. The attention and distribution mechanics are genuinely interesting as a primitive, but a casino is the opposite of what earns crypto long-term legitimacy.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI-agent token froth",
+      "why": "The AI-agents-on-chain narrative is one I believe in deeply at the primitive level, but a lot of the late-2024 token activity is running far ahead of working products and real usage. Right idea, premature price \u2014 the category matters more than most of these specific tokens will.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "Solana (SOL)",
+      "why": "High-throughput, low-fee L1 that fits where I think crypto is actually heading \u2014 consumer apps, payments, and DePIN that need real performance, and a credible home for on-chain AI-agent activity. My conviction is about technical and ecosystem fit with the AI\u00d7crypto and payments theses, not a near-term price call.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Heading into 2025 the backdrop is constructive: clearer US regulatory tailwinds, institutional capital returning, and bitcoin through six figures. But I'm a builder-focused investor on a 10-year horizon, so 'risk-on' for me means leaning into infrastructure and fundamentals through cycles, not chasing froth \u2014 I expect plenty of speculative excess to wash out even as the underlying technology keeps compounding.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no fresh first-person quotes in my record to cite, so every item here is marked extrapolated \u2014 inferred from how I think and where I focus (AI\u00d7crypto, DePIN, decentralized compute, payments/infrastructure) rather than from a dated statement. My conviction lives primarily at the level of primitives and sectors, not specific token trades; the single token I name is a thesis-fit example, not a price target. Treat the token buckets as deliberately sparse, not incomplete."
+}

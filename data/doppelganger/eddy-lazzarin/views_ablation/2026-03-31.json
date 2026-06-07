@@ -1,0 +1,66 @@
+{
+  "as_of": "2026-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "The clearest product-market fit in crypto. Stablecoins settle money faster and cheaper than legacy rails, and as US regulatory clarity improves they're crossing from crypto-native trading into real payments, remittances, and corporate treasury. It's the closest thing the industry has to a mass-market killer app.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "The two technologies are complementary, not competing. As generative AI floods the internet, proof-of-personhood and verifiable provenance become essential, and crypto is the natural payment and coordination layer for autonomous agents. Decentralized compute and data markets get more valuable as model demand compounds.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Scaling infrastructure (ZK proofs, rollups, account abstraction)",
+      "why": "I care most about whether the technology actually works at scale, and the stack is finally maturing \u2014 cheap ZK proving, hardened rollups, and smart-account UX that removes seed-phrase friction. This is the unglamorous plumbing that everything else depends on.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are uniquely good at bootstrapping real-world networks \u2014 compute, storage, bandwidth, energy \u2014 that would otherwise demand enormous upfront capital. It's one of the most concrete ways crypto reaches into the physical economy.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation",
+      "why": "Negative-sum attention and capital sinks that produce no durable product and create reputational drag on serious builders. Speculation can fund early networks, but memecoins are speculation with nothing underneath it.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Mercenary-yield DeFi / circular leverage",
+      "why": "Yield that exists only because of token emissions and points farming attracts capital that leaves the instant incentives stop. I'm wary of TVL that is really just recursive leverage with no underlying economic activity.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ecosystem fragmentation",
+      "why": "The proliferation of L2s and app-chains fragments liquidity and users and pushes complexity onto developers and end-users. Interop and chain abstraction need to catch up or the UX cost keeps compounding.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I'm a builder and technologist, not a macro trader, so I won't fake a tactical risk-on/risk-off call. Structurally the multi-year setup is constructive \u2014 improving US regulatory clarity, maturing infrastructure, and the AI tailwind \u2014 but I think in technology-adoption decades, not market regimes.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Reasoning as of 2026-03-31. My provided record contains no dated statements, so nothing here is 'grounded' in a verbatim quote \u2014 every item is 'extrapolated' from how I characteristically think about crypto as a16z's CTO: technology-first, builder-oriented, long-horizon. I think in sectors and infrastructure rather than specific tokens, which is why both token arrays are empty rather than padded. No post-cutoff information used."
+}

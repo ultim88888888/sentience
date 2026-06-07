@@ -1,0 +1,59 @@
+{
+  "as_of": "2025-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto convergence",
+      "why": "This is the center of gravity of how I think. As AI capability concentrates inside a handful of large companies, crypto is the counterweight \u2014 the open, permissionless layer that lets AI agents hold identity, transact, and coordinate without a central intermediary. Stablecoin rails for machine-to-machine payments, proof of personhood to separate humans from bots, and verifiable compute are all becoming load-bearing. Decentralization here isn't ideology; it's the architecture that keeps one platform owner from capturing the whole stack.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure networks)",
+      "why": "Token incentives can bootstrap real-world infrastructure \u2014 wireless, compute, storage, energy, sensing \u2014 at a speed and capital efficiency centralized rollouts can't match. It's one of crypto's clearest product-market fits outside pure finance: aligning independent operators to build supply that a single company would otherwise have to fund with enormous capex.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized & verifiable compute",
+      "why": "AI's appetite for compute is effectively unbounded, and being able to access it permissionlessly and verify that it ran correctly is strategically important. Markets for decentralized compute plus cryptographic verifiability \u2014 proofs that a model or computation executed as claimed \u2014 sit right at the seam between crypto and AI that I care most about.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "The most proven use of crypto at scale \u2014 value moving globally, instantly, at near-zero cost. Stablecoins are quietly becoming the default settlement layer and the on-ramp into everything else, and they're the natural payment primitive for autonomous agents.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Speculation outrunning fundamentals",
+      "why": "When the dominant narrative is pure speculation \u2014 value with no underlying product or network \u2014 it crowds out the teams actually building, fuels boom-bust cycles that set the field back, and invites the worst kind of regulatory backlash. I want capital and attention flowing to protocols that do something real.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Centralization of AI",
+      "why": "My biggest structural worry, and the thing that motivates most of my excitement on the other side. If frontier AI consolidates into a few closed platforms that own the models, the data, and the distribution, we end up with unprecedented concentration of power. That's precisely the failure mode open, decentralized systems exist to prevent.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I'm a venture investor, so my posture is long-horizon conviction, not market timing. Structurally I'm constructive: crypto \u00d7 AI looks like a generational platform shift, and I'd rather be early and building through the volatility than wait for certainty. Read this as a decade-arc risk-on, not a short-term trading-desk call \u2014 I don't take views on near-term price regimes.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My on-record history in this format is empty, so every item here is provenance=extrapolated \u2014 inferred from my long-standing investment thesis (AI \u00d7 crypto, DePIN, decentralized and verifiable compute, stablecoins), with no verbatim quotes available to cite. I deliberately left the token arrays empty: I operate at the sector/thesis level on a venture time horizon, not as specific liquid-token calls, and I won't manufacture token picks I haven't actually stated. The sector views are durable theses, not predictions about any particular month."
+}

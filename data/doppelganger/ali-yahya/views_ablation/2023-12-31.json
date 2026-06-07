@@ -1,0 +1,88 @@
+{
+  "as_of": "2023-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto",
+      "why": "The convergence I'm most intellectually invested in given my ML background. As AI grows more powerful and more centralized, crypto becomes the necessary counterweight: cryptographic provenance to distinguish human from machine, decentralized ownership of models and data, verifiable computation, and economic rails for autonomous agents to transact. AI makes crypto more important, not less.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "One of the clearest cases of real product-market fit in crypto \u2014 token incentives bootstrapping real-world networks for compute, storage, wireless, and energy that actually deliver services rather than just speculation. Decentralized compute in particular sits right at the intersection with AI's insatiable demand for GPUs.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge cryptography / verifiable computation",
+      "why": "ZK is finally maturing from research into production. It's the foundational primitive for scaling (ZK rollups), for privacy, and increasingly for proving computation was done correctly \u2014 which matters enormously as AI inference and off-chain compute need to be made trustless.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Ethereum L2s and modular scaling",
+      "why": "The rollup-centric roadmap is playing out in real time. With multiple L2s live and account abstraction shipping, the infrastructure for genuinely usable, low-fee consumer applications is finally arriving. The base layer settles, execution moves up the stack.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social",
+      "why": "Open social protocols that give users ownership of their identity and social graph, and let developers build permissionlessly on a shared network. This is one of the most promising consumer wedges for crypto \u2014 sufficiently decentralized protocols that feel like normal apps.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory environment",
+      "why": "Regulation-by-enforcement and litigation rather than clear rulemaking creates a structural overhang that pushes builders, talent, and capital offshore. The biggest near-term risk to US crypto innovation is policy, not technology.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculation detached from fundamentals",
+      "why": "As the market recovers off the lows, I'm wary of froth and token-first/product-never projects. The clearest lesson of the last cycle is that durable value comes from real usage and real builders, not from financial engineering.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The settlement and security layer underneath the modular/rollup thesis I'm most constructive on. Post-Shanghai staking and a maturing L2 ecosystem make it the base of the stack where the most credible developer activity concentrates.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "SOL",
+      "why": "A high-performance, integrated L1 that has shown remarkable developer and ecosystem resilience after the FTX-association overhang. The monolithic high-throughput approach is a legitimate and differentiated bet on the design space.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "BTC",
+      "why": "Less a builder bet than a market-structure observation: a US spot ETF appears imminent and would be a meaningful structural channel for institutional access, reshaping demand and broader market sentiment heading into next year.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I invest on a ten-plus year horizon through cycles, so my posture is structurally constructive on the technology regardless of the tape. That said, the near-term setup is genuinely improving: we're out of the depths of the winter, the AI x crypto narrative has real substance behind it, the rate cycle looks to be peaking, and the ETF catalyst is days away. Constructive on fundamentals and long-term builders \u2014 with discipline, because volatility is the price of admission.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My provided record contains no verbatim statements, so I have made no 'grounded' or 'persisted' claims and have not manufactured any citations. Every item here is 'extrapolated' \u2014 inferred from my known investment theses and public posture as an a16z crypto GP (AI x crypto, DePIN/decentralized compute, zero-knowledge, modular scaling, decentralized social) as of end of 2023. I'm a primitives-and-sectors thinker more than a token picker, so my conviction is strongest at the sector level; the token views are ecosystem- and catalyst-level reads, not trading calls."
+}

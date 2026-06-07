@@ -1,0 +1,55 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge / programmable cryptography as a durable foundational primitive for scaling and privacy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto / decentralized compute (DePIN) as the most interesting new frontier",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about modular scaling / L2 infrastructure (rollups, cheaper data availability)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about account abstraction / wallet UX \u2014 smart accounts, key management, gas abstraction, seed-phrase-free onboarding",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about the US regulatory environment (enforcement-first ambiguity pushing builders offshore, structural overhang)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about speculative froth distracting builders and feeding bad-faith narratives about crypto's purpose",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral risk regime \u2014 long-horizon infrastructure investor who funds through cycles, constructive on tech but mindful of froth, not timing the market",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Sharp, sustained anti-memecoin crusade \u2014 went well beyond generic 'froth,' repeatedly calling memecoins a 'casino,' 'net negative,' technically uninteresting, and damaging to adoption/regulation (Apr 24)",
+    "Onchain/crypto gaming as a sector of genuine interest \u2014 EVE Frontier playtests, ProofOfPlay L3 throughput, full gaming podcast (not anticipated in prediction)",
+    "Bullish crypto-payments thesis: 'Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together' (Apr 25)",
+    "Enthusiasm for DeFi protocol design specifically \u2014 DELV fixed/variable-rate AMM, Morpho, Maker's two-token design (prediction was infra-only)",
+    "Extensive tokenomics / progressive-decentralization / network-token-design framework and DUNA legal structure \u2014 a major new emphasis despite prediction's 'I don't make token calls'",
+    "Deep focus on DAO governance and governance attacks (Compound incident analysis, voting mechanism design, Cicada private voting)",
+    "AI open-source / open-weights advocacy and safety position \u2014 argued GPT-class and uncensored models cause no identifiable harm and closed source limits innovation (Jul 23)",
+    "Open-source-as-public-good mission framing ('we will never monetize') around Jolt, Helios, Halmos",
+    "Interest in PoS slashing / permissionless-consensus security research and formal-verification tooling (Halmos)"
+  ],
+  "notes": "Window is Apr\u2013Sep 2024. ZK is the single strongest hit: the Jolt Alpha zkVM launch and months of follow-up (Binius, RISC Zero/SP1 praise, Cicada, 'verifiable computing in zero knowledge') decisively confirm it. L2/modular scaling confirmed via the Optimism/superchain podcast, ProofOfPlay L3, and the Sep 30 endorsement of raising Ethereum's blob target. AI x crypto confirmed mainly via the endorsed 'AI agents can't have bank accounts, but they can have crypto wallets' quote plus heavy AI engagement \u2014 but note the prediction's specific DePIN/decentralized-compute/GPU-market framing was never directly addressed, so this is a stance-level rather than literal confirmation. Account abstraction is absent: no discussion of smart accounts, gas abstraction, or seed-phrase onboarding; the Helios-in-wallets mention is about light-client verification, a different thesis. Both concerns confirmed \u2014 regulatory concern via 'politicized regulators,' SEC/securities legal-risk framing, and progressive-decentralization-to-reduce-risk; froth via the anti-memecoin thread. Risk regime confirmed in spirit: he never makes directional/price calls, instead embodying a build-through-cycles posture (long lockups, public goods, 'real products will develop in the end'). Token buckets were intentionally empty in the prediction; consistent with that, he made no individual token price calls in the window (project praise stayed at the protocol/infra level), so there were no token claims to label.",
+  "confirm_rate": 1.0
+}

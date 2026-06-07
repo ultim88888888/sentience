@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about AI \u00d7 crypto convergence (agents transacting, machine-to-machine payments, proof of personhood, verifiable compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure networks)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized & verifiable compute",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about stablecoins & payments as settlement layer",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about speculation outrunning fundamentals",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralization of AI (closed platforms concentrating power)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on, decade-arc constructive conviction (building through volatility)",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 0,
+  "missed_changes": [
+    "Made privacy the central, repeatedly-stressed thesis \u2014 'privacy is the only moat,' privacy as lock-in/network effect, programmable privacy for institutions (ZK/MPC/TEE/FHE); not anticipated in the prediction",
+    "Newly took a vocal pro-regulation advocacy stance (GENIUS Act praise, repeated calls to pass the CLARITY bill)",
+    "Developed an explicit token value-accrual / network-effects argument defending that tokens compound as claims on protocol cash flows",
+    "Articulated a sequenced consumer-crypto thesis (finance first, then gaming/social once hundreds of millions are onchain) and named onchain capital markets \u2014 perps, prediction markets, lending \u2014 as emerging strengths",
+    "Emphasized credible neutrality / decentralization-for-shared-infrastructure as the core value framing in debates"
+  ],
+  "notes": "Every sector and risk claim in the prediction is directly confirmed by the window, most heavily (stablecoins, AI\u00d7crypto, the 'fundamentals at all-time highs vs sentiment at lows' anti-speculation framing, and the $2.2B Fund 5 raise as a clear risk-on act). DePIN and verifiable compute are confirmed more lightly (Fund 5 essay listing decentralized infrastructure and onchain compute/energy/credit markets, Jolt zkVM, congratulating Helium's founder). The token arrays were empty and the person stayed largely at the sector level, though he did defend token value accrual generically (SOL/ETH) without making liquid-token calls. The biggest unanticipated development is the dominant focus on privacy as the defensibility/moat thesis.",
+  "confirm_rate": 1.0
+}

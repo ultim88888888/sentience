@@ -1,0 +1,66 @@
+{
+  "claims": [
+    {
+      "claim": "Restaking / cryptoeconomic security (EigenLayer)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Rollups, scalability & shared sequencing (Espresso)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Privacy / encryption on blockchains",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN / community-owned physical networks",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Speculative 'casino' (memecoins, high leverage, airdrop farming)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Fragmentation of network effects",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoins / 'tokens without soul'",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "No price/market-timing view; index on technology not the tape",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "New emphasis on open source as a public good / 'free speech' (Jolt Alpha released 100% open source)",
+    "Focus on cross-chain bridges and interoperability via LayerZero (hosted podcast, sybil-detection commentary) \u2014 interoperability framed more concretely than the original Espresso/shared-sequencing framing",
+    "Promotion of L3s as a scaling direction ('The promise of L3s')",
+    "Specific new energy/grid DePIN bet (Daylight \u2014 distributed energy resources / virtual power plants), extending DePIN into energy infrastructure",
+    "Identified NEAR as the 'epicenter for AI x crypto,' a chain-specific stance the prediction did not anticipate"
+  ],
+  "notes": "Technology convictions held up strongly and were acted on within the window: EigenLayer ('verifiable cloud'), Jolt/ZK, Aleo (privacy/design-space), AI\u00d7crypto (NEAR), and DePIN (Daylight energy). Fragmentation concern shows up indirectly via repeated enthusiasm for composability/cross-chain fixes (CSX, LayerZero, 'seamless composability'), treated as a problem being solved. The casino/memecoin concerns and the explicit no-token-bets stance were simply not revisited in the window (absent, not contradicted). Risk_regime 'no_view' is consistent \u2014 no price/timing commentary; he continued indexing on long-term tech progress (mid-90s-internet analogy).",
+  "confirm_rate": 1.0
+}

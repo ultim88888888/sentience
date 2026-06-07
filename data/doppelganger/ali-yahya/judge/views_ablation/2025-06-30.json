@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto: convergence needing permissionless economic rails and decentralized AI as counterweight to centralized labs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized compute / GPU networks for AI",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins as crypto's clearest product-market fit",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Proof of personhood / content authenticity",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / pure speculation as extractive and zero-sum",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about infrastructure without applications (rails ahead of demand)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: structurally constructive multi-year view on friendlier policy, stablecoin clarity, institutional adoption, AI x crypto demand",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Newly elevated PRIVACY to his central thesis \u2014 'privacy will be the most important moat in crypto,' winner-take-most privacy chains (Seismic, Aleo, Aztec, Zcash), encrypted store of value and encrypted smart contracts; this was not anticipated in the prediction",
+    "Made a specific token investment in Jito (JTO) on Solana focused on MEV/Block Assembly Marketplace \u2014 concrete token-level bet despite prediction's intentionally empty token arrays",
+    "New emphasis on decentralized/quantum-resistant messaging (XMTP) as key infrastructure",
+    "New enthusiasm for prediction markets, RWA tokenization/perpification, and onchain credit/origination (via a16z big ideas)",
+    "Explicitly noted attention being 'distracted by AI' and framed regulatory environment as dramatically improved vs. prior administration"
+  ],
+  "notes": "AI x crypto, decentralized compute (Gensyn/Delphi), stablecoins (Loop, Aleo, $1T+ volume), proof-of-personhood (XMTP+World), and the infra-without-apps concern (Dec 5 'performance alone is no longer enough') all show up clearly. Risk-on stance confirmed by Dec 7 'how good they are now.' DePIN and the memecoin concern were never addressed in the window. The biggest gap is the prediction's failure to anticipate his dominant new privacy thesis and his concrete JTO/Solana token investment.",
+  "confirm_rate": 1.0
+}

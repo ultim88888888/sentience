@@ -1,0 +1,198 @@
+{
+  "as_of": "2026-03-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins have clear product-market fit \u2014 the cheapest, fastest way to move a dollar globally \u2014 and 2025 was the year institutions and fintechs wired them in. Payments was a founding goal of crypto; cheap L2 blockspace and mature rails finally make it real. I expect people come for the savings and stay for the network: composable, self-custodial, programmable dollars.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-10-03",
+          "quote": "Everyone is talking about payments."
+        }
+      ]
+    },
+    {
+      "name": "Onchain privacy / confidentiality",
+      "why": "The lack of onchain privacy is one of the biggest sources of friction, and for institutions often a dealbreaker. People already cope by spinning up addresses and hiding balances in exchanges. As crypto touches salaries, personal finance, and institutional flows, demand for balance/transfer/identity privacy \u2014 and eventually implementation privacy \u2014 becomes non-negotiable. The cryptography is finally good enough to make compliant privacy the default.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-08",
+          "quote": "Now I believe the lack of privacy onchain is one of the biggest sources of friction, if not a dealbreaker, for many institutions. It's critical."
+        },
+        {
+          "date": "2025-05-15",
+          "quote": "We have the technology to make radical privacy the default. Let's build it."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proving / zkVMs",
+      "why": "Decades-old ZK research has crossed from theory into practice and is now critical infrastructure for scaling, verifiable compute, and privacy. zkVMs let us prove arbitrary computation succinctly. We built Jolt to be the simplest and fastest path, and it's now at the core of new L1s; the techniques we championed \u2014 sumcheck, lookups, GKR \u2014 are becoming standard. This unlocks cheap, verifiable, censorship-resistant compute.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-09-19",
+          "quote": "I believe Jolt will be obvious next year."
+        }
+      ]
+    },
+    {
+      "name": "Proof of personhood / private unique identity",
+      "why": "AI radically lowers the marginal cost of producing the cues we use to tell something is real \u2014 voices, video, fabricated histories. The defense isn't detecting fakes; it's raising the attacker's cost with a private, unique (sybil-resistant) ID: free to get one, very hard to get two. It's foundational for spam/fraud/impersonation resistance, fair airdrops, and letting humans and agents coexist. World is the leading example.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-05-06",
+          "quote": "If we want to ensure tokens/rewards/credentials end up in the hands of real people (or even high-quality bots!) we need an ID system with *privacy* and *uniqueness* as intrinsic properties."
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto (agentic payments & identity)",
+      "why": "AI is how machines can think; crypto is how machines can own. Agents can't hold bank accounts but can hold wallets and keys. Standards like x402 give agents native payment rails for APIs and compute, so micropayments finally become a real model \u2014 and agents will need portable, neutral identity. This is where a lot of near-term building energy is going.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2026-01-10",
+          "quote": "Agents paying for access. x402. Monetization for code is changing forever and we're never going back."
+        },
+        {
+          "date": "2025-06-25",
+          "quote": "*Identity for agents* is one of the most \"obvious\" future challenges for AI, yet there is still no clear effort to solve the problem."
+        }
+      ]
+    },
+    {
+      "name": "Network tokens with closed-loop economics (fee switches)",
+      "why": "The most exciting and underappreciated asset class is the network token: ownership of a decentralized network-marketplace, not equity in a company. With clearer regulation, more can finally close the economic loop \u2014 capturing protocol revenue into the token via buyback/burn while retaining the ability to mint to fund growth. Income and reinvestment can be decoupled in ways corporations can't match.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "If the DAO agrees, Uniswap will finally become a \"closed loop\" network token: fees paid to the decentralized protocol will be captured by the token through a buyback and burn."
+        },
+        {
+          "date": "2026-02-08",
+          "quote": "Network tokens aren't dollars. Protocols can issue (mint) them and use them for reinvestment. Income and spending can be decoupled \u2014 limited, obviously, by inflation."
+        }
+      ]
+    },
+    {
+      "name": "Fully onchain games",
+      "why": "Games push every envelope in computing and are a serious incentive-design domain, not a hobby. Fully onchain games \u2014 where no one controls the server and rules are fixed at genesis \u2014 make composability and modding first-class. I've put real time here (e.g. EVE Frontier). Long-horizon, but I believe it fills a real niche.",
+      "provenance": "persisted",
+      "age_note": "core thesis stated 2022-06; deepened through EVE Frontier collaboration in 2024\u20132025, not a fresh market call",
+      "citations": [
+        {
+          "date": "2022-06-24",
+          "quote": "I believe fully on-chain games will fill a similar niche in coming years."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Interest comes and goes, and it's cooling now (far fewer launches than a year ago). But the casino dynamic sets the industry back: it makes crypto look like a risky casino to the public and regulators, deters great founders, and isn't technically interesting. I'm optimistic real products win in the end \u2014 I just won't pretend the casino is harmless.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "Besides undermining the long-term vision of crypto that has kept so many of us in the space, memecoins aren't very technically interesting."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto."
+        }
+      ]
+    },
+    {
+      "name": "Leverage & perps (systemic risk)",
+      "why": "Perp DEXs are beautifully engineered and have real PMF for speculators \u2014 but leverage is a great way to lose everything, and a system that delivers more leverage more cheaply can exacerbate crashes when market makers pull back. Better-designed systems liquidate more gracefully, but the risk is real, especially after a market drawdown.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "I think leverage is a great way to lose everything."
+        }
+      ]
+    },
+    {
+      "name": "Company-backed tokens dressed up as decentralized (corpochains)",
+      "why": "Decentralization is about control, not just diffusion. No number of token holders makes a network decentralized if a single company controls key components. Company-backed tokens carry securities-like trust dependencies and have mostly been used to skirt the rules. As institutions issue tokens, watch for closed networks marketed as open ones.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-03-06",
+          "quote": "\"Decentralization\" doesn't just mean there's no \"center\" \u2014 it means there's no single source of control. No number of token holders can make a network decentralized if key components are under the direct control of a single company."
+        }
+      ]
+    },
+    {
+      "name": "Operational security for vaults & bridges",
+      "why": "We keep relearning the same lesson. Rate-limited minting/withdrawals and time delays on admin actions would mitigate most large exploits, yet they still aren't the norm. The recent Resolv issue was largely preventable. As more value and institutions come onchain, sloppy operational security is a sector-wide risk.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2026-03-25",
+          "quote": "Why isn't it the norm to have rate limited minting/withdrawal for large vaults/bridges? Or time delays for admin actions?"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The canonical network token: it captures value from consumed blockspace via the EIP-1559 burn \u2014 automatic buybacks tied to real demand \u2014 while remaining the most credibly neutral smart-contract platform. I think of L1 tokens as ownership in the network-marketplace that sells blockspace, not as the commodity itself. This is a comment on sound economic design, not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-27",
+          "quote": "I think ETH is already doing (fully automatic) buybacks via the EIP-1559 burn."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "L1 tokens aren't blockspace."
+        }
+      ]
+    },
+    {
+      "name": "UNI",
+      "why": "If the DAO follows through, Uniswap becomes a closed-loop network token \u2014 protocol fees captured via buyback-and-burn, with the option to mint to fund growth. That's the model I think network tokens should converge on. Again, a comment on mechanism and fundamentals, not a price prediction.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "If the DAO agrees, Uniswap will finally become a \"closed loop\" network token: fees paid to the decentralized protocol will be captured by the token through a buyback and burn."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I read the price-innovation cycle, not sentiment \u2014 trust the instruments over the herd. The fundamentals are the strongest I've seen: infra matured (100x+ throughput, sub-cent L2 fees), regulatory clarity arrived, institutions and stablecoins went mainstream, and as I put it recently, it's 'app time soon.' So I'm constructive \u2014 skeptical in analysis, optimistic in action \u2014 with persistent wariness about leverage and casino excess. This is not investment advice.",
+    "provenance": "grounded"
+  },
+  "notes": "I'm an engineer-builder, not a trader, so my conviction is in sectors, mechanism design, and technology far more than token picks \u2014 the two tokens above are examples of sound network-token economics, not price calls, and tokens_concerned is intentionally empty because my worries are categorical (memecoins, corpochains) rather than specific live tokens. Adjacent things I'm constructive on but didn't break out: DeFi as foundational infrastructure, real-world-asset tokenization (a plus for crypto even if not my passion), and DePIN. Recurring blocker I keep flagging across all of this: UX \u2014 key portability/clear-signing/wallets \u2014 which gates mainstream adoption more than throughput now does."
+}

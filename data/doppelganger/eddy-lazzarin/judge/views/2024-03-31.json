@@ -1,0 +1,75 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs / SNARKs / ZK VMs (Jolt, Lasso) as accelerating substrate for verifiable compute",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about crypto \u00d7 AI: content provenance, ownership, deepfake/'mystery meat' defense via cryptography",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about identity, auth & wallet UX \u2014 proof of personhood, sybil-resistance, private identities, better wallet infra",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Layer-2 scaling / cheap high-quality blockspace as the enabling substrate",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games as a frontier of activity and innovation",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social / open networks vs. closed corporate networks",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / casino speculation distracting builders and harming adoption/regulation",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about token-first thinking / pie-chart 'tokenomics'; protocol-first design instead",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about Bitcoin's long-term security model as block subsidy declines (ossification risk)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about ETH as the leading smart-contract computer (fundamentals conviction)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about MKR / DAI as the exemplar of token design done right",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral risk regime: skeptical in analysis (wary of memecoin risk appetite), optimistic in action (great time to build), no tactical risk-on call",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Strong new open-source-AI advocacy (2024-07-23): praises 'uncensored' Mistral/Llama models, argues closed-source AI limits innovation and isn't demonstrably safer \u2014 a distinct AI-policy stance beyond the crypto\u00d7AI-provenance thesis",
+    "Newly vocal optimism on payments and stablecoins for mainstream adoption ('Payments... the pieces are finally coming together'; stablecoins 'critical for mainstream adoption') \u2014 not listed in the prediction's excited sectors",
+    "Deep engagement with PoS slashing / consensus security and the Compound 'governance attack' analysis plus DUNA/DAO-governance framework \u2014 a governance-mechanics focus the prediction didn't anticipate",
+    "Endorsement of specific DeFi/AMM designs (DELV/Hyperdrive fixed-variable AMM, Morpho) and security-tooling (Halmos symbolic testing, Vyper/snekmate) \u2014 concrete protocol-level enthusiasm beyond the stated sectors"
+  ],
+  "notes": "Nearly every predicted stance is directly reaffirmed in the Apr\u2013Sep 2024 window, often emphatically: the Jolt Alpha launch and repeated ZK posts; the 'mystery meat' provenance worry and crypto-as-AI-safety-layer post; sybil-filtering and private-identity comments; blob-target/scaling advocacy; EVE Frontier and ProofOfPlay on-chain-games content; River/Propeller and the Gmail-ossification critique for open networks; an extended multi-tweet anti-memecoin thread; and a full CSX token-design talk hammering 'you design a protocol, not a token' with Maker/DAI and ETH as canonical exemplars. The risk posture (skeptical-in-analysis, optimistic-in-action, no market timing) is consistent throughout. Only the Bitcoin-security-budget concern is never revisited as a concern \u2014 Bitcoin appears only as a neutral example of issuance paying for security \u2014 so it is scored absent. No contradictions found.",
+  "confirm_rate": 1.0
+}

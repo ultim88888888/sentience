@@ -1,0 +1,72 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto convergence is the most important thesis",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "DePIN / decentralized compute and physical infrastructure",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Proof of personhood / decentralized identity",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins and onchain payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Consumer apps / decentralized social",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern: low-float / high-FDV token launch structure",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern: speculation outrunning utility / casino dynamics",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern: US regulatory hostility as biggest headwind",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH ecosystem conviction",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "SOL ecosystem conviction",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on: keep building and deploying through the cycle",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 6,
+  "missed_changes": [
+    "Turned optimistic on US regulation rather than reaffirming hostility \u2014 publicly celebrated David Sacks's crypto-czar appointment ('Excellent choice')",
+    "Strong new emphasis on cross-chain interoperability / bridges (LayerZero, Espresso) not anticipated in the prediction",
+    "New emphasis on privacy-preserving ZK computation (Aleo mainnet) and confidentiality",
+    "New emphasis on restaking infrastructure (Eigen \u00d7 Infura)",
+    "2025 prediction that formal verification will become increasingly important",
+    "Interest in L3s and composability as recurring themes"
+  ],
+  "notes": "His later statements are almost entirely deal/ecosystem celebrations (a16z portfolio: Daylight, XMTP, Aleo, LayerZero, Espresso, Eigen, Murmur) rather than restatements of his macro thesis. DePIN is clearly confirmed via Daylight (decentralized energy grid). Identity and stablecoins/payments are weakly confirmed via Aleo's identity systems and the LayerZero\u00d7PayPal partnership respectively. The headline 'AI x crypto' thesis is notably absent from the window. None of his three concerns reappear, and his regulatory stance appears to have flipped from hostility-as-headwind to optimism. ETH/SOL token-level views go unaddressed. Overall tone (frequent '\ud83d\udd25', State of Crypto exponential-growth framing) is consistently risk-on.",
+  "confirm_rate": 1.0
+}

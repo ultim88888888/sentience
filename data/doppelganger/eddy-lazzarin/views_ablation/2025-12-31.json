@@ -1,0 +1,59 @@
+{
+  "as_of": "2025-12-31",
+  "subject": "eddy-lazzarin",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Stablecoins are crypto's clearest product-market fit \u2014 dollars that settle instantly and globally for near-zero cost. With a US regulatory framework now in place, this is the rails layer everything else compounds on, and it's already doing real volume rather than promising future utility.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI x crypto convergence",
+      "why": "Autonomous agents need native money, verifiable identity, and permissionless rails \u2014 crypto is the only payment and coordination layer they can use with no human in the loop. Proof-of-personhood, agent-to-agent payments, and decentralized compute are where the two most consequential technologies of the decade actually meet.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives can bootstrap real-world hardware networks \u2014 compute, wireless, energy, storage \u2014 faster and cheaper than incumbents can build them. It's one of the few areas where crypto touches atoms instead of just bits, and the unit economics are starting to make sense.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Onchain UX primitives (account & chain abstraction)",
+      "why": "The binding constraint is no longer throughput, it's usability. Account abstraction, intents, and chain abstraction hide keys, gas, and bridging so the next wave of users never has to know they're using crypto. It's unglamorous infrastructure, but it's what makes everything else adoptable.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Extractive memecoin & launchpad speculation",
+      "why": "Negative-sum casino dynamics generate volume but no durable value, and they actively damage crypto's credibility with both users and regulators. Capital and attention pulled into zero-sum gambling is capital and attention not building things people actually need.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Reflexive / circular DeFi leverage",
+      "why": "Yields manufactured from recursive leverage and points farming look like growth until the reflexive loop unwinds. I'm wary of headline TVL that's really the same dollar levered several times over \u2014 it prices in stability that isn't there.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "Tactical risk-on/risk-off isn't really my operating frame \u2014 I underwrite early technology on a 7\u201310 year horizon, so I'm structurally long the space regardless of where we are in the cycle. On fundamentals I'm constructive (real rails, real users, clearer US regulation), but I don't take a directional view on near-term price.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no dated public record in front of me for this answer, so every item is marked extrapolated \u2014 inferred from how I think about the space and a16z crypto's known thesis, not verbatim restated positions. My conviction lives at the sector and technology-primitive layer; I deliberately don't make calls on specific liquid tokens, so the empty token arrays are intentional, not gaps."
+}

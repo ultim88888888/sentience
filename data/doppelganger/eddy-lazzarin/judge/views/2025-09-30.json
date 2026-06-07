@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about onchain privacy (ZK/MPC-based confidentiality) as the most underrated unlock and a non-negotiable for institutions/mainstream adoption",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ZK proofs / zkVMs (SNARKs, Jolt) as foundational verifiable-compute infrastructure on a Moore's-law curve",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about stablecoins & payments (clear PMF, x402, lower fees; remaining problem is UX/rails)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about proof of personhood / private unique identity as essential for a trustworthy internet in the AI era",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto (agent wallets, agent identity/payments, decentralized AI as counterweight to centralized AI)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully onchain games as high-throughput, composable, autonomous worlds",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about decentralized social networks (open, user-owned social/identity that resists recentralization)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins: not technically interesting, largely zero-sum, reputationally damaging to crypto",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about company-backed tokens mislabeled as network tokens (securities-like trust dependencies; a pie chart is not a protocol)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH as the clearest network token with automatic value capture via EIP-1559 burn; keeps pushing Ethereum to scale",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about World / World ID (WLD) as the most promising private, unique root of trust for proof-of-personhood",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Long-horizon structural concern about BTC: ossification limits programmability and the security model needs to change",
+      "axis": "tokens_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral on market risk regime: ignores risk-on/risk-off herd cycle, trusts the price-innovation cycle (prices lag fundamentals); builder's optimism, not market timing",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 12,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Introduced/championed 'arcade tokens' as a new, underappreciated token primitive (a fresh token taxonomy) \u2014 not anticipated by the prediction",
+    "Became vocal about network-token revenue capture via buyback-and-burn and the legal DUNA/DUNI wrappers (esp. Uniswap/UNI becoming a 'closed loop'); a newly prominent, concrete extension of the ETH/network-token thesis",
+    "Strong positive/analytical stance on perpetual-futures DEXes \u2014 calls them highly engineered, working better than ever, and credits them for the memecoin decline",
+    "Launched an emphatic wallet-security stance against blind signing \u2014 demanding clear signing on hardware wallets and threatening to publicly shame wallets that can't",
+    "Advocated new safety mechanisms: ERC-20R reversible transfers/asset recovery, transfer limits, and rate-limited minting/withdrawals + admin time-delays for vaults/bridges",
+    "Criticized passkeys' lack of portability/self-custody as an unacceptable bug for anything holding real money",
+    "Notable enthusiasm for AI-assisted coding / 'agentic engineering' (declaring vibe-coding over, testing agent frameworks) as a new prominent interest",
+    "New positive stance on RWA tokenization \u2014 personally bought PaxG gold, finds private credit onchain compelling, and views tokenized equities as a big plus"
+  ],
+  "notes": "Nearly every predicted stance is directly reaffirmed in the window, often emphatically (privacy: 'I will scream it forever'; Jolt: the Feb-2026 LayerZero/Zero launch; x402; World app usage; price-innovation cycle restated verbatim on 2025-11-17). No contradictions. ETH is confirmed at stance level (EVM-investment advocacy + burn-based network-token model) rather than via a standalone ETH-price/design statement. The company-backed-token concern manifests as boundary-policing/taxonomy work (defining network tokens vs company-backed/security tokens, 'protocols aren't corporations') rather than explicit warning. BTC concern is confirmed on the ossification/programmability dimension; the specific fee-vs-subsidy security-budget point isn't directly restated (a quantum-vulnerability point appears instead). Only 'fully onchain games' is genuinely absent. Several substantive new stances (arcade tokens, clear-signing campaign, ERC-20R, passkey portability, AI coding, RWAs) emerged that the prediction did not anticipate.",
+  "confirm_rate": 1.0
+}

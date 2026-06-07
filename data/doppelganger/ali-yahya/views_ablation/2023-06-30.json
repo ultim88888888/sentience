@@ -1,0 +1,66 @@
+{
+  "as_of": "2023-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Decentralized infrastructure / DePIN",
+      "why": "Networks that coordinate real-world hardware \u2014 compute, storage, wireless, energy, sensors \u2014 with token incentives can bootstrap physical supply faster and more cheaply than centralized incumbents. This is the core of what I focus on: using crypto rails to build open, permissionless infrastructure that competes with closed platforms.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Crypto x AI",
+      "why": "Coming from a machine-learning background, the intersection is the most exciting frontier to me right now: decentralized compute markets for training and inference, verifiable provenance of data and model outputs, and crypto as a payment/coordination layer for AI resources. As AI concentrates power in a handful of firms, crypto offers credible neutrality and open participation.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge cryptography",
+      "why": "ZK is finally becoming practical \u2014 both for scaling (validity/zk rollups) and for privacy and verifiable computation. I treat it as foundational infrastructure for the next phase of the space, not a niche.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social & digital ownership/identity",
+      "why": "Protocols that give users ownership of their social graph, identity, and content \u2014 portable across applications rather than locked inside a single platform \u2014 are a long-running thesis area I believe in.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulation-by-enforcement",
+      "why": "The absence of clear rules combined with the recent wave of enforcement actions against US exchanges is a structural headwind. My worry is that it drives builders, talent, and capital offshore rather than producing workable policy.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Centralized intermediaries / CeFi",
+      "why": "The past year's blowups exposed the systemic risk of opaque centralized custodians and reinforced why decentralization and self-custody matter. I'm concerned about continued reliance on trusted intermediaries dressed up as crypto.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculation without utility",
+      "why": "A large share of on-chain activity is still pure speculation detached from real usage. My concern is that it crowds out and discredits the builders doing genuine infrastructure work.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "As a long-horizon venture investor I'm constructive on building through the downturn \u2014 the best companies tend to be built in bear markets, and we keep deploying into early-stage infrastructure regardless of price. But the liquid backdrop in mid-2023 is genuinely risk-off: crypto winter, macro tightening, and a hostile US regulatory climate. Net: cautious on near-term liquid markets, constructive on multi-year technology bets.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no prior statements on record in this dataset, so every item here is extrapolated from my role and known focus as an a16z crypto GP \u2014 infrastructure, DePIN, and the crypto x AI intersection given my ML background \u2014 as of mid-2023, not from dated quotes. Hence no citations and nothing marked grounded or persisted. I operate at the sector/category level rather than making specific token calls, so both token arrays are intentionally empty. Context reflects the post-FTX, SEC-enforcement, crypto-winter environment of June 2023."
+}

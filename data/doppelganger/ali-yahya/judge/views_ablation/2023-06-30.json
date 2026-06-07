@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about decentralized infrastructure / DePIN",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Crypto x AI (decentralized compute, zkML, verifiable AI)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge cryptography",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social & digital ownership/identity",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about US regulation-by-enforcement driving builders offshore",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about centralized intermediaries / CeFi / trusted custodians",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about speculation without utility crowding out real builders",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk regime neutral: cautious near-term liquid, constructive on multi-year tech bets",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 0,
+  "missed_changes": [
+    "Strong new emphasis on modular vs monolithic blockchain architecture and the 'modularity paradox' (interfaces as constraints that de-constrain)",
+    "Explicit thesis that L2s extend rather than fragment Ethereum's network effects and unlock permissionless innovation (incl. EigenLayer, restaking, LayerZero, NEAR DA)",
+    "Vocal anti-'safetyism' / pro-risk-taking stance: stagnation and atrophy framed as the greatest existential risk",
+    "Concrete focus on web3 music (Sound.xyz Series A lead) as a flagship digital-ownership bet",
+    "Named specific L1 ecosystems as his focus (Ethereum and Solana) despite the prediction claiming he operates only at the sector level"
+  ],
+  "notes": "Every predicted stance was directly echoed in the window. Crypto x AI (Aug podcast, Dec a16z big ideas), ZK (Lasso/Jolt, zkML, Aztec, SNARKs), DePIN/decentralized compute (Gensyn), and decentralized social/ownership (XMTP, Sound) are all explicit. The anti-speculation/'no casino' concern is the most strongly confirmed (Dec 7-8 threads). Regulation concern appears via the Dec 15 swipe at D.C. bureaucrats. The CeFi/intermediary concern is confirmed at stance level via consistent anti-trusted-intermediary messaging (relayers, middlemen, opaque institutions) rather than direct FTX/custodian commentary. Near-term liquid-market caution wasn't priced separately but the build-through-downturn posture is clearly present. The prediction missed his heavy modularity/architecture theme and his pro-risk/anti-stagnation philosophy.",
+  "confirm_rate": 1.0
+}

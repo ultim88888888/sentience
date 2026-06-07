@@ -1,0 +1,157 @@
+{
+  "as_of": "2025-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Privacy / encrypted smart contracts & zero-knowledge",
+      "why": "Privacy is the one feature nearly every chain lacks and that real-world finance requires, and it does two things: it expands the design space (applications impossible on transparent chains), and it creates chain lock-in because secrets are hard to migrate. That yields a real network effect and winner-take-most dynamics for privacy chains (Aleo, Aztec, Seismic) \u2014 unlike undifferentiated blockspace. It succeeds in two forms: encrypted store of value, and programmable privacy for everything else, which institutions need for compliance.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "Privacy will be the most important moat in crypto."
+        },
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto (decentralized & verifiable compute)",
+      "why": "Crypto is the natural counterweight to AI's centralizing pull. Permissionless markets let the long tail of compute and data contribute (Gensyn), and verifiable computation gives AI the trust and credible neutrality it otherwise lacks (EigenCloud). This is the differentiated lens I keep coming back to \u2014 a design space we've barely begun to explore.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        }
+      ]
+    },
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Stablecoins have found product-market fit and are becoming the settlement layer of the internet \u2014 sub-cent, sub-second, global, programmable. The open work is better on/off-ramps connecting digital dollars to local rails, and originating credit onchain rather than tokenizing it after the fact.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-12-07",
+          "quote": "increasing regulatory clarity, over $1T monthly stablecoin volume, and transactions for under a penny in under a second on Solana"
+        }
+      ]
+    },
+    {
+      "name": "Onchain capital markets / DeFi on high-performance chains",
+      "why": "As real financial activity moves onchain, scaling was challenge one; making those markets function fairly is challenge two \u2014 fair sequencing and taming the more insidious forms of MEV, while preserving composability. Solana as a venue for internet capital markets and Jito/BAM addressing MEV are where this gets interesting.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-10-16",
+          "quote": "to help Solana become the dominant venue for Internet Capital Markets"
+        },
+        {
+          "date": "2021-06-10",
+          "quote": "seamless program composability, which is critical for a great deal of applications in crypto"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Undifferentiated \"high-performance\" general-purpose L1s",
+      "why": "Blockspace is now functionally the same everywhere, and bridges make it accessible from everywhere. Without a thriving ecosystem, a killer app, or a real distribution advantage, performance alone is no reason to use a chain \u2014 fees on these get competed down to zero. Performance is table stakes, not a moat.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "Everyone is launching a new \"high performance\" blockchain lately. But these chains are hardly different from one another."
+        }
+      ]
+    },
+    {
+      "name": "The speculation \"casino\" (memecoins, leverage, airdrop farming)",
+      "why": "Zero-sum degen speculation \u2014 tokens with no soul that moon on memes then fall off a cliff, plus 100x leverage and parasitic airdrop farming \u2014 is the primary force holding the space back. It's the opposite of what crypto is for: long-term alignment of incentives to scale human cooperation. We never needed the casino.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-12; long-standing and consistent position, not restated verbatim in 2025",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "SOL (Solana)",
+      "why": "Solana delivered on its ~1,000x scaling aspiration \u2014 thousands of TPS, sub-second finality, fractions of a penny in fees \u2014 and has become one of the dominant DeFi ecosystems and a credible home for internet capital markets. My excitement is about the network and what it unlocks, not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-12-07",
+          "quote": "transactions for under a penny in under a second on Solana"
+        }
+      ]
+    },
+    {
+      "name": "EIGEN (EigenLayer / EigenCloud)",
+      "why": "Restaking unbundles cryptoeconomic security from the EVM and turns Ethereum into a verifiable cloud \u2014 a new dimension of permissionless innovation, and exactly the trust/verification layer AI agents will need to interact with onchain finance.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup."
+        }
+      ]
+    },
+    {
+      "name": "ZRO (LayerZero)",
+      "why": "The future of crypto is multi-chain, and interoperability is the backbone moving real businesses and value onchain. I backed it with a multi-year lockup \u2014 a long-term conviction position in the infrastructure, not a trade.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins / soulless tokens",
+      "why": "Tokens that pump on memes with no underlying purpose and then collapse are parasitic and zero-sum. They corrode the credibility of the space and crowd out the work that actually matters \u2014 durable incentive design and real networks.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-12; long-standing position, not restated verbatim recently",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading, one-off games"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I don't time markets \u2014 I steer toward technology and long-term conviction \u2014 but the structural backdrop is the best it has been: increasing regulatory clarity, >$1T monthly stablecoin volume, exponential growth in active addresses tracking the early internet, and infrastructure finally maturing. The real existential risk is stagnation, not building. So I'm constructive on the technology and the builders, and indifferent to short-term price.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2025-12-07",
+        "quote": "increasing regulatory clarity, over $1T monthly stablecoin volume, and transactions for under a penny in under a second on Solana"
+      }
+    ]
+  },
+  "notes": "I attend to trust primitives and technology far more than to token prices \u2014 my 'excitement' is about networks and what they unlock, not market timing. The cross-cutting primitive under almost everything here is zero-knowledge proofs and verifiable computation: it powers privacy, decentralized/verifiable AI, and scaling alike. Tokens named are a16z portfolio positions; none of this is investment advice."
+}

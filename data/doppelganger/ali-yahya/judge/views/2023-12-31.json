@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "claim": "AI \u00d7 crypto (decentralized AI: compute, data, model markets; zkML)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs & privacy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Modular stack / L2s / cross-chain interoperability",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure: wireless, compute, networking)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "DAOs & non-speculative coordination primitives (on-chain reputation, retroactive funding, iterated games)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Decentralized media & creator tools",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Speculation-first crypto (the casino): high-leverage perps, memecoins, airdrop farming, extractive MEV, day-trading",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Fragmentation & cross-chain bridge security",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoins / soulless casino tokens",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on: long the technology through cycles, focus on architecture not tokens, keep building",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Heavy new emphasis on EigenLayer/restaking and 'cryptoeconomic security' as an unbundling primitive (led Series B) \u2014 a specific bet the prediction didn't name",
+    "Named NEAR as 'the epicenter for AI x crypto' \u2014 a specific ecosystem call not anticipated",
+    "Led Espresso Series B on shared-sequencing/rollup coordination as the concrete fix to fragmentation"
+  ],
+  "notes": "The modular/L2/cross-chain, ZK, and AI\u00d7crypto theses are strongly and repeatedly confirmed through investment announcements (EigenLayer, Espresso) and ZK references (Jolt, CSX). The fragmentation concern is explicitly confirmed in the Espresso post. Risk-on/architecture-over-tokens posture confirmed via abundant 'just the beginning'/'LFG' building enthusiasm; the off-bucket safetyism worry also resurfaced ('Patronizing safetyism'). DePIN, DAO/coordination primitives, decentralized media, and the casino/memecoin concerns were simply not addressed in the window (absent, not contradicted). No claims were contradicted.",
+  "confirm_rate": 1.0
+}

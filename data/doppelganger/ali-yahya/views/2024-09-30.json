@@ -1,0 +1,189 @@
+{
+  "as_of": "2024-09-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto (decentralized compute, zkML, proof-of-humanity)",
+      "why": "AI structurally centralizes; crypto is its natural counterweight. The most exciting design space right now is using crypto incentives + verification to decentralize AI \u2014 global, permissionless markets for the long tail of idle compute and data so startups can compete with the tech giants, plus zkML to make models verifiable and cryptography to tell human from machine. This is the region of the idea maze I find most alive.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "By tapping into the long tail of idle, ML-capable compute around the world\u2014such as in smaller data centers, gaming computers, and eventually even smartphones\u2014Gensyn has the potential to 10-100x the available compute power for machine learning."
+        },
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs & privacy",
+      "why": "ZK is the single most consequential primitive in the stack. It unlocks scalability (rollups, zkVMs) and privacy at once \u2014 and privacy isn't just user protection, it expands the design space to whole classes of applications (compliant private payments, identity that doesn't leak, on-chain games with hidden information) that are impossible on transparent chains. With Aleo now live and proving systems getting dramatically cheaper, this is going mainstream.",
+      "provenance": "grounded",
+      "age_note": "reaffirmed by Aleo mainnet launch 2024-09-18 and Jolt/Lasso zkVM work 2024",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years."
+        },
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space."
+        }
+      ]
+    },
+    {
+      "name": "Modular Ethereum: rollups, restaking, shared sequencing",
+      "why": "The rollup-centric roadmap plus restaking is how Ethereum reaches millions of apps and billions of users. What matters isn't raw performance \u2014 it's that the modular stack unlocks permissionless innovation: anyone can innovate on architecture without spinning up their own L1, and EigenLayer further unbundles cryptoeconomic security from the EVM. The open question I watch is fragmentation/composability, which is exactly what shared sequencing aims to solve.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Crypto incentives solve the cold-start problem that has always blocked grassroots physical networks \u2014 wireless, and now energy. You can bootstrap a network bottom-up from the contributions of ordinary users instead of top-down from telco/utility monopolies. It's one of the clearest examples that crypto's usefulness goes far beyond currency.",
+      "provenance": "grounded",
+      "age_note": "core thesis stated 2021-08 (Helium); continued via Daylight energy investment 2024-07-31",
+      "citations": [
+        {
+          "date": "2021-08-10",
+          "quote": "Historically, large-scale computer networks have been hard to bootstrap because of the large upfront capital requirements. Only telco giants have done it."
+        }
+      ]
+    },
+    {
+      "name": "Stablecoins",
+      "why": "Stability unlocks the financial use cases \u2014 payments, lending, inclusion \u2014 and the design space is far larger than USD-pegged IOUs: local-currency pegs, inflation hedges, decentralized and capital-efficient mechanisms. Still under-explored across the centralized/decentralized and pegged/unpegged dimensions. Not my top-of-mind focus today, but a thesis I still hold.",
+      "provenance": "persisted",
+      "age_note": "investment thesis stated 2021-09 (Angle); not a primary focus of mine since",
+      "citations": [
+        {
+          "date": "2021-09-28",
+          "quote": "Stability unlocks many use cases."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Speculation-only crypto \u2014 'the casino' (memecoins, high-leverage perps, airdrop farming, extractive MEV)",
+      "why": "This is the primary force holding the space back. We do need mechanisms to fund networks early and functioning markets to make incentives real \u2014 but not soulless tokens that moon on memes and fall off a cliff, not 100x leverage, not gamified schemes for parasitic airdrop farmers pumping vanity TVL. It turns a positive-sum coordination technology into a zero-sum casino and repels the builders and users we actually need.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "The logic that we need the casino is just a thinly veiled attempt to excuse bad behavior in the space. We don't need the casino. We never did. It's the primary force holding the space back."
+        }
+      ]
+    },
+    {
+      "name": "Regulatory hostility & cultural safetyism (stagnation risk)",
+      "why": "The deepest risk isn't a bad cycle \u2014 it's stagnation. Innovation dies when the decisions about what you can and cannot build are made by web2 monopolies or technically illiterate bureaucrats. A culture of reflexive skepticism and regressive caution toward new technology is, to me, worse than status-quo bias. It's the macro overhang on everything we're trying to build.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-15",
+          "quote": "Our greatest existential risk is the risk of stagnation and atrophy."
+        },
+        {
+          "date": "2023-11-30",
+          "quote": "the real existential threat comes from us stopping to innovate."
+        }
+      ]
+    },
+    {
+      "name": "Insecure cross-chain / bridge designs",
+      "why": "A multi-chain future is inevitable, but bridges have the worst security track record in the space \u2014 they keep succumbing to large hacks. My core question is always 'who exactly do you have to trust,' and most bridges answer it badly. The concern is the attack surface of naive designs; the answer is interoperability that cleanly decouples security from liveness and minimizes trusted parties.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Structural conviction in Ethereum as the bedrock of security and the modular, rollup-centric stack \u2014 explicitly a network/technology view, not a price or trading call. Post-Merge it's more secure, more decentralized, and has true finality, and it's where permissionless innovation compounds via rollups and restaking.",
+      "provenance": "grounded",
+      "age_note": "conviction in the network and its roadmap, not a price view",
+      "citations": [
+        {
+          "date": "2022-09-15",
+          "quote": "I believe Ethereum is a far superior blockchain now than it was before."
+        }
+      ]
+    },
+    {
+      "name": "SOL (Solana)",
+      "why": "A high-performance architecture occupying a different region of the tradeoff space than Ethereum, built by one of the very best teams in the space. I expect a plural, multi-chain world \u2014 no single chain spans the whole design space \u2014 so this is conviction in the network and team, not a price call or a bet against ETH.",
+      "provenance": "grounded",
+      "age_note": "thesis stated 2021-06; reaffirmed in 2023 architecture debate with Toly; network conviction, not price",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "@toly and @RajGokal have brought together one of the very best teams in the space"
+        },
+        {
+          "date": "2021-06-10",
+          "quote": "a single blockchain won't be capable of supporting all use cases. The tradeoff space is too big, and demand will be unbounded."
+        }
+      ]
+    },
+    {
+      "name": "NEAR",
+      "why": "Excited about NEAR's positioning at the center of AI \u00d7 crypto and its increasing alignment with the modular Ethereum stack. Ecosystem/technology conviction about where real building is happening \u2014 not a price view.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins (as a category)",
+      "why": "Tokens with no purpose beyond speculation. They pull talent, attention, and credibility away from building real coordination technology and make the whole space look like a zero-sum casino. The concern is the entire archetype, not any single coin.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "I deliberately don't trade the macro regime or time cycles \u2014 my conviction is in the multi-decade technology arc, where asset prices fluctuate but innovation compounds each cycle. Constructive long-term on the build; actively wary of the leverage and memecoin froth that define risk-on euphoria. So: neutral on the trade, bullish on the technology. (And as always, none of this is investment advice.)",
+    "provenance": "persisted",
+    "age_note": "a16z firm framing from 2021-06 that I co-sign; reflects my standing under-attention to price relative to technology",
+    "citations": [
+      {
+        "date": "2021-06-24",
+        "quote": "The history of crypto shows that asset prices may fluctuate but innovation continues to increase through each cycle."
+      }
+    ]
+  },
+  "notes": "Lens check: I'm a builder/engineer, not a trader \u2014 I reason from the tradeoff space and from trust/verification primitives, and I consistently under-weight token price in favor of technology and team. My excitement is about design-space expansion: AI \u00d7 crypto, ZK/privacy, the modular Ethereum stack (rollups + restaking), and DePIN. My concerns are cultural and structural more than cyclical: the speculation-only casino and the stagnation risk from regulatory hostility and safetyism. Token-level views here are conviction in networks and teams, expressed reluctantly and never as price predictions."
+}

@@ -1,0 +1,74 @@
+{
+  "as_of": "2024-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto",
+      "why": "The convergence is the most important frontier I'm tracking. As AI floods the world with synthetic content and autonomous agents, crypto supplies the missing primitives: proof of personhood/humanness, verifiable provenance and authenticity, decentralized model training and inference, and native payment rails so agents can transact. Crypto is the trust and coordination layer for an AI-saturated internet.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN / decentralized compute",
+      "why": "Token incentives can bootstrap real-world physical infrastructure \u2014 GPUs, storage, bandwidth, wireless, energy \u2014 faster and more capital-efficiently than incumbents. The AI-driven GPU shortage makes decentralized compute networks especially compelling: a permissionless market for idle hardware that attacks scarcity from the supply side.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social & consumer crypto",
+      "why": "Open, user-owned, composable social graphs let developers build on a shared substrate instead of inside a platform's walled garden. Protocols in this space point to a credible path for crypto's next consumer wave \u2014 apps people use without thinking about the chain underneath.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proofs / applied cryptography",
+      "why": "ZK is maturing from research into production. It's foundational for scaling (validity-proven rollups), privacy, and verifiable computation \u2014 including proving facts about off-chain data and, increasingly, about AI computation. It's the rare primitive that compounds across multiple theses.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Modular blockchains / L2 scaling",
+      "why": "The rollup-centric roadmap plus cheaper data availability is collapsing the cost of blockspace. Abundant, cheap blockspace is the precondition for everything else \u2014 payments, social, games, agentic transactions \u2014 so I'm constructive on the modular stack that delivers it.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoin / pure speculation froth",
+      "why": "The current surge of memecoin speculation demonstrates real blockspace demand and onboarding, but it's largely zero-sum froth that distracts builders, mistrains new users to expect lottery payoffs, and hands critics easy ammunition. It tends to peak with the cycle and leaves little durable value behind.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory uncertainty",
+      "why": "Regulation-by-enforcement and the absence of clear rules for tokens and decentralized networks remain the biggest structural headwind for US builders. It pushes talent and activity offshore and adds tail risk to otherwise sound projects, independent of where prices are.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The base settlement layer for the largest smart-contract ecosystem and the asset most leveraged to the modular/rollup roadmap I'm bullish on. A pending spot-ETF decision is a live catalyst to watch (outcome unknown as of today), but my conviction rests on it being the productive economic core of the dominant developer ecosystem.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "End of Q1 2024 is a clear risk-on environment: BTC printed new all-time highs near $73K in mid-March on sustained spot-ETF inflows since January, the halving is weeks away, and capital is rotating back into the ecosystem. I temper this with respect for these cycles' reflexivity and the visible speculative froth, but the structural tailwinds \u2014 institutional access, maturing infrastructure, the AI x crypto narrative \u2014 keep me net constructive.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My record contains no dated statements, so every view here is extrapolated from the a16z crypto thesis and my own infrastructure-first worldview as of March 2024 \u2014 not quoted from prior remarks; nothing is marked grounded or persisted because I have no verbatim citations to honestly attach. I weight durable technology and long-term network value over near-term price action, which is why my excitement concentrates in infrastructure (AI x crypto, DePIN, ZK, modular) rather than specific tokens."
+}

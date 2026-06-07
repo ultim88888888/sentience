@@ -1,0 +1,50 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about Crypto \u00d7 AI (verifiable compute, decentralized model/data markets, proof-of-personhood)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure networks)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Stablecoins & payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about Memecoins / pure speculation",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about SOL (Solana) ecosystem",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH (Ethereum) as base settlement/security layer",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on / structurally bullish builder's posture, invest through cycles",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Made a new concrete crypto\u00d7AI token bet via $70M EIGEN/EigenCloud investment \u2014 the prediction explicitly declined to name a single crypto\u00d7AI token",
+    "New large LayerZero (ZRO) token position: $55M with a 3-year lockup, for moving the financial system onchain",
+    "Active engagement with proof-of-personhood via World (Tools for Humanity / alexblania), giving the abstract sector claim a concrete vehicle",
+    "New emphasis on decentralized/quantum-resistant messaging (XMTP) and privacy (Aztec, Aleo) as themes not in the prediction"
+  ],
+  "notes": "Nearly every sector and token stance was confirmed through actions (investments) and public enthusiasm in the window. Crypto\u00d7AI is strongly confirmed via repeated EigenCloud verifiable-compute posts and the EIGEN investment, plus SolanaConf 'crypto x AI' panel. DePIN confirmed via Helium; stablecoins/payments via Loopcrypto and LayerZero. Solana confirmed via hosting Toly and the accelerator podcast; Ethereum confirmed via Aztec/EigenLayer/slashing enthusiasm. Risk-on confirmed by aggressive new capital deployment. The memecoin concern was never mentioned, so absent. Main unanticipated moves are the specific large token bets (EIGEN, ZRO) and the privacy/messaging themes.",
+  "confirm_rate": 1.0
+}

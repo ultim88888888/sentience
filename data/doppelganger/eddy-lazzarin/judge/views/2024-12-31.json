@@ -1,0 +1,63 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & payments \u2014 clear product-market fit, cheapest way to move a dollar, payments switching off card rails",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge / SNARKs / verifiable compute (Jolt, proving overhead dropping into practice)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI + crypto autonomous agents \u2014 wallets, agents paying each other/for compute, needing crypto rails plus identity/auth between agents",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about proof of personhood / private decentralized identity (Sybil-resistant, privacy-preserving, World-style)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games \u2014 composability/modding when no one controls the server, highest throughput on-chain",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about L2 scaling & blockchain infrastructure \u2014 cheaper blockspace, light clients (Helios), scaling must keep accelerating",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / pure speculation as a purposeless casino that sets the industry back and isn't technically interesting",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH as a network token with a real economic loop (issuance security budget + EIP-1559 burn capturing value), builder leader; not a price call",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: conviction in the technology, still early, leaning in and building aggressively amid regulatory momentum",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Built and heavily promoted a new 7-category token taxonomy (network / company-backed / arcade / memecoin / security / collectible / asset-backed), with strong new emphasis on 'company-backed tokens' as a distinct, securities-like risk category \u2014 a major framework the prediction didn't anticipate",
+    "Newly championed 'arcade tokens' (games/loyalty) as the 'most underappreciated token type in crypto,' and framed app-token vs. stablecoin choice as a key design question",
+    "Did a deep dive on airdrop design as a distribution/incentive mechanism (verify-the-supply, Sybil resistance, continuous airdrops)",
+    "Sharpened ETH/network-token economic theory into 'decentralized network marketplaces' (equity-like ownership), pushing back on ETH-as-money/oil/commodity framings, DCF debates, and 'Bitcoin envy'",
+    "Introduced a conceptual distinction within decentralization between 'diffusion/distributed' and 'control' (credible neutrality without diffusion)",
+    "Advocated moving crypto past the two-company 'foundation' model toward DUNA legal structures",
+    "Took up open-platform stances beyond crypto: criticizing PC app stores and Apple 'liquid glass' as closing the open web, plus interest in AI coding-agent tooling/swarms"
+  ],
+  "notes": "Window spans 2025-01 to 2025-06. Every prediction claim he addressed was reaffirmed \u2014 no contradictions. Stablecoins explicitly confirmed ('increasingly obvious product-market fit for stablecoins'); ZK/Jolt, proof-of-personhood/World, and risk-on ('never been a better time to start a project in crypto,' '$500b GO button') are dominant themes. AI+crypto confirmed mainly via 'identity for agents is one of the most obvious future challenges.' L2/infra confirmed via Helios update and 'we'll never have enough blockspace.' ETH network-token economic-loop thesis (EIP-1559 burn) confirmed. Only 'fully on-chain games' is absent \u2014 game references in the window pivot to token classification (arcade/app tokens) and a brief EVE Frontier shout-out rather than the throughput/composability/no-one-controls-the-server thesis. Much of his actual output went into a new token-taxonomy framework not foreseen by the prediction.",
+  "confirm_rate": 1.0
+}

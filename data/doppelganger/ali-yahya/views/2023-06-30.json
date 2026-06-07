@@ -1,0 +1,228 @@
+{
+  "as_of": "2023-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto (decentralized AI: compute, data, and model marketplaces)",
+      "why": "This is the design space I find most alive right now. Building frontier AI is centralizing because compute and data accrue to giants; crypto's permissionless markets can coordinate the long tail of idle compute and crowdsource better data/models bottom-up. We just led Gensyn's Series A on exactly this thesis \u2014 a marketplace that can 10-100x available ML compute by tapping smaller datacenters, gaming rigs, and eventually phones.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2023-01-05",
+          "quote": "AI + crypto = collective AI"
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "Gensyn has the potential to 10-100x the available compute power for machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs / applied cryptography",
+      "why": "ZK is the most important primitive entering the stack \u2014 it resolves the tension between verification and both privacy and scalability. It's the engine behind rollups (zkSync, Aztec) and private computation (Aleo, Iron Fish). The move from theory to practice over the last few years has been remarkable; this transforms what's buildable.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years."
+        }
+      ]
+    },
+    {
+      "name": "Privacy / on-chain encryption",
+      "why": "Almost every blockchain today is fully transparent, which compromises users and, more importantly, constrains the application design space. Privacy isn't just user protection \u2014 it unlocks a whole region of applications (games with hidden state, private DeFi, identity) that are simply impossible on transparent chains. It's a precondition for going mainstream.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space."
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "Scalability infrastructure / L2 rollups / the multi-chain future",
+      "why": "The tradeoff space is too high-dimensional for any single chain to span \u2014 many architectures win in their own subdomains. Rollups and interoperability are how the space actually scales to mainstream apps. The future is unambiguously multi-chain, which makes scaling and cross-chain composability infrastructure central.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        },
+        {
+          "date": "2021-06-10",
+          "quote": "a single blockchain won't be capable of supporting all use cases. The tradeoff space is too big, and demand will be unbounded."
+        }
+      ]
+    },
+    {
+      "name": "DAOs & on-chain coordination tooling",
+      "why": "DAOs are an order-of-magnitude upgrade to human coordination \u2014 10,000x cheaper/faster to set up than legacy legal machinery, and like the internet over the postal service, that magnitude unlocks fundamentally new use cases, not just efficiency. The tooling layer (Syndicate, PartyDAO) that makes this seamless and multiplayer is where I'm focused.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-31",
+          "quote": "they're 10,000 times faster/cheaper to setup and operate"
+        },
+        {
+          "date": "2023-06-22",
+          "quote": "The team at @prtyDAO is leading the way building the tools that will make Ethereum seamlessly multiplayer."
+        }
+      ]
+    },
+    {
+      "name": "Developer platforms, infrastructure & programming languages",
+      "why": "A blockchain is a new kind of computer, and every new computer needs its operating system, tooling, and languages. The developer flywheel is the leading indicator for everything else. Language design in particular \u2014 code that runs forever, controls huge value, and can't easily change \u2014 is a badly under-explored frontier.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-02",
+          "quote": "Programming language design is an under-explored frontier in web3."
+        },
+        {
+          "date": "2021-10-28",
+          "quote": "The best way to think of a blockchain is as a new kind of computer with a unique capability"
+        }
+      ]
+    },
+    {
+      "name": "Decentralized physical infrastructure / community-owned networks",
+      "why": "Crypto incentives solve the cold-start problem that has always made grassroots physical networks impossible to bootstrap. Helium is the proof point \u2014 a wireless network that emerged bottom-up from users rather than top-down from telco giants. This is a clear demonstration that crypto's utility goes far beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-10",
+          "quote": "a wireless network that emerges bottom-up from the contributions of its users, rather than top-down from telco giants."
+        }
+      ]
+    },
+    {
+      "name": "Web3 creator economy & media (music, NFTs, storytelling)",
+      "why": "Music is the category where web2's structural problems are at their worst \u2014 the gap between music's ubiquity and artists' ability to earn is enormous. Web3 lets creators capture the value they create and own their relationship with their community directly (Sound, Shibuya). NFTs are the building blocks for that ownership.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-12-15",
+          "quote": "The music industry is broken."
+        },
+        {
+          "date": "2022-09-21",
+          "quote": "It is the category for which the structural problems of web2 are at their very worst."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Cross-chain bridges (security architecture)",
+      "why": "I'm enthusiastic about interoperability and a multi-chain world, but bridge security specifically worries me \u2014 these are concentrated honeypots with weak trust assumptions, and the exploits keep coming. The right question is always: who exactly do you have to trust? Too many bridges fail that test. We publicly opposed deploying Uniswap via Wormhole for this reason. Complementary to my excitement about doing interoperability right.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-02-05",
+          "quote": "Our rationale for opposing @Uniswap Governance Proposal 31 to deploy Uniswap on BNB Chain using Wormhole"
+        },
+        {
+          "date": "2022-08-02",
+          "quote": "Breakdown of the ongoing Nomad bridge attack, by Matt on our team"
+        }
+      ]
+    },
+    {
+      "name": "Wallet UX / transaction-signing safety",
+      "why": "The root problem holding back mainstream adoption is that it's all but impossible for an average user to understand what they're signing. We need better standards, schemas, and wallets that flag suspicious transactions the way browsers flag suspicious sites. Until this is fixed, it's the soft underbelly of the whole stack.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-20",
+          "quote": "it's all but impossible for the avg user to know what the hell they're signing with today's tools."
+        }
+      ]
+    },
+    {
+      "name": "Regulatory & societal hostility to crypto",
+      "why": "My concern is environmental, not technical: society is increasingly vicious toward people building new things, and the reflexive, regressive bias against new technology is worse than mere status-quo bias because it actively bans and throttles. Heavy-handed regulation is the real risk to the space's trajectory, more than any technical obstacle.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-02-13",
+          "quote": "I'm constantly shocked by how vicious society can be toward people who are trying to build something new."
+        },
+        {
+          "date": "2021-09-21",
+          "quote": "Seems even worse than status quo bias because it's regressive"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH (Ethereum)",
+      "why": "A network/technology conviction, not a price call. Ethereum is the original world computer and post-Merge it's a far superior chain \u2014 more secure, more efficient, with real finality that lays groundwork for rollups and bridges. It remains the gravitational center for builders and the base layer most of the design space is built on.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "Once it's done, I believe Ethereum will be a far superior blockchain than it was before."
+        }
+      ]
+    },
+    {
+      "name": "SOL (Solana)",
+      "why": "A network-level view consistent with my pluralism \u2014 a handful of dominant architectures win, and Solana occupies the high-performance region of the tradeoff space while preserving composability. I led the round on conviction in the team and architecture; I haven't restated it recently and it's not a market-timing view.",
+      "provenance": "persisted",
+      "age_note": "stated 2021-06, not revisited",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "one of the very best teams in the space"
+        }
+      ]
+    },
+    {
+      "name": "NEAR",
+      "why": "Network/technology enthusiasm: NEAR is pushing innovation at every level of the stack \u2014 not just the core protocol but developer experience (e.g. JavaScript smart contracts) \u2014 which is exactly the kind of work I think matters for adoption. Again a technology bet, not a price call.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-03-02",
+          "quote": "NEAR is leading the way"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Risk-on at the conviction/builder horizon, not as a short-term price posture \u2014 I deliberately under-attend to market timing. Asset prices fluctuate, but innovation compounds through every cycle, and downturns are when the legendary teams show up. We're deploying actively (Gensyn, Alongside, Crypto Fund 4) precisely because I believe we're entering the golden era of web3.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2022-05-25",
+        "quote": "We believe we're now entering the golden era of web3, a time when the legendary teams come together to build the most important tech/products."
+      }
+    ]
+  },
+  "notes": "I think in sectors and technology, not tokens or price \u2014 that's a deliberate disposition, so the token axis is sparse and framed as network/technology conviction rather than trading calls (and nothing here is investment advice). My through-line is pluralism: the tradeoff space is too large for one chain or one design to win everything, so I'm excited across many complementary regions of it. Several 'concerns' are complements to my excitement (I love interoperability but distrust today's bridges), which is the tradeoff-space lens, not a contradiction."
+}

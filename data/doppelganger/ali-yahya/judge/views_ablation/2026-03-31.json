@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto / decentralized AI: native economic rails for AI agents, machine-to-machine payments, verifiable compute/inference, agents as economic actors",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & onchain payments are crypto's clearest product-market fit, onboarding hundreds of millions",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN \u2014 token incentives bootstrap real-world networks for compute/GPUs, energy, etc.",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social & onchain identity \u2014 user ownership of social graph, proof-of-personhood",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about memecoins / pure speculation as extractive casino dynamics",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about decentralization theater / re-centralization undermining credible neutrality",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: long-term/multi-year structural optimism, funding builders through every cycle, near-term froth acknowledged",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Strong new emphasis on privacy as crypto's key moat \u2014 private money and programmable private computation (encrypted smart contracts) for institutions",
+    "Heavy emphasis on onchain capital markets / tokenization of traditional assets \u2014 perps, prediction markets, onchain lending/credit, RWAs (Arc/Circle $75M investment)",
+    "Active policy advocacy for specific legislation (CLARITY bill, GENIUS Act praise)",
+    "Raised a16z Crypto Fund 5 ($2.2B) explicitly to back builders during low-sentiment period \u2014 concrete action on the risk-on thesis",
+    "Framing of a pragmatic, non-ideological 'collared shirt era' of crypto founders",
+    "Strong emphasis on AI driving software productivity and AI coding tools (Codex vs Claude) \u2014 adjacent personal conviction"
+  ],
+  "notes": "The core infrastructure theses (AI x crypto, stablecoins, risk-on long-termism) are strongly and repeatedly confirmed, including the concrete action of raising a $2.2B fund into low sentiment. DePIN is confirmed via references to onchain capital markets for compute/energy. Decentralization theater concern is confirmed through extended defenses of credible neutrality vs re-centralization. Decentralized social/identity and the memecoin concern were not addressed in the window (absent). The biggest unanticipated theme is privacy as the central moat, plus a pronounced focus on onchain capital markets/tokenization and direct legislative advocacy.",
+  "confirm_rate": 1.0
+}

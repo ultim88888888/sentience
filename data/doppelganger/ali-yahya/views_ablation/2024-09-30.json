@@ -1,0 +1,59 @@
+{
+  "as_of": "2024-09-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto / decentralized AI and compute",
+      "why": "The two most important platform shifts of our era \u2014 AI and crypto \u2014 are converging. As AI concentrates power in a handful of large model providers, crypto is the natural counterweight: decentralized compute markets, verifiable inference, user-owned data, and economic rails for autonomous agents. This is where I'm spending the most time right now.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure networks)",
+      "why": "Token incentives are uniquely good at solving the cold-start problem for physical networks \u2014 GPUs, storage, wireless, energy \u2014 that would otherwise demand billions in upfront capex. DePIN turns infrastructure bootstrapping into a coordination game that crypto is structurally built to win.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Infrastructure & scaling (modular, L2s, zero-knowledge)",
+      "why": "The base layer is finally ready for consumer-scale applications \u2014 modular architectures, cheap L2 blockspace, and ZK proofs moving from research into production. Combined with UX unlocks like account abstraction and embedded wallets, the cost and friction barriers that held back the last cycle are coming down fast.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins are crypto's clearest product-market fit today \u2014 real volume, real users, value settling globally at near-zero cost. This is the wedge that brings the next billion people on-chain, and it works regardless of where we are in the speculative cycle.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory ambiguity",
+      "why": "The biggest headwind for builders isn't the technology, it's the lack of clear rules in the US. Regulation-by-enforcement pushes talent and projects offshore. I'm concerned this is a self-inflicted policy problem that slows otherwise healthy innovation.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Low-float / high-FDV token structures",
+      "why": "I'm wary of launches with tiny circulating floats and enormous fully-diluted valuations. They distort price discovery and misalign builders, investors, and communities. Healthy, broad token distribution matters far more than a launch-day pop.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "As a builder-focused investor my posture is structurally long the space on a multi-year horizon. The infrastructure is maturing, the rate environment is turning more supportive, and the AI-crypto convergence is opening a large new design space. My risk-on stance reflects conviction in the technology trajectory measured in years, not a tactical call on near-term price.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no logged verbatim record to quote from here, so I've labeled everything 'extrapolated' rather than fabricate 'grounded' citations. These are thematic priors inferred from my focus as an a16z crypto infrastructure investor, stated present-tense as of 2024-09-30. I think in sectors and themes, not liquid-token calls \u2014 so token arrays are intentionally empty, which is an honest reflection of how I invest rather than a gap."
+}

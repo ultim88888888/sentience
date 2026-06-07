@@ -1,0 +1,67 @@
+{
+  "claims": [
+    {
+      "claim": "Decentralized infrastructure networks (DePIN) \u2014 compute, storage, wireless, energy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto intersection",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DeFi (self-custodial, transparent on-chain finance)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Decentralized social / consumer (user-owned identity & graphs)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Centralized exchanges / CeFi custody risk",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Fiat-backed stablecoins' banking dependencies",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "US regulatory overhang",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH as foundational settlement layer / productive monetary asset",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: deploy through the winter in primary markets",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "Strong embrace of a multi-chain / cross-chain interoperability thesis (LayerZero: 'no longer any question that the future of crypto and web3 is multi-chain')",
+    "Engagement with the modular vs. monolithic blockchain architecture debate and Solana (debate with Anatoly Yakovenko)",
+    "Explicit championing of Ethereum L2 scaling (Arbitrum, Optimism, EigenLayer) as the path to permissionless innovation",
+    "Creator-economy / web3 music & NFT focus (Sound.xyz Series A, Tiers launch)",
+    "Crypto\u2013web2 payments integration as a theme (Loop Crypto + Stripe)",
+    "Interest in decentralized information markets (Freatic investment)"
+  ],
+  "notes": "The AI\u00d7crypto and ZK theses were the most heavily confirmed, with Gensyn (decentralized AI compute, a DePIN+AI play), the AI\u00d7crypto podcast, zkML discussion, Iron Fish, Aztec, and Lasso/Jolt all directly supporting them. ETH-as-settlement-layer was confirmed at the stance level via extensive L2/danksharding/EigenLayer advocacy even though the specific Shapella catalyst wasn't mentioned. Decentralized social/consumer confirmed via Sound.xyz and XMTP. Risk-on confirmed by active deal-leading. All three 'concerned' items (CEX custody, stablecoin banking risk, US regulatory overhang) and the DeFi excitement went entirely unaddressed in the window \u2014 none contradicted, just silent. The window's actual content skewed toward multi-chain infra, L2 scaling, and creator economy, which the prediction under-weighted.",
+  "confirm_rate": 1.0
+}

@@ -1,0 +1,148 @@
+{
+  "as_of": "2024-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Restaking / cryptoeconomic security (EigenLayer)",
+      "why": "Ethereum unbundled consensus from application logic; EigenLayer unbundles cryptoeconomic security itself into a two-sided market. Developers can build decentralized services \u2014 novel VMs, oracles, bridges, DA, networks with specialized hardware \u2014 on Ethereum's existing validator set rather than bootstrapping a new chain. A market-based mechanism for extending Ethereum. We just led their Series B.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        }
+      ]
+    },
+    {
+      "name": "Rollups, scalability & shared sequencing (Espresso)",
+      "why": "The scaling end-game is thousands-to-millions of rollups on Ethereum's bedrock of security. The open problem is fragmentation \u2014 each rollup is its own chain, so composability breaks. Shared sequencing is the most compelling fix I've heard: a marketplace that lets sequencers cooperate so rollups interoperate without surrendering independence. We just led Espresso's Series B.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "Ethereum\u2019s scalability end-game is all about rollups\u2014potentially thousands or even millions of rollups, each one a mini-ecosystem or an application that is built on top of Ethereum\u2019s bedrock of security."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs",
+      "why": "ZK is the rare building block that simultaneously unlocks scalability (rollups) and privacy (encrypted-but-verifiable state). It will transform the entire web3 stack, and the frontier \u2014 Lasso/Jolt, zkEVMs, zkML \u2014 is moving faster than almost anyone expected.",
+      "provenance": "grounded",
+      "age_note": "core thesis since 2022-02, reaffirmed through 2023 (ZK Canon, Lasso/Jolt 'groundbreaking')",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        }
+      ]
+    },
+    {
+      "name": "Privacy / encryption on blockchains",
+      "why": "Privacy isn't only user protection \u2014 it expands the design space. Encrypted, verifiable smart contracts unlock applications transparent chains can't support: games with hidden state, private DeFi, identity. An essential precondition for mainstream adoption (Aztec, Nym, Iron Fish, Aleo).",
+      "provenance": "grounded",
+      "age_note": "repeated near-verbatim 2021\u20132022, reaffirmed with Aztec (2022-12) and Aztec Sandbox (2023-09)",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "AI \u00d7 crypto",
+      "why": "My signature lens: AI centralizes, crypto decentralizes \u2014 natural counterweights. Crypto can build permissionless markets for the long tail of compute, data, and models (Gensyn); ZK can make AI verifiable and private (zkML); and cryptography gives us proof-of-humanity against a flood of deepfakes. We've barely begun exploring this design space.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "By tapping into the long tail of idle, ML-capable compute around the world\u2014such as in smaller data centers, gaming computers, and eventually even smartphones\u2014Gensyn has the potential to 10-100x the available compute power for machine learning."
+        }
+      ]
+    },
+    {
+      "name": "DePIN / community-owned physical networks",
+      "why": "Crypto incentives solve the cold-start problem that has always plagued community-owned infrastructure. Helium / Nova Labs is the proof point \u2014 the fastest-growing wireless network ever, emerging bottom-up from users rather than top-down from telco giants. A concrete example of crypto going well beyond currency.",
+      "provenance": "grounded",
+      "age_note": "thesis since 2021-08 (Helium); restated 2022-03 and listed among my 2023 active categories",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "Helium\u2019s use of crypto incentives spurred the world\u2019s fastest-growing wireless network"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Speculative 'casino' (memecoins, high leverage, airdrop farming)",
+      "why": "The degen casino is the primary force holding the space back \u2014 soulless tokens, 100x perps, parasitic airdrop farming, vanity TVL. It is not a necessary bootstrap; it's a distraction from crypto's real purpose: long-term alignment of incentives to scale human cooperation.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading, one-off games"
+        },
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        }
+      ]
+    },
+    {
+      "name": "Fragmentation of network effects",
+      "why": "The flip side of my excitement about rollups and modularity. Network effects dominate everything; modularity that fragments and weakens them is value-destructive, while modularity that extends them wins. Too many disconnected chains/rollups \u2014 or standards mistaken for networks \u2014 fracture Ethereum's composability.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-24",
+          "quote": "Standards have network effects, but they are not networks."
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins / 'tokens without soul'",
+      "why": "Tokens that moon on memes and then fall off a cliff have no purpose beyond speculation. I want tokens that encode real incentive structures \u2014 lockups, rewards for verifiable work, on-chain reputation, iterated games \u2014 not soulless pump-and-dump vehicles.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "why": "I deliberately under-attend to price and market timing \u2014 it's not how I reason. Asset prices fluctuate cycle to cycle while innovation compounds through each one, so I index on the technology, not the tape. As a builder and investor I stay radically optimistic and keep deploying into infrastructure regardless of where the market sits.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2021-06-24",
+        "quote": "The history of crypto shows that asset prices may fluctuate but innovation continues to increase through each cycle."
+      }
+    ]
+  },
+  "notes": "Two registers, as always: strong technology convictions, deliberately weak price convictions. My throughline is that crypto's value is scaling human cooperation and trust-minimization, not speculation \u2014 so I get excited about infrastructure that expands the design space (ZK, privacy, restaking, shared sequencing, AI\u00d7crypto, DePIN) and concerned about anything that fragments network effects or turns the space into a zero-sum casino. No single chain or architecture spans the whole tradeoff space; I expect a plural, Ethereum-anchored, modular ecosystem. I don't pick tokens as price bets \u2014 that empty bucket is the honest answer, not a gap."
+}

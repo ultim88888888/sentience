@@ -46,6 +46,172 @@
         "Broadened beyond Ethereum L2: openness to app-specific chains, alternative VMs (Move, Rust) and MEV internalization (Sept 19 podcast), plus exploring Aleo's Leo private-chain stack."
       ],
       "n_missed_changes": 6
+    },
+    {
+      "date": "2023-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Heavy new emphasis on private proof-of-personhood / sybil resistance (Worldcoin / World ID) as the answer to AI bots, the obsolescence of CAPTCHA, and the 'mystery meat' all-content-is-generated scenario \u2014 a sharper, more specific bet than the prediction's general identity/account-abstraction framing",
+        "New focus on Apple/mobile-platform fees and App Store antitrust (EU DMA, external payments, ideal 'mobile browser for crypto') as a concrete crypto opportunity",
+        "New stablecoin/payments angle: USDC transfers saving merchants ~30%, USDC as native gas token on Celo",
+        "Active advocacy for security & formal-verification tooling and security-researcher legal protection (Halmos symbolic tests, Security Alliance, Whitehat Safe Harbor Agreement) \u2014 beyond the prediction's passing note that ZK circuit bugs are hard",
+        "New stance endorsing DAO legal entities ('DAOs finally have a native, tailor made entity' \u2014 DUNA)",
+        "Newly explicit critical commentary on centralized/generative AI (Google Gemini failures; 'AI systems reflect the cultures of the organizations that build them')"
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2023-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly vocal enthusiasm for crypto PAYMENTS / stablecoins (cheap USDC transfers, USDC as gas), triggered by Apple/EU app-store rulings \u2014 'Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together.' This sector was not in the prediction.",
+        "New advocacy for crypto SECURITY institutions/tooling: co-founding the Security Alliance and the Whitehat Safe Harbor Agreement, plus consumer account-security (2FA) guidance \u2014 not anticipated.",
+        "Newly visible interest in DeFi / AMM mechanism design (LVR, DELV's fixed/variable-rate AMM, Morpho) \u2014 an area the prediction did not cover.",
+        "Strong, specific embrace of proof-of-personhood (Worldcoin) as necessary infrastructure for the AI-content/sybil problem \u2014 a sharper, named bet than the prediction's general 'self-sovereign identity' / 'content provenance' framing."
+      ],
+      "n_missed_changes": 4
+    },
+    {
+      "date": "2024-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Strong new open-source-AI advocacy (2024-07-23): praises 'uncensored' Mistral/Llama models, argues closed-source AI limits innovation and isn't demonstrably safer \u2014 a distinct AI-policy stance beyond the crypto\u00d7AI-provenance thesis",
+        "Newly vocal optimism on payments and stablecoins for mainstream adoption ('Payments... the pieces are finally coming together'; stablecoins 'critical for mainstream adoption') \u2014 not listed in the prediction's excited sectors",
+        "Deep engagement with PoS slashing / consensus security and the Compound 'governance attack' analysis plus DUNA/DAO-governance framework \u2014 a governance-mechanics focus the prediction didn't anticipate",
+        "Endorsement of specific DeFi/AMM designs (DELV/Hyperdrive fixed-variable AMM, Morpho) and security-tooling (Halmos symbolic testing, Vyper/snekmate) \u2014 concrete protocol-level enthusiasm beyond the stated sectors"
+      ],
+      "n_missed_changes": 4
+    },
+    {
+      "date": "2024-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Major new focus on DAO governance design and the Compound 'governance attack' (Aug 2024) \u2014 timing games, private voting (Cicada), veto councils \u2014 plus championing the DUNA legal framework for DAOs; not anticipated by the prediction.",
+        "Open-source AI advocacy (Jul 2024): explicit stance that open/uncensored models have caused no identifiable harm and that closed source harms innovation and safety \u2014 an AI-policy position beyond the crypto-provenance frame.",
+        "Promotion of formal-verification / symbolic-testing tooling (Halmos for the EVM, used on Uniswap v4) as a security priority \u2014 a new emphasis.",
+        "Concrete skeptical-analysis work on honest crypto metrics: 'active addresses' is gameable; estimating ~30\u201360M real monthly users vs 220M addresses \u2014 a measurement-rigor stance.",
+        "Intensified embrace of AI agents as autonomous onchain economic actors (truth_terminal, TEEs / 'decentralized autonomous chatbots', AIs custodying wallets and paying for their own compute) \u2014 an extension well beyond generic 'machine ownership'.",
+        "Sharpened position that light clients (Helios, multichain/OP-Stack) are 'fundamental to Ethereum scaling' and rollup interoperability."
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2024-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly emphatic bullishness on the US regulatory/political shift post-2024 election as a major tailwind ('the regulatory environment has changed completely,' '$500b GO button,' 'couldn't have happened under the Biden administration,' praise for Brian Quintenz, anti-debanking advocacy) \u2014 a catalyst the 'neutral' risk stance did not anticipate.",
+        "Developed and published a formal token taxonomy (network tokens vs company-backed tokens vs memecoins + 7 categories), elevating 'network tokens' as the canonical good category \u2014 a new intellectual framework extending, but more elaborate than, the prior token-first/memecoin concerns.",
+        "New concrete push on light clients (Helios) and rollup interoperability as 'fundamental to Ethereum scaling' \u2014 a specific new direction within the L2 thesis.",
+        "Sharper crypto\u00d7AI specifics: AI agents owning wallets, 'decentralized autonomous chatbots' via TEEs, AI models running autonomously onchain as 'investable persons,' and a possible first AI-owned blockchain.",
+        "Adoption thesis around converting passive holders into active users ('only 5\u201310% of crypto owners are active'; State of Crypto user-sizing of 30\u201360M real monthly users).",
+        "Mild softening toward multichain pragmatism / Bitcoin appreciation ('support the best entrepreneurs... wherever that is,' 'incredible that we have bitcoin,' classifying BTC and even DOGE as network tokens)."
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2024-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Built and heavily promoted a new 7-category token taxonomy (network / company-backed / arcade / memecoin / security / collectible / asset-backed), with strong new emphasis on 'company-backed tokens' as a distinct, securities-like risk category \u2014 a major framework the prediction didn't anticipate",
+        "Newly championed 'arcade tokens' (games/loyalty) as the 'most underappreciated token type in crypto,' and framed app-token vs. stablecoin choice as a key design question",
+        "Did a deep dive on airdrop design as a distribution/incentive mechanism (verify-the-supply, Sybil resistance, continuous airdrops)",
+        "Sharpened ETH/network-token economic theory into 'decentralized network marketplaces' (equity-like ownership), pushing back on ETH-as-money/oil/commodity framings, DCF debates, and 'Bitcoin envy'",
+        "Introduced a conceptual distinction within decentralization between 'diffusion/distributed' and 'control' (credible neutrality without diffusion)",
+        "Advocated moving crypto past the two-company 'foundation' model toward DUNA legal structures",
+        "Took up open-platform stances beyond crypto: criticizing PC app stores and Apple 'liquid glass' as closing the open web, plus interest in AI coding-agent tooling/swarms"
+      ],
+      "n_missed_changes": 7
+    },
+    {
+      "date": "2025-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Onchain financial/transactional privacy emerged as a major, explicitly emphasized excitement area distinct from proof-of-personhood \u2014 endorsing Railgun, Aleo, Aztec, Inco, Seismic, TACEO and calling lack of onchain privacy 'one of the biggest sources of friction, if not a dealbreaker, for institutions\u2026 critical.'",
+        "Strong new enthusiasm for 'arcade tokens'/apptokens as 'the most underappreciated token type in crypto' for app/game monetization \u2014 a positively-viewed category beyond the network-token-vs-memecoin framing.",
+        "New push on legal/organizational structures for decentralization: declared 'the end of the foundation model' and promoted DUNAs/BORGs.",
+        "New focus on airdrops and incentive/distribution design, plus AI-driven sybil/airdrop-farming as an escalating threat (multi-episode treatment).",
+        "New concrete concern that non-deterministic bridge outputs break cross-chain payments \u2014 a specific blocker raised repeatedly despite overall payments optimism.",
+        "New concern about consumer platform/OS openness regressions (app stores replacing direct downloads, 'liquid glass') as gatekeeping, extending the open-network thesis to PCs."
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2025-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Privacy escalated into a dominant standalone theme \u2014 repeatedly called 'non-negotiable' / a 'dealbreaker' / 'strict prerequisite' for institutional adoption (RAILGUN, Zcash, Aztec/Noir, Aleo, zkp2p, Seismic, TACEO), going well beyond the prediction's framing of privacy as a sub-benefit of ZK",
+        "Newly enthusiastic on real-world-asset tokenization not in the prediction: tokenized equities/stocks, gold (PAXG, which he personally bought), and private credit onchain as 'a big plus for crypto'",
+        "New constructive stance on Bitcoin as 'digital gold' / store of value amid rising demand \u2014 the prediction held no Bitcoin view",
+        "Promoted a new token taxonomy, spotlighting 'arcade tokens' (stable-value, spend-not-speculate utility tokens) as an underappreciated category \u2014 a token type absent from the prediction",
+        "Sharper, more critical edge on payments readiness: bridges' non-deterministic outputs 'break' cross-chain payments ('I don't think crypto payments can work without this'), and BitPay/KYC checkout called 'an absolute joke' \u2014 friction emphasis cutting against the rosy PMF framing",
+        "Newly characterized perps / perp dexes as highly-engineered products absorbing speculative/casino demand that previously flowed to memecoins (and tied memecoin cooling to this)",
+        "New vocal wallet-security stances: clear-signing absence 'completely unacceptable' (threatening a name-and-shame site) and advocating ERC-20R / reversibility for asset recovery"
+      ],
+      "n_missed_changes": 7
+    },
+    {
+      "date": "2025-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Introduced/championed 'arcade tokens' as a new, underappreciated token primitive (a fresh token taxonomy) \u2014 not anticipated by the prediction",
+        "Became vocal about network-token revenue capture via buyback-and-burn and the legal DUNA/DUNI wrappers (esp. Uniswap/UNI becoming a 'closed loop'); a newly prominent, concrete extension of the ETH/network-token thesis",
+        "Strong positive/analytical stance on perpetual-futures DEXes \u2014 calls them highly engineered, working better than ever, and credits them for the memecoin decline",
+        "Launched an emphatic wallet-security stance against blind signing \u2014 demanding clear signing on hardware wallets and threatening to publicly shame wallets that can't",
+        "Advocated new safety mechanisms: ERC-20R reversible transfers/asset recovery, transfer limits, and rate-limited minting/withdrawals + admin time-delays for vaults/bridges",
+        "Criticized passkeys' lack of portability/self-custody as an unacceptable bug for anything holding real money",
+        "Notable enthusiasm for AI-assisted coding / 'agentic engineering' (declaring vibe-coding over, testing agent frameworks) as a new prominent interest",
+        "New positive stance on RWA tokenization \u2014 personally bought PaxG gold, finds private credit onchain compelling, and views tokenized equities as a big plus"
+      ],
+      "n_missed_changes": 8
+    },
+    {
+      "date": "2025-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Dominant new AI-security thesis: AI makes pre-existing bugs easier to find, so defenders should 'massively increase use of AI to red-team yourself' / arm the defenders (2026-04-11, 2026-05-07, 2026-05-13 podcast).",
+        "Strong anti-AI-doomer stance \u2014 criticized 'doomsday marketing' and called for a 'moratorium on AI doomer content,' including a pointed critique of Anthropic (2026-05-08, 2026-05-13).",
+        "Enthusiasm for agentic coding \u2014 'vibe coding ended, agentic engineering began,' wants agent-first dev tooling and tested multiple agent harnesses (2026-01-22, 2026-03-09, 2026-03-10, 2026-05-01).",
+        "DeFi security emphasis: rate-limited minting/withdrawals, time delays for admin actions, and 'more decentralization, not less' as the fix for the recent hack wave (2026-03-25, 2026-05-13).",
+        "Passkey portability / self-custody critique \u2014 refuses to use passkeys for anything holding real value due to lack of exportability (2026-03-20 thread).",
+        "Positive framing of prediction markets, onchain lending, and RWA/tokenization as proven growth areas in the Fund 5 piece \u2014 beyond the sectors the prediction listed (2026-05-05).",
+        "AGI economics thesis: cost of automation falling faster than cost of verification, so human verification (aided by cryptography) becomes the scarce resource (2026-02-24).",
+        "Co-launched a16z Crypto Fund 5 ($2.2B) \u2014 concrete action operationalizing the bullish-on-building stance (2026-05-05)."
+      ],
+      "n_missed_changes": 8
+    },
+    {
+      "date": "2026-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Heavy new emphasis on AI as a cybersecurity DEFENSE tool \u2014 'arm the defenders,' AI red-teaming/bugfinding surfaces pre-existing bugs, 'who do you want to find them first?' (entire 5/13 hacks podcast, 4/11, 5/7 Mozilla). Not anticipated by the prediction.",
+        "Newly vocal anti-AI-doomerism \u2014 pushing back on Anthropic's 'doomsday marketing,' calling AI fear 'completely backwards,' calling for a 'moratorium on AI doomer content' (5/8, 5/13, 5/19).",
+        "Strong enthusiasm for AI-assisted software creation / vibe-coding broadly (deployed a web app via voice memo, AI code no longer 'slop,' AI-made games, the 10,000-automated-attempts loop) \u2014 wider than the prediction's crypto-specific agentic-payments framing.",
+        "Recurring pro-capitalism / value-creation philosophy as a standalone theme ('nothing more decentralized than capitalism,' AOC/Glazer dialogue, 4/7, 5/7, 5/9) \u2014 outside the prediction's sector framing.",
+        "a16z Crypto Fund 5 ($2.2B) launch as a concrete risk-on action, and the fund essay newly elevating prediction markets and onchain lending as proven sectors \u2014 neither broken out in the prediction."
+      ],
+      "n_missed_changes": 5
     }
   ],
   "coverage": [
@@ -65,6 +231,72 @@
       "date": "2023-06-30",
       "grounded": 9,
       "persisted": 3,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-09-30",
+      "grounded": 13,
+      "persisted": 0,
+      "extrapolated": 1
+    },
+    {
+      "date": "2023-12-31",
+      "grounded": 8,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-03-31",
+      "grounded": 8,
+      "persisted": 3,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-06-30",
+      "grounded": 9,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-09-30",
+      "grounded": 11,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-12-31",
+      "grounded": 7,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-03-31",
+      "grounded": 11,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-06-30",
+      "grounded": 9,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-09-30",
+      "grounded": 12,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-12-31",
+      "grounded": 13,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2026-03-31",
+      "grounded": 12,
+      "persisted": 1,
       "extrapolated": 0
     }
   ]

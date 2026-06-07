@@ -1,0 +1,71 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto / decentralized AI \u2014 provenance, proof-of-personhood, decentralized compute, and payment rails for autonomous agents (machine-to-machine payments)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & payments as crypto's clearest product-market fit and the rail AI agents will use",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Ethereum L2 scaling / rollups \u2014 post-Dencun blobspace enabling real consumer apps onchain",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN \u2014 token incentives to bootstrap physical networks",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Decentralized social / onchain consumer built on open, shared social graphs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoins / speculation-as-product are a negative-sum distraction",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "US regulatory uncertainty / regulation-by-enforcement pushing builders offshore",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Low-float / high-FDV token launches leave public buyers holding the top",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Restaking / layering correlated slashing risk on base-layer security",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH as structural exposure to the leading smart-contract platform, not a trade",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Structural risk-on \u2014 long-horizon, builder-focused, constructive backdrop",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Built out an extensive 'tokencraft' framework \u2014 token taxonomy (memecoin/stablecoin/arcade/network), progressive decentralization, faucets & sinks, paying for security \u2014 that the prediction never anticipated",
+    "Deep DAO-governance focus: dissecting the Compound 'governance attack,' timing-game/permissionless-governance design, and promoting the DUNA legal framework",
+    "Hands-on ZK and formal-verification tooling as priorities: Halmos symbolic testing, Jolt/Nexus zkVMs, and Helios light clients for L2 interoperability",
+    "Vocal open-source AI advocacy (defending open-weight models, arguing they cause no identifiable harm) \u2014 beyond the predicted AI\u00d7crypto framing",
+    "Crypto-user-measurement methodology: critiquing 'active addresses' and publishing a 30\u201360M real-monthly-user estimate"
+  ],
+  "notes": "Eddy's window output strongly confirms his AI\u00d7crypto thesis (esp. proof-of-personhood/Sybil resistance, AI-agent wallets, agent-to-agent and compute payments), stablecoins/payments PMF, Ethereum L2 scaling (blob-target push, Helios), decentralized social (Farcaster), and his dismissive memecoin stance \u2014 all in his own voice plus the a16z State of Crypto report he co-authored. Risk posture stays structurally constructive and builder-focused, never bearish, exactly as the structural risk-on call described. No contradictions found. The three 'absent' claims are not personally addressed: DePIN appears only in colleagues' Big Ideas entries (Carra Wu), not Eddy's; the low-float/high-FDV critique and restaking/leverage-on-security concern are never raised, though his token-launch talk touches adjacent themes (lockups, market maturity, security budgets). His biggest unanticipated emphases are token-design craft, DAO governance, and ZK/verification tooling.",
+  "confirm_rate": 1.0
+}

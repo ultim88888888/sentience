@@ -1,0 +1,170 @@
+{
+  "as_of": "2025-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs & privacy",
+      "why": "ZK and privacy are the deepest unlock in the stack. Privacy isn't just about protecting user data \u2014 it expands the design space into whole categories of applications that are impossible on transparent chains. This is where I've put the most conviction over the years (Aleo, Aztec, Iron Fish, Nym, zkSync), and most recently Seismic's hardware-based approach to private shared state.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto",
+      "why": "Crypto is the natural counterweight to AI's centralizing pull. Decentralizing compute, data, and models \u2014 and verifying that an AI ran as claimed \u2014 is a design space we've barely begun to explore. Gensyn's testnet going live this week is a concrete step toward decentralized training.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2025-03-31",
+          "quote": "Gensyn testnet live \ud83d\udd25"
+        }
+      ]
+    },
+    {
+      "name": "Crypto infrastructure: modular stack, restaking, rollups, interop",
+      "why": "The open-source modular stack \u2014 restaking (EigenLayer), shared sequencing (Espresso), interoperability (LayerZero), rollups \u2014 matters less for raw performance than because it unlocks permissionless innovation on top of Ethereum. Each layer lets a new ecosystem of builders specialize.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges"
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Crypto incentives can bootstrap real-world physical networks bottom-up \u2014 wireless (Helium), energy (Daylight) \u2014 in domains where upfront capital costs once meant only incumbents could build. It's the clearest proof that crypto's usefulness goes far beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    },
+    {
+      "name": "Developer experience & abstractions (programming languages, workflow protocols)",
+      "why": "Programming language design, abstractions, and workflow protocols are an under-explored frontier. Code that controls hundreds of millions of dollars and runs forever deserves better primitives. Halliday abstracting away smart-contract plumbing into a 'software era' is exactly the kind of unlock I'm drawn to.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-06-02",
+          "quote": "Programming language design is an under-explored frontier in web3."
+        },
+        {
+          "date": "2025-03-18",
+          "quote": "We believe this could be one of the biggest unlocks for web3 since programmable ledgers."
+        }
+      ]
+    },
+    {
+      "name": "Onchain finance: DeFi composability & stablecoins",
+      "why": "Onchain finance and stablecoins are crypto's clearest path to broad, global financial access. The frontier now is composability and making every asset available on every chain (Universal) so DeFi stops being siloed and capital stops being fragmented.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "seamless program composability, which is critical for a great deal of applications in crypto"
+        },
+        {
+          "date": "2025-02-19",
+          "quote": "make all cryptoassets available on all chains"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "The casino \u2014 speculative excess (memecoins, high leverage, airdrop farming)",
+      "why": "My biggest worry for the space is itself: the degenerate casino of memecoins, 100x perps, and parasitic airdrop farming. We never needed the casino to bootstrap \u2014 it's the primary force holding us back, and it obscures the real work of building durable coordination mechanisms.",
+      "provenance": "persisted",
+      "age_note": "argued forcefully 2023-12; not restated as loudly since, but unchanged",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "build a degenerate casino of meaningless speculation that turns everything into a zero sum game"
+        },
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        }
+      ]
+    },
+    {
+      "name": "Fragmentation & cross-chain bridge risk in a multi-chain world",
+      "why": "I'm bullish on the modular stack, but modularity drawn in the wrong places fragments network effects, and bridging across chains has a long history of hacks. The real risk of a rollup-centric, multi-chain future is fragmentation. Good designs (shared sequencing, robust interop) mitigate it; naive ones make it worse.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "modularity that fragments and weakens them"
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "Ethereum (ETH)",
+      "why": "Platform conviction, not a price call. Ethereum is the most secure programmable settlement layer and the bedrock the restaking and rollup ecosystem is built on. I don't predict token prices \u2014 this is conviction in the platform and its ecosystem.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "I believe Ethereum will be a far superior blockchain than it was before."
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "the most secure programmable blockchain: Ethereum"
+        }
+      ]
+    },
+    {
+      "name": "Solana (SOL)",
+      "why": "Again platform conviction, not a price view. I've never believed a single chain wins \u2014 a handful of dominant architectures will, and Solana, high-performance and composable, is among them.",
+      "provenance": "persisted",
+      "age_note": "backed Solana 2021; platform/architecture conviction, not a recent or price-level view",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "one of the leading smart contract platforms in the space"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "no_view",
+    "why": "I deliberately under-weight price and don't take a tactical risk-on/risk-off posture \u2014 I build through cycles and treat price action as noise. Structurally I'm constructive: monthly active addresses are growing exponentially (2024-10-16), and the US regulatory backdrop is clearly improving in 2025 ('Nature is healing,' 2025-01-08). But that's a long-term adoption and innovation view, not a market-timing call.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Asked for 'market views,' I'll be honest about my bias: I think in sectors, protocols, and the teams building them \u2014 not in token trades or market timing. The token axis here reflects platform/ecosystem conviction (Ethereum, Solana), not price predictions, which I conspicuously avoid. tokens_concerned is empty by design: my concern isn't any single token but the whole category of soulless speculation, captured under sectors_concerned. None of this is investment advice."
+}

@@ -1,0 +1,68 @@
+{
+  "claims": [
+    {
+      "claim": "Stablecoins & onchain payments have product-market fit and enterprise adoption is next; demand is real, uncorrelated usage",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs / SNARKs / zkVMs (Jolt, sumcheck/GKR/lookups) crossing from theory to practice and compounding",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Private, Sybil-resistant proof-of-personhood / identity needed by every network",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Blockchain scaling & cheap high-quality blockspace (L2s) as key ingredient; more blockspace is good",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully onchain games / trustless game servers as a growing niche",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "AI + crypto: autonomous agents that own assets via wallets on credibly neutral rails",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / pure speculation / casino dynamics setting the industry back",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about company-backed tokens mislabeled as decentralized network tokens",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH as cleanest network token with programmatic value accrual via EIP-1559 burn",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on / constructive on a multi-year builder horizon; skeptical in analysis, optimistic in action",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Privacy escalated into a dominant standalone theme \u2014 repeatedly called 'non-negotiable' / a 'dealbreaker' / 'strict prerequisite' for institutional adoption (RAILGUN, Zcash, Aztec/Noir, Aleo, zkp2p, Seismic, TACEO), going well beyond the prediction's framing of privacy as a sub-benefit of ZK",
+    "Newly enthusiastic on real-world-asset tokenization not in the prediction: tokenized equities/stocks, gold (PAXG, which he personally bought), and private credit onchain as 'a big plus for crypto'",
+    "New constructive stance on Bitcoin as 'digital gold' / store of value amid rising demand \u2014 the prediction held no Bitcoin view",
+    "Promoted a new token taxonomy, spotlighting 'arcade tokens' (stable-value, spend-not-speculate utility tokens) as an underappreciated category \u2014 a token type absent from the prediction",
+    "Sharper, more critical edge on payments readiness: bridges' non-deterministic outputs 'break' cross-chain payments ('I don't think crypto payments can work without this'), and BitPay/KYC checkout called 'an absolute joke' \u2014 friction emphasis cutting against the rosy PMF framing",
+    "Newly characterized perps / perp dexes as highly-engineered products absorbing speculative/casino demand that previously flowed to memecoins (and tied memecoin cooling to this)",
+    "New vocal wallet-security stances: clear-signing absence 'completely unacceptable' (threatening a name-and-shame site) and advocating ERC-20R / reversibility for asset recovery"
+  ],
+  "notes": "Eddy stayed remarkably on-thesis: 9 of 10 predicted claims confirmed, none contradicted. The a16z State of Crypto report and podcast (2025-10-22) plus the Empire/network-token podcast (2025-08-22) directly reaffirmed stablecoins/payments, ZK/zkVMs (Jolt), proof-of-personhood, cheap L2 blockspace ('we solved gas'), AI+crypto agent payments (x402), the memecoin-casino concern, the network-token vs company-backed-token distinction, ETH's burn-based value capture, and his risk-on builder optimism ('crypto grew up... app time soon'). The one gap: fully onchain games / EVE Frontier went entirely unmentioned in the window (absent, not contradicted). Biggest unanticipated developments were how heavily privacy dominated his messaging, fresh enthusiasm for RWA tokenization and Bitcoin-as-digital-gold, the 'arcade token' taxonomy, and a notably more critical tone on current payments/wallet UX despite overall bullishness. Judged on stance; consistent with his stated refusal to make price calls.",
+  "confirm_rate": 1.0
+}

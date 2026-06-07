@@ -1,0 +1,199 @@
+{
+  "as_of": "2025-09-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto (decentralized & verifiable AI)",
+      "why": "AI centralizes power by default; crypto is its counterweight. The near-term unlock is verifiable compute \u2014 letting AI models and agents run with cryptographic guarantees of correct, credibly-neutral execution \u2014 plus decentralized markets for the compute, data, and models that today only tech giants control. This is the design space I keep returning to (Gensyn for decentralized training, EigenCloud as the verifiable cloud for agents).",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        }
+      ]
+    },
+    {
+      "name": "Verifiable computing / restaking (EigenCloud)",
+      "why": "Restaking unbundles cryptoeconomic security from the EVM, so builders can extend Ethereum \u2014 new VMs, oracles, bridges, specialized hardware \u2014 without spinning up a chain. Same 100x unlock that smart contracts were for application logic, and now the substrate for verifiable AI and agentic finance.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        },
+        {
+          "date": "2025-06-17",
+          "quote": "the Eigen team has unlocked a whole new paradigm for building applications that are verifiable and credibly neutral"
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge & privacy",
+      "why": "Privacy isn't just user protection \u2014 it unlocks a whole new region of the design space: compliant private payments, identity that proves without leaking, games with hidden state, shared private state for institutions. ZK proofs and newer secure-hardware approaches are finally making private-yet-verifiable blockchains real. I've backed this across Aleo, Iron Fish, Aztec, Nym, and Seismic.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        },
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "Cross-chain interoperability & composability",
+      "why": "The multichain future is settled; the open problem is making it feel like one computer again. Seamless composability is what makes onchain apps powerful, and fragmentation is the tax we pay for scale. Interop layers \u2014 LayerZero for messaging, Espresso for shared sequencing, Universal for bringing any asset to any chain \u2014 are how we win the network effects back.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain. @LayerZero_Labs has built critical infrastructure that makes that possible."
+        },
+        {
+          "date": "2025-02-19",
+          "quote": "In order for crypto to play a larger role in global finance, we need a way to bring any asset onto any chain in an inexpensive, verifiable, and composable way."
+        }
+      ]
+    },
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "Stablecoins are crypto's clearest product-market fit \u2014 fast, global, programmable money \u2014 and the rails for recurring, automated, agent-driven commerce are now being built (Loop, Universal). This is where crypto most obviously plugs into the real financial system.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-08-21",
+          "quote": "Stablecoins are turbocharging online payments: fast, global, programmable."
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Crypto incentives can bootstrap real-world networks bottom-up that previously only telco/utility giants could build \u2014 wireless (Helium), energy/DERs (Daylight), compute (Gensyn). It's the strongest proof that crypto's usefulness goes well beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "The speculative casino / memecoins-as-an-end",
+      "why": "My one persistent worry is cultural, not technical: crypto used as a degenerate casino \u2014 memecoins, 100x perps, airdrop farming \u2014 instead of for long-term alignment and real coordination. The casino doesn't bootstrap the space; it's the primary force holding it back and the thing that discredits everything real we're building.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-12, a continuing conviction, not restated in my recent record",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Or, you can use it to build a degenerate casino of meaningless speculation that turns everything into a zero sum game."
+        },
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff"
+        }
+      ]
+    },
+    {
+      "name": "Ecosystem fragmentation (siloed chains & rollups)",
+      "why": "The flip side of the rollup-centric roadmap: thousands of siloed chains and L2s can fragment liquidity and network effects. Modularity that extends network effects is great; modularity that shatters them is value-destructive. It's a real risk we have to engineer around \u2014 which is exactly why I'm spending so much time on interop.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "only two kinds of modularity \u2014 modularity that extends and strengthens network effects; and modularity that fragments and weakens them"
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ZRO (LayerZero)",
+      "why": "I put real, long-term conviction behind this \u2014 an additional $55M with a 3-year lockup in April 2025. It's the messaging/interop layer for an onchain financial system that's actually moving real workflows on-chain. I hold it as infrastructure, not a trade.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup"
+        }
+      ]
+    },
+    {
+      "name": "EIGEN (EigenCloud)",
+      "why": "Same posture \u2014 an additional $70M with a lockup in June 2025. EigenCloud is becoming the verifiable cloud: the substrate for credibly-neutral, verifiable applications, including the AI/agent use cases I care most about.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup"
+        }
+      ]
+    },
+    {
+      "name": "ETH (Ethereum)",
+      "why": "I think of ETH as ownership in the most secure programmable blockchain and the bedrock of security for the whole rollup ecosystem \u2014 a platform bet for the long arc, not a price call. Post-Merge it's more secure, fair, and efficient, and restaking/rollups keep extending its reach.",
+      "provenance": "persisted",
+      "age_note": "platform conviction stated across 2022-2024; I treat it as a computer, not an asset, and don't make price calls",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "the most secure programmable blockchain: Ethereum"
+        }
+      ]
+    },
+    {
+      "name": "SOL (Solana)",
+      "why": "Conviction in Solana as a platform dates to leading their round in 2021 \u2014 highest-performance L1 that preserves composability, with a builder culture I admire. Same framing: I'm betting on the ecosystem for the long term, not trading the token.",
+      "provenance": "persisted",
+      "age_note": "stated 2021-06 when we led Solana's round; sustained ecosystem conviction, not a recent price view",
+      "citations": [
+        {
+          "date": "2021-06-10",
+          "quote": "@solana is a next-generation blockchain that offers the highest level of performance while preserving some of the most important features of Ethereum, like seamless program composability"
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins (as a category)",
+      "why": "Tokens with no soul or purpose that moon on memes and then fall off a cliff. They aren't funding networks or aligning anyone \u2014 they're extractive and zero-sum. I have no view on any specific memecoin's price; I just think the category is bad for the space.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-12, an enduring view, not restated in my recent record",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "why": "I genuinely don't operate in risk-on/risk-off terms \u2014 I under-index on price and the cycle on purpose. My posture is structural: long-term conviction in the technology. Prices fluctuate every cycle; innovation compounds through all of them. So I don't take a tactical market-timing position \u2014 I back builders and hold core positions with multi-year lockups.",
+    "provenance": "extrapolated"
+  },
+  "notes": "How to read this: I'm a builder-investor who steers toward technology and design spaces, not token prices. My 'tokens' views are infrastructure/platform conviction (often held with lockups), not trading calls \u2014 the honest center of gravity here is the sectors, not the tickers. The current tailwind is a far more constructive U.S. regulatory environment, but my excitement is about what's now buildable: verifiable AI, private-yet-verifiable computation, and interop that re-knits a fragmented multichain world into something that again feels like one computer. None of this is investment advice."
+}

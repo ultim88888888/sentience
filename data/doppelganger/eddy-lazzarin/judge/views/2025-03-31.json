@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "Stablecoins / onchain payments have durable PMF; expects enterprise adoption and new stablecoin experiments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs / SNARKs / zkVMs (Jolt) are the most exciting technical frontier",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully on-chain games / autonomous worlds will fill a major niche and push the stack",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "L2 scaling & blockchain infrastructure (cheap blockspace, light clients, sequencers)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto: proof of personhood, machine ownership, content provenance",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized / user-owned social networks (Farcaster ecosystem)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoins are a casino that sets the industry back (regulation, founders, adoption)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Token-first / pie-chart design and company-backed tokens dressed up as network tokens",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH is the clearest network token with real fundamentals and value capture",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "UNI is exemplary network-token design that can capture protocol fees (fee switch)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "BTC long-term security-budget concern under ossification",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Pure memecoins (PEPE, SHIB, TRUMP) are zero-sum, no intrinsic value, crowd out real work",
+      "axis": "tokens_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Not risk-on/risk-off; trusts fundamentals over sentiment; as constructive as ever, build-not-trade, regulatory flip",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Onchain financial/transactional privacy emerged as a major, explicitly emphasized excitement area distinct from proof-of-personhood \u2014 endorsing Railgun, Aleo, Aztec, Inco, Seismic, TACEO and calling lack of onchain privacy 'one of the biggest sources of friction, if not a dealbreaker, for institutions\u2026 critical.'",
+    "Strong new enthusiasm for 'arcade tokens'/apptokens as 'the most underappreciated token type in crypto' for app/game monetization \u2014 a positively-viewed category beyond the network-token-vs-memecoin framing.",
+    "New push on legal/organizational structures for decentralization: declared 'the end of the foundation model' and promoted DUNAs/BORGs.",
+    "New focus on airdrops and incentive/distribution design, plus AI-driven sybil/airdrop-farming as an escalating threat (multi-episode treatment).",
+    "New concrete concern that non-deterministic bridge outputs break cross-chain payments \u2014 a specific blocker raised repeatedly despite overall payments optimism.",
+    "New concern about consumer platform/OS openness regressions (app stores replacing direct downloads, 'liquid glass') as gatekeeping, extending the open-network thesis to PCs."
+  ],
+  "notes": "As a builder, Eddy stayed highly consistent: every excited sector except fully-on-chain-games and every concern except BTC's security budget was reaffirmed, often heavily (Jolt/ZK, proof-of-human/World, scaling/blockspace, decentralized social, payments, memecoin/company-token critiques, ETH & UNI as network tokens, fundamentals-over-sentiment). No contradictions. The two 'absent' items: fully-on-chain games as a thesis was never revisited (the arcade-token/game-monetization talk is about token design, not autonomous worlds), and his BTC comments in-window ('bitcoin envy,' anti-DCF-via-BTC) never touch the long-term security-budget worry. The biggest unanticipated development is onchain financial privacy moving to center stage.",
+  "confirm_rate": 1.0
+}

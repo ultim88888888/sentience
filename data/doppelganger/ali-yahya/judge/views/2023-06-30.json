@@ -1,0 +1,90 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about AI \u00d7 crypto (decentralized AI: compute, data, and model marketplaces)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge proofs / applied cryptography",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about privacy / on-chain encryption",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about scalability infrastructure / L2 rollups / the multi-chain future",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DAOs & on-chain coordination tooling",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about developer platforms, infrastructure & programming languages",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized physical infrastructure / community-owned networks (DePIN)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about web3 creator economy & media (music, NFTs, storytelling)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about cross-chain bridge security architecture / trust assumptions",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about wallet UX / transaction-signing safety",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about regulatory & societal hostility to crypto / innovation",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH (Ethereum) as network/technology conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about SOL (Solana) as network/technology conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about NEAR as network/technology conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on at the conviction/builder horizon; deploying actively, golden era of web3",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 13,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Launched a prominent anti-degen / anti-casino crusade in Dec 2023 \u2014 explicitly attacking memecoins, 100x leverage, yield farming, airdrop farming, and 'casino' speculation as the 'primary force holding the space back' (new, sharply-stated quality/purpose stance not anticipated)",
+    "Made modular vs. monolithic architecture and the 'modular tech stack' a central recurring theme (Modularity Paradox, UNIX philosophy, 'interface that de-constrains', a16z big ideas authored entry)",
+    "Became actively enthusiastic about a specific cross-chain bridge (LayerZero v1/v2, Google Cloud integration) \u2014 notable given his prior generalized distrust of bridges; framed approval around improved trust assumptions",
+    "Emphasized 'underexplored' mechanisms \u2014 token lockups, retroactive funding, non-transferable tokens, on-chain reputation, rewards for verifiable work \u2014 as the constructive alternative to speculation"
+  ],
+  "notes": "Overwhelmingly confirmatory window. Ali stayed on his sector/technology theses (AI\u00d7crypto via Gensyn-style markets, ZK/zkML, privacy via Aztec, L2/multi-chain scaling, dev platforms/Crypto Startup School, music/NFTs via doubled-down Sound.xyz Series A) and on his network-level token convictions (ETH, SOL via the Toly debate, NEAR's modular-Ethereum alignment). Risk-on builder posture confirmed via continued active deployment (Sound, Freatic, Alongside) and 'only the beginning' framing. The bridge-security concern reads confirmed at stance level \u2014 he keeps applying the 'who do you have to trust' lens, praising LZ v2 for removing relayer trust. Wallet-signing safety and DePIN appear only in others' authored sections or bare category lists, so marked absent for Ali personally. The biggest unanticipated development is his vocal anti-speculation campaign, which is consistent with (not contradictory to) his builder-horizon risk-on framing.",
+  "confirm_rate": 1.0
+}

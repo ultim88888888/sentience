@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about Stablecoins & onchain payments as crypto's clearest PMF and the rails layer, aided by clearer US regulation",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto convergence (agent-to-agent payments, proof-of-personhood/verifiable identity, decentralized compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN \u2014 token incentives bootstrapping real-world hardware networks (compute, wireless, energy, storage)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about onchain UX primitives (account & chain abstraction; hiding keys/gas/bridging) as the binding adoption constraint",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about extractive memecoin & launchpad speculation as negative-sum and damaging to crypto's credibility",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about reflexive/circular DeFi leverage and points-farming inflating headline TVL",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Neutral risk regime: no near-term directional price view, structurally long on a 7\u201310yr horizon, constructive on fundamentals",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Developed an AI-for-security / anti-doomer thesis (May 13 podcast + tweets): AI doesn't create new vulnerabilities, only finds existing ones; defenders should massively adopt AI to red-team themselves; explicitly criticizes Anthropic 'doomsday marketing' and calls AI fear 'completely backwards' \u2014 not anticipated by the prediction",
+    "Articulated a detailed token value-capture / tokenomics framework (Feb 8, Apr 23\u201327, May 14): buy-and-burn is good but protocols must 'print-and-spend' to grow, decoupling fees from issuance, DUNA entities; 'tokens need a value capture mechanism' and pro-revenue/fees stance",
+    "Took a new DeFi operational-security stance (Mar 25, May 13): advocates rate-limited mint/withdraw and time-delayed admin actions, and argues recent hacks stemmed from inadvertent centralization \u2014 'more decentralization, not less' \u2014 a concern axis distinct from the predicted memecoin/leverage worries",
+    "Showed token/sector-specific enthusiasm for Zcash and privacy tech (Feb 18\u2013Mar 5, Jun 5): ZSAs/shielded assets 'inevitable' and 'incredibly important,' client-side privacy zkVMs, praising Zcash devs \u2014 not anticipated by the deliberately empty token arrays",
+    "Strong agentic-engineering / AI-coding enthusiasm ('vibe coding ended, agentic engineering began'; excitement for AI-built games/apps) \u2014 adjacent to AI x crypto but a distinct AI-tooling stance"
+  ],
+  "notes": "Strongest confirmations come from the May 5 a16z Crypto Fund 5 essay (stablecoins as the 'clearest evidence,' GENIUS Act/regulation tailwind, cycle-agnostic long-horizon fundamentals view, swarms of agents transacting) and the May 2 memecoin post where he explicitly reaffirms and claims vindication for his 'memecoins are damaging' stance. AI x crypto is confirmed across many posts (x402, AgentCash/AgentKit, World Face Auth, 'human verification aided by cryptography will be scarce'). Risk regime confirmed: he consistently avoids near-term price calls and frames conviction as long-horizon/structural (launching a $2.2B fund 'for this moment'). Onchain UX primitives marked confirmed but with nuance \u2014 his engagement is via passkey/key-portability, self-custody, interop (LayerZero) and bridging (ZCash) UX; note he pushes toward user *control* over pure abstraction, a slightly different flavor than the prediction's 'hide it all from users.' DePIN is absent \u2014 only a vague 'decentralized infrastructure' list item in the essay, with no engagement of the hardware/token-incentive thesis. Reflexive/circular DeFi leverage is absent \u2014 his DeFi commentary centers on security/hacks and tokenomics value-capture, not levered TVL or points farming. No contradictions found.",
+  "confirm_rate": 1.0
+}

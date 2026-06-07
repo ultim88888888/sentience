@@ -1,0 +1,92 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs / SNARKs as the decisive primitive (scaling + privacy), with major cost-curve improvements",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Layer 2 scaling / rollups and cheaper high-quality blockspace",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully on-chain games",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social networks (permissionless name/graph/value substrate, Farcaster thesis)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Identity, auth & account abstraction / smart accounts (key management as adoption prerequisite)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI + crypto (sovereign programs; ZK provenance/attestation vs deepfakes)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Bitcoin programmability via ZK (VERIFY_SNARK opcode, bring ZK home to bitcoin)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "On-chain IP / creative composability (remix/attribution graph, multiplayer for IP)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern: centralized exchanges & opaque 'proof of reserves' / custodial weak point",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern: token-first / 'tokenomics' pie-chart projects (allocations over real protocol design)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern: U.S. regulatory ambiguity costing the U.S. its developer lead",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern: naive p2p / federated social (Nostr, Fediverse) degrading to centralization",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH \u2014 platform/ecosystem conviction (dev mindshare, L2 hub), not a price call",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "MKR (Maker) \u2014 admired risk-underwriting token design",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on: conviction decoupled from price, 'keep building', circa-1995 / early",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 10,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Heavy new emphasis on private proof-of-personhood / sybil resistance (Worldcoin / World ID) as the answer to AI bots, the obsolescence of CAPTCHA, and the 'mystery meat' all-content-is-generated scenario \u2014 a sharper, more specific bet than the prediction's general identity/account-abstraction framing",
+    "New focus on Apple/mobile-platform fees and App Store antitrust (EU DMA, external payments, ideal 'mobile browser for crypto') as a concrete crypto opportunity",
+    "New stablecoin/payments angle: USDC transfers saving merchants ~30%, USDC as native gas token on Celo",
+    "Active advocacy for security & formal-verification tooling and security-researcher legal protection (Halmos symbolic tests, Security Alliance, Whitehat Safe Harbor Agreement) \u2014 beyond the prediction's passing note that ZK circuit bugs are hard",
+    "New stance endorsing DAO legal entities ('DAOs finally have a native, tailor made entity' \u2014 DUNA)",
+    "Newly explicit critical commentary on centralized/generative AI (Google Gemini failures; 'AI systems reflect the cultures of the organizations that build them')"
+  ],
+  "notes": "Window covers 2023-10 to 2024-03. Judged at stance level using only provided statements. Strongest confirmations: ZK/SNARKs (Jolt optimization, SNARKs-on-ARM, Naysayer proofs, FDE design, a16z 'SNARKs go mainstream'), AI+crypto (repeated deepfake-provenance/attestation posts), and risk-on ('never been a better time to build', CSX promotion, builder-energy posts, anti-memecoin 'building crypto's real potential'). Token-first concern marked confirmed because the 2024-03-24 memecoin critique expresses the same stance (disdain for speculation/casino behavior over substantive building); this is a stance-level rather than literal match. Decentralized-social confirmed at moderate confidence (social/attribution graph as compute-constrained good idea, reply to Farcaster's Dan Romero, 2024-03-03 lament that p2p networks were replaced by corporate ones). U.S. regulatory marked absent: the only mention ('regulatory strategies improving', 2024-03-29) is an optimistic aside, not a restatement of the concern, and not its opposite. Naive-p2p concern absent: the 2024-03-03 p2p remark is nostalgic and historical, not a critique of Nostr/Fediverse. Bitcoin-via-ZID, CEX/proof-of-reserves, and MKR are simply not addressed in the window. The 2023-12-06 a16z 'big ideas' piece is a multi-partner firm document; Eddy's own attributed section (UX/smart accounts/passkeys/MPC) is weighted most heavily, and other sections were used only as corroboration where independent Eddy statements already exist.",
+  "confirm_rate": 1.0
+}

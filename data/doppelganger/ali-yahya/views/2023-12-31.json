@@ -1,0 +1,158 @@
+{
+  "as_of": "2023-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto (decentralized AI: compute, data, and model markets; zkML)",
+      "why": "AI centralizes power; crypto is its natural counterweight. The crack in big tech's moat is the long tail \u2014 and crypto can coordinate it bottom-up via permissionless markets that tap idle compute and rare data, with zk proofs making inference verifiable and private. This is the design space I find most under-explored.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "By tapping into the long tail of idle, ML-capable compute around the world\u2014such as in smaller data centers, gaming computers, and eventually even smartphones\u2014Gensyn has the potential to 10-100x the available compute power for machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs & privacy",
+      "why": "ZK is the foundational primitive for the next tech stack \u2014 it solves both scaling (verify without re-executing) and privacy. And privacy isn't just user protection; it expands the design space into applications that are simply impossible on a transparent chain. The proving systems are now crossing from theory into practice fast.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years."
+        },
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt are groundbreaking."
+        }
+      ]
+    },
+    {
+      "name": "Modular stack / L2s / cross-chain interoperability",
+      "why": "The tradeoff space is too large for one chain; a plural ecosystem wins. Modularity's real prize isn't performance, it's permissionless innovation and specialization. The one caveat: only modularity that strengthens network effects matters \u2014 the kind that fragments them is a trap.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "the biggest advantage of an open-source, modular tech stack is that it unlocks permissionless innovation; allows participants to specialize; and incentivizes more competition."
+        },
+        {
+          "date": "2023-12-16",
+          "quote": "A good interface is a constraint that de-constrains."
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure: wireless, compute, networking)",
+      "why": "Crypto incentives finally make grassroots, community-owned physical networks bootstrap-able where only telco/cloud giants could before. This is the clearest proof that crypto's usefulness extends far beyond currency \u2014 emergent bottom-up infrastructure instead of top-down monopolies.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-10",
+          "quote": "a wireless network that emerges bottom-up from the contributions of its users, rather than top-down from telco giants."
+        },
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    },
+    {
+      "name": "DAOs & non-speculative coordination primitives (on-chain reputation, retroactive funding, iterated games)",
+      "why": "Crypto's deepest use is scaling human cooperation. DAOs are an order-of-magnitude upgrade to coordination, and the genuinely interesting frontier is the set of primitives that build long-term alignment rather than zero-sum speculation \u2014 token lockups, rewards for verifiable work, on-chain reputation, iterated games.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Underexplored \u2014 token lockups, retroactive funding, non-transferable tokens, rewards for verifiable work, on-chain reputation, iterated games"
+        },
+        {
+          "date": "2021-08-31",
+          "quote": "they're 10,000 times faster/cheaper to set up and operate"
+        }
+      ]
+    },
+    {
+      "name": "Decentralized media & creator tools",
+      "why": "Music is where web2's structural problems are at their worst \u2014 a labyrinth of intermediaries and algorithms that pay artists almost nothing. Web3 lets artists own their relationship with fans and capture the value they create. The middleman is the bug; smart contracts are the fix.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Sound is music without the middleman; a web3 music platform that is powering the next generation of artists and their communities"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Speculation-first crypto (the casino): high-leverage perps, memecoins, airdrop farming, extractive MEV, day-trading",
+      "why": "This is the primary force holding the space back. The 'you need the casino to bootstrap' argument is a thinly veiled excuse for bad behavior. We need functioning markets and ways to fund early networks \u2014 we do not need soulless leverage and vanity-TVL games that turn everything zero-sum.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading, one-off games"
+        }
+      ]
+    },
+    {
+      "name": "Fragmentation & cross-chain bridge security",
+      "why": "I'm bullish on the multi-chain future, but not all modularity is good modularity. When separation adds single points of failure instead of redundancy, it weakens network effects and expands the attack surface \u2014 bridges have been the clearest example of that risk. The architecture has to decouple security from liveness, not just split things up.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-11",
+          "quote": "It depends on whether modularity adds redundancy (as is the case with multiple implementations) or adds more single points of failure (as with separate blockchains for DA, etc.)."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins / soulless casino tokens",
+      "why": "Tokens are supposed to encode incentives that align a community around building something real. Tokens with no purpose that pump on memes and then collapse are the opposite of that \u2014 they're the casino in token form, and they actively discredit the legitimate uses of the primitive.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Caveat first: I deliberately under-weight price and don't take market-timing positions \u2014 my unit of analysis is technology and architecture, not token charts. But structurally I'm long the technology through cycles (we deployed straight through the last winter), and my conviction in the long arc only compounds \u2014 incredible journey so far and it's only the beginning. The real existential risk is stagnation, so the posture is to keep taking risk on building.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My honest unit of analysis is the sector/architecture, not the token \u2014 which is why tokens_excited is empty rather than manufactured. The closest thing I hold to network-level conviction is technology-grounded, not a trade: Ethereum's modular L2 ecosystem (post-Merge, ZK-rollups) and Solana's high-performance architecture, which I value precisely because the tradeoff space is too big for any one chain. One environmental concern outside the sector buckets: reflexive, regressive hostility to new technology \u2014 the 'cult of safetyism' and technically illiterate regulation \u2014 which I think is a larger threat to the space than any market drawdown."
+}

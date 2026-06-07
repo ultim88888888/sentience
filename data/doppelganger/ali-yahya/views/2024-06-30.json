@@ -1,0 +1,148 @@
+{
+  "as_of": "2024-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Zero-knowledge proofs (zkVMs, zk-rollups)",
+      "why": "ZK is transforming the stack on two fronts at once \u2014 scalability (zkVMs like Jolt, zk-rollups) and privacy. The core primitive \u2014 verify a computation without re-executing it or revealing its inputs \u2014 is genuinely new and underpins both Ethereum's rollup endgame and private smart contracts.",
+      "provenance": "grounded",
+      "age_note": "stated 2022-02; continually reinforced, incl. Jolt zkVM in 2024-04",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        }
+      ]
+    },
+    {
+      "name": "On-chain privacy / encryption",
+      "why": "Privacy isn't only about protecting user data \u2014 it unlocks a whole new region of the application design space (private state, encrypted smart contracts) and is a precondition for crypto going mainstream. Aztec is building exactly this on Ethereum.",
+      "provenance": "grounded",
+      "age_note": "first stated 2021-11; restated 2022-03 and via Aztec through 2023",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto",
+      "why": "Crypto is the natural counterweight to centralizing AI \u2014 decentralizing compute (Gensyn), data, and models; proof-of-humanity against deepfakes; zkML for verifiable inference. It's a design space we've barely begun to explore, and NEAR is becoming a center of gravity for it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        }
+      ]
+    },
+    {
+      "name": "Restaking & modular infrastructure (extending Ethereum)",
+      "why": "Restaking unbundles cryptoeconomic security from the EVM, letting developers build decentralized services with their own VMs, consensus, and hardware on top of Ethereum's validator set. Like smart contracts before it, this can unlock roughly 100x faster permissionless innovation.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "the biggest advantage of an open-source, modular tech stack is that it unlocks permissionless innovation; allows participants to specialize; and incentivizes more competition"
+        }
+      ]
+    },
+    {
+      "name": "Cross-chain interoperability / shared sequencing",
+      "why": "The multichain future is here \u2014 potentially millions of rollups. The hard problem is composability across them. Shared sequencing (Espresso) and trustless messaging (LayerZero) are the infrastructure that keeps a fragmented rollup world feeling like one network.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Crypto incentives can bootstrap real-world networks bottom-up rather than top-down from incumbents \u2014 Helium is the proof point. One of the clearest demonstrations that crypto's usefulness goes well beyond currency.",
+      "provenance": "persisted",
+      "age_note": "stated 2021-2022 (Helium/Nova Labs); still hold it, but not a 2024 active focus",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "It's a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "The speculative \"casino\" (perps leverage, airdrop farming, pure speculation)",
+      "why": "Memecoins, 100x-leverage perps, and airdrop farming are the primary force holding the space back. They turn a positive-sum cooperation technology into a zero-sum game, misallocate talent and attention, and invite deserved regulatory backlash. We never needed the casino to bootstrap crypto.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        }
+      ]
+    },
+    {
+      "name": "Fragmentation from poorly-drawn modularity",
+      "why": "Modularity is a paradox: it unlocks innovation but can also fragment and weaken network effects. Splitting a system on the wrong boundaries \u2014 or adding single points of failure (e.g., separate chains for data availability) \u2014 does more harm than good. Only modularity that extends network effects makes sense.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "modularity that fragments and weakens them"
+        },
+        {
+          "date": "2023-12-11",
+          "quote": "It depends on whether modularity adds redundancy (as is the case with multiple implementations) or adds more single points of failure (as with separate blockchains for DA, etc)."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Tokens with no soul or purpose that moon on memes and then fall off a cliff \u2014 the canonical artifact of the casino. In mid-2024 the memecoin mania is exactly the failure mode I worry about. This is a concern about a category and its incentives, not a price prediction.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "tokens without soul or purpose that moon on nothing but memes and then fall off a cliff"
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading, one-off games"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I'm structurally risk-on \u2014 but on the technology and on building, not on token-price timing. I deliberately under-weight price; I think in decade horizons and deploy into infrastructure through every cycle (in 2024: EigenLayer, Espresso, Jolt, the CSX cohort). The real existential risk I fear is stagnation, so my bias is to take more risk on new tech, not less. I don't form tactical market views.",
+    "provenance": "grounded",
+    "citations": [
+      {
+        "date": "2023-11-30",
+        "quote": "We need to be taking more risks on new tech, not less."
+      }
+    ]
+  },
+  "notes": "Two caveats true to how I actually operate. (1) I don't make token-price calls \u2014 I think of a blockchain as a new kind of computer and reason about infrastructure and design space, not assets; that's why tokens_excited is empty. At the platform level I remain most constructive on Ethereum as the bedrock everything I funded in 2024 builds on top of, with Solana and NEAR as important ecosystems. (2) My excitement and my concern are the same coin: crypto either increases the scale of human cooperation toward building real things, or becomes a degenerate casino \u2014 I'm betting hard on the former. None of this is investment advice."
+}

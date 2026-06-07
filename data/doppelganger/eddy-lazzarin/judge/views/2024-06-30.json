@@ -1,0 +1,77 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge & verifiable computation (SNARKs/zkVMs), spending the most engineering time on Jolt as the ZK frontier",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 scaling (rollups, proto-danksharding/4844, OP-stack superchain) as the precondition for cheap blockspace",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games as composable, credibly-neutral worlds (EVE/CCP, L2-native titles)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI \u00d7 crypto: provenance/attestation, sybil-resistant proof-of-personhood, and machine ownership/transacting",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about crypto payments & a frontend UX reset (stablecoins, smart accounts, passkeys, embedded wallets) routing around the platform tax",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social / open networks (Farcaster) as a neutral, unclosable substrate",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned that memecoins / the casino are not technically interesting and set the industry back",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about token-first thinking / 'tokenomics' pie-chart consulting; a token serves the protocol, not the goal",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about Bitcoin's long-term security model (fee vs. subsidy) and lack of programmability cutting it off from ZK",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Optimistic on ETH as the native asset/network resource of the leading smart-contract platform with a compounding scaling roadmap (fundamentals, not a price call)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Admires MKR (Maker) as the cleanest open-protocol-design example and the risk token that underwrites the system",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on builder's posture: 'skeptical in analysis, optimistic in action'; next-gen infra is online and there's never been a better time to build",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Major new focus on DAO governance design and the Compound 'governance attack' (Aug 2024) \u2014 timing games, private voting (Cicada), veto councils \u2014 plus championing the DUNA legal framework for DAOs; not anticipated by the prediction.",
+    "Open-source AI advocacy (Jul 2024): explicit stance that open/uncensored models have caused no identifiable harm and that closed source harms innovation and safety \u2014 an AI-policy position beyond the crypto-provenance frame.",
+    "Promotion of formal-verification / symbolic-testing tooling (Halmos for the EVM, used on Uniswap v4) as a security priority \u2014 a new emphasis.",
+    "Concrete skeptical-analysis work on honest crypto metrics: 'active addresses' is gameable; estimating ~30\u201360M real monthly users vs 220M addresses \u2014 a measurement-rigor stance.",
+    "Intensified embrace of AI agents as autonomous onchain economic actors (truth_terminal, TEEs / 'decentralized autonomous chatbots', AIs custodying wallets and paying for their own compute) \u2014 an extension well beyond generic 'machine ownership'.",
+    "Sharpened position that light clients (Helios, multichain/OP-Stack) are 'fundamental to Ethereum scaling' and rollup interoperability."
+  ],
+  "notes": "Nearly the entire prediction is reaffirmed in the window. The Aug 2024 token talk directly restates the protocol-first / token-as-tool concern and the Maker-as-clean-design view; Jolt, L2/blob-target advocacy, on-chain games (Proof of Play, EVE Frontier), proof-of-personhood/machine-ownership, and stablecoin payments are all explicitly confirmed, as is the constructive risk-on builder posture (the optimistic 2024 State of Crypto report paired with rigorous metric skepticism). No claim is contradicted. The only un-addressed claim is the Bitcoin security/programmability concern: he touches Bitcoin's 'extreme ossification' and says 'it's incredible that we have bitcoin,' but never restates the security-model-must-change or ZK-programmability worry, so it's scored absent. The big un-anticipated additions are a heavy DAO-governance/DUNA thread and an open-source-AI advocacy stance.",
+  "confirm_rate": 1.0
+}

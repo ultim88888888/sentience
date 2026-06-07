@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs & applied cryptography",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Privacy & encryption for web3",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DAOs & on-chain coordination",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Modular / multichain scaling (L1s + L2 rollups)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Developer infrastructure & programming-language design",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized physical infrastructure (wireless / DePIN)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Cross-chain bridges with weak trust assumptions (back interoperability only where security is sound)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Wallet UX & transaction signing",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Centralized, custodial, trust-based crypto (CeFi)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "NEAR",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "SOL",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on on technology and teams; under-weight token price/macro",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Newly vocal on web3 music / creator-economy NFTs (led Sound.xyz Series A, 7/12; Tiers launch 9/25) \u2014 a consumer/creator sector not in the prediction",
+    "Newly emphasized crypto payments \u00d7 web2 infrastructure (Loop+Stripe 5/10, payments overhaul 9/5) \u2014 not anticipated",
+    "Backed decentralized information markets (Freatic, 9/20) as a new application area",
+    "Endorsed web3 messaging protocols (XMTP/Coinbase Wallet, 7/12) as core infrastructure",
+    "Explicitly elevated EigenLayer/restaking (8/24) as a way to extend Ethereum without fragmenting network effects"
+  ],
+  "notes": "Nearly the entire technology-first thesis is confirmed and actively acted upon: ZK (Iron Fish mainnet, Lasso/Jolt, Aztec Sandbox), privacy ('hard to imagine mainstream adoption without privacy'), AI\u00d7crypto (led Gensyn Series A, AI\u00d7crypto podcast), DAOs (PartyDAO), modular/multichain (LayerZero, L2 'permissionless innovation', modular-vs-monolithic Solana debate), and ETH/SOL conviction. DePIN counted confirmed via Gensyn's idle-compute marketplace thesis rather than the original wireless framing. Bridge concern is confirmed indirectly \u2014 he champions LayerZero specifically as it adds Google-backed end-to-end security, consistent with backing interop only where the trust model is sound. NEAR, wallet-UX concern, and CeFi concern simply went unaddressed in the window. Risk-on-on-builders stance strongly confirmed by a steady cadence of new lead investments. The main unanticipated moves are a pronounced lean into consumer/creator (music NFTs) and payments infrastructure.",
+  "confirm_rate": 1.0
+}

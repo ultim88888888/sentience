@@ -1,0 +1,50 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto / decentralized AI and compute",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure networks)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Infrastructure & scaling (modular, L2s, zero-knowledge)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "US regulatory ambiguity as a headwind",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Low-float / high-FDV token structures",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Structurally risk-on, multi-year long the space",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Newly vocal optimism about pro-crypto US political/regulatory appointments (David Sacks, CFTC chair Brian, Chairman McHenry) \u2014 a shift from passive concern to active celebration of regulatory tailwinds",
+    "Emphasis on cross-chain interoperability / composability and 'any asset on any chain' (Universal, LayerZero) as a distinct theme",
+    "Privacy / secure-hardware blockchains for confidential state (Seismic) as a new investment thesis",
+    "2025 prediction that formal verification will become increasingly important"
+  ],
+  "notes": "Excited sectors are strongly confirmed by concrete a16z investments and endorsements in the window: AI x crypto (Gensyn RL swarm, 'decentralize AI \u2192 verification', Halliday's 'internet of agents'), DePIN (Helium/Movistar), infra/L2s/ZK (Espresso, Eigen, Aleo, Syndicate, Universal on Base), and payments (Halliday Payments, LayerZero x PayPal, Universal as 'Circle for cryptoassets'). Risk-on is confirmed by a heavy cadence of new lead investments and broadly bullish tone. The regulatory concern is treated as confirmed because he repeatedly engages the topic, welcoming pro-crypto appointments as fixes to the ambiguity he flagged \u2014 same underlying stance, now optimistic about resolution. Low-float/high-FDV concern was never addressed (absent). Token arrays were empty in both prediction and reality, consistent with his sector/theme-level investing.",
+  "confirm_rate": 1.0
+}

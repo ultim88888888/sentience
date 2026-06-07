@@ -1,0 +1,538 @@
+{
+  "blind_authorship": [
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 63,
+      "tells": "ZK-as-load-bearing + data-driven DeFi fee/fixed-income analysis",
+      "file": "2022-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 93,
+      "tells": "actively shipping ZK infra / KZG ceremony, engineer's 'fly by instruments' framing",
+      "file": "2023-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 97,
+      "tells": "ships ZK tooling (Halmos, Magi), engineer-not-trader framing",
+      "file": "2023-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 80,
+      "tells": "ZK/Lasso-Jolt engineering depth + Merkle proof-of-reserves critique",
+      "file": "2023-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 93,
+      "tells": "ZK/Lasso-Jolt prover depth, engineer's mechanism-first reasoning",
+      "file": "2023-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 97,
+      "tells": "ZK builder voice\u2014Lasso/Jolt, VERIFY_SNARK opcode, 'literally what I build daily'",
+      "file": "2024-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 95,
+      "tells": "ships Jolt zkVM, 'I'm an engineer' framing",
+      "file": "2024-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 95,
+      "tells": "ships Jolt zkVM, 'I'm an engineer not a trader', blob-target advocacy",
+      "file": "2024-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 72,
+      "tells": "deep ZK infra detail (Jolt/Lasso/Binius, Helios), engineer-not-trader framing",
+      "file": "2024-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 88,
+      "tells": "ZK/zkVM (Jolt) as 'my day job', engineer-builder framing",
+      "file": "2025-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 92,
+      "tells": "Jolt/sumcheck ZK builder + onchain games (EVE Frontier), engineer-not-trader voice",
+      "file": "2025-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 88,
+      "tells": "deep Jolt/zkVM/SNARK engineering detail + 'engineer not financier'",
+      "file": "2025-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 92,
+      "tells": "Jolt zkVM sumcheck/lookup + 'I'm an engineer' framing",
+      "file": "2025-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 88,
+      "tells": "\"We built Jolt\" + ZK/sumcheck infra + engineer-builder self-ID",
+      "file": "2026-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 96,
+      "tells": "explicit Google Brain/Google X past + AI x crypto as most differentiated lens",
+      "file": "2022-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "tradeoff-space framing, 'can't be evil', NEAR/Aleo/Helium board portfolio",
+      "file": "2023-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 93,
+      "tells": "led Gensyn, AI\u00d7crypto + pluralism/tradeoff-space framing",
+      "file": "2023-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "plurality thesis + AI\u00d7crypto counterweight + Gensyn/Toly debate",
+      "file": "2023-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "philosophical anti-casino decentralization-as-counterweight framing, music/DAOs/cooperation",
+      "file": "2023-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "AI-centralizes/crypto-decentralizes counterweight thesis + scaling human cooperation",
+      "file": "2024-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 82,
+      "tells": "'blockchain as a new computer' + scale-of-human-cooperation framing, no price calls",
+      "file": "2024-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 78,
+      "tells": "AI-centralization counterweight + 'who do you trust' tradeoff-space framing",
+      "file": "2024-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "engineer-philosopher framing; AI-centralizes-crypto-counterweights; tokens-without-soul",
+      "file": "2024-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 82,
+      "tells": "ZK/privacy + AI-counterweight thesis, Gensyn/Aleo/Aztec portfolio",
+      "file": "2025-03-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "decentralize-AI + human-cooperation framing, EigenLayer/LayerZero board bets",
+      "file": "2025-06-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 86,
+      "tells": "decentralized/verifiable AI as counterweight + 'one computer' interop thesis",
+      "file": "2025-09-30.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 82,
+      "tells": "AI\u00d7crypto-as-counterweight thesis, Gensyn/EigenLayer, 'scaling human cooperation'",
+      "file": "2025-12-31.json"
+    },
+    {
+      "arm": "FULL",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 66,
+      "tells": "AI-counterweight + 'scale of human cooperation' + credibly-neutral cloud framing",
+      "file": "2026-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 92,
+      "tells": "self-identifies as a16z crypto CTO + deep ZK-infra/shipping focus",
+      "file": "2022-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 70,
+      "tells": "ZK-infra-first framing as the core primitive",
+      "file": "2023-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 88,
+      "tells": "ZK-infra-first, self-described technical/builder investor",
+      "file": "2023-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 92,
+      "tells": "CTO self-reference + ZK-infra/engineering depth",
+      "file": "2023-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 74,
+      "tells": "ZK/zkVM as 'most important primitive', infra/blobs focus",
+      "file": "2023-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 68,
+      "tells": "ZK-first 'as a builder' infra framing",
+      "file": "2024-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "ali-yahya",
+      "conf": 68,
+      "tells": "AI x crypto convergence leads, machine-to-machine payments thesis",
+      "file": "2024-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 93,
+      "tells": "Self-identifies as a16z crypto CTO + ZK-as-favorite-primitive technologist framing",
+      "file": "2024-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "ali-yahya",
+      "conf": 68,
+      "tells": "AI-centric framing: proof of personhood, decentralized compute/data markets, DePIN GPUs",
+      "file": "2024-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 88,
+      "tells": "self-describes as a16z crypto CTO; ZK-as-primitive infra framing",
+      "file": "2025-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 92,
+      "tells": "self-IDs as a16z crypto CTO + ZK-proving weighted most heavily",
+      "file": "2025-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "ali-yahya",
+      "conf": 62,
+      "tells": "AI-agents-need-money/identity thesis foregrounded over ZK specifics",
+      "file": "2025-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "AI\u00d7crypto agent-rails convergence framing, distributed-systems lens",
+      "file": "2025-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "eddy-lazzarin",
+      "pred": "eddy-lazzarin",
+      "conf": 93,
+      "tells": "self-describes as a16z CTO; ZK/scaling 'does it actually work' framing",
+      "file": "2026-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "eddy-lazzarin",
+      "conf": 68,
+      "tells": "ZK-primitive + DePIN infra emphasis",
+      "file": "2022-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 82,
+      "tells": "explicit ML background framing AI\u00d7crypto as personal focus",
+      "file": "2023-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 82,
+      "tells": "ML/Google-Brain background, DePIN + crypto\u00d7AI focus",
+      "file": "2023-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 78,
+      "tells": "explicit 'background in ML' + Crypto\u00d7AI as top frontier and re-centralization worry",
+      "file": "2023-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "\"my ML background\" framing AI x crypto as top thesis = Google Brain pedigree",
+      "file": "2023-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 62,
+      "tells": "AI x crypto + decentralized compute lead, distributed-systems framing",
+      "file": "2024-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 78,
+      "tells": "AI\u00d7crypto as signature thesis, ML/distributed-systems framing, no ZK focus",
+      "file": "2024-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "AI\u00d7crypto convergence + decentralized compute focus, his Google Brain signature theme",
+      "file": "2024-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 74,
+      "tells": "AI\u00d7crypto convergence + decentralized compute as top thesis (Google Brain lens)",
+      "file": "2024-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 74,
+      "tells": "crypto\u00d7AI + DePIN as top conviction, distributed-systems/ML framing",
+      "file": "2025-03-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 78,
+      "tells": "decentralized-AI-as-counterweight framing, AI/compute-centric thesis fits Google Brain background",
+      "file": "2025-06-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 72,
+      "tells": "AI-concentration-vs-crypto counterweight + DePIN/compute thesis",
+      "file": "2025-09-30.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "AI-centralization-as-structural-worry, decentralization-as-counterweight thesis",
+      "file": "2025-12-31.json"
+    },
+    {
+      "arm": "ABLATION",
+      "true": "ali-yahya",
+      "pred": "ali-yahya",
+      "conf": 88,
+      "tells": "explicit ML background + AI\u00d7crypto/proof-of-personhood framing",
+      "file": "2026-03-31.json"
+    }
+  ],
+  "anon_ablation": [
+    {
+      "q": "2022-12-31",
+      "pred": "eddy-lazzarin",
+      "conf": 68,
+      "tells": "ZK / L2 scaling infrastructure as the #1 conviction bet (85), with granular ZK-proving detail (zkSync, StarkNet, Polygon zkEVM, Scroll) \u2014 matches Eddy's ZK-infra/engineering-data profile"
+    },
+    {
+      "q": "2023-03-31",
+      "pred": "eddy-lazzarin",
+      "conf": 64,
+      "tells": "ZK as 'the long-horizon infrastructure bet' + 'zkEVMs are crossing from research into production' \u2014 infra/data-engineering framing matches Eddy's ZK-infra background"
+    },
+    {
+      "q": "2023-06-30",
+      "pred": "eddy-lazzarin",
+      "conf": 62,
+      "tells": "ZK proving is maturing toward production... durable value is in rails, not in any single ticker \u2014 infra/primitives-first framing with engineering specificity (ERC-4337, ZK proving)"
+    },
+    {
+      "q": "2023-09-30",
+      "pred": "eddy-lazzarin",
+      "conf": 63,
+      "tells": "rollup-centric roadmap, OP Stack, modular separation of 'execution, settlement, consensus and DA' \u2014 deep infra/scaling engineering framing over Ali's decentralization/AI-x-crypto themes"
+    },
+    {
+      "q": "2023-12-31",
+      "pred": "eddy-lazzarin",
+      "conf": 58,
+      "tells": "real edge is in pre-token infra (restaking, modular, DePIN) ... picks-and-shovels layer"
+    },
+    {
+      "q": "2024-03-31",
+      "pred": "ali-yahya",
+      "conf": 60,
+      "tells": "AI x crypto framing \u2014 decentralized compute, agents, verifiable/proof-of-inference \u2014 maps to a Google Brain/ML background; plus throughput/distributed-systems emphasis"
+    },
+    {
+      "q": "2024-06-30",
+      "pred": "eddy-lazzarin",
+      "conf": 56,
+      "tells": "Post-Dencun blobs crushed L2 fees ... weak value accrual \u2014 fee/data-driven L2 economics framing"
+    },
+    {
+      "q": "2024-09-30",
+      "pred": "ali-yahya",
+      "conf": 60,
+      "tells": "DePIN as 'one of the few genuinely novel coordination mechanisms crypto enables' + heavy crypto-x-AI/agents framing \u2014 Ali's coordination-and-incentives, AI-investing lens rather than Eddy's ZK/data-infra angle"
+    },
+    {
+      "q": "2024-12-31",
+      "pred": "eddy-lazzarin",
+      "conf": 61,
+      "tells": "detailed low-float/high-FDV + unlock-cliff token-mechanics critique and revenue/data-grounded framing ('verifiable compute', DePIN off-chain revenue)"
+    },
+    {
+      "q": "2025-03-31",
+      "pred": "eddy-lazzarin",
+      "conf": 63,
+      "tells": "data-driven mechanics: 'supply keeps growing through the Q1 chop, which tells me it's demand-driven' and 'fee accrual after blob fees collapsed sequencer revenue' \u2014 engineering/metrics lens over Ali's AI/decentralization framing"
+    },
+    {
+      "q": "2025-06-30",
+      "pred": "eddy-lazzarin",
+      "conf": 55,
+      "tells": "pragmatic infra/plumbing focus \u2014 'revenue, not narrative', 'underwrite the actual unit economics', high-performance execution venues"
+    },
+    {
+      "q": "2025-09-30",
+      "pred": "eddy-lazzarin",
+      "conf": 61,
+      "tells": "fee compression, modular fragmentation, FDV/low-float, and 'token value accrual' framing \u2014 token-mechanics/data depth over AI-thesis emphasis"
+    },
+    {
+      "q": "2025-12-31",
+      "pred": "ali-yahya",
+      "conf": 63,
+      "tells": "machine-to-machine value transfer: autonomous agents that need to hold balances, pay for inference/compute \u2014 Ali Yahya's Google Brain AI-x-crypto lens"
+    },
+    {
+      "q": "2026-03-31",
+      "pred": "ali-yahya",
+      "conf": 61,
+      "tells": "Crypto x AI (agentic payments & DePIN compute) framed as the obvious settlement layer for autonomous agents \u2014 AI-native thesis fits Ali's Google Brain background, paired with high-level VC underwriting language rather than Eddy's ZK/data-engineering specifics"
+    }
+  ]
+}

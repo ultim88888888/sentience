@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "claim": "AI \u00d7 crypto convergence \u2014 crypto as the trust/verification/coordination layer for AI (decentralized compute, verification, agent payments)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & crypto payment rails",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern about pure memecoin speculation as zero-sum/extractive",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern about AI-agent token froth running ahead of products",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Solana (SOL) as thesis-fit high-throughput L1",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on, builder/infrastructure-focused stance through cycles",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Strong new emphasis on privacy / encrypted-state blockchains (Seismic, Aztec, Aleo) as a major theme \u2014 not anticipated in the prediction",
+    "Specific large token investments newly disclosed: $55M in LayerZero (ZRO), $70M in EIGEN, plus EigenLayer/restaking enthusiasm",
+    "Cross-chain interoperability / asset-wrapping (Universal, 'Circle for cryptoassets') as a focus area",
+    "Enthusiasm for the new US regulatory regime (celebrating CFTC chair nominations \u2014 Brian Quintenz, Patrick McHenry) \u2014 concrete pro-regulatory-tailwind stances",
+    "Developer-experience / smart-contract abstraction tooling (Halliday Workflow Protocol) as a backed thesis"
+  ],
+  "notes": "The prediction's excited sectors (AI\u00d7crypto, DePIN, payments) and risk-on builder stance map cleanly onto the window: heavy decentralized-AI/verification content (Gensyn RL swarm, EigenCloud, Seismic, 'decentralize AI \u2192 need verification'), Helium DePIN milestones, and Halliday Payments rails, plus multiple large infrastructure token investments confirming risk-on. Solana confirmed via hosting Toly, the Solana podcast, and SolanaConf. Both 'concerned' claims are absent \u2014 he never expressed any negative stance on memecoins or AI-agent token froth in the window. The largest unanticipated theme is privacy/ZK blockchains, which recurs repeatedly but wasn't in the prediction.",
+  "confirm_rate": 1.0
+}

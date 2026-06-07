@@ -1,0 +1,55 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about Crypto \u00d7 AI as the most important frontier (decentralized compute/data markets, verifiable inference, agents)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge proofs graduating to production (validity rollups, verifiable computation, proving cost curves)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized/modular infrastructure (L2s, rollups, DA, modular thesis)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DeFi as crypto's clearest product-market fit",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (token-bootstrapped physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about US regulatory environment / regulation-by-enforcement pushing builders offshore",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about re-centralization of crypto (centralized sequencers, custodial front-ends, governance theater)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on as a builder's/long-horizon investor's stance, focused on fundamentals not near-term price",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Launched a sustained, explicit anti-'degen casino' crusade (Dec 2023) \u2014 denouncing 100x leverage, memecoins, airdrop farming, MEV, day-trading as the primary force holding the space back; not anticipated as an active campaigning stance",
+    "Newly prominent enthusiasm for restaking / cryptoeconomic security via EigenLayer (led Series B)",
+    "Newly prominent enthusiasm for shared sequencing / cross-chain interoperability (Espresso Series B, LayerZero v2 praise) as a specific solution to rollup fragmentation",
+    "Framed an explicit 'innovation vs. stagnation/safetyism' existential-risk thesis as a core motivating theme"
+  ],
+  "notes": "Nearly all sector-level and risk claims were directly confirmed, often in Ali Yahya's own bylined a16z 'big ideas' entries (modular tech stack, AI + blockchains) and investment announcements (EigenLayer, Espresso). Regulatory concern confirmed via the Dec 15 'technically illiterate bureaucrats' post; re-centralization concern confirmed via decentralization advocacy and praise for decoupling security from centralized relayers/sequencers. DePIN is named only in a neutral category list with no expressed stance, so marked absent. No tokens were predicted and none were specifically endorsed, so no token claims. The biggest unanticipated development is the intensity of his anti-speculation campaign, which is consistent with (but stronger than) the predicted builder's risk-on framing.",
+  "confirm_rate": 1.0
+}

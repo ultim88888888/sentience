@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "claim": "Privacy / private smart contracts is the highest-conviction theme and crypto's most important moat",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & onchain payments have the clearest product-market fit",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto (decentralized compute, verifiable AI, AI agents as economic actors)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Open, modular crypto infrastructure \u2014 interoperability, composability, credible neutrality (& restaking)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern about undifferentiated general-purpose 'high-performance' L1s where performance alone isn't enough",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH as a network token capturing protocol fees",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "SOL / Solana ecosystem",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "EIGEN / restaking",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "ZRO / LayerZero omnichain interoperability",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "ALEO / privacy-focused chains",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern about memecoins / soulless speculation tokens; favor building over zero-sum speculation",
+      "axis": "tokens_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: long-term conviction, best environment ever (regulatory clarity, $1T+ stablecoin volume, infra ready)",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Heavy new emphasis on 'credible neutrality' as the fundamental purpose of blockchains (multiple late-May replies) \u2014 building decentralization for shared infrastructure mutually distrustful parties can trust, not for its own sake",
+    "Announced/closed a $2.2B Crypto Fund 5 and framed near-all-time-low sentiment vs all-time-high fundamentals as the moment to lean in",
+    "New $75M investment in the ARC token (Circle's Arc institutional chain) \u2014 a specific stablecoin-infrastructure / configurable-privacy bet not in the prediction",
+    "Newly highlighted onchain capital markets: prediction markets, perpetual futures, onchain lending/credit, and tokenized real-world assets",
+    "Emphasis on institutional adoption and pragmatic, non-ideological founders ('collared shirt era') replacing cypherpunk roots",
+    "Strong support for specific US legislation (CLARITY Act, GENIUS Act) as the regulatory-clarity unlock",
+    "Cited Jolt / zero-knowledge proving breakthroughs and Jevons paradox framing for blockspace demand"
+  ],
+  "notes": "Window statements (Apr\u2013Jun 2026) strongly reaffirm his core theses \u2014 privacy as the only moat (explicitly framed as private money + programmable private computation), stablecoins/payments, AI\u00d7crypto including AI agents, and risk-on long-term conviction (Fund 5, 'it's time to build'). Token-specific calls (ETH, EIGEN, ZRO, ALEO) and the explicit anti-undifferentiated-L1 concern were not revisited by name, hence absent; SOL is confirmed via his Solana/Consensus enthusiasm and the memecoin/anti-speculation stance is confirmed at the stance level ('pendulum swung too far,' fundamentals over hype). No contradictions found.",
+  "confirm_rate": 1.0
+}

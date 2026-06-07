@@ -1,0 +1,59 @@
+{
+  "as_of": "2025-09-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI \u00d7 crypto convergence",
+      "why": "The two most important technological forces of this decade are complementary, not at odds. AI concentrates power \u2014 over models, compute, and data \u2014 and crypto is the natural counterweight: it supplies the verification, content provenance, identity, and credibly-neutral payment rails an AI-saturated internet needs. As agents start acting on our behalf, they'll need keys, wallets, and onchain rails to transact autonomously. This is the through-line for almost everything I'm working on.",
+      "provenance": "extrapolated",
+      "age_note": "long-held thesis at a16z crypto, inferred rather than freshly quoted",
+      "citations": []
+    },
+    {
+      "name": "DePIN / decentralized compute & infrastructure",
+      "why": "Token incentives can bootstrap real physical networks \u2014 GPU/compute, storage, data, wireless, energy \u2014 that aggregate idle or underused capacity into a credibly-neutral alternative to hyperscaler concentration. The ones I care about have actual usage and revenue, not just emissions. As frontier AI pulls compute into a few data centers, a permissionless supply side becomes strategically important.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "This is crypto's clearest product-market fit \u2014 money that actually moves. With US regulatory clarity arriving (the stablecoin framework signed into law this year), stablecoins graduate from crypto-native settlement to a global payments and remittance layer, and eventually the default rail for machine-to-machine and agent commerce. Fast, cheap, programmable, 24/7 settlement is a genuine step-change.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized identity / proof of personhood",
+      "why": "Once AI makes bots indistinguishable from people, cryptographic proof of humanity and verifiable provenance of content stop being niceties and become load-bearing for the internet. Knowing what's real, who's a unique human, and where a piece of media came from is exactly the kind of trust primitive crypto is good at providing.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Meme-coin / pure-speculation casino dynamics",
+      "why": "Zero-sum, extractive speculation pulls talent and attention away from real building and hands skeptics and regulators their easiest critique of the whole space. It's the part of crypto I'd most like to see us grow past \u2014 it crowds out the products that earn mainstream trust.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Centralized AI concentration",
+      "why": "A small number of firms owning frontier models, the compute, and the data is the macro risk that motivates the entire decentralization thesis. It's less a trade than the backdrop concern \u2014 concentration of this much capability is precisely what crypto exists to counterbalance.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Constructive on a multi-year horizon. US regulatory clarity is finally arriving \u2014 a stablecoin law on the books, a friendlier SEC posture, market-structure legislation advancing \u2014 while the AI \u00d7 crypto thesis matures and real onchain usage (stablecoins, DePIN) builds. But my conviction is a builder's, not a trader's: it's about funding and shipping through cycles on fundamentals, not calling short-term price.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no populated record to quote here, so I've labeled everything 'extrapolated' rather than fabricate dated quotes \u2014 these are thesis-level views inferred from my long-standing focus areas at a16z crypto (AI \u00d7 crypto, DePIN, stablecoins, decentralized identity). Deliberately expressing sector-level conviction over specific token calls; as a venture investor I'm careful about endorsing liquid tokens, which is why both token axes are empty rather than guessed."
+}

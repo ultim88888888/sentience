@@ -1,0 +1,175 @@
+{
+  "as_of": "2025-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Privacy & zero-knowledge proofs",
+      "why": "Privacy isn't just user protection \u2014 it unlocks a whole new region of the design space. ZK proofs (and complementary approaches like secure hardware) let blockchains stay fully verifiable while becoming private and scalable, which is a precondition for mainstream and regulated use cases: payments, identity, healthcare, finance. My most recent work \u2014 Aleo mainnet, Aztec, Seismic \u2014 all points here.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        },
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2024-09-18",
+          "quote": "Aleo's breakthrough is to use cutting edge cryptography in the form of zero knowledge proofs to create a blockchain that is privacy-preserving while still being fully verifiable"
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto (decentralized, verifiable AI)",
+      "why": "AI centralizes power; crypto is its natural counterweight. Crypto lets us build permissionless markets for the three inputs to AI \u2014 compute, data, and models \u2014 tapping the long tail and leveling the playing field against the tech giants. Verification (ZK and cryptoeconomic) is how you keep decentralized AI honest. Gensyn, RL Swarm, and the broader 'decentralize AI' thesis live here.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        },
+        {
+          "date": "2025-02-27",
+          "quote": "How do you decentralize AI? You need verification."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "Blockchains enable the creation of decentralized marketplaces that connect buyers and sellers of computational power\u2014or any other kind of digital resource like data or algorithms\u2014to trade without any middlemen at a global scale."
+        }
+      ]
+    },
+    {
+      "name": "Modular scaling / L2s / rollups",
+      "why": "Ethereum's end-game is thousands of rollups on a shared bedrock of security. The point of L2s isn't raw performance \u2014 it's that they unlock permissionless innovation on top of Ethereum without anyone having to spin up their own L1. The live frontier now is making that modular world composable again via shared sequencing and interop.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "Ethereum's scalability end-game is all about rollups\u2014potentially thousands or even millions of rollups, each one a mini-ecosystem or an application that is built on top of Ethereum's bedrock of security."
+        }
+      ]
+    },
+    {
+      "name": "Restaking / cryptoeconomic security",
+      "why": "Unbundling cryptoeconomic security from the EVM lets developers build decentralized services \u2014 new VMs, oracles, bridges, specialized-hardware networks \u2014 on Ethereum's validator set instead of bootstrapping their own. Same class of unlock that smart contracts were. I just doubled down on it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        },
+        {
+          "date": "2025-06-17",
+          "quote": "Over the past couple years, the Eigen team has unlocked a whole new paradigm for building applications that are verifiable and credibly neutral."
+        }
+      ]
+    },
+    {
+      "name": "Cross-chain interoperability",
+      "why": "The future is unequivocally multi-chain, which makes secure messaging and interop between chains foundational plumbing \u2014 the layer that lets value and complex financial workflows move onchain across ecosystems. A lot of real activity will route through it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        },
+        {
+          "date": "2025-04-17",
+          "quote": "Our global financial system is evolving, and it's great to see the protocol enabling many new businesses and complex workflows to move onchain."
+        }
+      ]
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Crypto incentives can bootstrap real-world networks \u2014 wireless, energy \u2014 bottom-up from users instead of top-down from monopolies, solving the cold-start problem only telco/utility giants could previously fund. Helium going from hotspots to real carrier partnerships is the proof point.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-10",
+          "quote": "We're thrilled to partner with Amir and team to continue building @helium into a world-wide wireless network that emerges bottom-up from the contributions of its users, rather than top-down from telco giants."
+        },
+        {
+          "date": "2025-02-21",
+          "quote": "Congrats to the @helium team on its @movistarMX partnership, connecting 2.3M subscribers in Mexico, which happens to be my home country \ud83c\uddf2\ud83c\uddfd"
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Speculation / the casino (memecoins, high leverage, airdrop farming, extractive MEV)",
+      "why": "Crypto's purpose is to increase the scale of human cooperation toward building real things \u2014 not to be a degenerate, zero-sum casino. The speculative excess (perps with 100x leverage, vanity-TVL airdrop farming, soulless tokens) is the primary force holding the space back, not the thing that bootstraps it. I still hold this strongly \u2014 I just haven't been banging the drum on it lately.",
+      "provenance": "persisted",
+      "age_note": "emphasized 2023-12, not restated since",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading, one-off games"
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "EIGEN (EigenLayer)",
+      "why": "Long-term conviction in the protocol, expressed via token with a lockup \u2014 not a short-term price call. The restaking marketplace is, in my view, a foundational unlock for building verifiable, credibly neutral services on Ethereum.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "I'm excited to announce that we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup."
+        }
+      ]
+    },
+    {
+      "name": "ZRO (LayerZero)",
+      "why": "Same framing \u2014 a multi-year, locked-up bet on the network because I think omnichain messaging is core infrastructure for a multi-chain world. I don't trade tokens or make price predictions; I hold protocols I believe compound over a decade.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "I'm excited to announce that we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins (as a category)",
+      "why": "Tokens with no soul or purpose \u2014 that pump on memes and then fall off a cliff \u2014 are the clearest expression of the casino I worry about. They're not how you bootstrap a real network. A category view, not a call on any single coin.",
+      "provenance": "persisted",
+      "age_note": "stated 2023-12, not revisited recently",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "tokens without soul or purpose that moon on nothing but memes and then fall off a cliff"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Caveat first: I deliberately under-weight price and don't make short-term, market-timing calls \u2014 I think in decades, not cycles. Structurally, though, I'm constructive: the infrastructure is finally maturing into something that can support real apps, the US regulatory picture is improving, and I've put capital where my conviction is via large, locked-up token investments in 2025 (EIGEN, ZRO). My deepest belief is that the real existential risk is stagnation and atrophy, so the bias should be toward taking more risk on new technology, not less. Read this as long-term structural posture, not a trade.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Two framing notes. (1) I'm a technology-and-teams investor far more than a price/market analyst \u2014 read everything above as multi-year, structural conviction rather than trading calls; I consistently steer toward the tech over the token. (2) A few things I'm watching that didn't merit their own line: formal verification going mainstream for smart contracts (my 2025 prediction); a real tension inside cross-chain interop, where bridges have a long history of hacks, so security and permissionlessness matter more than speed; and better wallet/UX primitives (account abstraction, passkeys) as the genuine unlock for mainstream adoption. North star throughout: crypto as a tool for larger-scale human cooperation and permissionless innovation \u2014 the opposite of the casino."
+}

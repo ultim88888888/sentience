@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "Ethereum L2 rollups & blockspace scaling",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs / zkVMs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Onchain UX & account abstraction",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Stablecoins & payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI x crypto (provenance, verifiable identity, proof of personhood)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "US regulatory uncertainty as a drag",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Speculation detached from usage",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Security & exploit risk",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH as the L2 settlement/DA platform bet",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "BTC / spot Bitcoin ETF as market-structure catalyst",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Memecoins / attention-only tokens (wary)",
+      "axis": "tokens_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Constructive / risk_on trajectory",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Heavy emphasis on shipping open-source public-goods infra (Jolt zkVM, Helios light client) that a16z crypto pledges to 'never monetize' \u2014 a builder/strategy stance the prediction didn't anticipate",
+    "Reframed Apple/EU DMA app-store changes (alternative payment processors, browser engines) as a concrete near-term opening for mobile crypto/USDC payments",
+    "Strong, specific endorsement of Worldcoin/World Network proof-of-personhood + sybil resistance as the answer to AI deepfakes (the 'mystery meat' content-provenance scenario)",
+    "Enthusiasm for DUNA, a native legal entity for DAOs",
+    "Active engagement with DeFi/AMM design research (LVR, fixed/variable-rate AMMs, Morpho/DELV) \u2014 a sector the prediction never mentioned",
+    "Endorsement of airdrop sybil-filtering (LayerZero) and PoS slashing-security formalization"
+  ],
+  "notes": "Window covers Jan\u2013Jun 2024. ZK/zkVMs (Jolt), L2 scaling/superchain (Helios, Optimism podcast, 4844 blob data), stablecoins/payments (USDC), and AI x crypto (provenance/proof-of-personhood) are the dominant, repeatedly-confirmed themes. Memecoin wariness and speculation-vs-usage concern are confirmed in force (multiple 4/24 threads). ETH confirmed as a platform bet (not price). DePIN and BTC/spot-ETF are both fully absent \u2014 he never discusses physical-infra token networks, and his only SEC-account mention (1/10) is about phishing/account security, not the ETF as a catalyst. Onchain-UX marked confirmed on the general stance ('UX evolving \u2014 never a better time to build', mobile-crypto-browser interest), but account-abstraction specifics (ERC-4337, embedded wallets, sponsored gas) are absent. Regulatory concern confirmed though he frames it as 'improving' ('ammo to politicized regulators', 'rules need updating'). Security confirmed via Security Alliance / Whitehat Safe Harbor work. risk_on confirmed only at the loose 'constructive-on-trajectory' level the prediction itself used (persistent build-optimism); he makes no explicit macro/market-risk call. No contradictions found.",
+  "confirm_rate": 1.0
+}

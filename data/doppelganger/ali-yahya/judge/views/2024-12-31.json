@@ -1,0 +1,69 @@
+{
+  "claims": [
+    {
+      "claim": "Formal verification for smart contracts will become increasingly important",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Zero-knowledge proofs as the most important building block (scalability + privacy)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI x crypto \u2014 permissionless markets for AI inputs and verification of models/humanity",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Privacy unlocks a new design space and is a precondition for adoption",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized physical infrastructure (DePIN)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Restaking / extending Ethereum (EigenLayer)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Cross-chain interoperability & the modular rollup stack",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about the speculative casino (memecoins, perps, airdrop farming, MEV)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about fragmentation from badly-drawn modularity weakening network effects",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Memecoins as tokens without soul that pump and collapse",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "No view on trading posture / risk regime; focus on tech and builders over price",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "Made specific token-level investments with multi-year lockups (ZRO $55M, EIGEN $70M) \u2014 prediction had empty tokens_excited",
+    "Privacy via secure hardware/TEE (Seismic) rather than the ZK-on-client approach, which he explicitly contrasts as better for composability",
+    "Notable embrace of and engagement with Solana (hosting Anatoly/Toly, SolanaConf, crypto x AI panels) and DeFi composability (Universal, Halliday, Base)"
+  ],
+  "notes": "The window is heavily portfolio-announcement driven (a16z investments), which strongly confirms the long-horizon tech sectors: ZK (Aleo, Aztec), privacy (Seismic, Aztec), AI x crypto (Gensyn, decentralized AI verification), DePIN (Helium), restaking (Eigen/EigenCloud), and interop (LayerZero, Universal). Formal verification, the speculative-casino critique, and the memecoin critique were never addressed in the window. The fragmentation concern is supported indirectly via the Universal thesis (solving cross-chain/asset fragmentation to restore composability). Risk_regime 'no_view' holds \u2014 all activity is tech/builder conviction with explicit not-investment-advice disclaimers and lockups, no market-timing calls. The main unanticipated move is taking concrete token positions despite an intentionally empty tokens_excited bucket.",
+  "confirm_rate": 1.0
+}

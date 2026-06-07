@@ -1,0 +1,154 @@
+{
+  "as_of": "2024-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Formal verification for smart contracts",
+      "why": "Contracts hold billions and can't be hotfixed, yet formal methods have been too complex for most devs. A new wave of tooling with far better DX \u2014 leveraging contracts' architectural simplicity (atomic, deterministic, small memory footprint) and SMT-solver advances \u2014 is making verification practical. I expect the next wave of protocols to be markedly more robust because of it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-12-20",
+          "quote": "2025 prediction: Formal verification will become increasingly important"
+        }
+      ]
+    },
+    {
+      "name": "Zero-knowledge proofs",
+      "why": "ZK is the most important building block in the stack \u2014 it transforms both scalability (rollups, faster zkVMs, the lookup singularity) and privacy (verifiable-yet-confidential computation). Aleo going live this fall is real movement from theory to production.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years"
+        },
+        {
+          "date": "2024-09-18",
+          "quote": "Aleo's breakthrough is to use cutting edge cryptography in the form of zero knowledge proofs to create a blockchain that is privacy-preserving while still being fully verifiable."
+        }
+      ]
+    },
+    {
+      "name": "AI x crypto",
+      "why": "AI centralizes; crypto is its counterweight. Crypto can build permissionless markets for the inputs to AI \u2014 compute (Gensyn), data, models \u2014 tapping the long tail to level the playing field against tech giants. And cryptography (zkML, proof-of-humanity) will be essential to verify models and tell human from machine. We've barely begun to explore this space.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-09-20",
+          "quote": "Crypto and AI are intersecting to create a design space that we've barely begun to explore."
+        }
+      ]
+    },
+    {
+      "name": "Privacy",
+      "why": "Privacy matters not just to protect user data but because it unlocks a whole new region of the design space \u2014 private+compliant payments, identity that proves without leaking, games with hidden information. I think it's a precondition for mainstream adoption on otherwise-transparent chains. Aleo, Iron Fish, Aztec, Nym are building it.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-11-18",
+          "quote": "Privacy is important for web3, not just to protect user data, but because it unlocks a whole new region of the design space"
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "name": "Decentralized physical infrastructure (DePIN)",
+      "why": "Crypto incentives can bootstrap real-world physical networks bottom-up \u2014 wireless (Helium), energy grids and virtual power plants (Daylight). It solves the cold-start/collective-action problem that historically only telco and utility giants could overcome, and it's vivid proof that crypto's usefulness extends far beyond currency.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2021-08-10",
+          "quote": "a wireless network that emerges bottom-up from the contributions of its users, rather than top-down from telco giants."
+        }
+      ]
+    },
+    {
+      "name": "Restaking / extending Ethereum (EigenLayer)",
+      "why": "Unbundling cryptoeconomic security from the EVM lets developers build decentralized services \u2014 new VMs, oracles, bridges, specialized-hardware networks \u2014 on top of Ethereum's validator set without spinning up their own L1. I think it unlocks a step-change in innovation the way smart contracts did at the app layer.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges, and networks with specialized hardware"
+        }
+      ]
+    },
+    {
+      "name": "Cross-chain interoperability & the modular rollup stack",
+      "why": "The multichain future is here; the open problem is composability across thousands of rollups without fragmenting Ethereum's network effects. Shared sequencing (Espresso, now on mainnet) and generalized messaging (LayerZero) are the coordination layers that keep a modular ecosystem feeling unified. The kind of modularity that strengthens network effects is the kind that wins.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        }
+      ]
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "The speculative casino (memecoins, high-leverage perps, airdrop farming, MEV extraction)",
+      "why": "The degen casino is the primary force holding the space back. It turns positive-sum cooperation into zero-sum extraction and distracts from building durable, soulful incentive structures. I don't buy the 'we need the casino to bootstrap' argument \u2014 we need functioning markets and ways to fund new networks, not 100x leverage and vanity-TVL games.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Or, you can use it to build a degenerate casino of meaningless speculation that turns everything into a zero sum game."
+        },
+        {
+          "date": "2023-12-08",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading"
+        }
+      ]
+    },
+    {
+      "name": "Fragmentation from badly-drawn modularity",
+      "why": "Modularity is a paradox: it unlocks permissionless innovation but introduces constraints, and modularity that fragments and weakens network effects almost never makes sense. As the stack splits into more L2s, DA layers, and sequencers, the risk is dividing lines drawn in the wrong places that add single points of failure rather than redundancy. Standards have network effects, but standards are not networks.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "modularity that fragments and weakens them"
+        },
+        {
+          "date": "2023-12-16",
+          "quote": "It unlocks innovation AND introduces constraints."
+        }
+      ]
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [
+    {
+      "name": "Memecoins",
+      "why": "Tokens without soul or purpose that pump on memes alone and then collapse. They embody the speculation-over-substance failure mode I think is holding crypto back. This is a critique of the category, not investment advice.",
+      "provenance": "grounded",
+      "age_note": "",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "tokens without soul or purpose that moon on nothing but memes and then fall off a cliff."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "why": "I deliberately under-attend to price and market-timing; I steer toward technology, builders, and long-term incentive design over token value and cycles. Structurally I'm radically optimistic about the tech over a decade-plus horizon \u2014 it feels like the early innings and only the beginning \u2014 but that's conviction in what's being built, not a tactical risk-on/risk-off call. So on trading posture: no view.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I'm an engineer-philosopher and a long-horizon builder-investor, not a trader \u2014 my views are about which technologies expand the design space, not about token prices. Token buckets are intentionally near-empty: excited about sectors with no specific token call is a complete answer for me. The throughline across everything I'm excited about (ZK, privacy, AI x crypto, DePIN, restaking, interop, formal verification) is that the tradeoff space is too large for any single chain, and the work that matters is going layer-by-layer to make crypto trustworthy and usable enough to take mainstream."
+}

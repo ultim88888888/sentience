@@ -9,3 +9,6 @@ data/study/
 # LinkedIn scraped profile data (personal data — do not commit)
 data/linkedin/
 .venv
+
+# Transient walk-forward run logs
+logs_run_full.txt

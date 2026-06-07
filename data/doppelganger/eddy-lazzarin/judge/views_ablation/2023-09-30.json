@@ -1,0 +1,66 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs / ZK infrastructure (zkEVMs, succinct verifiability)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Account abstraction / smart wallets (ERC-4337, programmable accounts, social recovery)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Layer 2 / modular scaling (rollups)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social / user-owned identity",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI x crypto (provenance & proof-of-personhood)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "US regulation-by-enforcement as biggest risk to competitiveness",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "L2 centralization / sequencer & bridge risk",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Speculation over utility (meme / SocialFi froth) burns trust and distracts builders",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH as the settlement/security base asset",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral risk regime: cautious on price beta, constructive on fundamentals, build through cycles",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Heavy, sustained emphasis on AI-content provenance + proof-of-personhood as the central thesis, repeatedly endorsing Worldcoin/World ID as the sybil-resistance solution (more specific and intense than the prediction's general framing)",
+    "New emphasis on formal verification / smart-contract security tooling (Halmos symbolic tests, Security Alliance, Whitehat Safe Harbor Agreement) \u2014 not anticipated by the prediction",
+    "New applied focus on crypto/stablecoin payments (USDC) as a wedge against Apple/Google App Store fees, plus mobile crypto wallets/browsers and EU DMA implications",
+    "Framing 'compute' / high-quality block space as the primary binding constraint on crypto apps (UX, onchain games, graph data structures, complex markets)",
+    "Active engagement with DAO legal-entity primitives (DUNA) and on-chain gaming (Primodium, EVE), which the prediction only flagged as lower-conviction watch items"
+  ],
+  "notes": "All five excitement sectors are confirmed, most strongly by Eddy's own authored a16z 'big ideas' entry on smart accounts/passkeys/MPC/embedded wallets (account abstraction) and by repeated ZK work (Jolt, SNARKs-on-ARM, Naysayer proofs, FDE) and AI-provenance posts. L2/modular confirmed via Helios light client, Magi/Optimism, Celo L2, EIP-4844 blobs. Identity confirmed via programmable private decentralized ID and trust-graph + sybil-resistance commentary. ETH judged confirmed at stance level \u2014 he never discusses ETH-the-asset's issuance/staking, but his work stays firmly Ethereum-centric, affirming Ethereum as the base layer. Of the three concerns, only anti-speculation (memecoin critique, 24 Mar 2024) is confirmed; he never voices the sequencer/bridge-centralization concern, and the regulation concern is absent \u2014 his one regulatory remark ('regulatory strategies improving') is mildly optimistic rather than the predicted alarm. Risk regime confirmed: consistently build-through-cycles, fundamentals-over-beta, never chasing price.",
+  "confirm_rate": 1.0
+}

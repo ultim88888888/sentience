@@ -1,0 +1,61 @@
+{
+  "as_of": "2025-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Crypto \u00d7 AI (verifiable compute, decentralized model/data markets, proof-of-personhood)",
+      "why": "AI is concentrating control over models, data, and compute in a handful of labs. Crypto supplies the missing primitives \u2014 verifiable/trustless compute, open markets for data and inference, and proof-of-personhood to tell humans from bots in a world drowning in generated content. This intersection is the most important thing happening in the space, and it's where I'd spend the most time.",
+      "why_more": "",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure networks)",
+      "why": "Token incentives let a network bootstrap real-world hardware \u2014 GPUs, storage, wireless, energy, sensors \u2014 and out-compete incumbents on the supply side before it has demand. AI's insatiable appetite for compute makes decentralized compute/GPU networks especially compelling right now. This is crypto touching the physical world, not just moving tokens around.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & payments",
+      "why": "Stablecoins are crypto's clearest product-market fit: dollars that settle globally in seconds at near-zero cost. With US regulatory clarity finally arriving and serious fintech adoption (Stripe/Bridge), this stops being a crypto-native curiosity and becomes mainstream payment rails. The most underappreciated 'boring' winner.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation",
+      "why": "Memecoin mania pulls attention, capital, and block space toward zero-sum extraction and away from applications with durable utility. It hands skeptics and regulators easy ammunition and trains a generation of users to treat crypto as a casino rather than as infrastructure. Not a thesis I want the industry's energy going into.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "SOL (Solana)",
+      "why": "The high-throughput, low-cost chain where consumer apps, DePIN, and payments are actually shipping at scale. Performance and UX fit my conviction that crypto has to be fast and cheap to reach mainstream users. Ecosystem-level conviction, not a price call.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "ETH (Ethereum)",
+      "why": "Credibly neutral settlement and still the deepest developer ecosystem; L2 scaling is maturing into a real fee/throughput story. I back it as the base security layer the rest of the stack settles to, not as a tactical position.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "A builder's risk-on, not a trader's. Structurally I'm bullish: the US regulatory backdrop is turning constructive (enforcement cases being dropped, stablecoin legislation advancing, executive-level support), and the core theses \u2014 crypto\u00d7AI, DePIN, stablecoins \u2014 compound regardless of price. Near-term is choppy (market well off the January highs, tariff and rate uncertainty building), but we invest through cycles on multi-year horizons, so the volatility doesn't move my posture.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My record here contains no dated statements, so every view above is extrapolated from how I think as an a16z crypto GP and from our published theses \u2014 none are direct quotes, and I've cited nothing rather than fabricate. I reason in terms of multi-year technology adoption, not tactical trades; the token entries reflect ecosystems/builders I'd back, not price targets. I deliberately left crypto\u00d7AI without a specific token \u2014 the sector conviction is real but I don't have an honest single-token call there."
+}

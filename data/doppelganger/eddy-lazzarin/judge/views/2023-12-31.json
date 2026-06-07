@@ -1,0 +1,65 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs / SNARKs are compounding fast; cheaper proving is the unlock",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Layer-2 scaling / rollups as the prerequisite for cheap block space",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Wallet UX, smart accounts & self-sovereign identity will reset the crypto frontend",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully on-chain games",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Crypto \u00d7 AI / content provenance (proving origin/history of content needs crypto)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social as a neutral, un-ruggable platform",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern: opaque centralized exchanges & custodial systems / proof-of-reserves theater",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concern: token-first projects / 'tokenomics' \u2014 token-without-substance is a failure pattern",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH \u2014 conviction in the Ethereum network and its scaling roadmap",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: skeptical in analysis, optimistic in action; 'still early, so I build'",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Newly vocal enthusiasm for crypto PAYMENTS / stablecoins (cheap USDC transfers, USDC as gas), triggered by Apple/EU app-store rulings \u2014 'Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together.' This sector was not in the prediction.",
+    "New advocacy for crypto SECURITY institutions/tooling: co-founding the Security Alliance and the Whitehat Safe Harbor Agreement, plus consumer account-security (2FA) guidance \u2014 not anticipated.",
+    "Newly visible interest in DeFi / AMM mechanism design (LVR, DELV's fixed/variable-rate AMM, Morpho) \u2014 an area the prediction did not cover.",
+    "Strong, specific embrace of proof-of-personhood (Worldcoin) as necessary infrastructure for the AI-content/sybil problem \u2014 a sharper, named bet than the prediction's general 'self-sovereign identity' / 'content provenance' framing."
+  ],
+  "notes": "Core theses all held and were heavily acted on, not just restated: ZK (Jolt Alpha zkVM, Naysayer proofs, Binius), L2 scaling (Helios L2 extension, Optimism superchain podcast), Ethereum conviction (Helios light client), crypto\u00d7AI provenance ('mystery meat' scenario), and risk-on build-mode ('never been a better time to build'). No contradictions or reversals. The token-first concern is marked confirmed because his sustained, forceful anti-memecoin campaign ('not technically interesting,' 'fake tech to mask token liquidity schemes,' deters founders / arms regulators) is the same underlying stance \u2014 token-without-real-protocol-substance is hollow/damaging \u2014 even though it manifested as memecoin criticism rather than the predicted 'tokenomics consulting'; the intensity/specific arguments were a notable new manifestation. On-chain games is confirmed but thin (only an EVE Project Awakening playtest share). Decentralized social confirmed via endorsement of River protocol/Propeller ('user-owned chat communities, I dig it') rather than the predicted Farcaster. The centralized-exchange/custodial concern was not restated in the window (window's centralization comments are about content censorship and corporate platform capture, a different domain), so it is absent \u2014 consistent with its 'persisted, not restated' provenance.",
+  "confirm_rate": 1.0
+}

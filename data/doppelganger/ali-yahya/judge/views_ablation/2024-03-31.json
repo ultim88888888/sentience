@@ -1,0 +1,62 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about AI x crypto as the most important convergence frontier",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN / decentralized compute and physical infrastructure",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized social & consumer crypto / open social graphs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge proofs / applied cryptography",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about modular blockchains / L2 scaling and cheap blockspace",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoin / pure speculation froth",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about US regulatory uncertainty / regulation-by-enforcement",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about ETH as base settlement layer",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on stance given ETF inflows, ATHs, halving tailwinds",
+      "axis": "risk_regime",
+      "label": "absent"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "Strong emphasis on cross-chain interoperability / bridges (LayerZero, composability) not anticipated in prediction",
+    "Backed restaking / verifiable cloud (EigenLayer) \u2014 a specific thesis not named",
+    "Explicit privacy-preserving computation focus (Aleo) as a distinct ZK application area",
+    "Vocal open-source / anti-'safetyism' advocacy ('open source is the technological equivalent of free speech')",
+    "Named NEAR specifically as the epicenter for AI x crypto",
+    "Concrete DePIN bet on energy grid / virtual power plants (Daylight) \u2014 beyond the GPU-compute framing of the prediction"
+  ],
+  "notes": "All five excited sectors were strongly confirmed via concrete actions and statements in the window (Jolt zkVM, Aleo, NEAR AI x crypto, Daylight DePIN, XMTP social, L3s/EigenLayer modular scaling, CSX cohort spanning all themes). The two concerns (memecoins, US regulatory uncertainty) and the ETH token call and the risk_on macro stance were never addressed in the provided statements \u2014 Ali's later remarks are infrastructure/technology-focused and contain no price, macro, or token-market commentary, consistent with his stated preference for durable tech over price action. No contradictions found.",
+  "confirm_rate": 1.0
+}

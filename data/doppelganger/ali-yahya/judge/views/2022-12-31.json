@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs will transform the web3 stack",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "On-chain privacy / encryption",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI x crypto intersection",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DAOs & on-chain coordination",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Developer platforms & programming-language design",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Multi-chain & interoperability",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Community-owned physical infrastructure networks (Helium/DePIN)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Web3 creator economy (music, media, gaming, NFTs)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Wallet UX & transaction-signing security",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Centralized, custodial intermediaries masquerading as crypto",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Regressive / heavy-handed regulation throttling innovation",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH (Ethereum) as superior platform / settlement layer",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "SOL (Solana) architecture conviction",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on: lean in hard, build through the downturn",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 6,
+  "missed_changes": [
+    "Active governance opposition to deploying Uniswap on BNB Chain via Wormhole \u2014 a specific anti-bridge/security stance not anticipated",
+    "New enthusiasm for NEAR as an infrastructure chain (where prediction had named Solana)",
+    "Crypto-meets-web2 payments rails (Loop + Stripe integration) as a positive theme",
+    "Articulated a 'value-capture paradox' / network-effects winner-take-all crypto business-model thesis",
+    "Broader cultural/political commentary: hostility toward builders and critique of top-down government science funding in favor of bottom-up market mechanisms"
+  ],
+  "notes": "Window is Jan\u2013Jun 2023. Most core technology theses (ZK, privacy via Iron Fish mainnet, AI x crypto via Gensyn + 'collective AI', DAOs via prtyDAO, multi-chain via LayerZero, ETH, risk-on via Alongside/Gensyn leads and hiring) are clearly confirmed. The regressive-regulation concern is confirmed at stance level via posts on hostility to innovation and status-quo entrenched interests. DePIN/Helium, creator economy (music/NFTs/gaming), wallet UX, centralized-intermediary contagion, and Solana specifically were not addressed in the window \u2014 marked absent, not contradicted. No stances were reversed.",
+  "confirm_rate": 1.0
+}

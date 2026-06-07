@@ -1,0 +1,285 @@
+{
+  "subject": "ali-yahya",
+  "horizon_months": 6,
+  "mean_lift": 0.0,
+  "steps": [
+    {
+      "date": "2022-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Active governance opposition to deploying Uniswap on BNB Chain via Wormhole \u2014 a specific anti-bridge/security stance not anticipated",
+        "New enthusiasm for NEAR as an infrastructure chain (where prediction had named Solana)",
+        "Crypto-meets-web2 payments rails (Loop + Stripe integration) as a positive theme",
+        "Articulated a 'value-capture paradox' / network-effects winner-take-all crypto business-model thesis",
+        "Broader cultural/political commentary: hostility toward builders and critique of top-down government science funding in favor of bottom-up market mechanisms"
+      ],
+      "n_missed_changes": 5
+    },
+    {
+      "date": "2023-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly vocal on web3 music / creator-economy NFTs (led Sound.xyz Series A, 7/12; Tiers launch 9/25) \u2014 a consumer/creator sector not in the prediction",
+        "Newly emphasized crypto payments \u00d7 web2 infrastructure (Loop+Stripe 5/10, payments overhaul 9/5) \u2014 not anticipated",
+        "Backed decentralized information markets (Freatic, 9/20) as a new application area",
+        "Endorsed web3 messaging protocols (XMTP/Coinbase Wallet, 7/12) as core infrastructure",
+        "Explicitly elevated EigenLayer/restaking (8/24) as a way to extend Ethereum without fragmenting network effects"
+      ],
+      "n_missed_changes": 5
+    },
+    {
+      "date": "2023-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Launched a prominent anti-degen / anti-casino crusade in Dec 2023 \u2014 explicitly attacking memecoins, 100x leverage, yield farming, airdrop farming, and 'casino' speculation as the 'primary force holding the space back' (new, sharply-stated quality/purpose stance not anticipated)",
+        "Made modular vs. monolithic architecture and the 'modular tech stack' a central recurring theme (Modularity Paradox, UNIX philosophy, 'interface that de-constrains', a16z big ideas authored entry)",
+        "Became actively enthusiastic about a specific cross-chain bridge (LayerZero v1/v2, Google Cloud integration) \u2014 notable given his prior generalized distrust of bridges; framed approval around improved trust assumptions",
+        "Emphasized 'underexplored' mechanisms \u2014 token lockups, retroactive funding, non-transferable tokens, on-chain reputation, rewards for verifiable work \u2014 as the constructive alternative to speculation"
+      ],
+      "n_missed_changes": 4
+    },
+    {
+      "date": "2023-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly vocal, sustained anti-degen/anti-casino stance \u2014 explicitly attacking memecoins, 100x leverage, yield farming, MEV capture, airdrop farming and speculation as 'the primary force holding the space back' (a tokens_concerned-type view the prediction left empty)",
+        "Strong newly-foregrounded emphasis on modularity vs. monolithic architecture and the open-source modular tech stack as a central thesis (UNIX philosophy, 'modularity paradox', authored a16z 'rise of the modular tech stack')",
+        "New focus on restaking / cryptoeconomic security (led EigenLayer Series B) and shared-sequencing interoperability (led Espresso Series B) as concrete frontier categories"
+      ],
+      "n_missed_changes": 3
+    },
+    {
+      "date": "2023-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Heavy new emphasis on EigenLayer/restaking and 'cryptoeconomic security' as an unbundling primitive (led Series B) \u2014 a specific bet the prediction didn't name",
+        "Named NEAR as 'the epicenter for AI x crypto' \u2014 a specific ecosystem call not anticipated",
+        "Led Espresso Series B on shared-sequencing/rollup coordination as the concrete fix to fragmentation"
+      ],
+      "n_missed_changes": 3
+    },
+    {
+      "date": "2024-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "New emphasis on open source as a public good / 'free speech' (Jolt Alpha released 100% open source)",
+        "Focus on cross-chain bridges and interoperability via LayerZero (hosted podcast, sybil-detection commentary) \u2014 interoperability framed more concretely than the original Espresso/shared-sequencing framing",
+        "Promotion of L3s as a scaling direction ('The promise of L3s')",
+        "Specific new energy/grid DePIN bet (Daylight \u2014 distributed energy resources / virtual power plants), extending DePIN into energy infrastructure",
+        "Identified NEAR as the 'epicenter for AI x crypto,' a chain-specific stance the prediction did not anticipate"
+      ],
+      "n_missed_changes": 5
+    },
+    {
+      "date": "2024-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly excited about L3s (2024-07-18), not anticipated",
+        "Predicted formal verification would become increasingly important in 2025 (2024-12-20)",
+        "Endorsed David Sacks as crypto/AI czar \u2014 a political/policy stance not anticipated (2024-12-06)",
+        "Excited about Murmur Protocol, a 'marketplace for alpha' (2024-12-19) \u2014 borders on the speculative-alpha territory he frames as concerning"
+      ],
+      "n_missed_changes": 4
+    },
+    {
+      "date": "2024-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "New strong emphasis on cross-chain interoperability and universal cross-chain asset access (LayerZero podcast, lead investment in Universal \u2014 'Circle for cryptoassets'), framed around composability rather than the prediction's framing of bridges mainly as a security concern",
+        "Embrace of secure-hardware/TEE-based privacy (Seismic investment) as an approach distinct from the prediction's pure-ZK framing of privacy",
+        "New explicit conviction that DeFi composability is a primary unlock (Universal, 'why composability matters')",
+        "Public 2025 prediction that formal verification will become increasingly important \u2014 a primitive not in the original prediction",
+        "Active, celebratory political/regulatory engagement (congratulating David Sacks, CFTC nominee, McHenry) \u2014 moving from abstract concern about hostility to optimism about a favorable US regulatory regime",
+        "New emphasis on abstraction/'software era' developer tooling for web3 (Halliday) and agentic AI calling smart contracts"
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2024-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Made specific token-level investments with multi-year lockups (ZRO $55M, EIGEN $70M) \u2014 prediction had empty tokens_excited",
+        "Privacy via secure hardware/TEE (Seismic) rather than the ZK-on-client approach, which he explicitly contrasts as better for composability",
+        "Notable embrace of and engagement with Solana (hosting Anatoly/Toly, SolanaConf, crypto x AI panels) and DeFi composability (Universal, Halliday, Base)"
+      ],
+      "n_missed_changes": 3
+    },
+    {
+      "date": "2025-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Made concrete, large token investments with multi-year lockups (ZRO $55M, EIGEN $70M) \u2014 direct token-allocation actions, more than the prediction's 'platform conviction, not token trades' framing anticipated",
+        "New emphasis on XMTP as a decentralized, quantum-resistant messaging protocol \u2014 a messaging/communications theme not present in the prediction",
+        "Repeated explicit framing of crypto/EigenLayer as the verifiable-compute backbone for AI agents interacting with the financial system (eigencloud + Google Cloud)"
+      ],
+      "n_missed_changes": 3
+    },
+    {
+      "date": "2025-06-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "New investment in Jito (JTO) tokens on Solana \u2014 backing a high-performance monolithic L1 ecosystem and praising Solana's speed/scale, not anticipated by the Ethereum-rollup-centric framing",
+        "Elevated privacy from 'a sector I like' to 'the most important moat in crypto' with an explicit winner-take-most / chain-lock-in thesis",
+        "Strong new emphasis on stablecoins and onchain payments/finance as a major theme (Loopcrypto, Aleo stablecoin payments, big-ideas stablecoin pieces)",
+        "New emphasis on decentralized/quantum-resistant messaging (XMTP) as core infrastructure",
+        "Engaging the MEV problem constructively via Jito/BAM (mitigating extractive MEV through encrypted ordering) rather than only decrying it"
+      ],
+      "n_missed_changes": 5
+    },
+    {
+      "date": "2025-09-30",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "New JTO (Jito) token investment on Solana to address MEV \u2014 a specific new token bet not anticipated",
+        "Escalated privacy from one of several sectors to THE central thesis: 'privacy will be the most important moat,' winner-take-most/chain lock-in framing",
+        "New lead investment in Seismic ($10M round) and new partnership with Zodl on privacy-finance",
+        "Newly elaborated 'finance first, consumer crypto later' thesis explaining why gaming/social haven't taken off",
+        "New explicit defense of token value mechanics \u2014 tokens compound as claims on future protocol cashflows (vs. the prediction's stance of not making token/price arguments)",
+        "Quantum computing threat to crypto raised as a new topic of interest",
+        "Significant non-market content: founder psychology (open/closed mode), habit-building, and political commentary (California wealth tax)"
+      ],
+      "n_missed_changes": 7
+    },
+    {
+      "date": "2025-12-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Newly emphasized that consumer crypto (gaming, social) will eventually succeed and that 'blockchains are just for finance' is too categorical \u2014 finance is the foundation, not the ceiling (Jan 14, Feb 9)",
+        "Mounted an extended defense of token value accrual / tokens compounding via fee-capture flywheel and network effects (Feb 8 thread) \u2014 a new argumentative thrust not in the prediction",
+        "Foregrounded 'credible neutrality' as the core reason blockchains/decentralization matter, pushing back on decentralization skeptics (May 30\u201331)",
+        "Raised quantum computing as a threat/topic for crypto (Jan 6)",
+        "Announced raising a16z Crypto Fund 5 ($2.2B) and framed the low-sentiment/high-fundamentals moment as the time to build (May 5)",
+        "Specific new excitement about prediction markets and perpetual futures for price discovery (May 5 research_firm)"
+      ],
+      "n_missed_changes": 6
+    },
+    {
+      "date": "2026-03-31",
+      "full_confirm_rate": 1.0,
+      "ablation_confirm_rate": 1.0,
+      "lift": 0.0,
+      "missed_changes": [
+        "Heavy new emphasis on 'credible neutrality' as the fundamental purpose of blockchains (multiple late-May replies) \u2014 building decentralization for shared infrastructure mutually distrustful parties can trust, not for its own sake",
+        "Announced/closed a $2.2B Crypto Fund 5 and framed near-all-time-low sentiment vs all-time-high fundamentals as the moment to lean in",
+        "New $75M investment in the ARC token (Circle's Arc institutional chain) \u2014 a specific stablecoin-infrastructure / configurable-privacy bet not in the prediction",
+        "Newly highlighted onchain capital markets: prediction markets, perpetual futures, onchain lending/credit, and tokenized real-world assets",
+        "Emphasis on institutional adoption and pragmatic, non-ideological founders ('collared shirt era') replacing cypherpunk roots",
+        "Strong support for specific US legislation (CLARITY Act, GENIUS Act) as the regulatory-clarity unlock",
+        "Cited Jolt / zero-knowledge proving breakthroughs and Jevons paradox framing for blockspace demand"
+      ],
+      "n_missed_changes": 7
+    }
+  ],
+  "coverage": [
+    {
+      "date": "2022-12-31",
+      "grounded": 11,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-03-31",
+      "grounded": 11,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-06-30",
+      "grounded": 13,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-09-30",
+      "grounded": 9,
+      "persisted": 3,
+      "extrapolated": 0
+    },
+    {
+      "date": "2023-12-31",
+      "grounded": 9,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-03-31",
+      "grounded": 9,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-06-30",
+      "grounded": 8,
+      "persisted": 1,
+      "extrapolated": 0
+    },
+    {
+      "date": "2024-09-30",
+      "grounded": 10,
+      "persisted": 1,
+      "extrapolated": 1
+    },
+    {
+      "date": "2024-12-31",
+      "grounded": 10,
+      "persisted": 0,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-03-31",
+      "grounded": 8,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-06-30",
+      "grounded": 8,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-09-30",
+      "grounded": 9,
+      "persisted": 4,
+      "extrapolated": 0
+    },
+    {
+      "date": "2025-12-31",
+      "grounded": 8,
+      "persisted": 2,
+      "extrapolated": 0
+    },
+    {
+      "date": "2026-03-31",
+      "grounded": 11,
+      "persisted": 0,
+      "extrapolated": 0
+    }
+  ]
+}

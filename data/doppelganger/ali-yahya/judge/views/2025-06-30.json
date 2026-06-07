@@ -1,0 +1,71 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about privacy & zero-knowledge proofs as unlocking mainstream/regulated use cases (Aleo, Aztec, Seismic)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto \u2014 decentralized, verifiable AI with crypto as counterweight (Gensyn, verifiable compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about modular scaling / L2s / rollups and making them composable via shared sequencing/interop",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about restaking / cryptoeconomic security (EigenLayer/EigenCloud)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about cross-chain interoperability / secure messaging (LayerZero)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure \u2014 wireless, energy; Helium)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about speculation / the casino (memecoins, high leverage, airdrop farming, extractive MEV)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about EIGEN token / EigenLayer protocol as foundational unlock",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ZRO / LayerZero as core multi-chain infrastructure",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins as a category (tokens without soul/purpose)",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on structural posture \u2014 constructive on maturing infra and improving US regulation, biased toward taking risk",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "New investment in Jito (JTO) tokens on Solana \u2014 backing a high-performance monolithic L1 ecosystem and praising Solana's speed/scale, not anticipated by the Ethereum-rollup-centric framing",
+    "Elevated privacy from 'a sector I like' to 'the most important moat in crypto' with an explicit winner-take-most / chain-lock-in thesis",
+    "Strong new emphasis on stablecoins and onchain payments/finance as a major theme (Loopcrypto, Aleo stablecoin payments, big-ideas stablecoin pieces)",
+    "New emphasis on decentralized/quantum-resistant messaging (XMTP) as core infrastructure",
+    "Engaging the MEV problem constructively via Jito/BAM (mitigating extractive MEV through encrypted ordering) rather than only decrying it"
+  ],
+  "notes": "Nearly all predicted stances were restated or acted on in the window; DePIN/Helium and an explicit memecoin-category critique simply weren't addressed (absent, not contradicted). The casino/speculation concern is confirmed indirectly via criticism of mercenary airdrop-farming capital (Dec 5) and the Jito/BAM focus on curbing insidious MEV. The biggest unanticipated moves are the Solana/Jito bet and the surge of stablecoin/payments and decentralized-messaging emphasis.",
+  "confirm_rate": 1.0
+}

@@ -1,0 +1,94 @@
+{
+  "claims": [
+    {
+      "claim": "Stablecoins & payments \u2014 PMF and the next builder bottlenecks",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Onchain privacy / confidential transactions becoming table stakes",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs & zkVMs (Jolt) crossing into practice",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Private proof-of-personhood / digital identity (World ID)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Network tokens with real value accrual (fee switch, buyback-and-burn, closed loop)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto \u2014 agent payments, x402, machines that own",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully onchain games (trustless state, composability)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Memecoins / casino dynamics set the industry back",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excess leverage (perpetuals) \u2014 most wary after late-2025 drawdown",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Company-backed tokens mislabeled as decentralized / pie-chart tokenomics",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Vanity metrics (active addresses, TVL) are gamed/misleading",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "UNI \u2014 closed-loop network token via buyback-and-burn + DUNI",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH \u2014 value accrues via EIP-1559 burn, L2 scaling",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "BTC \u2014 digital gold / store of value fundamentals",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Neutral trading posture, bullish on technology; skeptical in analysis, optimistic in action; read markets via price-innovation cycle",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 6,
+  "missed_changes": [
+    "Dominant new AI-security thesis: AI makes pre-existing bugs easier to find, so defenders should 'massively increase use of AI to red-team yourself' / arm the defenders (2026-04-11, 2026-05-07, 2026-05-13 podcast).",
+    "Strong anti-AI-doomer stance \u2014 criticized 'doomsday marketing' and called for a 'moratorium on AI doomer content,' including a pointed critique of Anthropic (2026-05-08, 2026-05-13).",
+    "Enthusiasm for agentic coding \u2014 'vibe coding ended, agentic engineering began,' wants agent-first dev tooling and tested multiple agent harnesses (2026-01-22, 2026-03-09, 2026-03-10, 2026-05-01).",
+    "DeFi security emphasis: rate-limited minting/withdrawals, time delays for admin actions, and 'more decentralization, not less' as the fix for the recent hack wave (2026-03-25, 2026-05-13).",
+    "Passkey portability / self-custody critique \u2014 refuses to use passkeys for anything holding real value due to lack of exportability (2026-03-20 thread).",
+    "Positive framing of prediction markets, onchain lending, and RWA/tokenization as proven growth areas in the Fund 5 piece \u2014 beyond the sectors the prediction listed (2026-05-05).",
+    "AGI economics thesis: cost of automation falling faster than cost of verification, so human verification (aided by cryptography) becomes the scarce resource (2026-02-24).",
+    "Co-launched a16z Crypto Fund 5 ($2.2B) \u2014 concrete action operationalizing the bullish-on-building stance (2026-05-05)."
+  ],
+  "notes": "Window spans Jan\u2013Jun 2026. Six of seven sectors-excited were reaffirmed, often via concrete action (Jolt/Layer Zero's 'Zero', World/AgentKit, x402, Zcash/ZSAs, Fund 5); network-token design was his single most-repeated theme. Among concerns only memecoins was reaffirmed (2026-05-02 'things have really changed'); leverage, mislabeled company tokens, and vanity metrics went unaddressed. UNI is marked confirmed at stance level: he repeatedly championed the exact closed-loop buyback-burn + mint-for-growth + DUNA mechanism (2026-02-08, 2026-04-23/27), though without naming the ticker. ETH and BTC token-specific value-accrual stances were absent \u2014 the window's burn discussion was about active/designed DAO mint+burn (the UNI model), not ETH's automatic EIP-1559 burn, and BTC/digital-gold never came up. Onchain games is absent: the only games comment (2026-04-24) was about AI-made games, not onchain/trustless game state. The leverage concern is absent rather than contradicted \u2014 the Fund 5 piece frames perps positively for 'price discovery,' consistent with 'fine as products,' but does not address the leverage wariness either way.",
+  "confirm_rate": 1.0
+}

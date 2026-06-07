@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto / decentralized AI",
+      "why": "The most important frontier I see. As AI agents proliferate, they need native economic rails \u2014 machine-to-machine payments, verifiable compute and inference, and onchain identity. Crypto is the only credibly neutral substrate for agents to transact and for proving provenance of data and models. Proof-of-personhood becomes essential to distinguish humans from agents online. This is precisely where my ML background and my crypto conviction converge.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins & onchain payments",
+      "why": "The clearest product-market fit in all of crypto. With US regulatory clarity now in place, stablecoins are moving real volume \u2014 remittances, B2B settlement, dollar savings in inflationary economies. Dollars on open, programmable, global rails. This is the wedge that onboards the next hundreds of millions of people.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are the right tool to solve the cold-start problem that killed prior infrastructure projects \u2014 bootstrapping real-world networks for compute/GPUs, wireless, energy, and storage. Decentralized compute markets also feed the AI thesis directly, which is why I find this category structurally compelling rather than narrative-driven.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social & onchain identity",
+      "why": "Protocols that give users ownership of their social graph and data, with composable applications built on top. Combined with onchain identity and proof-of-personhood, this is how we rebuild the social layer of the internet with incentives aligned to users instead of platforms.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation",
+      "why": "The casino dynamics are extractive and crowd out builders. They generate real revenue and attention, but they train a generation to treat crypto as a slot machine \u2014 the opposite of why this technology matters. Bad for legitimacy and a serious misallocation of talent and capital.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralization theater / re-centralization",
+      "why": "Systems that market themselves as decentralized while concentrating control in a foundation, a single sequencer, or a multisig. The entire point of this technology is credible neutrality and verifiability; shortcuts there are a long-term liability even when they're expedient in the short term.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I think in decades, not cycles. My conviction is in the multi-year build-out \u2014 AI x crypto, stablecoins, DePIN \u2014 and the fundamentals there are stronger than ever with real usage and regulatory clarity. Near-term prices run hot and speculation is frothy, so this is not a short-term trading call; structurally I'm a long-term optimist, and we keep funding builders through every part of the cycle.",
+    "provenance": "extrapolated"
+  },
+  "notes": "All items are marked extrapolated: they are inferences from my consistent, thesis-driven public stance rather than restatements of a specific dated quote, so I've attached no citations. My conviction sits deliberately at the sector and infrastructure level \u2014 I don't make individual token calls publicly \u2014 so the token arrays are intentionally empty rather than manufactured to fill a bucket. Time-boxed to what I know as of 2026-03-31."
+}

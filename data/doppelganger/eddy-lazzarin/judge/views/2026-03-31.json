@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "claim": "Stablecoins & payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Onchain privacy / confidentiality",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Zero-knowledge proving / zkVMs",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Proof of personhood / private unique identity",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "AI x crypto (agentic payments & identity)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Network tokens with closed-loop economics (fee switches)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Fully onchain games",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Memecoins",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Leverage & perps (systemic risk)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Company-backed tokens dressed up as decentralized (corpochains)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Operational security for vaults & bridges",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "ETH",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "UNI",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on regime",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 7,
+  "missed_changes": [
+    "Heavy new emphasis on AI as a cybersecurity DEFENSE tool \u2014 'arm the defenders,' AI red-teaming/bugfinding surfaces pre-existing bugs, 'who do you want to find them first?' (entire 5/13 hacks podcast, 4/11, 5/7 Mozilla). Not anticipated by the prediction.",
+    "Newly vocal anti-AI-doomerism \u2014 pushing back on Anthropic's 'doomsday marketing,' calling AI fear 'completely backwards,' calling for a 'moratorium on AI doomer content' (5/8, 5/13, 5/19).",
+    "Strong enthusiasm for AI-assisted software creation / vibe-coding broadly (deployed a web app via voice memo, AI code no longer 'slop,' AI-made games, the 10,000-automated-attempts loop) \u2014 wider than the prediction's crypto-specific agentic-payments framing.",
+    "Recurring pro-capitalism / value-creation philosophy as a standalone theme ('nothing more decentralized than capitalism,' AOC/Glazer dialogue, 4/7, 5/7, 5/9) \u2014 outside the prediction's sector framing.",
+    "a16z Crypto Fund 5 ($2.2B) launch as a concrete risk-on action, and the fund essay newly elevating prediction markets and onchain lending as proven sectors \u2014 neither broken out in the prediction."
+  ],
+  "notes": "No contradictions; every claim is either confirmed or simply unaddressed. Strongest confirmations: network-token closed-loop economics (restated almost verbatim multiple times \u2014 4/23 'print-and-spend... decouple fees and spend,' 4/27, 5/14), stablecoins & payments and AI-x-crypto agentic payments (both explicit in the 5/5 Fund 5 essay), operational security for vaults/bridges (5/13 podcast: time delays, multisig, single-points-of-failure, plus the 4/8 rate-limit-griefing reply continuing his 3/25 thread), and risk-on (Fund 5 + 'most encouraging in years'). Corpochains marked confirmed at the stance level: the 5/13 podcast champions exactly his 'decentralization = no single point of control; hidden/inadvertent centralization is the real danger' view, though applied to hack post-mortems rather than company-backed tokens specifically. Memecoins reaffirmed 5/2 ('uninteresting at best and damaging'). Leverage/perps left absent \u2014 the essay's positive mention of perps 'for price discovery' is co-authored and about utility, not a reversal of his leverage-risk caution, which he never revisits. ETH and UNI marked absent as specific tokens: he never names them, though the underlying buy-and-burn-plus-mint mechanism they exemplify is heavily reaffirmed (so the network-tokens SECTOR confirms while the TOKEN picks don't). Privacy, zkVMs/Jolt, proof-of-personhood and onchain games went unaddressed \u2014 the window was dominated by AI-security and AI-building commentary. Weak adjacent signals noted but insufficient to confirm: 5/6 thank-you to Alex Blania (World) for proof-of-personhood, and 6/5 praise of Zcash devs (a privacy project, but the remark is about security-disclosure handling, not the privacy thesis).",
+  "confirm_rate": 1.0
+}

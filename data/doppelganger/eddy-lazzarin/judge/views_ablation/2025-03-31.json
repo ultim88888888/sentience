@@ -1,0 +1,54 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & onchain payments as crypto's clearest product-market fit, becoming a mainstream payments layer with regulatory/fintech tailwinds",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto: crypto supplying primitives for AI agents \u2014 programmable payments, verifiable identity/proof-of-personhood, provenance",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about scaling & infrastructure (L2s, zero-knowledge, account abstraction); ZK as a foundational primitive beyond scaling",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN \u2014 token incentives bootstrapping real-world networks (compute, wireless, energy, storage)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about memecoins & pure speculation crowding out durable building and degrading trust",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about low-float / high-FDV token structures distorting price discovery via unlock overhang",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / structurally constructive on the long-term building and adoption cycle (regulatory clarity, maturing infra, real usage), not a short-term price call",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Onchain/financial PRIVACY became a dominant new thesis \u2014 repeatedly called lack of privacy a dealbreaker for institutions and championed privacy projects (Railgun, Aleo, Aztec, zkP2P, Seismic, etc.); not anticipated in the prediction",
+    "Built and heavily promoted a network-token vs. company-backed token taxonomy ('decentralized network marketplaces,' tokens as marketplace equity, 'arcade tokens' as the most underappreciated type, fee switches, fully-automatic buybacks)",
+    "Took a strong 'end of the foundation era' stance \u2014 advocating DUNAs/BORGs over offshore foundations as new legal structures for decentralized projects",
+    "New/sharpened concern that AI bots are degrading social networks to the point you can't tell humans apart, requiring sybil-resistant private ID (strong, specific endorsement of World/World ID as root of trust)",
+    "Surfaced cross-chain payment determinism (bridges not delivering exact amounts) as a concrete blocker to real onchain payments",
+    "Pushed a valuation/analytical view rejecting DCF and 'money' framing for L1 tokens, plus 'Bitcoin envy' criticism",
+    "Despite abstaining on tokens, expressed token-level views as framework illustrations: UNI/ETH/MKR as exemplary network tokens, FTT as a cautionary company-backed token, skepticism of BETH",
+    "Characterized acute scaling as largely 'solved' (questions shifted from gas to UX/wallets), a slight reframing of the scaling-urgency thesis even while still favoring more blockspace"
+  ],
+  "notes": "Window is Apr\u2013Sep 2025. Four of seven prediction items are clearly confirmed at the stance level and recur repeatedly: payments/stablecoins (USDC, CCTP, x402, deterministic-output payment threads), AI x crypto (proof-of-human, identity-for-agents, trustable agent networks), ZK/infrastructure (Jolt zkVM, sumcheck/GKR/lookups, sequencer decentralization, Halmos), and the long-term risk-on/constructive regime (DC regulatory optimism, 'commercial viability is true north,' 'conditions are far better now'). Memecoin/speculation concern is strongly confirmed (memecoins have 'no inherent value,' 'just redistributing,' 'gambling products'). DePIN and low-float/high-FDV are absent \u2014 neither physical-infrastructure networks nor circulating-supply/unlock-overhang concerns appear in the provided statements (general network-bootstrapping is discussed but not applied to DePIN). No predicted stance was contradicted/reversed. The biggest gaps are omissions, not errors: the prediction missed how central PRIVACY and the token-taxonomy/legal-structure work would become.",
+  "confirm_rate": 1.0
+}

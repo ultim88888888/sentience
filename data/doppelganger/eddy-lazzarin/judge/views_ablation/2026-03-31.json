@@ -1,0 +1,57 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & onchain payments as crypto's clearest product-market fit, crossing into real payments/remittances/treasury",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI \u00d7 crypto as complementary \u2014 crypto as payment/coordination layer for autonomous agents, verifiable provenance, decentralized compute/data markets",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about scaling infrastructure (ZK proofs, rollups, account abstraction) as maturing plumbing",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about DePIN \u2014 token incentives bootstrapping real-world physical networks (compute/storage/bandwidth/energy)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / pure speculation as negative-sum and reputationally damaging",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about mercenary-yield DeFi / circular leverage (emissions/points-farming TVL with no real economic activity)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about ecosystem fragmentation (L2/app-chain proliferation fragmenting liquidity/users; interop must catch up)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk regime neutral tactically but structurally constructive multi-year (regulatory clarity, maturing infra, AI tailwind); thinks in adoption-decades, not market regimes",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Strong new stance that AI is a net positive for cybersecurity \u2014 defenders should aggressively use AI to red-team and find bugs ('arm the defenders'); a major theme not anticipated by the AI\u00d7crypto thesis",
+    "Repeated anti-AI-doomer stance, explicitly criticizing Anthropic's 'doomsday marketing' and calling AI-fear 'completely backwards'",
+    "Active tokenomics view: advocated buy-and-burn plus 'print-and-spend'/spend-to-grow and 'revenue is good' \u2014 specific token-design opinions the prediction (empty token arrays) didn't anticipate",
+    "Excitement about onchain capital markets \u2014 perpetual futures for price discovery, prediction markets, onchain lending/credit, and tokenization of traditional assets/RWAs \u2014 a sector cluster absent from the prediction",
+    "DeFi-security framing that recent hacks stemmed from inadvertent centralization and 'more decentralization, not less' would have mitigated them",
+    "Enthusiasm for AI-assisted/'vibe' coding and automated build loops"
+  ],
+  "notes": "Most claims are adjudicated almost entirely from the co-authored 2026-05-05 Crypto Fund 5 essay and the 2026-05-13 security podcast. Stablecoins, AI\u00d7crypto agent/coordination, and the structurally-constructive long-horizon risk stance are confirmed near-verbatim by the fund essay; memecoin concern is confirmed by the 2026-05-02 'memecoins were damaging to crypto... things have changed' reaffirmation. Scaling-infra (ZK/rollups/AA) is absent \u2014 the essay praises fast/cheap settlement as an outcome but never names the scaling tech. Mercenary-yield/circular-leverage concern is absent; his value-capture/'revenue is good' tweets are thematically adjacent (favoring real economics over subsidy-dependence) but voice a positive prescription rather than the predicted concern. Fragmentation/interop is absent entirely. DePIN is a weak confirm \u2014 only a passing positive listing of 'decentralized infrastructure' as a real-product area in the co-authored essay, without the token-incentive thesis. No contradictions. Much of the window's volume is AI-general (coding, doom debate, security), reflecting a heavier AI-as-defense emphasis than the prediction's crypto-centric AI\u00d7crypto framing.",
+  "confirm_rate": 1.0
+}

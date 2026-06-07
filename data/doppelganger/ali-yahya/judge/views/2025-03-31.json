@@ -1,0 +1,69 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs & privacy (Aleo, Aztec, etc.)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto (decentralized/verifiable compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about crypto infrastructure: modular stack, restaking, rollups, interop",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about developer experience & abstractions (programming languages, workflow protocols)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about onchain finance: DeFi composability & stablecoins",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about the casino \u2014 speculative excess (memecoins, leverage, airdrop farming)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about fragmentation & cross-chain bridge risk in a multi-chain world",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Platform conviction in Ethereum (ETH)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Platform conviction in Solana (SOL)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "No tactical risk-on/risk-off view; builds through cycles, treats price as noise",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 8,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Made concrete, large token investments with multi-year lockups (ZRO $55M, EIGEN $70M) \u2014 direct token-allocation actions, more than the prediction's 'platform conviction, not token trades' framing anticipated",
+    "New emphasis on XMTP as a decentralized, quantum-resistant messaging protocol \u2014 a messaging/communications theme not present in the prediction",
+    "Repeated explicit framing of crypto/EigenLayer as the verifiable-compute backbone for AI agents interacting with the financial system (eigencloud + Google Cloud)"
+  ],
+  "notes": "Activity in the window strongly tracks the prediction's excited sectors \u2014 privacy/ZK (Aztec, Aleo), AI x crypto (eigencloud, SolanaConf, XMTP), infra/restaking/interop (LayerZero, Eigen, Syndicate), DePIN (Helium), stablecoins (Loopcrypto), plus heavy Solana and Ethereum-ecosystem engagement. The developer-experience/programming-languages thread (Halliday, language design) was not addressed. Both concerns (the 'casino' and fragmentation/bridge risk) went unmentioned \u2014 neither restated nor contradicted. Consistent with the stated no-view risk posture, all statements were protocol/ecosystem-focused with no market-timing calls (explicit 'not investment advice' disclaimers throughout).",
+  "confirm_rate": 1.0
+}

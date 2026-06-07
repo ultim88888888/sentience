@@ -1,0 +1,72 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & onchain payments as crypto's clearest product-market fit",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI \u00d7 crypto convergence (agent rails, proof-of-personhood, payments)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 scaling & zero-knowledge proofs",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about onchain finance & real-world asset tokenization",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about memecoins & extractive speculation as negative-sum drag",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about L2 fragmentation & sequencer centralization",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about security & smart-contract / bridge risk",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Structurally bullish on ETH as credibly-neutral settlement/DA layer",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Structurally positive on SOL as a credible second pole of activity",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on / constructive multi-year builder-fundamentals stance, favorable US regulatory trajectory",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 10,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Privacy emerged as his single most-emphasized theme \u2014 repeatedly called it critical and a 'non-negotiable'/dealbreaker for institutions (RAILGUN, Aleo, Aztec, Zcash, Seismic); the prediction did not mention privacy at all",
+    "Heavy focus on a token taxonomy and economic design \u2014 network vs company vs arcade tokens, fee switches, buyback-and-burn, and DUNA/BORG legal structures (Uniswap closed-loop) \u2014 not anticipated",
+    "Sustained concern that bridges don't deliver deterministic/exact amounts, which he argued breaks cross-chain crypto payments",
+    "New advocacy for clear-signing wallet UX and against blind signing as a security issue; also ERC-20R for theft recovery",
+    "Bitcoin surfaced as 'digital gold'/store of value (and a developer magnet); BTC was absent from the prediction",
+    "Reframed scaling/gas as essentially 'solved,' shifting the priority to UX, wallet design, and key management"
+  ],
+  "notes": "Nearly the entire sector/token/risk thesis was borne out in his own words and the a16z State of Crypto report he co-presented. DePIN scored absent because, unlike SOL (positive block-explorer tweet + report), it appears only in the firm report and never in his personal voice. Memecoin concern persists but is slightly softened ('interesting social trends,' lessons to learn). risk_on holds despite leverage caution after the Oct flash crash. Biggest gaps the prediction missed: privacy and the token-classification/economic-design agenda.",
+  "confirm_rate": 1.0
+}

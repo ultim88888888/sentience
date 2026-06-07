@@ -1,0 +1,71 @@
+{
+  "claims": [
+    {
+      "claim": "AI x crypto convergence",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN / decentralized physical infrastructure & compute",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Zero-knowledge cryptography / verifiable computation",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Ethereum L2s and modular scaling",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "US regulatory environment as biggest near-term risk",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Speculation detached from fundamentals / froth",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH as base settlement layer of modular stack",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "SOL high-performance integrated L1",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "BTC spot ETF as structural demand channel",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / structurally constructive posture",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Strong new conviction in EigenLayer/restaking as 'verifiable cloud' extending Ethereum (led Series B)",
+    "New bet on shared-sequencing/rollup interoperability via Espresso Systems (led Series B)",
+    "Specifically called NEAR the 'epicenter for AI x crypto'",
+    "Endorsement of XMTP decentralized messaging as a concrete decentralized-social bet",
+    "Enthusiasm for Jolt zkVM as fastest/open-source public good"
+  ],
+  "notes": "Later statements heavily confirm the Ethereum-modular-scaling, ZK/verifiable-compute, AI x crypto, and decentralized-social sector theses, plus implicit ETH and risk-on constructive posture (deal announcements, 'LFG', building emphasis). DePIN, the two concern items (US regulation, speculation), and the SOL and BTC/ETF token reads were simply not addressed in the window \u2014 marked absent, not contradicted. The window is dominated by portfolio-building and infrastructure optimism with no opposite stances taken.",
+  "confirm_rate": 1.0
+}

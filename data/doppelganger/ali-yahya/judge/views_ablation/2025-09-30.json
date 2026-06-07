@@ -1,0 +1,50 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about AI \u00d7 crypto convergence (agents needing wallets/keys, content provenance, verification)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN / decentralized compute & infrastructure",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about stablecoins & onchain payments as crypto's clearest PMF",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about decentralized identity / proof of personhood",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about meme-coin / pure-speculation casino dynamics",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about centralized AI concentration (few firms owning frontier models/compute/data)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on / constructive multi-year stance driven by regulatory clarity and maturing usage",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 1,
+  "missed_changes": [
+    "Made privacy the dominant new thesis \u2014 'privacy will be the most important moat in crypto,' creating chain lock-in and winner-take-most dynamics (extensive posts, podcast, big-ideas piece). Not anticipated in the prediction.",
+    "Actively endorsed specific liquid tokens despite the prediction's deliberately empty token axes \u2014 announced JTO/Jito investment, praised SOL/ETH as compounding claims on future cashflows, and championed Solana, LayerZero/Zero, EigenLayer, Seismic, Aleo, NEAR.",
+    "Took an explicit stance that financial use cases (not consumer/AI-identity) will drive crypto adoption first, with consumer crypto's 'real shot' deferred until stablecoins/DeFi bring hundreds of millions onchain.",
+    "Strong public political/macro commentary (anti-wealth-tax on California, Netherlands, etc.) not part of the market-view prediction."
+  ],
+  "notes": "Sector-level theses (AI\u00d7crypto, DePIN via Gensyn, stablecoins, decentralized identity via XMTP+World/KYA) and risk-on stance are all clearly confirmed; he repeatedly cites regulatory clarity and >$1T monthly stablecoin volume. Centralized-AI concern is confirmed via the 'closed labs (OpenAI/Anthropic) vs open-source funding' framing and Gensyn/Delphi. The meme-coin concern is never addressed (closest is criticism of mercenary airdrop-farming capital, but that's distinct). The biggest gap is the prediction's failure to anticipate privacy as his central new thesis and his willingness to make explicit token-level endorsements.",
+  "confirm_rate": 1.0
+}

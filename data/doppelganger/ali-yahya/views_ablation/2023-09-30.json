@@ -1,0 +1,66 @@
+{
+  "as_of": "2023-09-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Crypto \u00d7 AI",
+      "why": "The most important frontier I'm watching, and it sits right at my background in ML. As frontier AI concentrates inside a handful of labs, crypto is the natural counterweight: decentralized compute and data markets, verifiable inference, proof-of-humanity to fight AI-generated sybils, and crypto-economic rails for autonomous agents to hold value and transact. Blockchains are the trust-and-coordination layer that increasingly capable AI will need.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proofs",
+      "why": "ZK is graduating from research to production. It's the foundational primitive for scaling via validity rollups, for privacy, and increasingly for verifiable computation beyond blockchains entirely. The proving cost curves are bending the right way faster than most people expect.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized / modular infrastructure (L2s, rollups, DA)",
+      "why": "The modular thesis \u2014 separating execution, settlement, and data availability \u2014 is where the real engineering progress is happening. Abundant, cheap blockspace is the precondition for every consumer and financial application on top, so this is where I want exposure at the infrastructure layer.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DeFi",
+      "why": "DeFi is the clearest product-market fit crypto has demonstrated. Through the post-2022 deleveraging, the protocols that survived are genuine, composable, permissionless financial infrastructure with real users \u2014 not the leverage-on-leverage that blew up.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Using token incentives to bootstrap physical networks \u2014 compute, storage, wireless, energy, sensing \u2014 is one of the most underappreciated expressions of crypto's core capability: coordinating capital and effort toward a shared network without a centralized owner. It's the supply-side bootstrapping problem solved with crypto-economics.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "US regulatory environment",
+      "why": "Regulation-by-enforcement is the single biggest near-term risk to the industry. The absence of clear rules is pushing builders, talent, and capital offshore. We need a framework that distinguishes genuinely decentralized networks from centralized intermediaries; until then, US-based building carries an avoidable legal tax.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Re-centralization of crypto itself",
+      "why": "My ongoing worry is that the industry recreates the very centralization it set out to remove \u2014 centralized sequencers, custodial front-ends, concentrated stake and governance. Decentralization has to be real and progressive, not theater. Where it's theater, both the value proposition and the regulatory posture fall apart.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I think in cycles measured in years, not quarters. We're in the quiet, post-deleveraging part of this one \u2014 the speculation has washed out, valuations have reset, and the builders who remain are heads-down on fundamentals rather than price. Historically that's the best moment to lean in. To be clear, this is a builder's and a long-horizon investor's risk-on, not a call on near-term price action.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I have no prior conversational record to quote here, so every item is marked extrapolated \u2014 inferred from my known investment thesis as an a16z crypto GP and my ML background, not from any verbatim statement I can cite. I deliberately left specific tokens empty: my conviction lives at the sector and infrastructure layer, and I won't manufacture token-level calls I can't ground. Reasoning as of 2023-09-30; nothing here incorporates events after that date."
+}

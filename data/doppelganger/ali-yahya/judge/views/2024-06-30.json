@@ -1,0 +1,65 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs (zkVMs, zk-rollups) for scalability and privacy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about on-chain privacy / encryption (private state, encrypted smart contracts)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI x crypto (decentralized compute/data/models, zkML, NEAR)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about restaking & modular infrastructure extending Ethereum (EigenLayer)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about cross-chain interoperability / shared sequencing (Espresso, LayerZero)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about the speculative 'casino' (perps leverage, airdrop farming, pure speculation)",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about fragmentation from poorly-drawn modularity / weakened network effects",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about memecoins (tokens without soul/purpose)",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Structurally risk-on \u2014 bets on technology and building through every cycle, underweights price",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 5,
+  "n_contradicted": 0,
+  "n_absent": 5,
+  "missed_changes": [
+    "Newly excited about L3s (2024-07-18), not anticipated",
+    "Predicted formal verification would become increasingly important in 2025 (2024-12-20)",
+    "Endorsed David Sacks as crypto/AI czar \u2014 a political/policy stance not anticipated (2024-12-06)",
+    "Excited about Murmur Protocol, a 'marketplace for alpha' (2024-12-19) \u2014 borders on the speculative-alpha territory he frames as concerning"
+  ],
+  "notes": "The infrastructure-excitement claims map cleanly onto the window: Aleo (ZK + privacy), Eigen/Infura (restaking), LayerZero + Espresso (interop/sequencing), Daylight (DePIN/energy), and a clearly risk-on cadence of new deals and launch celebrations. The AI x crypto thesis went unaddressed despite being a 2024 focus. All 'concerned' claims (casino, fragmentation, memecoins) are absent \u2014 consistent with his note that excitement and concern are two sides of one coin, but he simply didn't voice the negative side in this window. No claims were contradicted.",
+  "confirm_rate": 1.0
+}

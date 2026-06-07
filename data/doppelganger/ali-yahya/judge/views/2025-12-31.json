@@ -1,0 +1,72 @@
+{
+  "claims": [
+    {
+      "claim": "Privacy / encrypted smart contracts & zero-knowledge as the key moat",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto (decentralized & verifiable compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Stablecoins & onchain payments as settlement layer",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Onchain capital markets / DeFi on high-performance chains (Solana)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern about undifferentiated 'high-performance' general-purpose L1s / blockspace as commodity",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concern about the speculation 'casino' (memecoins, leverage, airdrop farming) holding the space back",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about SOL (Solana)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about EIGEN (EigenLayer / EigenCloud)",
+      "axis": "tokens_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Excited about ZRO (LayerZero)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / soulless tokens",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Risk-on / constructive on technology, indifferent to short-term price",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 7,
+  "n_contradicted": 0,
+  "n_absent": 3,
+  "missed_changes": [
+    "Newly emphasized that consumer crypto (gaming, social) will eventually succeed and that 'blockchains are just for finance' is too categorical \u2014 finance is the foundation, not the ceiling (Jan 14, Feb 9)",
+    "Mounted an extended defense of token value accrual / tokens compounding via fee-capture flywheel and network effects (Feb 8 thread) \u2014 a new argumentative thrust not in the prediction",
+    "Foregrounded 'credible neutrality' as the core reason blockchains/decentralization matter, pushing back on decentralization skeptics (May 30\u201331)",
+    "Raised quantum computing as a threat/topic for crypto (Jan 6)",
+    "Announced raising a16z Crypto Fund 5 ($2.2B) and framed the low-sentiment/high-fundamentals moment as the time to build (May 5)",
+    "Specific new excitement about prediction markets and perpetual futures for price discovery (May 5 research_firm)"
+  ],
+  "notes": "The prediction's grounded core theses (privacy as the moat, stablecoins/payments, AI\u00d7crypto, onchain capital markets on Solana, blockspace commoditization concern, risk-on constructive stance) were all strongly and repeatedly confirmed in the window \u2014 privacy especially (podcast, zodl partnership, May 18 'private money + private computation, must be programmable' which directly matches the encrypted-smart-contracts claim). ZRO confirmed via effusive LayerZero 'Zero' L1 launch praise; SOL confirmed via Consensus/toly and fee-accrual posts. EIGEN was not addressed (only a tangential mention of an ex-Eigen Labs employee). The two 'persisted' anti-casino/anti-memecoin concerns were the weakest: they were not restated. The May 5 framing actually treats speculation somewhat neutrally ('some of it funds infrastructure that wouldn't otherwise get built'), and the May 30 'forgetting the point' remark was about credible neutrality, not the casino \u2014 so both marked absent rather than contradicted.",
+  "confirm_rate": 1.0
+}

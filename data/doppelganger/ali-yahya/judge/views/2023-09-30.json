@@ -1,0 +1,79 @@
+{
+  "claims": [
+    {
+      "claim": "Zero-knowledge proofs & privacy as highest-conviction frontier",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "AI \u00d7 crypto / decentralized AI infrastructure (compute & data marketplaces, zkML)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Ethereum L2 scaling / rollups unlocking permissionless innovation",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Cross-chain interoperability & the multi-chain world",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DAOs & on-chain coordination (scaling human cooperation)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Web3 music & creator economy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Cross-chain bridge security & trust-minimized designs only",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Wallet UX & transaction signing as adoption barrier",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Regulatory & societal hostility to builders",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Ethereum (ETH) as superior base-layer platform conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Solana (SOL) as leading high-performance platform / plurality thesis",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on: conviction in builders, deploying through the cycle",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "Newly vocal, sustained anti-degen/anti-casino stance \u2014 explicitly attacking memecoins, 100x leverage, yield farming, MEV capture, airdrop farming and speculation as 'the primary force holding the space back' (a tokens_concerned-type view the prediction left empty)",
+    "Strong newly-foregrounded emphasis on modularity vs. monolithic architecture and the open-source modular tech stack as a central thesis (UNIX philosophy, 'modularity paradox', authored a16z 'rise of the modular tech stack')",
+    "New focus on restaking / cryptoeconomic security (led EigenLayer Series B) and shared-sequencing interoperability (led Espresso Series B) as concrete frontier categories"
+  ],
+  "notes": "Overwhelmingly confirmed at the stance level. Excited sectors map cleanly onto window activity: AI\u00d7crypto and modular tech stack authored directly by Ali in a16z's Dec 2023 big-ideas list; ZK proving networks, AI\u00d7crypto, decentralized media subgraphs in his year-end portfolio graph; LayerZero v2 praise and Espresso Series B confirm interoperability + trust-minimized bridge concern; EigenLayer/Espresso confirm Ethereum L2/rollup conviction; Nov-Dec safetyism/'bureaucrats in DC' posts confirm regulatory-hostility concern; continued aggressive deal-leading confirms risk-on through-cycle posture. DePIN and wallet-UX marked absent because they appear only in an exhaustive solicitation list / in colleagues' (Eddy Lazzarin's) writing, not as Ali's own expressed stance. The biggest unanticipated development is Ali's loud, repeated condemnation of speculative 'casino' tokens \u2014 a concern stance the prediction explicitly declined to take.",
+  "confirm_rate": 1.0
+}

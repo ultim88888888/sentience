@@ -1,0 +1,61 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & onchain payments (clearest PMF, dollar money on open rails)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (token incentives bootstrapping real hardware/energy networks)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge proving infrastructure maturing into commodity infra",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI \u00d7 crypto (provenance, proof-of-human, decentralized compute/inference markets)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about modular scaling / cheap blockspace (L2s) as prerequisite for consumer apps",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about US regulatory uncertainty / regulation-by-enforcement as biggest drag",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoin / casino dynamics crowding out durable building",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about infrastructure centralization (sequencers, MEV, bridges) recreating trust assumptions",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral/measured risk regime: builder not macro tourist, structural long-horizon conviction, constructive but won't call it cleanly risk-on, focused on shipping through the cycle",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 9,
+  "n_contradicted": 0,
+  "n_absent": 0,
+  "missed_changes": [
+    "Sharp reversal to regulatory OPTIMISM after the 2024 US election \u2014 'There has never been a better time to start a project in crypto... the regulatory environment has changed completely. This is it.' (Jan 8), 'We are not building a Pause button. We're building a $500b GO button' (Jan 21), 'This couldn't have happened under the Biden administration' \u2014 the predicted measured/concerned regulatory stance did not anticipate this pivot from drag to tailwind.",
+    "Built and championed a formal 7-category token taxonomy (network tokens as 'the king' vs company-backed, memecoins, arcade, collectible, asset-backed, security) \u2014 and took analytical token-level positions (ETH/SOL/UNI as exemplary network tokens; BTC explicitly NOT a memecoin) despite the prediction's 'reasons in sectors not tokens / won't name assets' framing.",
+    "New specific interest in non-fiat algorithmic stablecoins ('Is RAI still the only... algorithmic stablecoin?... I expect more experiments here, no LUNA please'), a sharper sub-stance within the stablecoin thesis.",
+    "Heavy personal emphasis on proof-of-personhood / Sybil-resistance / 'uniqueness' and AI agents custodying their own wallets and operating autonomously onchain \u2014 a specific sharpening of the AI\u00d7crypto thesis.",
+    "Concrete shipping action: Helios multichain light client for L2 interop and trust-minimized sequencer/bridge verification \u2014 operationalizing both the scaling and anti-centralization views."
+  ],
+  "notes": "Nearly every predicted stance is confirmed, frequently via direct personal statements: ZK proving (Jolt/zkVM tweets, Rust ZK hiring, Helios), AI\u00d7crypto (agents paying for compute, proof-of-personhood Big Idea + Dec 20 podcast, machines respecting cryptographic constraints), anti-memecoin (the network-token-vs-memecoin distinction work, token taxonomy calling memecoins zero-sum speculation), and infra centralization (Helios targeting sequencer/bridge trust; 'no single source of control' Mar 6). Stablecoins confirmed both via his own Feb 26 'increasingly obvious product-market fit' and the a16z State of Crypto report he co-authored/presents. L2/cheap-blockspace confirmed via Helios-for-L2s, throughput/latency/UX tweets, and the report. DePIN is the weakest confirmation \u2014 present in the State of Crypto report and the Dec 20 Big Ideas podcast he participated in, but with no sharp standalone personal quote in the window; labeled confirmed on the strength of his central role in that firm content, none of which contradicts it. Risk regime: his 'builder not macro tourist / structural / shipping through the cycle' disposition held firmly (no tactical macro calls; CSX accelerator push), but his tone warmed from 'measured/neutral' to outright enthusiasm as the regulatory overhang he cited resolved \u2014 captured in missed_changes. Token arrays were empty and he avoided outright shilling, consistent with the prediction, though he did stake out analytical positions on specific assets.",
+  "confirm_rate": 1.0
+}

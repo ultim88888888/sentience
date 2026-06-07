@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about AI \u00d7 crypto (decentralized & verifiable AI; Gensyn, EigenCloud)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about verifiable computing / restaking (EigenCloud)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge & privacy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about cross-chain interoperability & composability (LayerZero, Espresso)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about stablecoins & onchain payments",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Concerned about the speculative casino / memecoins / airdrop farming as an end",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about ecosystem fragmentation (siloed chains & rollups)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ZRO (LayerZero) as infrastructure conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about EIGEN (EigenCloud)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about ETH (Ethereum) as platform conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about SOL (Solana) as platform conviction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins as a category",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "No tactical risk-on/risk-off view; structural long-term conviction, under-index on price",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 2,
+  "missed_changes": [
+    "New JTO (Jito) token investment on Solana to address MEV \u2014 a specific new token bet not anticipated",
+    "Escalated privacy from one of several sectors to THE central thesis: 'privacy will be the most important moat,' winner-take-most/chain lock-in framing",
+    "New lead investment in Seismic ($10M round) and new partnership with Zodl on privacy-finance",
+    "Newly elaborated 'finance first, consumer crypto later' thesis explaining why gaming/social haven't taken off",
+    "New explicit defense of token value mechanics \u2014 tokens compound as claims on future protocol cashflows (vs. the prediction's stance of not making token/price arguments)",
+    "Quantum computing threat to crypto raised as a new topic of interest",
+    "Significant non-market content: founder psychology (open/closed mode), habit-building, and political commentary (California wealth tax)"
+  ],
+  "notes": "Nearly all predicted sector and token stances were confirmed, with privacy/ZK by far the most heavily reinforced theme. DePIN went unaddressed in the window (Gensyn appears but reframed as AI-funding, not physical infrastructure; Daylight only named in passing). Memecoins-as-category not restated, though the related casino/airdrop-farming concern surfaces via criticism of 'mercenary' airdrop farmers. Risk-regime no-view stance held \u2014 he continued to focus on long-term technology and fundamentals rather than market timing. Note he did newly argue tokens compound as cashflow claims, which is more price/value-oriented than the prediction's 'I don't make price calls' framing, though still framed structurally.",
+  "confirm_rate": 1.0
+}

@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about stablecoins & on-chain payments as crypto's clearest product-market fit, driven by regulatory clarity and fintech/institutional integration",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about AI \u00d7 crypto (agent payments, proof-of-personhood, provenance, decentralized compute)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about tokenization / real-world assets (treasuries, funds, credit on-chain)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about zero-knowledge & cryptographic infrastructure moving from research to production",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DePIN (decentralized physical infrastructure)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about L2 scaling, cheap modular blockspace, and cross-chain interoperability",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins / purely extractive casino-style speculation eroding trust",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about low-float/high-FDV extractive token structures and excess system leverage as a fragility",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited/oriented toward ETH as the dominant settlement & smart-contract base layer",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited/oriented toward SOL as a high-throughput chain with consumer/payments traction",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Risk-on / constructive backdrop, tempered by a fundamentals-and-durable-adoption focus and leverage caution",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 11,
+  "n_contradicted": 0,
+  "n_absent": 0,
+  "missed_changes": [
+    "Privacy elevated to a top, emphatic, 'inevitable' theme \u2014 institutions treat it as non-negotiable table stakes; heavy emphasis on Zcash/Railgun/Aztec-Noir, ZSAs, private chains, and privacy-as-fungibility. The prediction only gestured at ZK generally, not privacy as its own headline thesis.",
+    "Developed a specific network-token value-accrual thesis: 'closed loop' fee capture via buyback-and-burn, mint/burn decoupling for reinvestment, DUNA entities (Uniswap/UNI), plus a new token taxonomy ('arcade tokens'). Prediction only vaguely cited 'durable token alignment.'",
+    "Active wallet-security advocacy not anticipated: 'blind signing is unacceptable,' clear-signing campaign (threatening to name non-compliant wallets), and pushing ERC-20R / reversibility / rate-limited vaults for theft prevention.",
+    "Positive stance on Bitcoin as 'digital gold'/store of value and on Bitcoin attracting developers (top-5) \u2014 BTC was entirely absent from the prediction's token list (only ETH/SOL).",
+    "Endorsed prediction markets as a maturing, legitimate sector (best when socially embedded) \u2014 not in the prediction.",
+    "Strong new enthusiasm for AI coding / 'agentic engineering' (agent-first TUIs, testing agent frameworks) \u2014 adjacent to but outside the predicted crypto frame.",
+    "Notably favorable, nuanced view of perp DEXs as well-engineered products and a more 'orderly' alternative to memecoin gambling \u2014 partly softening the blanket 'extractive speculation' concern, while still flagging leverage risk.",
+    "Critique of passkey/portability limits for self-custody of funds \u2014 a new key-control concern."
+  ],
+  "notes": "The prediction was explicitly 'extrapolated' from Eddy's standing a16z-builder framework, and his actual statements (the 2025 State of Crypto report he co-authored/presented, the report podcast, and ~80 tweets) track that framework closely, hence a uniformly high confirmation rate with no contradictions. Stablecoins, AI\u00d7crypto, RWA, ZK, and L2/interop are confirmed by BOTH his personal commentary and the report. DePIN is confirmed only via the report's dedicated positive section (he never personally raises it in tweets or his podcast turns), so it is the weakest confirmation. The 'low-float/high-FDV & leverage' concern is confirmed mainly through his extensive leverage-risk commentary ('leverage is a great way to lose everything'); the specific low-float/high-FDV launch structure was not directly revisited. The biggest gap between prediction and reality is emphasis, not direction: privacy and network-token economics became his dominant, most repeated themes in the window despite being underweighted or unstated in the prediction.",
+  "confirm_rate": 1.0
+}

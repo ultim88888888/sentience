@@ -1,0 +1,66 @@
+{
+  "as_of": "2025-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto",
+      "why": "The most important convergence in tech right now. As autonomous agents proliferate, they need permissionless economic rails \u2014 stablecoin payments, micropayments, verifiable identity \u2014 that only crypto can natively provide. And decentralized AI is a structural counterweight to a handful of centralized labs controlling the most powerful technology ever built. Crypto supplies the open coordination, ownership, and incentive layer.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized compute / GPU networks",
+      "why": "AI's appetite for compute is effectively unbounded, and token incentives can aggregate idle and net-new GPU supply into permissionless markets that route around the cloud oligopoly. This is where DePIN and AI x crypto meet most concretely \u2014 real demand meeting crypto coordination.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins",
+      "why": "Crypto's clearest product-market fit. Dollars that settle instantly, globally, and programmatically are a genuine 10x over correspondent banking for payments and savings, especially outside the US. With regulatory clarity finally arriving, the on-ramp for real volume is opening.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN (decentralized physical infrastructure)",
+      "why": "Token incentives are a genuinely new tool for bootstrapping physical networks \u2014 wireless, energy, compute, sensors, mapping \u2014 that previously required billions in upfront capital. Crowdsourcing real-world infrastructure with aligned ownership is one of crypto's most underrated primitives.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Proof of personhood / content authenticity",
+      "why": "In a world flooded with synthetic media and autonomous agents, cryptographic proof of humanity and content provenance becomes essential infrastructure. Crypto is the natural substrate for verifying who and what is real without a central gatekeeper.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Memecoins / pure speculation",
+      "why": "Largely extractive and zero-sum, and a reputational drag on a field whose promise is building durable, useful networks. They pull talent and attention toward casino dynamics and away from the hard work of real products.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Infrastructure without applications",
+      "why": "We've repeatedly over-invested in rails ahead of demand \u2014 chains and tooling with thin real usage. The gap between infra capacity and breakout consumer applications that ordinary people actually use is the industry's central unsolved challenge.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "Structurally constructive over a multi-year horizon: US policy has turned materially friendlier, stablecoin legislation is advancing toward clarity, institutional adoption is deepening, and the AI x crypto convergence is creating genuine new demand rather than reflexive speculation. Caveat: I'm an early-stage investor, not a trader \u2014 this is a fundamentals and cycle view, not a near-term price call, and I expect plenty of volatility along the way.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My conviction is deliberately at the sector/thesis level, not specific tokens \u2014 that reflects both my role as an early-stage investor and how I actually think (networks and primitives over price action). The token arrays are intentionally empty rather than padded. Every item here is marked 'extrapolated': inferred from my consistent public focus \u2014 AI x crypto, decentralized compute, stablecoins, DePIN, proof of personhood \u2014 rather than fresh dated quotes I'm citing verbatim. I think in multi-year cycles and about what gets built, not short-term trades."
+}

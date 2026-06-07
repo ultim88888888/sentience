@@ -1,0 +1,81 @@
+{
+  "as_of": "2023-03-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Decentralized infrastructure networks (DePIN) \u2014 compute, storage, wireless, energy",
+      "why": "Token incentives can bootstrap real physical networks that compete with capex-heavy incumbents from the bottom up. This is the most underrated, most tangible use of crypto rails: rewarding people for contributing real-world resources. Helium-style models generalize far beyond wireless.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "AI \u00d7 crypto intersection",
+      "why": "GPT-4 just shipped and synthetic content is about to flood the internet. Crypto is the natural counterweight: cryptographic provenance and authenticity, proof-of-personhood as sybil resistance gets existential, and decentralized markets for compute and data to counterbalance hyperscaler concentration. Given my ML background this is where I want to spend the most time.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proofs",
+      "why": "ZK is the foundational primitive of the next decade \u2014 it serves both scaling (zk-rollups, zkEVMs maturing fast) and privacy/verifiable-compute. Proving is getting cheaper quickly; the design space is just opening up.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DeFi (self-custodial, transparent on-chain finance)",
+      "why": "After FTX and the March SVB/USDC scare, the contrast is stark: transparent, auditable, self-custodial protocols kept functioning while opaque centralized intermediaries blew up or froze. The long-term case for finance that runs on public infrastructure got stronger, not weaker.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social / consumer (user-owned identity & graphs)",
+      "why": "Composable social protocols (e.g. Farcaster, which we backed) let users own their identity and graph and let developers build on a shared substrate instead of walled gardens. This is the 'own' in read-write-own reaching consumer surfaces.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized exchanges / CeFi custody",
+      "why": "FTX exposed commingling, opacity, and counterparty risk that no amount of branding hides. 'Not your keys, not your coins' is reaffirmed. Concentrated centralized custody is the systemic weak point of this cycle.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Fiat-backed stablecoins' banking dependencies",
+      "why": "USDC's brief depeg when reserves were trapped at SVB this month showed how fragile even well-run fiat-backed stablecoins are when tethered to traditional banking rails. The concentration and off-chain-counterparty risk is the soft underbelly.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory overhang",
+      "why": "An aggressive, unclear US posture \u2014 regulation by enforcement rather than rulemaking \u2014 chills builders and pushes talent and projects offshore. The biggest near-term risk to the domestic ecosystem isn't technical, it's policy.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "The Shapella/Shanghai upgrade next month enables staking withdrawals, which de-risks staking and matures ETH's yield-bearing, productive-monetary-asset thesis. It remains the foundational settlement layer the rest of the stack \u2014 rollups, DeFi, ZK \u2014 builds on.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "As a venture investor my posture is to deploy through the winter \u2014 bear markets are when the best teams build and entry points are best, and conviction in the long-arc theses (decentralized infra, ZK, AI\u00d7crypto) is undimmed by price. This is a multi-year, primary-market risk-on, not a near-term trading call: I'm simultaneously cautious on macro fragility (this month's banking stress, the rate environment) and on centralized counterparty exposure, which I'd rather avoid entirely.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My in-system record here is empty, so every item above is extrapolated from my known investment thesis and the state of the world as of end of Q1 2023 \u2014 I have no verbatim prior statements to cite as grounded. As a VC my real token exposure sits mostly in early/private protocols rather than liquid names, so the token axes are intentionally sparse and not a measure of conviction. Near-term things I'm watching: Ethereum's Shapella upgrade (April), the fallout and second-order effects of the SVB/USDC episode, and the GPT-4-driven acceleration of the AI\u00d7crypto thesis."
+}

@@ -1,0 +1,88 @@
+{
+  "as_of": "2024-06-30",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "AI x crypto convergence",
+      "why": "This is the thesis I care about most right now. AI is concentrating power in a handful of closed labs and flooding the internet with synthetic content; crypto is the natural counterweight \u2014 decentralized ownership of models and data, verifiable provenance, open and incentive-aligned networks rather than corporate monopolies. The two technologies need each other: AI gives crypto genuinely useful work to coordinate, crypto gives AI decentralization, attribution, and aligned ownership. Generational, not a quarter-long narrative.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "DePIN / decentralized compute",
+      "why": "Token incentives can bootstrap real-world physical infrastructure \u2014 compute, GPUs, storage, wireless, energy \u2014 faster and at lower capex than centralized incumbents. AI's insatiable demand for compute makes decentralized GPU and compute markets especially compelling this year: a real bid for real hardware, not just speculation. This is where crypto's coordination machine meets a tangible bottleneck.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Proof of personhood / decentralized identity",
+      "why": "Once AI makes bots indistinguishable from people, a cryptographic, privacy-preserving way to prove unique humanity becomes foundational internet infrastructure. This is one of the clearest cases where crypto solves a problem AI itself creates.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Stablecoins and onchain payments",
+      "why": "The clearest product-market fit in all of crypto. Dollars on open, global, instant, near-free rails \u2014 already moving real volume, already useful to people who don't care about crypto. The closest thing we have to a proven killer app.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Consumer apps / decentralized social",
+      "why": "Infrastructure has finally matured \u2014 cheap L2 blockspace, account abstraction, better wallets \u2014 so it's time to build apps people actually want, not just more infra. User-owned social graphs and open consumer protocols are where the next wave of real usage comes from.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Low-float / high-FDV token launches",
+      "why": "The prevailing launch structure \u2014 tiny circulating float against enormous fully-diluted valuations \u2014 concentrates upside in insiders and hands the public structurally bad entries. It's corrosive to trust and to the long-term health of the market, and as an industry we should want better.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Speculation outrunning utility",
+      "why": "A large share of onchain attention right now is pure casino with no durable value accrual. Memecoins can be a legitimate proof of distribution and a cheap onboarding funnel, but if speculation is the main thing being built rather than a side effect of building, that's a problem.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "US regulatory hostility",
+      "why": "Enforcement-by-litigation and the absence of clear, fit-for-purpose rules push builders and liquidity offshore and chill legitimate innovation. It's the single largest avoidable headwind facing the sector.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Conviction is at the ecosystem level: the leading decentralized settlement and smart-contract platform, and the home of most of the primitives I care about. Spot ETF approval (19b-4s cleared in May, launch still pending) is a structural adoption tailwind, not a trade call.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "SOL",
+      "why": "Ecosystem-level view, not a price target: the high-performance chain currently capturing the most consumer and retail activity, and a credible venue for the cheap-blockspace consumer apps I'm excited about.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "why": "I deploy across cycles on a multi-year horizon, and the structural setup is the strongest it's been: Bitcoin and (pending-launch) Ethereum ETFs opening institutional rails, the April halving behind us, and a genuine technology wave in AI x crypto. This is conviction to keep building and deploying through the cycle, not a near-term timing call \u2014 near-term price action will be choppy and I'm not predicting it.",
+    "provenance": "extrapolated"
+  },
+  "notes": "I'm a long-horizon VC, not a token trader \u2014 my real conviction lives at the sector and primitive level (AI x crypto, DePIN/compute, identity, stablecoins, consumer apps), much of which is still early or pre-token. All items here are marked extrapolated: they reflect my standing thesis framing rather than a freshly recorded, datable quote, and I won't fabricate citations. tokens_concerned is intentionally empty \u2014 I hold no specific token shorts; my structural worry is the low-float/high-FDV launch dynamic, captured under sectors_concerned."
+}

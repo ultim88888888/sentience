@@ -1,0 +1,82 @@
+{
+  "as_of": "2022-12-31",
+  "subject": "ali-yahya",
+  "abstained": false,
+  "sectors_excited": [
+    {
+      "name": "Decentralized infrastructure networks (token-incentivized physical infra: wireless, compute, storage)",
+      "why": "The FTX implosion reinforces that the durable value in this space is permissionless, decentralized infrastructure with real-world utility. Token incentives can bootstrap physical networks that compete with centralized incumbents. This is exactly what a long-horizon infra investor should be funding through the winter.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Zero-knowledge proofs and ZK rollups",
+      "why": "ZK is the most important cryptographic primitive for both scaling and privacy. zkEVMs are maturing, and post-Merge the rollup-centric roadmap makes L2 execution the frontier where infra investment compounds.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Modular blockchains and L2 scaling",
+      "why": "After the Merge, Ethereum's path is rollup-centric. Separating execution, settlement, and data availability is how the base layer scales without sacrificing credible neutrality. This is foundational, not speculative.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Decentralized social and the ownership economy",
+      "why": "With centralized social platforms in turmoil, protocols that give users ownership of their identity and social graph \u2014 a composable, user-owned alternative \u2014 are compelling. This is the ownership-economy thesis applied to networks people actually use daily.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Self-custody, wallets, and account abstraction",
+      "why": "FTX is the strongest argument yet for self-custody \u2014 not your keys, not your coins. The remaining bottleneck is UX. Smarter wallets and account abstraction are how we onboard the next wave of users without compromising on decentralization.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "sectors_concerned": [
+    {
+      "name": "Centralized exchanges and CeFi custodians/intermediaries",
+      "why": "FTX, Celsius, Voyager, BlockFi \u2014 opaque centralized custodians with commingled funds and hidden leverage are the defining failure of this cycle, with contagion still unwinding (Genesis/DCG stress in December). Counterparty risk is the dominant near-term danger, and it only sharpens the case for decentralization.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    },
+    {
+      "name": "Algorithmic / under-collateralized stablecoins",
+      "why": "Terra/UST showed that reflexive, under-collateralized designs collapse under stress. I'm skeptical of any stablecoin model not backed by transparent, sufficient collateral.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_excited": [
+    {
+      "name": "ETH",
+      "why": "Post-Merge, Ethereum is the credibly-neutral settlement layer with improving monetary properties (lower issuance, staking yield). It is the asset most aligned with the infrastructure and L2 thesis, on a long time horizon rather than a price call.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "tokens_concerned": [
+    {
+      "name": "Centralized-exchange tokens (exchange-issued tokens)",
+      "why": "FTT's collapse exposed the reflexive fragility of exchange tokens propped up by opaque balance sheets. I'm broadly cautious on any token whose value depends on a centralized, non-transparent intermediary.",
+      "provenance": "extrapolated",
+      "age_note": "",
+      "citations": []
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "why": "Near-term the market is clearly risk-off: macro tightening from the Fed's 2022 hiking cycle, plus acute contagion and counterparty risk from the FTX collapse and its ongoing fallout. But as a long-horizon venture investor, this is precisely when to deploy into fundamentals and builders. Net: cautious on prices and counterparties, constructive on building infrastructure \u2014 which I read as neutral overall.",
+    "provenance": "extrapolated"
+  },
+  "notes": "My logged record here is empty, so every item above is extrapolated from my known thesis as an a16z crypto infrastructure investor as of end-2022 \u2014 I have no verbatim quotes to ground these and have deliberately not fabricated any citations. Overall posture reflects a 'build through the winter' stance: decentralization is the lesson of the FTX cycle, and infrastructure (ZK, modular/L2, decentralized physical networks, self-custody UX, user-owned social) is where I'd concentrate conviction."
+}

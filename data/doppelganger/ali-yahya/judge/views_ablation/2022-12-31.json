@@ -1,0 +1,66 @@
+{
+  "claims": [
+    {
+      "claim": "Decentralized infrastructure networks (token-incentivized physical infra: wireless, compute, storage)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Zero-knowledge proofs and ZK rollups",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Modular blockchains and L2 scaling",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Decentralized social and the ownership economy",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Self-custody, wallets, and account abstraction",
+      "axis": "sectors_excited",
+      "label": "absent"
+    },
+    {
+      "claim": "Centralized exchanges and CeFi custodians/intermediaries",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Algorithmic / under-collateralized stablecoins",
+      "axis": "sectors_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "ETH",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Centralized-exchange tokens (exchange-issued tokens)",
+      "axis": "tokens_concerned",
+      "label": "absent"
+    },
+    {
+      "claim": "Neutral risk regime: cautious on prices/counterparties, constructive on building infrastructure",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 6,
+  "n_contradicted": 0,
+  "n_absent": 4,
+  "missed_changes": [
+    "Strong new emphasis on AI + crypto convergence (decentralized compute for ML) \u2014 leading Gensyn's Series A and 'collective AI' framing",
+    "Active deployment/leading new deals through the window (Alongside seed, Gensyn Series A, continued LayerZero support) \u2014 concretely 'building through the winter'",
+    "Explicit pro-multi-chain / cross-chain interoperability stance (LayerZero; 'future of crypto is multi-chain') paired with opposing Uniswap deployment on BNB Chain via Wormhole",
+    "Crypto-payments-meets-web2 integration interest (Loop + Stripe)",
+    "Recurring cultural/political commentary on innovation, science funding mechanisms, and societal hostility to builders \u2014 outside the market-view frame"
+  ],
+  "notes": "The infrastructure-through-the-winter thesis is strongly confirmed via concrete deals (Gensyn = decentralized compute, Iron Fish + Boneh ZK discussion, NEAR/LayerZero modular & multi-chain infra, cdixon 'Read Write Own' ownership economy, prtyDAO). Risk stance confirmed by active capital deployment. The concern-side claims (CeFi custodians, algo stablecoins, exchange tokens) and self-custody/AA were simply not addressed in the provided statements \u2014 marked absent, not contradicted. Most notable unanticipated thread is the AI+crypto compute angle, which partly overlaps the decentralized-infra claim but reads as a distinct new emphasis.",
+  "confirm_rate": 1.0
+}

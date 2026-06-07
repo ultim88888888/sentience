@@ -1,0 +1,77 @@
+{
+  "claims": [
+    {
+      "claim": "Excited about zero-knowledge proofs / zkVMs / verifiable computation (Jolt, sum-check/Binius, proving overhead collapsing)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about Ethereum L2 scaling & data/blob infrastructure (cheap high-quality blockspace as prerequisite)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about fully on-chain games (most compute-hungry apps; EVE Frontier)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about crypto \u00d7 AI (content provenance, deepfake defense, agents owning keys/wallets)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about stablecoins & payments (cheap USDC transfers, merchant savings, PMF)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about identity, wallet UX & private proof of personhood (sybil resistance vs LLMs)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Excited about DeFi (lending & AMM design with real on-chain fundamentals, not TVL theater)",
+      "axis": "sectors_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about memecoins (pure speculation, no purpose, damages adoption/regulation/builders)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about token-first thinking / 'tokenomics' pie-chart consulting (protocol first, token role is emergent)",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Concerned about naive token / DAO governance as an underpriced attack surface; voting as last resort",
+      "axis": "sectors_concerned",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Bullish on ETH fundamentals (clear leader, L2-centric roadmap is right architecture)",
+      "axis": "tokens_excited",
+      "label": "confirmed"
+    },
+    {
+      "claim": "Neutral on sentiment/risk regime: skeptical in analysis, optimistic in action; price-innovation cycle; build regardless",
+      "axis": "risk_regime",
+      "label": "confirmed"
+    }
+  ],
+  "n_confirmed": 12,
+  "n_contradicted": 0,
+  "n_absent": 0,
+  "missed_changes": [
+    "Newly emphatic bullishness on the US regulatory/political shift post-2024 election as a major tailwind ('the regulatory environment has changed completely,' '$500b GO button,' 'couldn't have happened under the Biden administration,' praise for Brian Quintenz, anti-debanking advocacy) \u2014 a catalyst the 'neutral' risk stance did not anticipate.",
+    "Developed and published a formal token taxonomy (network tokens vs company-backed tokens vs memecoins + 7 categories), elevating 'network tokens' as the canonical good category \u2014 a new intellectual framework extending, but more elaborate than, the prior token-first/memecoin concerns.",
+    "New concrete push on light clients (Helios) and rollup interoperability as 'fundamental to Ethereum scaling' \u2014 a specific new direction within the L2 thesis.",
+    "Sharper crypto\u00d7AI specifics: AI agents owning wallets, 'decentralized autonomous chatbots' via TEEs, AI models running autonomously onchain as 'investable persons,' and a possible first AI-owned blockchain.",
+    "Adoption thesis around converting passive holders into active users ('only 5\u201310% of crypto owners are active'; State of Crypto user-sizing of 30\u201360M real monthly users).",
+    "Mild softening toward multichain pragmatism / Bitcoin appreciation ('support the best entrepreneurs... wherever that is,' 'incredible that we have bitcoin,' classifying BTC and even DOGE as network tokens)."
+  ],
+  "notes": "Unusually well-grounded prediction: every stance was reaffirmed in the window, none contradicted. Strongest confirmations are ZK/zkVMs (extensive Jolt work: Twist+Shout, memory/speed roadmap, Rust ZK hiring) and proof-of-personhood/identity (Eddy's own Big Ideas entry + a long Dec-2024 podcast). Stablecoins (RAI/algorithmic-stablecoin tweet), token-first concern ('if the tokenomics is just a pie chart, there is no network'), and memecoins (sustained derogation and definitional work) are clearly his personal views. Fully-on-chain games and DeFi rest partly on the co-authored/co-presented State of Crypto report plus the continuing EVE Frontier collaboration and DEX/fee-switch fundamentals discussion \u2014 slightly thinner but stance-consistent. The chief un-anticipated developments are the regulatory-regime optimism and the elaborate network-token taxonomy.",
+  "confirm_rate": 1.0
+}

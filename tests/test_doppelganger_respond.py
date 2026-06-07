@@ -80,7 +80,7 @@ def test_respond_normalizes_missing_keys(tmp_path):
         view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
                        soul_path=_soul(tmp_path), evidence_path=_ev(tmp_path))
     assert view["sectors_concerned"] == [] and view["tokens_excited"] == []
-    assert view["risk_regime"] == {"stance": "no_view"}
+    assert view["risk_regime"] == {"stance": "no_view", "conviction": None}
     assert view["abstained"] is False and view["as_of"] == "2022-12-31"
     assert view["subject"] == "testy-mctest"
 
@@ -124,3 +124,33 @@ def test_respond_ablate_memory_is_soulless(tmp_path):
     between = captured["user"].split("YOUR RECORD", 1)[1].split("# QUESTION", 1)[0]
     assert between.strip().splitlines()[1:] == []
     assert view["sectors_excited"][0]["provenance"] == "extrapolated"
+
+
+from doppelganger.respond import _coerce_conviction
+
+
+def test_coerce_conviction_clamps_and_handles_bad_input():
+    assert _coerce_conviction(85) == 85
+    assert _coerce_conviction("90") == 90
+    assert _coerce_conviction(73.6) == 74          # rounds
+    assert _coerce_conviction(150) == 100          # clamps high
+    assert _coerce_conviction(-5) == 0             # clamps low
+    assert _coerce_conviction(None) is None        # absent
+    assert _coerce_conviction("high") is None      # unparseable -> None, not a crash
+
+
+def test_respond_prompt_elicits_conviction():
+    system, _ = build_query_prompt(SOUL, "mem", "eddy-lazzarin", date(2022, 12, 31))
+    assert "conviction" in system.lower()
+
+
+def test_respond_normalizes_conviction_on_every_item(tmp_path):
+    raw = ('{"sectors_excited":[{"name":"DeFi","why":"w","conviction":150,"provenance":"grounded","citations":[]}],'
+           '"tokens_concerned":[{"name":"FOO","conviction":"40"}],'
+           '"risk_regime":{"stance":"risk_on","conviction":-3}}')
+    with patch("doppelganger.respond.run_claude", return_value=raw):
+        view = respond("testy-mctest", date(2022, 12, 31), out_dir=tmp_path,
+                       soul_path=_soul(tmp_path), evidence_path=_ev(tmp_path))
+    assert view["sectors_excited"][0]["conviction"] == 100   # clamped
+    assert view["tokens_concerned"][0]["conviction"] == 40   # coerced from str
+    assert view["risk_regime"]["conviction"] == 0            # clamped low

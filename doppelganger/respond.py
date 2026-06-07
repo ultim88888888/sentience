@@ -25,9 +25,9 @@ SURVEY_QUERY = (
 
 _SCHEMA_HINT = """{
   "as_of": "<today's date>", "subject": "<your slug>", "abstained": false,
-  "sectors_excited":   [{"name": "...", "why": "...", "provenance": "grounded|persisted|extrapolated", "age_note": "", "citations": [{"date": "YYYY-MM-DD", "quote": "verbatim"}]}],
+  "sectors_excited":   [{"name": "...", "why": "...", "conviction": 0, "provenance": "grounded|persisted|extrapolated", "age_note": "", "citations": [{"date": "YYYY-MM-DD", "quote": "verbatim"}]}],
   "sectors_concerned": [], "tokens_excited": [], "tokens_concerned": [],
-  "risk_regime": {"stance": "risk_on|risk_off|neutral|no_view", "why": "...", "provenance": "..."},
+  "risk_regime": {"stance": "risk_on|risk_off|neutral|no_view", "conviction": 0, "why": "...", "provenance": "..."},
   "notes": "..."
 }"""
 
@@ -57,6 +57,10 @@ at all, set "abstained": true with empty arrays.
 citations); "persisted" = a view you still hold but haven't restated recently (cite it, set age_note \
 e.g. "stated 2021-06, not revisited"); "extrapolated" = inferred from how you think, no direct quote \
 (no citation). Cite verbatim.
+- conviction per item: an integer 0–100 for how STRONGLY you hold this view RIGHT NOW — your \
+intensity of belief, not a probability of being correct. 80–100 = a core thesis you state loudly and \
+often; 40–60 = a real but measured view; 1–20 = a tentative or exploratory lean. Use the full range \
+and be honest — do NOT default everything to high. Set conviction on every item and on risk_regime.
 - Output ONLY the JSON object — no prose before or after.
 
 --- WHO YOU ARE (your soul) ---
@@ -70,6 +74,14 @@ e.g. "stated 2021-06, not revisited"); "extrapolated" = inferred from how you th
 _ARRAYS = ["sectors_excited", "sectors_concerned", "tokens_excited", "tokens_concerned"]
 
 
+def _coerce_conviction(val) -> int | None:
+    """Clamp a self-reported conviction to an int in [0, 100]; None if unparseable/absent."""
+    try:
+        return max(0, min(100, int(round(float(val)))))
+    except (TypeError, ValueError):
+        return None
+
+
 def _parse_view(raw: str, subject: str, t0: date) -> dict:
     i, j = raw.find("{"), raw.rfind("}")
     if i == -1 or j == -1 or j < i:
@@ -78,8 +90,12 @@ def _parse_view(raw: str, subject: str, t0: date) -> dict:
     for k in _ARRAYS:
         if not isinstance(data.get(k), list):
             data[k] = []
+        for item in data[k]:
+            if isinstance(item, dict):
+                item["conviction"] = _coerce_conviction(item.get("conviction"))
     if not isinstance(data.get("risk_regime"), dict):
         data["risk_regime"] = {"stance": "no_view"}
+    data["risk_regime"]["conviction"] = _coerce_conviction(data["risk_regime"].get("conviction"))
     data.setdefault("as_of", t0.isoformat())
     data.setdefault("subject", subject)
     data.setdefault("abstained", False)

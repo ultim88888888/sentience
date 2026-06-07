@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from unittest.mock import patch, MagicMock
 
-from doppelganger.llm import run_claude
+from doppelganger.llm import run_claude, CLAUDE_MODEL, CLAUDE_EFFORT
 
 
 def test_run_claude_invokes_cli_with_stdin(tmp_path):
@@ -14,8 +14,8 @@ def test_run_claude_invokes_cli_with_stdin(tmp_path):
     args, kwargs = mrun.call_args
     cmd = args[0]
     assert cmd[0] == "claude" and "-p" in cmd
-    assert cmd[cmd.index("--model") + 1] == "opus"
-    assert cmd[cmd.index("--effort") + 1] == "max"
+    assert cmd[cmd.index("--model") + 1] == CLAUDE_MODEL
+    assert cmd[cmd.index("--effort") + 1] == CLAUDE_EFFORT
     assert "--no-session-persistence" in cmd
     assert cmd[cmd.index("--system-prompt") + 1] == "SYS"
     assert kwargs["input"] == "USERBODY"

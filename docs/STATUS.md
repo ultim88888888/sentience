@@ -1,6 +1,6 @@
 # sentience — status & handoff
 
-_Last updated: 2026-06-06_
+_Last updated: 2026-06-07_
 
 ## ⚡ ACTIVE WORK — Corpus Doppelganger Engine (branch `doppelganger/engine-design`)
 
@@ -10,37 +10,42 @@ speaker-attributed podcast turns + LinkedIn/bio), build a frozen-at-T0 **soul**
 person at date T*. First subjects: **Eddy Lazzarin**, **Ali Yahya** (a16z crypto GPs).
 Design docs: `docs/superpowers/specs/2026-06-05-*doppelganger*` and `.../plans/2026-06-05-*doppelganger*`.
 
-**All 5 units BUILT + tested (67 tests), on this branch (not merged to main):**
+**All 5 units BUILT + tested (72 tests), on this branch (not merged to main):**
 ingestion → soul → memory → doppelganger(`respond`) → walk-forward + scorers. Module: `doppelganger/`.
-- LLM calls = `claude -p --model opus --effort max` (Max sub, no API cost) via `doppelganger/llm.py`. No SDK.
-- Generated artifacts live UNTRACKED under `data/doppelganger/<slug>/` (committed here only to carry the
-  in-progress run across machines).
+- LLM calls = `claude -p --model opus --effort high` (Max sub, no API cost) via `doppelganger/llm.py`. No SDK.
+  **Effort was `max` through 2026-06-06; dialed to `high` on 2026-06-07 to conserve credits.** This leaves a
+  known eval confound: **Eddy was judged at `max`, Ali at `high`.**
+- Generated artifacts live UNTRACKED under `data/doppelganger/<slug>/`.
 
 **Core principle (Jax-enforced):** feed the model inputs, don't script its cognition. Eval is **AGENTIC**
 — LLM-judge agents read the qualitative views; deterministic scores are only rough indicators.
 
-**Subset findings (Eddy, 3 quarters) — the real results so far:**
-- Leakage firewall holds (0 leaked everywhere). Soul-less ablation honestly labels 100% `extrapolated`,
-  0 citations → **no quote-recitation leakage**; it just guesses stable views well.
-- `confirm_rate` corpus-lift = 0 but that's **metric saturation** (stable views never contradicted), not
-  "corpus useless." Real signal = `missed_changes` (doppelganger nails persistence, misses foresight).
-- Eddy-vs-Ali discrimination: agentic judge graded **4/5 distinct** (distinct frameworks; shared themes,
-  distinct *why*). Deterministic name-overlap gave a misleading 0.0 → why the eval is agentic.
+**FULL walk-forward DONE — both subjects, 14 quarters each (2026-06-07).** Trajectories + ablation + judge
+complete; scores written; agentic synthesis memo at `docs/doppelganger-synthesis-2026-06-07.md`. Findings:
+- Leakage firewall holds (FULL arm overwhelmingly grounded/cited; soul-less ablation ~100% `extrapolated`,
+  0 citations → **no quote-recitation leakage**).
+- `confirm_rate` = 1.0 both arms every quarter → **mean lift 0 = metric saturation, NOT "corpus useless."**
+  Real signal = `missed_changes` (nails persistence, misses foresight). Do NOT headline confirm_rate.
+- **Discrimination 4/5 distinct** (agentic). The ablation-collapse is the real positive: strip the corpus and
+  both subjects produce nearly the *same* generic-a16z doc → all distinctiveness is carried by soul+memory.
+  The experiment's true product is **characterization fidelity**, not forecasting.
+- Honest limits: N=2, ~14 quarters, single judge, the max/high effort confound.
 
-**▶ NEXT STEP (resume here, esp. on the always-on Mac Mini):**
-1. Run the full quarterly walk-forward, both subjects (resumable; skips cached steps + transient failures):
-   ```bash
-   tmux new -s wf 'source .venv/bin/activate && caffeinate -i python -m doppelganger.run_full'
-   ```
-   ~several hours: the memory feed grows to ~228k tokens by 2026 (feed-all, by design — Jax: all his
-   history shapes soul + analysis context, so NO recency cap). Reattach: `tmux attach -t wf`.
-2. Then score + analyze agentically → findings:
-   ```bash
-   python -m doppelganger.run score --subject eddy-lazzarin   # + ali-yahya
-   ```
-   plus dispatch a markets-analyst agent over the trajectories for discrimination + a synthesis memo.
-3. Open question to revisit: replace the saturated `confirm_rate` headline with change-recall +
-   groundedness (agentic), per the subset finding.
+**NEW — per-pick `conviction` score (0-100) shipped (2026-06-07, commit `8d6e906`).** Each sector/token view
++ risk_regime now self-reports conviction (intensity, NOT calibrated probability). Validated on an Eddy
+sample: full range used (64-92), highest on ZK (his Jolt frontier) + memecoin concern. Conviction
+trajectories show decay (onchain games 80→70→gone), growth (payments 72→90), steady anchors (ZK ~90).
+- ⚠️ The committed dataset's views have **NO conviction** (generated before the feature). Only a scratch
+  4-quarter Eddy sample exists (`/tmp/dg_conv_test`, uncommitted).
+
+**▶ NEXT STEP (pick up here):**
+1. **Full conviction backfill — DEFERRED to weekly-usage reset** (Jax was at 80% on 2026-06-07). Cost
+   ~3.4M tokens (uncapped feed; Eddy's 2026 quarter alone is 228k input). Regenerate 14 full-arm views ×2
+   with conviction; no re-judge needed. Then add conviction-trajectory analysis to the findings.
+2. **Blind authorship test** (cheap, high-value): classify a held-out view as Eddy-vs-Ali, FULL arm vs
+   ablation arm. Turns the qualitative ablation-collapse into a number — the clean way to measure
+   characterization fidelity.
+3. Replace the saturated `confirm_rate` headline with **change-recall + groundedness**, measured agentically.
 
 ## What this project is
 

@@ -40,10 +40,20 @@ class Roster:
                 return self._match(pref.iloc[0])
         return None
 
-    def resolve(self, name: str | None, prefer=None) -> Match:
+    def resolve(self, name: str | None, prefer=None, allow=None) -> Match:
         """Resolve a name to an a16z member. `prefer` (a list of slugs, e.g. the seminar
-        host-prior) disambiguates first/last-name ties. External guests -> is_a16z=False."""
+        host-prior) disambiguates first/last-name ties. External guests -> is_a16z=False.
+
+        `allow` is the set of slugs CORROBORATED as present in this episode (credited
+        authors + people already matched by full/last name in the same post). A bare
+        FIRST name promotes to a16z only when its slug is in `allow` or `prefer` —
+        otherwise an audience member who self-introduces with a first name that
+        collides with a roster member ("I'm Jana", "this is Bill") would be falsely
+        tagged a16z. Last-name and full-name matches are identifying and need no
+        corroboration. `allow=None` => no corroboration available => suppress
+        first-name promotion entirely (used by the strong-match pass-1)."""
         prefer = list(prefer or [])
+        allow = set(allow or [])
         if not name or not name.strip():
             return Match(None, None, None, False)
         q = name.lower().strip()
@@ -53,14 +63,19 @@ class Roster:
             return self._match(exact.iloc[0])
         toks = q.split()
         if len(toks) == 1:
-            # single token: try last name, then first name (hosts are often thanked by first
-            # name only — "Thanks, Justin"). Ties broken by the host-prior.
-            for col in ("last", "first"):
-                hit = self._pick(self._df[self._df[col] == toks[0]], prefer)
-                if hit:
-                    return hit
+            t = toks[0]
+            # last name is identifying -> trust it directly
+            hit = self._pick(self._df[self._df["last"] == t], prefer)
+            if hit:
+                return hit
+            # first name only -> promote to a16z ONLY if corroborated present in episode
+            fhit = self._pick(self._df[self._df["first"] == t], prefer)
+            if fhit:
+                if fhit.slug in prefer or fhit.slug in allow:
+                    return fhit
+                return Match(None, None, None, False)  # uncorroborated collision -> external
             # ambiguous only if it matched multiple somewhere
-            if len(self._df[(self._df["last"] == toks[0]) | (self._df["first"] == toks[0])]) > 1:
+            if len(self._df[(self._df["last"] == t) | (self._df["first"] == t)]) > 1:
                 return Match(None, None, None, False, ambiguous=True)
             return Match(None, None, None, False)
         # 2) multi-token: match on last name

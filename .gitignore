@@ -7,3 +7,6 @@ data/a16z_research/audio_cache/
 data/a16z_research/ts_transcripts/
 data/prices/
 data/study/
+attribution/logs/
+logs/
+worktrees/

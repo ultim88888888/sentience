@@ -87,13 +87,33 @@ def _rebuild_outputs(label: str) -> None:
             f.write(f"- {slug}: {c}\n")
 
 
+def _credited(row) -> set:
+    try:
+        return {a for a in list(row["author_slugs"]) if a}
+    except (TypeError, KeyError):
+        return set()
+
+
+def _present_slugs(segs, roster, prior, credited) -> set:
+    """Corroborated-present slugs for a post: credited authors + host-prior + everyone
+    matched by full/last name (the strong pass). First-name-only promotion is gated on
+    this set so audience first-name collisions don't get tagged a16z."""
+    present = set(credited) | set(prior)
+    for s in segs:
+        m = roster.resolve(s.get("speaker"), prefer=prior, allow=None)  # strong-only
+        if m.is_a16z and m.slug:
+            present.add(m.slug)
+    return present
+
+
 def _attribute_post(row, roster) -> list[dict]:
     mode = route_post(row).mode
     prior = HOST_PRIOR["podcast"] if mode == CONVERSATIONAL else HOST_PRIOR["research-seminar"]
     segs = _segments_for_post(row, row["transcript"], roster, mode)
+    present = _present_slugs(segs, roster, prior, _credited(row))
     rows = []
     for i, s in enumerate(segs):
-        m = roster.resolve(s.get("speaker"), prefer=prior)
+        m = roster.resolve(s.get("speaker"), prefer=prior, allow=present)
         kept, reason = gate_segment(s)
         rows.append({
             "post_id": row["object_id"], "segment_idx": i, "method": s["method"],

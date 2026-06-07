@@ -12,6 +12,15 @@ import pandas as pd
 from .config import CORPUS, DATA, SEGMENTS_OUT
 
 OUT_JSONL = DATA / "attributed_transcripts.jsonl"
+DUPLICATES = DATA / "duplicates.json"
+
+
+def _dup_map() -> dict:
+    """object_id -> canonical object_id for republished duplicates (see dedup.py).
+    Empty if no manifest yet. Consumers train on records where duplicate_of is None."""
+    if DUPLICATES.exists():
+        return json.loads(DUPLICATES.read_text()).get("duplicate_of", {})
+    return {}
 
 _META_COLS = ["object_id", "title", "permalink", "post_date", "formats", "categories",
               "tags", "author_slugs", "poster_display_name"]
@@ -26,6 +35,7 @@ def _listify(v):
 
 def build_records(seg: pd.DataFrame, corpus: pd.DataFrame) -> list[dict]:
     meta = corpus.set_index("object_id")
+    dup = _dup_map()
     records = []
     for pid, pdf in seg.sort_values(["post_id", "segment_idx"]).groupby("post_id"):
         m = meta.loc[pid] if pid in meta.index else None
@@ -48,6 +58,7 @@ def build_records(seg: pd.DataFrame, corpus: pd.DataFrame) -> list[dict]:
             "credited_authors": [] if m is None else _listify(m.get("author_slugs")),
             "a16z_participants": a16z,        # a16z people who actually SPEAK (matching key)
             "all_speakers": speakers,
+            "duplicate_of": dup.get(pid),     # canonical object_id if this is a republish, else None
             "segments": segments,
         })
     return records

@@ -1,0 +1,271 @@
+{
+  "min_containment": 0.5,
+  "duplicate_of": {
+    "10642-0": "8931-0",
+    "10644-0": "11154-0",
+    "10921-0": "11299-0",
+    "11622-0": "12315-0",
+    "13554-0": "13651-0",
+    "14875-0": "14882-0",
+    "18198-0": "17500-0",
+    "17624-0": "18201-0",
+    "18010-0": "18223-0",
+    "18314-0": "18217-0",
+    "4785-0": "4664-0",
+    "4717-0": "8954-0"
+  },
+  "clusters": [
+    {
+      "canonical": "8931-0",
+      "members": [
+        "10642-0",
+        "8931-0"
+      ],
+      "posts": {
+        "10642-0": {
+          "kept_a16z": 0,
+          "chars": 80596,
+          "date": "2023-09-12T12:35:03+00:00",
+          "title": "Workshop on rollup sequencer economics: small group discussion"
+        },
+        "8931-0": {
+          "kept_a16z": 0,
+          "chars": 80608,
+          "date": "2023-09-12T06:38:16+00:00",
+          "title": "Workshop on rollup sequencer economics: open questions, organized"
+        }
+      }
+    },
+    {
+      "canonical": "11154-0",
+      "members": [
+        "10644-0",
+        "11154-0"
+      ],
+      "posts": {
+        "10644-0": {
+          "kept_a16z": 11,
+          "chars": 71838,
+          "date": "2023-10-13T13:27:45+00:00",
+          "title": "The Effects of Retroactive Rewards on Participating in Online Governance"
+        },
+        "11154-0": {
+          "kept_a16z": 11,
+          "chars": 71840,
+          "date": "2024-06-03T09:03:12+00:00",
+          "title": "The effects of retroactive rewards on participating in online governance"
+        }
+      }
+    },
+    {
+      "canonical": "11299-0",
+      "members": [
+        "10921-0",
+        "11299-0"
+      ],
+      "posts": {
+        "10921-0": {
+          "kept_a16z": 0,
+          "chars": 55834,
+          "date": "2024-05-10T06:12:21+00:00",
+          "title": "Journey to jumpstart: from Meerkat to Houseparty to a crypto-native social network"
+        },
+        "11299-0": {
+          "kept_a16z": 25,
+          "chars": 55701,
+          "date": "2024-06-25T13:30:12+00:00",
+          "title": "On finding product-market fit... and meaning"
+        }
+      }
+    },
+    {
+      "canonical": "12315-0",
+      "members": [
+        "11622-0",
+        "12315-0"
+      ],
+      "posts": {
+        "11622-0": {
+          "kept_a16z": 0,
+          "chars": 42830,
+          "date": "2024-07-26T19:47:52+00:00",
+          "title": "Crafting virtual worlds"
+        },
+        "12315-0": {
+          "kept_a16z": 23,
+          "chars": 42812,
+          "date": "2024-09-13T09:30:35+00:00",
+          "title": "Games as reality (with EVE Online)"
+        }
+      }
+    },
+    {
+      "canonical": "13651-0",
+      "members": [
+        "13554-0",
+        "13651-0"
+      ],
+      "posts": {
+        "13554-0": {
+          "kept_a16z": 0,
+          "chars": 57784,
+          "date": "2025-01-13T08:52:07+00:00",
+          "title": "Building Blackbird"
+        },
+        "13651-0": {
+          "kept_a16z": 0,
+          "chars": 57896,
+          "date": "2025-01-24T14:31:36+00:00",
+          "title": "How this foodie founder is revamping restaurants"
+        }
+      }
+    },
+    {
+      "canonical": "14882-0",
+      "members": [
+        "14875-0",
+        "14882-0"
+      ],
+      "posts": {
+        "14875-0": {
+          "kept_a16z": 31,
+          "chars": 25712,
+          "date": "2025-05-14T18:23:22+00:00",
+          "title": "All the stablecoin news: Stripe, Visa, Coinbase, Circle, more"
+        },
+        "14882-0": {
+          "kept_a16z": 31,
+          "chars": 26370,
+          "date": "2025-05-15T11:11:36+00:00",
+          "title": "Everything stablecoins: Big picture, deep dive"
+        }
+      }
+    },
+    {
+      "canonical": "17500-0",
+      "members": [
+        "17500-0",
+        "18198-0"
+      ],
+      "posts": {
+        "17500-0": {
+          "kept_a16z": 51,
+          "chars": 27434,
+          "date": "2025-11-19T13:24:47+00:00",
+          "title": "Pricing the future (with Kalshi CEO)"
+        },
+        "18198-0": {
+          "kept_a16z": 47,
+          "chars": 28240,
+          "date": "2025-11-19T10:14:18+00:00",
+          "title": "Prediction markets and pricing the future (with Kalshi CEO)"
+        }
+      }
+    },
+    {
+      "canonical": "18201-0",
+      "members": [
+        "17624-0",
+        "18201-0"
+      ],
+      "posts": {
+        "17624-0": {
+          "kept_a16z": 21,
+          "chars": 33868,
+          "date": "2025-12-04T14:45:14+00:00",
+          "title": "TradFi’s tipping point: Fidelity CEO Abigail Johnson on stablecoins, Bitcoin, and innovation bets"
+        },
+        "18201-0": {
+          "kept_a16z": 22,
+          "chars": 33768,
+          "date": "2025-12-04T10:19:10+00:00",
+          "title": "Fidelity CEO on stablecoins, Bitcoin, and innovation bets"
+        }
+      }
+    },
+    {
+      "canonical": "18223-0",
+      "members": [
+        "18010-0",
+        "18223-0"
+      ],
+      "posts": {
+        "18010-0": {
+          "kept_a16z": 26,
+          "chars": 32674,
+          "date": "2026-01-08T07:31:02+00:00",
+          "title": "The obsession that destroys startups (with LayerZero CEO)"
+        },
+        "18223-0": {
+          "kept_a16z": 27,
+          "chars": 32840,
+          "date": "2026-01-07T11:00:55+00:00",
+          "title": "The obsession that destroys startups"
+        }
+      }
+    },
+    {
+      "canonical": "18217-0",
+      "members": [
+        "18217-0",
+        "18314-0"
+      ],
+      "posts": {
+        "18217-0": {
+          "kept_a16z": 23,
+          "chars": 45231,
+          "date": "2025-10-29T10:43:00+00:00",
+          "title": "Granular synchrony: a new network timing model for distributed computing"
+        },
+        "18314-0": {
+          "kept_a16z": 14,
+          "chars": 45412,
+          "date": "2025-10-29T13:21:39+00:00",
+          "title": "Granular synchrony: a new network timing model for distributed computing"
+        }
+      }
+    },
+    {
+      "canonical": "4664-0",
+      "members": [
+        "4664-0",
+        "4785-0"
+      ],
+      "posts": {
+        "4664-0": {
+          "kept_a16z": 0,
+          "chars": 78456,
+          "date": "2022-08-13T14:29:26+00:00",
+          "title": "A Survey of Proof-of-Stake (PoS) Blockchain Designs"
+        },
+        "4785-0": {
+          "kept_a16z": 0,
+          "chars": 78453,
+          "date": "2022-08-29T23:17:33+00:00",
+          "title": "PoS Blockchains - Designs, Consensus, Attacks"
+        }
+      }
+    },
+    {
+      "canonical": "8954-0",
+      "members": [
+        "4717-0",
+        "8954-0"
+      ],
+      "posts": {
+        "4717-0": {
+          "kept_a16z": 0,
+          "chars": 64605,
+          "date": "2022-12-02T15:29:27+00:00",
+          "title": "Multi-Dimensional Blockchain Resource Pricing"
+        },
+        "8954-0": {
+          "kept_a16z": 0,
+          "chars": 64656,
+          "date": "2023-09-26T07:28:06+00:00",
+          "title": "All About That Gas"
+        }
+      }
+    }
+  ]
+}

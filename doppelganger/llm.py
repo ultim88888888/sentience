@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path
 
 CLAUDE_MODEL = "opus"
-CLAUDE_EFFORT = "max"
+CLAUDE_EFFORT = "high"  # was "max"; dialed back 2026-06-07 to conserve credits
 CLAUDE_TIMEOUT_S = 900   # 15 min; a single pass over a big corpus can be slow
 
 

@@ -35,9 +35,13 @@ def test_empty_name_is_not_a16z():
     m = _roster().resolve(None)
     assert m.slug is None and m.is_a16z is False
 
-def test_unique_first_name_resolves():
-    # host thanked by first name only ("Thanks, Tim") -> resolves when unique.
-    assert _roster().resolve("Tim").slug == "tim-roughgarden"
+def test_first_name_promotes_only_when_corroborated():
+    # A bare first name ("Thanks, Tim") must NOT be tagged a16z on its own — an audience
+    # member or guest with the same first name would be misattributed (corroboration fix).
+    assert _roster().resolve("Tim").is_a16z is False        # uncorroborated -> external
+    # ...but resolves once corroborated present in the episode (allow) or via host-prior.
+    assert _roster().resolve("Tim", allow=["tim-roughgarden"]).slug == "tim-roughgarden"
+    assert _roster().resolve("Tim", prefer=["tim-roughgarden"]).slug == "tim-roughgarden"
 
 def test_ambiguous_first_name_disambiguated_by_prior():
     df = pd.DataFrame([

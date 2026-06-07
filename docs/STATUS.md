@@ -38,13 +38,22 @@ trajectories show decay (onchain games 80→70→gone), growth (payments 72→90
 - ⚠️ The committed dataset's views have **NO conviction** (generated before the feature). Only a scratch
   4-quarter Eddy sample exists (`/tmp/dg_conv_test`, uncommitted).
 
+**NEW — blind authorship eval DONE (2026-06-07).** `doppelganger/authorship.py` (tested). Three-rung
+ladder, judge blind to identity attributes a stance-only view to Eddy/Ali. Results + full writeup:
+`docs/doppelganger-authorship-eval-2026-06-07.md`.
+- FULL 100% (conf 86) | NAMED-ABLATION 82% (conf 78) | ANON-ABLATION split 10E/4A (conf 61).
+- **This REVISED the synthesis memo:** the "ablation collapse / near-interchangeable" claim is overstated
+  (name-only is still 82% attributable). Real findings: base-model default voice is **Eddy-shaped**
+  (ZK/infra), so Ali is the distinctive one; the corpus's measurable contribution is the **confidence
+  ladder 61→78→86** + ceiling accuracy, NOT a rescue from chance. Memo has a correction banner.
+
 **▶ NEXT STEP (pick up here):**
 1. **Full conviction backfill — DEFERRED to weekly-usage reset** (Jax was at 80% on 2026-06-07). Cost
    ~3.4M tokens (uncapped feed; Eddy's 2026 quarter alone is 228k input). Regenerate 14 full-arm views ×2
    with conviction; no re-judge needed. Then add conviction-trajectory analysis to the findings.
-2. **Blind authorship test** (cheap, high-value): classify a held-out view as Eddy-vs-Ali, FULL arm vs
-   ablation arm. Turns the qualitative ablation-collapse into a number — the clean way to measure
-   characterization fidelity.
+2. **Unknown-subject authorship control** (the clean follow-up): re-run authorship eval with a subject the
+   base model does NOT know (e.g. a pseudonymous writer) → floors should drop toward chance, exposing the
+   corpus lift uncompressed. The way to prove corpus-*created* (not pretrained) distinctiveness.
 3. Replace the saturated `confirm_rate` headline with **change-recall + groundedness**, measured agentically.
 
 ## What this project is

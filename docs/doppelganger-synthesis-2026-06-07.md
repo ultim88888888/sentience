@@ -5,11 +5,22 @@
 **Experiment:** frozen-at-T0 (2022-12-31) "souls" answering walk-forward, time-gated market-view queries each quarter through 2026-03-31. Two arms: FULL (soul + time-gated corpus memory) and ABLATION (soul-less Opus, the parametric floor). A single judge scored each held-out prediction against the subject's own later statements.
 **Status:** First experiment. N=2 subjects, ~14 quarters, single judge. **Not a published result — treat everything below as a directional read, not a benchmark.**
 
+> **⚠️ CORRECTION (2026-06-07, after blind authorship eval — see `docs/doppelganger-authorship-eval-2026-06-07.md`).**
+> This memo's "ablation collapse / near-interchangeable" claim is **overstated**. A blind classifier
+> attributes name-only (NAMED-ABLATION) views correctly **82%** of the time, and even *generic*
+> identity-free views carry residual identity signal — the subjects were **never at chance**. Two
+> reasons: (a) both are public figures the base model already knows, and (b) the base model's default
+> "crypto GP" voice is **Eddy-shaped** (ZK/infra/data-mechanics), so soul-less Eddy stays identifiable
+> and **Ali is the genuinely distinctive one**. The corpus's real, measured contribution is the
+> **confidence ladder (anon 61 → named 78 → full 86)** plus pushing accuracy to a 100% ceiling and
+> repairing Eddy's drift into the generic AI thesis — *not* a rescue from indistinguishability.
+> Read the strike-through claims below in that light.
+
 ---
 
 ## Executive Summary
 
-- The frozen souls are **distinct minds, not a generic "a16z GP"** — verdict **4/5**. The soul-less ablation collapses both subjects into the same VC-bull bullet list (AI×crypto, DePIN, stablecoins, low-float/high-FDV); the FULL arm cleanly separates them by *framework* and *reasoning style*.
+- The frozen souls are **distinct minds, not a generic "a16z GP"** — verdict **4/5**. ~~The soul-less ablation collapses both subjects into the same VC-bull bullet list~~ *(CORRECTED: name-only views are still 82% attributable; no collapse — see correction banner)*; the FULL arm cleanly separates them by *framework* and *reasoning style*.
 - The headline metric (`confirm_rate = 1.0`, both arms, every quarter) is **saturated and uninformative** — it only proves stable views never got contradicted. Do not read it as accuracy. Mean corpus-lift = 0 is an artifact of saturation, not evidence the corpus added nothing.
 - The real signal is **`missed_changes`**: the souls nail **persistence** and systematically miss **foresight**. Both subjects kept inventing genuinely new themes the frozen soul could not anticipate.
 - The doppelganger works as a **characterizer**, not a **forecaster**. It reproduces *how* each person reasons; it does not predict *what new thing* they'll get excited about next.
@@ -38,7 +49,7 @@ ZK, AI×crypto, scaling, and stablecoins appear in both — but the *why* differ
 ### Where they're hardest to tell apart (the 1-point deduction)
 
 - **Shared house line.** The anti-memecoin/anti-casino stance, "it's still early," ETH-as-network-token, and "the regulatory environment changed completely" post-2024 are near-identical talking points. Some of this is genuine convergence (they *do* work together); some is a16z house-voice boilerplate that any GP-shaped prompt would emit.
-- **The ablation proves the risk is real.** Soul-less Eddy and soul-less Ali at 2024-06-30 are **nearly the same document**: AI×crypto, DePIN, stablecoins, decentralized social, plus low-float/high-FDV and US-regulatory-hostility concerns, ETH/SOL tokens. Strip the corpus and both collapse into the generic VC bull. The distinction is **entirely carried by the soul + grounded memory** — which is the good news (it's doing work) and the caution (without it, indistinguishable).
+- **The ablation proves the risk is real.** Soul-less Eddy and soul-less Ali at 2024-06-30 are **nearly the same document**: AI×crypto, DePIN, stablecoins, decentralized social, plus low-float/high-FDV and US-regulatory-hostility concerns, ETH/SOL tokens. ~~Strip the corpus and both collapse into the generic VC bull. The distinction is **entirely carried by the soul + grounded memory** — which is the good news (it's doing work) and the caution (without it, indistinguishable).~~ *(CORRECTED: this single-quarter eyeball generalized too far. The blind authorship eval shows name-only views are 82% attributable and the base-model default is Eddy-shaped — the distinction is NOT entirely carried by the corpus. See `docs/doppelganger-authorship-eval-2026-06-07.md`.)*
 - **Methodology confound:** Eddy was judged at effort=max, Ali at effort=high. Some apparent richness gap may be eval effort, not subject. Flagged, not corrected.
 
 **Net:** 4/5. Two distinct reasoning engines on a shared sector menu. They'd lose a point in a blind test built only from sector lists; they'd pass one built from *why* fields and risk reasoning.

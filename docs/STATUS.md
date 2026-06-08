@@ -57,6 +57,41 @@ ladder, judge blind to identity attributes a stance-only view to Eddy/Ali. Resul
    corpus lift uncompressed. The way to prove corpus-*created* (not pretrained) distinctiveness.
 3. Replace the saturated `confirm_rate` headline with **change-recall + groundedness**, measured agentically.
 
+## ⚡ OVERNIGHT RUN IN PROGRESS (launched 2026-06-07 ~23:55, branch `signal/corpus-strategy`)
+
+Real-`claude -p` (Max 20×, no API cost) runs launched to grind overnight. Machine kept awake
+via `caffeinate`. All resumable — re-run the same command to continue.
+
+**Routing confirmed:** `claude -p` → account jnussbaum@rengen.io, `claude_max` / `default_claude_max_20x`,
+no `ANTHROPIC_API_KEY`. Cost = Max usage allowance, not dollars.
+
+**Three pipelines running (nohup, logs under `data/signal/*.log`):**
+1. **Transcript distillation** — `python -m signals.run distill` → `data/signal/transcript_distillates.jsonl`
+   (148 docs, ~1/15s). Smoke-validated: passages are verbatim substrings; the firewall premise holds.
+2. **Per-member views (A2a)** — `python -m scripts.overnight_members` → `data/signal/members/<slug>/`
+   (10 members × 14 quarters, 18mo window, tweets-only, quarterly 2022-12-31..2026-03-31, SHARED registry).
+   Smoke-validated on Eddy: 20 coherent person-specific items (ZK/zkVMs, deepfakes, memecoins-bearish),
+   **LEAKED=0**. Members: daren-matsuoka, justin-thaler(SuccinctJT), tim-roughgarden, ali-yahya, chris-dixon,
+   eddy-lazzarin, guy-wuollet, jason-rosenthal, miles-jennings, scott-kominers.
+3. **Article distillation** — `python -m scripts.overnight_articles` → `data/signal/article_distillates.jsonl`
+   (post-2021, ≥500 chars, extractive). Prerequisite for the blended A1 corpus.
+
+**⚠️ CRITICAL REAL-DATA FINDING — A1 blended corpus overflows context (the reason A1 is HELD):**
+At a late-T 18mo window the blended corpus is **~1.2M tokens** (> Opus 1M). Causes: (a) `skominers`
+alone = 10k of 13k in-window tweets (also distorts "consensus"); (b) 321 full article bodies (~800k tok).
+**Fixes built tonight:** low-substance tweet filter (`is_substantive_tweet`, drops 13k→4k, Kominers
+10k→2.1k) + article distillation (full bodies → verbatim passages). With both, projected A1 corpus
+≈ 560k tok (fits). **A1 panel NOT yet run** — needs corpus.py refactored to consume article distillates,
+then a real-data smoke-check on one period (token size + parseable + zero-leak) BEFORE the full run.
+Also a DESIGN question for Jax: much of the research corpus is non-market (academic/regulatory — distiller
+correctly returns empty), so the A1 signal may lean heavily on tweets; how to weight tweets vs research?
+
+**Morning pickup:** (1) check the 3 logs + `audit.json` per member (expect LEAKED=0 everywhere; review
+`hallucinated` counts — Eddy smoke had 4/31, near-verbatim over-flag, safe direction); (2) refactor
+corpus.py to use article distillates for A1; (3) smoke one A1 period; (4) run A1 panel; (5) then 1b/1c.
+
+---
+
 ## BUILT (unmerged) — A1 signal panel, Sprint 1a (branch `signal/corpus-strategy`)
 
 Module: `signals/`. Turns the blended a16z corpus (research articles + transcripts + Twitter)

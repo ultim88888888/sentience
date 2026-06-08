@@ -18,8 +18,8 @@ def derive_panel(periods: list[PeriodSignal]) -> pd.DataFrame:
     that is present, plus a synthetic EXITED row the period an item drops out."""
     periods = sorted(periods, key=lambda p: p.as_of)
     rows: list[dict] = []
-    # prior[item] = (stance, conviction, age) for items present in the previous period
-    prior: dict[str, tuple[str, int, int]] = {}
+    # prior[item] = (stance, conviction, age, item_type, parent_sector)
+    prior: dict[str, tuple[str, int, int, str, str | None]] = {}
 
     for p in periods:
         present = {it.item: it for it in p.items}
@@ -27,7 +27,7 @@ def derive_panel(periods: list[PeriodSignal]) -> pd.DataFrame:
         # Present items: NEW / SUSTAINED / FLIPPED
         for item, it in present.items():
             if item in prior:
-                prev_stance, prev_conv, prev_age = prior[item]
+                prev_stance, prev_conv, prev_age, _pt, _pp = prior[item]
                 if STANCE_SIGN[it.stance] != STANCE_SIGN[prev_stance] and \
                    STANCE_SIGN[it.stance] * STANCE_SIGN[prev_stance] < 0:
                     state = "FLIPPED"          # sign reversal (bullish<->bearish)
@@ -47,11 +47,11 @@ def derive_panel(periods: list[PeriodSignal]) -> pd.DataFrame:
             })
 
         # Items present last period but gone now -> synthetic EXITED row
-        for item, (prev_stance, prev_conv, _age) in prior.items():
+        for item, (prev_stance, prev_conv, _age, prev_type, prev_parent) in prior.items():
             if item not in present:
                 rows.append({
-                    "as_of": p.as_of, "item": item, "item_type": "sector",
-                    "parent_sector": None, "stance": "neutral", "conviction": 0,
+                    "as_of": p.as_of, "item": item, "item_type": prev_type,
+                    "parent_sector": prev_parent, "stance": "neutral", "conviction": 0,
                     "horizon": "structural", "lifecycle_state": "EXITED",
                     "delta_stance": 0 - STANCE_SIGN[prev_stance],
                     "delta_conviction": 0 - prev_conv, "age": 0,
@@ -60,7 +60,8 @@ def derive_panel(periods: list[PeriodSignal]) -> pd.DataFrame:
         # Advance prior to only currently-present items (so re-entry is NEW again)
         prior = {it.item: (it.stance, it.conviction,
                            next(r["age"] for r in rows
-                                if r["as_of"] == p.as_of and r["item"] == it.item))
+                                if r["as_of"] == p.as_of and r["item"] == it.item),
+                           it.item_type, it.parent_sector)
                  for it in p.items}
 
     return pd.DataFrame(rows, columns=PANEL_COLUMNS)

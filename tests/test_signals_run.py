@@ -36,3 +36,10 @@ def test_build_panel_end_to_end_with_mocked_llm(tmp_path):
     assert list(zk["lifecycle_state"]) == ["NEW", "SUSTAINED"]
     assert (tmp_path / "signal_panel.parquet").exists()
     assert (tmp_path / "registry.json").exists()
+
+
+def test_rebalance_quarterly_handles_day31_start():
+    from datetime import date
+    from signals.run import rebalance_dates
+    ds = rebalance_dates(date(2023, 5, 31), date(2023, 12, 31), "quarterly")
+    assert ds == [date(2023, 6, 30), date(2023, 9, 30), date(2023, 12, 31)]

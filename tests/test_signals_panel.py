@@ -52,3 +52,15 @@ def test_reentry_after_exit_is_new_again_with_age_reset():
     g = df[df["item"] == "gaming"].sort_values("as_of").reset_index(drop=True)
     assert list(g["lifecycle_state"]) == ["NEW", "EXITED", "NEW"]
     assert list(g["age"]) == [1, 0, 1]
+
+
+def test_exited_token_retains_type_and_parent():
+    periods = [
+        _period("2023-03-31", [_it("HYPE", "bullish", typ="token", parent="perp-dex")]),
+        _period("2023-06-30", []),
+    ]
+    df = derive_panel(periods)
+    ex = df[(df["item"] == "HYPE") & (df["as_of"] == "2023-06-30")].iloc[0]
+    assert ex["lifecycle_state"] == "EXITED"
+    assert ex["item_type"] == "token"
+    assert ex["parent_sector"] == "perp-dex"

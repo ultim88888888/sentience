@@ -28,3 +28,11 @@ def test_post_t_quote_flagged_as_leaked():
                        CORPUS, t=date(2024, 6, 30))
     assert not rep.ok
     assert len(rep.leaked) == 1
+
+
+def test_smart_punctuation_quote_matches_after_folding():
+    # corpus has an em-dash and a curly apostrophe; quote uses plain hyphen/apostrophe
+    corpus = "[2024-02-01] (x) zk is the long—term endgame and we’re very bullish"
+    rep = audit_period(_period([Citation("2024-02-01", "the long-term endgame and we're very bullish")]),
+                       corpus, t=date(2024, 6, 30))
+    assert rep.matched == 1 and rep.ok

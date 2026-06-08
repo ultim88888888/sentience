@@ -33,7 +33,7 @@ def rebalance_dates(start: date, end: date, interval: str) -> list[date]:
         # Snap to the first quarter-end month (3/6/9/12) >= start month
         qe_months = [3, 6, 9, 12]
         first_qe = next(m for m in qe_months if m >= start.month)
-        cur = _month_end(start.replace(month=first_qe))
+        cur = _month_end(start.replace(month=first_qe, day=1))
     else:
         cur = _month_end(start)
     out = []

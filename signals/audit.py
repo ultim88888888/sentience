@@ -10,6 +10,16 @@ from signals.schema import PeriodSignal, Citation
 
 _MATCH_THRESHOLD = 0.85
 
+# Fold smart punctuation so a verbatim quote with curly quotes / em-dashes still matches.
+_SMART = str.maketrans({
+    "‘": "'", "’": "'", "“": '"', "”": '"',
+    "—": "-", "–": "-",
+})
+
+
+def _normalize(s: str) -> str:
+    return " ".join(s.translate(_SMART).lower().split())
+
 
 @dataclass(frozen=True)
 class AuditReport:
@@ -24,13 +34,18 @@ class AuditReport:
 
 
 def _quote_in_corpus(quote: str, corpus_norm: str) -> bool:
-    q = " ".join(quote.lower().split())
+    q = _normalize(quote)
+    if not q:
+        return False
     if q in corpus_norm:
         return True
-    # fuzzy fallback (mirror soul_audit): best window similarity
-    return difflib.SequenceMatcher(None, q, corpus_norm).quick_ratio() >= _MATCH_THRESHOLD \
-        and any(difflib.SequenceMatcher(None, q, corpus_norm[i:i + len(q) + 10]).ratio() >= _MATCH_THRESHOLD
-                for i in range(0, max(1, len(corpus_norm) - len(q)), max(1, len(q) // 2)))
+    # Windowed fuzzy fallback for minor near-verbatim drift (no global gate — that was inert).
+    win = len(q) + 10
+    step = max(1, len(q) // 2)
+    return any(
+        difflib.SequenceMatcher(None, q, corpus_norm[i:i + win]).ratio() >= _MATCH_THRESHOLD
+        for i in range(0, max(1, len(corpus_norm) - len(q) + 1), step)
+    )
 
 
 def _citations(period: PeriodSignal):
@@ -40,7 +55,7 @@ def _citations(period: PeriodSignal):
 
 
 def audit_period(period: PeriodSignal, corpus_text: str, t: date) -> AuditReport:
-    corpus_norm = " ".join(corpus_text.lower().split())
+    corpus_norm = _normalize(corpus_text)
     checked = matched = 0
     hallucinated: list[Citation] = []
     leaked: list[Citation] = []

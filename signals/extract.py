@@ -63,15 +63,21 @@ def parse_extraction(raw: str, t: date) -> PeriodSignal:
     items: list[SignalItem] = []
     for key, (item_type, stance) in _ARRAY_STANCE.items():
         for e in obj.get(key, []) or []:
+            if not isinstance(e, dict) or not e.get("name"):
+                continue  # tolerate malformed LLM entries (e.g. a bare string)
+            cites = tuple(Citation(c["date"], c["quote"])
+                          for c in (e.get("citations") or [])
+                          if isinstance(c, dict) and c.get("date") and c.get("quote"))
             items.append(SignalItem(
                 item=e["name"], item_type=item_type,
                 parent_sector=e.get("parent_sector"), stance=stance,
                 conviction=e.get("conviction", 50), horizon=e.get("horizon", "tactical"),
                 rationale=e.get("why", ""), provenance=e.get("provenance", "extrapolated"),
-                age_note=e.get("age_note"),
-                citations=tuple(Citation(c["date"], c["quote"]) for c in e.get("citations", []) or []),
+                age_note=e.get("age_note"), citations=cites,
             ))
-    rr = obj.get("risk_regime") or {"stance": "no_view", "conviction": 0, "why": "", "provenance": "extrapolated"}
+    rr = obj.get("risk_regime")
+    if not isinstance(rr, dict):
+        rr = {"stance": "no_view", "conviction": 0, "why": "", "provenance": "extrapolated"}
     risk = RiskRegime(stance=rr.get("stance", "no_view"), conviction=rr.get("conviction", 0),
                       rationale=rr.get("why", ""), provenance=rr.get("provenance", "extrapolated"))
     return PeriodSignal(as_of=t.isoformat(), approach="A1", items=tuple(items),

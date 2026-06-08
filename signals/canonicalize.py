@@ -37,12 +37,13 @@ def canonicalize_items(raw_items: list[SignalItem], registry: Registry
                   for i in raw_items],
     }
     raw = run_claude(_SYSTEM, json.dumps(payload, indent=2))
-    mapping = {m["raw"]: m for m in _extract_json(raw).get("mapping", [])}
+    mapping = {m["raw"]: m for m in _extract_json(raw).get("mapping", [])
+               if isinstance(m, dict) and m.get("raw")}
 
     out: list[SignalItem] = []
     for it in raw_items:
         m = mapping.get(it.item)
-        if m:
+        if m and m.get("canonical"):
             canonical = m["canonical"]
             parent = m.get("parent_sector")
             if it.item_type == "token":

@@ -51,3 +51,18 @@ def test_member_prompt_is_individual_not_consensus():
     assert "Eddy Lazzarin" in system
     assert "individual" in system.lower()
     assert "consensus" not in system.lower() or "not a team consensus" in system.lower()
+
+
+def test_parse_tolerates_malformed_entries():
+    import json
+    from datetime import date
+    from signals.extract import parse_extraction
+    raw = json.dumps({
+        "sectors_excited": ["just a string", {"name": "zk", "conviction": 80, "horizon": "structural",
+                            "provenance": "grounded", "citations": ["bad cite", {"date": "2024-01-01", "quote": "q"}]}],
+        "risk_regime": "not a dict",
+    })
+    p = parse_extraction(raw, t=date(2024, 6, 30))
+    assert [i.item for i in p.items] == ["zk"]          # bare string skipped, dict kept
+    assert len(p.items[0].citations) == 1               # bad citation skipped
+    assert p.risk_regime.stance == "no_view"            # non-dict risk -> default

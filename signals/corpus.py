@@ -2,11 +2,20 @@
 Uniform window across sources (spec stage 2). Tweets + articles verbatim;
 transcripts come from the distillate cache (signals/distill.py)."""
 from __future__ import annotations
+import re
 from datetime import date
 from pathlib import Path
 
 import pandas as pd
 from dateutil.relativedelta import relativedelta
+
+
+def is_substantive_tweet(text: str) -> bool:
+    """Drop low-substance tweets: strip URLs + @mentions, require >= 50 chars left.
+    Mirrors the doppelganger twitter adapter's reply filter."""
+    t = re.sub(r"https?://\S+", "", str(text))
+    t = re.sub(r"@\w+", "", t)
+    return len(t.strip()) >= 50
 
 
 def in_window(d: str | date, t: date, window_months: int) -> bool:
@@ -27,6 +36,8 @@ def assemble_corpus(*, t: date, window_months: int, twitter_paths: list[Path],
         for _, r in tw.iterrows():
             d = r["created_at"].date()
             if in_window(d, t, window_months):
+                if not is_substantive_tweet(r["text"]):
+                    continue
                 rows.append((d.isoformat(), "x", str(r["text"]).strip()))
 
     # Firm research articles, verbatim extracted_text

@@ -76,6 +76,49 @@ def parse_extraction(raw: str, t: date) -> PeriodSignal:
                         risk_regime=risk, notes=obj.get("notes", ""))
 
 
+_MEMBER_SYSTEM_TMPL = """You are analyzing the public statements of {name} (a member of the a16z crypto team) as of {t}.
+It is {t}. The future has not happened yet. Use ONLY the statements provided.
+
+Produce {name}'S OWN individual market view — what THEY are personally excited about, concerned
+about, and their overall risk posture — as of {t}. This is one person's view, not a team consensus.
+
+CRITICAL — recency: the corpus spans up to {window} months. When statements conflict, weight the
+MOST RECENT view. If an old stance was later reversed, report the current stance and record the
+reversal in age_note. A view stated once long ago and never restated is `persisted` (cite it, note age).
+
+Name sectors and tokens in your OWN words — do not force them into any fixed taxonomy. For tokens,
+give the sector they belong to in parent_sector.
+
+Every excited/concerned entry needs: name, why, conviction (0-100 intensity), horizon
+("tactical" | "structural"), provenance ("grounded"|"persisted"|"extrapolated"), age_note (or null),
+and citations (verbatim quotes <=25 words with ISO dates; required for grounded/persisted).
+
+Output JSON only:
+{{"sectors_excited": [...], "sectors_concerned": [...], "tokens_excited": [...],
+  "tokens_concerned": [...],
+  "risk_regime": {{"stance": "risk_on|risk_off|neutral|no_view", "conviction": 0-100,
+                   "why": "...", "provenance": "..."}},
+  "notes": "..."}}"""
+
+
+def build_member_prompt(corpus_text: str, t, name: str, *, window_months: int = 18):
+    from datetime import date
+    system = _MEMBER_SYSTEM_TMPL.format(t=t.isoformat(), window=window_months, name=name)
+    return system, corpus_text
+
+
+def extract_member(t, name: str, *, window_months: int, twitter_path, distillates=None):
+    from signals.corpus import assemble_corpus
+    corpus = assemble_corpus(t=t, window_months=window_months, twitter_paths=[twitter_path],
+                             articles=None, distillates=distillates or {})
+    system, user = build_member_prompt(corpus, t, name, window_months=window_months)
+    raw = run_claude(system, user)
+    p = parse_extraction(raw, t=t)
+    # tag approach as the member slug-style label for traceability
+    return p.__class__(as_of=p.as_of, approach=f"A2a:{name}", items=p.items,
+                       risk_regime=p.risk_regime, notes=p.notes)
+
+
 def _extract_json(raw: str) -> dict:
     s = raw.strip()
     if "```" in s:

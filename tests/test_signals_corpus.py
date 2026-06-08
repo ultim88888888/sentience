@@ -11,7 +11,11 @@ def test_in_window_respects_trailing_bound_and_t():
 def test_assemble_is_chronological_and_tagged(tmp_path, monkeypatch):
     tw = pd.DataFrame({
         "created_at": pd.to_datetime(["2024-05-01", "2024-03-01"], utc=True),
-        "type": ["original", "original"], "text": ["late tweet", "early tweet"],
+        "type": ["original", "original"],
+        "text": [
+            "late tweet: a substantive take on zk rollups and their role in scaling ethereum",
+            "early tweet: a substantive take on modular blockchains and data availability layers",
+        ],
         "url": ["u1", "u2"],
     })
     tw_path = tmp_path / "eddy.parquet"; tw.to_parquet(tw_path)
@@ -40,3 +44,18 @@ def test_post_t_evidence_excluded(tmp_path):
     text = assemble_corpus(t=date(2024, 6, 30), window_months=18,
                            twitter_paths=[], articles=arts, distillates={})
     assert "future body" not in text
+
+def test_low_substance_tweets_dropped(tmp_path):
+    from signals.corpus import assemble_corpus, is_substantive_tweet
+    assert is_substantive_tweet("This is a genuinely substantive take on zk rollups and scaling tradeoffs")
+    assert not is_substantive_tweet("lol @bob https://t.co/x")
+    tw = pd.DataFrame({
+        "created_at": pd.to_datetime(["2024-05-01", "2024-05-02"], utc=True),
+        "type": ["original", "original"],
+        "text": ["@a @b https://t.co/x", "A real substantive thesis about modular blockchains and data availability"],
+        "url": ["u1", "u2"],
+    })
+    p = tmp_path / "m.parquet"; tw.to_parquet(p)
+    text = assemble_corpus(t=date(2024,6,30), window_months=18, twitter_paths=[p], articles=None, distillates={})
+    assert "substantive thesis" in text
+    assert "t.co" not in text  # the low-substance tweet was dropped

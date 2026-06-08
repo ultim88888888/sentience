@@ -44,3 +44,10 @@ def test_prompt_demands_recency_weighting_and_no_taxonomy():
     assert "2024-06-30" in system
     # must NOT leak the seed taxonomy into extraction (free-form naming)
     assert "perp-dex" not in system and "liquid-staking" not in system
+
+def test_member_prompt_is_individual_not_consensus():
+    from signals.extract import build_member_prompt
+    system, _ = build_member_prompt("[2024-01-01] (x) zk good", date(2024,6,30), "Eddy Lazzarin")
+    assert "Eddy Lazzarin" in system
+    assert "individual" in system.lower()
+    assert "consensus" not in system.lower() or "not a team consensus" in system.lower()

@@ -42,9 +42,11 @@ def build_a1_prompt(corpus_text: str, t: date, *, window_months: int = 18) -> tu
     return system, corpus_text
 
 
-def extract_a1(t: date, *, window_months: int, twitter_paths, articles, distillates) -> PeriodSignal:
+def extract_a1(t: date, *, window_months: int, twitter_paths, articles, distillates,
+               article_distillates=None) -> PeriodSignal:
     corpus = assemble_corpus(t=t, window_months=window_months, twitter_paths=twitter_paths,
-                             articles=articles, distillates=distillates)
+                             articles=articles, distillates=distillates,
+                             article_distillates=article_distillates)
     system, user = build_a1_prompt(corpus, t, window_months=window_months)
     raw = run_claude(system, user)
     return parse_extraction(raw, t=t)

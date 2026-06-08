@@ -25,11 +25,17 @@ def in_window(d: str | date, t: date, window_months: int) -> bool:
 
 
 def assemble_corpus(*, t: date, window_months: int, twitter_paths: list[Path],
-                    articles, distillates: dict[str, list[dict]]) -> str:
-    """Return one chronological, source-tagged text block of all in-window evidence."""
+                    articles, distillates: dict[str, list[dict]],
+                    article_distillates: dict[str, list[dict]] | None = None) -> str:
+    """Return one chronological, source-tagged text block of all in-window evidence.
+
+    `distillates` = transcript distillates (object_id -> passages). `article_distillates`,
+    when provided, makes research articles contribute their DISTILLED passages instead of
+    full bodies (token control for the blended A1 corpus); when None, full `extracted_text`
+    is used (small corpora / tests)."""
     rows: list[tuple[str, str, str]] = []  # (iso_date, source_tag, text)
 
-    # Tweets (all tracked people), verbatim, drop retweets
+    # Tweets (all tracked people), verbatim, drop retweets + low-substance
     for p in twitter_paths:
         tw = pd.read_parquet(p)
         tw = tw[tw["type"] != "retweet"]
@@ -40,15 +46,21 @@ def assemble_corpus(*, t: date, window_months: int, twitter_paths: list[Path],
                     continue
                 rows.append((d.isoformat(), "x", str(r["text"]).strip()))
 
-    # Firm research articles, verbatim extracted_text
+    # Research articles: distilled passages (A1) or full extracted_text (default)
     arts = articles if isinstance(articles, pd.DataFrame) else (
         pd.read_parquet(articles) if articles is not None else pd.DataFrame())
     for _, r in arts.iterrows():
         if not in_window(r["post_date"], t, window_months):
             continue
-        body = str(r.get("extracted_text") or "").strip()
-        if body:
-            rows.append((pd.to_datetime(r["post_date"]).date().isoformat(), "research", body))
+        oid = str(r.get("object_id") or "")
+        if article_distillates is not None:
+            for passage in article_distillates.get(oid, []):
+                if in_window(passage["date"], t, window_months):
+                    rows.append((passage["date"], "research", passage["passage"].strip()))
+        else:
+            body = str(r.get("extracted_text") or "").strip()
+            if body:
+                rows.append((pd.to_datetime(r["post_date"]).date().isoformat(), "research", body))
 
     # Distilled transcript passages (keyed by article object_id, dated by passage)
     for _, r in arts.iterrows():

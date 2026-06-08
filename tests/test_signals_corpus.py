@@ -59,3 +59,17 @@ def test_low_substance_tweets_dropped(tmp_path):
     text = assemble_corpus(t=date(2024,6,30), window_months=18, twitter_paths=[p], articles=None, distillates={})
     assert "substantive thesis" in text
     assert "t.co" not in text  # the low-substance tweet was dropped
+
+
+def test_article_distillates_replace_full_body(tmp_path):
+    from datetime import date
+    import pandas as pd
+    from signals.corpus import assemble_corpus
+    arts = pd.DataFrame({"post_date": ["2024-04-01"], "extracted_text": ["FULL BODY should not appear"],
+                         "permalink": ["p1"], "object_id": ["o1"]})
+    art_dist = {"o1": [{"date": "2024-04-01", "passage": "distilled stance passage"}]}
+    text = assemble_corpus(t=date(2024,6,30), window_months=18, twitter_paths=[],
+                           articles=arts, distillates={}, article_distillates=art_dist)
+    assert "distilled stance passage" in text
+    assert "FULL BODY" not in text   # full body suppressed when distillates provided
+    assert "(research)" in text

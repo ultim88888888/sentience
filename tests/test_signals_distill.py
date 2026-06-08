@@ -66,3 +66,23 @@ def test_build_article_cache_filters_and_distills(tmp_path):
     rows = [json.loads(l) for l in cache.read_text().splitlines()]
     assert {r["object_id"] for r in rows} == {"a1"}   # a2 too old, a3 too short
     assert len(calls) == 1
+
+
+def test_build_cache_skips_malformed_llm_response(tmp_path):
+    import pandas as pd
+    from unittest.mock import patch
+    from signals.distill import build_distillate_cache
+    tx = pd.DataFrame({"object_id": ["x1", "x2"], "title": ["A", "B"],
+                       "transcript": ["t1", "t2"], "status": ["ok", "ok"]})
+    txp = tmp_path / "tx.parquet"; tx.to_parquet(txp)
+    cache = tmp_path / "d.jsonl"
+    calls = {"n": 0}
+    def fake(system, user, **kw):
+        calls["n"] += 1
+        return "{bad json no close" if calls["n"] == 1 else '{"passages": []}'
+    with patch("signals.distill.run_claude", side_effect=fake):
+        build_distillate_cache(txp, None, cache_path=cache,
+                               post_dates={"x1": "2023-01-01", "x2": "2023-02-01"})
+    import json
+    rows = {json.loads(l)["object_id"] for l in cache.read_text().splitlines()}
+    assert rows == {"x1", "x2"}   # x1 malformed -> skipped (empty), x2 fine; batch did NOT crash

@@ -56,9 +56,13 @@ def build_distillate_cache(transcripts_path, articles, *, cache_path: Path | Non
                 continue
             if row.get("status") != "ok" or not str(row.get("transcript", "")).strip():
                 continue
-            passages = distill_one(object_id=oid, title=row.get("title", ""),
-                                   transcript=row["transcript"],
-                                   post_date=post_dates.get(oid, ""))
+            try:
+                passages = distill_one(object_id=oid, title=row.get("title", ""),
+                                       transcript=row["transcript"],
+                                       post_date=post_dates.get(oid, ""))
+            except Exception as e:  # malformed LLM JSON etc. — skip this doc, don't crash the batch
+                print(f"[distill skip] {oid}: {e}")
+                passages = []
             fh.write(json.dumps({"object_id": oid, "passages": passages}) + "\n")
             fh.flush()
     return cache_path
@@ -88,8 +92,12 @@ def build_article_distillate_cache(articles_path, *, cache_path: Path | None = N
             if pd.isnull(row["_pd"]) or row["_pd"] < floor or len(body.strip()) < min_chars:
                 continue
             pdate = row["_pd"].date().isoformat()
-            passages = distill_one(object_id=oid, title=str(row.get("title", "")),
-                                   transcript=body, post_date=pdate)
+            try:
+                passages = distill_one(object_id=oid, title=str(row.get("title", "")),
+                                       transcript=body, post_date=pdate)
+            except Exception as e:
+                print(f"[distill skip] {oid}: {e}")
+                passages = []
             fh.write(json.dumps({"object_id": oid, "passages": passages}) + "\n")
             fh.flush()
     return cache_path

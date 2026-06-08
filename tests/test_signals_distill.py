@@ -44,3 +44,25 @@ def test_skips_empty_transcripts(tmp_path):
     with patch("signals.distill.run_claude", return_value=FAKE_LLM) as m:
         build_distillate_cache(tx_path, None, cache_path=cache, post_dates={"x3": "2023-01-01"})
     m.assert_not_called()
+
+
+def test_build_article_cache_filters_and_distills(tmp_path):
+    import json, pandas as pd
+    from unittest.mock import patch
+    from signals.distill import build_article_distillate_cache
+    arts = pd.DataFrame({
+        "object_id": ["a1", "a2", "a3"],
+        "title": ["A", "B", "C"],
+        "post_date": ["2023-05-01", "2020-01-01", "2023-06-01"],  # a2 too old (filtered)
+        "extracted_text": ["x"*600, "y"*600, "z"*100],            # a3 too short (filtered)
+    })
+    cache = tmp_path / "article_distillates.jsonl"
+    calls = []
+    def fake(system, user, **kw):
+        calls.append(user)
+        return json.dumps({"passages": [{"date": "2023-05-01", "passage": "verbatim view"}]})
+    with patch("signals.distill.run_claude", side_effect=fake):
+        build_article_distillate_cache(arts, cache_path=cache, since="2021-01-01", min_chars=500)
+    rows = [json.loads(l) for l in cache.read_text().splitlines()]
+    assert {r["object_id"] for r in rows} == {"a1"}   # a2 too old, a3 too short
+    assert len(calls) == 1

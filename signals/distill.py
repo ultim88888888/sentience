@@ -64,6 +64,37 @@ def build_distillate_cache(transcripts_path, articles, *, cache_path: Path | Non
     return cache_path
 
 
+def build_article_distillate_cache(articles_path, *, cache_path: Path | None = None,
+                                   since: str = "2021-01-01", min_chars: int = 500) -> Path:
+    """Distill each in-range article's extracted_text once (extractive, verbatim) → JSONL cache.
+    Same firewall-preserving mechanism as transcripts; articles in aggregate are too large to
+    feed verbatim, so A1 reads these distillates instead of full bodies. Resumable."""
+    cache_path = Path(cache_path or (config.SIGNAL_OUT_DIR / "article_distillates.jsonl"))
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    done = set()
+    if cache_path.exists():
+        done = {json.loads(l)["object_id"] for l in cache_path.read_text().splitlines() if l.strip()}
+
+    arts = articles_path if isinstance(articles_path, pd.DataFrame) else pd.read_parquet(articles_path)
+    arts = arts.copy()
+    arts["_pd"] = pd.to_datetime(arts["post_date"], utc=True, errors="coerce")
+    floor = pd.Timestamp(since, tz="UTC")
+    with cache_path.open("a") as fh:
+        for _, row in arts.iterrows():
+            oid = str(row["object_id"])
+            if oid in done:
+                continue
+            body = str(row.get("extracted_text") or "")
+            if pd.isnull(row["_pd"]) or row["_pd"] < floor or len(body.strip()) < min_chars:
+                continue
+            pdate = row["_pd"].date().isoformat()
+            passages = distill_one(object_id=oid, title=str(row.get("title", "")),
+                                   transcript=body, post_date=pdate)
+            fh.write(json.dumps({"object_id": oid, "passages": passages}) + "\n")
+            fh.flush()
+    return cache_path
+
+
 def load_distillates(cache_path: Path | None = None) -> dict[str, list[dict]]:
     """object_id -> list of {date, passage}."""
     cache_path = Path(cache_path or config.DISTILLATE_CACHE)

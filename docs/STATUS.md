@@ -76,19 +76,28 @@ no `ANTHROPIC_API_KEY`. Cost = Max usage allowance, not dollars.
 3. **Article distillation** — `python -m scripts.overnight_articles` → `data/signal/article_distillates.jsonl`
    (post-2021, ≥500 chars, extractive). Prerequisite for the blended A1 corpus.
 
-**⚠️ CRITICAL REAL-DATA FINDING — A1 blended corpus overflows context (the reason A1 is HELD):**
-At a late-T 18mo window the blended corpus is **~1.2M tokens** (> Opus 1M). Causes: (a) `skominers`
-alone = 10k of 13k in-window tweets (also distorts "consensus"); (b) 321 full article bodies (~800k tok).
-**Fixes built tonight:** low-substance tweet filter (`is_substantive_tweet`, drops 13k→4k, Kominers
-10k→2.1k) + article distillation (full bodies → verbatim passages). With both, projected A1 corpus
-≈ 560k tok (fits). **A1 panel NOT yet run** — needs corpus.py refactored to consume article distillates,
-then a real-data smoke-check on one period (token size + parseable + zero-leak) BEFORE the full run.
-Also a DESIGN question for Jax: much of the research corpus is non-market (academic/regulatory — distiller
-correctly returns empty), so the A1 signal may lean heavily on tweets; how to weight tweets vs research?
+4. **A1 blended consensus (CHAINED)** — `python -m scripts.overnight_a1` → `data/signal/{signal_panel.parquet,
+   periods/,audit.json}`. WAITS for #2 and #3 to finish (so A1 has research passages + extends the
+   member-populated SHARED `registry.json`, no write race), THEN runs the A1 panel (14 quarters).
+   Corpus.py was refactored so A1 articles come from DISTILLED passages, not full bodies.
+   **Smoke-validated (T=2024-06-30): 271k tokens (fits, was 1.21M), coherent house view (zkVMs/DePIN/
+   modular-ETH/restaking bullish, memecoins/US-reg-hostility/predatory-token-terms bearish, risk_on/78),
+   LEAKED=0.**
 
-**Morning pickup:** (1) check the 3 logs + `audit.json` per member (expect LEAKED=0 everywhere; review
-`hallucinated` counts — Eddy smoke had 4/31, near-verbatim over-flag, safe direction); (2) refactor
-corpus.py to use article distillates for A1; (3) smoke one A1 period; (4) run A1 panel; (5) then 1b/1c.
+**RESOLVED the A1 overflow** (was ~1.2M tok): low-substance tweet filter (`is_substantive_tweet`,
+13k→4k, Kominers 10k→2.1k) + article distillation (full bodies → verbatim passages) → 271k tok.
+
+**Total overnight LLM budget ≈ 1,000+ `claude -p` calls** (148 transcript + ~500-600 article distill +
+280 per-member + 28 A1). On Max 20×. If the weekly allowance is hit mid-run, skip-continue leaves gaps;
+just re-run the same scripts (all resumable) after reset to fill them.
+
+**OPEN DESIGN QUESTION for Jax (v1 ran the natural blend; refine after):** much of the research corpus is
+non-market (academic/regulatory — distiller correctly returns empty), so A1 leans heavily on tweets. How
+to weight tweets vs research in the blend?
+
+**Morning pickup:** (1) read `data/signal/signal_panel.parquet` (A1) + `data/signal/members/<slug>/` (A2a);
+(2) check every `audit.json` for LEAKED=0 (review `hallucinated` — near-verbatim over-flag, safe direction);
+(3) settle the tweets-vs-research weighting; (4) A1-vs-member vocab reconciliation if needed; (5) 1b/1c.
 
 ---
 

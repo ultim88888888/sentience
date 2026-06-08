@@ -72,6 +72,34 @@ cited to corpus refs.
 - **A1:** one extraction over the blended corpus. The extraction *is* the consensus.
 - **A2a:** one extraction *per member* → N member signals.
 
+**Corpus representation (decided 2026-06-07 — feeding all-history ≤ T is infeasible: transcripts
+alone are ~8.38M chars / ~2M tokens blended):**
+- **Trailing holding-period window.** At each T, include only evidence with
+  `publish_date ∈ (T − window, T]`, applied **uniformly across all sources** (tweets, articles,
+  transcripts). The window is the **longest anticipated holding period**, not a recency horizon —
+  the originating evidence for a trade must stay in view for the life of the trade or the signal
+  flickers off mid-hold. **Config param, default 18mo, test 24mo**, set as the largest that fits
+  context with headroom (measured empirically at the largest T). Backtested holding periods are
+  constrained ≤ window.
+  - Consequence: exits shift from "aged out" (`EXITED` by silence) toward "explicitly reversed"
+    (`FLIP`) — more robust, since silence is a weak signal and a stated reversal is strong.
+- **Distillation (one-time cleaning stage, stashed permanently, resumable).** Transcripts are the
+  bloat (median 56k chars, low signal-per-token). Distill each transcript **once** into its
+  **verbatim, dated, stance-bearing passages with local context preserved** — *extractive, not
+  abstractive*. Abstractive summarization would break the leakage firewall (a paraphrase is not a
+  verbatim substring, so `audit` can't verify quotes); extractive selection keeps every line a
+  verbatim substring with its real date, so the firewall survives. Cached per document, reused
+  across every window and every approach (A1/A2a/A2b). Tweets and articles stay verbatim
+  (already compact). The distillation is what makes the long window affordable (~350–400k tokens
+  blended at a late-T 24mo window vs 2M+ raw).
+  - **Validation gate (before committing to distilled inputs):** on early periods where the raw
+    windowed corpus *does* fit, run extraction full-text vs distilled and compare signals. If
+    distilled ≈ full-text, trust and scale; if they diverge, tighten the distill prompt or fall
+    back to full-text-with-budget for affected sources.
+- **Recency-privileging prompt.** A long window means each extraction sees both stale and fresh
+  statements; the prompt must weight recency on conflict and use `age_note`/`provenance` to flag
+  reversals ("stated 2021, reversed 2024").
+
 ### Stage 3 — Canonicalization + consensus
 **Canonicalization (agentic, shared by A1 and A2a):** a separate LLM pass takes each raw item +
 rationale + the **current registry** (seed taxonomy + everything minted so far) and judges, by
@@ -185,9 +213,15 @@ Per **period**:
 | Cost | cheap | N× extraction |
 | Start date | earlier (no per-member density needed; just enough corpus to form a view) | gated on per-member corpus density (~2022 for most) |
 
-**Sequencing:** A1 first (cheap, reuses the engine, honest baseline). A2a second — its payoff is
-**not** a better point-estimate consensus; it's that **disagreement across members is itself a
-feature** (unanimous house vs split house = a confidence/risk signal A1 cannot see). A2b third —
+**Sequencing:** A1 first (cheap, reuses the engine, honest baseline). A2a second — it adds **two**
+things A1 cannot produce: (1) **dispersion** — disagreement across members is itself a feature
+(unanimous house vs split house = a confidence/risk signal); (2) **reasoned persistence** — a
+per-member doppelganger with a coherent soul can *judge* whether a dormant thesis still holds
+(worldview-consistent) vs has lapsed, where A1 only *mechanically* recency-weights. Caveat:
+reasoned persistence is also how a persona **confabulates** (rationalizing a stale view is
+indistinguishable from genuine conviction), so it is a **hypothesis to test, not assumed** — and
+**A1 (long-window + recency-privileging prompt) is the mechanical-persistence null hypothesis A2
+must beat** on structural-persistence cases to justify its cost. A2b third —
 the fully-agentic discussion variant (no determinism), gated on A2a proving the per-member
 decomposition adds signal, and measured against A2a's dispersion to catch false consensus (see
 Stage 3).
@@ -277,8 +311,10 @@ sample the backtest is illustrative; the informativeness measurement is the scie
 - **Signal informativeness** — does Δ-stance/lifecycle predict forward sector/token returns,
   *before* any strategy wrapper? Rank-correlation of signal vs forward return. Isolates "is there
   signal" from "did the strategy harvest it."
-- **A1 vs A2a** — does per-member decomposition + dispersion add informativeness over the blended
-  baseline? The core scientific comparison.
+- **A1 vs A2a** — does per-member decomposition add informativeness over the blended baseline? Two
+  distinct claims to test separately: (1) does **dispersion** carry signal; (2) does A2a's
+  **reasoned persistence** beat A1's mechanical recency-weighting on structural-persistence cases
+  (the confabulation-vs-conviction test). A1 is the null hypothesis. The core scientific comparison.
 
 ### Honesty rails
 - **N is small** but larger than feared: data available 2020→2026 → **~24 quarterly / ~72 monthly**

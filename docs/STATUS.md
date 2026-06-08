@@ -57,6 +57,31 @@ ladder, judge blind to identity attributes a stance-only view to Eddy/Ali. Resul
    corpus lift uncompressed. The way to prove corpus-*created* (not pretrained) distinctiveness.
 3. Replace the saturated `confirm_rate` headline with **change-recall + groundedness**, measured agentically.
 
+## BUILT (unmerged) — A1 signal panel, Sprint 1a (branch `signal/corpus-strategy`)
+
+Module: `signals/`. Turns the blended a16z corpus (research articles + transcripts + Twitter)
+into a structured signal timeseries panel. **33 tests, all passing.**
+
+Pipeline: assemble trailing-window corpus (18mo default) → A1 consensus extraction (LLM,
+recency-privileging) → agentic fit-or-mint canonicalization → leakage audit → deterministic
+lifecycle/delta panel. CLI: `python -m signals.run {distill,panel,validate}`.
+
+Output: `data/signal/signal_panel.parquet` — one row per (period, item) with columns
+`as_of`, `item`, `item_type`, `parent_sector`, `stance`, `conviction`, `horizon`,
+`lifecycle_state` (NEW/SUSTAINED/FLIPPED/EXITED), `delta_stance`, `delta_conviction`, `age`.
+
+Design doc: `docs/superpowers/specs/2026-06-07-corpus-signal-strategy-design.md`.
+Plan: `docs/superpowers/plans/2026-06-07-a1-signal-panel.md`.
+Module README: `signals/README.md`.
+
+**Deferred:**
+- `validate` full-text arm is a stand-in (Task 10b) — transcripts excluded from the "full" path, not a true full-text comparison.
+- Sprint 1b (Coinglass market-data panel + BTC beta) — separate sprint, not started.
+- Sprint 1c (strategy / backtest / eval) — separate sprint, not started.
+- A2a (per-member extraction) and A2b (dispersion/consensus) — unbuilt.
+
+Branch not yet merged to main. Worktree: `.claude/worktrees/signal-strategy`.
+
 ## What this project is
 
 A **research** project. Classified "both / not sure yet" at kickoff — it may stay an

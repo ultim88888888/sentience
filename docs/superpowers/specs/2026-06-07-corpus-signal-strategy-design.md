@@ -87,13 +87,30 @@ Rationale for decoupling extraction from canonicalization:
 
 **Consensus:**
 - **A1:** none needed — extraction already is the consensus.
-- **A2a:** collapse N member signals → consensus + dispersion.
-  - **Baseline = deterministic collapse:** conviction-and-coverage-weighted aggregation. Keeps
-    the dispersion math honest and the panel inspectable — which is the entire reason A2a exists
-    over A1.
-  - **Variants (tested, not default):** LLM-aggregator collapse (can reason about *why* members
-    disagree, e.g. defer to the domain expert); expertise-weighting (by self-report or corpus
-    volume in sector).
+- **A2a:** collapse N member signals → consensus + dispersion. **Two separable outputs, only one
+  of which is deterministic:**
+  - **Dispersion = deterministic measurement (always).** Spread/entropy of the N member stances +
+    conviction spread. A thermometer reading computed directly from the member signals — no
+    judgment, no LLM. Captures disagreement *independently* of the consensus.
+  - **Consensus = LLM judgment.** An LLM reads the N member views (with the computed dispersion in
+    hand) and writes the house view — reasoning about *why* members differ (defer to the domain
+    expert, note the split). This is the natural act: a research committee reasons, it does not
+    average integers. Because dispersion is measured separately, the LLM **cannot** paper over
+    disagreement — the spread number sits next to its consensus.
+  - Rationale for the split: the only thing a deterministic consensus formula buys is
+    reproducibility, at the cost of an arbitrary stance-averaging rule that mushes a bull-90
+    against a bear-60 into a fake "mild bullish." Not worth it. Determinism is reserved for the
+    measurement, not the judgment.
+  - **Variants (tested, not default):** expertise-weighting the consensus (by self-report or
+    corpus volume in sector).
+- **A2b — fully agentic, zero determinism (variant, after A2a).** Instead of each doppelganger
+  emitting a confidence that we then collapse, the doppelgangers **discuss their reasons and reach
+  consensus together** through dialogue. No dispersion math, no formula — the consensus *is* the
+  outcome of the discussion. **Risk to measure, not a blocker:** LLM personas converge toward
+  agreement/sycophancy, so A2b may manufacture false consensus. We detect this by comparing A2b's
+  agreement against A2a's measured dispersion — if A2a shows the house genuinely split on an item
+  while A2b's doppelgangers all nod along, that exposes the groupthink artifact. Believing A2b
+  blindly is not allowed; testing it is legitimate.
 
 ### Stage 4 — Signal panel (the deliverable)
 Append each period's consensus into a timeseries panel (item × date). **Deterministically
@@ -157,28 +174,28 @@ Per **period**:
 
 ---
 
-## The two approaches
+## The approaches (A1, A2a, A2b)
 
 | | A1 (baseline) | A2a |
 |---|---|---|
 | Corpus | whole, blended | partitioned by member |
 | Extraction | one pass = consensus | one pass per member |
-| Consensus | n/a (extraction is it) | deterministic collapse (baseline) |
+| Consensus | n/a (extraction is it) | LLM consensus + deterministic dispersion |
 | Unique feature | — | **dispersion** (cross-member disagreement) |
 | Cost | cheap | N× extraction |
 | Start date | earlier (no per-member density needed; just enough corpus to form a view) | gated on per-member corpus density (~2022 for most) |
 
 **Sequencing:** A1 first (cheap, reuses the engine, honest baseline). A2a second — its payoff is
 **not** a better point-estimate consensus; it's that **disagreement across members is itself a
-feature** (unanimous house vs split house = a confidence/risk signal A1 cannot see).
+feature** (unanimous house vs split house = a confidence/risk signal A1 cannot see). A2b third —
+the fully-agentic discussion variant (no determinism), gated on A2a proving the per-member
+decomposition adds signal, and measured against A2a's dispersion to catch false consensus (see
+Stage 3).
 
 **Shelved:**
-- **A2b (doppelgangers debate to consensus)** — LLM persona debates converge artificially toward
-  agreement/sycophancy; would measure a groupthink artifact. Revisit only if A2a proves the
-  decomposition adds signal.
 - **A2-v2 (news injection)** — feed period news to the doppelgangers and have them react. Powerful
   but changes the experiment from "what does the frozen persona believe" to "how does it react to
-  events," and drags in a second strictly-as-of-T news pipeline. After plain A2a proves out.
+  events," and drags in a second strictly-as-of-T news pipeline. After plain A2a/A2b prove out.
 
 ---
 

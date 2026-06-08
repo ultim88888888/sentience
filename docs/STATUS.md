@@ -60,7 +60,18 @@ ladder, judge blind to identity attributes a stance-only view to Eddy/Ali. Resul
 ## BUILT (unmerged) — A1 signal panel, Sprint 1a (branch `signal/corpus-strategy`)
 
 Module: `signals/`. Turns the blended a16z corpus (research articles + transcripts + Twitter)
-into a structured signal timeseries panel. **33 tests, all passing.**
+into a structured signal timeseries panel. **36 tests, all passing.** Final Opus code review done;
+3 issues fixed + verified (C1 day-31 `rebalance_dates` crash; C2 audit fuzzy fallback was inert
++ now folds smart-quotes/dashes with a real windowed match; C3 EXITED rows now keep token
+item_type/parent_sector). Firewall integrity re-verified post-fix (hallucination + post-T leak
+still caught, verbatim still passes).
+
+⚠️ **CODE-COMPLETE + UNIT-TESTED ONLY — NOT YET VALIDATED ON REAL DATA.** All tests mock the LLM.
+The real Definition-of-Done gates have NOT run: (1) `signals.run distill` on the 149 transcripts
+with a manual verbatim spot-check; (2) `signals.run panel` producing real artifacts; (3) `audit.json`
+showing ZERO leaks across periods; (4) the validation gate; (5) token-headroom check at the largest
+T to fix the final `window_months`. This is a real-`claude -p` run (Opus/high) — distill ~149 docs
++ extract/canonicalize ×~14 quarters — i.e. meaningful compute. **1a is NOT done until these pass.**
 
 Pipeline: assemble trailing-window corpus (18mo default) → A1 consensus extraction (LLM,
 recency-privileging) → agentic fit-or-mint canonicalization → leakage audit → deterministic
@@ -75,7 +86,9 @@ Plan: `docs/superpowers/plans/2026-06-07-a1-signal-panel.md`.
 Module README: `signals/README.md`.
 
 **Deferred:**
+- **Real-data validation run (the actual DoD above) — THE immediate next gate, needs compute sign-off.**
 - `validate` full-text arm is a stand-in (Task 10b) — transcripts excluded from the "full" path, not a true full-text comparison.
+- Review nits not yet addressed (safe to defer): C4 `_extract_json` duplicated across distill/extract/canonicalize (consolidate); C5 corpus assembled twice per period in `build_panel` (extract + audit) — fine quarterly, wasteful monthly; C6 redundant clause in panel FLIPPED condition (harmless).
 - Sprint 1b (Coinglass market-data panel + BTC beta) — separate sprint, not started.
 - Sprint 1c (strategy / backtest / eval) — separate sprint, not started.
 - A2a (per-member extraction) and A2b (dispersion/consensus) — unbuilt.
@@ -84,9 +97,9 @@ Branch not yet merged to main. Worktree: `.claude/worktrees/signal-strategy`.
 
 ## What this project is
 
-A **research** project. Classified "both / not sure yet" at kickoff — it may stay an
-exploration space or concrete into a build. **The overarching research question is still
-TBD** — Jax said "we're gonna do some research and see where it goes." First concrete move
+A **research** project. **Research question DEFINED 2026-06-07:** structure unstructured corpus
+into a tradeable signal (corpus → features → consensus signal → strategy → backtest); deliverable
+is the pipeline/finding, not a Sharpe. See the spec. (Historical note below predates that.) First concrete move
 was corpus collection, not a defined thesis. When the direction sharpens, run
 `/brainstorming` and land a spec in `docs/`.
 

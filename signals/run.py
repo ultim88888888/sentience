@@ -46,10 +46,12 @@ def rebalance_dates(start: date, end: date, interval: str) -> list[date]:
 
 def build_panel(start: date, end: date, interval: str, *, window_months: int,
                 twitter_paths, articles, distillates, out_dir: Path | None = None,
-                member_name: str | None = None) -> pd.DataFrame:
+                member_name: str | None = None, registry_path: Path | None = None) -> pd.DataFrame:
     out_dir = Path(out_dir or config.SIGNAL_OUT_DIR)
     out_dir.mkdir(parents=True, exist_ok=True)
-    registry = load_registry(out_dir / "registry.json")
+    # Shared registry across A1 + all members so canonical ids are comparable (A2a needs this).
+    registry_path = registry_path or (out_dir / "registry.json")
+    registry = load_registry(registry_path)
     periods = []
     audits = []
     for t in rebalance_dates(start, end, interval):
@@ -86,7 +88,7 @@ def build_panel(start: date, end: date, interval: str, *, window_months: int,
             print(f"[skip] {t}: {e}")
             continue
 
-    save_registry(registry, out_dir / "registry.json")
+    save_registry(registry, registry_path)
     df = derive_panel(periods)
     df.to_parquet(out_dir / "signal_panel.parquet")
     (out_dir / "audit.json").write_text(json.dumps(audits, indent=2))
@@ -98,12 +100,14 @@ def build_member_panels(members, *, start, end, interval, window_months, distill
     """members: list of (slug, name, twitter_path). Runs a resumable per-member panel for each,
     writing to <out_root>/members/<slug>/. Skip-continues on a member-level failure."""
     out_root = Path(out_root or config.SIGNAL_OUT_DIR)
+    shared_registry = out_root / "registry.json"   # one vocabulary across all members (+ A1)
     results = {}
     for slug, name, tw_path in members:
         try:
             df = build_panel(start, end, interval, window_months=window_months,
                              twitter_paths=[tw_path], articles=None, distillates=distillates or {},
-                             out_dir=out_root / "members" / slug, member_name=name)
+                             out_dir=out_root / "members" / slug, member_name=name,
+                             registry_path=shared_registry)
             results[slug] = len(df)
             print(f"[member done] {slug}: {len(df)} panel rows")
         except Exception as e:

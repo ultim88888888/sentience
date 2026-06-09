@@ -15,7 +15,8 @@ def period_funding(funding: pd.DataFrame, sym: str, t0, t1) -> float:
         return 0.0
     s = funding[sym]
     s = s[(s.index > pd.Timestamp(t0)) & (s.index <= pd.Timestamp(t1))]
-    return float(s.dropna().sum())
+    # Coinglass funding 'close' is in PERCENT (0.0089 = 0.0089%); convert to fraction.
+    return float(s.dropna().sum()) / 100.0
 
 
 def beta_neutralize(weights: dict, betas: dict, *, hedge: str = "BTC") -> dict:

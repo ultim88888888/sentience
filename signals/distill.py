@@ -116,20 +116,30 @@ def load_distillates(cache_path: Path | None = None) -> dict[str, list[dict]]:
     return out
 
 
-_TWEET_SYS = ('You are filtering tweets from crypto investors to ONLY those that express a substantive view '
- 'on a crypto SECTOR, TOKEN, or the MARKET (bullish/bearish/concern/thesis/prediction/risk). '
- 'Drop personal chatter, jokes, logistics, replies-about-nothing, generic hype with no specific subject. '
- 'Keep each kept tweet VERBATIM with its date. This is content filtering, not advice. '
- 'Output JSON only: {"kept":[{"date":"YYYY-MM-DD","text":"<verbatim>"}]}')
+_TWEET_SYS = ('You filter tweets from crypto investors. You receive a NUMBERED list of tweets. '
+ 'Identify ONLY the tweets that express a substantive view on a crypto SECTOR, TOKEN, or the MARKET '
+ '(bullish/bearish/concern/thesis/prediction/risk). Drop personal chatter, jokes, logistics, '
+ 'replies-about-nothing, and generic hype with no specific subject. Be thorough — do not skim. '
+ 'Output JSON only: {"keep":[<the numbers of the tweets to keep>]}. Numbers only, no text.')
 
 
-def distill_tweet_batch(tweets: list) -> list[dict]:
-    """tweets: list of (iso_date, text). Returns kept [{date,text}] (verbatim, trade-relevant).
-    Uses low effort — this is mechanical keep/drop filtering, not reasoning."""
-    payload = "\n".join(f"[{d}] {t}" for d, t in tweets)
-    out = _extract_json(run_claude(_TWEET_SYS, payload, effort="low")).get("kept", [])
-    return [{"date": k["date"], "text": k["text"]} for k in out
-            if isinstance(k, dict) and k.get("date") and k.get("text")]
+def distill_tweet_batch(tweets: list, *, effort: str = "high") -> list[dict]:
+    """tweets: list of (iso_date, text). The model returns INDICES of trade-relevant tweets;
+    we reconstruct {date,text} from the originals (verbatim guaranteed, tiny output → fast).
+    High effort: selection quality matters (low effort under-keeps ~60%)."""
+    payload = "\n".join(f"{i+1}. [{d}] {t}" for i, (d, t) in enumerate(tweets))
+    obj = _extract_json(run_claude(_TWEET_SYS, payload, effort=effort))
+    out, seen = [], set()
+    for idx in obj.get("keep", []) or []:
+        try:
+            i = int(idx)
+        except (TypeError, ValueError):
+            continue
+        if 1 <= i <= len(tweets) and i not in seen:
+            seen.add(i)
+            d, t = tweets[i - 1]
+            out.append({"date": d, "text": t})
+    return out
 
 
 def build_tweet_distillate_cache(twitter_paths, *, cache_path=None, since: str = "2021-01-01",

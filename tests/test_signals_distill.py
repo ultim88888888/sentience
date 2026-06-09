@@ -72,7 +72,7 @@ def test_distill_tweet_batch_keeps_verbatim(monkeypatch):
     import json as _j
     from unittest.mock import patch
     from signals.distill import distill_tweet_batch
-    resp = _j.dumps({"kept":[{"date":"2024-01-01","text":"zk rollups are the endgame"}]})
+    resp = _j.dumps({"keep":[1]})
     with patch("signals.distill.run_claude", return_value=resp):
         out = distill_tweet_batch([("2024-01-01","zk rollups are the endgame"),("2024-01-02","gm")])
     assert out == [{"date":"2024-01-01","text":"zk rollups are the endgame"}]
@@ -87,14 +87,14 @@ def test_build_tweet_cache_resumable_and_batches(tmp_path):
                                "Another real take on restaking risk and shared security tradeoffs"]})
     p = tmp_path/"eddylazzarin.parquet"; tw.to_parquet(p)
     cache = tmp_path/"tweet_distillates.jsonl"
-    resp = _j.dumps({"kept":[{"date":"2023-01-01","text":"distilled view"}]})
+    resp = _j.dumps({"keep":[1]})
     with patch("signals.distill.run_claude", return_value=resp) as m:
         build_tweet_distillate_cache([p], cache_path=cache, batch_chars=130000)
         n1 = m.call_count
         build_tweet_distillate_cache([p], cache_path=cache, batch_chars=130000)  # resume: no new calls
         assert m.call_count == n1
     flat = load_tweet_distillates(cache)
-    assert ("2023-01-01","distilled view") in flat
+    assert ("2023-01-01","A substantive thesis about modular blockchains and DA layers") in flat
 
 def test_build_cache_skips_malformed_llm_response(tmp_path):
     import pandas as pd

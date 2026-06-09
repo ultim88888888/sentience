@@ -25,6 +25,22 @@ def test_deliberate_returns_period_and_hedge():
         p,h=deliberate(date(2024,6,30),mv)
     assert p.items[0].item=="zk" and h=="hedge"
 
+# Regression: the 'name/item' bug — LLM emitted {name:'council', item:<concept>} and parse_extraction's
+# name-first preference collapsed every entry to 'council'. The degenerate guard must now fail fast.
+_BUGGED_OUT = json.dumps({"sectors_excited": [
+    {"name": "council", "item": c, "item_type": "sector", "stance": "bullish",
+     "conviction": 80, "horizon": "structural", "provenance": "grounded", "citations": []}
+    for c in ("zk", "defi", "nft", "gaming")],
+  "risk_regime": {"stance": "neutral", "conviction": 50, "why": "w", "provenance": "grounded"},
+  "hedge_decision": {"stance": "no_hedge", "reason": "r"}, "notes": "n"})
+
+def test_deliberate_fails_fast_on_degenerate_collapse():
+    import pytest
+    mv = {"a": _pv([("zk", "bullish", 80)])}
+    with patch("signals.council.run_claude", return_value=_BUGGED_OUT):
+        with pytest.raises(ValueError, match="collapsed"):
+            deliberate(date(2024, 6, 30), mv)
+
 def test_run_a2b_end_to_end(tmp_path):
     root=tmp_path/"members"
     for slug,items in [("m1",[("zk","bullish",80)]),("m2",[("zk","bullish",70)])]:

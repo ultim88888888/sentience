@@ -49,8 +49,20 @@ def deliberate(t: date, member_views: dict) -> tuple[PeriodSignal, str]:
     system = _COUNCIL_SYS.format(t=t.isoformat(), n=len(member_views))
     raw = run_claude(system, payload)
     period = parse_extraction(raw, t=t)
+    _assert_not_degenerate(period, t)
     obj = _hedge_from(raw)
     return period, obj
+
+
+def _assert_not_degenerate(period: PeriodSignal, t: date) -> None:
+    """Fail fast on parse/schema collapse (e.g. all items sharing one name). This is the guard the
+    'name/item' bug lacked — it silently produced 28 identical 'council' rows for 3 full periods."""
+    items = period.items
+    if len(items) >= 4:
+        names = {i.item for i in items}
+        if len(names) == 1:
+            raise ValueError(f"council {t}: all {len(items)} items collapsed to '{names.pop()}' "
+                             "— parse/schema failure, refusing to emit a degenerate panel")
 
 
 def _hedge_from(raw: str) -> str:

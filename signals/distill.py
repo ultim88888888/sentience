@@ -124,9 +124,10 @@ _TWEET_SYS = ('You are filtering tweets from crypto investors to ONLY those that
 
 
 def distill_tweet_batch(tweets: list) -> list[dict]:
-    """tweets: list of (iso_date, text). Returns kept [{date,text}] (verbatim, trade-relevant)."""
+    """tweets: list of (iso_date, text). Returns kept [{date,text}] (verbatim, trade-relevant).
+    Uses low effort — this is mechanical keep/drop filtering, not reasoning."""
     payload = "\n".join(f"[{d}] {t}" for d, t in tweets)
-    out = _extract_json(run_claude(_TWEET_SYS, payload)).get("kept", [])
+    out = _extract_json(run_claude(_TWEET_SYS, payload, effort="low")).get("kept", [])
     return [{"date": k["date"], "text": k["text"]} for k in out
             if isinstance(k, dict) and k.get("date") and k.get("text")]
 

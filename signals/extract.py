@@ -64,13 +64,14 @@ def parse_extraction(raw: str, t: date) -> PeriodSignal:
     items: list[SignalItem] = []
     for key, (item_type, stance) in _ARRAY_STANCE.items():
         for e in obj.get(key, []) or []:
-            if not isinstance(e, dict) or not e.get("name"):
-                continue  # tolerate malformed LLM entries (e.g. a bare string)
+            name = e.get("name") or e.get("item") if isinstance(e, dict) else None
+            if not name:
+                continue  # tolerate malformed LLM entries (bare string) + accept name|item key
             cites = tuple(Citation(c["date"], c["quote"])
                           for c in (e.get("citations") or [])
                           if isinstance(c, dict) and c.get("date") and c.get("quote"))
             items.append(SignalItem(
-                item=e["name"], item_type=item_type,
+                item=name, item_type=item_type,
                 parent_sector=e.get("parent_sector"), stance=stance,
                 conviction=e.get("conviction", 50), horizon=e.get("horizon", "tactical"),
                 rationale=e.get("why", ""), provenance=e.get("provenance", "extrapolated"),

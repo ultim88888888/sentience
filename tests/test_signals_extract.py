@@ -93,3 +93,14 @@ def test_extract_member_chunks_oversized_corpus(tmp_path):
     assert merge and merge[0][1].strip()                    # merge call MUST pass non-empty stdin (regression)
     assert out.approach == "A2a:Scott"
     assert out.items[0].item == "zk" and out.items[0].conviction == 85  # from merged
+
+
+def test_parse_accepts_item_key_not_just_name():
+    import json
+    from datetime import date
+    from signals.extract import parse_extraction
+    raw = json.dumps({"sectors_excited":[{"item":"zk","stance":"bullish","conviction":80,
+        "horizon":"structural","provenance":"grounded","citations":[]}],
+        "risk_regime":{"stance":"risk_on","conviction":60,"why":"w","provenance":"grounded"}})
+    p = parse_extraction(raw, t=date(2024,6,30))
+    assert [i.item for i in p.items] == ["zk"]   # 'item' key accepted, not dropped

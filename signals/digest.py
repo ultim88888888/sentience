@@ -11,7 +11,6 @@ Two blocks, both strictly <= eval date T (no lookahead, by construction):
 Sonnet (not Opus) does the aggregation — it is summary work, not reasoning (Jax's call)."""
 from __future__ import annotations
 import json
-import time
 import urllib.parse
 import urllib.request
 from datetime import timedelta
@@ -124,8 +123,8 @@ loosely by theme. Each bullet: one factual line. No speculation, no forward-look
 Output plain bullets ('- ...'), nothing else."""
 
 
-def news_block(t, interval_days: int, *, model: str = "sonnet", max_pages: int = 4) -> str:
-    arts = cc_news(t, interval_days, max_pages=max_pages)
+def news_block(t, interval_days: int, *, model: str = "sonnet", anchors: int | None = None) -> str:
+    arts = cc_news(t, interval_days, anchors=anchors)
     if not arts:
         return "(no news retrieved for this period)"
     head = "\n".join(f"- {a['date']} | {a['title']} ({a['source']})" for a in arts)

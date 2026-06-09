@@ -1,29 +1,27 @@
-"""A1 blended consensus — LEAN: tweets + transcript distillates only (article_distillates={}
-suppresses full bodies AND adds no research passages; research-essay distillation deferred).
-Waits only for transcript distillation to finish, then runs in parallel with the member run on
-its OWN registry (registry_a1.json) to avoid a write race. Resumable."""
+"""A1 member-agnostic consensus: distilled tweets + distilled transcripts (no raw tweets, no articles).
+Waits for tweet distillation to finish, then runs the 14-quarter A1 panel via stdin (AUP-clean ~86k tok).
+Own registry (registry_a1.json) to avoid races with the member run. Resumable."""
 import time, subprocess, glob
 from datetime import date
 from pathlib import Path
 import pandas as pd
 from signals.run import build_panel
-from signals.distill import load_distillates
+from signals.distill import load_distillates, load_tweet_distillates
 
-def transcript_distill_running():
-    r = subprocess.run(["pgrep","-f","signals.run distill"], capture_output=True, text=True)
+def tweet_distill_running():
+    r = subprocess.run(["pgrep","-f","overnight_tweet_distill"], capture_output=True, text=True)
     return bool(r.stdout.strip())
 
-print("[a1] waiting for transcript distillation to finish...", flush=True)
-while transcript_distill_running():
+print("[a1] waiting for tweet distillation...", flush=True)
+while tweet_distill_running():
     time.sleep(30)
-print("[a1] transcript distill done — running A1 panel (lean: tweets + transcript distillates)", flush=True)
-
-tw = sorted(glob.glob("data/twitter/*.parquet"))
-arts = pd.read_parquet("data/a16z_research/articles.parquet")
+tw_dist = load_tweet_distillates("data/signal/tweet_distillates.jsonl")
 tdist = load_distillates("data/signal/transcript_distillates.jsonl")
-print(f"[a1] transcript distillates: {len(tdist)}", flush=True)
+print(f"[a1] distilled tweets={len(tw_dist)} transcript-docs={len(tdist)} — running A1 panel", flush=True)
 
+arts = pd.read_parquet("data/a16z_research/articles.parquet")
 df = build_panel(date(2022,12,31), date(2026,3,31), "quarterly", window_months=18,
-                 twitter_paths=tw, articles=arts, distillates=tdist, article_distillates={},
+                 twitter_paths=[], articles=arts, distillates=tdist,
+                 tweet_distillates=tw_dist, article_distillates={},
                  out_dir=Path("data/signal"), registry_path=Path("data/signal/registry_a1.json"))
-print(f"[a1] DONE — {len(df)} panel rows -> data/signal/signal_panel.parquet", flush=True)
+print(f"[a1] DONE — {len(df)} rows -> data/signal/signal_panel.parquet", flush=True)

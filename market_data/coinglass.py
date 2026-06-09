@@ -252,6 +252,12 @@ class Coinglass:
             return _empty_frame(_OHLC_COLS)
         return _parse_ohlc(data)
 
+    async def coins_markets(self) -> list[dict]:
+        """Top liquid perp coins with OI/mcap/price/funding (snapshot). Defines the candidate universe."""
+        payload = await self._get("/api/futures/coins-markets", {})
+        data = payload.get("data", [])
+        return data if isinstance(data, list) else []
+
     # ── Composite fetch methods ──────────────────────────────────────────────
 
     async def fetch_symbol(self, symbol: str) -> dict[str, pd.DataFrame]:
@@ -310,6 +316,23 @@ def save_symbol(
 # ──────────────────────────────────────────────────────────────────────────────
 # Sync convenience entrypoint
 # ──────────────────────────────────────────────────────────────────────────────
+
+def fetch_coins_markets() -> list[dict]:
+    """Sync entrypoint: snapshot of top liquid perp coins (OI/mcap/price/funding)."""
+    key = api_key()
+    limiter = RateLimiter(RATE_LIMIT_PER_MIN * RATE_BUDGET)
+
+    async def _run() -> list[dict]:
+        async with httpx.AsyncClient(
+            base_url=COINGLASS_BASE,
+            headers={"CG-API-KEY": key},
+            timeout=HTTP_TIMEOUT,
+        ) as http:
+            client = Coinglass(http=http, limiter=limiter, semaphore=asyncio.Semaphore(MAX_CONCURRENCY))
+            return await client.coins_markets()
+
+    return asyncio.run(_run())
+
 
 def pull(
     symbols: list[str],

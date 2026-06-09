@@ -404,6 +404,28 @@ sample the backtest is illustrative; the informativeness measurement is the scie
   backtest + cost/beta/execution model and pipeline eval (Stage 6), Coinglass daily
   price/OI/funding panel, common-factor beta model, canonicalization registry/resolver.
 
+## 1B — Market-data backbone (design, 2026-06-08)
+
+The tradeable layer behind the signal. Quarterly cadence (matches A1/A2a for now).
+
+- **Universe sourcing.** `/api/futures/coins-markets` (new client method) lists the top liquid perps
+  with `open_interest_usd`, `market_cap_usd`, `current_price`, funding, volume. That snapshot defines
+  the candidate universe + current OI; `/api/futures/supported-coins` (1244 tickers) is the fallback
+  full list. (Paginate coins-markets if >100 names are needed for thin sectors.)
+- **Sector→token mapping = LLM pass (conservative, `other` escape hatch).** Classify each universe
+  ticker into the canonical sector vocab → **sector baskets**. Static membership (ARB is always
+  l2-scaling); point-in-time *liquidity* applied separately via the OI floor.
+- **History collection.** Per universe ticker, pull daily OHLCV + funding + OI history (existing
+  `ohlcv`/`funding`/`open_interest` endpoints) → committed parquets under `data/market_data/`.
+  Point-in-time OI (from OI *history*, not the snapshot) gates basket membership at each T.
+- **OI floor** (universe/basket inclusion, TWAP-derived ~$2M) + min daily $-volume floor.
+- **BTC common-factor beta** per ticker (rolling, point-in-time) for the beta-neutral hedge.
+- **Sector basket = EQUAL-WEIGHT** the constituents liquid at T (primary; OI-weight as a variant for
+  execution-realism). A sector signal trades/measures via its basket; signal-named tokens trade as
+  themselves.
+- Module: `signals/market.py` (universe/classify/beta/basket) + `market_data/coinglass.py` extension
+  (`coins_markets`). Sector→token map cached + committed (LLM pass, re-runnable).
+
 ## Open items for the plan (not design gaps — sequencing)
 
 - Seed sector taxonomy: enumerate the starting list.

@@ -229,6 +229,10 @@ def walk_forward(panel: pd.DataFrame, prices: pd.DataFrame, funding: pd.DataFram
     """
     if risk_by_date is None:
         risk_by_date = {}
+    # Normalize keys to bare YYYY-MM-DD: callers key by date.isoformat() ('2024-03-31') but the loop's
+    # t is a pd.Timestamp whose .isoformat() carries a time ('...T00:00:00'). Without this, every
+    # regime-hedge lookup silently missed → consensus/council hedges never fired conditionally.
+    risk_by_date = {pd.Timestamp(k).strftime("%Y-%m-%d"): v for k, v in risk_by_date.items()}
     dates = sorted(pd.Timestamp(d) for d in dates)
     nxt = {d: dates[i + 1] for i, d in enumerate(dates[:-1])}
     out = []
@@ -264,9 +268,13 @@ def walk_forward(panel: pd.DataFrame, prices: pd.DataFrame, funding: pd.DataFram
             w = beta_neutralize(w, betas)
         elif hedge_mode == "none":
             pass  # no hedge
+        elif hedge_mode == "council" and betas:
+            # Council's deliberated risk call: neutralize beta to 0 only when it says "hedge";
+            # otherwise leave the long book fully exposed. risk_by_date[t] in {"hedge","no_hedge"}.
+            if risk_by_date.get(t.strftime("%Y-%m-%d")) == "hedge":
+                w = beta_neutralize(w, betas)
         elif hedge_mode in ("quant", "consensus", "combined") and betas:
-            t_iso = t.isoformat()
-            risk_stance = risk_by_date.get(t_iso, "neutral")
+            risk_stance = risk_by_date.get(t.strftime("%Y-%m-%d"), "neutral")
             target = regime_target_beta(prices, t, risk_stance, mode=hedge_mode)
             w = hedge_to_target_beta(w, betas, target)
         elif hedge_mode == "neutral" and beta_neutral and not betas:

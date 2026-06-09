@@ -657,6 +657,30 @@ def test_walk_forward_hedge_none(tmp_path):
     assert len(result) == 1
 
 
+def test_walk_forward_hedge_council(tmp_path):
+    """council mode: neutralize beta only on 'hedge' periods, leave long book exposed otherwise.
+    With BTC rising and a positive-beta long book, the hedged period must return LESS than unhedged."""
+    dates = ["2024-03-31", "2024-06-30"]
+    _price_parquet(tmp_path, "ARB", dates, [10.0, 12.0])   # +20%
+    _price_parquet(tmp_path, "BTC", dates, [60000.0, 72000.0])  # +20%
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy(); oi_panel[:] = 5e8   # clear the OI floor so the basket is non-empty
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling"}
+    betas = {"ARB": 1.5, "BTC": 1.0}
+    common = dict(strategy="long_only", betas=betas, beta_neutral=False, cost_bps=0)
+    hedged = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          hedge_mode="council", risk_by_date={"2024-03-31": "hedge"}, **common)
+    unhedged = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                            hedge_mode="council", risk_by_date={"2024-03-31": "no_hedge"}, **common)
+    assert len(hedged) == 1 and len(unhedged) == 1
+    # BTC overlay shorts beta into a rising market → hedged underperforms the exposed book here.
+    assert hedged.iloc[0]["ret"] < unhedged.iloc[0]["ret"]
+
+
 def test_walk_forward_cap_limits_positions(tmp_path):
     """cap param should flow through walk_forward into the strategy."""
     dates = ["2024-03-31", "2024-06-30"]

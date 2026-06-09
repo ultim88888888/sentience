@@ -116,14 +116,60 @@ def build_member_prompt(corpus_text: str, t, name: str, *, window_months: int = 
     return system, corpus_text
 
 
-def extract_member(t, name: str, *, window_months: int, twitter_path, distillates=None):
+# Keep each call's corpus under the AUP-safe ceiling (~50k tok ≈ 200k chars); 180k leaves headroom.
+_MEMBER_MAX_CHARS = 180_000
+
+_MEMBER_MERGE_TMPL = """You are {name} (a member of the a16z crypto team). It is {t}.
+Your statements over the last {window} months were too many to read at once, so they were split into
+{n} consecutive TIME-SLICES (slice 1 = oldest, slice {n} = most recent) and each was summarized into a
+partial market view. Below are those partial views as JSON.
+
+Consolidate them into your SINGLE current view as of {t}. On any conflict, weight the MORE RECENT
+slice. Union the items; merge duplicates (same sector/token) into one entry with your current stance,
+keeping the strongest supporting citation and noting reversals in age_note. Output the SAME JSON schema
+(sectors_excited/sectors_concerned/tokens_excited/tokens_concerned/risk_regime/notes).
+
+PARTIAL VIEWS:
+{partials}"""
+
+
+def _chunk_corpus(corpus: str, max_chars: int) -> list[str]:
+    """Split a chronological corpus into <=max_chars chunks on line boundaries."""
+    chunks, cur, n = [], [], 0
+    for line in corpus.split("\n"):
+        if n + len(line) > max_chars and cur:
+            chunks.append("\n".join(cur)); cur, n = [], 0
+        cur.append(line); n += len(line) + 1
+    if cur:
+        chunks.append("\n".join(cur))
+    return chunks
+
+
+def _merge_member_views(name: str, t, partials: list[PeriodSignal], window_months: int) -> PeriodSignal:
+    """LLM-merge time-sliced partial views into one consolidated member view (recency-weighted).
+    Small structured input → reliable, no AUP."""
+    payload = json.dumps([p.to_dict() for p in partials], indent=2)
+    system = _MEMBER_MERGE_TMPL.format(name=name, t=t.isoformat(), window=window_months,
+                                       n=len(partials), partials=payload)
+    return parse_extraction(run_claude(system, ""), t=t)
+
+
+def extract_member(t, name: str, *, window_months: int, twitter_path, distillates=None,
+                   max_chars: int = _MEMBER_MAX_CHARS):
     from signals.corpus import assemble_corpus
     corpus = assemble_corpus(t=t, window_months=window_months, twitter_paths=[twitter_path],
                              articles=None, distillates=distillates or {})
-    system, user = build_member_prompt(corpus, t, name, window_months=window_months)
-    raw = run_claude(system, user)
-    p = parse_extraction(raw, t=t)
-    # tag approach as the member slug-style label for traceability
+    if len(corpus) <= max_chars:
+        system, user = build_member_prompt(corpus, t, name, window_months=window_months)
+        p = parse_extraction(run_claude(system, user), t=t)
+    else:
+        # Prolific member (e.g. Kominers): chunk the corpus, extract each slice, merge — no data lost.
+        chunks = _chunk_corpus(corpus, max_chars)
+        partials = []
+        for ch in chunks:
+            system, user = build_member_prompt(ch, t, name, window_months=window_months)
+            partials.append(parse_extraction(run_claude(system, user), t=t))
+        p = _merge_member_views(name, t, partials, window_months)
     return p.__class__(as_of=p.as_of, approach=f"A2a:{name}", items=p.items,
                        risk_regime=p.risk_regime, notes=p.notes)
 

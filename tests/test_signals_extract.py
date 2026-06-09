@@ -66,3 +66,29 @@ def test_parse_tolerates_malformed_entries():
     assert [i.item for i in p.items] == ["zk"]          # bare string skipped, dict kept
     assert len(p.items[0].citations) == 1               # bad citation skipped
     assert p.risk_regime.stance == "no_view"            # non-dict risk -> default
+
+
+def test_extract_member_chunks_oversized_corpus(tmp_path):
+    from datetime import date
+    import pandas as pd
+    from unittest.mock import patch
+    from signals.extract import extract_member
+    tw = pd.DataFrame({
+        "created_at": pd.to_datetime(["2023-01-01","2023-06-01","2023-12-01"], utc=True),
+        "type": ["original","original","original"],
+        "text": ["A substantive thesis about modular blockchains and data availability tradeoffs here",
+                 "A real take on restaking systemic risk and shared security economics in this post",
+                 "Strong view that zk rollups are the scaling endgame for ethereum going forward now"]})
+    p = tmp_path/"m.parquet"; tw.to_parquet(p)
+    partial = '{"sectors_excited":[{"name":"zk","why":"w","conviction":80,"horizon":"structural","provenance":"grounded","age_note":null,"citations":[]}],"risk_regime":{"stance":"risk_on","conviction":60,"why":"w","provenance":"grounded"}}'
+    merged = '{"sectors_excited":[{"name":"zk","why":"merged","conviction":85,"horizon":"structural","provenance":"grounded","age_note":null,"citations":[]}],"risk_regime":{"stance":"risk_on","conviction":65,"why":"m","provenance":"grounded"}}'
+    calls = []
+    def fake(system, user, **kw):
+        calls.append(system)
+        return merged if "TIME-SLICE" in system else partial
+    with patch("signals.extract.run_claude", side_effect=fake):
+        out = extract_member(date(2024,6,30), "Scott", window_months=18, twitter_path=p, max_chars=120)
+    assert len(calls) >= 3                       # >=2 chunk extracts + 1 merge
+    assert any("TIME-SLICE" in c for c in calls) # merge happened
+    assert out.approach == "A2a:Scott"
+    assert out.items[0].item == "zk" and out.items[0].conviction == 85  # from merged

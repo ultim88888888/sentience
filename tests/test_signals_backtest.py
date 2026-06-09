@@ -3,7 +3,9 @@ import numpy as np
 import pytest
 from signals.backtest import (beta_neutralize, sector_ls_targets, intra_sector_targets,
                                realize_period, period_funding, metrics,
-                               walk_forward, benchmark_returns)
+                               walk_forward, benchmark_returns,
+                               _finalize, long_only_targets, token_ls_targets,
+                               hedge_to_target_beta, regime_target_beta)
 from signals.informativeness import load_close_panel
 
 
@@ -372,3 +374,322 @@ def test_benchmark_returns_btc_missing(tmp_path):
     prices = load_close_panel(str(tmp_path))
     bm = benchmark_returns(prices, dates, mode="btc")
     assert bm.iloc[0]["ret"] == 0.0
+
+
+# ── _finalize ─────────────────────────────────────────────────────────────────
+
+def test_finalize_caps_and_normalizes():
+    out = _finalize({"A": 0.1, "B": -0.5, "C": 0.2, "D": -0.05}, cap=2)
+    assert set(out) == {"B", "C"}                      # top-2 by |w|
+    assert abs(sum(abs(v) for v in out.values()) - 1.0) < 1e-9
+
+
+def test_finalize_empty_returns_empty():
+    assert _finalize({}) == {}
+
+
+def test_finalize_no_cap_gross_normalizes():
+    out = _finalize({"A": 0.3, "B": -0.9})
+    assert abs(sum(abs(v) for v in out.values()) - 1.0) < 1e-9
+    assert out["B"] < 0 and out["A"] > 0
+
+
+def test_finalize_custom_gross():
+    out = _finalize({"A": 1.0, "B": -1.0}, gross=2.0)
+    assert abs(sum(abs(v) for v in out.values()) - 2.0) < 1e-9
+
+
+# ── long_only_targets ─────────────────────────────────────────────────────────
+
+def test_long_only_no_shorts():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "defi", "item_type": "sector", "stance": "bearish",
+         "conviction": 70, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "UNI": "defi"}
+    oi = {"ARB": 5e8, "UNI": 5e8}
+    w = long_only_targets(live, sm, oi)
+    assert all(v > 0 for v in w.values()) and "ARB" in w and "UNI" not in w
+
+
+def test_long_only_fade_longs_bearish():
+    live = pd.DataFrame([
+        {"item": "defi", "item_type": "sector", "stance": "bearish",
+         "conviction": 70, "lifecycle_state": "NEW"},
+    ])
+    sm = {"UNI": "defi", "AAVE": "defi"}
+    oi = {"UNI": 5e8, "AAVE": 5e8}
+    w = long_only_targets(live, sm, oi, bet_sign="fade")
+    assert all(v > 0 for v in w.values())
+    assert "UNI" in w and "AAVE" in w
+
+
+def test_long_only_gross_normalized():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "pos-l1", "item_type": "sector", "stance": "bullish",
+         "conviction": 60, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "ETH": "pos-l1"}
+    oi = {"ARB": 5e8, "ETH": 5e8}
+    w = long_only_targets(live, sm, oi)
+    assert abs(sum(abs(v) for v in w.values()) - 1.0) < 1e-9
+
+
+def test_long_only_equal_weight_mode():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "pos-l1", "item_type": "sector", "stance": "bullish",
+         "conviction": 40, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "ETH": "pos-l1"}
+    oi = {"ARB": 5e8, "ETH": 5e8}
+    w_cv = long_only_targets(live, sm, oi, conviction_weighted=True)
+    w_eq = long_only_targets(live, sm, oi, conviction_weighted=False)
+    # equal-weight: both sectors contribute equally regardless of conviction
+    assert abs(w_eq["ARB"] - w_eq["ETH"]) < 1e-9
+    # conviction-weighted: higher conviction → higher weight
+    assert w_cv["ARB"] > w_cv["ETH"]
+
+
+def test_long_only_cap():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "pos-l1", "item_type": "sector", "stance": "bullish",
+         "conviction": 60, "lifecycle_state": "NEW"},
+        {"item": "defi", "item_type": "sector", "stance": "bullish",
+         "conviction": 40, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "ETH": "pos-l1", "UNI": "defi"}
+    oi = {s: 5e8 for s in sm}
+    w = long_only_targets(live, sm, oi, cap=2)
+    assert len(w) == 2
+
+
+# ── token_ls_targets ──────────────────────────────────────────────────────────
+
+def test_token_ls_longs_bullish_shorts_bearish():
+    live = pd.DataFrame([
+        {"item": "SOL", "item_type": "token", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "XRP", "item_type": "token", "stance": "bearish",
+         "conviction": 60, "lifecycle_state": "NEW"},
+    ])
+    w = token_ls_targets(live)
+    assert w["SOL"] > 0 and w["XRP"] < 0
+
+
+def test_token_ls_neutral_excluded():
+    live = pd.DataFrame([
+        {"item": "SOL", "item_type": "token", "stance": "neutral",
+         "conviction": 50, "lifecycle_state": "NEW"},
+    ])
+    assert token_ls_targets(live) == {}
+
+
+def test_token_ls_sector_rows_ignored():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "stance": "bullish",
+         "conviction": 80, "lifecycle_state": "NEW"},
+    ])
+    assert token_ls_targets(live) == {}
+
+
+def test_token_ls_gross_normalized():
+    live = pd.DataFrame([
+        {"item": "SOL", "item_type": "token", "stance": "bullish",
+         "conviction": 90, "lifecycle_state": "NEW"},
+        {"item": "XRP", "item_type": "token", "stance": "bearish",
+         "conviction": 40, "lifecycle_state": "NEW"},
+    ])
+    w = token_ls_targets(live)
+    assert abs(sum(abs(v) for v in w.values()) - 1.0) < 1e-9
+
+
+def test_token_ls_equal_weight_mode():
+    live = pd.DataFrame([
+        {"item": "SOL", "item_type": "token", "stance": "bullish",
+         "conviction": 90, "lifecycle_state": "NEW"},
+        {"item": "XRP", "item_type": "token", "stance": "bearish",
+         "conviction": 40, "lifecycle_state": "NEW"},
+    ])
+    w = token_ls_targets(live, conviction_weighted=False)
+    assert abs(abs(w["SOL"]) - abs(w["XRP"])) < 1e-9  # equal magnitude
+
+
+def test_token_ls_cap():
+    live = pd.DataFrame([
+        {"item": "SOL", "item_type": "token", "stance": "bullish",
+         "conviction": 90, "lifecycle_state": "NEW"},
+        {"item": "ETH", "item_type": "token", "stance": "bullish",
+         "conviction": 70, "lifecycle_state": "NEW"},
+        {"item": "XRP", "item_type": "token", "stance": "bearish",
+         "conviction": 40, "lifecycle_state": "NEW"},
+    ])
+    w = token_ls_targets(live, cap=2)
+    assert len(w) == 2
+    assert "SOL" in w  # highest |weight| survives
+
+
+# ── hedge_to_target_beta ──────────────────────────────────────────────────────
+
+def test_hedge_to_target_beta():
+    out = hedge_to_target_beta({"A": 1.0}, {"A": 2.0, "BTC": 1.0}, target_beta=0.5)
+    assert abs(sum(out[s] * {"A": 2.0, "BTC": 1.0}[s] for s in out) - 0.5) < 1e-9
+
+
+def test_hedge_to_target_beta_zero_is_neutral():
+    """target_beta=0 should behave like beta_neutralize."""
+    w = {"A": 0.5, "B": -0.5}
+    betas = {"A": 1.5, "B": 0.5, "BTC": 1.0}
+    out_hedge = hedge_to_target_beta(w, betas, target_beta=0.0)
+    out_neutral = beta_neutralize(w, betas)
+    for s in set(out_hedge) | set(out_neutral):
+        assert abs(out_hedge.get(s, 0.0) - out_neutral.get(s, 0.0)) < 1e-9
+
+
+def test_hedge_to_target_beta_removes_zero_btc():
+    """If the hedge needed is ~0, BTC should not appear."""
+    w = {"A": 0.5}
+    betas = {"A": 1.0, "BTC": 1.0}
+    # net beta = 0.5, target = 0.5 → BTC hedge = 0
+    out = hedge_to_target_beta(w, betas, target_beta=0.5)
+    assert "BTC" not in out
+
+
+# ── regime_target_beta ────────────────────────────────────────────────────────
+
+def test_regime_target_beta_modes():
+    pr = pd.DataFrame({"BTC": [1.0] * 210},
+                      index=pd.date_range("2023-01-01", periods=210))
+    assert regime_target_beta(pr, "2024-01-01", "risk_off", mode="consensus") == -0.5
+    # quant: flat series → last == mean → uptrend (+1) → +0.5
+    assert regime_target_beta(pr, "2024-01-01", "risk_off", mode="quant") == 0.5
+
+
+def test_regime_target_beta_combined():
+    pr = pd.DataFrame({"BTC": [1.0] * 210},
+                      index=pd.date_range("2023-01-01", periods=210))
+    # quant=+0.5, consensus(risk_on)=+0.5 → combined = 0.5
+    result = regime_target_beta(pr, "2024-01-01", "risk_on", mode="combined")
+    assert abs(result - 0.5) < 1e-9
+
+
+def test_regime_target_beta_insufficient_history():
+    pr = pd.DataFrame({"BTC": [1.0] * 10},
+                      index=pd.date_range("2023-01-01", periods=10))
+    # fewer than lookback=200 → _btc_trend returns 0 → quant = 0
+    result = regime_target_beta(pr, "2023-01-15", "risk_on", mode="quant")
+    assert result == 0.0
+
+
+def test_regime_target_beta_downtrend():
+    # Price that is below its 200-day mean → risk-off
+    prices = list(range(210, 0, -1))  # descending: last value = 1 << mean ~= 105
+    pr = pd.DataFrame({"BTC": prices},
+                      index=pd.date_range("2023-01-01", periods=210))
+    result = regime_target_beta(pr, "2023-07-31", "neutral", mode="quant")
+    assert result == -0.5
+
+
+# ── walk_forward extended strategies / hedge modes ────────────────────────────
+
+def test_walk_forward_long_only_strategy(tmp_path):
+    dates = ["2024-03-31", "2024-06-30", "2024-09-30"]
+    _price_parquet(tmp_path, "ARB", dates, [10.0, 12.0, 11.0])
+    _price_parquet(tmp_path, "OP",  dates, [5.0, 6.0, 5.5])
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy()
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+        {"as_of": "2024-06-30", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "ACTIVE"},
+    ])
+    sm = {"ARB": "l2-scaling", "OP": "l2-scaling"}
+    result = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          strategy="long_only", beta_neutral=False, cost_bps=0)
+    assert len(result) == 2
+
+
+def test_walk_forward_token_ls_strategy(tmp_path):
+    dates = ["2024-03-31", "2024-06-30"]
+    _price_parquet(tmp_path, "SOL", dates, [100.0, 130.0])
+    _price_parquet(tmp_path, "XRP", dates, [0.5, 0.4])
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy()
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "SOL", "item_type": "token",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+        {"as_of": "2024-03-31", "item": "XRP", "item_type": "token",
+         "stance": "bearish", "conviction": 60, "lifecycle_state": "NEW"},
+    ])
+    sm = {}
+    result = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          strategy="token_ls", beta_neutral=False, cost_bps=0)
+    assert len(result) == 1
+    # SOL up 30%, XRP down 20% → long SOL, short XRP → positive PnL
+    assert result.iloc[0]["ret"] > 0
+
+
+def test_walk_forward_hedge_none(tmp_path):
+    """hedge_mode='none' skips all hedging; portfolio is unhedged."""
+    dates = ["2024-03-31", "2024-06-30"]
+    _price_parquet(tmp_path, "ARB", dates, [10.0, 12.0])
+    _price_parquet(tmp_path, "OP",  dates, [5.0, 4.0])
+    _price_parquet(tmp_path, "BTC", dates, [60000.0, 65000.0])
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy()
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "OP": "l2-scaling"}
+    betas = {"ARB": 1.2, "OP": 0.8, "BTC": 1.0}
+    result = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          strategy="sector_ls", betas=betas, hedge_mode="none", cost_bps=0)
+    assert len(result) == 1
+
+
+def test_walk_forward_cap_limits_positions(tmp_path):
+    """cap param should flow through walk_forward into the strategy."""
+    dates = ["2024-03-31", "2024-06-30"]
+    for sym, p0, p1 in [("ARB", 10.0, 12.0), ("OP", 5.0, 6.0), ("STRK", 2.0, 2.2)]:
+        _price_parquet(tmp_path, sym, dates, [p0, p1])
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy()
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "OP": "l2-scaling", "STRK": "l2-scaling"}
+    result = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          strategy="sector_ls", beta_neutral=False, cost_bps=0, cap=2)
+    assert len(result) == 1  # period ran; cap applied internally
+
+
+def test_walk_forward_risk_by_date_consensus(tmp_path):
+    """consensus hedge with risk_by_date wires through correctly."""
+    dates = ["2024-03-31", "2024-06-30"]
+    _price_parquet(tmp_path, "ARB", dates, [10.0, 12.0])
+    # 210 BTC price points so _btc_trend has history (not used for consensus, but needed for prices)
+    btc_dates = pd.date_range("2023-06-04", periods=210).strftime("%Y-%m-%d").tolist()
+    btc_prices = [60000.0] * 210
+    _price_parquet(tmp_path, "BTC", btc_dates + dates, btc_prices + [60000.0, 65000.0])
+    prices = load_close_panel(str(tmp_path))
+    oi_panel = prices.copy()
+    panel = pd.DataFrame([
+        {"as_of": "2024-03-31", "item": "l2-scaling", "item_type": "sector",
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling"}
+    betas = {"ARB": 1.5, "BTC": 1.0}
+    result = walk_forward(panel, prices, pd.DataFrame(), oi_panel, sm, dates,
+                          strategy="sector_ls", betas=betas, hedge_mode="consensus",
+                          risk_by_date={"2024-03-31": "risk_on"}, cost_bps=0)
+    assert len(result) == 1

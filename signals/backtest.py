@@ -32,11 +32,25 @@ def beta_neutralize(weights: dict, betas: dict, *, hedge: str = "BTC") -> dict:
     return out
 
 
+def _finalize(raw: dict, *, gross: float = 1.0, cap: int | None = None) -> dict:
+    """Cap to the top-`cap` positions by |weight|, then gross-normalize to sum|w|=gross.
+    raw: {sym: signed weight}. Empty -> {}."""
+    if not raw:
+        return {}
+    items = sorted(raw.items(), key=lambda kv: -abs(kv[1]))
+    if cap:
+        items = items[:cap]
+    g = sum(abs(w) for _, w in items)
+    return {s: w / g * gross for s, w in items} if g else {}
+
+
 def sector_ls_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,
-                      bet_sign: str = "momentum", oi_floor: float = OI_FLOOR_USD) -> dict:
+                      bet_sign: str = "momentum", oi_floor: float = OI_FLOOR_USD,
+                      conviction_weighted: bool = True, cap: int | None = None) -> dict:
     """Sector long/short from the live signal rows at T. bet_sign 'momentum': long bullish sectors,
-    short bearish. 'fade': reverse. Sized by conviction. Each sector -> equal-weight basket members.
-    Returns {symbol: signed weight} (gross-normalized to sum |w| = 1)."""
+    short bearish. 'fade': reverse. Sized by conviction (or equal-weight when conviction_weighted=False).
+    Each sector -> equal-weight basket members. Returns {symbol: signed weight} (gross-normalized to
+    sum |w| = 1)."""
     raw = {}
     for _, r in live.iterrows():
         if r["item_type"] != "sector":
@@ -49,18 +63,20 @@ def sector_ls_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,
         basket = sector_basket(sector_map, oi_now, r["item"], oi_floor=oi_floor)
         if not basket:
             continue
-        w = sign * (r["conviction"] / 100.0) / len(basket)
+        mag = (r["conviction"] / 100.0) if conviction_weighted else 1.0
+        w = sign * mag / len(basket)
         for s in basket:
             raw[s] = raw.get(s, 0.0) + w
-    gross = sum(abs(v) for v in raw.values())
-    return {s: v / gross for s, v in raw.items()} if gross else {}
+    return _finalize(raw, cap=cap)
 
 
 def intra_sector_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, conv_by_token: dict, *,
-                         oi_floor: float = OI_FLOOR_USD) -> dict:
+                         oi_floor: float = OI_FLOOR_USD, conviction_weighted: bool = True,
+                         cap: int | None = None) -> dict:
     """Within each BULLISH sector: long the standout (highest token conviction, else first member),
     short the rest equally. Market-neutral by construction (strips style tilt). conv_by_token:
-    {token: conviction} from the signal's token rows (fallback 50)."""
+    {token: conviction} from the signal's token rows (fallback 50). When conviction_weighted=False,
+    each position contributes equal magnitude (sign only, pre-basket-split)."""
     raw = {}
     for _, r in live.iterrows():
         if r["item_type"] != "sector" or STANCE_SIGN.get(r["stance"], 0) <= 0:
@@ -70,11 +86,79 @@ def intra_sector_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, con
             continue
         standout = max(basket, key=lambda s: conv_by_token.get(s, 50))
         laggards = [s for s in basket if s != standout]
-        raw[standout] = raw.get(standout, 0.0) + 1.0
+        mag = 1.0  # intra-sector: equal magnitude per sector regardless of conviction_weighted
+        raw[standout] = raw.get(standout, 0.0) + mag
         for s in laggards:
-            raw[s] = raw.get(s, 0.0) - 1.0 / len(laggards)
-    gross = sum(abs(v) for v in raw.values())
-    return {s: v / gross for s, v in raw.items()} if gross else {}
+            raw[s] = raw.get(s, 0.0) - mag / len(laggards)
+    return _finalize(raw, cap=cap)
+
+
+def long_only_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,
+                      bet_sign: str = "momentum", conviction_weighted: bool = True,
+                      cap: int | None = None, oi_floor: float = OI_FLOOR_USD) -> dict:
+    """Long the favored side only (no opposite leg). momentum: long BULLISH sector baskets;
+    fade: long BEARISH. Net-long book, gross-normalized. (Beta hedging handled separately.)"""
+    raw = {}
+    want = "bullish" if bet_sign == "momentum" else "bearish"
+    for _, r in live.iterrows():
+        if r["item_type"] != "sector" or r["stance"] != want:
+            continue
+        basket = sector_basket(sector_map, oi_now, r["item"], oi_floor=oi_floor)
+        if not basket:
+            continue
+        w = (r["conviction"] / 100.0 if conviction_weighted else 1.0) / len(basket)
+        for s in basket:
+            raw[s] = raw.get(s, 0.0) + w
+    return _finalize(raw, cap=cap)
+
+
+def token_ls_targets(live: pd.DataFrame, *, conviction_weighted: bool = True,
+                     cap: int | None = None) -> dict:
+    """Rank the signal's TOKEN rows by signed conviction; long bullish tokens, short bearish.
+    Cross-sector token L/S (distinct from intra_sector which is within-basket)."""
+    raw = {}
+    for _, r in live.iterrows():
+        if r["item_type"] != "token":
+            continue
+        sign = STANCE_SIGN.get(r["stance"], 0)
+        if sign == 0:
+            continue
+        raw[r["item"]] = raw.get(r["item"], 0.0) + sign * (r["conviction"] / 100.0 if conviction_weighted else 1.0)
+    return _finalize(raw, cap=cap)
+
+
+def _btc_trend(prices: pd.DataFrame, t, *, lookback: int = 200) -> int:
+    """+1 if BTC close at t >= its trailing `lookback`-day mean (risk-on), else -1 (risk-off).
+    0 if no data."""
+    if "BTC" not in prices.columns:
+        return 0
+    s = prices["BTC"].dropna()
+    s = s[s.index <= pd.Timestamp(t)]
+    if len(s) < lookback:
+        return 0
+    return 1 if s.iloc[-1] >= s.iloc[-lookback:].mean() else -1
+
+
+def regime_target_beta(prices: pd.DataFrame, t, risk_stance: str, *, mode: str) -> float:
+    """Target NET portfolio beta given the regime. mode:
+      'quant'     -> +0.5 if BTC uptrend else -0.5
+      'consensus' -> from signal risk_regime: risk_on->+0.5, risk_off->-0.5, else 0
+      'combined'  -> average of the two
+    (Magnitude 0.5 = take half-beta in the favored direction; 0 = fully neutral.)"""
+    q = 0.5 * _btc_trend(prices, t)
+    c = {"risk_on": 0.5, "risk_off": -0.5}.get(risk_stance, 0.0)
+    return {"quant": q, "consensus": c, "combined": (q + c) / 2}[mode]
+
+
+def hedge_to_target_beta(weights: dict, betas: dict, target_beta: float, *,
+                         hedge: str = "BTC") -> dict:
+    """Add a BTC overlay so net portfolio beta == target_beta (target_beta=0 -> fully neutral)."""
+    net = sum(w * betas.get(s, 1.0) for s, w in weights.items() if s != hedge)
+    out = dict(weights)
+    out[hedge] = out.get(hedge, 0.0) + (target_beta - net)
+    if abs(out[hedge]) < 1e-12:
+        out.pop(hedge, None)
+    return out
 
 
 def realize_period(weights: dict, prices: pd.DataFrame, funding: pd.DataFrame, t0, t1, *,
@@ -94,8 +178,19 @@ def realize_period(weights: dict, prices: pd.DataFrame, funding: pd.DataFrame, t
 
 def walk_forward(panel: pd.DataFrame, prices: pd.DataFrame, funding: pd.DataFrame, oi_panel: pd.DataFrame,
                  sector_map: dict, dates: list, *, strategy: str = "sector_ls", bet_sign: str = "momentum",
-                 beta_neutral: bool = True, betas: dict | None = None, cost_bps: float = 10.0) -> pd.DataFrame:
-    """Run the strategy across rebalance dates. Returns DataFrame [as_of, ret] of per-period returns."""
+                 beta_neutral: bool = True, betas: dict | None = None, cost_bps: float = 10.0,
+                 conviction_weighted: bool = True, cap: int | None = None,
+                 hedge_mode: str = "neutral",
+                 risk_by_date: dict | None = None) -> pd.DataFrame:
+    """Run the strategy across rebalance dates. Returns DataFrame [as_of, ret] of per-period returns.
+
+    strategy: 'sector_ls' | 'long_only' | 'token_ls' | 'intra_sector'
+    hedge_mode: 'neutral' -> beta_neutralize (target 0); 'none' -> no hedge;
+                'quant'|'consensus'|'combined' -> hedge_to_target_beta via regime_target_beta.
+    risk_by_date: {iso_date_str: risk_stance_str} for regime-aware hedge modes (default {}).
+    """
+    if risk_by_date is None:
+        risk_by_date = {}
     dates = sorted(pd.Timestamp(d) for d in dates)
     nxt = {d: dates[i + 1] for i, d in enumerate(dates[:-1])}
     out = []
@@ -106,13 +201,33 @@ def walk_forward(panel: pd.DataFrame, prices: pd.DataFrame, funding: pd.DataFram
         if live.empty:
             continue
         oi_now = oi_at(oi_panel, t)
+
         if strategy == "intra_sector":
             conv = {r["item"]: r["conviction"] for _, r in live[live["item_type"] == "token"].iterrows()}
-            w = intra_sector_targets(live, sector_map, oi_now, conv)
-        else:
-            w = sector_ls_targets(live, sector_map, oi_now, bet_sign=bet_sign)
-        if beta_neutral and betas:
+            w = intra_sector_targets(live, sector_map, oi_now, conv,
+                                     conviction_weighted=conviction_weighted, cap=cap)
+        elif strategy == "long_only":
+            w = long_only_targets(live, sector_map, oi_now, bet_sign=bet_sign,
+                                  conviction_weighted=conviction_weighted, cap=cap)
+        elif strategy == "token_ls":
+            w = token_ls_targets(live, conviction_weighted=conviction_weighted, cap=cap)
+        else:  # sector_ls (default)
+            w = sector_ls_targets(live, sector_map, oi_now, bet_sign=bet_sign,
+                                  conviction_weighted=conviction_weighted, cap=cap)
+
+        # Apply hedge
+        if hedge_mode == "neutral" and beta_neutral and betas:
             w = beta_neutralize(w, betas)
+        elif hedge_mode == "none":
+            pass  # no hedge
+        elif hedge_mode in ("quant", "consensus", "combined") and betas:
+            t_iso = t.isoformat()
+            risk_stance = risk_by_date.get(t_iso, "neutral")
+            target = regime_target_beta(prices, t, risk_stance, mode=hedge_mode)
+            w = hedge_to_target_beta(w, betas, target)
+        elif hedge_mode == "neutral" and beta_neutral and not betas:
+            pass  # no betas provided, skip hedge
+
         out.append({"as_of": t.isoformat(), "ret": realize_period(w, prices, funding, t, nxt[t], cost_bps=cost_bps)})
     return pd.DataFrame(out)
 

@@ -116,6 +116,76 @@ def load_distillates(cache_path: Path | None = None) -> dict[str, list[dict]]:
     return out
 
 
+_TWEET_SYS = ('You are filtering tweets from crypto investors to ONLY those that express a substantive view '
+ 'on a crypto SECTOR, TOKEN, or the MARKET (bullish/bearish/concern/thesis/prediction/risk). '
+ 'Drop personal chatter, jokes, logistics, replies-about-nothing, generic hype with no specific subject. '
+ 'Keep each kept tweet VERBATIM with its date. This is content filtering, not advice. '
+ 'Output JSON only: {"kept":[{"date":"YYYY-MM-DD","text":"<verbatim>"}]}')
+
+
+def distill_tweet_batch(tweets: list) -> list[dict]:
+    """tweets: list of (iso_date, text). Returns kept [{date,text}] (verbatim, trade-relevant)."""
+    payload = "\n".join(f"[{d}] {t}" for d, t in tweets)
+    out = _extract_json(run_claude(_TWEET_SYS, payload)).get("kept", [])
+    return [{"date": k["date"], "text": k["text"]} for k in out
+            if isinstance(k, dict) and k.get("date") and k.get("text")]
+
+
+def build_tweet_distillate_cache(twitter_paths, *, cache_path=None, since: str = "2021-01-01",
+                                 batch_chars: int = 130000) -> Path:
+    """Distill each handle's substantive, in-range tweets in batches; cache to JSONL. Resumable
+    at the (handle, batch) level. Cache line: {"handle":..., "batch":i, "kept":[{date,text}]}."""
+    import pandas as pd
+    from signals.corpus import is_substantive_tweet
+    cache_path = Path(cache_path or config.TWEET_DISTILLATE_CACHE)
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    done = set()
+    if cache_path.exists():
+        for l in cache_path.read_text().splitlines():
+            if l.strip():
+                d = json.loads(l); done.add((d["handle"], d["batch"]))
+    floor = pd.Timestamp(since, tz="UTC")
+    with cache_path.open("a") as fh:
+        for p in twitter_paths:
+            handle = Path(p).stem
+            df = pd.read_parquet(p, columns=["created_at", "type", "text"])
+            df = df[df["type"] != "retweet"]
+            rows = []
+            for _, r in df.iterrows():
+                if r["created_at"] >= floor and is_substantive_tweet(r["text"]):
+                    rows.append((r["created_at"].date().isoformat(), str(r["text"]).strip()))
+            rows.sort()
+            # batch by char budget
+            batches, cur, n = [], [], 0
+            for row in rows:
+                if n + len(row[1]) > batch_chars and cur:
+                    batches.append(cur); cur, n = [], 0
+                cur.append(row); n += len(row[1])
+            if cur: batches.append(cur)
+            for i, b in enumerate(batches):
+                if (handle, i) in done:
+                    continue
+                try:
+                    kept = distill_tweet_batch(b)
+                except Exception as e:
+                    print(f"[tweet-distill skip] {handle} batch {i}: {e}"); kept = []
+                fh.write(json.dumps({"handle": handle, "batch": i, "kept": kept}) + "\n"); fh.flush()
+    return cache_path
+
+
+def load_tweet_distillates(cache_path=None) -> list:
+    """Flat MEMBER-AGNOSTIC list of (iso_date, text) across all handles (for A1)."""
+    cache_path = Path(cache_path or config.TWEET_DISTILLATE_CACHE)
+    if not cache_path.exists():
+        return []
+    out = []
+    for l in cache_path.read_text().splitlines():
+        if l.strip():
+            d = json.loads(l)
+            out += [(k["date"], k["text"]) for k in d["kept"]]
+    return out
+
+
 def _join_post_dates(tx: pd.DataFrame, articles) -> dict[str, str]:
     if articles is None:
         return {}

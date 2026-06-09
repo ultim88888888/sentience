@@ -47,7 +47,7 @@ def rebalance_dates(start: date, end: date, interval: str) -> list[date]:
 def build_panel(start: date, end: date, interval: str, *, window_months: int,
                 twitter_paths, articles, distillates, out_dir: Path | None = None,
                 member_name: str | None = None, registry_path: Path | None = None,
-                article_distillates=None) -> pd.DataFrame:
+                article_distillates=None, tweet_distillates=None) -> pd.DataFrame:
     out_dir = Path(out_dir or config.SIGNAL_OUT_DIR)
     out_dir.mkdir(parents=True, exist_ok=True)
     # Shared registry across A1 + all members so canonical ids are comparable (A2a needs this).
@@ -72,7 +72,8 @@ def build_panel(start: date, end: date, interval: str, *, window_months: int,
             else:
                 raw_period = extract_a1(t, window_months=window_months, twitter_paths=twitter_paths,
                                         articles=articles, distillates=distillates,
-                                        article_distillates=article_distillates)
+                                        article_distillates=article_distillates,
+                                        tweet_distillates=tweet_distillates)
                 approach = "A1"
             canon_items, registry = canonicalize_items(list(raw_period.items), registry)
             period = raw_period.__class__(as_of=raw_period.as_of, approach=approach,
@@ -80,7 +81,8 @@ def build_panel(start: date, end: date, interval: str, *, window_months: int,
                                           risk_regime=raw_period.risk_regime, notes=raw_period.notes)
             corpus = assemble_corpus(t=t, window_months=window_months, twitter_paths=twitter_paths,
                                      articles=articles, distillates=distillates,
-                                     article_distillates=article_distillates)
+                                     article_distillates=article_distillates,
+                                     tweet_distillates=tweet_distillates)
             rep = audit_period(period, corpus, t)
             audits.append({"as_of": t.isoformat(), "checked": rep.checked, "matched": rep.matched,
                            "hallucinated": len(rep.hallucinated), "leaked": len(rep.leaked)})

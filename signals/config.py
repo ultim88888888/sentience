@@ -9,6 +9,7 @@ TRACKED_PEOPLE = DATA_DIR / "tracked_people.yaml"
 
 SIGNAL_OUT_DIR = DATA_DIR / "signal"
 DISTILLATE_CACHE = SIGNAL_OUT_DIR / "transcript_distillates.jsonl"
+TWEET_DISTILLATE_CACHE = SIGNAL_OUT_DIR / "tweet_distillates.jsonl"
 REGISTRY_PATH = SIGNAL_OUT_DIR / "registry.json"
 PANEL_PATH = SIGNAL_OUT_DIR / "signal_panel.parquet"
 

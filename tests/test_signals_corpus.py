@@ -61,6 +61,19 @@ def test_low_substance_tweets_dropped(tmp_path):
     assert "t.co" not in text  # the low-substance tweet was dropped
 
 
+def test_a1_uses_distilled_tweets_not_raw(tmp_path):
+    from datetime import date
+    import pandas as pd
+    from signals.corpus import assemble_corpus
+    # raw parquet exists but should be IGNORED when tweet_distillates is given
+    tw = pd.DataFrame({"created_at": pd.to_datetime(["2024-05-01"], utc=True), "type":["original"],
+                       "text":["RAW chatter that should not appear in A1"], "url":["u"]})
+    p = tmp_path/"m.parquet"; tw.to_parquet(p)
+    text = assemble_corpus(t=date(2024,6,30), window_months=18, twitter_paths=[p], articles=None,
+                           distillates={}, tweet_distillates=[("2024-05-01","distilled zk view")])
+    assert "distilled zk view" in text
+    assert "RAW chatter" not in text
+
 def test_article_distillates_replace_full_body(tmp_path):
     from datetime import date
     import pandas as pd

@@ -29,12 +29,18 @@ do not merely average:
   exposure this period? Decide "hedge" or "no_hedge" with a reason, based on the members' risk posture
   and concerns — this is the council's deliberated risk call, not a mechanical rule.
 
+Each entry in the four item arrays is the COUNCIL'S consensus call on ONE sector or token. Use exactly
+these fields — do NOT add a speaker/author/"name":"council" field:
+  "name": "<the sector or token name itself, e.g. \"zk\" or \"ETH\">", "why": "<one line>",
+  "conviction": 0-100, "horizon": "tactical|structural", "provenance": "grounded|persisted|extrapolated",
+  "parent_sector": "<sector id, for tokens only>", "citations": [].
+The `name` field is the sector/token, never a person or "council".
+
 Output JSON only:
 {{"sectors_excited":[...], "sectors_concerned":[...], "tokens_excited":[...], "tokens_concerned":[...],
   "risk_regime":{{"stance":"risk_on|risk_off|neutral|no_view","conviction":0-100,"why":"...","provenance":"..."}},
   "hedge_decision":{{"stance":"hedge|no_hedge","reason":"..."}},
-  "notes":"..."}}
-Item entries use the same fields as the member views (name/item, stance, conviction, horizon, provenance, citations)."""
+  "notes":"..."}}"""
 
 
 def deliberate(t: date, member_views: dict) -> tuple[PeriodSignal, str]:

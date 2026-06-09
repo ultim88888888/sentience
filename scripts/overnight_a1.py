@@ -8,12 +8,8 @@ import pandas as pd
 from signals.run import build_panel
 from signals.distill import load_distillates, load_tweet_distillates
 
-def tweet_distill_running():
-    r = subprocess.run(["pgrep","-f","overnight_tweet_distill"], capture_output=True, text=True)
-    return bool(r.stdout.strip())
-
-print("[a1] waiting for tweet distillation...", flush=True)
-while tweet_distill_running():
+print("[a1] waiting for tweet distillation DONE marker...", flush=True)
+while not Path("data/signal/tweet_distillates.DONE").exists():
     time.sleep(30)
 tw_dist = load_tweet_distillates("data/signal/tweet_distillates.jsonl")
 tdist = load_distillates("data/signal/transcript_distillates.jsonl")

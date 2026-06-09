@@ -6,4 +6,6 @@ if __name__ == "__main__":
     paths = sorted(glob.glob("data/twitter/*.parquet"))
     print(f"distilling tweets from {len(paths)} handles...", flush=True)
     p = build_tweet_distillate_cache(paths, since="2021-01-01")
+    from pathlib import Path
+    Path("data/signal/tweet_distillates.DONE").write_text("done")  # DONE_MARKER for A1 chaining
     print("DONE:", p, flush=True)

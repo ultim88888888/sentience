@@ -18,17 +18,17 @@ def period_funding(funding: pd.DataFrame, sym: str, t0, t1) -> float:
     return float(s.dropna().sum())
 
 
-def beta_neutralize(weights: dict, betas: dict) -> dict:
-    """Scale the SHORT book so net portfolio beta ≈ 0. weights: {sym: signed weight} (long>0, short<0),
-    betas: {sym: beta_to_BTC}. Returns adjusted weights. If no shorts or no betas, returns input."""
-    longs = {s: w for s, w in weights.items() if w > 0}
-    shorts = {s: w for s, w in weights.items() if w < 0}
-    bl = sum(w * betas.get(s, 1.0) for s, w in longs.items())
-    bs = sum(w * betas.get(s, 1.0) for s, w in shorts.items())   # negative
-    if not shorts or bs == 0:
-        return weights
-    k = -bl / bs                                                 # scale shorts to offset long beta
-    return {**longs, **{s: w * k for s, w in shorts.items()}}
+def beta_neutralize(weights: dict, betas: dict, *, hedge: str = "BTC") -> dict:
+    """Zero the portfolio's net BTC-beta with a BTC OVERLAY (bounded leverage), not by scaling legs.
+    Net beta of the book = Σ w_i·β_i; add a BTC position of −net_beta (β_BTC=1) to cancel it. This
+    keeps the L/S book intact and gross bounded (~1 + |net_beta|), avoiding the leverage explosion
+    that scaling a low-beta short book causes."""
+    net_beta = sum(w * betas.get(s, 1.0) for s, w in weights.items() if s != hedge)
+    out = dict(weights)
+    out[hedge] = out.get(hedge, 0.0) - net_beta
+    if abs(out[hedge]) < 1e-12:
+        out.pop(hedge, None)
+    return out
 
 
 def sector_ls_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,

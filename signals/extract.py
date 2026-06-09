@@ -8,7 +8,21 @@ from datetime import date
 
 from doppelganger.llm import run_claude
 from signals.corpus import assemble_corpus
-from signals.schema import Citation, SignalItem, RiskRegime, PeriodSignal
+from signals.schema import (Citation, SignalItem, RiskRegime, PeriodSignal,
+                            VALID_PROVENANCE, VALID_HORIZON, VALID_RISK)
+
+
+def _coerce(val, valid: set, default: str) -> str:
+    """LLMs occasionally emit non-canonical enum values (e.g. provenance='aggregated: 5/10 coverage').
+    Coerce to a valid member so one stray field never throws away a whole period."""
+    return val if val in valid else default
+
+
+def _coerce_conv(v) -> int:
+    try:
+        return max(0, min(100, int(round(float(v)))))
+    except (TypeError, ValueError):
+        return 50
 
 _SYSTEM_TMPL = """You are analyzing the public corpus of the a16z crypto team as of {t}.
 It is {t}. The future has not happened yet. Use ONLY the statements provided.
@@ -74,15 +88,19 @@ def parse_extraction(raw: str, t: date) -> PeriodSignal:
             items.append(SignalItem(
                 item=name, item_type=item_type,
                 parent_sector=e.get("parent_sector"), stance=stance,
-                conviction=e.get("conviction", 50), horizon=e.get("horizon", "tactical"),
-                rationale=e.get("why", ""), provenance=e.get("provenance", "extrapolated"),
+                conviction=_coerce_conv(e.get("conviction", 50)),
+                horizon=_coerce(e.get("horizon"), VALID_HORIZON, "tactical"),
+                rationale=e.get("why", ""),
+                provenance=_coerce(e.get("provenance"), VALID_PROVENANCE, "extrapolated"),
                 age_note=e.get("age_note"), citations=cites,
             ))
     rr = obj.get("risk_regime")
     if not isinstance(rr, dict):
         rr = {"stance": "no_view", "conviction": 0, "why": "", "provenance": "extrapolated"}
-    risk = RiskRegime(stance=rr.get("stance", "no_view"), conviction=rr.get("conviction", 0),
-                      rationale=rr.get("why", ""), provenance=rr.get("provenance", "extrapolated"))
+    risk = RiskRegime(stance=_coerce(rr.get("stance"), VALID_RISK, "no_view"),
+                      conviction=_coerce_conv(rr.get("conviction", 0)),
+                      rationale=rr.get("why", ""),
+                      provenance=_coerce(rr.get("provenance"), VALID_PROVENANCE, "extrapolated"))
     return PeriodSignal(as_of=t.isoformat(), approach="A1", items=tuple(items),
                         risk_regime=risk, notes=obj.get("notes", ""))
 

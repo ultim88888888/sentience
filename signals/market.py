@@ -13,11 +13,20 @@ from signals.extract import _extract_json
 OI_FLOOR_USD = 2_000_000
 MIN_VOLUME_USD = 1_000_000
 
+NON_CRYPTO = {"GOLD", "SILVER", "SP500", "SPX500", "BRENTOIL", "USOIL", "XYZ100", "NDX", "DXY"}
+STABLECOINS = {"USDT", "USDC", "DAI", "TUSD", "FDUSD", "USDE", "PYUSD"}
+EXCLUDE = NON_CRYPTO | STABLECOINS
+
 
 def build_universe(coins_markets: list[dict], *, oi_floor: float = OI_FLOOR_USD) -> list[str]:
-    """Candidate liquid universe: symbols whose snapshot open_interest_usd clears the floor."""
-    return [c["symbol"] for c in coins_markets
-            if isinstance(c, dict) and (c.get("open_interest_usd") or 0) >= oi_floor]
+    """Candidate liquid universe: symbols whose snapshot open_interest_usd clears the floor,
+    excluding macro/index/fiat tickers and stablecoins. Output is sorted alphabetically."""
+    return sorted(
+        c["symbol"] for c in coins_markets
+        if isinstance(c, dict)
+        and (c.get("open_interest_usd") or 0) >= oi_floor
+        and c.get("symbol") not in EXCLUDE
+    )
 
 
 _SECTOR_SYS = """You classify crypto tokens into sectors. You are given a list of token TICKERS and the

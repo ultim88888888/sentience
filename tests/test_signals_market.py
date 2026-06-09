@@ -63,6 +63,16 @@ def test_universe_custom_floor():
     assert build_universe(cm, oi_floor=3e6) == ["A"]
 
 
+def test_universe_excludes_macro_and_stablecoins():
+    cm = [
+        {"symbol": "BTC", "open_interest_usd": 4e10},
+        {"symbol": "GOLD", "open_interest_usd": 9e9},
+        {"symbol": "USDT", "open_interest_usd": 9e9},
+        {"symbol": "ARB", "open_interest_usd": 5e8},
+    ]
+    assert build_universe(cm) == ["ARB", "BTC"]   # GOLD + USDT excluded despite high OI
+
+
 # ──────────────────────────────────────────────────────────────────────────────
 # classify_sectors
 # ──────────────────────────────────────────────────────────────────────────────

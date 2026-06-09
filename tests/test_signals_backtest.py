@@ -5,7 +5,8 @@ from signals.backtest import (beta_neutralize, sector_ls_targets, intra_sector_t
                                realize_period, period_funding, metrics,
                                walk_forward, benchmark_returns,
                                _finalize, long_only_targets, token_ls_targets,
-                               hedge_to_target_beta, regime_target_beta)
+                               hedge_to_target_beta, regime_target_beta,
+                               token_vs_sector_targets, both_targets)
 from signals.informativeness import load_close_panel
 
 
@@ -693,3 +694,38 @@ def test_walk_forward_risk_by_date_consensus(tmp_path):
                           strategy="sector_ls", betas=betas, hedge_mode="consensus",
                           risk_by_date={"2024-03-31": "risk_on"}, cost_bps=0)
     assert len(result) == 1
+
+
+# ── token_vs_sector_targets ───────────────────────────────────────────────────
+
+def test_token_vs_sector_is_sector_neutral():
+    live = pd.DataFrame([{"item": "SOL", "item_type": "token", "parent_sector": "pos-l1",
+                          "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"}])
+    sm = {"SOL": "pos-l1", "ADA": "pos-l1", "NEAR": "pos-l1"}
+    oi = {"SOL": 5e8, "ADA": 5e8, "NEAR": 5e8}
+    w = token_vs_sector_targets(live, sm, oi)
+    assert w["SOL"] > 0                                   # long the token
+    assert w["ADA"] < 0 and w["NEAR"] < 0                 # short its sector peers
+    assert abs(sum(w.values())) < 1e-9                    # dollar-neutral (long token == short peers)
+
+
+def test_token_vs_sector_skips_token_with_no_sector():
+    live = pd.DataFrame([{"item": "BTC", "item_type": "token", "parent_sector": None,
+                          "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"}])
+    assert token_vs_sector_targets(live, {}, {}) == {}    # no parent_sector -> skipped
+
+
+# ── both_targets ──────────────────────────────────────────────────────────────
+
+def test_both_merges_sector_and_token_books():
+    live = pd.DataFrame([
+        {"item": "l2-scaling", "item_type": "sector", "parent_sector": None,
+         "stance": "bullish", "conviction": 80, "lifecycle_state": "NEW"},
+        {"item": "SOL", "item_type": "token", "parent_sector": "pos-l1",
+         "stance": "bullish", "conviction": 70, "lifecycle_state": "NEW"},
+    ])
+    sm = {"ARB": "l2-scaling", "SOL": "pos-l1"}
+    oi = {"ARB": 5e8, "SOL": 5e8}
+    w = both_targets(live, sm, oi)
+    assert "ARB" in w and "SOL" in w                      # both sector-basket member and token present
+    assert abs(sum(abs(v) for v in w.values()) - 1.0) < 1e-9

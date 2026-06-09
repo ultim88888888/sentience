@@ -127,6 +127,44 @@ def token_ls_targets(live: pd.DataFrame, *, conviction_weighted: bool = True,
     return _finalize(raw, cap=cap)
 
 
+def token_vs_sector_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,
+                             conviction_weighted: bool = True, cap: int | None = None,
+                             oi_floor: float = OI_FLOOR_USD) -> dict:
+    """Long the named token / short its parent-sector basket (idiosyncratic, sector-neutral).
+    For each token row with a parent_sector: sign*mag on the token, -sign*mag spread across the
+    sector basket (excluding the token itself). mag = conviction/100 if conviction_weighted else 1."""
+    raw = {}
+    for _, r in live.iterrows():
+        if r["item_type"] != "token":
+            continue
+        sign = STANCE_SIGN.get(r["stance"], 0)
+        sector = r.get("parent_sector")
+        if sign == 0 or not sector or (isinstance(sector, float)):
+            continue
+        basket = [s for s in sector_basket(sector_map, oi_now, sector, oi_floor=oi_floor) if s != r["item"]]
+        if not basket:
+            continue
+        mag = (r["conviction"] / 100.0) if conviction_weighted else 1.0
+        raw[r["item"]] = raw.get(r["item"], 0.0) + sign * mag                 # long the token
+        for s in basket:
+            raw[s] = raw.get(s, 0.0) - sign * mag / len(basket)               # short its sector
+    return _finalize(raw, cap=cap)
+
+
+def both_targets(live: pd.DataFrame, sector_map: dict, oi_now: dict, *,
+                 bet_sign: str = "momentum", conviction_weighted: bool = True,
+                 cap: int | None = None, oi_floor: float = OI_FLOOR_USD) -> dict:
+    """Combined: sector L/S book + token L/S book, merged and gross-normalized."""
+    s = sector_ls_targets(live, sector_map, oi_now, bet_sign=bet_sign,
+                          conviction_weighted=conviction_weighted, oi_floor=oi_floor)
+    t = token_ls_targets(live, conviction_weighted=conviction_weighted)
+    raw = {}
+    for d in (s, t):
+        for k, v in d.items():
+            raw[k] = raw.get(k, 0.0) + v
+    return _finalize(raw, cap=cap)
+
+
 def _btc_trend(prices: pd.DataFrame, t, *, lookback: int = 200) -> int:
     """+1 if BTC close at t >= its trailing `lookback`-day mean (risk-on), else -1 (risk-off).
     0 if no data."""
@@ -211,6 +249,12 @@ def walk_forward(panel: pd.DataFrame, prices: pd.DataFrame, funding: pd.DataFram
                                   conviction_weighted=conviction_weighted, cap=cap)
         elif strategy == "token_ls":
             w = token_ls_targets(live, conviction_weighted=conviction_weighted, cap=cap)
+        elif strategy == "token_vs_sector":
+            w = token_vs_sector_targets(live, sector_map, oi_now,
+                                        conviction_weighted=conviction_weighted, cap=cap)
+        elif strategy == "both":
+            w = both_targets(live, sector_map, oi_now, bet_sign=bet_sign,
+                             conviction_weighted=conviction_weighted, cap=cap)
         else:  # sector_ls (default)
             w = sector_ls_targets(live, sector_map, oi_now, bet_sign=bet_sign,
                                   conviction_weighted=conviction_weighted, cap=cap)

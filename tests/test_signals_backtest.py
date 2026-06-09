@@ -190,7 +190,7 @@ def test_period_funding_sums_correctly(tmp_path):
     _funding_parquet(tmp_path, "ETH", dates, rates)
     funding = load_close_panel(str(tmp_path), "funding")
     total = period_funding(funding, "ETH", "2024-01-01", "2024-01-03")
-    assert abs(total - 0.005) < 1e-9   # day1 excluded (>t0), day2+day3 summed
+    assert abs(total - 0.00005) < 1e-9   # (day2+day3) summed then /100 (percent->fraction)
 
 
 def test_period_funding_missing_symbol():
@@ -204,7 +204,7 @@ def test_period_funding_exclusive_lower_bound(tmp_path):
     _funding_parquet(tmp_path, "ETH", dates, [0.01, 0.02])
     funding = load_close_panel(str(tmp_path), "funding")
     total = period_funding(funding, "ETH", "2024-01-01", "2024-01-02")
-    assert abs(total - 0.02) < 1e-9   # only 2024-01-02 included
+    assert abs(total - 0.0002) < 1e-9   # only 2024-01-02, /100 (percent->fraction)
 
 
 # ── realize_period ────────────────────────────────────────────────────────────

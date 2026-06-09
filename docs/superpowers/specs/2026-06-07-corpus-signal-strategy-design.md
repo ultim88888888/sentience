@@ -154,9 +154,19 @@ Rationale for decoupling extraction from canonicalization:
     measurement, not the judgment.
   - **Variants (tested, not default):** expertise-weighting the consensus (by self-report or
     corpus volume in sector).
+  - **Keep ALL items, no coverage floor (decided 2026-06-08).** The consensus weighting
+    (conviction × coverage) automatically drowns out / eliminates a singular-coverage view — a lone
+    low-conviction call won't survive aggregation — so we don't pre-filter. Expose `coverage` and
+    `dispersion` as features for the strategy layer to weight; don't drop the long tail by hand.
+  - **This drowning-out is precisely what motivates A2b** (below). The A1→A2a→A2b progression is a
+    spectrum of *how much a unique/minority view can survive*: A1 (no member structure) → A2a
+    (structure, but majority/conviction wins → minority buried) → A2b (structure + persuasion can
+    flip the room). High-`dispersion` items are where A2a-buries-minority and A2b-minority-can-win
+    diverge most — so dispersion flags exactly where the A2a-vs-A2b comparison is informative.
 - **A2b — fully agentic, zero determinism (variant, after A2a).** Instead of each doppelganger
   emitting a confidence that we then collapse, the doppelgangers **discuss their reasons and reach
-  consensus together** through dialogue. No dispersion math, no formula — the consensus *is* the
+  consensus together** through dialogue — testing whether a member can **persuade the others** of a
+  unique-but-correct call that A2a would have outvoted (minority-view propagation). No dispersion math, no formula — the consensus *is* the
   outcome of the discussion. **Risk to measure, not a blocker:** LLM personas converge toward
   agreement/sycophancy, so A2b may manufacture false consensus. We detect this by comparing A2b's
   agreement against A2a's measured dispersion — if A2a shows the house genuinely split on an item

@@ -31,33 +31,37 @@ def _funding_parquet(tmp_path, sym, dates, rates):
 
 # ── beta_neutralize ───────────────────────────────────────────────────────────
 
-def test_beta_neutralize_nets_zero_beta():
+def test_beta_neutralize_hedges_with_btc():
     w = {"A": 0.5, "B": -0.5}
-    betas = {"A": 1.5, "B": 0.5}
+    betas = {"A": 1.5, "B": 0.5, "BTC": 1.0}
     out = beta_neutralize(w, betas)
-    net = sum(out[s] * betas[s] for s in out)
-    assert abs(net) < 1e-9           # net beta ~ 0
-    assert out["A"] == 0.5           # longs unchanged; shorts scaled
+    assert abs(sum(out[s] * betas[s] for s in out)) < 1e-9   # net beta ~ 0
+    assert out["A"] == 0.5 and out["B"] == -0.5              # L/S book UNCHANGED (no leg scaling)
+    assert abs(out["BTC"] - (-(0.5 * 1.5 - 0.5 * 0.5))) < 1e-9  # BTC hedge = -net_beta = -0.5
 
 
-def test_beta_neutralize_no_shorts_unchanged():
-    w = {"A": 0.6, "B": 0.4}
-    betas = {"A": 1.2, "B": 0.8}
-    assert beta_neutralize(w, betas) == w
-
-
-def test_beta_neutralize_no_betas_unchanged():
+def test_beta_neutralize_bounded_gross_no_explosion():
+    """Low-beta short book must NOT blow up leverage (the bug we fixed)."""
     w = {"A": 0.5, "B": -0.5}
-    assert beta_neutralize(w, {}) == w
-
-
-def test_beta_neutralize_short_scaled_direction():
-    """Short book should be scaled up (k>1) when long beta > short book beta in abs."""
-    w = {"A": 1.0, "B": -1.0}
-    betas = {"A": 2.0, "B": 1.0}
+    betas = {"A": 1.5, "B": 0.05, "BTC": 1.0}   # tiny short beta
     out = beta_neutralize(w, betas)
-    # long beta = 2.0, short beta contribution must match → short scaled up
-    assert abs(out["B"]) > abs(w["B"])
+    assert abs(sum(out[s] * betas[s] for s in out)) < 1e-9
+    assert sum(abs(v) for v in out.values()) < 2.0   # bounded gross (old code exploded here)
+
+
+def test_beta_neutralize_no_betas_unit_default():
+    # no betas -> each treated as beta 1.0; net = 0.5-0.5 = 0 -> no BTC overlay added
+    w = {"A": 0.5, "B": -0.5}
+    out = beta_neutralize(w, {})
+    assert "BTC" not in out and out == w
+
+
+def test_beta_neutralize_net_long_adds_btc_short():
+    w = {"A": 1.0}                       # net-long book
+    betas = {"A": 2.0, "BTC": 1.0}
+    out = beta_neutralize(w, betas)
+    assert abs(out["BTC"] - (-2.0)) < 1e-9   # hedge the +2.0 net beta with -2.0 BTC
+    assert abs(sum(out[s] * betas[s] for s in out)) < 1e-9
 
 
 # ── sector_ls_targets ─────────────────────────────────────────────────────────

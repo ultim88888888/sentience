@@ -1,0 +1,194 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "He views the sum-check protocol as the core technique that minimizes prover commitment costs and unlocks prover-time scalability; wants it to become the dominant SNARK design paradigm.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-03",
+          "quote": "I hope the community adopts sum-check-based PIOPs combined with the Binius commitment for performant SNARKs"
+        },
+        {
+          "date": "2023-08-14",
+          "quote": "the right technique to unlock this is sum-check, due to its ability to minimize commitment costs for the prover"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His own project; a 'paradigm shift' in zkVM design powered by sum-check and lookups that benchmarks faster than incumbents and is simpler/more extensible.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Early benchmarks indicate it outperforms RISC Zero by ~6x and SP1 by up to 2x. Major optimizations are still in the pipeline."
+        },
+        {
+          "date": "2024-04-09",
+          "quote": "it instantiates the lookup singularity, yielding the simplest and most extensible zkVM to date"
+        }
+      ]
+    },
+    {
+      "item": "lookup-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes a lookup-centric front-end yields simpler, more auditable SNARKs while being an order of magnitude faster than prior lookup arguments like Halo2's.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "they realize @barrywhitehat's vision of a \"lookup singularity\" for simpler/more auditable SNARKs"
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "Simplicity comes from lookups; performance from both."
+        }
+      ]
+    },
+    {
+      "item": "polynomial-commitments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees the Diamond & Posen refinement of Ligero/Brakedown, especially for small values and combined with sum-check, as reshaping hashing-based SNARKs and enabling fast SNARKs for hashes like Keccak.",
+      "provenance": "grounded",
+      "age_note": "Excitement builds across corpus: Brakedown (2023-08-31), D&P reshaping (2023-11-20), Binius endorsement (2024-06-03 = most recent).",
+      "citations": [
+        {
+          "date": "2023-11-20",
+          "quote": "work just unveiled by Ben Diamond and Jim Posen (D&P) that, in my view, reshapes the landscape for hashing-based SNARKs"
+        },
+        {
+          "date": "2023-08-31",
+          "quote": "I'm excited about this approach to polynomial commitments and hopeful we'll see further improvements soon"
+        }
+      ]
+    },
+    {
+      "item": "curve-based-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Despite favoring hashing-based small-field approaches, he insists fast elliptic-curve SNARKs remain essential for statements natively over large fields (signature verification, Verkle trees).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-03",
+          "quote": "fast curve-based SNARKs (like the initial version of Jolt) will remain vital, especially for proving statements like signature verification and Verkle trees"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Worries Fiat-Shamir on many-round FRI can lose security bits (no one had ruled it out), and that FRI over large 251/252-bit fields and high blowup imposes large prover/space costs versus sum-check approaches.",
+      "provenance": "persisted",
+      "age_note": "Most pointed critiques are 2023-07 through 2023-09; not restated or reversed in 2024 \u2014 2024 statements simply favor sum-check/Binius instead.",
+      "citations": [
+        {
+          "date": "2023-07-11",
+          "quote": "Applying Fiat-Shamir to an r-round protocol with lambda bits of security can result in a non-interactive protocol with only lambda/r bits of security"
+        },
+        {
+          "date": "2023-09-05",
+          "quote": "using the 252-bit field is resulting in a 33x slowdown for the prover"
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Argues today's SNARKs were over-optimized for proof size, leaving prover time as the binding constraint; says a full reconfiguration of deployed stacks is needed to scale provers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-14",
+          "quote": "the scalability bottleneck for awhile now has been prover time"
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "To achieve scalable SNARK provers, a complete reconfiguration of today's deployments is needed"
+        }
+      ]
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Flags that recursion is inherently sequential and cannot be parallelized, so breaking computation into the tiniest pieces raises depth and becomes the real latency risk for rollup-scale proving.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-09-05; not restated later but never contradicted.",
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "The real sequential bottleneck to be wary of is deep recursion. You can't parallelize that"
+        }
+      ]
+    },
+    {
+      "item": "snark-cost-accounting",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Repeatedly concerned that the field conflates what projects actually do versus what they could do, and is imprecise in cost accounting, hindering progress and obscuring security tradeoffs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "the public discussion in this space has been deeply confused"
+        },
+        {
+          "date": "2023-07-12",
+          "quote": "I identify, and try to clear up, a variety of misconceptions that have been hindering progress and causing confusion"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 60,
+    "rationale": "Thaler's statements are technical research positions on SNARK proof-system design (sum-check, lookups, polynomial commitments, zkVMs), not market, macro, or asset-risk commentary. He expresses strong structural conviction in a technology trajectory (sum-check + lookups + hashing-based commitments) but takes no stance on market risk appetite or token exposure.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Corpus is ~99% cryptography research discourse from a a16z crypto researcher; no cryptocurrency tokens are discussed as investments, hence empty token arrays (dYdX/StarkEx and named projects like Polygon zkEVM, RISC Zero, StarkWare, Matter Labs, SP1 appear only as technical/security reference points, not investment views). All statements carry explicit 'not investment advice' disclaimers. Most-recent views (2024-04 to 2024-06) center on the Jolt release, exclusive use of sum-check-based PIOPs, the lookup singularity, and adoption of the Binius commitment \u2014 these dominate and are weighted highest. An evolution (not reversal) is visible on field size: in mid-2023 he stressed that large fields have important, non-artifact uses (ECDSA, RISC-V multiplication), while by late-2023/2024 he grew enthusiastic about small-field, hashing-based commitments (Binius/Brakedown/D&P); his current synthesized stance is both/and \u2014 small-field hashing approaches for performance, curve-based for large-field-native statements. Anti-FRI critiques are real but date to 2023 and are marked persisted."
+}

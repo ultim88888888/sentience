@@ -1,0 +1,165 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "ethereum-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Launched a new Columbia research center focused on blockchain infrastructure, funded by the Ethereum Foundation; his most emphatic recent enthusiasm.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-09-18",
+          "quote": "New research center focused on blockchain infrastructure @CUSEAS ! Made possible by @ethereumfndn. Super-excited about this, more to come!"
+        },
+        {
+          "date": "2025-09-19",
+          "quote": "Brief video about the new center @cu_eth_research ... that we're using to accept donations and unlock additional matching funds from @ethereumfndn"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Co-authored new foundational paper tackling verification that agreed-upon services/resources are actually being provided; an active research frontier for him.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "developing some of the foundations for DePIN (decentralized physical infrastructure) networks, and specifically the key problem of verifying that the agreed-upon services/resources are indeed being provided"
+        }
+      ]
+    },
+    {
+      "item": "accountable-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Ongoing research on identifying which validators to hold accountable when a protocol stalls (liveness violations); core to his work and the new center.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-01",
+          "quote": "When a blockchain protocol stalls (i.e., has a liveness violation), which validators should be held accountable? See this new paper"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Optimistic that SNARKs and even more exotic cryptographic primitives can be made practical over the coming decades; recurring seminar theme.",
+      "provenance": "persisted",
+      "age_note": "Stated Dec 2024 (~12 months old); echoed by recurring zk/TEE/MPC seminars noted Oct 2025, but the explicit optimism is from late 2024.",
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "OH (from a famous theoretical computer scientist): \"if SNARKs can be made practical, *anything* can be made practical\""
+        },
+        {
+          "date": "2024-12-18",
+          "quote": "a prediction about future practical progress on advanced cryptographic primitives"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Sustained teaching/research output on automated market makers, loss-versus-rebalancing, and crypto contest theory across mining, staking, execution tickets, shared sequencing.",
+      "provenance": "persisted",
+      "age_note": "Tutorials/talks from Dec 2024 (~12 months); topic reaffirmed as recurring seminar theme Oct 2025.",
+      "citations": [
+        {
+          "date": "2024-12-13",
+          "quote": "My EC talk on Tullock contests in crypto/web3 is now on YT ... Covers mining, staking, execution tickets, shared sequencing."
+        },
+        {
+          "date": "2024-12-12",
+          "quote": "Videos from my LVR tutorial with @jason_of_cs @ciamac at EC '24 last summer are up!"
+        }
+      ]
+    },
+    {
+      "item": "digital-property-rights",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Co-authored a recent primer on arcade tokens with a16z colleagues; aligns with his stated interest in digital property rights.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-13",
+          "quote": "New primer on arcade tokens with my ever-amazing @a16zcrypto colleagues @skominers @eddylazzarin @milesjennings"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "His framework warns that restaking reuses validators across services, making security combinatorial; small shocks can cascade unless networks are sufficiently overcollateralized.",
+      "provenance": "persisted",
+      "age_note": "Core paper from Aug 2024 (~16 months old), with an accompanying talk Sep 2024; not restated since, treat as persisted.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "New paper with @n_durvasula offers a framework to reason about the risks of restaking."
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "the maximum-possible length of a cascade of attacks is also governed by the overcollateralization factor"
+        }
+      ]
+    },
+    {
+      "item": "cryptoeconomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Emphasizes that attack cost must significantly exceed attack profit; flags fragility when the cost-profit buffer is thin and shocks occur.",
+      "provenance": "persisted",
+      "age_note": "From Aug 2024 restaking thread (~16 months old); not subsequently restated.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "compare the cost incurred by attacking validators ... with the estimated profit of an attack. Ideally, the former is significantly bigger"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 0,
+    "rationale": "Roughgarden's corpus is entirely research, education, and protocol-mechanism focused. He expresses no opinion on market direction, asset prices, or risk appetite, and names no tradeable tokens with a directional view.",
+    "provenance": "grounded"
+  },
+  "notes": "Subject is a research scientist (a16z crypto head of research, Columbia professor), not a market/portfolio voice \u2014 his 'excitement' and 'concern' are about research areas and technical risks, not investments. No specific tokens are discussed as positions (ETH appears only via Ethereum Foundation funding his center; 'arcade tokens' is treated as a sector/concept, not a tradeable token). Most-recent and highest-conviction signal is the Sept 2025 Columbia blockchain-infrastructure center (ETH-aligned). DePIN (Jun 2025) and consensus/accountability (May 2025) are the freshest research enthusiasms. Restaking risk is his clearest 'concern' but stems from Aug 2024 work and is marked persisted given no recent restatement. zk/SNARKs optimism and MEV/mechanism-design interest persist from late-2024 statements, partially corroborated by Oct 2025 seminar-topic lists. No reversals detected across the corpus."
+}

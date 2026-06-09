@@ -1,0 +1,266 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "Sees ZK as a foundational breakthrough that will rebuild the web3 stack, enabling both scaling (rollups) and privacy/encryption; sustained personal obsession from Aleo/zkSync through Aztec.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-28",
+          "quote": "Loved discussing zk-proofs with @laurashin and @danboneh on the @unchained_pod. We could have gone on for hours, so much to cover."
+        },
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years. Aleo is at the forefront of that transformation."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Believes most chains are fully transparent which compromises users; views privacy/encryption as essential for mainstream adoption and as opening a whole new region of the design space.",
+      "provenance": "grounded",
+      "age_note": "Theme persists consistently 2021-2022 (Nym, IronFish) into most recent statements (Aztec, Dec 2022).",
+      "citations": [
+        {
+          "date": "2022-12-15",
+          "quote": "Encryption & privacy will be essential for blockchains to broaden their utility and gain widespread adoption."
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Excited by crypto mechanisms incentivizing crowdsourced data, ML models, and compute ('collective AI'); treats the AI-token design space as large and not to be dismissed.",
+      "provenance": "grounded",
+      "age_note": "Early interest (Kosen Labs, Nov 2021) reaffirmed in most recent window (Jan-Feb 2023).",
+      "citations": [
+        {
+          "date": "2023-01-05",
+          "quote": "AI + crypto = collective AI. Crypto mechanisms can incentivize the crowdsourcing of better data sets, machine learning models, and compute."
+        },
+        {
+          "date": "2023-02-08",
+          "quote": "It's a very large design space. Hard to dismiss it outright."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Frames modern blockchains as a new kind of computer needing an OS/dev platform; wants innovation at every layer, not just core protocol and smart contracts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-02",
+          "quote": "We need innovation at every level of the stack, not just the core protocol and smart contract layers. NEAR is leading the way"
+        },
+        {
+          "date": "2021-10-28",
+          "quote": "@AlchemyPlatform is building the operating system and developer platform for web3."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Views Ethereum throughput as a persistent bottleneck and ZK-rollups as the breakthrough to scale without sacrificing security, decentralization, or composability.",
+      "provenance": "persisted",
+      "age_note": "Core thesis articulated heavily Nov 2021 (zkSync); not restated verbatim recently but consistent with ongoing ZK enthusiasm.",
+      "citations": [
+        {
+          "date": "2021-11-08",
+          "quote": "@zkSync uses zk-SNARKS, a cryptographic innovation, to scale Ethereum without sacrificing security, decentralization, or composability."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees DAOs as a new internet-native form of economic organization enabling group coordination far cheaper and faster than traditional legal structures.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-09",
+          "quote": "coordination mechanisms that are 10,000x cheaper, faster, and more powerful than traditional legal structures"
+        },
+        {
+          "date": "2021-12-14",
+          "quote": "DAOs like PleasrDAO are foundational to web3. They are a new form of economic organization native to the Internet"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Believes web2's structural problems are worst for creators (especially music); web3 tools remove middlemen and let artists own their smart contracts and monetize directly.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-21",
+          "quote": "The music industry is broken. It is the category for which the structural problems of web2 are at their very worst."
+        },
+        {
+          "date": "2022-12-08",
+          "quote": "Shibuya will become infrastructure to support creatives, artists, and storytellers."
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Points to Helium as proof that crypto incentives can bootstrap real-world networks faster than centralized incumbents, showing crypto's usefulness extends far beyond currencies.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "Helium's use of crypto incentives spurred the world's fastest-growing wireless network... a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Backs building a more composable and interoperable future connecting many chains, though paired with strong concern about doing it securely.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "we are beyond excited to be partnering with... the entire @LayerZero_Labs team to build a more composable and interoperable future for web3"
+        }
+      ]
+    },
+    {
+      "item": "wallet-signing-safety",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "tactical",
+      "rationale": "Average users cannot tell what they are signing; lacking standards, schemas and UX for flagging malicious transactions, this is a major barrier and attack surface.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-02-20",
+          "quote": "it's all but impossible for the avg user to know what the hell they're signing with today's tools."
+        }
+      ]
+    },
+    {
+      "item": "bridge-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Bridges are a repeated exploit vector; he publicly opposed deploying Uniswap on BNB Chain via Wormhole, signaling caution on bridge trust assumptions even while bullish on interoperability.",
+      "provenance": "grounded",
+      "age_note": "Most recent governance stance (Feb 2023) follows the Nomad bridge attack coverage (Aug 2022).",
+      "citations": [
+        {
+          "date": "2023-02-05",
+          "quote": "Our rationale for opposing @Uniswap Governance Proposal 31 to deploy Uniswap on BNB Chain using Wormhole"
+        }
+      ]
+    },
+    {
+      "item": "builder-funding-environment",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Worries society is increasingly vicious toward those building new tech (crypto, AI, etc.) and that top-down government science funding crowds out innovation; wants bottom-up market-driven funding.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-13",
+          "quote": "I'm constantly shocked by how vicious society can be toward people who are trying to build something new. Be it AI, crypto, rockets, nuclear, anything..."
+        },
+        {
+          "date": "2023-02-15",
+          "quote": "Increasing government funding of science is often net negative\u2014worse than ineffective\u2014slowing down innovation."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees the PoS transition as making Ethereum a far superior chain\u2014more secure, ~100x more energy efficient, with finality that lays groundwork for rollups and better scaling.",
+      "provenance": "grounded",
+      "age_note": "Stated around The Merge (Sep 2022); never reversed, consistent with continued ZK/L2-on-Ethereum focus.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "Once it's done, I believe Ethereum will be a far superior blockchain than it was before."
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "After the merge, Ethereum will be 100x+ more energy-efficient than it is today."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Relentlessly bullish builder-investor: declared a 'golden era of web3,' raised Crypto Fund 4, and kept leading deals through the 2022 downturn. His concerns are about specific risks (bridges, wallet UX) and culture, not a pullback in conviction. Frames frontier risk as the price of venturing out, not a reason to retreat.",
+    "provenance": "grounded"
+  },
+  "notes": "Ali Yahya is an a16z crypto partner whose personal lens is deeply technical and infrastructure-first; he rarely talks tradeable tokens or price, so token signal is thin (ETH is the clearest, inferred from his Merge enthusiasm). His strongest and most durable personal convictions are zero-knowledge proofs and privacy/encryption\u2014reaffirmed in the most recent statements (Mar 2023 zk-proofs podcast). AI+crypto is a rising recent interest. Concerns are targeted (wallet signing safety, bridge security) rather than macro/market; he also voices a broader cultural concern about hostility toward builders and top-down science funding. No major reversals detected across the corpus\u2014his thesis is remarkably consistent over 18 months, so most entries are grounded or persisted rather than contradicted."
+}

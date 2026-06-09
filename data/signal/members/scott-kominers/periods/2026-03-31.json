@@ -1,0 +1,270 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He frames crypto as the tool \u2014 possibly the only tool \u2014 to organize, complement and 'tame' AI: persistent/portable LLM context, forwards-compatible digital identity, future-proofing vibe-coded software, programmable IP provenance, and guardrails/payment rails for agent-to-agent marketplaces.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "My @a16zcrypto colleagues and I just shared a roundup on the ways crypto will organize, complement \u2013 and occasionally tame \u2013 modern AI."
+        },
+        {
+          "date": "2025-07-21",
+          "quote": "Five AIxCrypto applications: portable chatbot context, forwards-compatible digital identity, future-proofing vibe-coded software, programmable IP provenance registries, marketplace guardrails for AI agents"
+        }
+      ]
+    },
+    {
+      "item": "utility-nfts",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He has argued for years that low transaction fees would unlock digital collecting, and consistently pushes NFTs as ownership/identity/utility infrastructure (event tickets, digital IDs, provenance) rather than speculative assets; cheered State of Crypto data on functional NFT usage.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2024 (low-cost collecting) and restated through 2025; treat as current.",
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "here's hoping that 2026 brings even more innovation around NFTs for functional rather than speculative purposes"
+        },
+        {
+          "date": "2024-10-18",
+          "quote": "once transaction fees got small enough, blockchains would enable all manner of low-cost digital collecting experiences"
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He defines prediction markets as true markets for aggregating information (real-time, incentivized, probability estimates) and distinguishes them from sportsbooks; his 2024 a16z 'Big Idea' was the renaissance of information aggregation, sustained into 2026.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-06",
+          "quote": "Prediction markets are *markets*, and markets are a fundamental tool for allocating resources and aggregating information."
+        },
+        {
+          "date": "2024-12-04",
+          "quote": "Mine for this year is about the emerging renaissance of information aggregation"
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He champions a rigorous token taxonomy (network vs company-backed) and highlights arcade tokens \u2014 infinite-supply, faucet-priced medium-of-exchange tokens \u2014 as an underappreciated model proving neither fixed supply nor speculation is required to create value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-13",
+          "quote": "One of the most powerful yet least well-understood token types is the arcade token."
+        },
+        {
+          "date": "2025-03-05",
+          "quote": "Company-backed tokens are *not* network tokens. Here's a framework for understanding the difference"
+        }
+      ]
+    },
+    {
+      "item": "proof-of-personhood",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "With AI flooding the internet with bots and fakes, he argues secure, interoperable, forwards-compatible blockchain IDs are 'the answer' \u2014 a single authentication asset usable across all current and future platforms.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "we need proof of personhood and identity on the Internet \u2013 stat! Secure, interoperable blockchain-based IDs are the answer."
+        },
+        {
+          "date": "2025-01-17",
+          "quote": "Blockchains make it possible to create individually-owned digital identifiers, sort of like a digital driver's license"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He sees generative AI creating urgent need for tracking IP, and blockchains providing open, programmable provenance layers enabling new licensing/remixing business models \u2014 turning a threat to creators into opportunity, contingent on market design for attribution and compensation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "The explosion of generative creative AI has created an urgent need for more efficient and robust ways of tracking intellectual property"
+        },
+        {
+          "date": "2025-03-26",
+          "quote": "Still lots of questions about managing provenance, attribution, IP protection, and proper compensation... hopeful that with the right market design, this becomes a win-win"
+        }
+      ]
+    },
+    {
+      "item": "ai-human-labor-complement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Repeatedly argues AI will complement rather than replace human work, citing radiology as a case where pundits 'got the sign wrong'; personally electrified by AI-assisted/AI-proven mathematics as theory-building tooling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-16",
+          "quote": "in both categories, AI will likely be a complement rather than substitute for human labor"
+        },
+        {
+          "date": "2026-02-05",
+          "quote": "For me at least, this feels like the week after which math will never be the same"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Warns that buying purely speculatively bets on market expansion while making assets harder to acquire for genuine use value; consistently positions utility/ownership against speculative froth as the healthier path for the category.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-07",
+          "quote": "if people buy things purely speculatively, they're betting on market expansion while simultaneously making it harder for people to acquire the asset for its use value"
+        }
+      ]
+    },
+    {
+      "item": "regulatory-uncertainty",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Argues a 'free market' is not a free-for-all; without predictability, property-rights protection, transparency and guardrails against monopoly/manipulation/fraud, uncertainty drives away legitimate businesses and consumers. The industry must welcome regulation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-27",
+          "quote": "Without basic structure and protections, uncertainty and inefficiency will drive away legitimate businesses and consumers."
+        },
+        {
+          "date": "2025-08-27",
+          "quote": "crypto needs guardrails against monopolistic practices, market manipulation, and fraud"
+        }
+      ]
+    },
+    {
+      "item": "token-classification-confusion",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Pushes back on 'all tokens are created equal' \u2014 worries that treating company-backed tokens as network tokens muddies economic and legal treatment and misleads purchasers; a recurring theme behind his classification frameworks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Despite what some may claim, not all tokens are created equal."
+        }
+      ]
+    },
+    {
+      "item": "ai-misinformation-deepfakes",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Working on misinformation/content-moderation economics; notably argues the deepfake 'deception' threat is less an equilibrium risk than feared (fakes erode persuasion), but the 'evocation' route and inability to verify image authenticity remain real problems needing identity/provenance infrastructure.",
+      "provenance": "grounded",
+      "age_note": "Nuanced: downplays naive deception fears (2025-12) while flagging evocation and verification gaps as the live concern.",
+      "citations": [
+        {
+          "date": "2025-12-12",
+          "quote": "I have frequently argued that the deception application was less likely than people were imagining because it doesn't seem to be equilibrium"
+        },
+        {
+          "date": "2024-10-21",
+          "quote": "Without better image signature infrastructure, it's hard to confirm whether a picture... is AI-generated, photoshop, or a real-life photo."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the durable substrate for his fully-onchain work and celebrated its 10th anniversary; values it as the place where ownership and art 'will continue as long as Ethereum is running.' This is infrastructure appreciation, not a price call.",
+      "provenance": "grounded",
+      "age_note": "Posture is platform-utility enthusiasm, not a trading/valuation view.",
+      "citations": [
+        {
+          "date": "2025-07-30",
+          "quote": "Happy Birthday Ethereum!!! Today's '45 squared' edition celebrates the 10th anniversary of the launch of the Ethereum network."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Engaged constructively with Bitcoin ordinals \u2014 storing all of pi on a single sat and building open-source tooling \u2014 signaling interest in BTC as an on-chain data/art medium. Again an engagement signal rather than an investment thesis.",
+      "provenance": "grounded",
+      "age_note": "Interest is technical/artistic, not a market call.",
+      "citations": [
+        {
+          "date": "2025-11-26",
+          "quote": "this series puts the entirety of pi fully onchain on Bitcoin -- literally all the digits, meaning infinite data in a tiny amount of space"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 60,
+    "rationale": "Kominers is a structural crypto/builder optimist \u2014 bullish on utility-driven adoption (AIxCrypto, functional NFTs, prediction markets, token-economy design) and on AI as a complement to human work. But his optimism is explicitly conditional: he wants regulatory guardrails, property-rights protection and anti-manipulation rules, and he is wary of pure speculation. He makes essentially no tactical price/timing calls; his posture is long-horizon conviction in the technology's usefulness, not short-term market direction.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers' public corpus is dominated by recreational math, puzzle/NFT art, and his own '45 squared'/\u03c0dentities practice; explicit market views must be extracted from his a16z crypto research output and economist commentary. He is NOT a token picker \u2014 he names sectors and frameworks, not trades, so tokens_excited entries reflect platform/infrastructure engagement rather than valuation calls, and tokens_concerned is empty. Most-recent weighting (2026 Q1) reinforces AIxCrypto, prediction markets, AI-for-research and his Harvard grade-cap/market-design commentary. No major reversals detected; views are remarkably consistent across the 18-month span, with the AIxCrypto and functional-NFT theses intensifying over time. He is consistently skeptical of speculation and of poorly-designed mechanisms (tariffs, grade caps, screening-by-price) \u2014 a market-design lens applied everywhere. Non-crypto recurring concerns (COVID/long-COVID public health, anti-science policy) are personal/civic, not market views, and were excluded."
+}

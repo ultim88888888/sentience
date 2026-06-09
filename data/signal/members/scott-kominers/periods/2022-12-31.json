@@ -1,0 +1,350 @@
+{
+  "as_of": "2022-12-31",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 93,
+      "horizon": "structural",
+      "rationale": "Sees NFTs as a genuinely new asset class whose value comes from community, brand-building, programmable property rights, and online-offline utility \u2014 durable, not a fad. By late 2022 he committed to co-authoring a full book on them.",
+      "provenance": "grounded",
+      "age_note": "First framed in Nov-2021 HBR piece but continuously reinforced through 2022 (book deal Oct-2022, multiple a16z articles); current, not stale.",
+      "citations": [
+        {
+          "date": "2021-11-10",
+          "quote": "explaining why we think NFTs are real and here to stay"
+        },
+        {
+          "date": "2022-10-17",
+          "quote": "@NFTbark and I are writing a book about NFTs, to be published by @portfoliobooks"
+        }
+      ]
+    },
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes building open platforms that share ownership and value with users creates more total value than walled-garden web2 \u2014 lowers cold-start friction, builds community network effects, and raises long-run consumer surplus. Joined a16z crypto research team to pursue this.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-16",
+          "quote": "Web3 has the potential to unlock a more valuable internet for everyone."
+        },
+        {
+          "date": "2022-05-21",
+          "quote": "design and user insight will continue to differentiate apps and marketplaces"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "His most recent thesis: the 2022 centralized blow-ups are an argument FOR decentralized, transparent, smart-contract-based finance \u2014 not against crypto. Most recent market statement in the corpus.",
+      "provenance": "grounded",
+      "age_note": "Stated Dec-2022, post-FTX \u2014 the freshest view; supersedes any earlier ambiguity about centralized crypto.",
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi."
+        }
+      ]
+    },
+    {
+      "item": "nft-licensing-standards",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 77,
+      "horizon": "structural",
+      "rationale": "Excited that giving away IP rights (Creative Commons Zero, 'Can't Be Evil' licenses) can grow a brand's value by inviting derivatives and co-creation, turning an adversarial game cooperative \u2014 while noting it isn't one-size-fits-all.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-03",
+          "quote": "cc0 licensing is an incredibly compelling way to kickstart IP that may one day take on a life of its own."
+        },
+        {
+          "date": "2022-08-31",
+          "quote": "@a16z crypto has just launched a suite of \"Can't be Evil\" licenses"
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Argues 'location, location, location' applies to scarce, ownable, portable metaverse spaces; value accrues to land on popular, interoperable platforms. Personally advising/holding generative-architecture projects (SOLIDS).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-10",
+          "quote": "It matters which metaverse location you own!"
+        },
+        {
+          "date": "2022-04-04",
+          "quote": "My friend @0xfar has just launched something really cool: a generative architecture project called @SOLIDSNFT"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "As a market designer he's actively bullish on projects adopting clearing-price auctions over the descending pay-as-bid format most projects use; advising teams (Tally Labs, fine_digital) on auction mechanics.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-17",
+          "quote": "SO BULLISH on @jenkinsthevalet @TallyLabsNFT running an actual clearing-price auction on-chain, rather than the descending pay-as-bid auctions so many projects have been using."
+        },
+        {
+          "date": "2022-09-10",
+          "quote": "I generally prefer clearing-price auctions to descending pay-as-bid auctions"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Defends creator royalties on social-welfare/incentive grounds and sees crypto wallets becoming integrated cross-platform reputation systems; recurring research and advisory theme.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-13",
+          "quote": "we might want to give up some efficiency of allocation in exchange for providing a more direct reward to creators"
+        },
+        {
+          "date": "2021-10-03",
+          "quote": "people's full wallet is going to start being used as an integrated reputation system across platforms"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Repeatedly and emphatically pushes back on framing NFTs as a sure way to make money; insists they are risky at any price point \u2014 his single most forceful market-risk warning.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-28",
+          "quote": "BUYING NFTS AS INVESTMENTS IS INHERENTLY RISKY. At any price point. No investment is guaranteed to go up!"
+        },
+        {
+          "date": "2021-11-11",
+          "quote": "many NFT asset values fluctuate so widely that to the extent they are investments, they are emphatically not \"risk-free.\""
+        }
+      ]
+    },
+    {
+      "item": "crypto-onboarding-accessibility",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Views the high sophistication needed to access crypto (and doubly NFTs), weak security and consumer protection, and poor wallet UX as first-order barriers to mainstream adoption.",
+      "provenance": "grounded",
+      "age_note": "Core articulation Nov-2021, but theme recurs through 2022 (wallet UX, verification, Coinbase onboarding); persisted and current.",
+      "citations": [
+        {
+          "date": "2021-11-11",
+          "quote": "even gaining access to crypto requires a high degree of sophistication -- and newer products like NFTs doubly or triply so!"
+        },
+        {
+          "date": "2021-11-11",
+          "quote": "NFTs face many of the current general challenges of crypto -- especially in terms of environmental costs, and lack of security/consumer protection."
+        }
+      ]
+    },
+    {
+      "item": "cefi-intermediaries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Frames the FTX/Celsius/Terra collapses as failures of centralized intermediaries, the implicit counterpoint to his DeFi enthusiasm; most recent risk theme.",
+      "provenance": "grounded",
+      "age_note": "Dec-2022, post-FTX \u2014 freshest concern.",
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Frequently flags compromised Discords, impersonation/scam accounts, phishing mint links, and rugs as a persistent harm \u2014 including criticizing platforms for boosting scam ads while throttling legitimate projects.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-04",
+          "quote": "it's appalling that you're letting these scam accounts signal-boost"
+        },
+        {
+          "date": "2021-11-07",
+          "quote": "a link to a fake mint site is being pushed repeatedly. DO NOT ATTEMPT TO MINT from the provided link."
+        }
+      ]
+    },
+    {
+      "item": "high-gas-fees",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Concerned astronomical Ethereum transaction costs and congestion (a tragedy-of-the-commons across competing mints) harm NFT projects and pricing; hopeful tech/infrastructure fixes are coming.",
+      "provenance": "grounded",
+      "age_note": "Largely a 2021 concern; partially mitigated by his enthusiasm for the Sept-2022 Merge and L2s \u2014 softer by year-end but never retracted.",
+      "citations": [
+        {
+          "date": "2021-11-11",
+          "quote": "because many of them run on the ethereum blockchain, they're also subject to astronomical transaction costs."
+        },
+        {
+          "date": "2021-09-03",
+          "quote": "the current congestion is harming everyone, but it's a tragedy of the commons."
+        }
+      ]
+    },
+    {
+      "item": "community-health",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Holds that NFT value is community-created, so toxic or fading communities are an existential project risk regardless of art quality \u2014 a network-goods failure mode.",
+      "provenance": "grounded",
+      "age_note": "Endorsed-quote (Aug-2021) but the underlying community-value thesis is restated throughout his 2022 writing; not stale.",
+      "citations": [
+        {
+          "date": "2021-08-29",
+          "quote": "if the community is toxic, [the product is] dead on arrival."
+        },
+        {
+          "date": "2021-11-10",
+          "quote": "Lack of engagement can then become a self-fulfilling prophecy, devaluing the NFTs themselves."
+        }
+      ]
+    },
+    {
+      "item": "crypto-energy-consumption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Listed environmental cost as a core crypto challenge needing infrastructure-level change for the space to be sustainable.",
+      "provenance": "persisted",
+      "age_note": "Emphasized in 2021; the Sept-2022 Ethereum Merge (PoW\u2192PoS) he celebrated likely defused much of this for him \u2014 concern stated but not refreshed in 2022.",
+      "citations": [
+        {
+          "date": "2021-11-11",
+          "quote": "We need a lot of tech changes at the infrastructure level in order to make all of this sustainable."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Treats ETH less as a price bet than as the foundational infrastructure under NFTs/web3; holds it and celebrated the Merge as a landmark technical achievement. Enthusiasm is for the platform, not speculative upside.",
+      "provenance": "grounded",
+      "age_note": "Note he also flags ETH/NFT price tension \u2014 bullish on the chain, neutral on ETH as a trade.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "GM! Happy Merge Day to all who celebrate, QED"
+        },
+        {
+          "date": "2021-10-24",
+          "quote": "If \"1 $ETH = 1 $ETH,\" then why do #NFT prices fall when Ethereum is on a bull run?"
+        }
+      ]
+    },
+    {
+      "item": "SHIB",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Endorses the view that SHIB lacks fundamental economic basis \u2014 a meme without a reason to thrive \u2014 emblematic of his skepticism toward fundamentals-free meme tokens.",
+      "provenance": "persisted",
+      "age_note": "Stated Nov-2021 and not restated; carried forward as his standing view on meme coins.",
+      "citations": [
+        {
+          "date": "2021-11-04",
+          "quote": "its provenance as a meme leaves it without much of a fundamental economic reason to thrive. Fair."
+        }
+      ]
+    },
+    {
+      "item": "SOS",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Treated the $SOS airdrop hype dismissively, as froth driven by social-media right-click-save mimicry rather than value.",
+      "provenance": "persisted",
+      "age_note": "One-off Dec-2021 dismissal; never revisited.",
+      "citations": [
+        {
+          "date": "2021-12-24",
+          "quote": "right-click-save messages saying things like \"I got a billion kajillion $SOS\""
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "Kominers stayed structurally bullish on crypto/web3/NFTs through the entire 2022 bear market and the FTX collapse, reframing failures as reasons to build (DeFi, better market design) rather than retreat. His risk-on posture is toward the technology and its market-design value over the long run \u2014 paired with explicit, repeated caution that the market is 'really, really early,' individual NFT buys are risky at any price, and accessibility/security/scams are unsolved. So: long-run risk-on, near-term cautious and disclosure-disciplined.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers is an academic/advisor (HBS professor; joined a16z crypto research team Apr-2022), not a trader \u2014 his 'market view' is about technology and market-design value, not price calls, and he scrupulously discloses holdings/advisory roles (RealSupDucks, AdamBombSquad, chain_runners, HungryWolvesNFT, thingdoms, fine_digital, TallyLabs, etc.). The vast majority of the corpus is non-market (daily Wordle, Bloomberg 'Conundrums' puzzles, number theory/date numerology, and extensive COVID-policy criticism) and was excluded. Recency weighting: NFT-value and web3 theses originate in 2021 HBR pieces but are continuously reinforced through 2022 (book deal Oct-2022, numerous a16z articles), so treated as grounded/current rather than persisted. The Sept-2022 Ethereum Merge appears to have softened his earlier environmental-cost and gas-fee concerns. His clearest forward stance at year-end (Dec-2022, post-FTX): crypto isn't dead, and the path forward is decentralization plus better market/IP design. Other tokens he interacts with (VOLT, APE) reflect community participation rather than investment conviction and were omitted."
+}

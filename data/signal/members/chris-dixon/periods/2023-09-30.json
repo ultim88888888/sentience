@@ -1,0 +1,165 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Believes crypto/web3 is the center of the next product cycle and is still in its earliest stages, with technology, talent, and community knowledge having reached critical mass.",
+      "provenance": "grounded",
+      "age_note": "Thesis first stated 2022-06-27 but repeatedly reaffirmed; most recent 2023-06-11 restatement keeps it current.",
+      "citations": [
+        {
+          "date": "2022-06-27",
+          "quote": "I believe crypto and web3 will be at the center of the next cycle. We've reach a critical mass of technology, talent, and community knowledge."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "Crypto/web3 is still in the early innings, and needs clear regulations to provide an open pathway for startups to build constructive solutions"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Sees on-chain games enabling composability, interoperability, permanence, player asset ownership, and modding \u2014 actively leading investments (CCP/EVE, Proof of Play).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Excited to announce that we're leading a seed investment in @ProofOfPlay, an on-chain game studio and tech company"
+        },
+        {
+          "date": "2023-03-21",
+          "quote": "We believe @CCPGames will help shape the next generation of web3 games... to enable a new frontier in player agency and autonomy."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-internet-infra",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Frames crypto/web3 as the only plausible way to restore the internet as an open platform that incentivizes creativity and entrepreneurship versus incumbent control; central thesis of his forthcoming book.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-22",
+          "quote": "why crypto/web3 is the only plausible path to sustaining the original vision of the internet as an open platform that incentivizes creativity & entrepreneurship."
+        }
+      ]
+    },
+    {
+      "item": "vr-spatial-computing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Excited that Meta and Apple (Vision Pro) investment will push VR down the same cost/performance curve as prior computing platforms.",
+      "provenance": "grounded",
+      "age_note": "Single statement (2023-06-05), not restated; adjacent to but outside his core crypto focus.",
+      "citations": [
+        {
+          "date": "2023-06-05",
+          "quote": "Excited for Vision Pro. With Meta and now Apple investment, VR will follow the same pattern as past computing platforms, quickly becoming cheaper, faster, lighter"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Treats AI as an intersecting domain with crypto and backed UK-based Gensyn (decentralized compute for ML); interest is real but secondary to crypto.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from a single investment announcement and book topic mention (2023-06-11/2023-06-22); no direct personal-excitement statement about AI as a sector.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "today we announced our newest investment in UK-based @gensynai."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views the speculative, gambling-style culture around crypto as harmful and something that must be stamped out for the industry to fulfill its promise.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "stamping out the harmful \"casino\" culture that has developed around crypto."
+        },
+        {
+          "date": "2023-06-22",
+          "quote": "I tackle controversial topics like policy/regulatory, and the harmful \"casino\" culture that has developed around crypto."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Worries the lack of clear US rules drives away builders and fails consumers; pushing for legislation (FIT21) and clarity while bad actors persist.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-26",
+          "quote": "Crypto & web3 can create a more open and democratized internet but we need clear and appropriate rules to grow safely in the U.S."
+        },
+        {
+          "date": "2023-03-22",
+          "quote": "We hope the US will take a more constructive approach to collaborating with innovators while protecting consumers."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Concerned that a handful of entrenched tech incumbents dominate the internet and aggressively suppress new movements that threaten them.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-06-27 and not directly restated, but it is the foundational motivation behind his 2023 open-internet/web3 advocacy, so it persists.",
+      "citations": [
+        {
+          "date": "2022-06-27",
+          "quote": "A handful of tech incumbents dominate the internet, exerting vast economic and cultural influence. Entrenched interests aggressively respond to new movements"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Despite downturn talk, Dixon advises ignoring financial-cycle noise and staying focused on the product cycle; he is actively leading new investments (Proof of Play, CCP, Gensyn), expanding internationally to the UK, and frames crypto as 'early innings' \u2014 a builder's posture through the bear market.",
+    "provenance": "grounded"
+  },
+  "notes": "Dixon never names individual tokens in this corpus \u2014 his lens is sectors, platforms, and the product cycle, not asset-level calls, so token arrays are empty. His view is strongly structural/long-horizon rather than tactical: financial cycles are treated as noise to ignore while product cycles compound. Core 2022 product-vs-financial-cycle thesis is reinforced, not reversed, by 2023 statements (early innings, continued deployment, UK expansion). His most concrete and recent excitement is web3 gaming (two lead investments in 2023). Concerns are dominated by crypto's own 'casino' culture and US regulatory ambiguity rather than market/macro risk. No material stance reversals detected in the window."
+}

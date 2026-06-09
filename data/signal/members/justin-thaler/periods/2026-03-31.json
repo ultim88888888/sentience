@@ -1,0 +1,426 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His flagship project; sustained, accelerating performance milestones (6x speedup, GPU proving at ~1.6B cycles/sec, RV64 support, falling memory) and real adoption (LayerZero).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-10",
+          "quote": "LayerZero is launching a new blockchain and on the SNARK-proving front it's powered by Jolt."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "Jolt just got a 6\u00d7 speedup. We now prove over 1,000,000 RISC-V cycles/sec on a 32-core CPU"
+        }
+      ]
+    },
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 98,
+      "horizon": "structural",
+      "rationale": "His central design thesis: sum-check over univariate/quotient-based approaches is the key dichotomy for fast SNARK provers; he wrote the canonical survey and keeps shipping optimizations.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-06",
+          "quote": "New survey: Sum-check is all you need."
+        },
+        {
+          "date": "2025-03-11",
+          "quote": "The key performance dichotomy in SNARK design... It's the sum-check protocol and multilinear polynomials vs. univariate polynomials."
+        },
+        {
+          "date": "2026-03-27",
+          "quote": "All the sum-check optimizations we could come up with... ~11x faster, ~17x less memory for key subroutines"
+        }
+      ]
+    },
+    {
+      "item": "lattice-pq-proving",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Most recent roadmap priority: switching Jolt from elliptic-curve to lattice commitments for ~10x throughput, 128-bit fields, and post-quantum security as a bonus.",
+      "provenance": "grounded",
+      "age_note": "Newest strategic direction (2026-02), supersedes earlier elliptic-curve-centric framing in 2025.",
+      "citations": [
+        {
+          "date": "2026-02-10",
+          "quote": "switching from elliptic-curve commitments to lattice-based ones\u2014enabling 128-bit fields (vs 256-bit) and post-quantum security to boot."
+        }
+      ]
+    },
+    {
+      "item": "memory-checking-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "New memory-checking primitives delivering ~3x end-to-end prover speedups, simpler than Lasso/Spice, validating Jolt's design bets and benefiting non-zkVM SNARKs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "We just unveiled Twist and Shout, two new memory-checking arguments designed to supercharge the Jolt zkVM."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "The speedups largely come from integrating our new Twist and Shout memory-checking arguments. They're faster and simpler than the Lasso and Spice arguments"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Just shipped native ZK for Jolt via NovaBlindFold \u2014 no recursion or wrapping, marginal proof-size cost \u2014 opening on-device privacy applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-03-03",
+          "quote": "Jolt now supports zero-knowledge... suitable for privacy applications \u2014 no SNARK recursion, no \"wrapping\"... Marginal increase in proof size (~3 KB)."
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Believes proving is approaching real-time for a single CPU core; expects single-GPU real-time proving and continued throughput scaling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-10",
+          "quote": "A bit further out: I expect single-GPU, real-time proving of a single CPU core."
+        },
+        {
+          "date": "2026-02-10",
+          "quote": "today we're already in the ballpark of real-time proving for a single-core CPU execution."
+        }
+      ]
+    },
+    {
+      "item": "zk-applications",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Expects zkVMs to hit 'Stage 2' (10,000x native overhead) by end of 2026, the threshold where non-blockchain applications become interesting.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-11",
+          "quote": "By the end of 2026, we should hit \"Stage 2\": 10,000x prover overhead... that's when things get interesting for applications beyond blockchains."
+        }
+      ]
+    },
+    {
+      "item": "risc-v-proving",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "RV64 now proves faster than prior RV32 results; unlocks broader language support (e.g. Go/Geth) and fewer cycles for many apps.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-15",
+          "quote": "Jolt now proves RISC-V programs with 64-bit registers (RV64IMAC), at speeds exceeding those we previously reported for 32-bit."
+        }
+      ]
+    },
+    {
+      "item": "folding-schemes",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Integrating Nova folding and streaming to keep prover memory under 2 GB for arbitrarily long executions without recursion \u2014 a usability 'phase change'.",
+      "provenance": "grounded",
+      "age_note": "Stated as 'final barrier'/'current focus' in 2024-11; still on the roadmap as of 2025-10, memory now ~700 MB/million cycles.",
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "integrating Jolt with the Nova folding scheme, which will allow for arbitrarily long RISC-V executions with under 2 GB of prover memory\u2014a phase change"
+        },
+        {
+          "date": "2025-10-15",
+          "quote": "Memory usage keeps dropping too, now at ~700 MB per million cycles."
+        }
+      ]
+    },
+    {
+      "item": "pq-encryption-deployment",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "tactical",
+      "rationale": "Argues PQ encryption must ship now due to Harvest-Now-Decrypt-Later risk, even though a CRQC is far off; endorses hybrid schemes already deployed in TLS/messaging.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "post-quantum (PQ) encryption must ship now, despite costs/risks."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "The clearest near-term risk is Harvest-Now-Decrypt-Later (HNDL)"
+        }
+      ]
+    },
+    {
+      "item": "snark-production-readiness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Repeatedly warns zkVMs are not ready for complex, high-stakes deployments; bugs are pervasive and formal verification is nascent.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "Beware the hype: while SNARKs and zkVMs show immense promise, they're not ready for complex, high-stakes deployments."
+        },
+        {
+          "date": "2025-03-11",
+          "quote": "we flirt with disaster if we pretend they're ready for prime time."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Holds that for years to come bugs, side-channels, and fault injection are larger risks than quantum computers, across SNARKs and signatures; calls for audits/fuzzing/formal methods.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "for years to come, bugs and implementation attacks (side-channels, fault injection) will be larger risks than CRQCs."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "above all, bugs remain the bigger near-term risk."
+        }
+      ]
+    },
+    {
+      "item": "compiler-vm-correctness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Argues a zkVM can't truly be called secure until verified-verifier stage is reached, which is still several years off; even Zcash (far simpler) had a major bug.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "Until we reach Stage 2, we can't really call a zkVM \"secure\"\u2014and getting there is still likely several years off."
+        },
+        {
+          "date": "2025-03-12",
+          "quote": "Zcash is about the limit of what I'd trust (absent formal verification)... Of course, even Zcash had a major bug in the past."
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Overhead versus native execution was a non-starter for most use cases; a structured 'speed stages' roadmap is needed to cut it by orders of magnitude.",
+      "provenance": "grounded",
+      "age_note": "2025-03 figure was >100,000x; by 2025-08 Jolt reportedly crossed <100,000x (Speed Stage 1), so concern is easing but ongoing toward the 10,000x Stage-2 target.",
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "overheads versus native execution still exceed 100,000\u00d7\u2014a non-starter for most use cases."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "The Jolt prover work overhead is under 100,000... That meets the threshold for what we call Speed Stage 1"
+        }
+      ]
+    },
+    {
+      "item": "quantum-hype",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Strongly critical of conflating 'logical qubits' (incl. distance-2 error-detecting codes) with the fault-tolerant logical qubits Shor needs; says this distorts perceptions of CRQC proximity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-12",
+          "quote": "\"logical qubits\" in announcements and roadmaps \u2260 logical qubits needed for Shor."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "raw qubit counts are misleading: we need thousands of error-corrected logical qubits and huge T-gate budgets\u2014far beyond today."
+        }
+      ]
+    },
+    {
+      "item": "benchmark-transparency",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Concerned that headline benchmarks bundle proof system, engineering, hardware, and hand-tuned precompiles into one number, hiding the true state of fundamental efficiency.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "many benchmarks bundle everything\u2014proof system, engineering, hardware boosts, and hand-tuned precompiles\u2014into a single top-line number, obscuring where we really stand."
+        }
+      ]
+    },
+    {
+      "item": "snark-friendly-vms-zkdsls",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Opposes designing custom SNARK-friendly VMs; they cater to today's SNARK limits and block reuse of mature tooling, whereas RISC-V is already SNARK-friendly with the right techniques.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "Proposals for \"SNARK-friendly\" VMs at best cater to today's SNARK limits, and prevent reuse of mature tooling."
+        }
+      ]
+    },
+    {
+      "item": "quantum-vulnerability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Notes SNARK zero-knowledge stays secure post-quantum but soundness (forging false proofs) becomes vulnerable after a CRQC \u2014 a real but non-urgent, deliberate-migration concern.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "What becomes vulnerable post-CRQC is soundness (forging new false proofs), not confidentiality or soundness of past proofs."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "A cryptographically relevant quantum computer (CRQC) in the 2020s is highly unlikely. Even mid-2030s is ambitious."
+        }
+      ]
+    },
+    {
+      "item": "ZRO",
+      "item_type": "token",
+      "parent_sector": "infra-devtools",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Cited approvingly as a flagship adopter: launching a new chain whose SNARK proving is powered by Jolt \u2014 evidence of real production traction, though framed as tech validation not a token call.",
+      "provenance": "grounded",
+      "age_note": "Mentioned as a technical adoption milestone, not an investment thesis on the token.",
+      "citations": [
+        {
+          "date": "2026-02-10",
+          "quote": "LayerZero is launching a new blockchain and on the SNARK-proving front it's powered by Jolt."
+        }
+      ]
+    },
+    {
+      "item": "ZEC",
+      "item_type": "token",
+      "parent_sector": "privacy",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Singled out as roughly the most trustworthy SNARK deployment in production \u2014 but trust framed as conditional and bounded by lack of formal verification, so it's cautious endorsement.",
+      "provenance": "persisted",
+      "age_note": "Single mention from 2025-03-12, never restated; trust is explicitly qualified ('about the limit of what I'd trust').",
+      "citations": [
+        {
+          "date": "2025-03-12",
+          "quote": "Zcash is about the limit of what I'd trust (absent formal verification), and it's still far simpler than any zkVM pipeline"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Flags Bitcoin's distinctive post-quantum migration challenges: slow governance, no passive migration, and abandoned supply at quantum-vulnerable addresses requiring years of coordination \u2014 though not an imminent threat.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "Bitcoin's special challenges: slow governance, no passive migration, and a non-trivial abandoned supply at high-value quantum-vulnerable addresses."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "Bitcoin has to take the threat seriously \u2014 not because CRQCs are coming before 2030, but because... requires years of coordination."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "conviction": 60,
+    "rationale": "Thaler is a research lead, not a market allocator; he expresses no asset-allocation risk-on/risk-off view. His posture is structurally bullish on the long-run trajectory of sum-check-based SNARKs and Jolt (rapid, compounding performance gains, expanding to privacy and non-blockchain uses), while being pointedly risk-averse near-term: zkVMs aren't production-ready, bugs/implementation attacks are the dominant danger, formal verification is years away, and he actively deflates both zkVM and quantum-computing hype. Net: optimistic builder, conservative deployer.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Corpus is ~95% technical cryptography commentary from a builder/researcher perspective; there is essentially no trading, valuation, or macro market view, so 'sectors' are rendered as technology themes and token entries are sparse and inferred (LayerZero/Zcash/Bitcoin appear as technical references, not investment theses) \u2014 treat token conviction as low. Recency weighting applied: latest roadmap (2026-02/03) elevates lattice-based commitments, native zero-knowledge, and GPU/real-time proving as the current excitement frontier, partly superseding 2024\u20132025 elliptic-curve-centric framing. The 'performance overhead' concern is moderating over time (>100,000x in 2025-03 \u2192 <100,000x / Stage 1 by 2025-08, targeting Stage 2 / 10,000x by end of 2026). On quantum, his consistent stance across the most recent statements (2025-12) is that a CRQC before 2030 is highly unlikely and that hype/communication errors are a bigger problem than the underlying threat \u2014 with bugs framed repeatedly as the overriding near-term risk."
+}

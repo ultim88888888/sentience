@@ -1,0 +1,185 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His most recent and strongest theme: he frames AI and blockchain as co-dependent technology movements, and his March 2025 CSX 04 cohort is dominated by verifiable AI, confidential compute, and AI-agent/DeFi-data startups.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-05",
+          "quote": "This time is no different: AI needs blockchain-enabled computing."
+        },
+        {
+          "date": "2025-03-31",
+          "quote": "Ambient: building a blockchain that integrates large language models for verifiable, censorship-resistant AI capabilities"
+        },
+        {
+          "date": "2025-01-20",
+          "quote": "When transformative technologies like crypto and AI come along, we should first try to understand their essence"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Repeatedly singles out Sreeram Kannan's EigenLayer/EigenCloud as a category-defining advance in alternative data availability and verifiable compute; sustained from early 2024 into March 2025.",
+      "provenance": "grounded",
+      "age_note": "First flagged 2024-02-22; reaffirmed via warm 2025-03-25 mention, so current not stale.",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "What @eigencloud and @sreeramkannan are building and envisioning is truly next level. Beyond excited to have the opportunity to work together."
+        },
+        {
+          "date": "2025-03-25",
+          "quote": "Listening to @sreeramkannan and @alive_ discuss the evolution of their relationship and @eigencloud is a special treat."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Twice enthused about Gensyn's vision of permissionless substrate for machine training; fits his thesis that AI compute belongs onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-26",
+          "quote": "Very exciting to see the scale and scope of @benfielding, @harrygrieve and the entire @gensynai team's work and vision come into public view."
+        },
+        {
+          "date": "2024-05-24",
+          "quote": "The substrate on which machines train and exist has to be permissionless."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Long-running excitement about ZK as a foundational primitive; repeatedly highlighted in cohort programming and as 'a big, big deal.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren't fluent in the world of ZK- this is a big, big deal."
+        },
+        {
+          "date": "2024-02-09",
+          "quote": "Energized by the rate at which key crypto primitives are snapping into focus!"
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Endorsed the thesis that stablecoins reset payments market structure as the cheapest way to move dollars; a March 2025 cohort company (zar) targets cash-to-stablecoin in emerging markets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-14",
+          "quote": "Stablecoins are the cheapest way to send a dollar. Stablecoins can reset the market structure in the payments industry"
+        },
+        {
+          "date": "2025-03-31",
+          "quote": "@zardotapp: building a decentralized cash-to-stablecoin platform for emerging markets"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Cited the 'drumbeat' of L2 throughput/fee progress and embedded-wallet onboarding (Privy, Dynamic) as platform accelerants for developer experimentation, analogous to prior web1/web2 stack moments.",
+      "provenance": "persisted",
+      "age_note": "Most detailed articulation is 2024-02-09; not restated with equal specificity since, so treated as persisted.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput"
+        },
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Pointed to Farcaster Frames as 'super simple and fun' app development and praised onchain composability turning primitives into games/art; sees consumer surface as a growth frontier.",
+      "provenance": "persisted",
+      "age_note": "Peak enthusiasm in 2024; lighter touch by early 2025 as focus shifted toward AI.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Super simple (and fun!) app development- @farcaster_xyz Frames"
+        },
+        {
+          "date": "2024-09-26",
+          "quote": "@dotdotfan showcases the power of onchain composability, turning colors into building blocks for creating onchain art and casual games"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Earlier treated the regulatory landscape as a hazard founders must carefully navigate; his most recent stance is optimism that post-election clearer rules will help legitimate projects rather than hinder them.",
+      "provenance": "grounded",
+      "age_note": "Reversal: 2024 framing emphasized navigating risk; by 2024-11-10 he shifted to optimism on clearer rules. Current stance is net-positive, so concern is muted.",
+      "citations": [
+        {
+          "date": "2024-11-10",
+          "quote": "We're optimistic that with clearer rules, it will make it easier to identify and shut down bad actors and allow well-meaning projects to take off."
+        },
+        {
+          "date": "2024-05-03",
+          "quote": "they answered Founders' burning questions in terms of how to best navigate the current environment."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Consistently and increasingly bullish on building in crypto: declares 2025 a 'transformative year,' frames AI+crypto as a once-in-a-generation platform convergence, expanded the accelerator to two cohorts/year plus an SF program, and reads the post-election policy shift as a tailwind. No bearish or defensive market signals appear in the corpus.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an accelerator lead/operator, not a token trader, so the bulk of his corpus is CSX promotion and founder craft advice (PMF, scaling, fundraising, conferences) rather than market calls. He never makes token-level buy/sell views, so tokens_excited/concerned are empty by design rather than omission \u2014 his signal is at the sector/infrastructure layer. Sector views are inferred from (a) explicit enthusiasm posts and (b) the composition of the startups he selects, with CSX 04 (2025-03-31) being the most recent and heavily AI-weighted dataset, which is why AI\u00d7crypto convergence ranks highest. He has near-zero expressed market concern; the regulatory item is included for completeness but his current stance is net-optimistic. Several 2024 infra themes (L2s, embedded wallets, onchain social) are persisted rather than freshly restated as his emphasis migrated toward verifiable AI and confidential compute by early 2025."
+}

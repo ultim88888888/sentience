@@ -1,0 +1,257 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He built a framework to determine when validators can be safely reused across services, exposing an 'overcollateralization factor' as a tunable robustness metric \u2014 sees it as a tractable, formalizable design problem.",
+      "provenance": "grounded",
+      "age_note": "Most recent sustained theme (Aug\u2013Sep 2024); freshest in corpus.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "New paper with @n_durvasula offers a framework to reason about the risks of restaking. Key question: Under what conditions can validators be safely reused across multiple services?"
+        },
+        {
+          "date": "2024-09-10",
+          "quote": "My work on restaking risks with @n_durvasula now has an accompanying talk, from the SBC Consensus workshop"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His central, multi-year research obsession \u2014 building a 'hierarchy of permissionlessness' and proving what consensus guarantees (finality, accountability, partition-resilience) are achievable under which participation assumptions; views PoS PBFT-style protocols in the quasi-permissionless setting as the rich frontier.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-10",
+          "quote": "Can PoS PBFT-style protocols do better? Tl;dr: yes, on all counts, at least if you're willing to adopt the stronger assumptions of the quasi-permissionless (QP) setting!"
+        },
+        {
+          "date": "2023-11-29",
+          "quote": "We propose a four-level hierarchy (Perm < QP < DA < FP) that parameterizes the amount of knowledge that a protocol has about who's running it"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Genuinely thrilled at theory-to-practice translation \u2014 hard theory (Jolt/lookups) becoming 'the fastest zkVM in the world.' Treats it as a standout success of the field.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "It's been amazing watching 102 pages of hard theory get turned into the fastest zkVM in the world."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "when he calmly told me, 'I think this could be big,' I knew to take him very, very seriously. And now... the lookup singularity is here."
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Long-running enthusiasm; he closed his original open question (no TFM can be DSIC+MMIC+OCA-proof) and extended TFM theory to a post-MEV world with active block producers and searchers \u2014 sees it as a deep, still-productive design space.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper... on transaction fee mechanism design in a post-MEV world (i.e., with active block producers), now with searchers... and tight welfare guarantees"
+        },
+        {
+          "date": "2024-02-16",
+          "quote": "the main open theory question from my original work on EIP-1559 has been resolved... no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Fascinated by why Dutch auctions dominate web3 and by designing auctions robust to seller manipulation (shill bids) through mechanism design rather than appeals to 'rule of law.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "Why are Dutch auctions so popular in Web3?... A new paper with Andrew Komo and @skominers answers all these questions"
+        },
+        {
+          "date": "2024-04-02",
+          "quote": "To what extent can these deviations instead be disincentivized through an auction's design?"
+        }
+      ]
+    },
+    {
+      "item": "proposer-builder-separation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Actively developing a theoretical foundation for PBS, a core piece of the MEV-management stack.",
+      "provenance": "grounded",
+      "age_note": "Stated once (Jan 2024), part of ongoing TFM/MEV agenda.",
+      "citations": [
+        {
+          "date": "2024-01-24",
+          "quote": "Toward a theory of proposer-builder separation (with @bahrani_maryam and @PGarimidi)"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He proved that with MEV, no non-trivial transaction fee mechanism can be incentive-compatible for both users and block producers \u2014 making good UX/bidding fundamentally hard and forcing reliance on encrypted mempools, OFAs, TEEs, MPC.",
+      "provenance": "grounded",
+      "age_note": "Core result July 2023, reaffirmed Feb 2024 as a standing caveat.",
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "with MEV, *no* non-trivial or approximately welfare-maximizing TFM can be both DSIC and BPIC!"
+        },
+        {
+          "date": "2023-07-06",
+          "quote": "do we truly need any of these? Yes! And... we have the math to prove it"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Same framework that excites him also surfaces the danger: a small shock (e.g., a slashing bug) can cascade across shared validators into catastrophic loss unless overcollateralization buffers are maintained.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "When is a restaking network 'robustly secure,' meaning that a small \"shock\"... cannot enable a catastrophic attack?"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "the maximum-possible length of a cascade of attacks is also governed by the overcollateralization factor"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Proved slashing cannot achieve targeted punishment (EAAC) in the dynamically-available or partially-synchronous settings \u2014 once an adversary is large enough to violate consistency, it can evade punishment; implies withdrawal delays must scale with worst-case message delay.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "once an adversary is big enough to cause a consistency violation, it is big enough to evade targeted punishment"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Showed in-protocol defense requires exotic, non-'time-malleable' cryptography (VDFs as in Chia, ephemeral keys as in Algorand); otherwise one falls back on out-of-protocol social consensus / checkpointing.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks without any out-of-protocol assistance"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Any protocol that works under fluctuating participation (longest-chain, PoW or PoS) provably cannot offer finality/accountability, optimistic responsiveness, or partition-resilience \u2014 and Bitcoin's guarantees are only ever probabilistic.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "if your blockchain protocol is robust to fluctuating participation... then it cannot be optimistically responsive, accountable, or robust to network partitions"
+        },
+        {
+          "date": "2023-12-13",
+          "quote": "Bitcoin's probabilistic guarantees are an unavoidable consequence of its total lack of assumptions about who might be running it"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Not a price view \u2014 a design endorsement. He frames Ethereum as aspiring to a 'best of both worlds' consensus design and his slashing work makes precise the belief that the Merge increased Ethereum's economic security.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds: the basic guarantees of a longest-chain protocol... plus the extra benefits of a PBFT-style protocol"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "making precise the common belief that the merge has increased Ethereum's economic security"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 88,
+    "rationale": "Roughgarden is a theory/mechanism-design researcher; across 18 months he expresses zero market-directional posture \u2014 no buy/sell, bull/bear, or risk appetite statements. His 'positions' are technical (which protocol designs are sound, which mechanisms are provably impossible). Inferring a risk-on/off stance would be unsupported extrapolation.",
+    "provenance": "grounded"
+  },
+  "notes": "This is the view of an academic researcher, not a trader or investor \u2014 every 'excited'/'concerned' entry is about the soundness and tractability of a design problem, not asset returns. Recency weighting: 2024 work (restaking risks Aug\u2013Sep, slashing/EAAC May, shill-proof auctions Apr, post-MEV TFMs Feb) is the freshest and most heavily weighted; the permissionless-consensus and PoS hierarchy program runs continuously Apr-2023\u21922024 and is his dominant structural theme. No genuine stance reversals were found \u2014 the body of work is cumulative and consistent (e.g., the MEV impossibility result is restated as a standing caveat in 2024 rather than retracted). Tokens are barely actionable: he names Bitcoin, Ethereum, Algorand (ephemeral keys), Chia (VDFs), Avalanche only as technical exemplars of design choices, not as investments; only Ethereum carries a mild positive design judgment, included with low conviction. tokens_concerned left empty because his critiques (e.g., Bitcoin's probabilistic-only guarantees) are protocol-design observations, not market warnings."
+}

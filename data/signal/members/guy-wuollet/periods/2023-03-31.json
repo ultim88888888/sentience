@@ -1,0 +1,338 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees blockchains coordinating real-world services (compute, storage, cell service, energy) and frames a crisp investability test: a network works when verification cost falls below the incumbent's margin.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-18",
+          "quote": "The essential question when considering building a DePIN network: Verification cost < incumbent margin big if true"
+        },
+        {
+          "date": "2023-01-12",
+          "quote": "Blockchains can provide any number of services, compute, storage, cell phone service, energy storage, physical transportation"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-verification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He frames decentralized verification as the single hardest and most fundamental problem \u2014 crypto replaces trusted third parties with it, and everything else is an application of it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-01",
+          "quote": "Decentralized verification is the hardest problem and crux of why crypto matters"
+        },
+        {
+          "date": "2022-10-06",
+          "quote": "correctly verifying that a service has been provided/executed is almost always the hard problem when building a new decentralized network"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Long-running conviction that ZKPs are underrated and transformational; recently extending to scaled L1 privacy and even proving LLM inference on-chain.",
+      "provenance": "grounded",
+      "age_note": "Thesis first stated 2022-01; restated and extended through 2023-02, so current, not stale.",
+      "citations": [
+        {
+          "date": "2022-01-06",
+          "quote": "i still think people underestimate how transformational zero knowledge proofs are"
+        },
+        {
+          "date": "2023-02-25",
+          "quote": "prove inference with validity proofs posted on Ethereum"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-contribution",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Believes anyone should be able to proactively contribute to a protocol or DAO and be retroactively compensated in proportion to value created; calls it essential for long-term DAO success.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-24",
+          "quote": "I'm very excited about the idea of permissionless contribution."
+        },
+        {
+          "date": "2022-07-29",
+          "quote": "permissionless contribution is an idea i believe is essential for the long term success of daos"
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Strongly aligned with network- and value-level privacy as essential internet infrastructure; actively backs and champions projects like Nym and studies Aleo.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-15",
+          "quote": "@nymproject will enable essential network level privacy for crypto, web3, and the broader Internet"
+        },
+        {
+          "date": "2022-09-29",
+          "quote": "It's fascinating to see scaled L1 privacy with ZKPs!"
+        }
+      ]
+    },
+    {
+      "item": "token-value-accrual",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 77,
+      "horizon": "structural",
+      "rationale": "Frames tokens as multi-dimensional value carriers vs. scalar dollars, preserving design-space high dimensionality and enabling new human coordination.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-13",
+          "quote": "Tokens are value vectors. Dollars are value scalars"
+        },
+        {
+          "date": "2022-06-08",
+          "quote": "We believe tokens are the native asset of the Internet, and they're enabling new methods of human coordination"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Considers on-chain lending an essential DeFi primitive; led/championed Morpho's peer-to-peer matching atop pooled liquidity as a Pareto improvement in rates and capital efficiency.",
+      "provenance": "grounded",
+      "age_note": "Core conviction from 2022-07 investment; reaffirmed via 2022-11 integration praise, so persisted and still live.",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "on-chain lending is an essential DeFi primitive, but users must choose between pooled liquidity or full order books"
+        },
+        {
+          "date": "2022-11-17",
+          "quote": "Fantastic news that @MorphoLabs is now integrated with @Instadapp"
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Wants to move past 'not your keys, not your crypto' via MPC, smart-contract wallets, and policy-defined custody; backed Entropy to make secure self-sovereign custody accessible.",
+      "provenance": "grounded",
+      "age_note": "Stated around 2022-06 Entropy seed; not restated in 2023, so persisted at ~10 months old.",
+      "citations": [
+        {
+          "date": "2022-06-08",
+          "quote": "Entropy has the potential to bring decentralization to custody, allowing permissionless, secure, and efficient access to almost any token"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Emerging excitement: crypto as the mechanism for distributing already-present AGI and aligning incentives at software speed; muses on token-coordinated AI-owned protocols.",
+      "provenance": "extrapolated",
+      "age_note": "Newest theme (2023-02/03), expressed speculatively/playfully rather than as firm thesis.",
+      "citations": [
+        {
+          "date": "2023-03-24",
+          "quote": "crypto is how we get along as the AGI that's already here becomes more evenly distributed"
+        },
+        {
+          "date": "2023-02-25",
+          "quote": "store an LLM on Filecoin/Arweave ... prove inference with validity proofs ... create a DAO to own/operate"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Notes convergence of scaling approaches \u2014 L3s/hyperchains echoing appchains, restaking overlapping mesh security \u2014 across Ethereum and Cosmos.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-08",
+          "quote": "L3s (also called hyper chains) can solve many of the same challenges as L1 appchains. Restaking and mesh security also seem to overlap"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Predicts a 'metagame token' as the DeFi-governance equivalent for player-owned games, with on-chain logic enabling true decentralization.",
+      "provenance": "persisted",
+      "age_note": "Most developed in 2021-10 through 2022-04; not restated in 2023, so aging/persisted.",
+      "citations": [
+        {
+          "date": "2021-10-29",
+          "quote": "I believe the DeFi governance token equivalent for games will become the metagame token."
+        },
+        {
+          "date": "2022-04-26",
+          "quote": "On-chain games could allow many different win conditions for different sets of players."
+        }
+      ]
+    },
+    {
+      "item": "network-layer-censorship",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Worries that centralization at the networking layer lets DNS providers and ISPs censor large portions of most crypto networks \u2014 an under-addressed vulnerability.",
+      "provenance": "grounded",
+      "age_note": "Stated 2022-07; consistent with ongoing privacy/networking focus, treated as persisted concern.",
+      "citations": [
+        {
+          "date": "2022-07-24",
+          "quote": "centralization at the network level that would allow DNS providers and ISPs to censor large portions of most crypto networks"
+        }
+      ]
+    },
+    {
+      "item": "contribution-quality-evaluation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Even while excited about retroactive permissionless rewards, he flags that fairly assessing the value of a contribution after the fact is unsolved and gameable by malicious parties.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-25",
+          "quote": "the open question for permissionless contribution is how to evaluate the quality and value created of a contribution after the fact"
+        }
+      ]
+    },
+    {
+      "item": "decentralization-efficiency-cost",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Repeatedly stresses decentralization is always less efficient than centralization; the cost must be justified and someone must bear it, which gates which projects can win.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-10-22",
+          "quote": "Decentralization is always less efficient than centralization. Why is this cost worth paying, and who will bear it?"
+        }
+      ]
+    },
+    {
+      "item": "modular-da",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Concerned that with EIP-4844 blobs few validators actually persist data and instead query a small set of RPC providers, which is centralizing.",
+      "provenance": "persisted",
+      "age_note": "Raised 2022-05; not restated since, so aging.",
+      "citations": [
+        {
+          "date": "2022-05-24",
+          "quote": "If only a few nodes actually store blob data it's centralizing"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Treats MEV as an unsettled core problem, framing the tension between market-based and privacy-based solutions without a clear resolution.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-28",
+          "quote": "the bartender asks them how to solve MEV ... privacy can't prevent information asymmetry ... markets can't"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Endorsed Solana as the venue for highest-throughput, atomically composable on-chain execution, specifically for fully on-chain games.",
+      "provenance": "persisted",
+      "age_note": "Single mention 2022-01-14, never restated; old and low-weight.",
+      "citations": [
+        {
+          "date": "2022-01-14",
+          "quote": "great to see some teams chose @solana for the highest throughput atomically composable execution environment"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "His posture is builder-optimism, not asset-price timing. He reads the early-2023 environment as a bottom-of-cycle building phase ('hard times create decentralized protocols'), called ETH Denver a 'whitepill', and explicitly advocates indulging optimism. He almost never makes price/trading calls; his risk-taking is conviction in long-horizon protocol/infrastructure theses (DePIN, ZK, decentralized verification) rather than near-term market direction.",
+    "provenance": "grounded"
+  },
+  "notes": "View synthesized from Guy Wuollet's a16z-crypto-aligned tweets; most-recent (2023 Q1) statements weighted highest. His public voice is thesis/infrastructure-oriented, not market-tactical \u2014 he rarely names specific tokens to long/short and makes no bearish token calls, hence the empty tokens_concerned and a single low-conviction persisted token (Solana). Strongest current excitement clusters around DePIN, decentralized verification, ZKPs, permissionless contribution, and tokens-as-value-vectors. Crypto x AI is the newest and most speculative thread (2023-02/03), expressed playfully. No material reversals detected: positions are additive over time; older themes (on-chain games/metagame tokens, blob DA centralization, custody) are marked persisted/aging because they were not restated in 2023. Everything is structural; he shows little tactical/trading horizon. All quotes truncated to <=25 words with ISO dates."
+}

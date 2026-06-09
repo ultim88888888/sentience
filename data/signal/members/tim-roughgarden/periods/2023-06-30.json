@@ -1,0 +1,266 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "His most intense recent focus; spent months producing a deep video series on PoS sybil-resistance blended with BFT/longest-chain consensus, calling it an obsession.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-05-13",
+          "quote": "Preview of the Foundations of Blockchains pipeline (proof-of-stake really drew out my obsessive side...)"
+        },
+        {
+          "date": "2023-06-09",
+          "quote": "Final batch (of 4) of proof-of-stake videos out now (topics: pros and cons of slashing; long-range attacks...)"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sustained, active research line introducing LVR as the right measure of LP loss and formalizing AMM complexity-vs-expressivity tradeoffs; still publishing here.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-27",
+          "quote": "Expanded version of the original LVR paper, which fleshes out the many connections to option pricing and adds an empirical analysis"
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "New work...formalizing the intuitive trade-off between an AMM's complexity...and its expressivity"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Sees succinct proofs as near-magical computational compression and a key piece of web3 infra; explicitly excited to watch SNARK storylines unfold.",
+      "provenance": "persisted",
+      "age_note": "Peak enthusiasm Aug 2022; not restated with the same intensity since, but consistent with later L2/rollup framing and never reversed.",
+      "citations": [
+        {
+          "date": "2022-08-11",
+          "quote": "Excited to watch how all the SNARK-related storylines are going to play out--the suspense is killing me!"
+        },
+        {
+          "date": "2022-08-11",
+          "quote": "The fact that you can compress arbitrary computations in this way is shocking, IMO."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Frames cryptoeconomics as mechanism design with a native currency and lays out 'grand challenges' (optimal L1 incentives, monetary policy) he wants the field to own.",
+      "provenance": "grounded",
+      "age_note": "Core program articulated Nov 2022; reinforced by Jan 2023 EIP-1559 commentary and May 2023 Lecture 11.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #2: Optimal layer-1 incentives. (Holy grail: matching possibility and impossibility results as complete as in the theory of consensus protocols.)"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "Many problems in cryptoeconomics can be viewed as mechanism design (\"inverse game theory\") with access to a native currency."
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Explicitly named DAG-based consensus the most exciting consensus development of 2022; hosted multiple seminars on Narwhal/Tusk/Bullshark and Cordial Miners.",
+      "provenance": "persisted",
+      "age_note": "Stated Oct 2022 and not restated since; ~8 months old as of analysis date but never contradicted.",
+      "citations": [
+        {
+          "date": "2022-10-21",
+          "quote": "One of the most exciting developments in consensus protocols in 2022 has been the recent advances in DAG-based consensus."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Newest research thread: auction theory when bids represent group preferences (DAOs) rather than individuals \u2014 a frontier he's just opened.",
+      "provenance": "grounded",
+      "age_note": "Brand-new as of the analysis date (single most recent statement).",
+      "citations": [
+        {
+          "date": "2023-06-30",
+          "quote": "New paper...showing that auction theory gets tricky when bids represent the preferences of groups (e.g., DAOs) rather than individuals"
+        }
+      ]
+    },
+    {
+      "item": "web3-paradigm-education",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Foundational thesis driving his whole research lab: blockchains are virtual computers anyone can use, a new multidisciplinary field blossoming in real time.",
+      "provenance": "grounded",
+      "age_note": "Recurring thesis from early 2022 through mid-2023; durable, not time-sensitive.",
+      "citations": [
+        {
+          "date": "2022-04-09",
+          "quote": "Blockchains are (virtual) computers, not databases."
+        },
+        {
+          "date": "2022-04-21",
+          "quote": "witnessing a new multidisciplinary field (spurred by web3) blossom before our eyes. There are enormous opportunities to shape this field"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Open question whether MEV is fundamental to any decentralized smart-contract platform or merely an artifact of current designs \u2014 flags it as an unresolved grand challenge.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "is MEV fundamental to any decentralized smart contract platform or an artifact of current designs?"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Notes EIP-1559's incentive-compatibility breaks down at excessively low base fees \u2014 and that this is fundamental to blockspace allocation, not a fixable design quirk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-06",
+          "quote": "breakdown of EIP-1559's incentive-compatibility in the event of an excessively low base fee is fundamental to the blockspace allocation problem"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Argues impermanent loss understates LP losses; arbitrageurs systematically extract value from LPs, quantified by LVR \u2014 a structural concern for passive liquidity provision.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-08",
+          "quote": "IL is not the best loss measure...arb profits (which come at the expense of LPs) clearly do (and LVR characterizes these)"
+        },
+        {
+          "date": "2023-06-27",
+          "quote": "adds an empirical analysis of LVR on the Uniswap v2 USDC-wETH pool"
+        }
+      ]
+    },
+    {
+      "item": "web3-discourse-misinformation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Repeatedly frustrated that even smart people conflate the technology, behavior, and investment questions; sees urgent need to educate people to think clearly about web3.",
+      "provenance": "grounded",
+      "age_note": "Stated strongly April 2022; consistent with his ongoing heavy educational output through 2023, not reversed.",
+      "citations": [
+        {
+          "date": "2022-04-03",
+          "quote": "there's a lot of urgent work to do educating people to think clearly about web3. I plan to do my part"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "His recent PoS deep-dive foregrounds long-range attacks and the open game-theory of slashing as unresolved hard problems in proof-of-stake security.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-09",
+          "quote": "pros and cons of slashing; long-range attacks and what to do about them"
+        },
+        {
+          "date": "2022-10-02",
+          "quote": "Formal game theory/mechanism design around slashing largely an open question IMO."
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Proved permissionless consensus is fundamentally harder than permissioned, with PoW/PoS protocols forced into weaker liveness/consistency tradeoffs (CAP-style impossibilities).",
+      "provenance": "persisted",
+      "age_note": "Core result from Jan 2022; foundational and reaffirmed throughout the lecture series, but the original framing is ~18 months old.",
+      "citations": [
+        {
+          "date": "2022-01-21",
+          "quote": "permissionless consensus is fundamentally more difficult than permissioned consensus!"
+        },
+        {
+          "date": "2022-12-19",
+          "quote": "No proof-of-work protocol satisfies both liveness in the synchronous model and consistency in the partially synchronous model"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Roughgarden deliberately and repeatedly refuses to take market/price positions, classifying 'which should I buy, BTC or ETH' as investment advice for a financial advisor, outside his domain as a computer scientist. His public output is entirely research and education on protocol mechanics, not asset allocation.",
+    "provenance": "grounded"
+  },
+  "notes": "Caveat on corpus type: this is an academic/educational corpus, not an investor's. Roughgarden expresses 'excitement' about research areas and technologies, never about tokens as investments. He explicitly partitions questions into how-the-tech-works (his lane), human behavior (social scientists), and what-to-buy (financial advisors) \u2014 see 2022-04-03 \u2014 and stays firmly in the first. Tokens: he mentions BTC and ETH only as teaching examples, never as buy/sell ideas. The one near-market observation is structural, not directional: he notes ETH is 'likely deflationary in the long run' as a consequence of EIP-1559's burn (2022-11-19), and that Bitcoin's hard supply cap drives microeconomic effects like undercutting re-org attacks as block rewards go to zero (2022-11-19) \u2014 both stated as mechanism-design analysis, not price calls, so tokens arrays are intentionally empty. Recency weighting: his most current intensities (May-June 2023) cluster on proof-of-stake design, AMM/LVR economics, and DAO auction theory; SNARK and DAG-consensus enthusiasm are slightly older (2022) but never reversed, hence marked persisted. No genuine stance reversals were found in the corpus \u2014 his views are cumulative and consistent."
+}

@@ -1,0 +1,253 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Core thesis of his book and career: blockchains/tokens are the only plausible path to an open internet that returns ownership to users and away from Big Tech; he frames the space as still in 'early innings.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-30",
+          "quote": "I wrote Read Write Own because I felt we needed a book that explains the full potential of blockchains and tokens"
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "Crypto/web3 is still in the early innings, and needs clear regulations to provide an open pathway for startups to build"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "His most concrete recent investing conviction: $40M into CCP Games' EVE AAA title and a seed into Proof of Play, betting on composability, player ownership, modding, and autonomous worlds as native blockchain use cases.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-21",
+          "quote": "I\u2019m thrilled to share that @a16z is leading a $40M investment in @CCPGames\u2019 new AAA gaming project set in the EVE Universe."
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "Excited to announce that we\u2019re leading a seed investment in @ProofOfPlay, an on-chain game studio and tech company"
+        }
+      ]
+    },
+    {
+      "item": "composability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He treats composability and open source as the structural advantage of crypto-native systems \u2014 players/developers own assets and build on top of each other \u2014 and a recurring framework in his book and talks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "committed to building a future with composability, interoperability, and permanence at the core of gameplay"
+        },
+        {
+          "date": "2024-04-03",
+          "quote": "composability & open source software"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Personally an active Farcaster user and repeatedly highlights its community as superior to incumbent social media; consistent with his vision of user-owned networks replacing extractive platforms.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-18",
+          "quote": "I use Farcaster all the time. The community is far better than on Twitter."
+        },
+        {
+          "date": "2024-02-16",
+          "quote": "Some of my favorite mentions from the Farcaster community"
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Continues to actively promote a forward-looking 'vision for NFTs' on the book tour, treating them as durable infrastructure for ownership rather than a faded fad.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-15",
+          "quote": "Thanks @msuster for hosting me at Upfront Summit to talk about Read Write Own... my vision for NFTs, and more"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Backed Gensyn (decentralized compute) and frames AI as a key intersecting application area in his book; sees crypto rails as relevant to AI, though expressed less frequently than gaming.",
+      "provenance": "grounded",
+      "age_note": "AI emphasis appears mainly via the June-2023 Gensyn deal and book framing; not heavily restated in 2024 statements.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "today we announced our newest investment in UK-based @gensynai"
+        },
+        {
+          "date": "2024-01-18",
+          "quote": "Sure, timelines in tech are hard to predict. I also thought AI would come sooner."
+        }
+      ]
+    },
+    {
+      "item": "vr-spatial-computing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Expressed enthusiasm that VR would follow the standard computing-platform cost-curve once Apple and Meta invested; a platform-trend bet rather than a crypto thesis.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2023-06-05 (Vision Pro launch) and never restated in the following year; treat as a persisted, aging view.",
+      "citations": [
+        {
+          "date": "2023-06-05",
+          "quote": "Excited for Vision Pro. With Meta and now Apple investment, VR will follow the same pattern as past computing platforms"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 92,
+      "horizon": "tactical",
+      "rationale": "His single most-repeated concern: without comprehensive legislation (FIT21, SAB121 repeal) well-intentioned US startups face crippling compliance costs and bad actors thrive; intensified through mid-2024 with the SAB121 veto.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-01",
+          "quote": "It\u2019s more clear than ever that we need to get comprehensive crypto legislation passed into law this year."
+        },
+        {
+          "date": "2024-05-22",
+          "quote": "an important step in providing long-awaited regulatory clarity for crypto, protecting U.S. consumers, and promoting American innovation"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Repeatedly disavows the speculative, casino culture around crypto as harmful to public perception and to the technology's productive potential \u2014 a dedicated part of his book is devoted to it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "stamping out the harmful \u201ccasino\u201d culture that has developed around crypto"
+        },
+        {
+          "date": "2024-01-11",
+          "quote": "the harmful casino culture that has developed around blockchains that hurts their public perception and undermines their potential"
+        }
+      ]
+    },
+    {
+      "item": "memecoin-favoring-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "tactical",
+      "rationale": "His most recent pointed critique: current US rules let only memecoins flourish while companies and tokens with productive uses face hurdles \u2014 backward incentives that need a regulatory pathway to fix.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "the backward incentives of a regulatory regime in the US that lets only memecoins thrive \u2014 while companies and tokens with more productive uses face hurdles"
+        },
+        {
+          "date": "2024-04-19",
+          "quote": "Yes, but you need a regulatory pathway to expand it beyond a toy"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Frames the strategic stakes as wresting the internet's future away from Big Tech, and sees big-bank and big-tech lobbies as the political force crypto must counter to survive.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-18",
+          "quote": "the only way to counteract the lobbies of the big banks and big tech is to show that crypto and blockchain can be a force, too"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "tactical",
+      "rationale": "He neither defends nor diminishes memecoins per se, but is concerned they are the only token category the current US regime lets thrive, crowding out more productive tokens; he views them as a 'toy' absent a regulatory pathway.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "My goal isn't to defend or to diminish memecoins... a regulatory regime in the US that lets only memecoins thrive"
+        },
+        {
+          "date": "2024-04-19",
+          "quote": "Yes, but you need a regulatory pathway to expand it beyond a toy"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Dixon is structurally and durably bullish on crypto/web3, describing it as 'early innings,' publishing a manifesto, expanding a16z internationally, and deploying large checks into gaming and infra \u2014 all long-horizon conviction bets. His risk-on posture is explicitly conditioned on regulatory clarity and a rejection of short-term speculative 'casino' froth, so it is builder-optimism rather than indiscriminate market bullishness.",
+    "provenance": "grounded"
+  },
+  "notes": "View is heavily structural/long-horizon and centered on his 2024 book Read Write Own. Strongest, most concrete excitement is web3 gaming/virtual worlds (CCP, Proof of Play) and decentralized social (Farcaster, used personally). No individual fungible tokens are named as buys \u2014 he discusses tokens as a category, so tokens_excited is empty by evidence. The dominant 2024 theme is policy: regulatory clarity is simultaneously his biggest concern and the precondition for his risk-on stance, sharpening notably from May\u2013June 2024 (FIT21 passage, SAB121 veto). The memecoin critique (April 2024) is his most recent token-specific statement. VR/Vision Pro is an aging one-off (2023-06-05) outside his crypto core and flagged as persisted."
+}

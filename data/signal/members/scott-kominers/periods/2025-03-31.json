@@ -1,0 +1,292 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "nft-brands-community",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 93,
+      "horizon": "structural",
+      "rationale": "His central thesis (and book): NFTs give people ownership/identity, bridge physical-digital, and let brands build community; he sees them becoming everyday brand infrastructure, not just art.",
+      "provenance": "grounded",
+      "age_note": "Stated since 2023-12 and continuously restated through 2025-03; current and reinforced, not stale.",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "NFTs are poised to become ubiquitous brand assets in 2024"
+        },
+        {
+          "date": "2024-12-10",
+          "quote": "three steps of the NFT staircase -- ownership, utility, and identity -- within fewer than 60 seconds of opening the pack"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He views IP as a huge, market-failure-ridden market and sees an on-chain programmable IP layer (esp. Story Protocol) as the most exciting infrastructure innovation he's seen in 15 years, especially given generative-AI remixing.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "I don't think I've ever seen an infrastructure innovation that excites me as much as @StoryProtocol"
+        },
+        {
+          "date": "2024-02-21",
+          "quote": "I'm extremely excited see what having a programmable onchain IP layer can unlock"
+        }
+      ]
+    },
+    {
+      "item": "web3-platform-competition",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He believes user ownership of data plus cross-platform wallet portability can disrupt monolithic web platforms, intensify competition, and shift network effects to assets/protocols rather than walled gardens.",
+      "provenance": "grounded",
+      "age_note": "Core stance from 2024-01 restated through 2025-01; persistent and current.",
+      "citations": [
+        {
+          "date": "2024-01-22",
+          "quote": "Web3 has the potential to disrupt the monolithic power of today's top web platforms. It's not inevitable, but it's definitely real."
+        },
+        {
+          "date": "2025-01-17",
+          "quote": "blockchains... give people ownership and portability of their digital assets has the potential to significantly increase web platform competition"
+        }
+      ]
+    },
+    {
+      "item": "low-fee-blockchains",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Cheap, high-throughput L2 transactions make large-scale, low-friction onchain collectibles and consumer experiences finally viable \u2014 a precondition he flagged years earlier now realized.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-18",
+          "quote": "once transaction fees got small enough, blockchains would enable all manner of low-cost digital collecting experiences"
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "His 2025 a16z 'Big Idea' is an emerging renaissance of information aggregation; he repeatedly engages prediction markets and strategic-voting/pivotality as serious, valuable mechanisms.",
+      "provenance": "grounded",
+      "age_note": "Most recent (Dec 2024) framing; freshest signal in this area.",
+      "citations": [
+        {
+          "date": "2024-12-04",
+          "quote": "Mine for this year is about the emerging renaissance of information aggregation"
+        },
+        {
+          "date": "2024-11-22",
+          "quote": "Had a great time talking prediction markets and beyond with... @ATabarrok and @smc90!"
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He pushes a rigorous framework for token classification and dynamic monetary policy, treating tokenomics as evolving market design rather than fixed-at-launch parameters.",
+      "provenance": "grounded",
+      "age_note": "Token-definition framework is his most recent crypto output (Mar 2025); current.",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "not all tokens are created equal... a framework for how a token's economic and network foundations shape its value and legal treatment"
+        },
+        {
+          "date": "2024-09-19",
+          "quote": "With token design, monetary policy evolving over time should be the default."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "He wants competition in social media and sees decentralized, protocol-based social (e.g., Farcaster) plus onchain identity verification against AI fakes as the path.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-01",
+          "quote": "The need for competition in the social media market is a big part of why I'm excited about decentralized social media protocols"
+        }
+      ]
+    },
+    {
+      "item": "desci",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 63,
+      "horizon": "structural",
+      "rationale": "Long-standing fascination (from work with Gary Becker) with sharing research returns to patients; sees blockchain solving infrastructure/access barriers in health-data marketplaces.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-25",
+          "quote": "Many ideas for these marketplaces have been explored, but they've faced fundamental infrastructure and access challenges -- which @Amino_Chain is using blockchain... to hopefully solve"
+        }
+      ]
+    },
+    {
+      "item": "regulation-by-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "He repeatedly argues that vague enforcement-driven rules harm innovation; favors clear, principles-based regulation (FIT21) so builders aren't left guessing what's a security.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-18",
+          "quote": "maybe we should end regulation-by-enforcement"
+        },
+        {
+          "date": "2024-05-22",
+          "quote": "FIT21 is a huge step forward for blockchain and crypto technology"
+        }
+      ]
+    },
+    {
+      "item": "content-moderation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "His research argues platforms are structurally ill-positioned to solve misinformation; well-meaning moderation can backfire when users distrust the platform \u2014 they should target harm-enabling content instead.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-22",
+          "quote": "it's not one that platforms aren't well-positioned to solve... attempts to moderate misinformation can backfire"
+        }
+      ]
+    },
+    {
+      "item": "rigid-tokenomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He warns that copying the Bitcoin precedent of fixing token supply/emissions up front is usually wrong because money demand and ecosystem dynamics change over time.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-19",
+          "quote": "Owing in part to the Bitcoin precedent, many projects try to fix their entire tokenomic design... But that's rarely the right path."
+        }
+      ]
+    },
+    {
+      "item": "immature-fraudulent-business-models",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "He concedes much of current web3 is unsustainable or outright fraudulent \u2014 like the early Internet \u2014 and stresses the need for frameworks supporting high-quality actors.",
+      "provenance": "grounded",
+      "age_note": "From Jan 2024, reaffirmed Aug 2024; persists as a measured caveat alongside his bullishness.",
+      "citations": [
+        {
+          "date": "2024-01-11",
+          "quote": "many of the business models people have been experimenting with are unsustainable at best, and outright fraudulent at worst"
+        }
+      ]
+    },
+    {
+      "item": "proof-of-personhood",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "He flags rising account compromise and AI-generated fakes as a first-order risk, arguing for self-custodied, interoperable onchain identity assets you alone control.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "we're seeing increasingly many issues with account compromise in both infrastructure providers and application platforms like social media"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "He is dismissive of memecoins as low-substance, viral-by-nature instruments \u2014 explicitly likening them to chain emails rather than value-creating assets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-04",
+          "quote": "Memecoins are the crypto equivalent of chain emails."
+        }
+      ]
+    },
+    {
+      "item": "company-backed-network-tokens",
+      "item_type": "token",
+      "parent_sector": "disguised-equity-tokens",
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "He warns these are categorically different from genuine network tokens and conflating them misleads on value and legal treatment.",
+      "provenance": "grounded",
+      "age_note": "Most recent token view (Mar 2025); current.",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Company-backed tokens are *not* network tokens. Here's a framework for understanding the difference"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "As an a16z crypto researcher and active builder/collector, he is structurally bullish on web3/NFTs/tokens/IP infrastructure as genuinely disruptive \u2014 while explicitly hedging that the upside is 'real' but 'not inevitable' and that today's market is immature. Net: long-horizon risk-on with eyes open, not speculative euphoria.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers' public corpus is dominated by personal/NFT-collecting and Covid-policy content; market views were extracted from his a16z/professional statements. He rarely endorses specific tokens (hence empty tokens_excited) \u2014 his enthusiasm attaches to categories, infrastructure (esp. Story Protocol), and mechanisms, consistent with his market-design lens. His excitement is remarkably stable and continuously restated 2023-12 through 2025-03, so most entries are current/grounded rather than persisted-but-stale. Concerns are framed as design/regulatory caveats within an overall constructive posture rather than bearishness. Pervasive non-market themes (Covid mitigation, math/puzzles, recreational NFT collecting) were excluded as not constituting market views."
+}

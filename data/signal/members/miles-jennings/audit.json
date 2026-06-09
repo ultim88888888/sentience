@@ -1,0 +1,23 @@
+[
+  {
+    "as_of": "2022-12-31",
+    "checked": 0,
+    "matched": 0,
+    "hallucinated": 0,
+    "leaked": 0
+  },
+  {
+    "as_of": "2023-09-30",
+    "checked": 40,
+    "matched": 38,
+    "hallucinated": 2,
+    "leaked": 0
+  },
+  {
+    "as_of": "2024-12-31",
+    "checked": 0,
+    "matched": 0,
+    "hallucinated": 0,
+    "leaked": 0
+  }
+]

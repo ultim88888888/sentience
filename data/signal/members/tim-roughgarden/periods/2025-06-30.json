@@ -1,0 +1,203 @@
+{
+  "as_of": "2025-06-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "His newest research thrust \u2014 building theoretical foundations for verifying that agreed-upon physical services/resources are actually being provided. Represents a fresh problem area he's actively staking out.",
+      "provenance": "grounded",
+      "age_note": "Most recent topic in the corpus (June 2025); just-launched research, momentum rising.",
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "New paper ... developing some of the foundations for DePIN (decentralized physical infrastructure) networks, and specifically the key problem of verifying ... services/resources are indeed being provided"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His core, sustained research program: formal possibility/impossibility results for permissionless PoS consensus (partial synchrony, accountability, optimistic responsiveness, the quasi-permissionless setting). Treats this as foundational and durable.",
+      "provenance": "grounded",
+      "age_note": "Heavily threaded across early-to-mid 2024 and still active via the May 2025 liveness paper and Dec 2025 Columbia workshop \u2014 sustained, not stale.",
+      "citations": [
+        {
+          "date": "2024-01-10",
+          "quote": "this is the first complete proof of consistency and liveness for a permissionless protocol in the partially synchronous setting"
+        },
+        {
+          "date": "2024-11-02",
+          "quote": "New two-hour tutorial by @AndrewLewisPye on our \"Permissionless Consensus\" paper"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Long-running line of work; celebrated resolving the open question that no TFM can be simultaneously DSIC, MMIC, and OCA-proof, and extended TFM design to a post-MEV world with active block producers and searchers.",
+      "provenance": "grounded",
+      "age_note": "Most intense in early 2024 (~16-18 months old); related blockspace-market talks continued into Dec 2024/Jan 2025.",
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        },
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper ... on transaction fee mechanism design in a post-MEV world (i.e., with active block producers), now with searchers"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Recent work on attributing blame when a protocol stalls (liveness violation) \u2014 a complement to his safety/slashing accountability research.",
+      "provenance": "grounded",
+      "age_note": "May 2025 paper \u2014 recent and current.",
+      "citations": [
+        {
+          "date": "2025-05-01",
+          "quote": "When a blockchain protocol stalls (i.e., has a liveness violation), which validators should be held accountable? See this new paper"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Built a framework to reason about when validators can be safely reused across services, defining an 'overcollateralization factor' as an exposable robustness measure. He's interested in making restaking analyzable, though the work is fundamentally risk-focused (see concerns).",
+      "provenance": "grounded",
+      "age_note": "Aug-Sep 2024 (~10 months old); reinforced with an SBC talk but not restated in 2025.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "New paper with @n_durvasula offers a framework to reason about the risks of restaking. Key question: Under what conditions can validators be safely reused across multiple services?"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Active theory work on PBS and on Tullock-contest framing of mining, staking, execution tickets, and shared sequencing.",
+      "provenance": "grounded",
+      "age_note": "Spanning 2024, latest EC talk posted Dec 2024 (~6 months old).",
+      "citations": [
+        {
+          "date": "2024-01-24",
+          "quote": "Toward a theory of proposer-builder separation (with @bahrani_maryam and @PGarimidi)"
+        },
+        {
+          "date": "2024-12-13",
+          "quote": "Covers mining, staking, execution tickets, shared sequencing. Includes ongoing work with @PGarimidi @mikeneuder"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Tutorials and pedagogy on automated market makers, arbitrage, and loss-versus-rebalancing \u2014 signaling sustained interest in DeFi exchange design.",
+      "provenance": "grounded",
+      "age_note": "EC '24 tutorial, videos posted Dec 2024; not a 2025 focus.",
+      "citations": [
+        {
+          "date": "2024-12-12",
+          "quote": "Videos from my LVR tutorial with @jason_of_cs @ciamac at EC '24 last summer are up!"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "His impossibility results show slashing cannot achieve its intended purpose if message delays can't be bounded a priori; in dynamically available and partially synchronous settings an adversary big enough to break consistency can evade targeted punishment.",
+      "provenance": "grounded",
+      "age_note": "May 2024 (~13 months old) but central and unretracted.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "once an adversary is big enough to cause a consistency violation, it is big enough to evade targeted punishment"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Restaking makes security combinatorial; a small stake shock can cascade into far larger losses, bounded only by the network's overcollateralization buffer. He frames restaking as a genuine systemic-risk surface.",
+      "provenance": "grounded",
+      "age_note": "Aug 2024 (~10 months old); not restated in 2025.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "if attack costs always exceed attack profits by 10%, then a sudden loss of .1% of the overall stake cannot result in the ultimate loss of more than 1.1%"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "the maximum-possible length of a cascade of attacks is also governed by the overcollateralization factor"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Proved that in-protocol defenses against long-range attacks require exotic primitives (VDFs, ephemeral keys); absent those, PoS chains must lean on out-of-protocol 'social consensus.' He flags this as a fundamental PoS vulnerability.",
+      "provenance": "grounded",
+      "age_note": "Jan 2024 (~18 months old); oldest concern cluster, never reversed but not restated since.",
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks without any out-of-protocol assistance"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Roughgarden is a protocol theorist; across 18 months he expresses no market direction, price, allocation, or risk-appetite view. He references Ethereum, Bitcoin, Algorand, Chia, and Avalanche only as analytical examples of protocol designs, never as investments. Inferring a bullish/bearish posture would be unsupported.",
+    "provenance": "grounded"
+  },
+  "notes": "This is the individual view of a research scientist, not an investor or trader \u2014 read accordingly. The corpus is ~95% academic mechanism-design and consensus-theory content; 'excitement' and 'concern' here denote research engagement and identified vulnerabilities, NOT investment theses. No tokens appear as positions: protocol names (Ethereum, Bitcoin, Algorand, Chia, Avalanche) are cited purely as design exemplars, so tokens_excited/tokens_concerned are empty by design rather than omission. Recency signal: the clear forward-looking momentum is toward DePIN foundations (June 2025) and liveness accountability (May 2025); his deepest/most sustained body of work is permissionless PoS consensus theory and transaction-fee-mechanism design. No stance reversals detected in the corpus \u2014 older positions (long-range attacks Jan 2024, slashing limits May 2024, restaking risk Aug 2024) are consistent with, and built upon by, later work rather than contradicted. Convictions reflect intensity of intellectual engagement, not market conviction."
+}

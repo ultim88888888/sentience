@@ -1,0 +1,233 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Sees stablecoins as the cheapest rail to move money and confidential stablecoin payments as a missing core primitive; repeatedly backs builders in this lane (Circle/Aleo, Catena, SamBroner).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-09",
+          "quote": "The ability to make private confidential stablecoin payments is a critical missing primitive in crypto."
+        },
+        {
+          "date": "2026-03-31",
+          "quote": "Excited to have the opportunity to work with @SamBroner again! Right product. Right time."
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His dominant recent thesis: crypto has entered an 'enterprise era' where institutional/Fortune 500 buyers and a real sales organization\u2014not just code\u2014decide the winners.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-03-11",
+          "quote": "This is especially true now that we've entered the enterprise adoption era of crypto."
+        },
+        {
+          "date": "2025-10-01",
+          "quote": "Crypto has exited the echo chamber and entered the enterprise."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes AI needs blockchain for trust, verifiable compute, and incentive rails; actively backs Gensyn, Yupp, Catena, PIN AI; sees crypto as the 'trust machine' for AI evaluation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-08",
+          "quote": "Congrats to @gensynai on today's testnet launch of Delphi!"
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "Crypto is the trust machine that can help deliver it."
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Names bringing real-world assets onchain to reduce friction and expand markets as a category that is 'obviously cooking.'",
+      "provenance": "persisted",
+      "age_note": "Stated 2025-08-06 and not explicitly restated since; conviction inferred as durable but not freshly reaffirmed.",
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Bringing real world assets onchain to reduce friction and expand markets (RWA tokenization)"
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Frames today's fast, cheap, scalable chains as 'internet circa 2005' / the public-cloud explosion moment; excited about multichain infra, cross-chain programmability and app-specific blockchains.",
+      "provenance": "grounded",
+      "age_note": "Core 'internet 2005' framing is mid-2025; reinforced by 2026-02 (Jolt/LayerZero proving) and 2026-03 (Mysten Hashi) endorsements.",
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Crypto & Blockchain infra today = Internet circa 2005."
+        },
+        {
+          "date": "2026-02-10",
+          "quote": "Layer Zero saw that Jolt was best path to real-time proving, and jumped in to Jolt Pro."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Sees latest-gen wallets (slick UX, mini-apps, social/invite primitives) and no-compromise decentralized messaging (XMTP) as virality unlocks akin to early social networks.",
+      "provenance": "persisted",
+      "age_note": "Articulated 2025-07-17; not explicitly restated in 2026 statements.",
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Latest gen self custodial wallets: Slick UX, seamless login, mini apps & packed with social primitives"
+        }
+      ]
+    },
+    {
+      "item": "falling-unit-cost-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Holds a structural belief that once a fundamental service's unit cost drops far enough, markets expand to previously-excluded users rather than contract \u2014 his frame for crypto's adoption ceiling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-22",
+          "quote": "When the unit cost of a fundamental service drops far enough, the market does not contract. It reaches everyone the old cost structure had excluded."
+        }
+      ]
+    },
+    {
+      "item": "crypto-idea-reinvention",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "His 'sequels become the greatest hits' thesis: bold ideas that failed early (NFTs beyond PFPs, workable DAOs, crypto-economics for mobile gaming) are now ripe given new infra/UX/regulation.",
+      "provenance": "persisted",
+      "age_note": "From 2025-08-06; framed as exploratory 'ripe for reinvention' areas rather than active bets, and not restated since.",
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "The evolution of NFTs from PFPs to true digital scarcity across games, media, and collectibles; what form will they take next?"
+        }
+      ]
+    },
+    {
+      "item": "enterprise-gtm-weakness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "His most emphatic concern: the belief that a great product 'sells itself' is fatal in the enterprise era; founders who delay building a real sales org lose marquee accounts to inferior products.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-03-11",
+          "quote": "Even the best crypto product in the world will lose to an inferior product with a better sales team."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "tactical",
+      "rationale": "Despite optimism on GENIUS/CLARITY, he warns the legislative win is unfinished and reversible, urging passage of market structure before gains are lost.",
+      "provenance": "grounded",
+      "age_note": "Tone shifted from mid-2025 celebration (GENIUS signing) to early-2026 urgency that the job isn't done.",
+      "citations": [
+        {
+          "date": "2026-01-15",
+          "quote": "Now is the time to pass market structure! \"Freedoms are not easily won, but they are easily lost.\""
+        }
+      ]
+    },
+    {
+      "item": "customer-acquisition-noise",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "tactical",
+      "rationale": "Cold outreach is hard in a saturated market; effective selling now depends on leveraging existing network relationships, a tactical headwind for early-stage GTM.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-03-15",
+          "quote": "Cold outreach is tough in this noisy environment."
+        }
+      ]
+    },
+    {
+      "item": "vibes-over-value",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Skeptical of crypto fads that lack real products used by real people; expects them to wash out, echoing his Webvan\u2192Instacart 'right idea, wrong time/execution' pattern.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "these kinds of fads have a way a of working themselves out once companies realize they need to build real products used by real people"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 88,
+    "rationale": "Persistently and increasingly bullish: he frames crypto as 'internet circa 2005,' celebrates institutional embrace and an arrived 'enterprise era' (Bitcoin ETFs, Circle IPO, Robinhood), and says things are 'only just getting started.' His caution is execution-level (sales, regulation) not directional \u2014 a builder's risk-on posture.",
+    "provenance": "grounded"
+  },
+  "notes": "Jason Rosenthal's public corpus is heavily company-building/accelerator (CSX) advice rather than market calls, so sector views are reconstructed from his investment endorsements and thesis threads. He names no individual tokens or tickers as personal bets \u2014 Bitcoin ETF AUM is cited only as evidence of institutional adoption, not a token view, hence empty token arrays. Strongest and most current signal (2026 Q1) is the 'enterprise adoption era' + sales-execution thesis, which is both his top excitement (enterprise GTM) and top concern (founders ignoring sales). Stablecoins (esp. confidential payments) and crypto\u00d7AI are his most consistently reaffirmed sector enthusiasms across the full window. Policy tone evolved from mid-2025 celebration of GENIUS to early-2026 urgency to finish market-structure legislation. Several 2025 exploratory theses (NFT reinvention, DAOs, wallets, messaging) are marked persisted as they were not restated in 2026."
+}

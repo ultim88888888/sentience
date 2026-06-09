@@ -1,0 +1,309 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees games as the leading edge of web3 adoption, with user-owned game objects flipping the player-game relationship; backing AAA studios building on-chain worlds. His single most recent area of action.",
+      "provenance": "grounded",
+      "age_note": "Most recent corpus action (2023-03-21); consistent theme since 2021-10-23.",
+      "citations": [
+        {
+          "date": "2023-03-21",
+          "quote": "we couldn\u2019t be happier to partner with @CCPGames on the development of their new AAA title"
+        },
+        {
+          "date": "2021-10-23",
+          "quote": "Expect many NFT-based games to launch, developed by founders with backgrounds at top game studios."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Views NFTs as new digital primitives enabling genuine, interoperable user ownership; especially excited about categories web2 underpays like music and creator monetization.",
+      "provenance": "persisted",
+      "age_note": "Peak articulation 2021-12 to 2022-03; not deeply restated in 2023 but consistent with games thesis.",
+      "citations": [
+        {
+          "date": "2021-12-11",
+          "quote": "We are starting to see different varieties of NFTs emerge. Here are 7 types of NFTs I\u2019m excited about."
+        },
+        {
+          "date": "2022-03-06",
+          "quote": "In web3, creators can go direct to their audiences by selling things like NFTs, earning 90% or more"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Believes token incentives solve the chicken-and-egg bootstrapping problem and self-marketing, enabling grassroots networks (telecom, storage) to challenge incumbents without ad spend.",
+      "provenance": "persisted",
+      "age_note": "Core thesis from 2021-10, last restated 2022-03-06.",
+      "citations": [
+        {
+          "date": "2022-03-06",
+          "quote": "A great example of this is Helium, which has used token incentives to build a nationwide grassroots telecom service"
+        },
+        {
+          "date": "2021-10-01",
+          "quote": "Web 3 introduces a powerful new tool for bootstrapping networks: token incentives."
+        }
+      ]
+    },
+    {
+      "item": "composability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Treats composability as the exponential force in software (like compounding in finance), letting components be reused/remixed to accelerate innovation.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-10/11, not restated in 2023.",
+      "citations": [
+        {
+          "date": "2021-10-23",
+          "quote": "One of the most exciting aspects of web3 is the composability of protocols and tokens."
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Argues demand for blockchains will perpetually outpace supply, so many competing infrastructure projects are needed to explore the design space; bullish on Ethereum scaling.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-11; Ethereum merge expectation since fulfilled-direction, not restated 2023.",
+      "citations": [
+        {
+          "date": "2021-11-21",
+          "quote": "demand for blockchains will consistently outpace supply."
+        },
+        {
+          "date": "2021-11-21",
+          "quote": "The more blockchain infrastructure projects, the better."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Sees DAOs as novel coordination constructs for online communities with much design space left to explore for breakthrough products.",
+      "provenance": "persisted",
+      "age_note": "Last articulated 2022-03-06; acknowledged still early.",
+      "citations": [
+        {
+          "date": "2022-03-06",
+          "quote": "DAOs are novel web3 constructs that supercharge online communities by providing more sophisticated coordination methods"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Expects open protocols storing social graphs in a credibly neutral way to bring 'open' back and unlock a wave of new consumer social apps.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-10; old and not restated, but flagged as a category to watch.",
+      "citations": [
+        {
+          "date": "2021-10-23",
+          "quote": "Expect many more experiments with DAOs, social tokens, decentralized social networks, web3 media, and other emerging categories."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Expects web3 earners to keep tokens in DeFi over tradfi banks for better rates/UX, growing the DeFi user base; cites composability in DeFi protocols.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-10; oldest, never restated.",
+      "citations": [
+        {
+          "date": "2021-10-23",
+          "quote": "New web3 users who earn tokens through games and NFTs will likely choose to save those tokens in DeFi protocols"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "tactical",
+      "rationale": "Worries US regulators are taking an adversarial rather than constructive stance, penalizing compliant actors; wants clear rules that protect consumers without driving out innovators. His most recent expressed concern.",
+      "provenance": "grounded",
+      "age_note": "Most recent statement (2023-03-22); newly prominent vs earlier corpus.",
+      "citations": [
+        {
+          "date": "2023-03-22",
+          "quote": "We hope the US will take a more constructive approach to collaborating with innovators while protecting consumers."
+        },
+        {
+          "date": "2023-03-22",
+          "quote": "@coinbase has invested heavily in being fully compliant with US laws even when it forced them to move slower"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Fears the internet calcifies into a few corporate-owned networks (like broadcast TV) that extract via high take rates and leave no room for startups, with entrenched interests fighting new movements.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-01/06; persistent framing, not restated in 2023.",
+      "citations": [
+        {
+          "date": "2022-01-23",
+          "quote": "There is a serious risk the internet turns out like, say, broadcast TV with a few dominant corporate-owned services"
+        },
+        {
+          "date": "2022-06-27",
+          "quote": "Entrenched interests aggressively respond to new movements that might someday threaten them."
+        }
+      ]
+    },
+    {
+      "item": "ad-funded-business-models",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Calls ad-reliance the 'original sin' of the internet, trapping creators in a usability-monetization death spiral; the problem web3 economics aim to fix.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-11; older framing, consistent but not restated 2023.",
+      "citations": [
+        {
+          "date": "2021-11-08",
+          "quote": "Lack of genuine ownership and the reliance on ads was the original sin of the internet."
+        }
+      ]
+    },
+    {
+      "item": "macro-downturn",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "tactical",
+      "rationale": "Acknowledges possible 2008-style downturn and counsels preserving capital and focus, but frames it as financial-cycle noise separable from the product cycle he stays focused on.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-06-27; treated as transient, subordinate to product-cycle conviction.",
+      "citations": [
+        {
+          "date": "2022-06-27",
+          "quote": "If we are headed for an economic downturn, there are some tactical lessons from the 2008 era, namely preserving capital"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the programmable base layer with room for ~500x user growth from ~0.2% of internet users, and demand structurally outpacing supply.",
+      "provenance": "persisted",
+      "age_note": "Stated 2021-11; not restated as a token call in 2023.",
+      "citations": [
+        {
+          "date": "2021-11-21",
+          "quote": "Today, Ethereum has roughly 10M monthly users, which is roughly 0.2% of all internet users."
+        }
+      ]
+    },
+    {
+      "item": "HNT",
+      "item_type": "token",
+      "parent_sector": "depin",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Flagship example of token incentives bootstrapping a 200,000+ node grassroots telecom network challenging incumbents.",
+      "provenance": "persisted",
+      "age_note": "Cited 2021-10 and again 2022-03-06; a16z disclosed investor.",
+      "citations": [
+        {
+          "date": "2022-03-06",
+          "quote": "A great example of this is Helium, which has used token incentives to build a nationwide grassroots telecom service"
+        }
+      ]
+    },
+    {
+      "item": "AR",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Cited as a token-bootstrapped decentralized storage network with ~12x network growth in a year.",
+      "provenance": "persisted",
+      "age_note": "Cited only 2021-10-01; a16z disclosed investor; never restated.",
+      "citations": [
+        {
+          "date": "2021-10-01",
+          "quote": "Another network that\u2019s been bootstrapped with token incentives is Arweave, a decentralized storage network."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Cited approvingly as a blockchain that has never been hacked, supporting the security/credibility thesis; mentioned in passing rather than as an active pick.",
+      "provenance": "persisted",
+      "age_note": "Mentioned 2021-12-11 only; not an active recommendation.",
+      "citations": [
+        {
+          "date": "2021-12-11",
+          "quote": "blockchains like Bitcoin and Ethereum have never been hacked."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Despite the 2022 downturn and a hostile US regulatory backdrop, his most recent actions (leading a $40M web3 games investment, defending Coinbase) and his product-vs-financial-cycle framework keep him structurally bullish: he separates noisy financial cycles from the crypto product cycle he believes anchors the next era. Risk-on long-term, tactically capital-preserving in a downturn.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus spans 2021-10 to 2023-03; the vast majority is 2021-2022 thought-leadership threads, with only sparse 2023 statements (CCP/EVE games investment, CTO promotion, Coinbase/regulation). Recency weighting therefore elevates web3 games (excited) and US regulation (concerned) as his freshest signals, while NFTs/token-bootstrapping/composability/DAOs/DeFi are persisted convictions stated once or twice and not contradicted. No genuine reversals found \u2014 views are remarkably consistent over 18 months; older items marked persisted with age notes. Notable absence: no direct mention of the FTX collapse or specific bear-market token damage, so token-level concern is empty. Many cited projects (Helium, Arweave, CCP Games) are disclosed a16z investments, so excitement is entangled with portfolio interest. This is Dixon's individual, heavily thesis-driven view, not a team consensus."
+}

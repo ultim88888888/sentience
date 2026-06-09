@@ -1,0 +1,531 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Miles Jennings",
+  "items": [
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Believes decentralization is the key unlock that democratizes the internet, obviates many regulatory risks, and lets network effects accrue to users rather than incumbents.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "We're entering a new era of decentralization."
+        },
+        {
+          "date": "2023-05-03",
+          "quote": "The country that properly incentivizes decentralization is going to win web3 and reap the benefits."
+        },
+        {
+          "date": "2023-05-31",
+          "quote": "More Decentralization = More Innovation"
+        }
+      ]
+    },
+    {
+      "item": "dao-legal-entities",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Personally helped create the Decentralized Unincorporated Nonprofit Association; sees it as a breakthrough giving DAOs legal existence, tax ability, limited liability and privacy without sacrificing decentralization.",
+      "provenance": "grounded",
+      "age_note": "Most recent and most intense theme (March 2024); supersedes his earlier preference for the California/Texas UNA forms.",
+      "citations": [
+        {
+          "date": "2024-03-08",
+          "quote": "Wyoming just enacted a game-changing law for web3... the Decentralized Unincorporated Nonprofit Association (DUNA)"
+        },
+        {
+          "date": "2024-03-08",
+          "quote": "This brings much needed certainty to web3 builders, enabling them to get back to doing what they do best: BUILD."
+        }
+      ]
+    },
+    {
+      "item": "protocol-vs-app-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His signature policy framework: regulate for-profit businesses/apps, not the underlying software protocols, analogous to regulating Gmail not SMTP. Foundation for all his advocacy.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "Regulate apps, not protocols. Regulate businesses, not software."
+        },
+        {
+          "date": "2023-01-24",
+          "quote": "we have a complete foundation for a regulation-agnostic web3 framework."
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited tokens have a far bigger design space than equity; favors application tokens that coordinate developers/B2B and ensure credible neutrality over user-acquisition B2C speculation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-22",
+          "quote": "Tokens aren't equity. The design space is so much bigger."
+        },
+        {
+          "date": "2024-01-19",
+          "quote": "Application token models should focus more on B2B and less on B2C."
+        }
+      ]
+    },
+    {
+      "item": "multi-client-app-ecosystems",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Sees app-layer diversity and distributing tokens among clients/apps as critical for governance minimization, credible neutrality, and richer services like decentralized social.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-05",
+          "quote": "how clients drive decentralization and how tokens can align incentives among clients and ensure credible neutrality of the protocol."
+        },
+        {
+          "date": "2024-03-01",
+          "quote": "smart contract protocols should be distributing tokens among the clients/apps that build on top of them."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Excited about new governance best practices that hold leadership accountable and minimize governance, solving low participation and capture problems that prior DAO models failed to fix.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "'Machiavellian DAOs' can foster true decentralization in web3."
+        },
+        {
+          "date": "2023-09-22",
+          "quote": "governance minimization is the most important design guideline... easier to minimize governance if you have a robust app/client layer"
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Views legitimate decentralized stablecoins as strategically important counterweight to surveillance-state CBDCs and winner-take-all centralized issuers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-25",
+          "quote": "this should further impress upon people the importance of legitimate decentralized stablecoin projects."
+        },
+        {
+          "date": "2024-02-21",
+          "quote": "Concentrated power in the hands of any single stablecoin issuer undermines decentralization across web3."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Strong civil-liberties framing; sees privacy tech (and token extensions like confidential transfers) as a core web3 value and constitutional battleground \u2014 though acknowledges illicit-finance tension.",
+      "provenance": "grounded",
+      "age_note": "Held since 2022-12 ('privacy frontier'); restated through 2024.",
+      "citations": [
+        {
+          "date": "2024-01-24",
+          "quote": "the right to be let alone is indeed the beginning of all freedom."
+        },
+        {
+          "date": "2022-12-15",
+          "quote": "Very excited to get to work on the privacy frontier again"
+        }
+      ]
+    },
+    {
+      "item": "uk-london-crypto-hub",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Optimistic the UK's 'same risk, same regulatory outcome' approach, exclusion of decentralized stablecoins, and mandate for regulators to foster innovation could make it a web3 hub.",
+      "provenance": "persisted",
+      "age_note": "Stated mid-2023 (May/June) and lightly reaffirmed Oct 2023; not restated in 2024.",
+      "citations": [
+        {
+          "date": "2023-06-29",
+          "quote": "the UK empowering its financial regulators to foster innovation is brilliant."
+        },
+        {
+          "date": "2023-05-01",
+          "quote": "there is cause for significant optimism, but the next 18 months are critical."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Excited about collaborative security organizations producing novel solutions that elevate security across the sector.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-14",
+          "quote": "There are going to be a lot of truly novel solutions coming out of this org, which should elevate security across the sector."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Champions players truly owning interoperable in-game assets and the metaverse accruing to consumers not corporations; an early-interest sector for him.",
+      "provenance": "persisted",
+      "age_note": "Enthusiasm dates to 2022-10; by 2023-10 his framing shifted to defending gaming from California AB 39 rather than pure excitement.",
+      "citations": [
+        {
+          "date": "2023-10-16",
+          "quote": "it paves the way for corporations, not consumers, to own the metaverse."
+        },
+        {
+          "date": "2022-10-04",
+          "quote": "Highly recommend this for anyone working in web3 gaming."
+        }
+      ]
+    },
+    {
+      "item": "regulation-by-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His single largest concern: believes the SEC's endgame is to ban the technology via enforcement, fostering uncertainty that helps bad actors and drives builders offshore.",
+      "provenance": "grounded",
+      "age_note": "Consistent and intensifying from 2022 through 2024; tied to current administration.",
+      "citations": [
+        {
+          "date": "2023-06-06",
+          "quote": "the SEC's endgame for crypto/web3 in the United States is about one thing: banning the technology."
+        },
+        {
+          "date": "2024-01-17",
+          "quote": "regulation-by-enforcement is no substitute for formal rulemaking and public comment processes"
+        }
+      ]
+    },
+    {
+      "item": "regulatory-uncertainty",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Four-plus years without SEC guidance and lack of clear rules incentivize corner-cutting and 'decentralization theater', and are the biggest brake on US development and oversight.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-14",
+          "quote": "regulatory uncertainty is already the biggest economic drag on the sector."
+        },
+        {
+          "date": "2023-09-25",
+          "quote": "when the rules aren't clear and evenly enforced, builders are incentivized to cut corners... decentralization theater."
+        }
+      ]
+    },
+    {
+      "item": "aml-surveillance-overreach",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Fears legislation treating crypto as whatever maximizes surveillance, ignoring the Third-Party Doctrine and the peer-to-peer privacy expectation; frames it as civil-liberties erosion.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-10-19",
+          "quote": "Elizabeth Warren's Patriot Act Part 2."
+        },
+        {
+          "date": "2024-02-28",
+          "quote": "their answer to everything is 'more surveillance'... don't respect Americans' right to privacy."
+        }
+      ]
+    },
+    {
+      "item": "deal-structuring",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "His clearest market-structure concern: fixed/non-dilutable token allocations transfer value from founders to investors and misalign incentives; short lockups drive pump-and-dumps and VC dumping on retail.",
+      "provenance": "grounded",
+      "age_note": "Prominent and repeated Dec 2023\u2013Feb 2024.",
+      "citations": [
+        {
+          "date": "2023-12-19",
+          "quote": "Fixed token allocations are predatory."
+        },
+        {
+          "date": "2024-02-20",
+          "quote": "If a VC pushes to shorten your token lockup... 'we intend to dump our bags as soon as you'll let us'."
+        }
+      ]
+    },
+    {
+      "item": "broker-reporting-rules",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "tactical",
+      "rationale": "Concerned the broker-reporting regime and >$10k reporting rules are unworkable overreach that threaten privacy and impose impossible obligations.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-16",
+          "quote": "The industry's collective effort to push back against Treasury's expansive broker reporting regime has been remarkable."
+        },
+        {
+          "date": "2023-12-13",
+          "quote": "the IRS commissioner from 1 year ago writes this about the IRS's rule expansion for broker reporting?"
+        }
+      ]
+    },
+    {
+      "item": "one-size-fits-all-licensing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Worries one-size-fits-all licensing sweeps in video games, punishes emergency-pause functions, threatens decentralization and stablecoin innovation, and could devastate indie game developers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-10-16",
+          "quote": "Applying a one-size-fits-all reg regime to financial institutions and video games is an obvious mistake."
+        },
+        {
+          "date": "2023-09-20",
+          "quote": "regulations that could consolidate power among centralized actors in crypto (like California's new AB 39)."
+        }
+      ]
+    },
+    {
+      "item": "vc-token-rent-extraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Calls out funds requiring companies to pay 2% of token supply for low-effort, ChatGPT-grade 'launch services' on top of their investment \u2014 predatory and a sign of intent to dump.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-29",
+          "quote": "If a VC requires you to pay them tokens for their help launching your token... They're going to dump your token"
+        }
+      ]
+    },
+    {
+      "item": "dollar-reserve-cbdc",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Concerned that demonstrations of programmable transaction controls inch toward a surveillance-state CBDC; treats it as reason to back decentralized stablecoins.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-25",
+          "quote": "Agree this inches closer to a potential surveillance state CBDC."
+        }
+      ]
+    },
+    {
+      "item": "smart-contract-sanctions",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Post-Tornado Cash, worries OFAC could sanction a token's smart contract mid-process, making an entire token supply toxic and harming legitimate users.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-25",
+          "quote": "we have to consider smart contract sanctioning a viable attack vector."
+        }
+      ]
+    },
+    {
+      "item": "fake-compliant-pathways",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Suspects engineered compliant-pathway theater designed to give SEC control over which assets list and dissuade Congress from passing market-structure legislation.",
+      "provenance": "persisted",
+      "age_note": "Heavily analyzed mid-2023; not restated in 2024.",
+      "citations": [
+        {
+          "date": "2023-06-28",
+          "quote": "the listing of a digital asset on Prometheum being anything other than a death sentence for most projects?"
+        }
+      ]
+    },
+    {
+      "item": "high-fdv-low-float",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "tactical",
+      "rationale": "Acknowledges high FDV/low float is a significant problem, exacerbated by short chunky lockups; favors gradual lockups tied to decentralization milestones.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-20",
+          "quote": "Agree that high FDV/low float is a significant problem, but longer/gradual lockups are a better approach"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Confident ETH is a sufficiently decentralized commodity, not a security; argues the SEC effectively conceded this by approving ETH futures, strengthening the case for a spot ETH ETF.",
+      "provenance": "grounded",
+      "age_note": "This is a legal/regulatory confidence view, not a price call.",
+      "citations": [
+        {
+          "date": "2024-01-12",
+          "quote": "The SEC capitulated on the question of whether ETH is a security in October when it approved the ETH futures products."
+        },
+        {
+          "date": "2024-01-13",
+          "quote": "they've implicitly consented to ETH being a commodity and not a security."
+        }
+      ]
+    },
+    {
+      "item": "USDC",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Views USDC as likely legally sound \u2014 Circle KYCs depositors but isn't the issuer of a yield product and doesn't rehypothecate, distinguishing it from UST/Anchor.",
+      "provenance": "grounded",
+      "age_note": "A legal-risk assessment, not an investment endorsement.",
+      "citations": [
+        {
+          "date": "2023-12-29",
+          "quote": "USDC is likely okay, but yield bearing stablecoins should take note."
+        }
+      ]
+    },
+    {
+      "item": "LQTY",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Repeatedly cites Liquity as the 'star example' of a properly decentralized, immutable DeFi structure and design ideal.",
+      "provenance": "grounded",
+      "age_note": "Praised as a structural model, not as a trade.",
+      "citations": [
+        {
+          "date": "2023-12-05",
+          "quote": "I've long used @LiquityProtocol as the star example from DeFi of this type of structure."
+        }
+      ]
+    },
+    {
+      "item": "LUNA",
+      "item_type": "token",
+      "parent_sector": "algorithmic-stablecoins",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Uses Terra as the cautionary archetype: an undercollateralized, non-decentralized stablecoin packaged with Anchor's 'bullshit 20% yield' as an unregistered securities offering \u2014 and warns CeFi yield-on-stablecoin products to take note.",
+      "provenance": "grounded",
+      "age_note": "Retrospective/cautionary; Terra had already collapsed, but he invokes it as a forward warning for yield-bearing stablecoins.",
+      "citations": [
+        {
+          "date": "2023-12-29",
+          "quote": "Terra was both the issuer/promoter of UST and the operator of Anchor... its bullshit 20% yield, which also wasn't decentralized."
+        },
+        {
+          "date": "2023-12-29",
+          "quote": "CeFi products offering yield on stablecoins to US retail should be careful"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "Structurally bullish on web3/decentralization as the future of the internet \u2014 he left a BigLaw partnership to go all-in and repeatedly tells founders to build and 'Stay The Course.' But his optimism is explicitly conditioned on regulatory survival: he sees acute hostility from the current SEC/Warren faction as the dominant near-term risk, so his posture is long-horizon builder-bullish, not a short-term market call. He is essentially silent on price/macro and rarely expresses token-trading views.",
+    "provenance": "grounded"
+  },
+  "notes": "Miles Jennings is a16z crypto's General Counsel/head of decentralization, so his corpus is ~90% legal, policy, and token/DAO-structure commentary rather than investment theses; 'sectors' here are largely regulatory and structural themes, and genuine token-price views are thin (ETH/USDC/Liquity entries are legal-risk or design assessments, not buy calls). Most recent statements (Jan\u2013Mar 2024) center on the Wyoming DUNA, SEC v. Coinbase, predatory VC token terms, and privacy/surveillance \u2014 these were weighted most heavily. Notable consistency rather than reversal across 18 months: his 'regulate apps not protocols,' decentralization-matters-for-Howey, and anti-Gensler stances are stable and reinforced over time. One evolution worth flagging: he openly conceded to Adam Cochran on 2024-03-20 ('I disagreed with you then and I was wrong'), and his tone toward the SEC hardened from 'constructive partner' framing (2022-2023) to alleging deliberate, politicized bad faith by 2024. Web3 gaming and UK-optimism are older/persisted themes not restated in 2024. He expresses essentially no view on crypto market cycles, BTC, or macro positioning."
+}

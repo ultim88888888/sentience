@@ -1,0 +1,326 @@
+{
+  "as_of": "2025-09-30",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees blockchains as the ideal architecture for an open, programmable IP layer linking real-world IP to on-chain licensing/remixing \u2014 especially urgent in the generative-AI era. His single most superlative excitement.",
+      "provenance": "grounded",
+      "age_note": "First stated Aug 2024 (Story Protocol Series B); reinforced June 2025 in AI\u00d7crypto roundup \u2014 current.",
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "I don't think I've ever seen an infrastructure innovation that excites me as much as @StoryProtocol."
+        },
+        {
+          "date": "2025-06-11",
+          "quote": "Blockchains are already being used to establish open, public, and programmable IP layers that provide immutable proof of provenance"
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes cheap transactions unlock ubiquitous digital collecting, identity, and brand-building (the 'NFT staircase': ownership, utility, identity). He actively lives this thesis through his own on-chain art.",
+      "provenance": "grounded",
+      "age_note": "Consistent thesis from The Everything Token (2024) through 2025; persistent and current.",
+      "citations": [
+        {
+          "date": "2024-10-18",
+          "quote": "once transaction fees got small enough, blockchains would enable all manner of low-cost digital collecting experiences."
+        },
+        {
+          "date": "2024-12-10",
+          "quote": "that's three steps of the NFT staircase -- ownership, utility, and identity -- within fewer than 60 seconds"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Argues crypto provides the interoperability, payment rails, and guardrails AI needs \u2014 portable LLM context, agent-to-agent payments, future-proofing vibe-coded software, and IP provenance.",
+      "provenance": "grounded",
+      "age_note": "Most recent major thesis (June\u2013July 2025); current.",
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "the ways crypto will organize, complement \u2013 and occasionally tame \u2013 modern AI."
+        },
+        {
+          "date": "2025-07-21",
+          "quote": "portable chatbot context... forwards-compatible digital identity... future-proofing vibe-coded software... marketplace guardrails for AI agents"
+        }
+      ]
+    },
+    {
+      "item": "network-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Core thesis that digital ownership drives community cohesion and shared value creation, and that 'network' tokens (vs company-backed) are a distinct, legitimate value-and-legal category.",
+      "provenance": "grounded",
+      "age_note": "Long-running (2024 book) through token-classification framework Mar 2025; current.",
+      "citations": [
+        {
+          "date": "2024-05-20",
+          "quote": "digital ownership enabled by blockchains drives users to build a personal attachment with a given brand or platform"
+        },
+        {
+          "date": "2025-03-05",
+          "quote": "Despite what some may claim, not all tokens are created equal."
+        }
+      ]
+    },
+    {
+      "item": "proof-of-personhood",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 83,
+      "horizon": "structural",
+      "rationale": "In a world of AI fakes, sees user-owned, interoperable, forwards-compatible on-chain IDs (a 'digital driver's license') as the answer for authenticating to any current or future platform.",
+      "provenance": "grounded",
+      "age_note": "Stated Jan 2025, reinforced June 2025; current.",
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "we need proof of personhood and identity on the Internet \u2013 stat! Secure, interoperable blockchain-based IDs are the answer."
+        }
+      ]
+    },
+    {
+      "item": "crypto-market-structure-legislation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Believes well-functioning crypto markets need clear, enforceable rules protecting property rights, transparency, and fair competition; pro principles-based regulation and pro-legislation (FIT21).",
+      "provenance": "grounded",
+      "age_note": "From FIT21 advocacy (2024) to FT op-ed Aug 2025; most recent stance, current.",
+      "citations": [
+        {
+          "date": "2025-08-27",
+          "quote": "Well-functioning markets need rules \u2013 and crypto is no different."
+        },
+        {
+          "date": "2024-05-22",
+          "quote": "FIT21 is a huge step forward for blockchain and crypto technology, QED."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 77,
+      "horizon": "structural",
+      "rationale": "Credits the proliferation of high-throughput L2s for making low-cost on-chain experiences real; he mints almost exclusively on L2s/Ethereum-adjacent rails.",
+      "provenance": "grounded",
+      "age_note": "Oct 2024 State of Crypto; consistent through 2025 minting practice.",
+      "citations": [
+        {
+          "date": "2024-10-18",
+          "quote": "The proliferation of high-throughput \"Layer 2\" blockchains over the past year and a half has made this a reality"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Wants competition in social media and sees decentralized protocols (with data ownership and wallet portability) as the route, tying to his research on platform competition and misinformation.",
+      "provenance": "grounded",
+      "age_note": "Sept 2024; related content into Jan 2025, not strongly restated since \u2014 persisted.",
+      "citations": [
+        {
+          "date": "2024-09-01",
+          "quote": "competition in the social media market is a big part of why I'm excited about decentralized social media protocols"
+        }
+      ]
+    },
+    {
+      "item": "health-data-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 73,
+      "horizon": "structural",
+      "rationale": "Long fascinated by health-data marketplaces (since work with Gary Becker); sees blockchain architecture as a way past their infrastructure and access barriers.",
+      "provenance": "grounded",
+      "age_note": "Stated once (Sept 2024 Amino Chain); not restated \u2014 persisted, ~12 months old.",
+      "citations": [
+        {
+          "date": "2024-09-25",
+          "quote": "Many ideas for these marketplaces have been explored, but they've faced fundamental infrastructure and access challenges -- which @Amino_Chain is using blockchain architecture to hopefully solve"
+        }
+      ]
+    },
+    {
+      "item": "regulation-by-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views enforcement-driven regulation and lack of clear rules as actively harmful \u2014 driving legitimate businesses and consumers away and failing to support high-quality actors.",
+      "provenance": "grounded",
+      "age_note": "Aug 2024 stance reinforced in Aug 2025 FT op-ed; current.",
+      "citations": [
+        {
+          "date": "2024-08-23",
+          "quote": "regulation-by-enforcement doesn't help!"
+        },
+        {
+          "date": "2025-08-27",
+          "quote": "Without basic structure and protections, uncertainty and inefficiency will drive away legitimate businesses and consumers."
+        }
+      ]
+    },
+    {
+      "item": "company-backed-token-confusion",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Concerned that treating all tokens as equivalent muddies economic and legal treatment; pushes a framework separating company-backed from genuine network tokens.",
+      "provenance": "grounded",
+      "age_note": "Mar 2025; recent and current.",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Company-backed tokens are *not* network tokens. Here's a framework for understanding the difference"
+        }
+      ]
+    },
+    {
+      "item": "rigid-tokenomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Warns that fixing supply/emission entirely up front (the Bitcoin precedent) is usually wrong; monetary policy should evolve with the ecosystem.",
+      "provenance": "grounded",
+      "age_note": "Sept 2024 (CSX talk); not restated \u2014 persisted.",
+      "citations": [
+        {
+          "date": "2024-09-19",
+          "quote": "With token design, monetary policy evolving over time should be the default."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Dismissive of memecoins as low-value crypto froth, likening them to a chain-letter phenomenon rather than durable value creation.",
+      "provenance": "persisted",
+      "age_note": "Stated once Apr 2024, never restated (~18 months old); also avoids attaching memecoins to his own NFT giveaways/POAPs in 2025.",
+      "citations": [
+        {
+          "date": "2024-04-04",
+          "quote": "Memecoins are the crypto equivalent of chain emails."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Flags that 'master account' / portable-identity visions require finer permissioning so users control which apps see which data \u2014 currently an unsolved blocker.",
+      "provenance": "grounded",
+      "age_note": "June 2025; recent and current.",
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "we need solutions for finer-grained permissioning so that people can choose which applications see which parts of their account information."
+        }
+      ]
+    },
+    {
+      "item": "nft-royalty-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Sees creator royalties as a key NFT value proposition that remains technically hard to enforce \u2014 an open, unresolved design problem.",
+      "provenance": "grounded",
+      "age_note": "June 2024; not restated \u2014 persisted.",
+      "citations": [
+        {
+          "date": "2024-06-26",
+          "quote": "Creator royalties are a key value proposition of NFTs, but they've faced significant implementation challenges."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "His default settlement and minting layer; celebrates the network's milestones and benefits from low gas + the L2 ecosystem built on it. Ecosystem preference, not an explicit price call.",
+      "provenance": "grounded",
+      "age_note": "Consistent throughout corpus; most recent positive note July 2025.",
+      "citations": [
+        {
+          "date": "2025-07-30",
+          "quote": "Happy Birthday Ethereum!!! Today's \"45 squared\" edition celebrates the 10th anniversary of the launch of the Ethereum network."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Not bearish on BTC as an asset, but repeatedly cites the 'Bitcoin precedent' of fixing tokenomics up front as a design anti-pattern others wrongly copy.",
+      "provenance": "grounded",
+      "age_note": "Sept 2024 design critique; narrowly scoped to tokenomics philosophy, not price.",
+      "citations": [
+        {
+          "date": "2024-09-19",
+          "quote": "Owing in part to the Bitcoin precedent, many projects try to fix their entire tokenomic design ... up front. But that's rarely the right path."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "Structurally bullish on crypto as technology infrastructure \u2014 tokens, NFTs, programmable IP, identity, and AI\u00d7crypto \u2014 and optimistic that sound regulation will expand the space. But he is an economist/market-designer, not a trader: he offers no tactical price/timing calls, attaches frequent 'not investment advice' disclaimers, and his optimism is about adoption and infrastructure maturation over years, conditioned on better rules and privacy/permissioning solutions.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers' corpus is dominated by recreational math, puzzles, and his own on-chain art ('45 squared', \u03c0dentities), plus a16z-crypto thought-leadership threads and public-health/economics commentary \u2014 not trading or token-price views. His 'market view' is therefore structural and infrastructure-centric, not tactical. Views are remarkably consistent over the 18-month span with no reversals; where stances recur (IP, regulation, AI\u00d7crypto) the most recent statements (2025) reinforce rather than contradict earlier ones. Specific-token excitement is weak by design: he deliberately avoids endorsing individual tokens and repeatedly disclaims investment advice, so ETH (ecosystem-preference) and BTC (design-philosophy critique) are inferred from infrastructure usage and commentary rather than asset calls. Strongest single signal: Story Protocol / programmable IP as the infrastructure innovation he's most excited about in 15 years."
+}

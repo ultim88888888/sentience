@@ -1,0 +1,229 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees blockchains as a counterbalance to centralized AI, enabling permissionless markets for compute/data and provenance tracking against deepfakes, democratizing AI innovation.",
+      "provenance": "grounded",
+      "age_note": "Most substantive on 2023-12-06; not restated in March 2024 but recent enough and consistent with his decentralization thesis",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized blockchains are a counterbalancing force to centralized AI."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized, open-source crypto networks will democratize (vs. concentrate) AI innovation, ultimately making it safer for consumers."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes converting passive crypto owners into active on-chain users is a bigger growth opportunity than expanding the investor count; tracks non-financial adoption metrics now at all-time highs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-19",
+          "quote": "Let's close the gap between crypto owners and active on-chain users. This is more important... than expanding the total number of crypto investors."
+        },
+        {
+          "date": "2024-03-22",
+          "quote": "The State of Crypto Index is at an all time high. The index measures innovation and adoption... based on 14 key non-financial metrics."
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Views a decentralized computing platform owned by no single entity as a necessary counterbalance to extreme concentration of traffic and market cap among a handful of companies.",
+      "provenance": "persisted",
+      "age_note": "Core thesis stated 2023-04-16; reinforced by ongoing 2024 messaging on builder permissionlessness and platform commitments",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "A decentralized computing platform, owned by no single entity, is a counterbalancing force to this increasing consolidation of power. The internet needs web3."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Excited by new SNARK paradigms (Lasso, Jolt) as moving the industry forward; repeatedly highlights ZK verification as foundational infrastructure progress.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-08-10 / 2023-09-08; not restated since but never reversed",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt represent a new paradigm in SNARK design."
+        }
+      ]
+    },
+    {
+      "item": "eth-staking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Frames staking as securing a multi-hundred-billion-dollar economy rather than mere yield, and praises decentralization efforts in staking infrastructure.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-02 to 2023-05; older view, not restated near 2024-03-31",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "Staking is not just about earning yield. On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees progress toward resilient, decentralized social as a major milestone and part of platforms making credible commitments to builders.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-10-11; not restated near analysis date",
+      "citations": [
+        {
+          "date": "2023-10-11",
+          "quote": "A huge milestone crossed on the path toward more resilient, decentralized social networks for the world."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Welcomes expansion of legal pathways for DAOs to operate, signaling enthusiasm for maturing organizational/legal infrastructure.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-08",
+          "quote": "Huge news for expanding the ways in which DAOs can legally operate."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Worried the US is losing its web3 lead and that critical infrastructure development will move offshore to untrusted suppliers; frames keeping crypto onshore as national security.",
+      "provenance": "grounded",
+      "age_note": "First stated 2023-11-17, restated and intensified 2024-03-20 (current)",
+      "citations": [
+        {
+          "date": "2024-03-20",
+          "quote": "Keeping crypto onshore is a matter of national security... We should not have to rely on untrusted foreign developers and suppliers for critical technology infrastructure."
+        },
+        {
+          "date": "2023-11-17",
+          "quote": "there are signs that the US may be losing its lead in web3."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Concerned that AI models can only be trained/operated by a handful of tech giants due to compute and data costs, and that one actor could end up deciding for all.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "AI models... can currently only be trained and operated by a handful of tech giants, since the required compute and training data are prohibitive for smaller players."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Pushes back on speculation being conflated with crypto's value proposition, implicitly concerned that market narratives over-index on price rather than fundamentals.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "In the crypto market, speculation is a byproduct that is separate from its core value proposition."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Notes developers fear building on big web2 platforms that can shut them down at any time, contrasting with blockchains' credible commitments.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-04-14; older but consistent with current thesis",
+      "citations": [
+        {
+          "date": "2023-04-14",
+          "quote": "Developers today are scared to build on top of the big web2 platforms - who can shut them down at any time."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Treats ETH as the asset securing a $400B on-chain economy via staking; central to his Ethereum infrastructure and adoption thesis, though framed on fundamentals not price.",
+      "provenance": "persisted",
+      "age_note": "Primarily 2023 statements; positive framing not restated near 2024-03-31 and never about price targets",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 65,
+    "rationale": "Structurally bullish on crypto adoption \u2014 points to an all-time-high non-financial adoption index, growing on-chain usage, and maturing infrastructure (ZK, staking, DAOs, AI). But his bullishness is explicitly fundamentals-driven, not speculative: he separates speculation from value and frames the main risk as US regulatory/offshoring policy rather than market downside. So constructive long-term posture, deliberately price-agnostic.",
+    "provenance": "grounded"
+  },
+  "notes": "Matsuoka is a data/research voice at a16z crypto, so his statements emphasize adoption metrics, infrastructure, and policy rather than tradeable token calls or near-term price views \u2014 virtually no tactical-horizon positioning exists in the corpus. Most-recent (March 2024) views: closing the owner-to-active-user gap, all-time-high adoption index, separating speculation from value, US-onshoring/national-security policy concern, and DAO legal expansion. The AI+blockchain thesis (Dec 2023) is recent and substantive but not restated in March. ZK/SNARK, staking, and decentralized social enthusiasm are persisted from 2023 and not restated near the analysis date (cited with age notes). No reversals detected \u2014 his decentralization-as-counterbalance thesis is consistent throughout. Testnet ETH (Goerli/Sepolia) and Lido/LDO references are operational/community, not investment views, so excluded from tokens."
+}

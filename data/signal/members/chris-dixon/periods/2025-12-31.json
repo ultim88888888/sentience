@@ -1,0 +1,401 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His single highest-conviction theme: open, internet-native money infrastructure that cuts intermediaries, slashes remittance/payment fees, entrenches dollar dominance, and now has regulatory clarity (GENIUS Act) plus payment-network-scale volume.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-18",
+          "quote": "stablecoins give us something we've never really had before: open money infrastructure"
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "Stablecoins have found product-market fit, now rivaling the world's largest payment networks in transaction volume."
+        },
+        {
+          "date": "2025-04-09",
+          "quote": "Stablecoins, or cryptocurrencies pegged to stable assets like the U.S. dollar, are a way out, a reset"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Sees blockchains as the trust/ownership/identity layer that solves AI's pressing problems (verifying humans, agentic transactions, data provenance). A recurring, intensifying thesis backed by multiple 2025 investments.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Two of today's most significant technology trends \u2014 crypto and AI \u2014 are coming together as complements."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "AI needs blockchain-enabled computing, and why I'm optimistic as these technologies converge."
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Frames them via Hayek as markets-as-computers solving the knowledge problem; sees mainstream breakout and rising trust in protocols over institutions. Doubled down on Kalshi in Dec 2025 citing 8x volume growth.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-10",
+          "quote": "This is why we're excited about prediction markets, and why we're investing in Kalshi."
+        },
+        {
+          "date": "2025-12-02",
+          "quote": "Volume has grown 8x since July, to more than $1B per week... we're excited to double down on our investment."
+        }
+      ]
+    },
+    {
+      "item": "agentic-payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Believes autonomous AI agents need native financial rails (stablecoins, identity, compliance) since legacy systems assume a human; backed Catena Labs to build this 'missing link.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-20",
+          "quote": "a new financial stack for AI agents to transact at machine speed."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "Machine-speed systems need machine-speed money. Catena is building the missing link"
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 83,
+      "horizon": "structural",
+      "rationale": "Considers infra finally ready for consumer apps after major throughput gains and low fees \u2014 a precondition he repeatedly flags for the next adoption wave.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "blockchains now process over 3,400 transactions per second (more than 100x growth in 5 years)."
+        },
+        {
+          "date": "2025-01-29",
+          "quote": "Blockchain infra is now ready for apps to flourish"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views DeFi as a growing alternative to traditional finance; bullish on simplifying UX to onboard the next 100M users (Legend investment), while noting complexity remains a barrier.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-11",
+          "quote": "leading the $15M seed round in @legendapp to simplify DeFi and help bring the next 100M users onchain."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "DeFi provides an alternative to traditional finance"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Wants blockchains to enforce a 'new economic covenant' so creators get attribution and compensation as AI consumes their work; core thesis behind Story Protocol.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "foundational infrastructure that can underpin a new economic covenant between creators and platforms."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "Enforce ownership for users and creators"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-ai-training-data",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees data as the new AI bottleneck and crypto as the coordination/incentive/provenance layer to source and reward it at scale (Poseidon, Yupp).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-22",
+          "quote": "a decentralized data layer to coordinate supply and demand for AI training data."
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "AI needs robust and trustworthy human data. Crypto is built to provide it."
+        }
+      ]
+    },
+    {
+      "item": "proof-of-personhood",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Considers verifying real humans a necessary standard in the AI age to isolate bots and imposters while preserving privacy; expanded investment in World.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-21",
+          "quote": "advancing Proof of Human -- a necessary technology standard in the age of AI -- while protecting people's privacy."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "Verify identity to isolate bots and imposters"
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Names these (with prediction markets) as new app categories breaking out in 2025 and bringing billions onchain, still considered early.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "New types of applications \u2014 like perps, prediction markets, and RWA tokenization \u2014 broke out in 2025."
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Calls 2025 'the year of institutional adoption' \u2014 banks, asset managers and fintechs making real commitments, which he reads as durable maturation of the industry.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Some of the largest financial institutions aren't just exploring crypto, they're making real commitments."
+        }
+      ]
+    },
+    {
+      "item": "open-source-funding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Wants protocols to reward open-source contributors proportionally (Merit) and remains a longstanding believer in decentralized physical infrastructure networks.",
+      "provenance": "grounded",
+      "age_note": "DePIN conviction expressed mainly via firm/team framing (Guy Wuollet promotion, 2025-11-10) rather than a fresh first-person thesis.",
+      "citations": [
+        {
+          "date": "2025-01-16",
+          "quote": "Merit is building a protocol that attributes and rewards contributors proportionally to the value they create."
+        }
+      ]
+    },
+    {
+      "item": "ai-internet-economic-disruption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Worries generative AI severs the creator-platform value exchange \u2014 answering instead of referring traffic, training on uncredited human work \u2014 leaving Big Tech to capture the rewards.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "AI is already upending the internet's economic covenant, and big tech companies are best-placed to reap the rewards."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "If there's no attribution or compensation, what incentive will there be to publish original creations"
+        }
+      ]
+    },
+    {
+      "item": "content-authenticity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Sees AI-generated content and impersonation eroding trust and authenticity online; positions blockchains as the countermeasure (identity, authenticity, tamper-resistance).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "AI-powered deepfakes and bots are also degrading people's trust in the online world."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Fears policy that bans open-source / 'little tech' AI would concentrate frontier models in a few big companies plus adversaries, disadvantaging startups, universities and the US.",
+      "provenance": "grounded",
+      "age_note": "Acute concern at Jan 2025 over a last-minute rule; the specific rule context is dated, but the open-source stance persists.",
+      "citations": [
+        {
+          "date": "2025-01-13",
+          "quote": "Another terrible last minute rule- a de facto to ban on open source and little tech AI models."
+        }
+      ]
+    },
+    {
+      "item": "ai-data-scarcity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Easily accessible training data (books, web) is largely exhausted and remaining high-quality or physical-world data is scarce/IP-protected \u2014 a limiting factor on AI progress.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-22",
+          "quote": "data has become a limiting factor in AI progress."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "GENIUS (stablecoins) is law, but he repeatedly stresses comprehensive market-structure rules (CLARITY Act) must still pass the Senate to secure durable US leadership; status quo leaves a gray area.",
+      "provenance": "grounded",
+      "age_note": "As of late 2025 CLARITY had passed the House but not the Senate; concern is about completion, not direction \u2014 overall regulatory tone is strongly optimistic.",
+      "citations": [
+        {
+          "date": "2025-07-31",
+          "quote": "the Senate building on the CLARITY market structure legislation that recently passed the House"
+        },
+        {
+          "date": "2025-05-08",
+          "quote": "Maintaining the status quo only hurts the American public. It leaves a growing sector... in a regulatory gray area"
+        }
+      ]
+    },
+    {
+      "item": "WLD",
+      "item_type": "token",
+      "parent_sector": "proof-of-personhood",
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Expanded his investment, citing outstanding progress on privacy-preserving proof-of-human, which he views as a necessary standard for the AI age.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-21",
+          "quote": "We've been continually impressed with the project and are excited to expand our investment."
+        }
+      ]
+    },
+    {
+      "item": "MORPHO",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Highlighted as a standout DeFi protocol (billions in TVL, V2 efficiency leap), though praised via a team-member spotlight rather than a personal first-person token thesis.",
+      "provenance": "extrapolated",
+      "age_note": "Mentioned 2025-11-10 in Guy Wuollet's promotion note as a firm win, not as Dixon's own active token call.",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "Morpho has grown to billions in total value locked and become one of the leading protocols in DeFi."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Cited among the firm's notable infrastructure investments; consistent with his 'infra ready for apps' and multichain-future view, but not personally championed in the corpus.",
+      "provenance": "extrapolated",
+      "age_note": "Only appears 2025-11-10 in a list of team investments; no standalone Dixon thesis on the token.",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "investing in infrastructure, DeFi, and DePIN... including Solana, LayerZero, Gensyn, EigenLayer, Daylight, and Morpho."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 90,
+    "rationale": "Tone across 2025 is emphatically bullish: crypto crossed $4T market cap at all-time highs, stablecoins hit product-market fit, infrastructure scaled, institutions committed, and landmark US legislation (GENIUS passed; CLARITY advancing) removed the regulatory overhang he long flagged. He describes a self-reinforcing feedback loop between prices, developers, and users, and is actively deploying into new bets (Kalshi double-down, multiple seed rounds). Main caveats are sector-specific structural worries (AI/creator covenant, closed models) and finishing market-structure law \u2014 not a reduction in overall risk appetite.",
+    "provenance": "grounded"
+  },
+  "notes": "Dixon speaks predominantly at the sector/thesis level and via investment announcements; he rarely individuates specific liquid tokens as personal trades, so tokens_excited is thin and partly extrapolated from firm-level mentions (flagged as such). Recency weighting favors the Oct 2025 State of Crypto thread and Dec 2025 Kalshi update, which define his current posture. A consistent throughline since mid-2024 is 'crypto as the trust/ownership layer that fixes what AI breaks.' Regulatory commentary evolved from grievance about the prior administration's 'lawfare' (early 2025) to celebration of GENIUS becoming law and pushing CLARITY across the finish line (mid-late 2025) \u2014 a directional improvement, not a reversal. No statements suggest any risk-off pivot through year-end 2025."
+}

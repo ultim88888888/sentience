@@ -1,0 +1,102 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Celebrated Matter Labs (zkSync) milestone as a major win for the whole ecosystem, signaling enthusiasm for ZK-based Ethereum scaling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-16",
+          "quote": "Congrats to @gluk64 and the entire @the_matter_labs teams! What a phenomenal accomplishment for the entire ecosystem!"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-storage",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Hailed the Filecoin Virtual Machine (FVM) launch as a major advance in decentralized storage and compute capabilities.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "the launch of #FVM. This is a tremendous step forward in advancing the capabilities of decentralized storage and compute"
+        }
+      ]
+    },
+    {
+      "item": "web3-startup-building",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Joined AllianceDAO as a contributor to help build the next generation of Web3 and DeFi startups; sees the space as still early-stage with strong developer growth.",
+      "provenance": "persisted",
+      "age_note": "Core stance stated Jan 2022; not explicitly restated in 2023, but consistent with his ongoing a16z crypto and ecosystem-celebration posture, so treated as persisted.",
+      "citations": [
+        {
+          "date": "2022-01-13",
+          "quote": "Excited to be a contributor to @alliancedao. Looking forward to being part of building the next generation of Web3 and defi startups."
+        },
+        {
+          "date": "2022-01-10",
+          "quote": "Love @ElectricCapital's annual analysis of Web3 developer activity. By any measure, we are still early days."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees gaming as a powerful on-ramp for bringing people into new crypto ecosystems and economies.",
+      "provenance": "persisted",
+      "age_note": "Stated once in Oct 2021 (Axie context) and never restated; ~18 months old. Conviction reduced for age and lack of reinforcement.",
+      "citations": [
+        {
+          "date": "2021-10-18",
+          "quote": "amazing the power that gaming can have in terms of onboarding people into the new ecosystems/economies"
+        }
+      ]
+    },
+    {
+      "item": "FIL",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Publicly congratulated the Filecoin community on the FVM launch, framing it as a tremendous step forward for the network.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "Congratulations to @momack28, @juanbenet, @colinevran &amp; the entire @Filecoin community on today's launch of #FVM."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "As an a16z crypto team member and AllianceDAO contributor, his statements are consistently builder-optimistic \u2014 celebrating ecosystem launches (zkSync, Filecoin FVM) and framing crypto as 'still early days' with no expressed caution about valuations or downside, even through the 2022-2023 bear market.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus is dominated by non-crypto personal/consumer-tech posts (Google/Pixel work, F1, Star Wars, health wearables) which were excluded. The crypto signal is sparse but directionally clear and builder-oriented. Most recent crypto views (Feb-Mar 2023): ZK scaling (Matter Labs) and decentralized storage/compute (Filecoin FVM) \u2014 these are weighted highest. No concerns or bearish statements about any sector or token appear anywhere in the corpus; this is a one-sided enthusiasm signal, consistent with a venture-investor public posture rather than a trading view. No conflicting/reversed stances detected. Several entries are 'persisted' (older, unrestated) and discounted accordingly. No explicit token price views; FIL inferred from network/launch enthusiasm, not a market call."
+}

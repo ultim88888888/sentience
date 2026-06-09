@@ -1,0 +1,164 @@
+{
+  "as_of": "2023-12-31",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He is most actively deploying capital here \u2014 leading a $40M EVE Universe investment and a Proof of Play seed round \u2014 and frames composability, player-owned assets, modding, and autonomous worlds as the future of games.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-21",
+          "quote": "a16z is leading a $40M investment in @CCPGames' new AAA gaming project set in the EVE Universe"
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "Excited to announce that we're leading a seed investment in @ProofOfPlay, an on-chain game studio and tech company"
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "players own their assets, and anyone can create their own game on top of another"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-internet-infra",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 97,
+      "horizon": "structural",
+      "rationale": "His core thesis, crystallized in his book Read Write Own: blockchains are the only plausible path to sustaining an open internet that shifts power from Big Tech to users and rewards creators/entrepreneurs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-22",
+          "quote": "crypto/web3 is the only plausible path to sustaining the original vision of the internet as an open platform"
+        },
+        {
+          "date": "2023-12-18",
+          "quote": "realign the future of the Internet away from Big Tech to the people who use it"
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "we're excited to keep building"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Announced a new investment in Gensyn (decentralized ML compute) and lists AI among the intersecting subjects he explores in his book \u2014 signaling interest in the crypto-AI overlap.",
+      "provenance": "grounded",
+      "age_note": "Supported mainly by a single June 2023 deal announcement plus a book reference; not repeatedly emphasized.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "today we announced our newest investment in UK-based @gensynai"
+        },
+        {
+          "date": "2023-06-22",
+          "quote": "I also go deeper into intersecting subjects like AI, social networks, finance, media businesses, collaborative creation"
+        }
+      ]
+    },
+    {
+      "item": "vr-spatial-computing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Personally enthusiastic about Apple Vision Pro, expecting VR to follow prior computing platforms in getting cheaper/faster/lighter as Meta and Apple invest. Adjacent to, not part of, his crypto thesis.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2023-06-05 and never restated through year-end; treat as a standing-but-stale enthusiasm.",
+      "citations": [
+        {
+          "date": "2023-06-05",
+          "quote": "Excited for Vision Pro. With Meta and now Apple investment, VR will follow the same pattern as past computing platforms"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He repeatedly distances his builder thesis from the speculative, casino-like culture around crypto and wants it stamped out so the industry can meet its promise.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "stamping out the harmful \"casino\" culture that has developed around crypto"
+        },
+        {
+          "date": "2023-06-22",
+          "quote": "I tackle controversial topics like policy/regulatory, and the harmful \"casino\" culture that has developed around crypto"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "His dominant late-2023 concern: lack of clear US market-structure rules raises compliance costs for honest startups, and some policymakers want to ban crypto outright \u2014 prompting his political/PAC engagement.",
+      "provenance": "grounded",
+      "age_note": "Persistent theme March\u2013December 2023; most recent and sharpest framing is 2023-12-18.",
+      "citations": [
+        {
+          "date": "2023-12-18",
+          "quote": "certain policymakers believe it should be banned, while other people think it should have no guardrails. Neither of those options will allow the technology to reach its full potential"
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "Crypto/web3 is still in the early innings, and needs clear regulations to provide an open pathway for startups"
+        }
+      ]
+    },
+    {
+      "item": "market-integrity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He worries good-faith, compliant companies get undercut or taken out by unscrupulous competitors (citing FTX and Binance) absent clear rules and enforcement.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-23",
+          "quote": "Competitors like FTX and Binance were taking market share and rapidly introducing new products in ways that... exceeded... the boundaries of the law"
+        },
+        {
+          "date": "2023-11-23",
+          "quote": "some will get taken out by unscrupulous competitors along the way, or will get overwhelmed with legal and compliance costs"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Dixon is a structural long-term builder/investor in crypto and web3 \u2014 actively leading new deals (gaming, decentralized AI), publishing a thesis book, expanding internationally, and repeatedly stating crypto is in 'early innings.' His risk-on posture is tempered (not reversed) by near-term regulatory and fraud concerns, which he meets by pushing for clearer rules rather than retreating.",
+    "provenance": "grounded"
+  },
+  "notes": "View is built from public X statements Feb\u2013Dec 2023; many posts are firm/portfolio promotion, so individual conviction is inferred from where Dixon personally deploys capital and emphasis. He names no specific tokens \u2014 his orientation is sectoral/thesis-driven (open internet, gaming, infra) rather than asset-pick driven \u2014 hence empty token lists. No material stance reversals were found; the regulatory concern intensifies through year-end and his Dec 2023 PAC/Fairshake post is the most recent, weighted accordingly. VR/Vision Pro is the one non-crypto enthusiasm and is stale (single June mention)."
+}

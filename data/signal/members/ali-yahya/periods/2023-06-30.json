@@ -1,0 +1,282 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Believes blockchains can create decentralized markets for AI compute, tapping idle ML-capable hardware to 10-100x available compute and counter big-tech's structural advantage in AI.",
+      "provenance": "grounded",
+      "age_note": "Most recent major thesis; led Gensyn Series A June 2023, building on a Jan 2023 'collective AI' framing.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "Gensyn is a marketplace protocol for compute for AI workloads. It connects devs building ML models with anyone who can contribute compute power"
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "By tapping into the long tail of idle, ML-capable compute around the world... Gensyn has the potential to 10-100x the available compute power for machine learning."
+        },
+        {
+          "date": "2023-01-05",
+          "quote": "AI + crypto = collective AI. Crypto mechanisms can incentivize the crowdsourcing of better data sets, machine learning models, and compute."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees ZK and encryption as transformative for the entire web3 stack and essential for blockchains to broaden utility into DeFi, gaming, identity and AI while preserving privacy.",
+      "provenance": "grounded",
+      "age_note": "Persisted and reinforced over 16 months \u2014 Aleo (Feb 2022), Aztec (Dec 2022), zk-proofs podcast (Mar 2023).",
+      "citations": [
+        {
+          "date": "2022-02-07",
+          "quote": "Zero Knowledge Proofs will completely transform the web3 tech stack in the coming years. Aleo is at the forefront of that transformation."
+        },
+        {
+          "date": "2022-12-15",
+          "quote": "Encryption & privacy will be essential for blockchains to broaden their utility and gain widespread adoption."
+        },
+        {
+          "date": "2022-03-11",
+          "quote": "Privacy unlocks a whole new region of the design space"
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Views crypto fundamentally as technology for larger-scale human cooperation; excited about software-encoded coordination mechanisms that are cheaper/faster than legal structures.",
+      "provenance": "grounded",
+      "age_note": "Long-held (Syndicate Jan 2022, PartyDAO June 2022) and restated most recently June 2023.",
+      "citations": [
+        {
+          "date": "2023-06-22",
+          "quote": "At its core, crypto is a technology that unlocks larger scale cooperation... building the tools that will make Ethereum seamlessly multiplayer."
+        },
+        {
+          "date": "2022-06-09",
+          "quote": "building coordination mechanisms that are 10,000x cheaper, faster, and more powerful than traditional legal structures"
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Convinced the future is multi-chain and that interoperability infrastructure breaking barriers between chains is critical foundational tech.",
+      "provenance": "grounded",
+      "age_note": "Reaffirmed April 2023, strengthening from initial LayerZero investment March 2022.",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain. LayerZero has built critical infrastructure that makes that possible."
+        },
+        {
+          "date": "2022-03-30",
+          "quote": "build a more composable and interoperable future for web3"
+        }
+      ]
+    },
+    {
+      "item": "payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited about non-custodial automated, recurring, programmable payments and bridging crypto rails with web2 payment infrastructure to unblock subscription business models.",
+      "provenance": "grounded",
+      "age_note": "Investment April 2022; restated via Loop+Stripe integration May 2023.",
+      "citations": [
+        {
+          "date": "2023-05-10",
+          "quote": "Great step forward toward integrating crypto payments with web2 payments infrastructure. Loop + Stripe integration is live"
+        },
+        {
+          "date": "2022-04-13",
+          "quote": "infrastructure that automated, recurring, and programmable payments in web3"
+        }
+      ]
+    },
+    {
+      "item": "ethereum-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Considers the Merge a landmark making Ethereum far superior \u2014 more secure, energy-efficient, fairer, with true finality enabling future scaling via rollups.",
+      "provenance": "grounded",
+      "age_note": "Stated strongly at the Merge (Sept 2022); not restated since but foundational to his worldview.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "Once it's done, I believe Ethereum will be a far superior blockchain than it was before."
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "Finality on Ethereum will lay the groundwork for future work that will improve Ethereum's ability to scale (via rollups)"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Crypto incentives can bootstrap real-world physical networks (wireless) faster than centralized incumbents \u2014 a proof that crypto applications go beyond currencies.",
+      "provenance": "persisted",
+      "age_note": "Stated March 2022 (Helium/Nova Labs); not restated through mid-2023 \u2014 cited but aging.",
+      "citations": [
+        {
+          "date": "2022-03-30",
+          "quote": "Helium's use of crypto incentives spurred the world's fastest-growing wireless network... a perfect example of how crypto applications go well beyond crypto-currencies."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Sees NFTs as building blocks letting players create and own game worlds, with accessible payment pathways needed as ownership goes mainstream.",
+      "provenance": "persisted",
+      "age_note": "Stated Aug 2022 (Halliday); not restated through mid-2023.",
+      "citations": [
+        {
+          "date": "2022-08-04",
+          "quote": "Crypto-enabled games will unlock new opportunities for players to create & own the future of those worlds with NFTs"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Believes web2's structural problems are worst in music/media; web3-native tools let artists own their contracts and communities, fixing the creator-monetization gap.",
+      "provenance": "persisted",
+      "age_note": "Stated Sept\u2013Dec 2022 (Sound.xyz, Shibuya); not restated in 2023.",
+      "citations": [
+        {
+          "date": "2022-09-21",
+          "quote": "The music industry is broken. It is the category for which the structural problems of web2 are at their very worst."
+        }
+      ]
+    },
+    {
+      "item": "wallet-signing-safety",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Worries average users cannot tell what they are signing with current tools; wants better standards, schemas, and wallets that flag suspicious transactions.",
+      "provenance": "persisted",
+      "age_note": "Stated Feb 2022; not restated since but a standing concern, not reversed.",
+      "citations": [
+        {
+          "date": "2022-02-20",
+          "quote": "The root problem has been that it's all but impossible for the avg user to know what the hell they're signing with today's tools."
+        },
+        {
+          "date": "2022-02-20",
+          "quote": "We also need wallets to help by identifying suspicious transactions and flagging them to the user"
+        }
+      ]
+    },
+    {
+      "item": "bridge-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Bridges are an attack-surface concern; opposed deploying Uniswap on BNB via Wormhole, reflecting skepticism about bridge trust assumptions despite his multi-chain optimism.",
+      "provenance": "grounded",
+      "age_note": "Most recent signal Feb 2023 (Uniswap Proposal 31 opposition), following Nomad bridge attack coverage Aug 2022. Coexists with his multi-chain enthusiasm.",
+      "citations": [
+        {
+          "date": "2023-02-05",
+          "quote": "Our rationale for opposing Uniswap Governance Proposal 31 to deploy Uniswap on BNB Chain using Wormhole"
+        },
+        {
+          "date": "2022-08-02",
+          "quote": "Breakdown of the ongoing Nomad bridge attack, by Matt on our team"
+        }
+      ]
+    },
+    {
+      "item": "builder-funding-environment",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Concerned society is increasingly vicious to those building new tech (crypto, AI, nuclear) and that top-down government science funding crowds out diverse innovation.",
+      "provenance": "grounded",
+      "age_note": "Stated Feb 2023; reflects macro/social-environment concern rather than a specific crypto sector.",
+      "citations": [
+        {
+          "date": "2023-02-13",
+          "quote": "I'm constantly shocked by how vicious society can be toward people who are trying to build something new. Be it AI, crypto, rockets, nuclear"
+        },
+        {
+          "date": "2023-02-15",
+          "quote": "Increasing government funding of science is often net negative\u2014worse than ineffective\u2014slowing down innovation."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Post-Merge Ethereum is, in his view, a far superior chain \u2014 more secure, ~100x more energy efficient, fairer validation, and true finality laying groundwork for rollup scaling.",
+      "provenance": "grounded",
+      "age_note": "Bullish case articulated at the Merge (Sept 2022); not a price call but a fundamentals view, unrevised through mid-2023.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "I believe Ethereum will be a far superior blockchain than it was before."
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "After the merge, Ethereum will be 100x+ more energy-efficient than it is today."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Despite the 2022-23 bear market and bridge/exploit fallout, Yahya remains structurally and aggressively bullish on building \u2014 framing this as the 'golden era of web3' and continuing to lead new rounds (Gensyn, Alongside) into 2023, especially at the AI\u00d7crypto and ZK frontiers. His concerns are about UX safety, bridge trust, and a hostile builder culture \u2014 not about the technology's long-term value. Posture is that of a long-horizon builder-investor leaning into the frontier, accepting frontier risk explicitly.",
+    "provenance": "grounded"
+  },
+  "notes": "Yahya writes as an a16z investor, so his 'views' are expressed through investment theses and technical convictions rather than token/price calls \u2014 token-level signal is thin (ETH fundamentals are the clearest). His through-line worldview: crypto as infrastructure for large-scale cooperation, ownership, and coordination that goes 'well beyond crypto-currencies.' The freshest and rising thesis as of mid-2023 is AI \u00d7 crypto (decentralized compute), layered on a persistent, high-conviction ZK/privacy core. Multi-chain enthusiasm coexists with bridge-security caution \u2014 not a contradiction but a nuanced 'interoperability yes, fragile bridges no' stance. Older sector bets (DePIN/Helium, gaming, creator economy) are marked persisted: cited once in 2022 and not restated, so weighted lower. He explicitly acknowledges frontier risk ('that's the risk with venturing out into the frontier,' 2022-06-02), consistent with a deliberate risk-on builder posture."
+}

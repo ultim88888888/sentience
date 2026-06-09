@@ -1,0 +1,157 @@
+{
+  "as_of": "2022-12-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Sees SNARK technology as transformative for blockchain scalability and is deeply engaged with the validity-rollup application space, which he finds full of innovation.",
+      "provenance": "grounded",
+      "age_note": "Consistently expressed Aug\u2013Dec 2022; stable, not reversed.",
+      "citations": []
+    },
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "His personal view that sum-check-based SNARKs are the most promising route to minimizing total prover work, aided by their near-perfect memory locality.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "verifiable-ml",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Expects proving of neural network training/inference as a near-term application, since its matrix-multiplication bottleneck suits super-efficient circuit-free protocols.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "monolithic-circuit-free-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Believes protocols that avoid circuits or intermediate representations deliver night-and-day prover performance gains and will not be subsumed by recursion.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Optimistic that good hardware implementations will follow for sum-check, whose round-by-round streaming memory locality is well suited to hardware (Zebra, Giraffe).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Regards recursion as extremely powerful for keeping circuit size in check, though he frames his enthusiasm as optimism that non-recursive techniques may prove even better.",
+      "provenance": "grounded",
+      "age_note": "Praised on 2022-12-30 but paired with persistent security caution; enthusiasm is qualified.",
+      "citations": []
+    },
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Believes blockchains will transform society's mechanisms for establishing trust and privacy and raise deep technical questions, motivating his move into the field.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Some deployed SNARKs run at roughly 80 bits of security, which he argues is not enough and is also not a well-defined term.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "fri-based-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "FRI carries an inherent tension between verifier costs/proof size and security, which he fears will be resolved in favor of performance.",
+      "provenance": "grounded",
+      "age_note": "Reaffirmed/refined 2022-11-27 that the tension is between security and verification costs, not prover time.",
+      "citations": []
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Worries that prioritizing performance over security could erode trust in the technology and lead to misappropriated funds.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 73,
+      "horizon": "structural",
+      "rationale": "All implemented composed SNARKs rely on heuristic security with possible concrete security loss, and risk grows with composition depth.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    },
+    {
+      "item": "hash-function-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Projects are deploying Poseidon at at most ~95 bits of security with imperfectly understood guarantees; he thinks it is premature to relax.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": []
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 15,
+    "rationale": "Thaler writes purely as a cryptography researcher about SNARK design, performance, and security. He expresses no market, price, or investment posture, and explicitly disclaims investment advice. He is structurally optimistic on the underlying technology but offers no risk-on/risk-off market signal.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus is technically narrow: every statement concerns SNARK/zero-knowledge-proof research (sum-check, FRI, recursion, hash functions, hardware) and his Nov 2022 announcement of joining a16z crypto research. He names cryptographic protocols (sum-check, FRI, Bulletproofs/IPA, PlonK, Marlin, Groth16) and primitives (Poseidon) but no tradeable tokens \u2014 hence empty token arrays; these are technical methods, not assets. His clearest signal is a performance-vs-security axis: bullish on sum-check-based and circuit-free SNARKs plus emerging zkML, but persistently cautious that the field is sacrificing security (80-bit deployments, ~95-bit Poseidon, heuristic recursion). Most recent views (Dec 28\u201331, 2022) reinforce rather than reverse earlier (Sep 2022) security concerns. No statements bear on macro market risk."
+}

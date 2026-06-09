@@ -1,0 +1,375 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees restaking as unbundling cryptoeconomic security from the EVM, enabling a marketplace where Ethereum validators secure new decentralized services \u2014 his single most recent and emphatic thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges"
+        },
+        {
+          "date": "2024-03-26",
+          "quote": "It's a two-sided market for cryptoeconomic security. On one side, you have Ethereum validators who can offer security."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes Ethereum's scaling endgame is millions of rollups; excited about coordination/shared-sequencing layers that solve the resulting composability fragmentation problem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "Ethereum's scalability end-game is all about rollups\u2014potentially thousands or even millions of rollups, each one a mini-ecosystem or an application"
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views crypto as a way to crowdsource idle ML compute and data, countering big-tech's compute advantage; a recurring multi-year theme.",
+      "provenance": "grounded",
+      "age_note": "Core thesis from 2023-01 through 2023-08; not restated in 2024 statements but consistently held.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "Gensyn has the potential to 10-100x the available compute power for machine learning."
+        },
+        {
+          "date": "2023-01-05",
+          "quote": "AI + crypto = collective AI. Crypto mechanisms can incentivize the crowdsourcing of better data sets, machine learning models, and compute."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Considers privacy a prerequisite for mainstream adoption and broader DeFi/identity/gaming use; tracks ZK proving advances (Lasso/Jolt) closely.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-22",
+          "quote": "It's hard to imagine crypto ever reaching mainstream adoption without privacy."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt are groundbreaking. Lasso is already 10x faster than Halo2's lookup argument"
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Convinced the future is multi-chain and that secure cross-chain messaging (decoupling security from liveness) is critical infrastructure.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-14",
+          "quote": "Critical moment today in the evolution of cross-chain interoperability... It radically improves... by cleanly decoupling security from liveness."
+        },
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Champions L2s less for performance than for enabling permissionless architectural innovation on Ethereum's security; sees modularity as a 'constraint that de-constrains.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        },
+        {
+          "date": "2023-12-16",
+          "quote": "A good interface is a constraint that de-constrains."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Wants crypto used to build durable cooperation and 'tokens with soul' \u2014 explicitly favors underexplored alignment primitives over short-term speculation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Underexplored \u2014 token lockups, retroactive funding, non-transferable tokens, rewards for verifiable work, on-chain reputation, iterated games"
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "create long-term alignment of incentives that increase the scale of human cooperation toward building new things."
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Sees web3 platforms removing intermediaries so artists and fans capture value directly; doubled down via repeat investment.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Sound is music without the middleman; a web3 music platform that is powering the next generation of artists and their communities"
+        }
+      ]
+    },
+    {
+      "item": "knowledge-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Excited about crypto-incentivized crowdsourcing of canonical knowledge and generalized information markets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-20",
+          "quote": "We believe in @freaticteam's vision of a decentralized information market and look forward to helping them make it a reality!"
+        },
+        {
+          "date": "2022-10-07",
+          "quote": "a decentralized and canonical knowledge graph."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His sharpest stated concern: believes speculative casino culture (soulless memecoins) is the primary force holding the space back, not a necessary bootstrap.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        },
+        {
+          "date": "2023-12-08",
+          "quote": "Don't know who needs to hear it, but being a degen just isn't cool."
+        }
+      ]
+    },
+    {
+      "item": "perp-dex",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Explicitly does not want 'yet another perps exchange with 100x leverage'; lists 100x leverage among tired, value-destructive activities.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "no, we don't need yet another perps exchange with 100x leverage."
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming"
+        }
+      ]
+    },
+    {
+      "item": "sybil-bot-metrics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Criticizes gamified distribution that caters to 'parasitic airdrop farmers' to inflate vanity metrics rather than build real networks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need gamified schemes that cater to parasitic airdrop farmers just to artificially pump some vanity TVL metric."
+        }
+      ]
+    },
+    {
+      "item": "builder-hostility",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Concerned that 'technically illiterate' regulators and a risk-averse culture threaten permissionless innovation; frames stagnation as the true existential risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-15",
+          "quote": "innovation dies when the decisions about what you CAN and CANNOT build are all made by web2 monopolies or by certain rogue, technically illiterate bureaucrats"
+        },
+        {
+          "date": "2023-11-30",
+          "quote": "We need to be taking more risks on new tech, not less."
+        }
+      ]
+    },
+    {
+      "item": "modularity-fragmentation-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Nuanced caution: modularity can add resilience or add single points of failure (separate DA chains), and rollup fragmentation harms composability.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-11",
+          "quote": "It depends on whether modularity adds redundancy... or adds more single points of failure (as with separate blockchains for DA, etc)."
+        }
+      ]
+    },
+    {
+      "item": "bridge-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Publicly opposed deploying Uniswap on BNB Chain via Wormhole, signaling concern about trust assumptions in bridge security.",
+      "provenance": "persisted",
+      "age_note": "Stated once, 2023-02-05; not restated, but consistent with his later emphasis on decoupling bridge security from trusted relayers.",
+      "citations": [
+        {
+          "date": "2023-02-05",
+          "quote": "Our rationale for opposing @Uniswap Governance Proposal 31 to deploy Uniswap on BNB Chain using Wormhole"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the bedrock of security and the unopinionated base layer that restaking, rollups, and L2s all extend; the gravitational center of essentially all his theses.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "build on top of the already decentralized and secure validator set of the most secure programmable blockchain: Ethereum."
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "each one a mini-ecosystem or an application that is built on top of Ethereum's bedrock of security."
+        }
+      ]
+    },
+    {
+      "item": "NEAR",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Praises NEAR for stack-level innovation and increasing alignment with the modular Ethereum stack (as a DA layer).",
+      "provenance": "persisted",
+      "age_note": "Positive mentions 2023-03 and 2023-11; not restated in 2024.",
+      "citations": [
+        {
+          "date": "2023-11-09",
+          "quote": "Exciting news from @NEARProtocol today about their increasing alignment with the modular Ethereum stack"
+        },
+        {
+          "date": "2023-03-02",
+          "quote": "We need innovation at every level of the stack... NEAR is leading the way"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Not hostile, but frames Bitcoin as a single-app, monolithic design that turned into a volatile store of value \u2014 contrasted unfavorably with Ethereum's programmability/unbundling. Mild reservation rather than a short thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "more like digital gold\u2014a store of value, albeit a volatile one."
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "The genius of Ethereum was to unbundle the monolithic, single-app Bitcoin approach"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "On technology and building he is aggressively risk-on \u2014 explicitly arguing the real existential risk is stagnation and that we should take more risks on new tech. But his risk appetite is channeled toward long-horizon infrastructure and durable incentive design, with strong rejection of leverage-driven speculation. So: structurally bullish on building, bearish on the casino \u2014 risk-on with a quality/anti-speculation filter.",
+    "provenance": "grounded"
+  },
+  "notes": "Ali's corpus is dominated by infrastructure investment announcements and philosophical threads rather than tradable token calls, so token-level views are sparse and inferred largely from Ethereum-centric framing. His most recent (Feb\u2013Mar 2024) and highest-conviction signals are restaking/cryptoeconomic security (EigenLayer) and rollup shared-sequencing/interoperability (Espresso). A durable, repeatedly-restated tension runs through the corpus: maximal enthusiasm for permissionless infrastructure and long-term cooperation mechanisms, paired with vocal disdain (peaking Dec 2023) for memecoins, 100x-leverage perps, and airdrop farming. No stance reversals detected \u2014 views are additive and internally consistent over the 18-month span. 'extrapolated' provenance was avoided; all entries are grounded or persisted with citations."
+}

@@ -1,0 +1,525 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 98,
+      "horizon": "structural",
+      "rationale": "His single highest-conviction theme: claims clear product-market fit, organic use uncorrelated to trading, cheapest way to send a dollar, and a path to onboard a billion people and sustain USD dominance.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "Stablecoins now present what I believe is the first credible opportunity to onboard a billion people into crypto."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "Stablecoins are no longer just used to settle speculative crypto trades. They have found product market fit across many different use cases."
+        },
+        {
+          "date": "2025-11-05",
+          "quote": "Another all-time high for adjusted stablecoin volume in October, with notable breakout growth on solana"
+        }
+      ]
+    },
+    {
+      "item": "agentic-payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Sees crypto rails as the natural \u2014 possibly only viable \u2014 payment economy for AI agents, who solve UX problems and are ideal micropayment customers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Crypto might be the only viable payment rail for AI agents. Will be an exciting category to watch."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "Crypto rails are a natural fit for AI agents, which will need access to an economy to unlock their full potential."
+        }
+      ]
+    },
+    {
+      "item": "micropayments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Believes crypto finally makes small transactions economically viable after decades, with AI agents as the perfect customers \u2014 an underdiscussed unlock.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-09-26",
+          "quote": "Micropayments are not being talked about enough... Crypto changes this\u2026and AI agents are the perfect customers."
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Most recent enthusiasm: argues subsidizing trading from external value can convert prediction markets from gambling into investing; flagged as an emerging category to watch.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-01-25",
+          "quote": "Subsidizing trading from the external value it creates can transform prediction markets from gambling into investing."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "see emerging ones like perps, prediction markets, and DePIN take shape."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Frames decentralization of AI compute, infrastructure and revenue as critically important given consolidation; excited about projects like Gensyn and EigenCloud.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "The work being done on decentralized compute will shape the future of AI."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "The opportunity at the intersection of crypto and AI is more clear than ever."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Expects mainstream users to demand financial privacy; coined 'privacy season,' excited about Aleo, and tracks ZK proofs maturing into practical crypto applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "As crypto goes mainstream, people are going to expect financial privacy. Excited about everything Aleo is working on!"
+        },
+        {
+          "date": "2025-10-30",
+          "quote": "ZK proofs have been around for 40 years. But it's the practical applications in the crypto industry that rapidly accelerated progress"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Highlights DEX share of spot trading reaching ~20% in only ~5 years as remarkable maturation, expects continued growth.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "20% is pretty remarkable given DeFi has only been around for ~5 years. I can't wait to see what this number looks like next year."
+        }
+      ]
+    },
+    {
+      "item": "cryptography-infra",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited by infra-layer progress \u2014 higher throughput, better UX, quantum resistance \u2014 and praised Jolt as a technical breakthrough now powering a new L1.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-10",
+          "quote": "Jolt is a technical breakthrough, and now core infrastructure powering the new L1 from LayerZero."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "continued progress at the infrastructure layer \u2014 higher throughput, better privacy, smoother UX, and even work toward quantum resistance."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Through CSX investments (Oncade, Launcher) argues games are the product most suited to stablecoin microtransaction rails and that AI/vibe-coding is democratizing game creation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-28",
+          "quote": "Games are perhaps the product most obviously suited to stablecoin-based payment rails \u2013 driving billions of microtransactions annually"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Counts DePIN among emerging categories taking shape, citing Helium reaching millions of daily users as proof of the model.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Helium has been a pioneer in DePIN. It's incredible to see the network now reach millions of users every day."
+        }
+      ]
+    },
+    {
+      "item": "token-value-accrual",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Watching the count of tokens with >$1M monthly net revenue; expects market structure legislation to let projects close the economic loop and build a healthier token economy.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "the path is finally opening up for tokens to complete the economic loop... leading to a much healthier token economy."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Favorite metric; repeatedly flags all-time highs and improved wallet infra (account abstraction, embedded wallets) as making now the best time to build next-gen wallets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "Wallet infrastructure has significantly improved... Now is a better time than ever to build a next-generation mobile wallet."
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Cites $30B of RWAs tokenized onchain as a maturation signal among his favorite 2025 stats.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "$30B in real-world assets are tokenized onchain"
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Argues 2025 institutional adoption is qualitatively different \u2014 big financial institutions with massive distribution making real commitments, not just exploring.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "The large financial institutions aren't just exploring crypto, they're making real commitments."
+        },
+        {
+          "date": "2025-10-24",
+          "quote": "The institutional adoption of crypto in 2025 is unlike anything we've ever seen before... These companies have massive distribution."
+        }
+      ]
+    },
+    {
+      "item": "perp-dex",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Names perps among emerging onchain categories he's interested to watch take shape; mentioned once without elaboration.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "see emerging ones like perps, prediction markets, and DePIN take shape."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Expects existing categories like NFTs to keep evolving; lower-energy mention relative to his payments/AI focus.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "I'm excited to watch existing categories like DeFi and NFTs continue to evolve"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Worries AI's compute, infrastructure and revenue have consolidated into a few big companies, with the rest of the S&P 500 growing below inflation \u2014 motivating his decentralization thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-31",
+          "quote": "The compute resources AI is trained with, the infrastructure AI runs on, and the revenue that AI generates has consolidated into a handful of big companies."
+        }
+      ]
+    },
+    {
+      "item": "us-fiscal-sustainability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Notes national debt growing out of control and waning Treasury demand (foreign central banks now hold more gold than US Treasuries) \u2014 frames it as the opening for USD stablecoins.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-27",
+          "quote": "The U.S. national debt is growing out of control, and the demand for that debt is waning."
+        }
+      ]
+    },
+    {
+      "item": "quantum-vulnerability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Flags $750B of Bitcoin in quantum-vulnerable addresses; timeline unclear but says communities must plan a transition to quantum-secure cryptography.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-29",
+          "quote": "Today, $750 billion worth of Bitcoin sits in quantum vulnerable addresses."
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Sees worrisome consolidation across the economy and positions crypto as a credible counterbalancing force; this counter-centralization concern is restated via his 2025 AI-decentralization argument.",
+      "provenance": "grounded",
+      "age_note": "First stated 2024-11-11; same anti-consolidation theme restated re: AI on 2025-10-31, so current.",
+      "citations": [
+        {
+          "date": "2024-11-11",
+          "quote": "This consolidation is worrisome. Crypto might be the only credible counterbalancing force out there."
+        }
+      ]
+    },
+    {
+      "item": "dollar-reserve-cbdc",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Called accelerating wholesale CBDC development a national-security concern for US dollar dominance \u2014 an early framing later folded into his stablecoin-as-dollar-defense thesis.",
+      "provenance": "persisted",
+      "age_note": "Stated only Dec 2024; not directly restated since, though the underlying dollar-dominance concern recurs through stablecoin commentary.",
+      "citations": [
+        {
+          "date": "2024-12-03",
+          "quote": "wholesale CBDC developments have DOUBLED. This is a national security concern, since the dollar's status as a reserve currency gives the United States tremendous power."
+        }
+      ]
+    },
+    {
+      "item": "USDC",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "One of the two dominant stablecoin issuers in what he calls a two-horse race; issuer Circle's NYSE listing cited as a maturation milestone.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "On the issuer side, it's a two horse race between USDC and Tether."
+        }
+      ]
+    },
+    {
+      "item": "USDT",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "The other dominant stablecoin issuer driving the all-time-high volumes he tracks as evidence of payments PMF.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "On the issuer side, it's a two horse race between USDC and Tether."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Credits Solana for the scaling narrative (fast, cheap, reliable) and highlights breakout stablecoin volume growth on the chain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Solana has been a huge contributor to this scaling narrative"
+        },
+        {
+          "date": "2025-11-05",
+          "quote": "Another all-time high for adjusted stablecoin volume in October, with notable breakout growth on solana"
+        }
+      ]
+    },
+    {
+      "item": "BASE",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Names Base among new high-throughput rails that finally made stablecoins a good payments product; notes recent stablecoin growth on it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "new Ethereum L2s like Base, we've finally been able to make stablecoins a good product for payments."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Continues to dominate stablecoin infrastructure alongside Tron; foundational to the L2 scaling that enabled cheap stablecoin payments.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "On the infrastructure side, Ethereum and Tron continue to dominate."
+        }
+      ]
+    },
+    {
+      "item": "HNT",
+      "item_type": "token",
+      "parent_sector": "depin",
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Cited as a pioneering DePIN network now reaching millions of daily users \u2014 proof the model can scale.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Helium has been a pioneer in DePIN. It's incredible to see the network now reach millions of users every day."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Concern is narrow and technical: roughly $750B of BTC sits in quantum-vulnerable addresses, an unaddressed long-tail risk \u2014 even as he treats Bitcoin's store-of-value use case positively.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-29",
+          "quote": "Today, $750 billion worth of Bitcoin sits in quantum vulnerable addresses."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 86,
+    "rationale": "Consistently and recently bullish: says the pieces are finally coming together for crypto's next phase, that 2025 'feels different' with institutions arriving, stablecoin PMF, reliable infrastructure and incoming regulatory clarity. Frames the industry as maturing, not topping. Concerns (AI/compute consolidation, US debt, quantum) are treated as opportunities for crypto rather than reasons to derisk.",
+    "provenance": "grounded"
+  },
+  "notes": "Matsuoka is a16z crypto's data/State-of-Crypto lead, so his views read as long-horizon structural trend calls rather than tactical trades. No material reversals found across the 18-month corpus; his theses (stablecoins, crypto x AI, infra maturation) only intensified over time, so most recent (Oct 2025\u2013Feb 2026) statements were weighted heaviest. Stablecoins dominate his attention by a wide margin and are the through-line connecting his AI-payments, micropayments, gaming, and dollar-dominance views. One nuance worth flagging: he notes total transaction fees fell ~43% YoY but explicitly does NOT treat this as bearish \u2014 falling unit fees are by design \u2014 so it is excluded from concerns. The CBDC concern is the clearest 'persisted' item (stated once in Dec 2024, never directly restated). Token-level concern is limited to Bitcoin's quantum exposure, which coexists with broadly positive token views."
+}

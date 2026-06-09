@@ -1,0 +1,525 @@
+{
+  "as_of": "2024-12-31",
+  "approach": "A2a:Eddy Lazzarin",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Building open-source zkVMs to make proving faster/simpler, scale blockchains, and bring more computation onchain; his single most active personal project area.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're sharing our biggest open source release yet: Jolt Alpha, our zkVM built new from the ground up."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "We've developed a new lookup argument called Lasso that is already 10x faster than halo2"
+        },
+        {
+          "date": "2024-12-21",
+          "quote": "Jolt memory usage is going to decrease massively over the next few months. And we're aiming constant+low memory"
+        }
+      ]
+    },
+    {
+      "item": "content-authenticity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 87,
+      "horizon": "structural",
+      "rationale": "Believes the coming flood of AI-generated content can only be countered with cryptographic provenance, attestation graphs, and private sybil-resistant identity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-17",
+          "quote": "Every robust method to prove the origin or history of content involves cryptography and blockchains."
+        },
+        {
+          "date": "2024-01-05",
+          "quote": "Crypto skeptics should explain how they think we're going to solve this problem. I don't think it can be done seriously without crypto."
+        },
+        {
+          "date": "2024-07-23",
+          "quote": "cryptographic signatures, decentralized and private identities, and censorship resistant systems are all key ingredients"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-internet-infra",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Core thesis: open permissionless networks resist centralization and let users own usernames/data, unlike closed corporate web2 networks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-14",
+          "quote": "You don't own your username \u2014 or anything else \u2014 on a corporate network."
+        },
+        {
+          "date": "2024-02-12",
+          "quote": "the 'fun' is the result of permissionless innovation in an open system"
+        },
+        {
+          "date": "2024-06-26",
+          "quote": "released a dapp on the new River protocol (user-owned chat communities)"
+        }
+      ]
+    },
+    {
+      "item": "light-clients",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Wants trust-minimized verification (light clients verifying L1/L2 in-browser) baked into wallets and RPC providers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-25",
+          "quote": "You can run a Helios light client in the browser to verify Ethereum L1 + OP Mainnet + Base. It works right now."
+        },
+        {
+          "date": "2024-02-04",
+          "quote": "Remarkable how powerful it is to give every user a cryptographic key that is linked to a secure verifiable computer (blockchain)."
+        }
+      ]
+    },
+    {
+      "item": "payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Sees payments (cheap USDC transfers bypassing ~30% platform fees) as a founding crypto goal whose pieces are finally coming together.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-25",
+          "quote": "Payments has been one of the goals of crypto from the beginning. The pieces are finally coming together."
+        },
+        {
+          "date": "2024-01-16",
+          "quote": "merchants could save ~30% and maintain a more direct relationship with users. The benefits of crypto start becoming very obvious."
+        }
+      ]
+    },
+    {
+      "item": "agentic-payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Autonomous AI agents can hold wallets, pay each other and for their own compute, and respect cryptographic/consensus constraints more easily than laws.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-05",
+          "quote": "AI agents can't have bank accounts, but they can have crypto wallets."
+        },
+        {
+          "date": "2024-10-16",
+          "quote": "agents being able to pay each other, and even for their own compute, is what I had in mind here. It will definitely happen."
+        },
+        {
+          "date": "2024-12-22",
+          "quote": "It's much easier for machines respect constraints imposed by cryptography and blockchain consensus than constraints imposed by laws"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Views games as a perennial source of software innovation and points to a game L3 leading all chains by throughput (Mgas/s).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-20",
+          "quote": "Narrative violation: #1 chain measured by Mgas/s (the correct measure for throughput) is @ProofOfPlay \u2014 by a long shot."
+        },
+        {
+          "date": "2023-10-27",
+          "quote": "onchain games ... all compute constrained"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Wants a composable rights layer so derivative/remix creativity is easy while original authors are compensated downstream.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-06",
+          "quote": "Story Protocol fixes this with an onchain remix graph that makes composition and attribution natural."
+        },
+        {
+          "date": "2024-10-14",
+          "quote": "deliberately allow people to borrow your voice ... Need a good IP management system."
+        }
+      ]
+    },
+    {
+      "item": "blockspace-demand",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Argues Ethereum must raise blob capacity and not slow down because founders pick infrastructure on present and future expected capacity; many good ideas are compute-constrained.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-30",
+          "quote": "Ethereum should raise the blob target to 4 ... Ethereum cannot afford to slow down."
+        },
+        {
+          "date": "2023-10-27",
+          "quote": "90% of the unfeasible but good ideas I hear are primarily limited by compute."
+        }
+      ]
+    },
+    {
+      "item": "cryptoeconomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Teaches and obsesses over principled token mechanism design \u2014 faucets, sinks, network effects, whether voting is even needed.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-10",
+          "quote": "When designing decentralized networks with tokens, there's so much to consider."
+        },
+        {
+          "date": "2024-08-12",
+          "quote": "Why issue tokens at all? What are some common pitfalls? I talked about crafting network tokens"
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure-research",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Champions fresh research-lab designs enabling trustless data markets and cheaper verification.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "With FDE, you could set up a trustless market to buy data."
+        },
+        {
+          "date": "2024-03-11",
+          "quote": "Naysayer proofs can be extremely efficient, requiring proof verification to be executed onchain only when there's an error."
+        }
+      ]
+    },
+    {
+      "item": "bitcoin-programmability",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Wants to bring zero-knowledge to Bitcoin (e.g. a VERIFY_SNARK opcode) to make it programmable and freely movable, reviving Satoshi's vision.",
+      "provenance": "persisted",
+      "age_note": "Argued mainly Sept 2023; not restated in 2024 though the related Bitcoin security/ossification concern persists.",
+      "citations": [
+        {
+          "date": "2023-09-27",
+          "quote": "adding a VERIFY_SNARK opcode to the bitcoin protocol \u2014 would make bitcoin totally programmable and free to move all over the internet."
+        },
+        {
+          "date": "2023-09-20",
+          "quote": "We should bring zero knowledge back home to bitcoin."
+        }
+      ]
+    },
+    {
+      "item": "account-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Prefers 'smart accounts' (identity + ownership) over wallets as a foundation for richer automated onchain behavior.",
+      "provenance": "persisted",
+      "age_note": "Stated mid-2023, not restated since; treat as a persisted view.",
+      "citations": [
+        {
+          "date": "2023-07-13",
+          "quote": "Smart account is much better than smart wallet ... 'account' implies both identity and ownership \u2014 which is the truth."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His strongest, most repeated concern: speculation deters serious founders, hands ammunition to politicized regulators, and reframes crypto as a casino \u2014 damaging adoption daily.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "we shouldn't pretend that the casino doesn't set us back. Deterring great founders and giving ammo to politicized regulators has a profound effect."
+        },
+        {
+          "date": "2024-11-29",
+          "quote": "It's a memecoin when that's all there is."
+        },
+        {
+          "date": "2024-03-24",
+          "quote": "fomo can use the full intellect to justify itself with elaborate stories"
+        }
+      ]
+    },
+    {
+      "item": "ai-content-flooding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Expects most online content to soon be assumed AI-generated unless cryptographically attested \u2014 a dystopia he sees as nearly unavoidable absent crypto provenance.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-04",
+          "quote": "The 'mystery meat' scenario seems unavoidable: 'where is this content from?' 'no idea but it's good'"
+        },
+        {
+          "date": "2024-01-05",
+          "quote": "all content is assumed generated unless accompanied by the requisite provenance/signatures/attestations/proofs"
+        }
+      ]
+    },
+    {
+      "item": "centralized-platform-dependence",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Closed networks block real experimentation and ownership, and naive p2p systems degrade to centralization without proper architecture.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-01",
+          "quote": "Because of its network architecture, Nostr likely degrades to centralization \u2014 like Fediverse. This happens often in simple p2p systems."
+        },
+        {
+          "date": "2023-09-18",
+          "quote": "No e/acc nocoiner I know adequately appreciates the ways centralization limits the speed of innovation."
+        }
+      ]
+    },
+    {
+      "item": "builder-hostility",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "tactical",
+      "rationale": "Believes crypto founders are being debanked and politicized regulators are a real threat; pushes back on those denying it happened.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-27",
+          "quote": "Why are your priors telling you this did not happen? Respectfully, they may need adjusting"
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "giving ammo to politicized regulators has a profound effect"
+        }
+      ]
+    },
+    {
+      "item": "misleading-metrics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Frustrated that headline crypto metrics are flawed and don't reflect real users, developers, or revenue, distorting how progress is judged.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-26",
+          "quote": "It's extremely obvious why 'active addresses' is flawed in multiple ways \u2014 yet no other measure seems to be better."
+        },
+        {
+          "date": "2023-08-14",
+          "quote": "It's a very bad metric."
+        }
+      ]
+    },
+    {
+      "item": "bitcoin-ossification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Worries Bitcoin's refusal to upgrade and its long-run (fee-based) security model threaten its survival over coming decades.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-07",
+          "quote": "A side effect of bitcoin's extreme ossification is that normies believe other blockchains are also not changing or upgrading."
+        },
+        {
+          "date": "2023-07-24",
+          "quote": "the security model of bitcoin needs to change if it's going to last the next few decades."
+        }
+      ]
+    },
+    {
+      "item": "closed-proprietary-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Argues closed models drastically limit innovation and safety; favors open, even uncensored models plus crypto-based trust tooling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-23",
+          "quote": "Closed source drastically limits innovation from startups, universities, independent researchers ... And it makes it more difficult to keep software safe."
+        }
+      ]
+    },
+    {
+      "item": "USDC",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Cheap, fast onchain payment rail that lets merchants bypass ~30% platform fees and own the user relationship.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-16",
+          "quote": "If an app can collect payment from a mobile crypto wallet (think quick and cheap USDC transfer), merchants could save ~30%"
+        }
+      ]
+    },
+    {
+      "item": "WLD",
+      "item_type": "token",
+      "parent_sector": "proof-of-personhood",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Sees private, sybil-resistant proof-of-personhood as a necessary complement to trust graphs for defending networks against AI; repeatedly cites it as the model.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-07",
+          "quote": "How bad does this need to get before all networks need to integrate a private proof of personhood system like @worldnetwork?"
+        },
+        {
+          "date": "2024-01-05",
+          "quote": "a sybil resistance mechanism, which is what Worldcoin provides"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Appreciates Bitcoin's existence and sees latent potential if made ZK-programmable \u2014 but this excitement is tempered by ossification/security worries.",
+      "provenance": "grounded",
+      "age_note": "Endorsement is appreciative-but-qualified; he simultaneously flags ossification and an aging security model (see concerns).",
+      "citations": [
+        {
+          "date": "2024-12-07",
+          "quote": "It's incredible that we have bitcoin."
+        },
+        {
+          "date": "2023-09-27",
+          "quote": "All of the things Satoshi envisioned become possible again."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Pure-meme/store-of-value tokens have no enterprise value and, as a category, represent the casino dynamic he thinks sets the industry back.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-05",
+          "quote": "memecoins/store of value tokens like Dogecoin have no enterprise value (like gold)."
+        },
+        {
+          "date": "2024-11-29",
+          "quote": "It's a memecoin when that's all there is."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 65,
+    "rationale": "Eddy's posture is that of a long-horizon infrastructure builder: deeply, structurally bullish on crypto-the-computer (ZK, verifiable computing, open networks, payments, AI-agent rails) and willing to keep shipping open-source infra regardless of market conditions. But he is explicitly risk-OFF on speculation/memecoins and the 'casino,' which he views as net-negative. So the bullishness is conviction in fundamental technology and adoption, not in speculative price action.",
+    "provenance": "grounded"
+  },
+  "notes": "View synthesized from an a16z-crypto infrastructure builder, not a trader \u2014 he rarely endorses specific tokens to hold, so tokens lists are sparse and protocol/sector-weighted. Recency weighting: ZK/zkVM (Jolt), deepfake-provenance, user-owned networks, payments, AI-agent rails, and the anti-memecoin stance are all reinforced through late 2024 and treated as current. Bitcoin-ZK-programmability and smart-accounts are mid-2023 views never reversed but not restated \u2192 marked persisted. No genuine reversals detected; the one terminology shift noted is his Sept-2023 switch from 'Data Availability' to 'Data Publishing/Storage' (not surfaced as a market view). Worldcoin/World ID appears as both a system he champions and an implied token; conviction reflects the system endorsement. Bitcoin appears in both excited and concerned lists because his stance is genuinely mixed (appreciative of its existence/potential, worried about ossification and security model)."
+}

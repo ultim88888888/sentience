@@ -1,0 +1,228 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "Sees blockchains/tokens as the only viable way to restore the internet as an open, user-owned platform that shifts power from Big Tech back to creators and users. This is his foundational thesis and the subject of his book.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated repeatedly 2023-06 through 2024; most recently reaffirmed via book launch and ongoing capital deployment in 2024.",
+      "citations": [
+        {
+          "date": "2023-06-22",
+          "quote": "I explain why crypto/web3 is the only plausible path to sustaining the original vision of the internet as an open platform"
+        },
+        {
+          "date": "2024-01-30",
+          "quote": "I wrote RWO to help more people appreciate the potential of blockchains for building a better internet"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes generative AI is breaking the creator-platform covenant; on-chain IP registration (Story Protocol) can let creators track, license, and get compensated for work used by AI. His most recent and active conviction bet.",
+      "provenance": "grounded",
+      "age_note": "Most recent major position \u2014 led $80M Series B in PIP Labs/Story on 2024-08-21.",
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "We want to help Story become the infrastructure for AI systems and creative people to happily co-exist."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "creators need a modern way to ensure they get compensated for their work"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited about games where players own assets and anyone can build on top of another's game (modding from background to foreground), enabling composability, interoperability, and permanence.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-09-21 (Proof of Play seed); not restated in 2024 corpus but consistent with his broader thesis.",
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Excited to announce that we're leading a seed investment in @ProofOfPlay, an on-chain game studio and tech company"
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "players own their assets, and anyone can create their own game on top of another"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Personally uses Farcaster and prefers its community quality over Twitter/X \u2014 a live signal of conviction in user-owned social platforms.",
+      "provenance": "grounded",
+      "age_note": "Stated 2024-01-18; recent and based on personal usage.",
+      "citations": [
+        {
+          "date": "2024-01-18",
+          "quote": "I use Farcaster all the time. The community is far better than on Twitter."
+        }
+      ]
+    },
+    {
+      "item": "open-source-ai-business-model",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Endorses decentralized, open AI models as a US competitive advantage; opposes closed-only models that concentrate power in a few big companies. Aligns with his 'little tech vs big tech' framing.",
+      "provenance": "persisted",
+      "age_note": "Expressed via approving share of Zuckerberg's open-source essay on 2024-07-23; an endorsement rather than original framing.",
+      "citations": [
+        {
+          "date": "2024-07-23",
+          "quote": "The United States' advantage is decentralized and open innovation."
+        }
+      ]
+    },
+    {
+      "item": "vr-spatial-computing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Expects VR to follow prior computing-platform cost curves (cheaper, faster, lighter) once Meta and Apple invest at scale.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2023-06-05 around Vision Pro launch; never restated \u2014 treat as aged and peripheral to his core crypto focus.",
+      "citations": [
+        {
+          "date": "2023-06-05",
+          "quote": "Excited for Vision Pro. With Meta and now Apple investment, VR will follow the same pattern as past computing platforms"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Believes the current US approach perversely lets unproductive tokens thrive while productive companies/tokens face hurdles, limits innovation/privacy, and risks pushing builders offshore. Drives his heavy policy/PAC engagement.",
+      "provenance": "grounded",
+      "age_note": "Long-running concern (2023) intensifying through 2024 \u2014 FT op-ed 2024-04-18, FIT21 advocacy 2024-05, SAB121 veto disappointment 2024-06.",
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "the backward incentives of a regulatory regime in the US that lets only memecoins thrive \u2014 while companies and tokens with more productive uses face hurdles"
+        },
+        {
+          "date": "2024-06-01",
+          "quote": "It's more clear than ever that we need to get comprehensive crypto legislation passed into law this year."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Views the speculative, casino-like culture around crypto as harmful \u2014 it damages public perception and undermines the technology's productive potential. Wants utility-driven, not speculation-driven, narratives.",
+      "provenance": "grounded",
+      "age_note": "Persistent stance from 2023-06 through 2024; restated in 2024-01 book framing.",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "stamping out the harmful \"casino\" culture that has developed around crypto"
+        },
+        {
+          "date": "2024-01-03",
+          "quote": "these technologies can support productive and not just speculative use cases"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Concerned AI search and AI-generated content sever the creator-platform covenant \u2014 AI trained on human work without attribution or compensation removes the incentive to publish original content openly.",
+      "provenance": "grounded",
+      "age_note": "Most recent concern, articulated 2024-08-21 as motivation for the Story investment.",
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "Advances in generative AI are likely to break this covenant."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "If there's no attribution or compensation, what incentive will there be to publish original creations on the open internet?"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Worries that a closed-model world concentrates power in a few big companies (and adversaries), shutting out startups, universities, and small business \u2014 consistent with his 'little tech vs big tech' worldview.",
+      "provenance": "persisted",
+      "age_note": "Expressed via endorsed Zuckerberg quote 2024-07-23; aligned with longstanding Big-Tech-vs-little-tech framing.",
+      "citations": [
+        {
+          "date": "2024-07-23",
+          "quote": "a world of only closed models results in a small number of big companies plus our geopolitical adversaries having access to leading models"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Not opposed to memecoins per se, but uses them as evidence of broken regulatory incentives \u2014 they are the only tokens that thrive in the US while productive tokens are blocked. Emblematic of the casino culture he dislikes.",
+      "provenance": "grounded",
+      "age_note": "Stated 2024-04-18; he explicitly notes his aim is neither to defend nor diminish memecoins but to flag regulatory distortion.",
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "My goal isn't to defend or to diminish memecoins."
+        },
+        {
+          "date": "2024-04-18",
+          "quote": "a regulatory regime in the US that lets only memecoins thrive"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "Despite a hostile US regulatory backdrop, Dixon remains a committed long-term, structural bull on crypto/web3 \u2014 actively deploying capital (e.g., $80M into PIP Labs/Story, expanding to the UK, $47M total to Fairshake) and publishing a manifesto for the space. His concerns are about conditions and culture, not the underlying thesis; his posture is build-through-the-cycle conviction, not retreat.",
+    "provenance": "grounded"
+  },
+  "notes": "Dixon's view is overwhelmingly sector/thesis-level rather than token-level \u2014 he names almost no specific tokens to be bullish on, so tokens_excited is empty. His most RECENT and active conviction (2024-08) is the AI\u00d7crypto creator-IP intersection (Story Protocol), which now sits alongside his enduring open-internet thesis. Regulation is his dominant concern and consumes most of his 2024 public energy (FIT21, Fairshake, SAB121, FT op-ed), but it reads as frustration with friction rather than loss of conviction. Conflicts were minimal; where stances are old and unrestated (VR 2023-06, on-chain games 2023-09) they are marked persisted with age notes. The open-source AI and Big-Tech-concentration views are inferred from approvingly-shared third-party (Zuckerberg) material rather than original statements, hence lower conviction and persisted provenance."
+}

@@ -1,0 +1,287 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "nft-brands-community",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Believes NFTs bootstrap communities, confer 'psychological ownership,' and let brands share value with users \u2014 turning consumers into builders. His central, most-restated thesis; he's writing a book on it.",
+      "provenance": "grounded",
+      "age_note": "Consistent and continually restated from Jan 2022 through June 2023; most recent statement is current.",
+      "citations": [
+        {
+          "date": "2023-06-01",
+          "quote": "Some NFTs just serve as ownership records, while others can become the foundation of digital brands!"
+        },
+        {
+          "date": "2022-05-16",
+          "quote": "Web3 platforms unlock a novel and especially powerful form of network effect through community engagement and social cohesion."
+        }
+      ]
+    },
+    {
+      "item": "nft-licensing-standards",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees cc0 as inviting derivative creation and co-creation that grows the value of the original asset; a 'literal license to build.' Explicitly notes it is not one-size-fits-all.",
+      "provenance": "grounded",
+      "age_note": "Core to Aug 2022 article and reaffirmed in April 2023 wave-mint piece; current.",
+      "citations": [
+        {
+          "date": "2022-08-03",
+          "quote": "cc0 licensing is an incredibly compelling way to kickstart IP that may one day take on a life of its own."
+        },
+        {
+          "date": "2023-04-06",
+          "quote": "A 'wave mint' leverages people's on-chain data and reputation to select for holders who are well matched to a project's culture"
+        }
+      ]
+    },
+    {
+      "item": "vampire-attacks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "His own economic-theory result: public on-chain transaction history lets entrants poach rivals' loyal customers, restoring competition and driving prices down \u2014 net good for consumers.",
+      "provenance": "grounded",
+      "age_note": "Most recent and actively-promoted research thread (March\u2013May 2023); current.",
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "vampire attacks can result in virtuous platform competition that drives down prices."
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "Blood-sucking web platforms may be good for consumers."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Argues the 2022 CeFi blowups vindicate decentralized finance rather than condemning crypto; decentralization reduces counterparty/custody risk.",
+      "provenance": "grounded",
+      "age_note": "Stated post-FTX (Dec 2022), re-upped Dec 2022; current.",
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi."
+        }
+      ]
+    },
+    {
+      "item": "nft-mint-mechanism-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Strong market-design preference for clearing-price auctions and reputation-gated 'wave' mints over descending pay-as-bid; sees good mechanism design as solving supply/demand and bot/gas problems.",
+      "provenance": "grounded",
+      "age_note": "Persistent from early 2022; reaffirmed June 2023 \u2014 fully current.",
+      "citations": [
+        {
+          "date": "2022-09-10",
+          "quote": "I generally prefer clearing-price auctions to descending pay-as-bid auctions"
+        },
+        {
+          "date": "2023-06-17",
+          "quote": "SO BULLISH on @jenkinsthevalet @TallyLabsNFT running an actual clearing-price auction on-chain, rather than the descending pay-as-bid auctions"
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Argues 'location, location, location' applies to scarce, non-fungible metaverse spaces; interoperability/portability across worlds raises value. Enthusiastic about generative architecture (SOLIDS) as portable building primitives.",
+      "provenance": "grounded",
+      "age_note": "Heaviest output mid-2022; lighter but still referenced into 2023 (advisor relationships ongoing). Slight cooling in emphasis vs. NFT-brand thesis.",
+      "citations": [
+        {
+          "date": "2022-06-10",
+          "quote": "It matters which metaverse location you own! (The spaces themselves are non-fungible in that sense.)"
+        },
+        {
+          "date": "2022-04-04",
+          "quote": "My friend @0xfar has just launched something really cool: a generative architecture project called @SOLIDSNFT"
+        }
+      ]
+    },
+    {
+      "item": "progressive-decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Frames decentralization as adjustable 'slider bars' per business unit; centralize early to find product-market fit, then decentralize \u2014 design for it upfront as competitive advantage.",
+      "provenance": "grounded",
+      "age_note": "Jan 2023 article; current and recent.",
+      "citations": [
+        {
+          "date": "2023-01-12",
+          "quote": "Decentralization needn't be 'all-or-nothing.' But you have to plan in advance"
+        },
+        {
+          "date": "2023-01-12",
+          "quote": "the one that's better set up for it upfront is likely to be the winner."
+        }
+      ]
+    },
+    {
+      "item": "nft-mint-mechanism-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "tactical",
+      "rationale": "Worries the prevalent descending pay-as-bid format and demand/supply imbalance produce gas wars and overpayment; a botched auction can deter projects from better formats. Repeatedly flags poorly-designed mints (Azuki Elementals, GutterCatGang).",
+      "provenance": "grounded",
+      "age_note": "Recurring 2022\u20132023; sharpest in June 2023 Azuki critique \u2014 current.",
+      "citations": [
+        {
+          "date": "2023-06-25",
+          "quote": "And fundamentally gas wars are about supply/demand (im)balance"
+        },
+        {
+          "date": "2022-04-23",
+          "quote": "this fiasco will probably deter future projects from trying it."
+        }
+      ]
+    },
+    {
+      "item": "cefi-intermediaries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Views centralized crypto platforms taking on excess/opaque risk as the failure mode behind FTX/Celsius/Terra; competition only helps if firms don't engage in such malbehavior.",
+      "provenance": "grounded",
+      "age_note": "Post-FTX (Dec 2022) through March 2023; current.",
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "such as with centralized crypto finance platforms taking on excess risk"
+        }
+      ]
+    },
+    {
+      "item": "nft-scams-rugpulls",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Pushes back hard on framing NFTs as a sure way to make money; stresses they are inherently risky at any price; recurrently warns about misleading press, scams, and rugpulls.",
+      "provenance": "grounded",
+      "age_note": "Stated 2022, attitude persists; consistent stance.",
+      "citations": [
+        {
+          "date": "2022-04-28",
+          "quote": "BUYING NFTS AS INVESTMENTS IS INHERENTLY RISKY. At any price point. No investment is guaranteed to go up!"
+        }
+      ]
+    },
+    {
+      "item": "vampire-attack-sustainability-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Even while excited about vampire attacks, he flags that current implementations may not be durable and lean on regulatorily questionable incentive strategies.",
+      "provenance": "grounded",
+      "age_note": "Caveat stated alongside the March 2023 thesis; current.",
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "it's not clear how sustainable the current vampire attack models are, especially since many of them rely on strategies that are regulatorily suspect."
+        }
+      ]
+    },
+    {
+      "item": "wallet-signing-safety",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Repeatedly worried about scam ads, fake/compromised accounts, and the security risk of minting from wallets holding high-value assets; treats this as a real adoption obstacle.",
+      "provenance": "grounded",
+      "age_note": "Recurring 2022\u20132023; current.",
+      "citations": [
+        {
+          "date": "2023-04-06",
+          "quote": "a wave mint is complex to execute. And there are security issues around having people mint for wallets"
+        },
+        {
+          "date": "2023-04-14",
+          "quote": "Twitter for some reason is curreny allowing what appear to be scam ads from a fake copy"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as foundational infrastructure for NFTs and web3 rather than a price bet; celebrated The Merge as a landmark engineering feat. Enthusiasm is about the platform, not a directional price call.",
+      "provenance": "grounded",
+      "age_note": "Merge enthusiasm Sept 2022; no later price view. Infrastructure framing, not a trading thesis.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "GM! Happy Merge Day to all who celebrate, QED"
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "it's like changing the engine of a plane while it's in the air... but at the scale of the Internet"
+        }
+      ]
+    },
+    {
+      "item": "MATIC",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Cites Polygon favorably as a cheap, practical settlement layer for putting verifiable records on-chain \u2014 a utility/infrastructure endorsement, not an investment view.",
+      "provenance": "grounded",
+      "age_note": "Single utility-framed mention (Dec 2022); persisted, low-salience.",
+      "citations": [
+        {
+          "date": "2022-12-09",
+          "quote": "Why would it be expensive? You could do it on polygon for pennies."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "Through the 2022\u20132023 bear market and the FTX/Celsius/Terra collapses, Kominers stayed structurally and behaviorally bullish on crypto/web3: he joined a16z crypto research, kept advising projects, launched products (wave mint), is writing an NFT book, and explicitly rejected the 'end of crypto' narrative. His optimism is long-horizon and builder-oriented, not a tactical price call \u2014 and is tempered by genuine concern about CeFi risk-taking, scams, and bad mechanism design.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers is an NFT / market-design / web3-strategy specialist, NOT a fungible-token picker \u2014 so the signal is overwhelmingly in sectors, not tokens. tokens_excited entries (ETH, Polygon) are infrastructure/utility endorsements, not directional price views; conviction is scaled down accordingly. tokens_concerned is empty because he never expresses forward-looking concern about a specific token (Terra/Celsius/FTX appear only as retrospective evidence for the CeFi-risk sector view, not as token calls). Recency weighting applied: the NFT-brand, vampire-attack/platform-competition, and NFT-auction-mechanism theses are his most current and most-restated (through June 2023); metaverse/digital-land enthusiasm is downweighted slightly as its emphasis peaked mid-2022 though it never reversed. His huge volume of pandemic-policy, pure-math, and Wordle content was excluded as off-topic to market views. Most positions are 'grounded' with current citations; none of his crypto stances show a clear reversal over the corpus window \u2014 concerns and excitements coexist (e.g., bullish on vampire attacks while flagging their regulatory fragility)."
+}

@@ -1,0 +1,258 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Sees the steady drumbeat of L2 progress reducing Ethereum fees and increasing throughput as a core primitive snapping into place, comparing it to platform inflection points like Web1/Web2.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput- @optimism, @zksync, @arbitrum, impending EIP 4844"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly flags zero-knowledge proof advances as 'a big, big deal'; excited about SNARK performance leaps (Lasso/Jolt) and proof verification scaling as foundational crypto infrastructure.",
+      "provenance": "grounded",
+      "age_note": "Earliest enthusiasm 2023-08; restated 2023-11 and via 2024-03 cohort (nebrazkp, taralli, Spire), so current not stale.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren't fluent in the world of ZK- this is a big, big deal."
+        }
+      ]
+    },
+    {
+      "item": "account-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views reduced new-user onboarding friction through embedded wallets and smart-account tooling as a key accelerant for consumer adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz"
+        },
+        {
+          "date": "2023-11-07",
+          "quote": "Delighted that we're expanding and deepening our relationship with @pimlicoHQ!"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Calls EigenLayer's vision 'truly next level' and lists robust AltDA capabilities as an emerging primitive on the near horizon.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "What @eigencloud and @sreeramkannan are building and envisioning is truly next level. Beyond excited to have the opportunity to work together."
+        },
+        {
+          "date": "2024-02-09",
+          "quote": "Increasingly robust AltDA capabilites on the horizon- @eigencloud, @CelestiaOrg"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Singles out Farcaster Frames as super-simple, fun app development and repeatedly cites Farcaster's unpredictable traction as proof of onchain social's momentum.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Super simple (and fun!) app development- @farcaster_xyz Frames"
+        },
+        {
+          "date": "2024-03-22",
+          "quote": "it would have been almost impossible to predict the traction & growth of @farcaster during the intervening 12 months"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Sees fascinating interplay between crypto and AI/ML as an early-innings opportunity; reflected in cohort selections around verifiable AI workflows and trusted data for AI models.",
+      "provenance": "grounded",
+      "age_note": "First voiced 2023-04-05; reaffirmed via 2024-03-26 cohort (0xHungryCats, ValyuNetwork), so view persists and is current.",
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Backs founders building autonomous worlds and on-chain game frameworks; praises Proof of Play founder's ability to see around corners.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Delighted that @a16zcrypto is leading the @ProofOfPlay seed round!"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Names DePIN as a core sector advancing the ecosystem; earlier celebrated Filecoin's FVM as advancing decentralized storage and compute.",
+      "provenance": "grounded",
+      "age_note": "Filecoin/FVM enthusiasm is from 2023-03-14 and never restated (persisted); DePIN named in 2024-03-26 cohort framing.",
+      "citations": [
+        {
+          "date": "2024-03-26",
+          "quote": "advance core sectors of the crypto ecosystem, including infrastructure, consumer apps, DeFi, payments, games, dev tools, and DePIN"
+        },
+        {
+          "date": "2023-03-14",
+          "quote": "today's launch of #FVM. This is a tremendous step forward in advancing the capabilities of decentralized storage and compute"
+        }
+      ]
+    },
+    {
+      "item": "vr-spatial-computing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Personally excited about Apple Vision Pro solving prior VR/AR limitations; predicts living-room monitors, immersive sports and travel media will be sticky early use cases. Adjacent personal interest, not a crypto thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "What today feels like a very high price will be remembered as noise in the system."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "structural",
+      "rationale": "Frames regulation as a live challenge: praises the UK as 'on a path to becoming a leader in crypto regulation' \u2014 an implicit contrast that signals concern about US regulatory ambiguity rather than direct alarm.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from positive UK framing (2023-09-19) and interest in SEC v Ripple coverage; no explicit statement of US regulatory concern.",
+      "citations": [
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Bullish on Ethereum's scaling trajectory \u2014 L2 fee reduction plus the impending EIP-4844 mainnet release \u2014 as the platform layer maturing toward mass adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "impending EIP 4844 release to mainnet ... Historically, the confluence of these kinds of platform elements has been a major accelerant"
+        }
+      ]
+    },
+    {
+      "item": "OP",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Names Optimism among the L2s driving the fee/throughput progress he is energized by; separately welcomed working to scale the Optimism ecosystem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress ... @optimism, @zksync, @arbitrum"
+        },
+        {
+          "date": "2023-11-13",
+          "quote": "Very, very excited to have the opportunity to work with @Fwiz again as he works to scale the @optimismFND ecosystem."
+        }
+      ]
+    },
+    {
+      "item": "ARB",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Lists Arbitrum among the L2s whose progress in lowering Ethereum fees and raising throughput he finds energizing.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "@optimism, @zksync, @arbitrum, impending EIP 4844 release to mainnet"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "As of Q1 2024 Jason is consistently and vividly bullish: he is 'energized by the rate at which key crypto primitives are snapping into focus,' draws explicit Web1/Web2 platform-inflection parallels, is actively expanding accelerator cohorts across London and NYC, and frames crypto as early-innings. His concerns are operational (scaling too early, unit economics, executive hiring), not macro/market risk-off signals.",
+    "provenance": "grounded"
+  },
+  "notes": "Jason is an a16z crypto operating partner / Crypto Startup School leader, so his public corpus is dominated by founder-coaching threads (management, hiring, boards, PMF) and portfolio congratulations rather than explicit investment theses \u2014 sector/token reads are inferred from what he chooses to amplify. He rarely names tradeable tokens; ETH/OP/ARB are surfaced as ecosystems he is excited about, mapped to tokens with low certainty. His sharpest, most recent signal is the 2024-02-09 'primitives snapping into focus' post, which anchors the L2 / wallet-onboarding / AltDA / Farcaster cluster. No genuine reversals found in the corpus; older one-off enthusiasms (Filecoin FVM 2023-03, crypto+AI 2023-04) persist and are at most lightly reaffirmed. He expresses essentially no crypto-market concern \u2014 concerns are operational or about non-crypto topics (academia, AI-villain film tropes), which were excluded. Vision Pro/AR-VR is included as a clear personal excitement though it is not a crypto sector."
+}

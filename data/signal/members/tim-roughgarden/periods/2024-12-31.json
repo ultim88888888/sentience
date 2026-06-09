@@ -1,0 +1,207 @@
+{
+  "as_of": "2024-12-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His foundational research area; treats TFM design as a rich, solvable theory problem and celebrates resolving its core open questions.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "the main open theory question from my original work on EIP-1559 has been resolved... no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        },
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper... on transaction fee mechanism design in a post-MEV world... now with searchers... and tight welfare guarantees"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes MEV fundamentally breaks incentive compatibility and that mitigation infrastructure is provably necessary \u2014 a frontier he actively researches.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2023-07; reinforced through 2024 TFM work.",
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "And boy does MEV change things; for example, EIP-1559 is no longer incentive-compatible for both users and block producers"
+        },
+        {
+          "date": "2023-07-06",
+          "quote": "Lots of competing proposals... OFAs... encrypted mempools, MPC, TEEs, etc. But do we truly need any of these? Yes!"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "Largest body of his work; sees mapping the trade-offs across degrees of permissionlessness (longest-chain vs PBFT-style PoS) as fundamental and fascinating.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "Should proof-of-stake blockchain protocols follow the longest-chain tradition of Bitcoin, the PBFT-style tradition... The trade-offs are pretty fascinating"
+        },
+        {
+          "date": "2024-11-02",
+          "quote": "New two-hour tutorial by @AndrewLewisPye on our \"Permissionless Consensus\" paper"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Most recent enthusiasm; views practical SNARK progress as a gateway to making 'crazier' cryptographic primitives practical, citing record-fast zkVM built from theory.",
+      "provenance": "grounded",
+      "age_note": "Excitement persists from 2024-04 (Jolt/zkVM) to 2024-12, the most recent statements.",
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "OH (from a famous theoretical computer scientist): \"if SNARKs can be made practical, *anything* can be made practical\""
+        },
+        {
+          "date": "2024-04-09",
+          "quote": "It's been amazing watching 102 pages of hard theory get turned into the fastest zkVM in the world"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Actively teaching and researching loss-versus-rebalancing and constant-function market makers as the analytic core of DeFi.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-12",
+          "quote": "Videos from my LVR tutorial with @jason_of_cs @ciamac at EC '24 last summer are up!"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Explores why Dutch auctions dominate Web3 and how on-chain auction design can disincentivize seller manipulation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "Why are Dutch auctions so popular in Web3?... A new paper with Andrew Komo and @skominers answers all these questions"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Frames restaking as introducing combinatorial, cascading attack risk where a small shock can compound; wants robustness (overcollateralization) made explicit before validators are safely reused.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "New paper... offers a framework to reason about the risks of restaking. Key question: Under what conditions can validators be safely reused across multiple services?"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "if attack costs always exceed attack profits by 10%, then a sudden loss of .1% of the overall stake cannot result in the ultimate loss of more than 1.1%"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Proves slashing fails to deliver its intended accountability once an attacker is large enough or when network delays can't be bounded \u2014 a caution on overstated PoS security guarantees.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Shows in-protocol defense against long-range attacks requires exotic cryptography (VDFs, ephemeral keys); otherwise PoS chains lean on out-of-protocol social consensus.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks without any out-of-protocol assistance"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Not a price/market view \u2014 Ethereum is his primary object of study; he frames it as aspiring to a 'best of both worlds' PoS design and notes the merge increased its economic security.",
+      "provenance": "grounded",
+      "age_note": "Analytical engagement, not an investment endorsement.",
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds: the basic guarantees of a longest-chain protocol... plus the extra benefits of a PBFT-style protocol"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "making precise the common belief that the merge has increased Ethereum's economic security"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Roughgarden's public statements are almost exclusively academic \u2014 consensus theory, mechanism design, MEV, restaking, auctions, AMMs, SNARKs. He expresses no market-timing, price-direction, or portfolio risk posture whatsoever.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus (2023-07 to 2024-12) is an academic researcher's feed, not a trader's. 'Sectors' here reflect research enthusiasm/concern, not investment theses; conviction scores measure intellectual intensity, not allocation. Tokens are nearly absent \u2014 Bitcoin, Algorand (ephemeral keys), Chia (VDFs), Avalanche, Tendermint appear only as protocol-design examples, never as market calls, so they are not listed as token views. ETH is included only because it is his central analytic subject, flagged as non-market. Most recent themes (Dec 2024): SNARKs/advanced cryptography optimism, LVR/AMM tutorials, and 'mental models for blockchain' explainers aimed at web2 newcomers. No stance reversals detected; views are cumulative and consistent across the window."
+}

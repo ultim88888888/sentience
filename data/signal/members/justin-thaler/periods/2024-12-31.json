@@ -1,0 +1,270 @@
+{
+  "as_of": "2024-12-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "He views sum-check as the key tool to minimize prover commitment costs and break the prover-time bottleneck; wants the community to standardize on it. It is the foundation of all his recent work.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-03",
+          "quote": "I hope the community adopts sum-check-based PIOPs combined with the Binius commitment for performant SNARKs."
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "Only sum-check-based PIOPs can use multilinear polynomial commitment schemes."
+        },
+        {
+          "date": "2023-08-14",
+          "quote": "the scalability bottleneck for awhile now has been prover time. And the right technique to unlock this is sum-check"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His flagship project; he frames it as a paradigm shift giving the simplest, most extensible, fastest zkVM, outperforming RISC Zero (~6x) and SP1 (up to 2x), with the bonus that hardware-friendly VMs are also SNARK-friendly.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Early benchmarks indicate it outperforms RISC Zero by ~6x and SP1 by up to 2x. Major optimizations are still in the pipeline."
+        },
+        {
+          "date": "2024-11-12",
+          "quote": "Jolt continues to match or outperform other zkVMs, with folding set to preserve this advantage."
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "It's *both* its exclusive use of sum-check-based PIOPs and its maximal use of lookups."
+        }
+      ]
+    },
+    {
+      "item": "lookup-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "New lookup argument with order-of-magnitude faster prover (10x vs Halo2, expects 30-40x optimized) that commits only to small field elements; enables the lookup-singularity for simpler, auditable SNARKs.",
+      "provenance": "grounded",
+      "age_note": "Core claims from 2023-08; reaffirmed via Jolt through 2024-11-12.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Our preliminary benchmarks indicate the initial Lasso implementation is about 10x faster than Halo2's lookup argument, and we expect 30x-40x after optimization."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso is a new lookup argument with a much faster prover and other attractive properties."
+        }
+      ]
+    },
+    {
+      "item": "binary-field-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He sees Binius (multilinear, works over characteristic-2 fields, commits to small values) combined with sum-check as the path to performant SNARKs and much faster proofs for standard hashes like Keccak; Jolt is uniquely positioned to leverage it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-03",
+          "quote": "Jolt, the only zkVM today using sum-check exclusively, is uniquely positioned to leverage the Binius multilinear commitment."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "this paves the way for much faster SNARKs for standard hash functions like Keccak."
+        }
+      ]
+    },
+    {
+      "item": "polynomial-commitments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Field-agnostic, hashing-based commitments that excel over small fields; he is hopeful about ongoing speedups and views D&P's amplified-recursion work as removing the main barrier (large verification costs) to wide deployment.",
+      "provenance": "grounded",
+      "age_note": "Enthusiasm from 2023-08/2023-11; conceptually subsumed into his Binius excitement by 2024.",
+      "citations": [
+        {
+          "date": "2023-08-31",
+          "quote": "I'm excited about this approach to polynomial commitments and hopeful we'll see further improvements soon."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Amplified recursion capabilities for Ligero/Brakedown... This addresses the primary obstacle keeping them from wide deployment."
+        }
+      ]
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "tactical",
+      "rationale": "Integrating Jolt with Nova folding would allow arbitrarily long RISC-V executions under 2 GB of prover memory \u2014 he calls it a 'phase change' for usability and a way to preserve Jolt's advantage.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "integrating Jolt with the Nova folding scheme, which will allow for arbitrarily long RISC-V executions with under 2 GB of prover memory\u2014a phase change"
+        },
+        {
+          "date": "2024-11-12",
+          "quote": "Once folding is integrated, I expect on-chain proofs costing about 1 million gas"
+        }
+      ]
+    },
+    {
+      "item": "curve-based-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Despite favoring small fields generally, he insists fast curve-based SNARKs remain vital for natively proving signature verification, ECDSA, and Verkle trees where large fields are inherent.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-03",
+          "quote": "fast curve-based SNARKs (like the initial version of Jolt) will remain vital, especially for proving statements like signature verification and Verkle trees."
+        }
+      ]
+    },
+    {
+      "item": "hash-function-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Worried about unproven Fiat-Shamir security loss in super-constant-round FRI (lambda/r bits), and argues FRI deployments carry heavy Merkle-hashing/space costs and large-field penalties versus MSM-based approaches.",
+      "provenance": "persisted",
+      "age_note": "Strongest statements 2023-07 to 2023-09; not restated recently but never reversed \u2014 he continued contrasting Jolt favorably with FRI projects through 2024.",
+      "citations": [
+        {
+          "date": "2023-07-11",
+          "quote": "Applying Fiat-Shamir to an r-round protocol with lambda bits of security can result in a non-interactive protocol with only lambda/r bits of security. No one had ruled out such a security loss for FRI."
+        },
+        {
+          "date": "2023-08-11",
+          "quote": "Polygon zkEVM requires 250+ GBs of space."
+        }
+      ]
+    },
+    {
+      "item": "large-field-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Large fields impose roughly an order-of-magnitude prover slowdown (he estimates a 252-bit field causes ~33x, ~10x net) and force extra committed elements; he sees this cost as often unjustified.",
+      "provenance": "grounded",
+      "age_note": "From 2023-09; nuanced \u2014 he repeatedly stresses large fields are still needed for ECDSA/curve statements.",
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "using the 252-bit field is resulting in a 33x slowdown for the prover (probably more like ~10x after accounting for prover costs from outside of FRI)."
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "tactical",
+      "rationale": "He names high prover memory as the final barrier to Jolt's wide adoption \u2014 an active concern being addressed via folding.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "The final barrier to Jolt's wide adoption is high prover memory usage."
+        }
+      ]
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Recursion is inherently sequential and unparallelizable; breaking computations into the tiniest pieces increases recursion depth and becomes the real latency bottleneck for blockchain-scale rollups.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-09; not restated but consistent with his later folding/composition framing.",
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "The real sequential bottleneck to be wary of is deep recursion. You can't parallelize that"
+        }
+      ]
+    },
+    {
+      "item": "compiler-vm-correctness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "A zkVM only shifts trust: the high-level-to-bytecode compiler and the VM must also be correct; he prefers widely-scrutinized mainstream VMs over bespoke 'SNARK-friendly' ones or hand-coded circuits.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-05",
+          "quote": "you have to make sure the compiler from a high-level language down to bytecode for the VM is correct, in addition to the SNARK"
+        }
+      ]
+    },
+    {
+      "item": "snark-cost-accounting",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Binius evaluation proofs are expensive to verify on-chain (many millions of gas), likely requiring an added layer of small-proof SNARK composition whose prover cost is still somewhat TBD.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "people will probably want to compose with a small-proof SNARK rather than paying many millions of gas to verify evaluation proofs on-chain."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 0,
+    "rationale": "Thaler's entire public corpus is technical cryptography commentary on SNARK design (sum-check, Lasso, Jolt, Binius, FRI, polynomial commitments). He expresses no views on asset prices, market direction, or risk appetite, and his posts carry explicit 'not investment advice' disclaimers. No market risk posture can be inferred without extrapolation.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus spans 2023-07 to 2024-11; it is research/engineering discourse, not portfolio commentary, so 'sectors' here denote cryptographic approaches and 'tokens' are absent (no tickers discussed; named projects like Polygon zkEVM, RISC Zero, StarkWare, Matter Labs, SP1 appear only as technical comparanda/competitors, not investments). Through-line and clear directional bet: sum-check-based, multilinear, small-field, lookup-heavy SNARKs (Lasso/Jolt + Binius) are the future of prover scalability, while FRI-based and large-field designs are over-costly and carry unresolved Fiat-Shamir security questions. His stance strengthened and operationalized over time (abstract advocacy in 2023 \u2192 shipping Jolt and concrete roadmap on folding/Binius/memory by late 2024); no major reversals, though he repeatedly adds nuance that large/curve fields remain necessary for signature/ECDSA/Verkle workloads. Conviction scores reflect rhetorical intensity and how central each idea is to his own research program."
+}

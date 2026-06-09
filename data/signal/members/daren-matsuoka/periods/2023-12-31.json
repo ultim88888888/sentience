@@ -1,0 +1,203 @@
+{
+  "as_of": "2023-12-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Sees crypto as enabling permissionless global markets for compute and data that drive down AI costs and democratize innovation, acting as a counterbalance to AI concentrated in a few tech giants; also crypto for content provenance against deepfakes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized blockchains are a counterbalancing force to centralized AI."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized, open-source crypto networks will democratize (vs. concentrate) AI innovation, ultimately making it safer for consumers."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views new SNARK constructions (Lasso, Jolt) as a paradigm shift moving the whole industry forward; admires ZK's instant-verifiability property.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt represent a new paradigm in SNARK design."
+        },
+        {
+          "date": "2023-09-08",
+          "quote": "I can instantly verify that @blauyourmind knows the secret... A fantastic analogy for ZK proofs."
+        }
+      ]
+    },
+    {
+      "item": "eth-staking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Frames staking not merely as yield but as securing a multi-hundred-billion-dollar on-chain economy; tracks post-Shanghai net flows closely and praises decentralization-oriented staking infrastructure.",
+      "provenance": "grounded",
+      "age_note": "Core statements from spring 2023 (Feb\u2013May); not restated late in year but never reversed.",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        },
+        {
+          "date": "2023-02-07",
+          "quote": "The Staking Router is huge step forward. Lido's commitment to decentralization has been unwavering."
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Celebrated progress toward resilient, decentralized social networks as a major milestone for the world.",
+      "provenance": "grounded",
+      "age_note": "Single recent but brief endorsement; thinly elaborated.",
+      "citations": [
+        {
+          "date": "2023-10-11",
+          "quote": "A huge milestone crossed on the path toward more resilient, decentralized social networks for the world."
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes a decentralized computing platform owned by no single entity counters the concentration of internet traffic and market cap among a handful of companies; network design has real economic consequences (lower take rates, low switching costs, open source).",
+      "provenance": "grounded",
+      "age_note": "Stated repeatedly across 2023; consistent with year-end AI framing.",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "A decentralized computing platform, owned by no single entity, is a counterbalancing force to this increasing consolidation of power."
+        },
+        {
+          "date": "2023-09-19",
+          "quote": "it's now the perfect time to build something new in crypto."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Worries the US is losing its web3 lead and that development could move offshore without good policy; frames keeping the technology onshore as a matter of national security and consumer protection.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-17",
+          "quote": "there are signs that the US may be losing its lead in web3... This is a matter of national security."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Concerned that only a handful of tech giants can train and operate large AI models, and that abundant AI-generated content and deepfakes threaten society unless generative AI is decentralized and democratically governed.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "AI models (like in ChatGPT) can currently only be trained and operated by a handful of tech giants"
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "it also creates a world of abundant AI-generated content, including deep fakes."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "tactical",
+      "rationale": "Repeatedly warns users to watch for scams and verify claim processes, signaling ongoing concern about retail safety in on-chain interactions.",
+      "provenance": "persisted",
+      "age_note": "Stated late 2022 around a testnet ETH distribution; not restated since but a standing caution.",
+      "citations": [
+        {
+          "date": "2022-12-06",
+          "quote": "As always, watch out for scams. Note that the claim process does not require any transactions on Mainnet."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Central to his staking thesis \u2014 ETH secures a ~$400B on-chain economy, and he actively builds tooling to track ETH flows and pricing; treats Ethereum as the core developer platform.",
+      "provenance": "grounded",
+      "age_note": "Strongest statements from spring 2023; consistently the platform he builds around all year.",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    },
+    {
+      "item": "LDO",
+      "item_type": "token",
+      "parent_sector": "liquid-staking",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Praised Lido's Staking Router and its unwavering commitment to decentralization, viewing it as a step forward for staking infrastructure.",
+      "provenance": "persisted",
+      "age_note": "Single endorsement in Feb 2023; never restated, but not reversed.",
+      "citations": [
+        {
+          "date": "2023-02-07",
+          "quote": "The Staking Router is huge step forward. Lido's commitment to decentralization has been unwavering."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 60,
+    "rationale": "As an a16z crypto data/research voice, his statements are consistently builder-optimistic and structurally bullish \u2014 'the perfect time to build,' decentralization as the answer to Big Tech and centralized AI. He makes no tactical market-timing or price calls, so the risk-on read is a structural builder posture rather than a near-term trade. His State of Crypto Index even noted being down ~6% on the year, which he framed without alarm.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Matsuoka is a research/data analyst at a16z crypto, not a markets/trading voice \u2014 his corpus is thematic and tooling-focused (State of Crypto Report/Index, NFT analytics, Dune/Alchemy queries) rather than allocation- or price-oriented, so token-level and risk-regime views are inferred from sector enthusiasm. Most recent and highest-conviction theme (2023-12-06) is the convergence of AI and crypto / decentralized AI, which dovetails with his durable 2023 thesis that decentralization counterbalances concentrated power. No stance reversals detected across the 18-month span; views build cumulatively. Earlier 2022 items are mostly endorsements of colleagues' infra work (Helios, on-chain auctions, licensing) rather than personal market views."
+}

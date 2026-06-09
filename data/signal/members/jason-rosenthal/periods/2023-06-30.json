@@ -1,0 +1,178 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Just joined a16z crypto as operating partner; views the quality of founders building on crypto networks as exceptional and analogizes the moment to early-Internet/Netscape days.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-03",
+          "quote": "The quality and creativity of entrepreneurs building the next generation of startups on top of crypto networks is incredible... LFG!!"
+        },
+        {
+          "date": "2023-04-03",
+          "quote": "The parallels between crypto then and now, and the growth of the Internet when I began my career at Netscape in the mid-90s, are striking."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees fascinating, early-stage interplay between crypto and AI/ML as a fertile emerging area.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-storage",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Celebrated the Filecoin FVM launch as a major step forward for decentralized storage and compute capabilities.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "This is a tremendous step forward in advancing the capabilities of decentralized storage and compute"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Praised Matter Labs (zkSync) as a phenomenal accomplishment for the ecosystem; treats L1/L2 verified-contract share as a key adoption metric.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-16",
+          "quote": "Congrats to @gluk64 and the entire @the_matter_labs teams! What a phenomenal accomplishment for the entire ecosystem!"
+        },
+        {
+          "date": "2023-04-12",
+          "quote": "An L1 or L2 blockchain could track their progress based on their share of Verified Smart Contracts in a given quarter."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Repeatedly frames developer activity as the key adoption signal and insists the industry is still very early; cites Electric Capital data.",
+      "provenance": "grounded",
+      "age_note": "Core view first stated 2022-01-10 ('still early days'); restated/operationalized 2023-04-12, so current and reinforced rather than stale.",
+      "citations": [
+        {
+          "date": "2022-01-10",
+          "quote": "Love @ElectricCapital's annual analysis of Web3 developer activity. By any measure, we are still early days."
+        },
+        {
+          "date": "2023-04-12",
+          "quote": "Projects focused on developer tooling can leverage insights into the number of active crypto developers as a way to measure mindshare and adoption."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Openly excited about Yuga Labs' roadmap and enjoyed exploring the Otherside origin story; engages enthusiastically with the NFT-brand ecosystem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-28",
+          "quote": "Huge congratulations to Mike Seavers... and the entire team @yugalabs. Very excited to see what you are all going to build together."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Became an Alliance DAO contributor to help build the next generation of Web3 and DeFi startups.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2022-01-13 and never explicitly restated; persists as a standing affiliation but is the oldest of his crypto signals.",
+      "citations": [
+        {
+          "date": "2022-01-13",
+          "quote": "Excited to be a contributor to @alliancedao. Looking forward to being part of building the next generation of Web3 and defi startups."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Flags that crypto founders operate in a volatile, rapidly changing environment that makes defining quantifiable objectives hard \u2014 a structural caution rather than a bearish call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-12",
+          "quote": "how to define quantifiable company and product objectives/metrics in an environment that is volatile and rapidly changing."
+        }
+      ]
+    },
+    {
+      "item": "FIL",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Endorsed the FVM launch as a major advancement for decentralized storage/compute; the only specific network/token he champions by name.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "Congratulations to... the entire @Filecoin community on today's launch of #FVM. This is a tremendous step forward..."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "He joined a16z crypto in April 2023 with unbridled enthusiasm ('LFG'), repeatedly insists crypto is in its 'early innings'/'early days,' and draws explicit parallels to the early Internet. This is a builder's structural bullishness on the asset class rather than a tactical market-timing call; he expresses no near-term price view and no bearishness.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an operating partner focused on company-building (PMF, pricing, hiring, board management, biz dev), so the corpus is dominated by management advice rather than market/price commentary \u2014 most market signals are inferred from what he chooses to celebrate. His crypto views are uniformly constructive and structural; no concerns about specific sectors or tokens are voiced, and no token price targets exist. Bitcoin is mentioned only historically (cdixon introducing him to crypto 'above and beyond Bitcoin,' 2023-04-03), implying his interest skews toward the broader smart-contract/app ecosystem over BTC itself. Conviction scores reflect intensity of stated enthusiasm, tempered by the fact that endorsements are often congratulatory tweets to portfolio-adjacent teams. Recency strongly favors the April\u2013June 2023 post-a16z-join statements, which are consistent with (and reinforce) his older 2022 'still early days' stance \u2014 no reversals detected."
+}

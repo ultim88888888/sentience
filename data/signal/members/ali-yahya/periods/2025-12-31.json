@@ -1,0 +1,333 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His dominant late-2025 thesis: privacy is the one feature everyone agrees is needed for finance to move onchain, almost no chain has it, and because secrets are hard to bridge it creates chain lock-in and a winner-take-most dynamic. Backs Seismic, Aleo, Aztec.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "Privacy will be the most important moat in crypto. Why? Because secrets are hard to migrate."
+        },
+        {
+          "date": "2025-12-26",
+          "quote": "Privacy in crypto will likely succeed in two forms: Encrypted store of value... Encrypted smart contracts\u2014programmable privacy for every other defi use case"
+        },
+        {
+          "date": "2025-10-23",
+          "quote": "Demand for privacy is on the rise."
+        }
+      ]
+    },
+    {
+      "item": "verifiable-ml",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes decentralizing AI requires verification, and verifiable compute is the trust layer AI agents need to interact with the crypto financial system. Anchored by his EigenLayer/EigenCloud conviction.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        },
+        {
+          "date": "2025-02-27",
+          "quote": "How do you decentralize AI? You need verification."
+        },
+        {
+          "date": "2025-09-17",
+          "quote": "Building the infrastructure that AI agents will need to interact with the new crypto-based financial system"
+        }
+      ]
+    },
+    {
+      "item": "internet-capital-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees Solana delivering its 1,000x scaling goal and Jito's Block Assembly Marketplace solving predatory MEV to unlock CLOBs and dark pools, making Solana the dominant venue for onchain capital markets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-16",
+          "quote": "partnering with... team to help Solana become the dominant venue for Internet Capital Markets"
+        },
+        {
+          "date": "2025-12-07",
+          "quote": "transactions for under a penny in under a second on Solana"
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Views stablecoins as turbocharging global commerce and cites $1T+ monthly volume as proof crypto is working; excited about infra (Loop) and private/compliant stablecoin payments (Aleo).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-21",
+          "quote": "Stablecoins are turbocharging online payments: fast, global, programmable."
+        },
+        {
+          "date": "2025-12-09",
+          "quote": "Aleo delivering on the dream of stablecoin payments that are: 1. private 2. programmable 3. compliant"
+        }
+      ]
+    },
+    {
+      "item": "web3-messaging",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Frames XMTP as the SMTP of an AI+digital-money+quantum era \u2014 open, interoperable, end-to-end encrypted, quantum-resistant \u2014 and pairs it with World's proof-of-personhood to fix fragmentation, privacy and spam.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "@xmtp_ is a protocol for the future of messaging \u2014 open, decentralized, and quantum-resistant."
+        },
+        {
+          "date": "2025-12-12",
+          "quote": "XMTP + World makes messaging open, private, and human. Finally."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Argues blockchain dev is too hardware-like (months of audits, 'tape-out'); higher-level primitives like Halliday's Workflow Protocol let devs iterate at web2 speed and let AI agents safely call contracts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-18",
+          "quote": "back their vision for a new 'software era' of web3 development"
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "Software only ever becomes easier to write via higher level primitives that abstract away the messy low level details."
+        }
+      ]
+    },
+    {
+      "item": "legacy-finance-inefficiency",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Sees smart contracts as converting legalese into self-executing code that makes recourse a million times cheaper, eliminating enforcement risk and increasingly addressing credit risk as assets move onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-07",
+          "quote": "Smart contracts turn promises into programs... self-executing code that enforces the conditions of the promise."
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Backed Universal ('Circle for cryptoassets') and LayerZero to make any asset tradeable on any chain and reduce DeFi friction. Note: by Dec 2025 he reframes easy bridging as a force that commoditizes public blockspace.",
+      "provenance": "grounded",
+      "age_note": "Early-2025 enthusiasm (Universal 2025-02-19; LayerZero 2025-04-17); by 2025-12-05 he casts frictionless bridging as why undifferentiated public chains lose pricing power \u2014 interop is enabling but no longer a standalone moat.",
+      "citations": [
+        {
+          "date": "2025-02-19",
+          "quote": "building a protocol to make all cryptoassets available on all chains."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "with bridges that make moving between chains easy, that blockspace is now accessible *from* everywhere."
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Identifies a real funding gap for open-source models and is excited by Gensyn's Delphi \u2014 a prediction market where models compete on benchmarks and winning creators get paid \u2014 as a first step to bootstrap teams.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-08",
+          "quote": "It creates a revenue stream for open source model creators that's directly tied to performance... This won't fund end-to-end training of frontier models yet"
+        }
+      ]
+    },
+    {
+      "item": "horizontal-scaling-sharding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Believes horizontal scaling (more machines, not bigger) is the only way to scale indefinitely, praising NEAR's sharding hitting 1M tps as proof of the internet-style approach.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-09",
+          "quote": "Horizontal scaling is the only way to scale a computer system indefinitely\u2014more machines, not bigger machines."
+        }
+      ]
+    },
+    {
+      "item": "formal-verification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Predicted at end of 2024 that formal verification would grow in importance for crypto; consistent with his broader verification/correctness thesis but not heavily restated since.",
+      "provenance": "persisted",
+      "age_note": "Stated once as a 2025 prediction on 2024-12-20 and not explicitly restated; older view, treat as persisted.",
+      "citations": [
+        {
+          "date": "2024-12-20",
+          "quote": "2025 prediction: Formal verification will become increasingly important"
+        }
+      ]
+    },
+    {
+      "item": "undifferentiated-l1s",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Argues performance alone is no longer enough: blockspace is functionally identical everywhere, bridges let mercenary capital farm and flee, and fees on commodity chains without a killer app or privacy will be competed down to zero.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "the many undifferentiated new chains whose fees will likely be driven down to zero by competition"
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "Performance alone is no longer enough."
+        }
+      ]
+    },
+    {
+      "item": "open-source-ai-business-model",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Worries open-source model builders have no viable economics \u2014 the 'give away code, sell the platform' playbook breaks when weights are open and training capex grows exponentially, leaving little to monetize.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-08",
+          "quote": "Open source AI has a funding problem... when the weights are open, there's little left to sell to recover those costs."
+        }
+      ]
+    },
+    {
+      "item": "EIGEN",
+      "item_type": "token",
+      "parent_sector": "verifiable-ml",
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Made an additional $70M EIGEN investment with lockup, framing EigenLayer/EigenCloud as a new paradigm for verifiable, credibly-neutral apps and the trust infrastructure for AI agents; reinforced by Google Cloud partnership.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup."
+        },
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        }
+      ]
+    },
+    {
+      "item": "JTO",
+      "item_type": "token",
+      "parent_sector": "mev",
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Invested in Jito (JTO) betting its Block Assembly Marketplace solves insidious MEV via encrypted transactions and custom ordering, unlocking fair onchain capital markets on Solana.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-16",
+          "quote": "@a16zcrypto is making an investment in @jito_sol (JTO) tokens... to help Solana become the dominant venue for Internet Capital Markets."
+        }
+      ]
+    },
+    {
+      "item": "ZRO",
+      "item_type": "token",
+      "parent_sector": "cross-chain-interop",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Added $55M in ZRO with a 3-year lockup, citing LayerZero enabling new businesses and complex workflows to move onchain. Still cited as the canonical bridging protocol in Dec 2025, though he now frames easy bridging as commoditizing public blockspace.",
+      "provenance": "grounded",
+      "age_note": "Conviction expressed strongly 2025-04-17; later (2025-12-05) he reframes frictionless bridging as a commoditizing force for public chains \u2014 not a reversal on LayerZero itself, but a more nuanced role.",
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "thanks to bridging protocols like LayerZero."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 86,
+    "rationale": "Strongly bullish: contrasts the prior 'viciously hostile' regulatory era with today's clarity, $1T+ monthly stablecoin volume, and sub-penny/sub-second Solana transactions; invokes Wright-Brothers-pace progress; and is actively deploying large, multi-year locked token positions (EIGEN, JTO, ZRO) plus leading multiple equity rounds.",
+    "provenance": "grounded"
+  },
+  "notes": "Ali's most-recent and highest-conviction thesis is privacy as the durable moat in crypto (winner-take-most via secret lock-in), tightly linked to his second pillar: verification/verifiable compute as the trust layer for AI x crypto. A reversal worth flagging: he previously experienced crypto regulation as a major threat ('4 more years of Gensler terrorizing the space,' 2025-12-07) but now reads the regulatory environment as a tailwind \u2014 current stance is constructive, not fearful. His framing of general-purpose L1s is the sharpest concern and the mirror image of his privacy thesis. He explicitly notes the open question/race (2025-12-07) of whether incumbent chains (Solana, Ethereum) add privacy before privacy-native chains (Aztec, Aleo, Seismic) build ecosystems \u2014 he is invested on the privacy-native side. Many entries derive from investment announcements (a16z portfolio), so excitement is partly book-talking; weighted accordingly but treated as genuine personal conviction given repeated unprompted thesis posts. No explicit token he is bearish on."
+}

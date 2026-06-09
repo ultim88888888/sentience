@@ -1,0 +1,376 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His central thesis: NFTs create real, durable value by letting communities co-create brands, establish property/IP rights, and bootstrap new markets quickly. He co-authored the first HBR piece on NFTs and is now writing a book on them \u2014 his single highest-conviction, most-restated view.",
+      "provenance": "grounded",
+      "age_note": "Thesis first stated Nov 2021 and continuously reinforced through the 2022 bear market into 2023 (book announcement Oct 2022); current and strengthening, not stale.",
+      "citations": [
+        {
+          "date": "2021-11-10",
+          "quote": "explaining why we think NFTs are real and here to stay."
+        },
+        {
+          "date": "2021-11-11",
+          "quote": "this is a really, really early market... But I'm extremely bullish on the value it will create in the long run!"
+        },
+        {
+          "date": "2022-10-17",
+          "quote": "@NFTbark and I are writing a book about NFTs, to be published by @portfoliobooks."
+        }
+      ]
+    },
+    {
+      "item": "progressive-decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes web3's portable, user-owned assets and shared infrastructure make platform competition less zero-sum, raising consumer surplus; 'vampire attacks' can drive virtuous competition. Core to his a16z research and HBR strategy work.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-16",
+          "quote": "Web3 has the potential to unlock a more valuable internet for everyone."
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "vampire attacks may contribute to increased \u2013 and hopefully virtuous \u2013 platform competition."
+        },
+        {
+          "date": "2023-01-12",
+          "quote": "Progressive decentralization is possible, as @Jad_AE and I discuss today in @a16zcrypto"
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "His professional core: he sees fundamental market-design problems (NFT sale formats, redistributive allocation, royalty incentives) as 'instantaneously applicable' in crypto and joined a16z's research team specifically to work on them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-21",
+          "quote": "fundamental intellectual questions are core to most crypto applications."
+        },
+        {
+          "date": "2022-09-10",
+          "quote": "I generally prefer clearing-price auctions to descending pay-as-bid auctions"
+        }
+      ]
+    },
+    {
+      "item": "nft-licensing-standards",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Excited that giving away IP rights can grow value by inviting derivatives and co-creation, turning 'an adversarial game into a co-operative one' \u2014 though explicitly not a one-size-fits-all model.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-03",
+          "quote": "cc0 licensing is an incredibly compelling way to kickstart IP that may one day take on a life of its own."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "After FTX/Celsius/Terra, his explicit conclusion is that crypto isn't dead and these failures argue FOR DeFi's transparency and smart-contract commitments versus opaque centralized intermediaries.",
+      "provenance": "grounded",
+      "age_note": "Crystallized post-FTX (Dec 2022); most recent statement of his finance-infrastructure view.",
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi."
+        }
+      ]
+    },
+    {
+      "item": "digital-collectibles",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Predicts the durable collectibles business resembles trading cards \u2014 cheaper, more available, held for use/ownership rather than flipping \u2014 as the market matures beyond today's speculation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-01-13",
+          "quote": "When truly consumer-focused NFTs arrive, they're going to be the cheaper, more available, and more directly useful"
+        },
+        {
+          "date": "2022-11-05",
+          "quote": "the long run digital collectibles business model will look more like @Pokemon cards than the ultra-scarcity pervasive in NFTs today."
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Argues 'location, location, location' applies in the metaverse \u2014 spaces are non-fungible and value accrues to well-positioned, interoperable, portable digital real estate and buildings. Advises a generative-architecture project (SOLIDS).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-10",
+          "quote": "It matters which metaverse location you own! (The spaces themselves are non-fungible in that sense.)"
+        },
+        {
+          "date": "2022-06-02",
+          "quote": "What makes metaverse land valuable? My latest for @a16z crypto"
+        }
+      ]
+    },
+    {
+      "item": "cefi-intermediaries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees centralized intermediaries' opacity and excessive risk-taking as the failure mode that nearly killed confidence in crypto; warns competition only helps if firms don't engage in this 'malbehavior.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "the competition induced by vampire attacks can only benefit consumers if it doesn't drive firms to engage in malbehavior"
+        },
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto?"
+        }
+      ]
+    },
+    {
+      "item": "crypto-onboarding-accessibility",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Repeatedly flags that crypto and especially NFTs demand high sophistication and incur 'astronomical' transaction costs, making the market inaccessible to most \u2014 a first-order barrier for the next wave of users.",
+      "provenance": "persisted",
+      "age_note": "Detailed concern stated Nov 2021; he expects it to improve over time (wallet tech, L2s) and restates it occasionally, but no comparably comprehensive late-window restatement \u2014 treat as persisted.",
+      "citations": [
+        {
+          "date": "2021-11-11",
+          "quote": "even gaining access to crypto requires a high degree of sophistication -- and newer products like NFTs doubly or triply so!"
+        },
+        {
+          "date": "2021-11-11",
+          "quote": "subject to astronomical transaction costs."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "tactical",
+      "rationale": "Consistently warns about lack of consumer protection \u2014 compromised Discords, fake mint sites, phishing, rugged projects, scam ad accounts \u2014 and even works on tech/incentive designs to disincentivize hacks.",
+      "provenance": "grounded",
+      "age_note": "A recurring concern from 2021 through 2023 (scam-account complaints into Jan 2023); ongoing.",
+      "citations": [
+        {
+          "date": "2021-11-11",
+          "quote": "NFTs face many of the current general challenges of crypto -- especially in terms of environmental costs, and lack of security/consumer protection."
+        },
+        {
+          "date": "2022-09-04",
+          "quote": "it's appalling that you're letting these scam accounts signal-boost"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Views today's NFT market as overweight short-term flippers because speculative uncertainty draws traders first; sees this as an immature phase to be outgrown by genuine consumer demand.",
+      "provenance": "persisted",
+      "age_note": "Stated Jan 2022; consistent with later 'Pokemon-card' framing but not re-stated verbatim \u2014 persisted.",
+      "citations": [
+        {
+          "date": "2022-01-13",
+          "quote": "the current market is skewed especially heavily towards traders"
+        }
+      ]
+    },
+    {
+      "item": "nft-royalty-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Criticizes prevalent descending pay-as-bid mints and worries about royalty/auction structures that distort allocation or attract toxic projects; advocates clearing-price auctions and dynamically calibrated royalties.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-30",
+          "quote": "I really wish there were more of a tradition of using clearing-price auctions for NFT sales instead."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Even while championing vampire attacks as pro-competition, he flags that the prevailing implementations may be unsustainable and 'regulatorily suspect.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "it's not clear how sustainable the current vampire attack models are, especially since many of them rely on strategies that are regulatorily suspect."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "His default settlement layer; celebrated The Merge as an extraordinary engineering feat and builds/transacts on Ethereum throughout. Constructive but utilitarian rather than a price call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "GM! Happy Merge Day to all who celebrate, QED"
+        }
+      ]
+    },
+    {
+      "item": "chain-runners",
+      "item_type": "token",
+      "parent_sector": "nft",
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Praises it as a strong-team, highly engaged cc0 community he actively participates in and cites repeatedly as a model for derivative ecosystems and post-mint experiences.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2021-12-20",
+          "quote": "it's an incredible and highly engaged community. The founding team is super strong, as well."
+        }
+      ]
+    },
+    {
+      "item": "adam-bomb-squad",
+      "item_type": "token",
+      "parent_sector": "nft",
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "His go-to example of an established brand sharing ownership/royalties with holders \u2014 he holds one, earns royalties on it, and cites the program as a template for incentive alignment.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-07-06",
+          "quote": "the @AdamBombSquad royalty program as an example of how to create shared ownership even with an established brand"
+        }
+      ]
+    },
+    {
+      "item": "goblintown",
+      "item_type": "token",
+      "parent_sector": "nft",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Cited as a leading cc0 project whose art style and openness invite broad derivatives; he admires how it lets very different people 'find themselves in' the collection.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-12",
+          "quote": "they created a collection that many quite different types of people can all find themselves in at once."
+        }
+      ]
+    },
+    {
+      "item": "solids",
+      "item_type": "token",
+      "parent_sector": "metaverse",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Showcases it as a flagship example of portable, cross-metaverse generative architecture; he advises the issuing company (fine_digital) and holds several. Disclosed bias.",
+      "provenance": "grounded",
+      "age_note": "Disclosed conflict: advisor and holder, so excitement is partly promotional.",
+      "citations": [
+        {
+          "date": "2022-04-04",
+          "quote": "But fwiw, I think this is awesome"
+        }
+      ]
+    },
+    {
+      "item": "SHIB",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Endorsed the assessment that as a pure meme it lacks a fundamental economic reason to thrive \u2014 his clearest skepticism toward a fundamentals-free token.",
+      "provenance": "persisted",
+      "age_note": "Single statement from Nov 2021, never restated in window; cite with caution as a persisted/aged view.",
+      "citations": [
+        {
+          "date": "2021-11-04",
+          "quote": "its provenance as a meme leaves it without much of a fundamental economic reason to thrive.\" Fair."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "Structurally and persistently bullish on long-run crypto/web3/NFT value creation \u2014 he joined a16z crypto research, writes a book on NFTs, and after the 2022 collapses explicitly insisted crypto is not dead. But his optimism is consistently hedged: he stresses this is a 'really, really early market' with severe accessibility, security, speculation, and CeFi-risk problems, and separates long-run conviction from short-run caution. So: risk_on on the technology/value thesis, clear-eyed about near-term fragility.",
+    "provenance": "grounded"
+  },
+  "notes": "View synthesized from Kominers's own statements only; the corpus is dominated by COVID-policy advocacy, recreational mathematics, and Wordle/puzzle content, all of which were excluded as not constituting a market view. His genuine market commentary is almost entirely crypto/web3/NFT and reflects his dual role as Harvard HBS market-design professor and (from April 2022) a16z crypto research-team member \u2014 note the resulting disclosed conflicts on several projects he advises/holds (SOLIDS, HungryWolves, thingdoms, Chain Runners, TallyLabs ecosystem, koodos). Recency weighting: his bullish NFT/web3 thesis is the through-line from Oct 2021 to Mar 2023 and was reinforced, not reversed, by the bear market; the most recent additions are the post-FTX 'we need DeFi' stance (Dec 2022) and the vampire-attack/platform-competition framing (Mar 2023). No material reversals occur within the window \u2014 he notes he was 'fairly negative on crypto overall at the beginning' but that shifted around 2016\u201317, before this corpus. Numerous other NFT collections he holds/champions (RealSupDucks, GutterCatGang, TwoBitBears, 0xTajigen, thingdoms, HungryWolves, Wizards of the Tower, 1337skulls, Nouns/Loot as cc0 exemplars) could each be listed as 'excited' tokens; I selected representative high-conviction ones. Conviction scores reflect intensity/centrality in his writing, not financial price targets \u2014 he rarely makes directional price calls and repeatedly stresses NFTs are 'emphatically not risk-free' investments."
+}

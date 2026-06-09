@@ -1,0 +1,12 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Scott Kominers",
+  "items": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 74,
+    "rationale": "",
+    "provenance": "grounded"
+  },
+  "notes": "Consolidated from three time-slices (oldest\u2192newest), recency-weighted on conflicts. No genuine stance reversals were found \u2014 views build cumulatively (e.g., NFTs from 'digital collectibles' 2022 \u2192 'brand assets' 2023 \u2192 'everything token / ordinary business' 2024). The only apparent tension, AI as creative-complement (bullish, slice 3) vs. AI data-privacy leakage (bearish, slice 2), is two distinct facets and is preserved as both. Aging is the main caveat for older items: DeFi, CeFi-risk, ultra-scarcity, and the 1337 Skulls token call appear only in the oldest slice and are ~12\u201316 months stale with no fresh confirmation, so their convictions are nudged down; the newest slice (Jan\u2013Mar 2024) is within ~3 months of the as-of date. Kominers is a market designer / a16z crypto researcher, not a token trader: he names no fungible cryptocurrency as a buy and is mildly skeptical of coin prices as a value gauge, so tokens_excited holds only an NFT collection he personally builds/holds (collector-builder bias flagged) and tokens_concerned holds only his coin-price-skepticism view. The corpus is dominated by non-market content (recreational math, Wordle, NFT-community social posts) and by sincere COVID/public-health and content-moderation advocacy \u2014 these are personal-values/governance views, not crypto-market views, and are excluded except the content-moderation item retained as a platform-risk concern. Standard disclosure: none of his commentary is investment advice."
+}

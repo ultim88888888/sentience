@@ -1,0 +1,102 @@
+{
+  "as_of": "2022-12-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Reads Web3 developer-activity growth as proof the space is structurally nascent with large upside ahead; positions himself as a long-term builder/contributor.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated Jan 2022 (~12 months old) and never restated in the most recent Dec 2022 posts, which turned toward operating discipline; treat enthusiasm as persisting but not freshly reaffirmed.",
+      "citations": [
+        {
+          "date": "2022-01-10",
+          "quote": "Love @ElectricCapital's annual analysis of Web3 developer activity. By any measure, we are still early days."
+        }
+      ]
+    },
+    {
+      "item": "web3-startup-building",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Actively committed as a contributor to an accelerator focused on launching the next generation of Web3 and DeFi startups \u2014 direct skin-in-the-game enthusiasm for early-stage building.",
+      "provenance": "grounded",
+      "age_note": "Stated Jan 2022; not restated later in the year.",
+      "citations": [
+        {
+          "date": "2022-01-13",
+          "quote": "Excited to be a contributor to @alliancedao. Looking forward to being part of building the next generation of Web3 and defi startups."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees gaming as a uniquely powerful mechanism for onboarding mainstream users into new crypto ecosystems and economies.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2021-10-18 (~14 months old) and never restated; carries Axie-era play-to-earn framing that he has not refreshed.",
+      "citations": [
+        {
+          "date": "2021-10-18",
+          "quote": "amazing the power that gaming can have in terms of onboarding people into the new ecosystems/economies"
+        }
+      ]
+    },
+    {
+      "item": "on-chain-market-analytics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Engages deeply with on-chain data and metrics like open interest, signaling a data-driven interest in reading crypto market structure.",
+      "provenance": "grounded",
+      "age_note": "Jan\u2013Feb 2022 engagement; not restated since.",
+      "citations": [
+        {
+          "date": "2022-01-19",
+          "quote": "Would love to see an episode on breaking down and understanding OI trends"
+        }
+      ]
+    },
+    {
+      "item": "startup-operating-discipline",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "His most recent posts stress survival, avoiding bankruptcy, and that the cost-cutting/founder-discipline 'Elon playbook' is just standard practice \u2014 a clear cautionary turn on the funding/operating environment.",
+      "provenance": "grounded",
+      "age_note": "Most recent view (Dec 2022); reflects a shift in tone from the optimistic early-2022 building posts.",
+      "citations": [
+        {
+          "date": "2022-12-04",
+          "quote": "staying alive to play another hand was better than going BK was simply standard operating procedure for any founder/CEO"
+        },
+        {
+          "date": "2022-12-19",
+          "quote": "Thinking that a CPO can solve/find PMF is a road to ruin for a Company/Co-Founder"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "neutral",
+    "conviction": 60,
+    "rationale": "Structurally a long-term Web3/DeFi bull (early-2022 'still early days' and accelerator commitment), but his most recent Dec 2022 statements pivot to capital discipline, survival, and PMF realism \u2014 a cautious, defensive operating posture. Net: structurally constructive, tactically guarded.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus is heavily skewed toward consumer-tech/Google product posts (Pixel, Fi, Android) and personal interests, with only a thin set of genuine crypto/market signals. No specific tokens were named (Axie Infinity referenced as a project, not a token position). Recency weighting matters here: the early-2022 excitement is structural and unreversed but stale, while the only late-2022 signals are about founder discipline and surviving a downturn \u2014 hence the risk regime is read as structurally bullish but tactically defensive. Low overall data density; treat individual conviction scores as soft."
+}

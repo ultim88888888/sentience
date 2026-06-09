@@ -1,0 +1,241 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He sees stablecoins as having achieved genuine product-market fit, a marquee takeaway of his most recent State of Crypto report, and a top legislative priority he expects to be codified soon.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "Stablecoins have found product-market fit"
+        },
+        {
+          "date": "2025-03-08",
+          "quote": "the president's announcement that he wants stablecoin and market structure legislation passed by August"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His central thesis: AI is breaking the internet's economic covenant and empowering Big Tech; blockchains can enforce ownership, verify identity, and ensure authenticity to keep the internet open. Recurring and intensifying theme.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "I wrote about why AI needs blockchain-enabled computing, and why I'm optimistic as these technologies converge"
+        },
+        {
+          "date": "2025-01-29",
+          "quote": "The intersection of crypto & AI"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He views DeFi as popular and growing but still too complex; he is actively funding simplification to bring the next 100M users onchain. Backed by a recent investment.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-11",
+          "quote": "leading the $15M seed round in @legendapp to simplify DeFi and help bring the next 100M users onchain"
+        },
+        {
+          "date": "2024-10-16",
+          "quote": "DeFi remains popular \u2014 and it's growing"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "He argues major scaling upgrades have drastically cut transaction costs, so infrastructure is now mature enough for consumer applications to flourish \u2014 a transition from infra-building to app-building.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-29",
+          "quote": "Blockchain infra is now ready for apps to flourish"
+        },
+        {
+          "date": "2024-10-16",
+          "quote": "Major scaling upgrades have drastically reduced onchain transaction costs"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "He wants blockchain-based IP registration to form a 'new economic covenant' between creators and AI platforms, ensuring attribution and compensation. Backed by his $80M Story lead.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "We want to help Story become the infrastructure for AI systems and creative people to happily co-exist"
+        }
+      ]
+    },
+    {
+      "item": "open-source-funding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "He sees open source as the internet's lifeblood yet poorly funded and over-reliant on volunteers; he's excited by protocols that attribute and reward contributors proportionally.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-16",
+          "quote": "co-leading the $10M seed round in @merit_systems, which is building a new economic model for open source"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His single most repeated theme: comprehensive, forward-looking legislation (like the 1996 Telecom Act) as the foundation for the industry. As of March 2025 he is highly encouraged by the EO, SEC task force, and August legislative target.",
+      "provenance": "grounded",
+      "age_note": "Long-running since 2023 (FIT21, Fairshake); stance shifted from defensive/uncertain under the prior administration to optimistic momentum by early 2025.",
+      "citations": [
+        {
+          "date": "2025-03-08",
+          "quote": "The new administration is pursuing a much smarter approach: providing a clear pathway for entrepreneurs and innovation"
+        },
+        {
+          "date": "2025-01-20",
+          "quote": "This is the time to craft thoughtful, comprehensive, modern frameworks"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He sees a speculative casino culture that hurts crypto's public perception and undermines its potential; he criticizes a regulatory regime that lets only memecoins thrive while productive tokens face hurdles.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "the backward incentives of a regulatory regime in the US that lets only memecoins thrive \u2014 while companies and tokens with more productive uses face hurdles"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "He fears AI will end the internet as we know it and that Big Tech is best-placed to reap the rewards, degrading trust via deepfakes and bots. He also opposes policies that would effectively ban open-source AI.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "AI is already upending the internet's economic covenant, and big tech companies are best-placed to reap the rewards"
+        },
+        {
+          "date": "2025-01-13",
+          "quote": "Another terrible last minute rule- a de facto to ban on open source and little tech AI models"
+        }
+      ]
+    },
+    {
+      "item": "market-integrity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He repeatedly contrasts compliant 'good actors' with unscrupulous competitors who took share by exceeding the law; he wants policy that weeds out bad actors rather than punishing good ones.",
+      "provenance": "grounded",
+      "age_note": "Long-running theme (since 2023); as of 2025 he frames it as a problem the new administration is finally correcting.",
+      "citations": [
+        {
+          "date": "2025-02-21",
+          "quote": "it ignored bad actors like FTX while going after good actors like Coinbase"
+        }
+      ]
+    },
+    {
+      "item": "IP",
+      "item_type": "token",
+      "parent_sector": "ip-content-coordination",
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "He led an $80M round to make Story the IP infrastructure for AI-creator coexistence, with attribution and low-friction licensing.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "@a16zcrypto is leading an $80M Series B financing of PIP Labs, developer of @storyprotocol"
+        }
+      ]
+    },
+    {
+      "item": "MERIT",
+      "item_type": "token",
+      "parent_sector": "open-source-funding",
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "He co-led the seed round in a protocol that attributes and rewards open-source contributors proportionally to value created.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-16",
+          "quote": "Merit is building a protocol that attributes and rewards contributors proportionally to the value they create"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 88,
+    "rationale": "By Q1 2025 Dixon is overtly bullish: he cites all-time-high crypto usage, a favorable executive order, a reform-minded SEC task force, a CFTC chair nominee from his own team, and a presidential commitment to stablecoin and market-structure legislation by August. He frames the moment as the 'big payoff' of 80 years of computing and repeatedly expresses optimism and accelerating momentum, while still flagging memecoin froth and Big Tech AI capture as the bad outcomes to minimize.",
+    "provenance": "grounded"
+  },
+  "notes": "Dixon's worldview is structural/long-horizon, not tactical-trading; he rarely names tradeable tokens (the 'token' entries are protocol investments). His through-line is that blockchains preserve an open, creator-owned internet against Big Tech and AI-driven extraction \u2014 articulated in Read Write Own (Jan 2024) and consistent since. The clearest temporal shift is on US policy: defensive/uncertain in 2023\u2013early 2024 (Coinbase, Fairshake, FIT21) turning to confident optimism after the late-2024 election and Jan\u2013Mar 2025 administration actions; most recent statements (2025-03-08, 2025-03-18) weight this optimistic, risk-on posture. Conviction values reflect rhetorical intensity, not portfolio sizing. No statements suggest a risk-off or hedged stance as of 2025-03-31."
+}

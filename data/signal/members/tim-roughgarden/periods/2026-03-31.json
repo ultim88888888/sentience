@@ -1,0 +1,161 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "blockchain-infrastructure-research",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His central, most-recent focus: launched a Columbia research center for blockchain infrastructure and is building a YouTube series squarely on these layers, signaling where he sees the deepest open problems and durable value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-09-18",
+          "quote": "New research center focused on blockchain infrastructure @CUSEAS ! Made possible by @ethereumfndn. Super-excited about this"
+        },
+        {
+          "date": "2026-03-18",
+          "quote": "New YT series coming out later this year. But not much mechanism design (focused on consensus/execution/scaling)"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Co-authored foundational research on DePIN, singling out the verification-of-services problem as the key challenge \u2014 treating it as an important emerging primitive worth foundational work.",
+      "provenance": "grounded",
+      "age_note": "Single substantive statement (2025-06-20), not restated since; treat as persisted into 2026.",
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "New paper... developing some of the foundations for DePIN (decentralized physical infrastructure) networks, and specifically the key problem of verifying that the agreed-upon services/resources are indeed being provided"
+        }
+      ]
+    },
+    {
+      "item": "cryptography-infra",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Repeatedly optimistic that SNARKs and even more exotic cryptographic primitives are becoming practical, viewing this as an enabling trend for the whole space.",
+      "provenance": "grounded",
+      "age_note": "Theme persists from 2024-12 to 2026-02; most recent (2026-02-11) reaffirms progress.",
+      "citations": [
+        {
+          "date": "2026-02-11",
+          "quote": "SNARKs for all of NP have come a long way since Kilian-Micali"
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "optimism that cryptographic primitives that seem even crazier than SNARKs could be made practical in the coming decades"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Co-authored a primer on arcade tokens with senior a16z colleagues, indicating engagement with consumer/gaming token design as a distinct emerging area.",
+      "provenance": "persisted",
+      "age_note": "One-time collaborative primer (2025-11-13); his role appears contributory rather than a strong personal thesis.",
+      "citations": [
+        {
+          "date": "2025-11-13",
+          "quote": "New primer on arcade tokens with my ever-amazing @a16zcrypto colleagues @skominers @eddylazzarin @milesjennings"
+        }
+      ]
+    },
+    {
+      "item": "ethereum-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Convenes and platforms work on Ethereum's execution layer, staking future, and interoperability; his center is funded by the Ethereum Foundation, anchoring his work to Ethereum's roadmap.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-15",
+          "quote": "@dankrad @adietrichs on improving Ethereum's execution layer... @barnabemonnot @adietrichs @casparschwa @fradamt on the future of staking"
+        },
+        {
+          "date": "2025-09-18",
+          "quote": "Made possible by @ethereumfndn"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sustained technical interest in market design problems of crypto \u2014 LVR/AMMs, shared sequencing, execution tickets, Tullock contests \u2014 as rich, unsolved areas.",
+      "provenance": "persisted",
+      "age_note": "Heavy in 2024; 2026-03-18 explicitly de-emphasizes mechanism design for his upcoming series, suggesting a shift in personal focus toward consensus/execution/scaling.",
+      "citations": [
+        {
+          "date": "2024-12-13",
+          "quote": "My EC talk on Tullock contests in crypto/web3... Covers mining, staking, execution tickets, shared sequencing"
+        }
+      ]
+    },
+    {
+      "item": "accountable-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Frames validator accountability when a chain stalls as an open, unsolved problem \u2014 implicitly a risk in current consensus designs he is working to address.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-01",
+          "quote": "When a blockchain protocol stalls (i.e., has a liveness violation), which validators should be held accountable?"
+        }
+      ]
+    },
+    {
+      "item": "arcade",
+      "item_type": "token",
+      "parent_sector": "gaming",
+      "stance": "bullish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Co-authored an explanatory primer on arcade tokens, treating them as a token category worth defining \u2014 though framed educationally rather than as an investment call.",
+      "provenance": "persisted",
+      "age_note": "Single primer (2025-11-13); collaborative, not a standalone personal conviction.",
+      "citations": [
+        {
+          "date": "2025-11-13",
+          "quote": "New primer on arcade tokens with my ever-amazing @a16zcrypto colleagues"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 70,
+    "rationale": "Roughgarden's corpus is almost entirely academic research, education, and team/center announcements \u2014 consensus protocols, cryptography, DePIN, mechanism design. He makes no statements about market direction, price, allocation, or risk appetite. His structural orientation is constructive on crypto infrastructure (especially Ethereum-aligned), but he expresses no tactical risk posture.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Tim Roughgarden is a researcher/professor, not a markets-facing investor; his public statements are dominated by research papers, educational videos, the new Columbia blockchain infrastructure center (EF-funded), and team/intern announcements. Excitement entries reflect research conviction and intellectual focus, not trade theses, and conviction scores are calibrated accordingly. Most-recent signal (2026-03 statements) points to consensus/execution/scaling and cryptography (SNARKs) as his sharpest current focus, with a notable de-emphasis of mechanism design for his upcoming content series despite heavy earlier MEV/market-design work \u2014 recorded as a soft shift in age_notes. No token-level investment views and no risk-on/risk-off market posture are present in the corpus; risk_regime is no_view with high confidence in that classification."
+}

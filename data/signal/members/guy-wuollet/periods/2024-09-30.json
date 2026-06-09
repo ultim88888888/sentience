@@ -1,0 +1,358 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His central thesis: crypto networks forming consensus on physical state that can't be computationally verified \u2014 user-owned/operated telecom, energy, transportation. Sees it as the future of consumer crypto.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-26",
+          "quote": "The future of consumer crypto? DePIN. Users will have wallets and interact with blockchain powered services without even knowing it"
+        },
+        {
+          "date": "2024-06-21",
+          "quote": "DePIN projects are crypto networks that can't be computationally verified... Physical services like transportation or energy are verified through other means"
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "They are a way to build user owned and operated physical businesses. There aren't P2P telecom networks, electricity networks, or transportation networks yet."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-energy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Believes energy is a regulated monopoly ripe for disruption that not only wants but needs decentralization. Led a16z's $9M Series A in Daylight Energy; published an energy reading list.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-13",
+          "quote": "Energy is one of the few non-crypto industries that doesn't just want decentralization, but needs it"
+        },
+        {
+          "date": "2024-07-31",
+          "quote": "Energy is a collection of highly regulated monopolies in the US today, and one we believe is ripe for disruption."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Considers ZK still underhyped \u2014 a new developer primitive enabling trustless off-chain compute, more expressive DeFi pricing/risk, and provable small ML models. Champions Jolt and zkVM experimentation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-06",
+          "quote": "I still think ZK is under hyped... Verifiable compute is a new developer primitive, and I'm excited by a couple of use cases"
+        },
+        {
+          "date": "2024-04-09",
+          "quote": "Jolt is a lightning fast step forward for zkVMs and hopefully will enable more devs to experiment with the power of proofs"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Views L2s as 'implicit sharding' and argues Ethereum needs non-native data availability (EigenDA, Espresso, Celestia) to reach millions of TPS; excited by shared sequencing for decentralization and atomic composability.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-08",
+          "quote": "Ethereum will need non-native data availability to properly scale its rollup-centric roadmap"
+        },
+        {
+          "date": "2024-06-05",
+          "quote": "Why do shared sequencers matter?... Decentralizing the sequencer... Atomic composability."
+        }
+      ]
+    },
+    {
+      "item": "tee-enclaves",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Calls enclaves underrated and sees an open opportunity to build the best developer platform for programming TEEs in crypto \u2014 pairing proofs for integrity with enclaves for privacy ('defense in depth').",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-23",
+          "quote": "Enclaves (aka TEEs) are underrated. Defense in depth should apply to crypto as well. Proofs for integrity, Enclaves for privacy"
+        },
+        {
+          "date": "2024-07-28",
+          "quote": "There's a great opportunity to build the best developer platform for programming enclaves (TEEs) in crypto"
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Self-identifies as a cypherpunk advocating strong cryptography for social change; excited by collaborative SNARKs enabling private shared state for private smart contract platforms.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-09",
+          "quote": "collaborative SNARKs enable private shared state... I think private shared state will matter for any private smart contract platform"
+        },
+        {
+          "date": "2024-06-24",
+          "quote": "cypherpunks will inherit the earth, build onchain, use a mixnet, pay privately, change the world"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Argues crypto needs applications with true product-market fit beyond solving cold-start with tokens; names payments and new social networks alongside DePIN as the areas he's excited about.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-28",
+          "quote": "Crypto needs applications with true product market fit... I'm excited about DePIN, payments, and new social networks"
+        }
+      ]
+    },
+    {
+      "item": "zk-applications",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Surprised more DeFi protocols don't use ZK co-processors for more complex pricing functions, off-chain risk modeling proven on-chain, and trustless historical state proofs without oracles, at lower gas cost.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-02",
+          "quote": "Why aren't more DeFi protocols using ZK co processors? It seems like you could implement more complex pricing functions and better risk management with lower gas costs."
+        },
+        {
+          "date": "2024-06-06",
+          "quote": "I think DeFi protocols should adopt risk modeling in ZK and use more complex pricing functions that run off chain and are proven trustlessly onchain"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Convinced bringing crypto incentives to AI has great long-term promise, but wants more focus on the rarer reverse \u2014 AI models on-chain solving crypto problems \u2014 and censorship-resistant AI companions.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-13",
+          "quote": "Long term I am convinced (1) [Crypto->AI] has great promise, but I'd like to see more focus on (2) [AI->Crypto] today"
+        },
+        {
+          "date": "2024-06-06",
+          "quote": "Blockchains and ZK proofs could uniquely enable humans to own censorship resistant AI companions"
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Believes the largest crypto opportunities are decentralized protocols with tokens used as tools to solve incentive/coordination problems \u2014 but insists token is not the product and tokenomics is not protocol design.",
+      "provenance": "grounded",
+      "age_note": "Core 'Tokenology' framing dates to 2023-04; reaffirmed and refined through 2024-06 ('the token is not the product').",
+      "citations": [
+        {
+          "date": "2024-06-11",
+          "quote": "Build a decentralized protocol with a token. The largest opportunities in crypto involve building new crypto networks."
+        },
+        {
+          "date": "2024-06-27",
+          "quote": "tokenomics is not protocol design... a token is a tool to be used when solving an incentive problem"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Repeatedly endorses Morpho as a leap for DeFi; a16z participated in their round. Frames minimal trustless lending primitives as core infrastructure.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-11",
+          "quote": "Congrats to Paul Frambot and the whole Morpho Labs team for launching Morpho Blue. One small step for Morpho, one big step for DeFi"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "It's been an honor working with Paul Frambot and the team at Morpho Labs! We're thrilled to participate in their round"
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Thinks the space under-focuses on infrastructure relative to apps; building the rails for human coordination is a massive opportunity. A persisted view underpinning his infra-heavy interests.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-07-25; not directly restated since, but consistent with his sustained infra focus (DA, ZK, sequencing) through 2024.",
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "I actually think we don't have enough focus on crypto infrastructure relative to apps. Building the rails for the future of human coordination seems like a massive opportunity"
+        }
+      ]
+    },
+    {
+      "item": "depin-product-market-fit",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "His biggest worry within his favorite sector: tokens and subsidies solve supply-side cold-start, but you can't pay users to genuinely love a product. PMF is the unsolved hard problem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-10",
+          "quote": "The big hairy question for DePIN projects is finding PMF... it's hard to pay users to love a product."
+        },
+        {
+          "date": "2024-07-28",
+          "quote": "Tokens can help solve the cold start problem, but users must really love using the product"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Wants more redundancy in on-chain proof verification across multiple proving systems to avoid latent vulnerabilities; notes compatibility makes this hard today, implying current single-system risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-02",
+          "quote": "I'd like to see more redundancy in proof verification... ideally proofs would be verified onchain in multiple proving systems to avoid latent vulnerabilities"
+        }
+      ]
+    },
+    {
+      "item": "non-native-da-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "While advocating non-native DA as necessary to scale Ethereum, he explicitly flags it introduces additional security assumptions/trade-offs \u2014 a caveat on his own scaling thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-08",
+          "quote": "Non-native DA is clearly required to scale Ethereum... Non-native DA comes with security trade offs, but that's a topic for another thread."
+        }
+      ]
+    },
+    {
+      "item": "misleading-terminology",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "tactical",
+      "rationale": "Concerned the DePIN label has lost cohesive meaning (e.g., misclassifying Bitcoin mining or decentralized cloud), pushing his own taxonomy (DeGen/DeWi/DeDAN) to keep it useful.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-02",
+          "quote": "I also agree DePIN has lost a cohesive meaning, which is why I'm suggesting one I believe makes more sense"
+        },
+        {
+          "date": "2024-08-02",
+          "quote": "Bitcoin mining is not DePIN, stop it, cut it out, get some help"
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Frames Uber/DoorDash-style networks as having accumulated significant market power via subsidies, and energy utilities as entrenched monopolies \u2014 the centralized incumbents crypto networks must displace.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-06",
+          "quote": "These networks provided heavy subsidies to begin with and today have significant market power"
+        },
+        {
+          "date": "2024-07-31",
+          "quote": "Energy is a collection of highly regulated monopolies in the US today"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "As an accelerator lead he is relentlessly, programmatically optimistic \u2014 urging founders to attack a definite future now, burn the boats, take risks, and be 'fervently and definitely optimistic.' His posture is structural builder-bullishness on frontier crypto infrastructure (DePIN, energy, ZK), not a tactical market-timing or price call. No bearish macro/liquidity views expressed.",
+    "provenance": "grounded"
+  },
+  "notes": "Guy is a a16z crypto accelerator (CSX) lead and DePIN-focused investor; his statements are theses about what to build, not token/price calls \u2014 hence empty token lists (he names protocols like Daylight, Morpho, EigenDA, Celestia, Espresso as projects/investments but never endorses tokens for price, and posts standard investment disclaimers). Dominant, most-recent (mid-to-late 2024) and highest-conviction theme is DePIN, which he subdivides into his own taxonomy: DeGen (energy), DeWi (wireless), DeDAN (delivery/transport). Decentralized energy is his strongest concrete conviction (led Daylight's Series A). A consistent second cluster is privacy/verification primitives: ZK/zkVMs (he insists ZK is still underhyped), TEEs/enclaves, and coSNARKs. Scaling views (rollups as 'implicit sharding', non-native DA) are well-developed and structural. Earlier-2023 'Tokenology' and infra-over-apps framings persist and are consistent with his 2024 stances. His concerns are mostly internal caveats to his own theses (DePIN PMF, proof-system fragility, DA security trade-offs) rather than external/macro fears."
+}

@@ -1,0 +1,258 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His dominant, sustained obsession through 2023-2024: building a unifying mathematical framework (Perm<QP<DA<FP hierarchy) to map what consensus guarantees are possible under which participation assumptions.",
+      "provenance": "grounded",
+      "age_note": "Theme runs continuously Nov 2023 through May 2024; most recent and most frequent topic.",
+      "citations": [
+        {
+          "date": "2023-11-16",
+          "quote": "We're finally happy with one, a \"sweet spot\" model that is both very general ... and user-friendly enough to enable lots of different possibility and impossibility results"
+        },
+        {
+          "date": "2023-11-29",
+          "quote": "We propose a four-level hierarchy (Perm < QP < DA < FP) that parameterizes the amount of knowledge that a protocol has about who's running it"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Most recent major thrust: formal possibility/impossibility results on whether slashing can punish attackers, and making precise that the Merge increased Ethereum's economic security.",
+      "provenance": "grounded",
+      "age_note": "Newest paper, May 2024 \u2014 current peak focus.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "To slash or not to slash? New paper ... on provable slashing guarantees (both possibility and impossibility results)"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "making precise the common belief that the merge has increased Ethereum's economic security"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Long-running flagship area; he proves what's achievable for TFMs (DSIC/MMIC/OCA-proofness) and how MEV forces new designs (PBS, OFAs, encrypted mempools).",
+      "provenance": "grounded",
+      "age_note": "Active 2023 through Feb-Jun 2024 (impossibility result resolved, post-MEV paper updated, EC tutorial).",
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        },
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper ... on transaction fee mechanism design in a post-MEV world (i.e., with active block producers), now with searchers"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Most emotionally enthusiastic statements in the corpus \u2014 theory translated into 'the fastest zkVM in the world.'",
+      "provenance": "grounded",
+      "age_note": "Excitement spans Aug 2023 ('lookup singularity') to Apr 2024 (Jolt shipped).",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "It's been amazing watching 102 pages of hard theory get turned into the fastest zkVM in the world"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "now, 9 months later, the lookup singularity is here"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Ongoing work formalizing AMM complexity-vs-expressivity tradeoffs and loss-versus-rebalancing; links faster block times to lower arbitrage MEV.",
+      "provenance": "grounded",
+      "age_note": "2023 papers restated via EC '24 LVR tutorial, Jun 2024.",
+      "citations": [
+        {
+          "date": "2024-06-05",
+          "quote": "Excited to be involved in two EC '24 tutorials ... one on LVR"
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "formalizing the intuitive trade-off between an AMM's complexity ... and its expressivity"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "New theory of shill-proof auctions explaining why Dutch auctions dominate Web3, and proposer-builder-separation auction foundations.",
+      "provenance": "grounded",
+      "age_note": "Paper released Apr 2024; PBS theory Jan 2024.",
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "Which auction formats are robust to shill bidding? Why are Dutch auctions so popular in Web3? ... A new paper ... answers all these questions"
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Organizing an EC 2024 governance workshop and earlier work on auctions where bids represent groups (DAOs) rather than individuals.",
+      "provenance": "grounded",
+      "age_note": "Workshop announced May 2024; DAO-auction paper Jun 2023.",
+      "citations": [
+        {
+          "date": "2024-05-30",
+          "quote": "Running a workshop at EC 2024 (July 8th) ... on governance (web3 and beyond)"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He shows MEV fundamentally breaks the guarantees that motivated EIP-1559; users can no longer know their optimal bid, and no good TFM can be both DSIC and BPIC.",
+      "provenance": "grounded",
+      "age_note": "Consistent concern from Jan 2023 through 2024; treated as fundamental, not a fixable artifact.",
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "with MEV, *no* non-trivial or approximately welfare-maximizing TFM can be both DSIC and BPIC!"
+        },
+        {
+          "date": "2023-01-06",
+          "quote": "the breakdown of EIP-1559's incentive-compatibility in the event of an excessively low base fee is fundamental ... not an artifact of the mechanism"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Slashing cannot achieve its purpose if message delays aren't a-priori bounded; longest-chain protocols (incl. Bitcoin) can't get non-trivial accountability.",
+      "provenance": "grounded",
+      "age_note": "Most recent, May 2024.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "In-protocol defense requires exotic crypto (VDFs, ephemeral keys); otherwise PoS chains must fall back on social-consensus/checkpointing that isn't purely in-protocol.",
+      "provenance": "grounded",
+      "age_note": "Jan 2024 thread; framed as unavoidable constraint.",
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks without any out-of-protocol assistance"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Proves Bitcoin's lack of finality and probabilistic safety/liveness is an unavoidable consequence of assuming nothing about who runs it \u2014 full permissionlessness is 'as hard as asynchrony.'",
+      "provenance": "grounded",
+      "age_note": "Dec 2023 thread.",
+      "citations": [
+        {
+          "date": "2023-12-13",
+          "quote": "Bitcoin's probabilistic guarantees are an unavoidable consequence of its total lack of assumptions about who might be running it"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Treated as the design exemplar \u2014 aspiring to 'best of both worlds' (longest-chain liveness + PBFT finality), and the Merge is shown to have increased its economic security. Note: a research framing, not an investment call.",
+      "provenance": "extrapolated",
+      "age_note": "Favorable framings May 2024 and Nov 2023; he never states a price/market view.",
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds: the basic guarantees of a longest-chain protocol ... plus the extra benefits of a PBFT-style protocol"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Admired as remarkable, but his impossibility results pin it to probabilistic-only safety/liveness and no accountability \u2014 structural design limitations, not a market/price view.",
+      "provenance": "extrapolated",
+      "age_note": "Dec 2023 / May 2024; framed analytically, not as a bearish trade.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "This result rules out non-trivial EAAC guarantees for all typical longest-chain protocols (be they proof-of-work protocols like Bitcoin ...)"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Roughgarden is a mechanism-design/consensus theorist; the corpus contains zero directional market, price, valuation, or allocation statements. Token references (ETH, Bitcoin, Chia, Algorand, Avalanche) appear only as objects of formal analysis. Any risk-on/off label would be fabricated.",
+    "provenance": "grounded"
+  },
+  "notes": "Subject is an academic researcher (a16z crypto / Columbia), not a markets commentator \u2014 so 'sectors' are rendered as the protocol-design and DeFi-mechanism domains he invests intellectual conviction in, and conviction scores measure intensity of research focus, not trade sizing. Strong recency signal: 2024 weighting elevates PoS slashing/EAAC (May 2024), TFM impossibility & post-MEV TFMs (Feb 2024), shill-proof auctions (Apr 2024), and the Jolt zkVM (Apr 2024). No stance reversals detected \u2014 his views compound rather than flip; older threads (EIP-1559 econ analysis, LVR) are restated and extended into 2024, so they are grounded rather than persisted. Tokens are included only with explicit caveats that they reflect design/security framings, not investment opinions; both token entries are 'extrapolated' because he never expresses a market posture. A recurring meta-theme worth flagging: he is drawn to fundamental impossibility results (MEV vs. TFM-IC, slashing under partial synchrony, long-range attacks, FP probabilistic guarantees) \u2014 his 'concerns' are mathematical limits of designs, framed as illuminating rather than discouraging ('The role of an impossibility result ... is not to discourage but to illuminate', 2023-07-06)."
+}

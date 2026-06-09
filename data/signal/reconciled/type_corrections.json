@@ -1,0 +1,37 @@
+[
+  {
+    "id": "centralized-network-tokens",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "dai-frax",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "dao-gov-tokens",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "l2-tokens",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "mkr-aave-comp",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "ust-luna",
+    "old_type": "token",
+    "new_type": "sector"
+  },
+  {
+    "id": "yield-bearing-stablecoins",
+    "old_type": "token",
+    "new_type": "sector"
+  }
+]

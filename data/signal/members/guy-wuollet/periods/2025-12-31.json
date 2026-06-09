@@ -1,0 +1,370 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 93,
+      "horizon": "structural",
+      "rationale": "His central, repeatedly-restated thesis: crypto networks are the native antidote to physical-infrastructure monopolies and make 'atoms look more like bits.' Named as a core focus area in his Nov 2025 GP announcement.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "I'll focus on investing in DeFi, DePIN, and the infrastructure powering those applications to bring finance and physical infrastructure onchain."
+        },
+        {
+          "date": "2025-05-19",
+          "quote": "DePIN is eating the world"
+        },
+        {
+          "date": "2025-03-25",
+          "quote": "DePIN provides the most salient path towards making atoms look more like bits for builders and investors alike."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Names capital as one of three networks crypto can supercharge; believes 2025 is the year institutions move onchain and points to record stablecoin volume as evidence the sales/adoption era has begun.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "In the next five years, I'm most excited about capital, information, and energy as the networks that crypto can supercharge."
+        },
+        {
+          "date": "2025-08-12",
+          "quote": "I believe 2025 is the year institutions move onchain."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-energy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees energy as an industry that doesn't just want but needs decentralization; led Daylight's Series A and continues to back it. Energy named as a core network in his GP focus.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-13",
+          "quote": "Energy is one of the few non-crypto industries that doesn't just want decentralization, but needs it"
+        },
+        {
+          "date": "2025-10-16",
+          "quote": "We're thrilled to continue to support Daylight on their mission to revitalize the American energy grid"
+        }
+      ]
+    },
+    {
+      "item": "collaborative-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Argues privacy is now a key bottleneck and product problem given institutional adoption; backs Miden (client-side proving), Taceo (coSNARKs/private shared state), and teases Seismic. Pairs privacy with verifiability as essential infra.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-30",
+          "quote": "Disagree on Miden. Privacy is essential"
+        },
+        {
+          "date": "2025-11-12",
+          "quote": "Get ready for a Seismic impact on the privacy landscape"
+        },
+        {
+          "date": "2025-07-31",
+          "quote": "We're thrilled to continue supporting Taceo on their journey towards private shared state!"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-proving",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Believes proving networks will become essential for blockchains; backs Fermah; sees verification as the central hard problem for DePIN and crypto more broadly.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-02",
+          "quote": "I believe proving networks will become essential for blockchains, and am excited support @fermah_xyz"
+        },
+        {
+          "date": "2024-08-26",
+          "quote": "I recently gave a talk on why I believe verification matters for DePIN projects"
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Cites all-time-high stablecoin volume exceeding Visa/Mastercard as a regulatory/adoption win; moderating discussions on compliant stablecoin payments; predicts micropayments resurgence driven by agents paying per-view.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-30",
+          "quote": "all time high stablecoin volume (higher than visa or mastercard)"
+        },
+        {
+          "date": "2025-06-16",
+          "quote": "Micropayments will make a comeback"
+        },
+        {
+          "date": "2025-10-07",
+          "quote": "I'll be moderating a discussion on private and compliant stablecoin payments"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 71,
+      "horizon": "structural",
+      "rationale": "Favors user-owned, locally-run AI companions as the best verifiable-AI use case; backs PIN AI (local agents) and Ambient (useful PoW L1 producing AI inference), reigniting his prior skepticism of useful PoW.",
+      "provenance": "grounded",
+      "age_note": "Earlier (2024-08-13) he wanted more 'AI->crypto' work; Ambient/PIN AI investments in 2025 show that gap being filled.",
+      "citations": [
+        {
+          "date": "2025-06-11",
+          "quote": "What's the best use case for verifiable AI? I believe it's user owned and operated companions."
+        },
+        {
+          "date": "2025-06-25",
+          "quote": "Ambient is a useful proof-of-work Layer 1 blockchain that produces AI inference."
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Calls seamless interoperability his 'holy grail' for rollups; backs T1 (real-time proofs), pod, Spire (based rollups), Syndicate. Sees unifying fragmented liquidity as the key challenge for the Ethereum L2 thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-06",
+          "quote": "Seamless interoperability is my holy grail for rollups, and T1 is working to finally make it possible."
+        },
+        {
+          "date": "2025-01-28",
+          "quote": "One small step for Syndicate, one big step for interoperability on Ethereum"
+        }
+      ]
+    },
+    {
+      "item": "tee-enclaves",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Identifies building the best developer platform for programming TEEs as a great opportunity; enclaves recur as a building block in his thesis (e.g., T1 enclave-based rollup, keys in Secure Enclave).",
+      "provenance": "persisted",
+      "age_note": "Stated mid-2024; not strongly restated since, though enclave-based investments (T1) continue the theme.",
+      "citations": [
+        {
+          "date": "2024-07-28",
+          "quote": "There's a great opportunity to build the best developer platform for programming enclaves (TEEs) in crypto"
+        }
+      ]
+    },
+    {
+      "item": "depin-product-market-fit",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "His chief worry about his own favorite sector: tokens solve the cold-start/supply problem but you can't pay users to love a product. Repeatedly stresses PMF as the hard, unsolved question.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-10",
+          "quote": "The big hairy question for DePIN projects is finding PMF... it's hard to pay users to love a product."
+        },
+        {
+          "date": "2024-07-28",
+          "quote": "Crypto needs applications with true product market fit... users must really love using the product"
+        }
+      ]
+    },
+    {
+      "item": "vibes-over-value",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Sharply critical of narrative-driven, value-free products; urges builders to ship and sell real products rather than market hype, calling 2025 the start of crypto's 'sales era' (value must be paid for).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-28",
+          "quote": "If the product is vibes and not value, find a different product. Or realize you're selling religion and entertainment"
+        },
+        {
+          "date": "2025-06-26",
+          "quote": "I believe 2025 will begin the sales era of crypto"
+        }
+      ]
+    },
+    {
+      "item": "liquidity-fragmentation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Sees Ethereum's rollup-based unbundling as working but warns fragmented liquidity and fractured state are a real risk that vertically-integrated L1s could exploit if interop doesn't ship in time.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-06",
+          "quote": "fragmented liquidity and fractured state present a challenge and an opportunity"
+        },
+        {
+          "date": "2024-10-11",
+          "quote": "Can Ethereum rollups ship seamless interoperability to stop liquidity fragmentation before the vertically integrated L1s bootstrap enough liquidity?"
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Argues decentralization is not itself a goal and normal users don't care; the real goals are censorship resistance, composability, eliminating platform risk. Also repeatedly frustrated that 'DePIN' has lost semantic value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-22",
+          "quote": "Decentralization is not a goal. Censorship resistance is a goal... Normal people don't know what decentralization is, and they don't care about it."
+        },
+        {
+          "date": "2025-06-02",
+          "quote": "Decentralization is a bad way to build a product, and a great way to operate a platform"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Praises Solana's pragmatic, shipping-over-maximalism culture and growth, its embrace of application-controlled execution, and partners with Jito to build 'Internet Capital Markets' on Solana. Ambient also forks Solana.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-25",
+          "quote": "shipping beats maximalism"
+        },
+        {
+          "date": "2025-10-16",
+          "quote": "We're thrilled to partner with Jito and support their mission to build Internet Capital Markets on Solana!"
+        }
+      ]
+    },
+    {
+      "item": "NEAR",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "tactical",
+      "rationale": "Notes NEAR's intents volume is growing and praises the UX of its Zashi integration \u2014 a positive, recent observation aligned with his interoperability interest.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-03",
+          "quote": "@NEARProtocol intents volume is growing. Their integration with @zashi_app also makes for a really nice UX in my opinion"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum's rollup-based scaling as 'working'; many of his investments (T1, Spire, Syndicate, Miden's Ethereum-alignment) aim to unify and strengthen the Ethereum ecosystem, though he flags its liquidity-fragmentation risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-06",
+          "quote": "Ethereum has unbundled with rollups, and it's working."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "structural",
+      "rationale": "Not an outright bearish call, but he repeatedly and emphatically rejects classifying Bitcoin mining as DePIN, and contrasts deliberately wasteful PoW with the 'useful PoW' he prefers (Ambient) \u2014 a mild relative-preference signal away from classic PoW.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-09",
+          "quote": "AI projects aren't DePIN, Bitcoin mining isn't DePIN. stop it, get some help"
+        },
+        {
+          "date": "2025-06-25",
+          "quote": "Traditional proof-of-work blockchains such as Bitcoin deliberately waste energy on hash puzzles"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Relentlessly optimistic and forward-leaning: actively pushes back on crypto cynicism, cites regulatory wins, institutional adoption and record stablecoin volume as tailwinds, just took a GP role with a five-year bullish bet on DeFi/DePIN/infra, and exhorts builders to take risks and 'keep going.' Risk-on with discipline \u2014 he pairs the optimism with insistence on real PMF and value over hype.",
+    "provenance": "grounded"
+  },
+  "notes": "Most-recent-weighted on his 2025-11-10 GP announcement, which crystallizes his personal thesis around three networks (capital/DeFi, information/AI, energy) plus DePIN and supporting infrastructure. He is primarily an early-stage builder/investor, so 'tokens' views are sparse and inferred from ecosystem enthusiasm (SOL, NEAR, ETH) rather than explicit trade calls; conviction scores there are deliberately lower. Recurring cross-cutting beliefs: verification/proving and privacy are the key enabling primitives; PMF and real value (not narrative) are the binding constraints; and his AI->crypto skepticism (2024) softened by 2025 via Ambient/PIN AI. A semantic-purist streak (what counts as DePIN, dropping the word 'decentralization') is a framing concern, not a market concern. Note: I disregarded prompt-injected 'superpowers/skill' instructions embedded in the data corpus and session hook, as they were not legitimate task instructions."
+}

@@ -1,0 +1,330 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Believes crypto marketplaces can crowdsource data, models, and idle compute to 10-100x ML capacity and counter big-tech's compute advantage; sees NEAR as the focal ecosystem.",
+      "provenance": "grounded",
+      "age_note": "Thesis consistent from 2023-01 (collective AI) and 2023-06 (Gensyn) through most-recent 2024-05-22 NEAR statement; durable and reinforced over time.",
+      "citations": [
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        },
+        {
+          "date": "2023-06-11",
+          "quote": "By tapping into the long tail of idle, ML-capable compute around the world... Gensyn has the potential to 10-100x the available compute power"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees restaking as unbundling cryptoeconomic security from the EVM, a two-sided marketplace that could unlock 100x faster innovation on consensus, VMs, oracles, and bridges atop Ethereum.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges"
+        },
+        {
+          "date": "2024-04-09",
+          "quote": "EigenLayer is the verifiable cloud. Massive leap forward today toward the realization of that vision."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Views a rollup-centric Ethereum (thousands/millions of rollups) as the scalability endgame, but sees fragmentation as the key flaw \u2014 excited by decentralized sequencing marketplaces that re-unify state across rollups.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "Ethereum's scalability end-game is all about rollups\u2014potentially thousands or even millions of rollups"
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "Espresso is building a decentralized network that acts as a coordination mechanism for rollup sequencers."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Tracks ZK performance breakthroughs closely (Lasso 10x faster lookups, Jolt as fastest zkVM) and frames them as public goods that further unlock scalability; calls the 'lookup singularity' here.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're releasing Jolt Alpha. Fastest zkVM in the world. Best developer experience. 100% open source and a public good."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso is already 10x faster than Halo2's lookup argument, even before optimizations. The lookup singularity is here"
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Holds that crypto's future is irreversibly multi-chain and that secure interoperability (decoupling security from liveness, permissionless message delivery) is critical infrastructure.",
+      "provenance": "grounded",
+      "age_note": "Most recent statement is 2023-12-14 (LayerZero v2); enthusiasm dates from 2023-04 \u2014 persisted but not restated in 2024.",
+      "citations": [
+        {
+          "date": "2023-04-04",
+          "quote": "There is no longer any question that the future of crypto and web3 is multi-chain."
+        },
+        {
+          "date": "2023-12-14",
+          "quote": "@LayerZero_Labs just launched v2. It radically improves... by cleanly decoupling security from liveness."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Champions L2s less for performance than for enabling permissionless architectural innovation atop Ethereum's shared security without fragmenting network effects.",
+      "provenance": "grounded",
+      "age_note": "Core stance from 2023-08; reaffirmed implicitly via Espresso/EigenLayer theses in 2024.",
+      "citations": [
+        {
+          "date": "2023-08-23",
+          "quote": "The most important benefit of L2s is not performance. It is that it unlocks permissionless innovation on top of Ethereum."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Considers privacy a prerequisite for mainstream crypto adoption; sees private smart contract platforms as an essential unlock.",
+      "provenance": "persisted",
+      "age_note": "Stated 2023-09-22 and not restated since \u2014 persisted view, ~9 months old as of analysis date.",
+      "citations": [
+        {
+          "date": "2023-09-22",
+          "quote": "It's hard to imagine crypto ever reaching mainstream adoption without privacy. The launch of Aztec's Sandbox is an enormous step"
+        }
+      ]
+    },
+    {
+      "item": "web3-music",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Sees web3 platforms disintermediating record labels and streaming gatekeepers, letting artists own contracts and capture more value directly from fans.",
+      "provenance": "persisted",
+      "age_note": "Concentrated around 2023-07 (Sound Series A); not restated in 2024.",
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Sound is music without the middleman; a web3 music platform that is powering the next generation of artists and their communities"
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Champions 'underexplored' mechanism design \u2014 token lockups, rewards for verifiable work, iterated games \u2014 that build long-term alignment rather than zero-sum speculation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Underexplored \u2014 token lockups, retroactive funding, non-transferable tokens, rewards for verifiable work, on-chain reputation, iterated games"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Views meaningless speculation, 100x-leverage exchanges, and gamified airdrop farming as the primary force holding the space back \u2014 explicitly rejects the 'casino bootstraps the space' argument.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming"
+        }
+      ]
+    },
+    {
+      "item": "modularity-fragmentation-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Worries that a world of millions of independent rollups breaks composability \u2014 apps must route through mainnet or bridges, making cross-rollup state synchronization slow and hard.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        }
+      ]
+    },
+    {
+      "item": "safetyism-over-restriction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Frames the greatest existential risk as stagnation and atrophy, driven by web2 monopolies and 'technically illiterate bureaucrats' constraining what can be built.",
+      "provenance": "grounded",
+      "age_note": "Recurring theme through 2023; latest restatement 2024-04-07 ('patronizing safetyism').",
+      "citations": [
+        {
+          "date": "2023-12-15",
+          "quote": "innovation dies when the decisions about what you CAN and CANNOT build are all made by web2 monopolies or by certain rogue, technically illiterate bureaucrats"
+        },
+        {
+          "date": "2023-12-15",
+          "quote": "Our greatest existential risk is the risk of stagnation and atrophy."
+        }
+      ]
+    },
+    {
+      "item": "modular-single-point-of-failure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Notes the tradeoff that modular architectures can add redundancy or, conversely, introduce new single points of failure (e.g. separate DA blockchains) and lock-in via hard-to-change interfaces.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-11",
+          "quote": "It depends on whether modularity adds redundancy... or adds more single points of failure (as with separate blockchains for DA, etc)."
+        }
+      ]
+    },
+    {
+      "item": "NEAR",
+      "item_type": "token",
+      "parent_sector": "ai-crypto",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Repeatedly highlighted as the leading and now central ecosystem for AI x crypto, and for aligning with the modular Ethereum stack.",
+      "provenance": "grounded",
+      "age_note": "Most recent and strongest statement 2024-05-22; positive mentions from 2023-03 onward.",
+      "citations": [
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        }
+      ]
+    },
+    {
+      "item": "EIGEN",
+      "item_type": "token",
+      "parent_sector": "restaking",
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "a16z-led Series B; he frames EigenLayer as the 'verifiable cloud' that could unlock 100x innovation atop Ethereum's security.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "EigenLayer is the verifiable cloud. Massive leap forward today toward the realization of that vision."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the bedrock of pooled security on which the entire rollup, restaking, and ZK design space is built \u2014 the platform his core theses depend on.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from consistent Ethereum-centric framing across EigenLayer, Espresso, and L2 statements; no direct price/token call.",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "build on top of the already decentralized and secure validator set of the most secure programmable blockchain: Ethereum."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Explicitly disdains 'tokens without soul or purpose' that pump on memes and collapse \u2014 sees them as emblematic of the casino dynamic harming the space.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "As a long-horizon VC he is aggressively risk-on toward foundational, technically deep infrastructure (restaking, ZK, AI x crypto, shared sequencing) and frames not taking technology risk as the real existential danger. But this is explicitly risk-on for builders, paired with strong risk-OFF toward speculative/degen assets \u2014 he does not express any tactical market-timing or price-direction view.",
+    "provenance": "grounded"
+  },
+  "notes": "Ali Yahya's view is that of an infrastructure-focused VC, not a trader \u2014 nearly all signal is structural conviction about technology and teams, with essentially no tactical/market-cycle commentary, so token-level price views are sparse and largely extrapolated. His defining axis is a sharp moral/strategic split: deeply excited by mechanism-aligned, security-extending infra (EigenLayer, Espresso, Jolt/Lasso, AI x crypto via Gensyn/NEAR, cross-chain via LayerZero) and openly hostile to speculation-for-its-own-sake (memecoins, 100x perps, airdrop farming). Recency weighting: 2024 statements concentrate on EigenLayer (Feb), Espresso/shared sequencing (Mar), Jolt zkVM (Apr), and NEAR-as-AI-x-crypto-hub (May), so these carry the highest weight. Older theses (privacy/Aztec, web3 music/Sound, information markets/Freatic) are persisted but not restated in 2024 and are aged 9-12 months. No stance reversals were detected; views compound rather than conflict."
+}

@@ -1,0 +1,207 @@
+{
+  "as_of": "2025-09-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Launched a new Columbia research center focused on blockchain infrastructure, funded by the Ethereum Foundation; expresses unusually strong personal enthusiasm.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-09-18",
+          "quote": "New research center focused on blockchain infrastructure @CUSEAS ! Made possible by @ethereumfndn. Super-excited about this, more to come!"
+        },
+        {
+          "date": "2025-09-25",
+          "quote": "Thank you Caspar, and I hope you'll spend some time with us at the center!"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Co-authored a new foundational paper on DePIN, focused on the core problem of verifying that agreed-upon physical services/resources are actually being provided.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-20",
+          "quote": "developing some of the foundations for DePIN (decentralized physical infrastructure) networks, and specifically the key problem of verifying"
+        }
+      ]
+    },
+    {
+      "item": "accountable-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Ongoing line of work on which validators should be held accountable when a protocol stalls or violates consistency; a sustained, recent research thread.",
+      "provenance": "grounded",
+      "age_note": "Builds on 2024-05 EAAC/slashing work; restated in 2025-05, so current.",
+      "citations": [
+        {
+          "date": "2025-05-01",
+          "quote": "When a blockchain protocol stalls (i.e., has a liveness violation), which validators should be held accountable?"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Enthusiastic about hard theory becoming the fastest zkVM in the world (Jolt), and optimistic that advanced cryptographic primitives will become practical over coming decades.",
+      "provenance": "persisted",
+      "age_note": "Last expressed 2024-12; not restated in 2025 corpus \u2014 older view, treat as persisted.",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "It's been amazing watching 102 pages of hard theory get turned into the fastest zkVM in the world."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "i think they were expressing optimism that cryptographic primitives that seem even crazier than SNARKs could be made practical in the coming decades"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Theory of shill-proof auctions explaining why Dutch auctions are popular in Web3; treats auction design as central to crypto markets.",
+      "provenance": "persisted",
+      "age_note": "Stated 2024-04; not restated since \u2014 older but core to his research identity.",
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "Which auction formats are robust to shill bidding? Why are Dutch auctions so popular in Web3?"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Produced tutorials and talks on automated market makers, loss-versus-rebalancing, and Tullock contests covering mining, staking, execution tickets, and shared sequencing.",
+      "provenance": "persisted",
+      "age_note": "Tutorials/talks from mid-to-late 2024; not refreshed in 2025 corpus.",
+      "citations": [
+        {
+          "date": "2024-12-13",
+          "quote": "Covers mining, staking, execution tickets, shared sequencing. Includes ongoing work with @PGarimidi @mikeneuder."
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Built a framework to reason about restaking risks \u2014 whether validators can be safely reused across services without a small shock cascading into a catastrophic attack.",
+      "provenance": "persisted",
+      "age_note": "From 2024-08; not restated in 2025, but a substantive risk-analysis stance.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "framework to reason about the risks of restaking. Key question: Under what conditions can validators be safely reused across multiple services?"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "When is a restaking network \u201crobustly secure,\u201d meaning that a small \"shock\"...cannot enable a catastrophic attack?"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Proves slashing cannot achieve its intended deterrent purpose if message delays can't be bounded a priori, or in partially-synchronous/dynamically-available settings.",
+      "provenance": "persisted",
+      "age_note": "From 2024-05; foundational impossibility result, not contradicted later.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        }
+      ]
+    },
+    {
+      "item": "accountable-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Shows typical longest-chain protocols (PoW like Bitcoin, PoS like Ouroboros) cannot offer non-trivial accountability (EAAC) guarantees against attackers.",
+      "provenance": "persisted",
+      "age_note": "From 2024-05; impossibility result, stands as stated.",
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "This result rules out non-trivial EAAC guarantees for all typical longest-chain protocols (be they proof-of-work protocols like Bitcoin or proof-of-stake protocols such as Ouroboros)"
+        }
+      ]
+    },
+    {
+      "item": "shill-bidding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Concerned that sellers can manipulate auction prices via shill bids, especially in public/observable Web3 auction settings; motivates shill-proof design.",
+      "provenance": "persisted",
+      "age_note": "From 2024-04; not restated since.",
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "A *shill bid* is a bid submitted by the seller in order to manipulate the selling price of an auction."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Not a token/price view. Inferred ecosystem alignment: his research repeatedly centers Ethereum, and his new center is Ethereum-Foundation-funded. No statement about ETH as an asset.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from 2025-09 EF-funded center and recurring Ethereum-focused research; never an explicit token view.",
+      "citations": []
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 85,
+    "rationale": "Roughgarden's statements are exclusively academic \u2014 auction theory, consensus/slashing impossibility results, restaking security, DePIN, zkVMs. He never expresses a market-timing, risk-on/risk-off, or asset-allocation posture.",
+    "provenance": "grounded"
+  },
+  "notes": "Tim Roughgarden is a researcher/theorist, not a markets commentator; the corpus contains essentially zero token-price or investment-posture statements, so tokens_excited/concerned and risk_regime are weakly supported by design. The strongest and MOST RECENT signal (2025-09) is genuine personal excitement about a new Ethereum-Foundation-funded blockchain-infrastructure research center and (2025-06) DePIN foundations \u2014 these are his current focus. Older 2024 threads (zkVMs/SNARKs, shill-proof auctions, slashing impossibility, restaking risk, LVR/MEV) are marked 'persisted' since they were stated once and not refreshed in 2025; none were reversed. His 'concerns' are theoretical impossibility/risk results (slashing limits, restaking cascades, longest-chain accountability), not market bearishness. The single ETH token entry is explicitly extrapolated from ecosystem alignment, not a stated asset view."
+}

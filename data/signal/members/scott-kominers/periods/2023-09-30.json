@@ -1,0 +1,254 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Scott Kominers",
+  "items": [
+    {
+      "item": "nft-brands-community",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees NFTs not as mere ownership records but as composable foundations for brands and community co-creation; cc0 licensing jumpstarts derivative ecosystems that grow the original's value. This is his central, sustained thesis (HBR articles, a16z pieces, a book in progress with NFTbark).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-01",
+          "quote": "Some NFTs just serve as ownership records, while others can become the foundation of digital brands!"
+        },
+        {
+          "date": "2022-08-03",
+          "quote": "for some projects, at least, cc0 licensing is an incredibly compelling way to kickstart IP that may one day take on a life of its own"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes web3's user-owned, interoperable architecture creates a more valuable, more competitive internet; recurring theme that data/follow-graph portability and open protocols beat walled gardens. Reinforced by 2023 Threads-vs-Twitter migration friction.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-13",
+          "quote": "Joining Threads from Instagram is easy, but migrating from Twitter is a headache! This shows why we need social media based on open protocols"
+        },
+        {
+          "date": "2022-05-16",
+          "quote": "Web3 has the potential to unlock a more valuable internet for everyone."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "After the 2022 blowups, frames decentralized finance as the constructive path forward \u2014 the collapses are an argument FOR DeFi, not against crypto. Pairs aligned incentives with interoperable architecture.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi."
+        }
+      ]
+    },
+    {
+      "item": "nft-mint-mechanism-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "His professional edge: applies mechanism design to crypto sales. Champions clearing-price auctions and the 'wave mint' (on-chain reputation/community-gated, gas-war-resistant) as superior distribution mechanisms.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-06",
+          "quote": "Look for people in related NFT communities and invite them in \u2013 in waves."
+        },
+        {
+          "date": "2022-09-10",
+          "quote": "I generally prefer clearing-price auctions to descending pay-as-bid auctions"
+        }
+      ]
+    },
+    {
+      "item": "vampire-attacks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Co-authored economic theory showing public on-chain histories let entrants poach rivals' loyal customers, driving virtuous price competition that benefits consumers. A signature recent research thrust.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "our analysis suggests that vampire attacks may contribute to increased \u2013 and hopefully virtuous \u2013 platform competition."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Most recent enthusiasm (Sept 2023): on-chain games are an ideal venue for applied incentive/market design; long-time Pirate Nation player, advising Proof of Play and MegaForce Sentinels.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "On-chain games are a perfect setting (and laboratory) for incentive design -- and the @ProofOfPlay team is virtuosic at it"
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "His freshest sector interest (Sept 2023): web3 can transform how IP is created, managed, and monetized; expects falling production cost to raise the value of curated, high-quality IP.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-06",
+          "quote": "I've been fascinated by the potential of web3 to transform the way we understand, create, and manage IP."
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Argues 'location' still matters in virtual worlds (non-fungible spaces, interoperable portable assets); excited by generative architecture (SOLIDS). Engagement is genuine but emphasis was heaviest in 2022.",
+      "provenance": "grounded",
+      "age_note": "Peak enthusiasm in 2022 (metaverse-land essays); fewer dedicated statements by mid-2023 though still active (Otherside, Mar 2023). Weighted down for staleness.",
+      "citations": [
+        {
+          "date": "2022-06-10",
+          "quote": "Digital land can therefore be more valuable (to users) when it sits atop a platform that's already popular"
+        }
+      ]
+    },
+    {
+      "item": "cefi-intermediaries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Treats CeFi's risk-taking (FTX/Celsius/Terra) as the cautionary counterexample; competition only helps consumers if firms don't engage in malbehavior like centralized platforms taking on excess risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "competition induced by vampire attacks can only benefit consumers if it doesn't drive firms to engage in malbehavior (such as with centralized crypto finance platforms taking on excess risk)"
+        }
+      ]
+    },
+    {
+      "item": "nft-investment-misrepresentation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Consistently pushes back on speculation framing; insists NFT purchases are inherently risky at any price and value should derive from community/utility, not price appreciation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-28",
+          "quote": "BUYING NFTS AS INVESTMENTS IS INHERENTLY RISKY. At any price point. No investment is guaranteed to go up!"
+        }
+      ]
+    },
+    {
+      "item": "nft-mint-mechanism-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Recurrent operational concern: badly designed drops cause gas wars rooted in supply/demand imbalance; descending pay-as-bid auctions and unadvertised/spontaneous sales harm participants and revenue. Live critique of Azuki Elementals in June 2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-25",
+          "quote": "fundamentally gas wars are about supply/demand (im)balance"
+        },
+        {
+          "date": "2022-04-23",
+          "quote": "this fiasco will probably deter future projects from trying it"
+        }
+      ]
+    },
+    {
+      "item": "vampire-attack-sustainability-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Even while bullish on the mechanism, flags that today's implementations may be unsustainable and lean on regulatorily suspect strategies.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "it's not clear how sustainable the current vampire attack models are, especially since many of them rely on strategies that are regulatorily suspect."
+        }
+      ]
+    },
+    {
+      "item": "nft-scams-rugpulls",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "tactical",
+      "rationale": "Worries that incentives (e.g., creator royalties) can draw in bad actors and that platforms (Twitter) signal-boost crypto scam accounts; repeatedly warns followers about fake/compromised accounts and sketchy links.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-14",
+          "quote": "the presence of royalties might also draw in the toxic/rug projects"
+        },
+        {
+          "date": "2022-09-04",
+          "quote": "it's appalling that you're letting these scam accounts signal-boost"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 78,
+    "rationale": "Structurally bullish on web3/crypto/NFTs throughout the 2022 bear market and the FTX/Celsius/Terra collapses \u2014 he kept building, advising, writing, and onboarding (teaching HBS students to make wallets, launching new research and products into 2023). He explicitly rejects the 'end of crypto' narrative and reframes failures as reasons to build better (DeFi, decentralization, mechanism design). His risk-on posture is about long-horizon conviction in the technology and its market-design opportunities, NOT short-term price/token bets \u2014 he is openly cautious on speculation, rug risk, CeFi excess, and regulatory durability.",
+    "provenance": "grounded"
+  },
+  "notes": "Kominers is an academic/builder, not a trader; he deliberately avoids token-level price calls and repeatedly stresses NFTs are risky investments whose value comes from community, utility, and IP rather than appreciation. That is why tokens_excited/tokens_concerned are empty \u2014 no individual fungible-token or NFT-collection view is framed as a market bet (he discloses holdings of many NFT collections but each disclosure is accompanied by risk caveats, not bullish price theses). He is friendly to Ethereum infrastructure (celebrated The Merge) and notes Polygon for cheap transactions, but these are utility observations, not investment views. Recency weighting: his most current (mid-2023) emphases are vampire attacks/platform competition, on-chain games, progressive decentralization, open social protocols, and web3 IP (Story Protocol); metaverse/digital-land enthusiasm was downgraded for staleness since its 2022 peak. No major stance reversals detected \u2014 views are remarkably consistent and additive over the 18-month span. Caveat: the corpus is dominated by non-market content (Wordle, puzzles, public-health/Covid commentary, math), so the market signal is a minority of posts but internally coherent."
+}

@@ -1,0 +1,253 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees AMM/CFMM design as a rich, largely-open theory space and is personally producing work on it (e.g. formalizing the complexity-vs-expressivity trade-off of AMMs). Believes principled, optimal designs are within reach.",
+      "provenance": "grounded",
+      "age_note": "Sustained theme from 2021-11 through his most recent statements; weighting the 2023-03-06 work as current.",
+      "citations": [
+        {
+          "date": "2023-03-06",
+          "quote": "New work ... formalizing the intuitive trade-off between an AMM's complexity ... and its expressivity"
+        },
+        {
+          "date": "2021-11-28",
+          "quote": "we don't have a theory of DeFi just yet, but I'm very optimistic that we'll see a lot of interesting work over the next couple of years"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "His core research and teaching focus; treats permissionless consensus as a deep, still-developing theory and singles out DAG-based consensus as a major recent advance.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-10-21",
+          "quote": "One of the most exciting developments in consensus protocols in 2022 has been the recent advances in DAG-based consensus."
+        },
+        {
+          "date": "2022-01-21",
+          "quote": "there's a general theory of permissionless consensus ... waiting to be developed, plausibly as rich as the existing theory for the permissioned setting"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Views SNARK proof systems as near-magical 'computational compression' and is actively excited about the race to make proving practical; central to his L2 scaling vision.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-11",
+          "quote": "Excited to watch how all the SNARK-related storylines are going to play out--the suspense is killing me!"
+        },
+        {
+          "date": "2022-08-11",
+          "quote": "The fact that you can compress arbitrary computations in this way is shocking, IMO."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Frames cryptoeconomics as mechanism design with a native currency and lays out 'grand challenges' (optimal L1 incentives, macroeconomics, cross-layer incentives) he wants the field to solve.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #2: Optimal layer-1 incentives. (Holy grail: matching possibility and impossibility results ... )"
+        },
+        {
+          "date": "2023-01-06",
+          "quote": "This important paper shows that the breakdown of EIP-1559's incentive-compatibility ... is fundamental to the blockspace allocation problem"
+        }
+      ]
+    },
+    {
+      "item": "web3-paradigm-education",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Sees blockchains as programmable virtual computers and a whole new multidisciplinary field blossoming; left academia to build a research lab around it and invests heavily in educating people about it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-21",
+          "quote": "witnessing a new multidisciplinary field (spurred by web3) blossom before our eyes. There are enormous opportunities to shape this field"
+        },
+        {
+          "date": "2022-01-28",
+          "quote": "a new computing paradigm\u2014\u2013a programmable computer that lives in the sky ... not owned by anyone and that anyone can use"
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Promotes research bridging traditional and web3 governance and favors immediately-actionable improvements to on-chain voting schemes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-02",
+          "quote": "two fascinating lectures about what web3 governance can learn from traditional governance and vice versa"
+        },
+        {
+          "date": "2022-07-28",
+          "quote": "immediately-actionable local improvements to existing voting schemes ... are complementary to the more ambitious non-transferable governance program"
+        }
+      ]
+    },
+    {
+      "item": "web3-discourse-misinformation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Repeatedly frustrated by widespread confusion about what blockchains/web3 actually are; sees the discourse as muddled and conflating unrelated questions (tech vs. behavior vs. investment).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-03",
+          "quote": "conversations ... that remind me just how much confusion there currently is around web3"
+        },
+        {
+          "date": "2022-04-03",
+          "quote": "there's a lot of urgent work to do educating people to think clearly about web3"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Argues the popular 'impermanent loss' measure understates the real, often-permanent losses LPs suffer to arbitrageurs; pushes LVR as the proper measure of this structural drag on liquidity provision.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-13",
+          "quote": "Introducing LVR as a measure of LP loss in AMMs."
+        },
+        {
+          "date": "2021-10-27",
+          "quote": "the adverse selection suffered by liquidity providers ... which typically leads to some permanent loss"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Treats it as an open, worrying question whether MEV is fundamental to any decentralized smart-contract platform or merely an artifact of current designs\u2014an unresolved threat to incentive cleanliness.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "is MEV fundamental to any decentralized smart contract platform or an artifact of current designs?"
+        }
+      ]
+    },
+    {
+      "item": "misleading-terminology",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Concerned that sloppy naming (zk-rollups without zk, impermanent loss, blockchain-as-database) corrupts understanding for future students and practitioners.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-04-09",
+          "quote": "I have no idea why the \"blockchain as DB\" meme has persisted ... I hope it fades away soon."
+        },
+        {
+          "date": "2022-08-11",
+          "quote": "validity rollups (often misleadingly called zk rollups, despite the lack of zero knowledge)"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 32,
+      "horizon": "structural",
+      "rationale": "Notes a structural tension: as the block reward decays toward zero under Bitcoin's hard supply cap, undercutting/re-org attack incentives become a concern for long-run security\u2014a design risk he flags rather than a price call.",
+      "provenance": "grounded",
+      "age_note": "Analytical/security observation, not a market or price view; he explicitly avoids investment opinions on BTC.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Macroeconomic policy decision (hard supply cap) => microeconomic consequences (e.g., undercutting re-org attacks as the block reward goes to 0)."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "structural",
+      "rationale": "Observes EIP-1559's fee-burning likely makes ETH deflationary long run\u2014offered as a neutral analytical consequence of mechanism design, not as bullishness or a price view.",
+      "provenance": "grounded",
+      "age_note": "Analytical, not a price/market opinion; placed under 'concerned' only as the closest bucket for a flagged macro consequence\u2014sentiment is genuinely neutral.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "the EIP-1559 transaction fee mechanism ... macroeconomic consequences (ETH likely deflationary in the long run)."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 72,
+    "rationale": "Roughgarden is a theoretical computer scientist / research lead, not a trader. He explicitly classifies which-token-to-buy questions as investment advice for a financial advisor and consistently refuses market/price opinions. His optimism is structural and technological (long-horizon excitement about the science of blockchains), not a tactical risk-on/risk-off market posture.",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus is almost entirely academic/educational (Foundations of Blockchains lectures, AMM/CFMM and consensus theory, a16z crypto research seminars), so 'market view' here means his research-level enthusiasm and concerns, not trade positioning. Strongest and most current signals (through 2023-03) are AMM/CFMM design theory and LVR, consensus theory (incl. DAG-based consensus), SNARKs/validity rollups, and cryptoeconomics/L1 incentives. No reversals detected\u2014views are consistent and cumulative across the 18 months; older stances (e.g. 2021 DeFi-theory optimism) persist and are reinforced by 2023 work. Token-level entries are analytical mechanism-design observations, not investment views; he deliberately abstains from price/market opinions, hence risk_regime = no_view. He explicitly distances himself from web3 'gambling' framings and emphasizes the technology is 'not about gambling' (2022-04-03)."
+}

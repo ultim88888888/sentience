@@ -1,0 +1,203 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "He sees SNARKs as a transformative, rapidly innovating technology central to scaling blockchains and reshaping trust and privacy, and has staked his career on it by joining a16z crypto research.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2022-09 through 2022-11; consistently reinforced, not restated verbatim after 2022-11-17 but never contradicted.",
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "This space is experiencing an explosion of innovation, and I think this technology can be transformative."
+        },
+        {
+          "date": "2022-11-17",
+          "quote": "I believe blockchains will transform society's mechanisms for establishing trust & privacy"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He believes sum-check protocols minimize total prover work due to near-perfect memory locality, and expects good hardware implementations to follow; this is his preferred technical direction over FFT/FRI-based approaches.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-28",
+          "quote": "sum-check-based SNARKs remain the most promising for minimizing total prover work, and that good hardware implementations will follow."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "He is teasing forthcoming work demonstrating the power of multivariate polynomials, signaling personal research conviction in this approach.",
+      "provenance": "grounded",
+      "age_note": "Most recent statement in corpus (2023-03-11).",
+      "citations": [
+        {
+          "date": "2023-03-11",
+          "quote": "We'll see more demonstrations of the power of multivariate polynomials soon!"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He argues circuit-avoiding, special-purpose protocols give night-and-day prover gains and won't be subsumed by recursion; he cites verifiable neural network training/inference as an imminent compelling application he is personally working on.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "One that I think we'll see soon is neural network training/inference... I'm working on some others that I hope people will find compelling."
+        },
+        {
+          "date": "2022-12-31",
+          "quote": "some critical applications are amenable to super-efficient protocols that entirely avoid circuits... night-and-day prover performance improvements."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "He dove deep into validity rollups and was surprised by their richness; he views them as a key scalability application of SNARKs, though he treats them as amenable to (not requiring) recursion.",
+      "provenance": "grounded",
+      "age_note": "Enthusiasm expressed 2022-08; later (2022-12-31) framed more analytically around rollups' amenability to recursion.",
+      "citations": [
+        {
+          "date": "2022-08-20",
+          "quote": "I learned a lot about validity rollups and their subtleties---I was surprised by just how much there was to learn."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "He calls recursion extremely powerful and currently pervasive for keeping circuit sizes manageable, though his excitement is hedged by security caution and a belief non-recursive techniques may ultimately win.",
+      "provenance": "grounded",
+      "age_note": "Optimism (2022-12-30) is paired with recurring security caution; net stance is cautiously positive.",
+      "citations": [
+        {
+          "date": "2022-12-30",
+          "quote": "Recursion is extremely powerful. My comment shouldn't be regarded as pessimism... optimism that non-recursive techniques will prove to be even better"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 95,
+      "horizon": "tactical",
+      "rationale": "He warns that known attacks on non-interactively run FRI at 80 bits of security are feasible today, posing a systemic risk to the rollup ecosystem securing hundreds of millions in assets; he singles out dYdX's StarkEx verifier as too low.",
+      "provenance": "grounded",
+      "age_note": "Most recent and most forceful articulation (2023-03-09), escalating a concern first raised 2022-09-14.",
+      "citations": [
+        {
+          "date": "2023-03-09",
+          "quote": "Known attacks on FRI when run non-interactively at 80 bits of security are feasible... a systemic risk to the rollup ecosystem."
+        },
+        {
+          "date": "2023-03-09",
+          "quote": "the dYdX StarkEx verifier remains at 80 bits... I continue to believe that this is too low."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He worries the inherent tension in FRI between verifier cost/proof size and security gets resolved in favor of performance, risking eroded trust and misappropriated funds.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "this tension may get resolved in favor of performance over security."
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "if we prioritize performance over security, we may cause people to lose trust... potentially see misappropriated funds"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "He cautions that all implemented composed SNARKs have heuristic security or unquantified concrete-security loss, with risks compounding at large recursion depth, so some conservative entities won't use the tech yet.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "All implemented composed SNARKs have heuristic security or at least significant loss in concrete security can't be ruled out"
+        },
+        {
+          "date": "2022-12-29",
+          "quote": "recursion brings both overhead and imperfectly-understood security, especially when new SNARK-friendly hash functions are used."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "He flags that projects deploying Poseidon at ~95 bits of security makes it premature to relax on security, given recursion leans heavily on these new, less-understood hashes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "while projects are deploying Poseidon with at most 95 bits of security, it's premature to relax on this."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 80,
+    "rationale": "Thaler writes exclusively as a cryptography researcher about SNARK design, performance, and security. He expresses no market, price, or token-allocation views and explicitly disclaims investment advice. His posture is structurally optimistic on ZK technology's long-run impact but security-cautious about current deployments \u2014 a technical, not a market, stance.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Subject is a16z crypto Research Partner Justin Thaler; corpus is entirely technical (SNARK/ZK cryptography), so 'sectors' are rendered as technology directions rather than investment sectors. No tokens are discussed as investments \u2014 StarkWare/StarkNet/dYdX/StarkEx and Ethereum appear only as technical referents in a security debate, not as bullish/bearish token calls, so token arrays are empty. Most recent material (2023-03-09 to 2023-03-11) sharpens his FRI 80-bit security alarm and teases multivariate-polynomial work; these were weighted most heavily. Recurring tension across the corpus: enthusiasm for SNARK capability vs. persistent insistence on adequate concrete security."
+}

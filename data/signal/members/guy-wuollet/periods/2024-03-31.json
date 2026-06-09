@@ -1,0 +1,330 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "His single most sustained thematic obsession \u2014 wants decentralized energy grids, transportation, wireless networks; frames the key test as 'verification cost < incumbent margin.' Repeatedly speaks at DePIN events and still probing primitives (decentralized DB access control) in 2024.",
+      "provenance": "grounded",
+      "age_note": "Theme runs continuously from Jan 2023 through Jan 2024; most recent touch 2024-01-26, so current.",
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "We should have a decentralized energy grid, transportation network, and wireless network"
+        },
+        {
+          "date": "2023-01-18",
+          "quote": "The essential question when considering building a DePIN network: Verification cost < incumbent margin"
+        },
+        {
+          "date": "2024-01-26",
+          "quote": "very useful for a lot of DePIN companies, but doesn't exist as a neutral protocol primitive?"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 87,
+      "horizon": "structural",
+      "rationale": "Most recent and emotionally explicit enthusiasm \u2014 calls restaking his 'ultimate nerdsnipe' and is openly optimistic about EigenDA and broad AVS deployment. He helped onboard the team to CSX.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "Re-staking was the ultimate nerdsnipe for me, and I am very optimistic for the future presented by EigenDA and prolific AVS deployment."
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Personal intellectual brand \u2014 wants to reframe mechanism design + cryptography for coordination beyond finance, sees tokens as 'value vectors' that expand the design space for redesigning societies. Reinforced by praising Kominers' token book in Jan 2024.",
+      "provenance": "grounded",
+      "age_note": "Core thesis from Apr 2023; re-engaged via 'The Everything Token' on 2024-01-26, so still live.",
+      "citations": [
+        {
+          "date": "2023-04-21",
+          "quote": "I would suggest we rebrand the study of using mechanism design and cryptography to solve coordination problems as \u201cTokenology.\u201d"
+        },
+        {
+          "date": "2023-01-13",
+          "quote": "Tokens are value vectors. Dollars are value scalars. Tokens matter because they allow builders to keep the high dimensionality inherent in value representations"
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Explicitly believes the field under-invests in infrastructure relative to apps and sees building coordination rails as the larger opportunity.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2023-07-25 (~8 months old) and never restated, but consistent with his subsequent infra-heavy interests.",
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "I actually think we don't have enough focus on crypto infrastructure relative to apps. Building the rails for the future of human coordination seems like a massive opportunity"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Recurring technical fascination with verifiable computation and privacy \u2014 celebrates SNARK performance breakthroughs (JOLT/Lasso) and privacy on Ethereum (Aztec). Views decentralized verification as the crux of why crypto matters.",
+      "provenance": "grounded",
+      "age_note": "Heaviest activity mid-2023; latest related touch is admiring a cypherpunk ZK manifesto 2024-03-15.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Shocking work to wrangle SNARK performance forward. Another must read banger from @SuccinctJT!"
+        },
+        {
+          "date": "2023-03-01",
+          "quote": "Decentralized verification is the hardest problem and crux of why crypto matters"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Believes ML should be decentralized \u2014 interested in storing LLMs on Filecoin/Arweave, proving inference with validity proofs, and DAO-owned model protocols. Backed Gensyn.",
+      "provenance": "grounded",
+      "age_note": "Concentrated in early-to-mid 2023; not restated in 2024 but never reversed (persists).",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "We're thrilled to be working with @harrygrieve, @benfielding and the team at @gensynai. The future of machine learning is decentralized"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Sustained enthusiasm for trustless lending primitives via long association with Morpho; framed Morpho Blue launch as a major DeFi milestone.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-11",
+          "quote": "Congrats to @PaulFrambot and the whole @MorphoLabs team for launching Morpho Blue. One small step for Morpho, one big step for DeFi"
+        },
+        {
+          "date": "2023-10-10",
+          "quote": "Big day for trustless lending! It's been an honor to work with @PaulFrambot and the @MorphoLabs team"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-contribution",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Excited by protocols/DAOs where anyone can contribute and be paid in proportion to value created; flags the open problem of evaluating contribution quality after the fact.",
+      "provenance": "persisted",
+      "age_note": "Stated Feb 2023 (~13 months old), never restated; held with an acknowledged unsolved verification problem.",
+      "citations": [
+        {
+          "date": "2023-02-24",
+          "quote": "I'm very excited about the idea of permissionless contribution."
+        },
+        {
+          "date": "2023-02-25",
+          "quote": "the open question for permissionless contribution is how to evaluate the quality and value created of a contribution after the fact"
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Skeptical that networks marketed as decentralized actually are \u2014 pointedly accuses projects of concealing a multisig behind a 'decentralized' label.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-07",
+          "quote": "You are hiding a multi-sig in that decentralized network, are you not?"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Thinks 'MEV' conflates user-harming extraction with benign/helpful activity, and that the harmful, information-asymmetry-driven extraction is an unsolved design problem.",
+      "provenance": "persisted",
+      "age_note": "From May 2023 (~10 months old), not restated since.",
+      "citations": [
+        {
+          "date": "2023-05-12",
+          "quote": "MEV is a bad term because it includes both actions that hurt users, and actions that are neutral or helpful for users while assisting in protocol design"
+        }
+      ]
+    },
+    {
+      "item": "regulatory-capture",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Sarcastically frames incumbents and regulators as fearing decentralized networks; dislikes American bureaucracy and sees power structures as resistant to disruption.",
+      "provenance": "grounded",
+      "age_note": "Anti-bureaucracy stance dates to 2022; restated as regulatory-capture concern 2023-10-26.",
+      "citations": [
+        {
+          "date": "2023-10-26",
+          "quote": "nooo babe I love your regulatory capture the decentralized networks scare me"
+        },
+        {
+          "date": "2022-10-01",
+          "quote": "I dislike American bureaucracy"
+        }
+      ]
+    },
+    {
+      "item": "decentralization-efficiency-cost",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Acknowledges decentralization is always less efficient than centralization, so projects must justify who bears that cost and why it's worth paying \u2014 a sober counterweight to his optimism.",
+      "provenance": "persisted",
+      "age_note": "Framing from Oct 2022 (~18 months old), foundational and never contradicted.",
+      "citations": [
+        {
+          "date": "2022-10-22",
+          "quote": "Decentralization is always less efficient than centralization. Why is this cost worth paying, and who will bear it?"
+        }
+      ]
+    },
+    {
+      "item": "EIGEN",
+      "item_type": "token",
+      "parent_sector": "restaking",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "His most recent and most explicitly optimistic protocol bet \u2014 restaking as 'ultimate nerdsnipe,' bullish on EigenDA and broad AVS deployment.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "Re-staking was the ultimate nerdsnipe for me, and I am very optimistic for the future presented by EigenDA and prolific AVS deployment."
+        }
+      ]
+    },
+    {
+      "item": "MORPHO",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Long-running working relationship; views Morpho Blue as a leap forward for trustless lending.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-11",
+          "quote": "launching Morpho Blue. One small step for Morpho, one big step for DeFi"
+        }
+      ]
+    },
+    {
+      "item": "TIA",
+      "item_type": "token",
+      "parent_sector": "modular-da",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Top-of-mind in the modular/DA stack; jokes that only Celestia counts as 'real' data availability, signaling positive attention.",
+      "provenance": "grounded",
+      "age_note": "Light signal (humorous), but most recent DA reference (2024-03-02).",
+      "citations": [
+        {
+          "date": "2024-03-02",
+          "quote": "If it's not from the Celestia region of France it's just sparkling data availability"
+        }
+      ]
+    },
+    {
+      "item": "FIL",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Sees its committed capacity as a potential data-availability layer (FVM verifying proofs), pending latency/erasure-coding work.",
+      "provenance": "persisted",
+      "age_note": "From 2023-07-27 (~8 months old), posed as an open exploration, not restated.",
+      "citations": [
+        {
+          "date": "2023-07-27",
+          "quote": "Anyone experimenting with Filecoin as a data availability layer? The FVM could verify proofs in theory and Filecoin has massive amounts of committed capacity"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Personally using the Solana Saga phone and soliciting native dapp recommendations \u2014 tactical, experiential interest rather than a deep thesis.",
+      "provenance": "grounded",
+      "age_note": "From 2023-12-18; consumer/experiential signal.",
+      "citations": [
+        {
+          "date": "2023-12-18",
+          "quote": "I'm in my Solana Saga arc. Give me recommendations for native dapps or great experiences on @solanamobile"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 78,
+    "rationale": "Persistently constructive builder-optimist toward decentralized networks and crypto infrastructure across the full corpus \u2014 celebrates BUIDL energy, calls ETH Denver a 'whitepill,' and keeps deploying conviction into new infra (DePIN, restaking, ZK). His caution is selective and design-level (fake decentralization, MEV, efficiency cost), not a macro de-risking. No market-timing or bearish posture appears.",
+    "provenance": "grounded"
+  },
+  "notes": "Wuollet writes as an a16z infrastructure investor/builder, not a trader; he discusses protocols and design primitives far more than tradable tokens, so 'tokens_excited' maps his protocol enthusiasm and conviction is dampened where the signal is a working relationship or a joke rather than an investment thesis. Most recent (2024 Q1) and highest-conviction signals: EigenLayer/restaking, Morpho/DeFi, DePIN primitives, Celestia/DA. No stance reversals detected \u2014 his views accrete rather than flip; older items (permissionless contribution, MEV framing, efficiency-cost framing) are marked 'persisted' where stated once and never restated but never contradicted. Several entries lean on his consistent track record rather than a single fresh quote. Conviction scores reflect intensity/recency, not certainty of outcome."
+}

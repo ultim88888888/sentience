@@ -1,0 +1,173 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Sees succinct proof systems as the core scaling primitive for web3 and is captivated by the race to cut prover/proof-generation time; flagged the 'lookup singularity' as a major recent advance.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-08-11",
+          "quote": "Excited to watch how all the SNARK-related storylines are going to play out--the suspense is killing me!"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "9 months later, the lookup singularity is here."
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Deeply invested in formalizing LP losses in AMMs via LVR, connecting it to option pricing and selfish-routing theory; continued producing empirical and theoretical work into mid/late 2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-27",
+          "quote": "Expanded version of the original LVR paper, which fleshes out the many connections to option pricing and adds an empirical analysis of LVR"
+        },
+        {
+          "date": "2023-09-17",
+          "quote": "at least specifically for arbitrage MEV, faster block times = less MEV. Supporting math"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Treats cryptoeconomics (mechanism design with a native currency, EIP-1559-style fee markets, optimal L1 incentives) as the field's grand challenges and his primary research frontier.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #2: Optimal layer-1 incentives. (Holy grail: matching possibility and impossibility results as complete as in the theory of consensus protocols.)"
+        },
+        {
+          "date": "2023-07-06",
+          "quote": "a transaction fee mechanism (TFM) is the part of a blockchain protocol responsible for figuring out which transactions should be included and who should pay what."
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Devoted an unusually obsessive, four-batch lecture series to PoS sybil-resistance, VRFs/VDFs, slashing, and long-range attacks \u2014 signaling sustained enthusiasm for PoS protocol design.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-05-13",
+          "quote": "Preview of the Foundations of Blockchains pipeline (proof-of-stake really drew out my obsessive side...)"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Singled out DAG-based consensus (DAG-Rider, Narwhal/Tusk, Bullshark, Cordial Miners) as a standout consensus advance, hosting multiple seminars on it.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-10-21 (~11 months before cutoff) and not restated; treat as a still-standing but unrefreshed view.",
+      "citations": [
+        {
+          "date": "2022-10-21",
+          "quote": "One of the most exciting developments in consensus protocols in 2022 has been the recent advances in DAG-based consensus."
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "His own impossibility result shows that with MEV no non-trivial TFM can be both DSIC and BPIC \u2014 EIP-1559 stops being incentive-compatible \u2014 making MEV a fundamental, not cosmetic, design problem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "with MEV, *no* non-trivial or approximately welfare-maximizing TFM can be both DSIC and BPIC!"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "is MEV fundamental to any decentralized smart contract platform or an artifact of current designs?"
+        }
+      ]
+    },
+    {
+      "item": "web3-discourse-misinformation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Worries that even smart people conflate the technology, behavioral, and investment questions, and that bad mental models (e.g. 'blockchain as database', 'it's all gambling') dominate; sees urgent need for clear education.",
+      "provenance": "persisted",
+      "age_note": "Core statements from 2022-04, ~18 months old; theme is consistent across the corpus (education output) but the explicit concern was voiced early.",
+      "citations": [
+        {
+          "date": "2022-04-03",
+          "quote": "there's a lot of urgent work to do educating people to think clearly about web3."
+        },
+        {
+          "date": "2022-04-09",
+          "quote": "I have no idea why the \"blockchain as DB\" meme has persisted for as long as it has."
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Repeatedly emphasizes impossibility results: longest-chain loses consistency under partial synchrony, PoW can't satisfy both liveness and consistency, n/3 fault bounds \u2014 a sober view of inherent protocol trade-offs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-17",
+          "quote": "Longest-chain consensus loses consistency under network attacks (in the partially synchronous model)"
+        },
+        {
+          "date": "2022-12-19",
+          "quote": "No proof-of-work protocol satisfies both liveness in the synchronous model and consistency in the partially synchronous model"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 80,
+    "rationale": "Roughgarden explicitly frames token/price questions as outside his lane \u2014 investment advice is 'something you would ask your financial advisor' \u2014 and confines himself to how the technology works. He expresses structural long-term conviction in the underlying tech but offers no risk-on/risk-off market posture.",
+    "provenance": "grounded"
+  },
+  "notes": "Tim Roughgarden speaks as a theoretical computer scientist and Head of Research at a16z crypto, not as an investor; nearly all statements are about research directions, protocol design, and education rather than markets or assets. He deliberately separates technical ('how it works') from investment ('ask your financial advisor') questions, so no token-level excitement/concern can be honestly extracted \u2014 hence empty token arrays. The closest token-adjacent observation is that EIP-1559's burn likely makes ETH deflationary long-run (2022-11-19), but he presents this as a mechanism-design consequence, not a bullish/bearish call. 'Excitement' here = active research enthusiasm; 'concern' = identified fundamental design obstacles (MEV, consensus impossibility results, public misunderstanding), not downside-risk warnings. Most recent signals (2023-07 to 2023-09) cluster on MEV/TFM theory and AMM/LVR, which I weighted highest. DAG-consensus and the web3-discourse concern are older and unrefreshed (marked persisted)."
+}

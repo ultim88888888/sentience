@@ -1,0 +1,294 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His signature thesis: crypto as the native antidote to physical-infrastructure monopolies, financing real-world assets and making 'atoms look more like bits.' Now a core mandate as GP.",
+      "provenance": "grounded",
+      "age_note": "Consistently restated across 14+ months (Jan 2025 \u2192 Jan 2026), most recently 2026-01-29; the most durable and intense theme in the corpus.",
+      "citations": [
+        {
+          "date": "2026-01-29",
+          "quote": "DeFi's next step is into the real world by financing physical infrastructure. The future of crypto is real (assets)."
+        },
+        {
+          "date": "2025-11-10",
+          "quote": "I'll focus on investing in DeFi, DePIN, and the infrastructure powering those applications to bring finance and physical infrastructure onchain."
+        },
+        {
+          "date": "2025-05-19",
+          "quote": "DePIN is eating the world"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Named explicit GP focus area; sees capital as one of three networks crypto supercharges. Actively researching perps cohort retention and 'invading the order books onchain.'",
+      "provenance": "grounded",
+      "age_note": "Reaffirmed at GP announcement (2025-11-10) and into 2026; active perps/order-book interest Jan 2026.",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "I'm most excited about capital, information, and energy as the networks that crypto can supercharge."
+        },
+        {
+          "date": "2026-01-16",
+          "quote": "We're invading the order books onchain"
+        },
+        {
+          "date": "2025-10-16",
+          "quote": "We're thrilled to partner with Jito and support their mission to build Internet Capital Markets on Solana!"
+        }
+      ]
+    },
+    {
+      "item": "collaborative-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes privacy is now a key product bottleneck given institutional adoption and agent economies; backs client-side proving (Miden), collaborative SNARKs (Taceo), and Seismic.",
+      "provenance": "grounded",
+      "age_note": "Strong through 2025 (Miden Apr, Taceo Jul, Seismic Nov 2025); evolved from 2024 ZK/coSNARK threads into an explicit privacy-as-bottleneck conviction.",
+      "citations": [
+        {
+          "date": "2025-04-30",
+          "quote": "Privacy is essential... This all sets up privacy as a key bottleneck and important product problem that wasn't the case years ago."
+        },
+        {
+          "date": "2025-04-29",
+          "quote": "Client-side proving also offers flexible privacy that public chains today don't."
+        },
+        {
+          "date": "2025-11-12",
+          "quote": "Get ready for a Seismic impact on the privacy landscape"
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Sees institutions moving onchain as the dominant 2025-2026 shift, with Wall Street adopting blockchains for ledger efficiency (not ideology). His most recent statement in the corpus.",
+      "provenance": "grounded",
+      "age_note": "Most recent view (2026-03-30) reinforces 2025-08-12 thesis; current and strengthening.",
+      "citations": [
+        {
+          "date": "2026-03-30",
+          "quote": "Wall Street is adopting blockchains as a schelling point to upgrade their atrophying core ledgers."
+        },
+        {
+          "date": "2025-08-12",
+          "quote": "I believe 2025 is the year institutions move onchain."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited by open marketplaces for AI inference (Ambient's useful proof-of-work L1) and user-owned/operated AI companions as the best verifiable-AI use case; ties to 'information' network thesis.",
+      "provenance": "grounded",
+      "age_note": "Mid-2025 cluster (PIN AI 2024-11, verifiable AI Jun 2025, Ambient Jun 2025); he explicitly reversed prior skepticism of useful proof-of-work.",
+      "citations": [
+        {
+          "date": "2025-06-25",
+          "quote": "I had personally been very skeptical of useful proof of work... but the Ambient team re-ignited my enthusiasm for the idea almost immediately."
+        },
+        {
+          "date": "2025-06-11",
+          "quote": "What's the best use case for verifiable AI? I believe it's user owned and operated companions."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-energy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Energy is one of his three named supercharge-able networks; backs distributed energy (Daylight) and floats decentralized water/energy-futures markets.",
+      "provenance": "grounded",
+      "age_note": "Part of Nov 2025 GP thesis; Daylight support Oct 2025; consistent subset of DePIN.",
+      "citations": [
+        {
+          "date": "2025-10-16",
+          "quote": "support Daylight on their mission to revitalize the American energy grid and build a distributed energy network for the future."
+        },
+        {
+          "date": "2025-11-10",
+          "quote": "capital, information, and energy as the networks that crypto can supercharge"
+        }
+      ]
+    },
+    {
+      "item": "micropayments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Sees all-time-high stablecoin volume as a structural win and expects agent-driven micropayments to revive pay-per-view content models.",
+      "provenance": "grounded",
+      "age_note": "Mid-2025 (micropayments Jun, stablecoin volume Apr, compliant payments panel Oct 2025); not restated in 2026 but consistent.",
+      "citations": [
+        {
+          "date": "2025-06-16",
+          "quote": "Micropayments will make a comeback... Agents don't care about these payment decisions, and I believe more content will be paid per view."
+        },
+        {
+          "date": "2025-04-30",
+          "quote": "all time high stablecoin volume (higher than visa or mastercard)"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-proving",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Believes proving networks become essential infrastructure and real-time proofs can unify fragmented Ethereum rollups; backed Fermah, T1, Syndicate.",
+      "provenance": "persisted",
+      "age_note": "Heavily 2024 (Fermah/T1 Oct-Nov 2024); lighter touch since (NEAR intents Nov 2025). Older conviction, not strongly restated recently \u2014 weight reduced.",
+      "citations": [
+        {
+          "date": "2024-10-02",
+          "quote": "I believe proving networks will become essential for blockchains"
+        },
+        {
+          "date": "2024-11-06",
+          "quote": "Seamless interoperability is my holy grail for rollups, and T1 is working to finally make it possible."
+        }
+      ]
+    },
+    {
+      "item": "liquidity-fragmentation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Worries unified liquidity may not arrive before vertically integrated L1s bootstrap enough liquidity, threatening Ethereum's rollup-centric model.",
+      "provenance": "persisted",
+      "age_note": "Stated 2024-10/2024-11; not restated in 2025-2026. Treat as an older, possibly softening concern \u2014 his RTP/interop bets are the proposed remedy.",
+      "citations": [
+        {
+          "date": "2024-11-06",
+          "quote": "fragmented liquidity and fractured state present a challenge and an opportunity."
+        },
+        {
+          "date": "2024-10-11",
+          "quote": "Can Ethereum rollups ship seamless interoperability to stop liquidity fragmentation before the vertically integrated L1s bootstrap enough liquidity?"
+        }
+      ]
+    },
+    {
+      "item": "vibes-over-value",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Concerned that 'decentralization' and 'DePIN' are misused buzzwords that lose meaning, and that projects selling 'vibes' rather than value are really religion/entertainment.",
+      "provenance": "grounded",
+      "age_note": "Sustained 2025 stance (DePIN dilution Jan, decentralization-not-a-goal Jul, vibes-not-value Jun 2025); a framing/discipline concern more than a market-risk concern.",
+      "citations": [
+        {
+          "date": "2025-07-22",
+          "quote": "I think we should stop using the word decentralization. Decentralization is not a goal"
+        },
+        {
+          "date": "2025-06-28",
+          "quote": "If the product is vibes and not value, find a different product. Or realize you're selling religion and entertainment"
+        }
+      ]
+    },
+    {
+      "item": "crypto-insurance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Sees insurance as an obviously valuable but historically failed crypto category \u2014 premiums too high, capital rehypothecation inefficient \u2014 though he thinks conditions are improving.",
+      "provenance": "grounded",
+      "age_note": "Raised Jan 2025 and again May 2025 ('most compelling crypto insurance protocols?') \u2014 an open problem he's watching, not a thesis-breaker.",
+      "citations": [
+        {
+          "date": "2025-01-22",
+          "quote": "Insurance seems like an obviously good idea for crypto. Why has it never worked? Perhaps because the premiums would be too high"
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "What are the most compelling crypto insurance protocols?"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Praises Solana's pragmatic, shipping-over-maximalism culture and application-controlled execution; views it as the venue for the world's most liquid financial markets (Jito, Ambient fork).",
+      "provenance": "grounded",
+      "age_note": "Mid-to-late 2025 (ACE/pragmatism Jul, Jito Oct, Ambient forking Solana Jun 2025); consistent and recent.",
+      "citations": [
+        {
+          "date": "2025-07-25",
+          "quote": "There are no zealots in Solana, only pragmatic engineers who want to build a platform that can support the world's most liquid financial markets."
+        },
+        {
+          "date": "2025-07-25",
+          "quote": "shipping beats maximalism"
+        }
+      ]
+    },
+    {
+      "item": "NEAR",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "tactical",
+      "rationale": "Notes growing intents volume and praises the NEAR\u2013Zashi integration UX, fitting his interoperability and seamless-UX priorities.",
+      "provenance": "grounded",
+      "age_note": "Single recent positive mention (2025-11-03); not restated \u2014 observation rather than deep conviction.",
+      "citations": [
+        {
+          "date": "2025-11-03",
+          "quote": "NEARProtocol intents volume is growing. Their integration with zashi_app also makes for a really nice UX in my opinion"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Consistently and emphatically optimistic: dismisses cynicism as self-defeating, cites regulatory wins, institutional adoption, and record stablecoin volume as tailwinds, and frames 2025+ as the 'sales era' where crypto delivers real value. His most recent statements (Wall Street adoption, 'invading order books') are bullish on capital flowing onchain.",
+    "provenance": "grounded"
+  },
+  "notes": "Guy's view is highly coherent and durable, organized around three networks he named at his Nov-2025 GP promotion: capital (DeFi), information (decentralized/verifiable AI), and energy/physical infrastructure (DePIN). DePIN is his single strongest and most-restated conviction; privacy/client-side proving is a clear secondary thesis that evolved out of his 2024 ZK/coSNARK work. Notable reversals: he abandoned skepticism of useful proof-of-work after meeting Ambient (2025-06-25), and his 2024 'proving networks/Ethereum interop' enthusiasm has faded relative to DePIN/DeFi/privacy (downgraded to persisted). He explicitly rejects 'decentralization' as a goal, preferring concrete goals (censorship resistance, composability, eliminating platform risk) \u2014 a framing concern, not a bearish signal. He names few liquid tokens; most picks are early-stage/equity (CSX accelerator) so token-level read is thin. He is an avowed optimist ('weaponized optimism,' 'hopepunk'); a large fraction of the corpus is non-market personal/cultural commentary, filtered out here. Where statements conflicted, most-recent (2026) views were weighted; no hard reversals on the major sector theses."
+}

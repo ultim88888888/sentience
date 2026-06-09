@@ -1,0 +1,236 @@
+{
+  "as_of": "2023-12-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His dominant late-2023 research thrust: a formal 'hierarchy of permissionlessness' (Perm<QP<DA<FP) and impossibility results mapping the trade-offs between longest-chain and PBFT-style PoS protocols. Most recent and most intensely pursued topic.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "Should proof-of-stake blockchain protocols follow the longest-chain tradition of Bitcoin, the PBFT-style tradition of permissioned protocols, or something else entirely? The trade-offs are pretty fascinating"
+        },
+        {
+          "date": "2023-11-16",
+          "quote": "We're finally happy with one, a \"sweet spot\" model that is both very general... and user-friendly enough to enable lots of different possibility and impossibility results"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees SNARKs as foundational web3 infrastructure for scaling (L2->L1 verification) and is enthusiastic about ongoing improvements in proof generation; celebrated the 'lookup singularity' breakthrough in 2023.",
+      "provenance": "grounded",
+      "age_note": "Peak enthusiasm mid-2022; last reaffirmed Aug 2023 ('lookup singularity'). Theme persists but commentary tapered through late 2023 as consensus work took over.",
+      "citations": [
+        {
+          "date": "2022-08-11",
+          "quote": "Excited to watch how all the SNARK-related storylines are going to play out--the suspense is killing me!"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "he calmly told me, \"I think this could be big,\" I knew to take him very, very seriously. And now... the lookup singularity is here."
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Co-developed LVR as a rigorous measure of LP loss in AMMs, connecting it to option pricing and the price-of-anarchy toolbox; continued formalizing AMM complexity-vs-expressivity trade-offs into 2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-27",
+          "quote": "Expanded version of the original LVR paper, which fleshes out the many connections to option pricing and adds an empirical analysis of LVR"
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "formalizing the intuitive trade-off between an AMM's complexity... and its expressivity"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Excited by the rich design space and the math of TFMs under MEV; proved that MEV fundamentally changes incentive-compatibility, which he frames as illuminating rather than discouraging.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "Our main result shows that the problem is fundamental, rather than a flaw in the EIP-1559 design: with MEV, *no*... TFM can be both DSIC and BPIC!"
+        },
+        {
+          "date": "2023-09-17",
+          "quote": "at least specifically for arbitrage MEV, faster block times = less MEV"
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Laid out 'grand challenges' for cryptoeconomics: making macroeconomics rigorous, finding optimal L1 incentives with matching possibility/impossibility results, and understanding cross-layer incentives.",
+      "provenance": "persisted",
+      "age_note": "Stated as CESC talk grand challenges Nov 2022; not restated verbatim since, but underlies subsequent 2023 work.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #2: Optimal layer-1 incentives. (Holy grail: matching possibility and impossibility results as complete as in the theory of consensus protocols.)"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #1: Make macroeconomics our own."
+        }
+      ]
+    },
+    {
+      "item": "dag-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Singled out DAG-based consensus (DAG-Rider, Narwhal/Tusk, Bullshark, Cordial Miners) as the most exciting consensus development of 2022.",
+      "provenance": "persisted",
+      "age_note": "Stated Oct 2022 and not restated in 2023; treat as persisted, somewhat stale.",
+      "citations": [
+        {
+          "date": "2022-10-21",
+          "quote": "One of the most exciting developments in consensus protocols in 2022 has been the recent advances in DAG-based consensus."
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Proved MEV makes it impossible for a transaction fee mechanism to be simultaneously good for users (DSIC) and credible for block producers (BPIC); existing fixes (encrypted mempools, OFAs, TEEs, MPC) are all imperfect responses to a fundamental problem.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "with MEV, EIP-1559 is no longer incentive-compatible for both users and block producers (even with a correctly set base fee)!"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "is MEV fundamental to any decentralized smart contract platform or an artifact of current designs?"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Any protocol robust to fluctuating participation (DA setting) provably cannot have finality/accountability, optimistic responsiveness, or partition-resilience \u2014 a hard ceiling on what permissionless designs can achieve; framed as constraint-illumination, not doom.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "if your blockchain protocol is robust to fluctuating participation... then it cannot be optimistically responsive, accountable, or robust to network partitions"
+        },
+        {
+          "date": "2023-12-13",
+          "quote": "(full) permissionlessness is as hard as asynchrony"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "EIP-1559's incentive-compatibility breaks down when the base fee is too low for demand; he confirmed this is fundamental to blockspace allocation, not a design artifact.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-06",
+          "quote": "the breakdown of EIP-1559's incentive-compatibility in the event of an excessively low base fee is fundamental to the blockspace allocation problem"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Praises Ethereum's PoS design as aspiring to 'best of both worlds' \u2014 longest-chain guarantees under weaker assumptions plus PBFT-style finality under stronger participation; notes its fee burn likely makes ETH deflationary long-run. Analytical admiration of design, not a price call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds: the basic guarantees of a longest-chain protocol... plus the extra benefits of a PBFT-style protocol"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "the EIP-1559 transaction fee mechanism... => macroeconomic consequences (ETH likely deflationary in the long run)"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Analytically critical of Bitcoin's design ceiling: as fully-permissionless PoW it can only offer probabilistic safety/liveness (vulnerable to lucky long re-orgs), and its block reward decaying to zero raises undercutting/re-org incentive worries. A theoretical limitation critique, not an investment bearishness.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-13",
+          "quote": "the safety + liveness guarantees are only probabilistic (after enough time, even an attacker with a small amount of hashrate will get lucky enough to pull off a long re-org attack)"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "Bitcoin block rewards... Macroeconomic policy decision (hard supply cap) => microeconomic consequences (e.g., undercutting re-org attacks as the block reward goes to 0)"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Roughgarden is an academic researcher whose entire corpus concerns the theory and mechanism design of blockchains (consensus, SNARKs, AMMs, MEV, TFMs). He never discusses token prices, market timing, allocation, or bullish/bearish positioning. He has no expressed risk-on/risk-off market posture; his 'positions' are about which research problems matter and which protocol designs are sound.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Tim Roughgarden is a research scientist (a16z crypto research, Columbia), not a portfolio investor \u2014 his statements are technical/mathematical, so 'excitement' and 'concern' are mapped to research areas and protocol-design assessments rather than trades. Recency weighting: late-2023 output is overwhelmingly the 'Permissionless Consensus' paper (PoS vs PoW, hierarchy of permissionlessness, impossibility results), making that his clearest current focus. Token entries (ETH/BTC) reflect analytical views on protocol design, NOT investment recommendations, and conviction scores there denote analytical intensity, not directional price confidence. His characteristic stance toward impossibility results is constructive ('the role of an impossibility result... is not to discourage but to illuminate', 2023-07-06), so 'concerns' should be read as identified hard constraints rather than pessimism. Older themes (DAG consensus Oct-2022, cryptoeconomics grand challenges Nov-2022) are marked persisted as they were not restated in 2023. No genuine reversals detected in the corpus \u2014 his views accreted rather than flipped."
+}

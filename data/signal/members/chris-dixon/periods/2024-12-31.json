@@ -1,0 +1,245 @@
+{
+  "as_of": "2024-12-31",
+  "approach": "A2a:Chris Dixon",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes blockchains are the answer to AI breaking the internet's economic covenant \u2014 enforcing ownership, verifying identity to isolate bots, and ensuring authenticity without slowing AI.",
+      "provenance": "grounded",
+      "age_note": "Most recent thesis (2024-12-17), reinforcing the 2024-10-16 State of Crypto takeaway that 'crypto could solve some of AI's most pressing challenges.'",
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "I wrote about why AI needs blockchain-enabled computing, and why I'm optimistic as these technologies converge."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "Crypto can carry the torch of the open internet and help keep it creative, open, and diverse."
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Wants on-chain IP registration so creators get attribution and compensation as AI systems consume their work; led $80M Series B in Story Protocol to build this rail.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "We want to help Story become the infrastructure for AI systems and creative people to happily co-exist."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "Advances in generative AI are likely to break this covenant... creators need a modern way to ensure they get compensated."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Singles them out as the clearest case of crypto reaching real adoption rather than speculation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "Stablecoins have found product-market fit"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Views scaling upgrades as the unlock for usable, low-cost on-chain applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "Major scaling upgrades have drastically reduced onchain transaction costs"
+        },
+        {
+          "date": "2024-10-16",
+          "quote": "More scalable infrastructure has unlocked new onchain applications"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Notes continued and growing usage as evidence of durable demand.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "DeFi remains popular \u2014 and it's growing"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Excited by games where players own assets and anyone can build on top, bringing modding to the foreground via composability, interoperability, and permanence.",
+      "provenance": "persisted",
+      "age_note": "Stated at the Proof of Play seed (2023-09-21) and echoed via gaming sections of his book; not restated with fresh conviction in late 2024.",
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "building a future with composability, interoperability, and permanence at the core of gameplay"
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "players own their assets, and anyone can create their own game on top of another"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Personally uses and prefers Farcaster's community over Twitter, signaling conviction in user-owned social.",
+      "provenance": "persisted",
+      "age_note": "Stated early 2024 (Jan/Feb); not restated later in the corpus.",
+      "citations": [
+        {
+          "date": "2024-01-18",
+          "quote": "I use Farcaster all the time. The community is far better than on Twitter."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Fears AI search and AI-generated content destroy creators' incentive to publish, with big tech best-placed to capture the value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "AI is going to end the internet as we've known it... big tech companies are best-placed to reap the rewards."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "If there's no attribution or compensation, what incentive will there be to publish original creations on the open internet?"
+        }
+      ]
+    },
+    {
+      "item": "content-authenticity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Sees deepfakes and bots degrading trust and authenticity online, a problem he thinks crypto identity/authenticity tools must solve.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-17",
+          "quote": "AI-powered deepfakes and bots are also degrading people's trust in the online world."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Long-standing concern that lack of clear market-structure rules drives out good actors and limits productive innovation; major political/PAC focus.",
+      "provenance": "grounded",
+      "age_note": "Dominant concern through mid-2024, but his MOST RECENT stance (2024-12-04) turned optimistic after FIT21 passing the House and the Atkins SEC nomination \u2014 concern easing, not reversed.",
+      "citations": [
+        {
+          "date": "2024-05-14",
+          "quote": "the current regulatory approach too often limits innovation and privacy without actually addressing the solutions needed to protect consumers"
+        },
+        {
+          "date": "2024-12-04",
+          "quote": "We are very optimistic about the opportunities under Mr. Atkin's leadership to accelerate progress and allow crypto to thrive in the U.S."
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Worries speculation and casino culture damage crypto's public perception, and that current US rules perversely let only memecoins thrive while productive tokens face hurdles.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-11",
+          "quote": "the harmful casino culture that has developed around blockchains that hurts their public perception and undermines their potential"
+        },
+        {
+          "date": "2024-04-18",
+          "quote": "the backward incentives of a regulatory regime in the US that lets only memecoins thrive \u2014 while... more productive uses face hurdles"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Not opposed to them per se, but concerned they are the only token category thriving under current US rules, crowding out productive-use tokens.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-18",
+          "quote": "My goal isn't to defend or to diminish memecoins. It's to point out the backward incentives of a regulatory regime in the US"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "Structurally bullish on crypto's long-term role in building a better internet, with rising late-2024 optimism: he cites all-time-high crypto activity, stablecoin PMF, cheaper L2 transactions, the AI\u00d7crypto convergence thesis, and favorable political/regulatory tailwinds (FIT21, Atkins SEC nomination). His worries are about value capture by Big Tech and US rule-clarity, not about crypto demand or fundamentals weakening.",
+    "provenance": "grounded"
+  },
+  "notes": "Dixon's late-2024 voice is that of a long-horizon builder/investor, not a trader \u2014 nearly all views are structural. His single most recent and emphatic thesis is AI\u00d7blockchain convergence (2024-12-17): blockchains as the fix for AI-induced harms to the open internet, paired with concrete bets like Story Protocol (2024-08-21). Token-level views are sparse; he speaks in sectors/protocols rather than tickers, so tokens_excited is empty and the only token-level signal is a guarded stance on memecoins. The regulatory thread shows a clear arc: years of concern about US uncertainty (peaking around FIT21 advocacy, May 2024) shifting to explicit optimism by Dec 2024 after the election and Atkins nomination \u2014 weighted to the most recent (optimistic) stance per recency rules. Much of early-2024 corpus is book-tour promotion of 'Read Write Own' rather than fresh market views; treated as context, not standalone signals."
+}

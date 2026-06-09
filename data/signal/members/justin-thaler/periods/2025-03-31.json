@@ -1,0 +1,291 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "He frames sum-check + multilinear polynomials (vs. univariate) as the true performance dividing line in SNARK design, unlocking a new design space where the prover only pays for non-zero terms.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "The key performance dichotomy in SNARK design... It's the sum-check protocol and multilinear polynomials vs. univariate polynomials."
+        },
+        {
+          "date": "2025-01-23",
+          "quote": "Sum-check unlocks a totally new design space compared to SNARKs based on univariate polynomials."
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He believes Jolt's lookup-centric, sum-check-only design is a paradigm shift that matches or beats other zkVMs, and that what makes VMs good for hardware also makes them good for SNARKs.",
+      "provenance": "grounded",
+      "age_note": "Excitement is consistent across 2024-04 to 2025-01; tempered by his own 2025-03 caution on production readiness (see concerns).",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Jolt isn't just a leap in speed; it's a paradigm shift."
+        },
+        {
+          "date": "2024-11-12",
+          "quote": "Jolt continues to match or outperform other zkVMs, with folding set to preserve this advantage."
+        }
+      ]
+    },
+    {
+      "item": "memory-checking-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His newest primitives reduce memory-checking to massive but sparse constraint systems, promising ~3x end-to-end prover speedups and validating Jolt's core design bets \u2014 plus faster SNARKs outside zkVMs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "Expect ~3x end-to-end prover speedups (on top of 2x improvements that are already in progress), plus shorter proofs."
+        },
+        {
+          "date": "2025-01-23",
+          "quote": "Twist & Shout validate our big design bets in Jolt and, as a bonus, give much faster SNARKs outside of the zkVM context too."
+        }
+      ]
+    },
+    {
+      "item": "lookup-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Maximal use of lookups is the source of both Jolt's simplicity and much of its performance; he turns every VM action into lookups/reads/writes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "it instantiates the lookup singularity, yielding the simplest and most extensible zkVM to date."
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "What sets Jolt apart? ...Simplicity comes from lookups; performance from both."
+        }
+      ]
+    },
+    {
+      "item": "binary-field-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He argues binary or 256-bit fields beat 31/64-bit fields because committing to zeros is free/cheaper, and wants the community to adopt sum-check PIOPs with the Binius multilinear commitment.",
+      "provenance": "grounded",
+      "age_note": "Binius hope stated 2024-06-03; reinforced by the 2025-01-23 field-size argument.",
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "256-bit or binary fields are better than 31-bit or 64-bit fields for SNARK performance."
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "I hope the community adopts sum-check-based PIOPs combined with the Binius commitment for performant SNARKs."
+        }
+      ]
+    },
+    {
+      "item": "folding-schemes",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Folding is the path past Jolt's biggest usability barrier (prover memory), enabling arbitrarily long RISC-V executions under 2GB \u2014 which he calls a 'phase change' \u2014 while preserving Jolt's speed edge.",
+      "provenance": "grounded",
+      "age_note": "Stated 2024-11-12 as in-progress; ~4.5 months old, not restated by 2025-03-31.",
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "integrating Jolt with the Nova folding scheme, which will allow for arbitrarily long RISC-V executions with under 2 GB of prover memory"
+        }
+      ]
+    },
+    {
+      "item": "standard-tooling-reuse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He prefers proving widely-scrutinized standard VMs/compilers over bespoke 'SNARK-friendly' designs, and is excited that techniques like D&P's bring much faster SNARKs for standard hashes like Keccak.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "Twist & Shout bring the cost profile of SNARKs even closer to that of real CPUs."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "this paves the way for much faster SNARKs for standard hash functions like Keccak."
+        }
+      ]
+    },
+    {
+      "item": "snark-production-readiness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 92,
+      "horizon": "tactical",
+      "rationale": "Despite his own optimism, he warns the tech is not ready for complex, high-stakes deployments \u2014 bugs are everywhere and the field 'flirts with disaster' pretending otherwise.",
+      "provenance": "grounded",
+      "age_note": "Most recent and emphatic stance (2025-03-11/12); coexists with his structural optimism rather than reversing it.",
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "while SNARKs and zkVMs show immense promise, they're not ready for complex, high-stakes deployments."
+        },
+        {
+          "date": "2025-03-11",
+          "quote": "we flirt with disaster if we pretend they're ready for prime time."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Formal verification of proof systems is nascent; he says we can't call a zkVM 'secure' until verified verifiers exist (Stage 2), which is years off \u2014 even Zcash, far simpler than any zkVM, once had a major bug.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "Until we reach Stage 2, we can't really call a zkVM 'secure'\u2014and getting there is still likely several years off."
+        },
+        {
+          "date": "2025-03-12",
+          "quote": "Zcash is about the limit of what I'd trust (absent formal verification), and it's still far simpler than any zkVM pipeline"
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Overhead versus native execution still exceeds 100,000\u00d7, a non-starter for most use cases; he proposes five 'performance stages' to cut this by orders of magnitude toward on-device proving.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "overheads versus native execution still exceed 100,000\u00d7\u2014a non-starter for most use cases."
+        }
+      ]
+    },
+    {
+      "item": "snark-friendly-vms-zkdsls",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "He repeatedly argues purpose-built SNARK-friendly VMs only cater to today's SNARK limits and block reuse of mature, scrutinized tooling \u2014 a worse path than proving standard VMs compiled from languages like Rust.",
+      "provenance": "grounded",
+      "age_note": "Position held since 2024-05; restated 2025-01-23, so current.",
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "Proposals for 'SNARK-friendly' VMs at best cater to today's SNARK limits, and prevent reuse of mature tooling."
+        },
+        {
+          "date": "2024-05-05",
+          "quote": "the lack of a compiler does not mean that exposing that language to developers is a strict improvement over the Rust-->VM-bytecode approach."
+        }
+      ]
+    },
+    {
+      "item": "snark-cost-accounting",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "tactical",
+      "rationale": "He's concerned top-line benchmarks bundle proof system, engineering, hardware, and hand-tuned precompiles together, obscuring a system's fundamental efficiency and where the field actually stands.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "many benchmarks bundle everything... into a single top-line number, obscuring where we really stand."
+        },
+        {
+          "date": "2024-06-03",
+          "quote": "Benchmarking SNARKs involves complexities, but it's crucial to understand their innate performance characteristics."
+        }
+      ]
+    },
+    {
+      "item": "snark-composition-cost",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Verifying evaluation proofs (e.g. Binius) on-chain can cost many millions of gas, forcing composition with a small-proof SNARK whose prover-side pain is still somewhat TBD.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "people will probably want to compose with a small-proof SNARK rather than paying many millions of gas to verify evaluation proofs on-chain."
+        }
+      ]
+    },
+    {
+      "item": "ZEC",
+      "item_type": "token",
+      "parent_sector": "privacy",
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Not a market call \u2014 a security/trust comment. He cites Zcash as roughly the upper limit of SNARK deployment he'd trust absent formal verification, and notes it once had a major bug, signaling caution even for the most mature zk system.",
+      "provenance": "grounded",
+      "age_note": "His only token-adjacent reference; framed as a trust ceiling, not investment.",
+      "citations": [
+        {
+          "date": "2025-03-12",
+          "quote": "Zcash is about the limit of what I'd trust (absent formal verification)... Of course, even Zcash had a major bug in the past."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_off",
+    "conviction": 80,
+    "rationale": "On near-term, high-stakes deployment of SNARK/zkVM technology his most recent posture (Mar 2025) is explicitly cautious: not production-ready, bugs everywhere, formal verification years away, 100,000\u00d7+ overhead. This is technology-maturity risk, not a market/token call (he expresses no view on prices or macro). Underneath the caution he is deeply, structurally optimistic about the long-run trajectory of sum-check-based SNARKs and Jolt.",
+    "provenance": "grounded"
+  },
+  "notes": "Justin Thaler is a16z crypto's cryptography researcher and the lead voice on the Jolt zkVM; his public statements are almost entirely about proof-system R&D, not tokens, sectors-as-investments, or macro risk. I mapped his views onto research/infrastructure 'sectors' accordingly. Strongest, most recent signal (Jan\u2013Mar 2025): high conviction in sum-check + multilinear polynomials, Twist & Shout, and lookups; paired with a sharpened public caution that zkVMs are NOT yet safe for high-stakes use. No reversal detected \u2014 the March 2025 caution is a maturity warning layered on top of (not contradicting) his structural optimism. tokens_excited is empty because he names no tokens favorably; the single ZEC entry is a trust/security caveat rather than a market view. Much of the 2023\u2013early-2024 corpus is technical debate (GKR/Plonk costs, prover mult counts) that informs but doesn't change the directional view. Folding/Nova excitement (Nov 2024) is the oldest still-active thread and was not restated by the 2025-03-31 cutoff, so flagged with age_note but treated as current since unreversed."
+}

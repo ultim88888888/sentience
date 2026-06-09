@@ -1,0 +1,211 @@
+{
+  "as_of": "2024-12-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees ZK/proof performance breakthroughs (Lasso & Jolt) as a major unlock and repeatedly flags ZK advances as 'a big, big deal'; heavily represented in his CSX cohorts.",
+      "provenance": "grounded",
+      "age_note": "Spans 2023-08 to 2024; theme reinforced through 2024 CSX cohorts, so current.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren't fluent in the world of ZK- this is a big, big deal."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Views the steady drumbeat of L2 throughput gains and fee reduction (incl. EIP-4844) as a core primitive snapping into place that will accelerate developer experimentation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput"
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Identifies reduced new-user onboarding friction via embedded wallets as a key accelerant for adoption, naming Privy and Dynamic.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz"
+        }
+      ]
+    },
+    {
+      "item": "modular-da",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Excited by increasingly robust alt-DA capabilities and EigenLayer's vision as next-level infrastructure he wants to partner with.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Increasingly robust AltDA capabilites on the horizon- @eigencloud, @CelestiaOrg"
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "What @eigencloud and @sreeramkannan are building and envisioning is truly next level. Beyond excited"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Highlights super-simple app development via Farcaster Frames and repeatedly cites Farcaster's traction/growth as a standout consumer-crypto story.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Super simple (and fun!) app development- @farcaster_xyz Frames"
+        },
+        {
+          "date": "2024-03-22",
+          "quote": "it would have been almost impossible to predict the traction & growth of @farcaster during the intervening 12 months"
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 77,
+      "horizon": "structural",
+      "rationale": "His most recent market take: stablecoins as the cheapest way to move a dollar that can reset payments market structure, creating openings for incumbents and startups.",
+      "provenance": "grounded",
+      "age_note": "Most recent substantive market statement (2024-11-14); weighted heavily.",
+      "citations": [
+        {
+          "date": "2024-11-14",
+          "quote": "Stablecoins are the cheapest way to send a dollar. Stablecoins can reset the market structure in the payments industry"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Repeatedly energized by permissionless/distributed AI training and compute; his Fall 2024 cohort skews heavily to AI-on-crypto (inference markets, agent payments, verifiable AI).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-24",
+          "quote": "@GensynAI blew our minds with their vision of the future of distributed AI/ML... 'The substrate on which machines train and exist has to be permissionless.'"
+        },
+        {
+          "date": "2024-09-09",
+          "quote": "building on every level of the crypto stack, including AI, DeFi, infrastructure, and consumer applications"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Optimistic that the post-election environment brings clearer rules that shut out bad actors and let legitimate projects flourish; long bullish on UK as a regulatory leader.",
+      "provenance": "grounded",
+      "age_note": "Reverses earlier framing of regulation as a navigation challenge/risk; most recent (2024-11-10) view is clearly optimistic.",
+      "citations": [
+        {
+          "date": "2024-11-10",
+          "quote": "We're optimistic that with clearer rules, it will make it easier to identify and shut down bad actors and allow well-meaning projects to take off."
+        },
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Personally enjoys and backs onchain games and composable onchain art/game primitives, repeatedly praising founders building in the space.",
+      "provenance": "persisted",
+      "age_note": "Strongest signal 2023-09 (Proof of Play); restated via 2024 cohort companies (magicblock, dotdotfan), so persisted not stale.",
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Playing @PirateNationNFT over the last few months has been a delight... Delighted that @a16zcrypto is leading the @ProofOfPlay seed round!"
+        },
+        {
+          "date": "2024-09-26",
+          "quote": "@dotdotfan showcases the power of onchain composability, turning colors into building blocks for creating onchain art and casual games"
+        }
+      ]
+    },
+    {
+      "item": "founder-regulatory-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Flags that navigating the policy landscape and avoiding bad legal/deal structures is a recurring hazard founders must actively manage \u2014 framed as a manageable risk rather than a market-killer, and softening post-election.",
+      "provenance": "grounded",
+      "age_note": "Concern tone present mid-2024; partly relieved by his 2024-11-10 optimism on clearer post-election rules.",
+      "citations": [
+        {
+          "date": "2024-10-11",
+          "quote": "As a founder, one of the best things you can do is have a holistic understanding of where the risks apply in your business."
+        },
+        {
+          "date": "2024-08-09",
+          "quote": "A poorly structured term sheets can haunt your startup for its entire existence."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Consistently energized and optimistic: sees core crypto primitives (L2s, ZK, wallets, DA, stablecoins, AI-crypto) maturing simultaneously the way prior platform shifts accelerated, and is bullish on post-election regulatory clarity. Tone is overwhelmingly excited with no material bearish market calls.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an operator/accelerator lead (Crypto Startup School/CSX), so much of his corpus is founder-coaching and ecosystem cheerleading rather than token/market calls \u2014 he names no specific tokens to be long or short, hence empty token arrays. His sharpest dated market thesis is the 2024-02-09 'crypto primitives snapping into focus' thread (L2s, embedded wallets, AltDA, Farcaster Frames), which he frames as analogous to Web1/Web2 platform inflections. Most recent substantive market view (2024-11-14 stablecoins) and 2024-11-10 regulatory optimism are weighted highest. Concerns are thin and mostly operational/founder-risk rather than sector bearishness; the one regulatory concern is partially reversed by his post-election optimism."
+}

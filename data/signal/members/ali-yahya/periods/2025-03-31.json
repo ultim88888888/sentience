@@ -1,0 +1,342 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees restaking as unbundling cryptoeconomic security from the EVM, enabling 100x faster open innovation on consensus, VMs, oracles, and bridges on top of Ethereum.",
+      "provenance": "grounded",
+      "age_note": "Thesis set Feb 2024 (led Series B), reaffirmed Apr 2024; ~11-13 months old but core and unreversed.",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "EigenLayer is the verifiable cloud. Massive leap forward today toward the realization of that vision."
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges"
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Treats fragmentation across rollups/chains as the key barrier to composability; backs shared sequencing (Espresso), messaging (LayerZero), and universal wrapped assets to unify them.",
+      "provenance": "grounded",
+      "age_note": "Sustained from Dec 2023 (LayerZero v2) through Feb 2025 (Universal); most recent expression Feb 2025.",
+      "citations": [
+        {
+          "date": "2025-02-19",
+          "quote": "building a protocol to make all cryptoassets available on all chains... Think of Universal as a 'Circle for cryptoassets.'"
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "Espresso is building a decentralized network that acts as a coordination mechanism for rollup sequencers."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Believes confidential-but-verifiable computation (ZK, secure hardware for private state) expands the design space into regulated markets like finance, healthcare, and identity.",
+      "provenance": "grounded",
+      "age_note": "Recent and accelerating: Aleo Sep 2024, Seismic Mar 2025; most current expression Mar 2025.",
+      "citations": [
+        {
+          "date": "2025-03-06",
+          "quote": "Seismic has created a blockchain architecture with a new approach that is based on secure hardware for maintaining private state."
+        },
+        {
+          "date": "2024-09-18",
+          "quote": "Aleo's breakthrough is to use cutting edge cryptography in the form of zero knowledge proofs to create a blockchain that is privacy-preserving"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Holds that decentralizing AI requires verification, and that agents will need to call smart contracts with web2-grade reliability \u2014 crypto as the trust layer for AI.",
+      "provenance": "grounded",
+      "age_note": "Building view: NEAR May 2024, sharpened Feb-Mar 2025 (verification + agent infra).",
+      "citations": [
+        {
+          "date": "2025-02-27",
+          "quote": "How do you decentralize AI? You need verification."
+        },
+        {
+          "date": "2025-03-18",
+          "quote": "as we approach an internet of agents, Halliday's Workflow Protocol provides the critical infrastructure for AI to call on web3 smart contracts"
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Argues onchain dev today resembles hardware design (audit, 'tape out', migrate); higher-level primitives/workflow orchestration will let devs iterate at web2 software pace.",
+      "provenance": "grounded",
+      "age_note": "Most recent major thesis (Halliday Series A, Mar 2025); freshest signal in corpus.",
+      "citations": [
+        {
+          "date": "2025-03-18",
+          "quote": "back their vision for a new 'software era' of web3 development... help web3 graduate from hardware-paced development and accelerate at the pace of software."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "Software only ever becomes easier to write via higher level primitives that abstract away the messy low level details. Halliday's launch today does that for smart contracts."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Long-held conviction that Ethereum's endgame is thousands/millions of rollups sharing bedrock security; modularity as 'a constraint that de-constrains' unlocking ecosystem innovation.",
+      "provenance": "grounded",
+      "age_note": "Heavily articulated late 2023-early 2024; still foundational to 2025 bets, latest direct mention Mar 2024.",
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "Ethereum's scalability end-game is all about rollups\u2014potentially thousands or even millions of rollups, each one a mini-ecosystem or an application"
+        },
+        {
+          "date": "2023-11-09",
+          "quote": "Exciting news from @NEARProtocol today about their increasing alignment with the modular Ethereum stack"
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Wants crypto used to scale human cooperation \u2014 token lockups, retroactive funding, non-transferable tokens, rewards for verifiable work, iterated games \u2014 over short-term extraction.",
+      "provenance": "persisted",
+      "age_note": "Stated forcefully Dec 2023; not restated verbatim since, but remains his organizing philosophy reflected in later bets.",
+      "citations": [
+        {
+          "date": "2023-12-07",
+          "quote": "Underexplored \u2014 token lockups, retroactive funding, non-transferable tokens, rewards for verifiable work, on-chain reputation, iterated games"
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "use it to create long-term alignment of incentives that increase the scale of human cooperation toward building new things."
+        }
+      ]
+    },
+    {
+      "item": "formal-verification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Explicitly predicts formal verification grows in importance for crypto, consistent with his verifiability-as-trust thesis.",
+      "provenance": "grounded",
+      "age_note": "Single dated prediction Dec 2024; recent and unreversed.",
+      "citations": [
+        {
+          "date": "2024-12-20",
+          "quote": "2025 prediction: Formal verification will become increasingly important"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Highlights real-world DePIN traction reaching mainstream telecom subscribers as evidence of crypto's utility beyond finance.",
+      "provenance": "grounded",
+      "age_note": "Light, single recent signal (Feb 2025); enthusiasm appears more endorsement than core thesis.",
+      "citations": [
+        {
+          "date": "2025-02-21",
+          "quote": "Congrats to the @helium team on its @movistarMX partnership, connecting 2.3M subscribers in Mexico"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Views meaningless speculation as the primary force holding crypto back, turning a cooperation technology into a zero-sum casino; rejects the 'casino bootstraps the space' argument.",
+      "provenance": "persisted",
+      "age_note": "Argued intensely Dec 2023; not explicitly restated since, but no reversal \u2014 treat as standing conviction.",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "We don't need the casino. We never did. It's the primary force holding the space back."
+        },
+        {
+          "date": "2023-12-07",
+          "quote": "Tired AF \u2014 arbitrage, 100x leverage, yield farming, flash loans, MEV capture, memecoins, airdrop farming, day-trading"
+        }
+      ]
+    },
+    {
+      "item": "safetyism-over-restriction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Frames stagnation/atrophy \u2014 driven by 'technically illiterate bureaucrats' and web2 monopolies deciding what can be built \u2014 as the real existential risk; urges taking more tech risk.",
+      "provenance": "grounded",
+      "age_note": "Strong 2023-Apr 2024; tempered by Feb 2025 optimism on a favorable CFTC nominee, suggesting he sees the US regulatory posture improving.",
+      "citations": [
+        {
+          "date": "2023-12-15",
+          "quote": "Our greatest existential risk is the risk of stagnation and atrophy. No civilization can survive very long by standing still."
+        },
+        {
+          "date": "2023-11-30",
+          "quote": "We need to be taking more risks on new tech, not less."
+        }
+      ]
+    },
+    {
+      "item": "modularity-fragmentation-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Worries the rollup-centric roadmap fragments the ecosystem \u2014 apps on separate rollups lose seamless composability, hurting UX and slowing innovation; motivates his interop bets.",
+      "provenance": "grounded",
+      "age_note": "Articulated Mar 2024; remains live as the problem his interop investments target.",
+      "citations": [
+        {
+          "date": "2024-03-21",
+          "quote": "The biggest disadvantage of a rollup-centric future is the fragmentation of the Ethereum ecosystem."
+        },
+        {
+          "date": "2025-02-19",
+          "quote": "This friction creates capital inefficiency and frustration... it makes it harder for unsophisticated users to enter DeFi and hinders innovation"
+        }
+      ]
+    },
+    {
+      "item": "modular-single-point-of-failure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Cautions that modularity helps only when it adds redundancy, not when separate blockchains for DA/sequencing introduce new single points of failure.",
+      "provenance": "persisted",
+      "age_note": "Noted Dec 2023; nuance to his pro-modularity stance, not restated since.",
+      "citations": [
+        {
+          "date": "2023-12-11",
+          "quote": "It depends on whether modularity adds redundancy... or adds more single points of failure (as with separate blockchains for DA, etc)."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the bedrock of pooled security on which the entire modular/restaking/rollup stack he backs is built.",
+      "provenance": "grounded",
+      "age_note": "Consistently central across corpus; restated implicitly through Mar 2025 bets.",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "build on top of the already decentralized and secure validator set of the most secure programmable blockchain: Ethereum."
+        }
+      ]
+    },
+    {
+      "item": "NEAR",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Called it the emerging epicenter for AI x crypto and praised its alignment with the modular Ethereum stack.",
+      "provenance": "persisted",
+      "age_note": "Most direct praise May 2024 (~10 months old); not restated since, treat as persisted.",
+      "citations": [
+        {
+          "date": "2024-05-22",
+          "quote": "NEAR is emerging as the epicenter for AI x crypto."
+        }
+      ]
+    },
+    {
+      "item": "HNT",
+      "item_type": "token",
+      "parent_sector": "depin",
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Cited real-world telecom adoption (Movistar Mexico, 2.3M subscribers) as proof of DePIN traction.",
+      "provenance": "grounded",
+      "age_note": "Recent (Feb 2025) but a partnership endorsement rather than an explicit token call.",
+      "citations": [
+        {
+          "date": "2025-02-21",
+          "quote": "Congrats to the @helium team on its @movistarMX partnership, connecting 2.3M subscribers in Mexico"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Singles out soulless tokens that 'moon on nothing but memes and then fall off a cliff' as emblematic of the casino dynamic he opposes.",
+      "provenance": "persisted",
+      "age_note": "Dec 2023; not restated verbatim but consistent with his standing anti-speculation stance.",
+      "citations": [
+        {
+          "date": "2023-12-08",
+          "quote": "we don't need tokens without soul or purpose that moon on nothing but memes and then fall off a cliff."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Yahya is aggressively risk-on toward fundamental technology and building \u2014 he argues stagnation, not failure, is the real existential threat and that the space should take MORE tech risk. But this is a quality-filtered, structural risk appetite: he is explicitly risk-off on speculation, leverage, and memecoins. His posture is 'long deep infrastructure (restaking, ZK/privacy, interop, AI-verification, dev abstraction), short the casino.' Feb 2025 optimism on US regulatory leadership reinforces a constructive forward stance.",
+    "provenance": "grounded"
+  },
+  "notes": "Yahya's corpus is dominated by investment-announcement theses (EigenLayer, Espresso, Aleo, Universal, Seismic, Halliday) plus a strong recurring philosophy: crypto as a cooperation/verifiability technology, not a casino. Recency weighting pushes ZK/privacy, AI-x-crypto-via-verification, cross-chain assets, and developer abstraction to the top (all Feb-Mar 2025). His anti-speculation and anti-safetyism views are most forcefully stated in Dec 2023 and not restated verbatim later, so they are marked persisted; there is no evidence of reversal, and his 2025 bets remain consistent with them. One directional shift worth flagging: his 2023-2024 hostility toward regulators softens into Feb 2025 optimism about favorable US crypto leadership (CFTC nominee endorsement), implying he sees the regulatory-stagnation risk easing. No statements provide explicit price/market-cycle calls, so the risk regime is inferred from his consistent build-oriented, anti-speculation framing rather than any macro market timing view. Much of the corpus is also non-market personal/fitness content, which carries no signal."
+}

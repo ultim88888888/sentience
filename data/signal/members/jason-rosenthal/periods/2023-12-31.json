@@ -1,0 +1,199 @@
+{
+  "as_of": "2023-12-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Sees an emerging interplay between crypto and AI as a foundational frontier; backs efforts to decentralize AI and references a near-term 'real life' AI tutor (Primer).",
+      "provenance": "grounded",
+      "age_note": "Stated early (2023-04-05) but reinforced 2023-08-25 and 2023-12-10, so current.",
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        },
+        {
+          "date": "2023-08-25",
+          "quote": "you, @harrygrieve and @benfielding will complement each other well as you work to decentralize AI"
+        },
+        {
+          "date": "2023-12-10",
+          "quote": "I don't think we're too far off from a real life version of A Young Lady's Illustrated Primer"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly flags ZK and SNARK performance breakthroughs (Lasso/Jolt) as major, builder-enabling advances; translates ZK milestones as 'big deals' for non-experts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren't fluent in the world of ZK- this is a big, big deal."
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Personally plays and praises on-chain games; led a seed round in the space and admires founders who 'see around corners.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Playing @PirateNationNFT over the last few months has been a delight... @a16zcrypto is leading the @ProofOfPlay seed round!"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Enthusiastic about L2 ecosystem scaling and omnichain/messaging infrastructure milestones.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-14",
+          "quote": "THIS. IS. HUGE. Congrats to... the entire @LayerZero_Labs team."
+        },
+        {
+          "date": "2023-11-13",
+          "quote": "Very, very excited to have the opportunity to work with @Fwiz again as he works to scale the @optimismFND ecosystem."
+        }
+      ]
+    },
+    {
+      "item": "account-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Deepening relationships with account-abstraction tooling builders after working with the founder during CSS.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-07",
+          "quote": "Delighted that we're expanding and deepening our relationship with @pimlicoHQ!"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Led sound.xyz Series A, energized by the 'keep shipping' founder ethos; continues backing creator-platform builders.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Hugely excited that @a16zcrypto is leading the @soundxyz_ Series A... his 'keep shipping' mantra is spot on."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-storage",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Praised Filecoin FVM as advancing decentralized storage and compute capabilities.",
+      "provenance": "persisted",
+      "age_note": "Single statement on 2023-03-14, never restated; treat as persisted/aging.",
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "a tremendous step forward in advancing the capabilities of decentralized storage and compute"
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Views getting decentralized governance right early as important and hard; promotes primers for founders.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-20",
+          "quote": "For founders building in web3, getting decentralized governance right from the get go is important & hard."
+        }
+      ]
+    },
+    {
+      "item": "uk-london-crypto-hub",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Believes the UK is on a path to becoming a leader in crypto regulation; relocating CSS to London on that thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Surfaces (without endorsing clarity) the need to parse SEC enforcement rulings; his pivot to the UK on regulatory grounds implies concern about the US environment.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from UK-vs-US framing (2023-09-19) and sharing SEC v Ripple analysis (2023-07-16); never stated as an explicit worry.",
+      "citations": [
+        {
+          "date": "2023-07-16",
+          "quote": "Trying to understand the nuances of this week's SEC v Ripple ruling?"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Consistently bullish builder posture: joined a16z crypto, frequent 'LFG'/excitement on launches, frames crypto as analogous to the early-1990s internet he saw at Netscape. Energy and creativity of crypto founders described as 'infectious.' No bearish or capital-preservation language despite 2022-23 downturn context.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an operating partner, not an investor giving token calls \u2014 his corpus is ~80% generic management/leadership advice and personal (movies, food), so his market signal comes almost entirely from which portfolio launches and tech primitives he celebrates. He names companies/projects (Filecoin, sound.xyz, Proof of Play, Pimlico, Optimism, LayerZero, Matter Labs/zkSync, Gensyn, Yuga) rather than tradeable tokens, hence empty token arrays. Strongest and most-repeated conviction is ZK/SNARK infrastructure and crypto\u00d7AI. His most recent (Dec) signals \u2014 LayerZero, formless_xyz, planning/ecosystem-engagement advice \u2014 reinforce a forward-leaning, builder-optimist stance with no detectable reversals. Two notable non-crypto opinion pieces (academia mission drift, big-tech culture) reflect personal/societal views, not market posture, and were excluded from sector analysis."
+}

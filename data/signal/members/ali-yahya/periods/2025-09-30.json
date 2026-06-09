@@ -1,0 +1,300 @@
+{
+  "as_of": "2025-09-30",
+  "approach": "A2a:Ali Yahya",
+  "items": [
+    {
+      "item": "verifiable-ml",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His single most repeated and most recent thesis: AI must be verifiable to be trusted and decentralized, and verifiable compute (EigenCloud) is the substrate AI agents will use to touch crypto finance. Reinforced across many months and capped by his latest post.",
+      "provenance": "grounded",
+      "age_note": "Spans 2024-04 (EigenLayer 'verifiable cloud') through 2025-09-30; consistently restated and intensifying, not stale.",
+      "citations": [
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        },
+        {
+          "date": "2025-02-27",
+          "quote": "How do you decentralize AI? You need verification."
+        },
+        {
+          "date": "2025-09-17",
+          "quote": "Building the infrastructure that AI agents will need to interact with the new crypto-based financial system"
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He repeatedly argues transparent-by-default blockchains are a critical barrier for finance, healthcare, identity; privacy that remains verifiable expands the application design space. Backed Seismic, and celebrated Aleo and Aztec milestones.",
+      "provenance": "grounded",
+      "age_note": "Consistent from Aleo (2024-09) through Seismic lead (2025-03) and Aztec praise (2025-05).",
+      "citations": [
+        {
+          "date": "2025-03-06",
+          "quote": "Seismic has created a blockchain architecture with a new approach that is based on secure hardware for maintaining private state."
+        },
+        {
+          "date": "2025-05-01",
+          "quote": "One step closer toward privacy on Ethereum. Huge milestone for Aztec"
+        },
+        {
+          "date": "2024-09-18",
+          "quote": "Aleo's breakthrough is to use cutting edge cryptography... to create a blockchain that is privacy-preserving while still being fully verifiable."
+        }
+      ]
+    },
+    {
+      "item": "cross-chain-interop",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He sees asset/chain fragmentation as a core friction blocking DeFi adoption; backs protocols making any asset available on any chain and enabling complex onchain workflows. Doubled down with a large ZRO purchase.",
+      "provenance": "grounded",
+      "age_note": "From Universal lead (2025-02) and $55M ZRO buy (2025-04); current.",
+      "citations": [
+        {
+          "date": "2025-02-19",
+          "quote": "building a protocol to make all cryptoassets available on all chains"
+        },
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "He frames smart-contract orchestration (Halliday) and verifiable compute as the rails letting AI agents call web3 with web2-level reliability, and ties the EigenCloud\u2013Google Cloud tie-up to agent finance.",
+      "provenance": "grounded",
+      "age_note": "NEAR 'epicenter for AI x crypto' (2024-05) is older and not restated; current locus is Halliday/EigenCloud agent infrastructure (2025).",
+      "citations": [
+        {
+          "date": "2025-03-18",
+          "quote": "As we approach an internet of agents, Halliday's Workflow Protocol provides the critical infrastructure for AI to call on web3 smart contracts"
+        },
+        {
+          "date": "2025-09-17",
+          "quote": "infrastructure that AI agents will need to interact with the new crypto-based financial system"
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He believes web3 dev today is hardware-paced (auditing, 'taping out' immutable contracts) and that higher-level primitives/workflow orchestration will let developers iterate at software speed \u2014 a major unlock.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-18",
+          "quote": "We believe this could be one of the biggest unlocks for web3 since programmable ledgers."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "Software only ever becomes easier to write via higher level primitives that abstract away the messy low level details."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He views stablecoins as fast, global, programmable money turbocharging online payments, and is funding the commerce infrastructure layer around them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-21",
+          "quote": "Stablecoins are turbocharging online payments: fast, global, programmable."
+        }
+      ]
+    },
+    {
+      "item": "web3-messaging",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He casts XMTP as the SMTP of an AI/digital-money/quantum era \u2014 an open, decentralized communication standard foundational to the next web.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "@xmtp_ is a protocol for the future of messaging \u2014 open, decentralized, and quantum-resistant."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "He champions ZK as a primitive for both scalability and privacy, releasing Jolt as an open-source public good and citing ZK across CSX cohorts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're releasing Jolt Alpha \u26a1\ufe0f Fastest zkVM in the world... 100% open source and a public good."
+        }
+      ]
+    },
+    {
+      "item": "formal-verification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "He predicted formal verification would grow increasingly important; consistent with his broader verification-everywhere worldview, though not separately restated since.",
+      "provenance": "persisted",
+      "age_note": "Single statement 2024-12-19, never explicitly restated; coheres with ongoing verification theme so still active.",
+      "citations": [
+        {
+          "date": "2024-12-19",
+          "quote": "2025 prediction: Formal verification will become increasingly important"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "He highlighted Helium's carrier partnership reaching millions of subscribers as real-world DePIN traction; lighter, single mention.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-21",
+          "quote": "Congrats to the @helium team on its @movistarMX partnership, connecting 2.3M subscribers in Mexico"
+        }
+      ]
+    },
+    {
+      "item": "transparency-adoption-barrier",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "His chief stated worry is structural, not market: fully transparent L1s can't protect personal/financial data, which he calls a critical barrier blocking massive markets (finance, healthcare). It's framed as the problem his privacy bets solve.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-06",
+          "quote": "information that is made available to a smart contract becomes publicly visible by default... This has been a critical barrier to blockchain adoption"
+        }
+      ]
+    },
+    {
+      "item": "immature-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "He repeatedly likens crypto infra to the mid-90s internet \u2014 barely usable, lots of layer-by-layer work still required before it can be taken for granted. A candid concern about current maturity, paired with optimism.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-11",
+          "quote": "The state of crypto infrastructure today is similar to where the internet was in the mid-90s... we still have a lot of work to do."
+        }
+      ]
+    },
+    {
+      "item": "safetyism-over-restriction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "He shows ideological aversion to heavy-handed safety/regulatory restriction, favoring open source as free speech \u2014 a concern about the cultural/regulatory environment rather than a sector.",
+      "provenance": "persisted",
+      "age_note": "One-off 2024-04-07 jab; tone persists but not elaborated since.",
+      "citations": [
+        {
+          "date": "2024-04-07",
+          "quote": "Patronizing safetyism even in the little things, how cute"
+        }
+      ]
+    },
+    {
+      "item": "EIGEN",
+      "item_type": "token",
+      "parent_sector": "verifiable-ml",
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His highest-conviction, most recent token bet: a $70M follow-on with lockup, plus repeated posts that EigenCloud is the verifiable-compute answer for trustworthy AI and agent-driven crypto finance, now with a Google Cloud tie-up.",
+      "provenance": "grounded",
+      "age_note": "Thesis from 2024-04 to 2025-09-30, intensifying; most recent of all his statements.",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup."
+        },
+        {
+          "date": "2025-09-30",
+          "quote": "AI needs verifiable computing to build trust. @eigencloud has the answer"
+        }
+      ]
+    },
+    {
+      "item": "ZRO",
+      "item_type": "token",
+      "parent_sector": "cross-chain-interop",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He put $55M into ZRO with a 3-year lockup, citing LayerZero enabling new businesses and complex workflows to move onchain as global finance migrates.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 88,
+    "rationale": "Posture is aggressively constructive: large multi-million token buys with multi-year lockups (EIGEN, ZRO), repeated lead rounds across privacy/AI/interop, and sweeping optimism analogies (Wright Brothers, early internet's exponential growth). His worries are structural/technical hurdles he is funding solutions to, not reasons to retreat. No defensive or cash-out language anywhere in the corpus.",
+    "provenance": "grounded"
+  },
+  "notes": "Ali Yahya's worldview centers on one unifying thread \u2014 VERIFICATION \u2014 running through verifiable compute, ZK, privacy-with-verifiability, and formal verification; he treats it as the precondition for both decentralizing AI and bringing finance onchain. Recency strongly favors the AI x verifiable-compute (EigenCloud) thesis, which is his latest and most repeated. No genuine reversals appear in the corpus; views are additive and consistent. Token-level convictions are inferred from his own a16z investments (with disclosure that these are not investment advice). He expresses almost no market/price concerns \u2014 his 'concerns' are technical/structural barriers he is actively backing companies to overcome, and a libertarian-leaning aversion to over-regulation. NEAR as 'AI x crypto epicenter' (2024-05) is the one notably older claim not restated; treated as persisted/superseded by his current Eigen/Halliday-centered AI framing."
+}

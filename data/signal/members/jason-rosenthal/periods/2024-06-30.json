@@ -1,0 +1,190 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "decentralized-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Sees crypto and AI as a powerful intersection; repeatedly energized by permissionless, decentralized AI training infrastructure (Gensyn) and views the interplay as early-innings with large upside.",
+      "provenance": "grounded",
+      "age_note": "Theme first stated 2023-04-05 and restated through 2024; weighting the most recent (2024-05-24) view.",
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        },
+        {
+          "date": "2024-05-24",
+          "quote": "co-founders of @GensynAI blew our minds with their vision of the future of distributed AI/ML"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Views the steady reduction of Ethereum transaction fees and throughput gains across rollups (plus EIP-4844) as a key primitive 'snapping into focus' that will accelerate developer experimentation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput- @optimism, @zksync, @arbitrum, impending EIP 4844"
+        }
+      ]
+    },
+    {
+      "item": "modular-da",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Excited by 'increasingly robust AltDA capabilities' on the horizon and especially what EigenLayer is building, calling it 'truly next level.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Increasingly robust AltDA capabilites on the horizon- @eigencloud, @CelestiaOrg"
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "What @eigencloud and @sreeramkannan are building and envisioning is truly next level. Beyond excited"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Sees major performance breakthroughs in proving systems (Lasso/Jolt) as a 'big deal' for what web3 builders can do; ZK/cryptography remained a recurring CSX focus.",
+      "provenance": "grounded",
+      "age_note": "Core enthusiasm stated 2023-08-10/2023-11-20; reinforced as a CSX cryptography theme into 2024-04-25, so treated as sustained rather than stale.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren\u2019t fluent in the world of ZK- this is a big, big deal."
+        }
+      ]
+    },
+    {
+      "item": "account-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Treats reduced new-user onboarding friction via embedded wallets and smart-account tooling as a critical platform element for adoption; deepened ties to account-abstraction builders.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz"
+        },
+        {
+          "date": "2023-11-07",
+          "quote": "Delighted that we're expanding and deepening our relationship with @pimlicoHQ!"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Highlights Farcaster Frames as super-simple, fun app development and repeatedly cites Farcaster's unexpected traction and growth as a model for onchain social.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Super simple (and fun!) app development- @farcaster_xyz Frames"
+        },
+        {
+          "date": "2024-03-22",
+          "quote": "it would have been almost impossible to predict the traction & growth of @farcaster during the intervening 12 months"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Personally engaged with onchain games and backed founders building autonomous worlds and onchain game experiences; games named as a core sector advancing the ecosystem.",
+      "provenance": "persisted",
+      "age_note": "Strongest direct enthusiasm dates to 2023-09-21 (Proof of Play seed); games reaffirmed as a CSX cohort sector 2024-03-26 but not personally re-championed recently.",
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Playing @PirateNationNFT over the last few months has been a delight... @a16zcrypto is leading the @ProofOfPlay seed round!"
+        }
+      ]
+    },
+    {
+      "item": "crypto-web3-broad",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Frames these as the core sectors of the crypto ecosystem that ambitious CSX founders are advancing; signals broad conviction in the early-stage building surface rather than a single vertical.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-26",
+          "quote": "advance core sectors of the crypto ecosystem, including infrastructure, consumer apps, DeFi, payments, games, dev tools, and DePIN"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "structural",
+      "rationale": "Treats navigating US/UK crypto regulation as a hard challenge founders must actively manage, though his framing is constructive (sees the UK heading toward regulatory leadership) rather than alarmed.",
+      "provenance": "grounded",
+      "age_note": "Framed as a navigable challenge across 2023-09-19 and 2024-05-03; tone is cautious-but-optimistic, not bearish.",
+      "citations": [
+        {
+          "date": "2024-05-03",
+          "quote": "@BrianQuintenz and @MicheleKorver join us to unpack and decode the crypto policy & regulatory landscape across the US & UK"
+        },
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 85,
+    "rationale": "Consistently and most-recently energized by crypto primitives 'snapping into focus' (L2s, DA, wallets, social, ZK) and convinced this confluence of platform elements\u2014analogous to Web1/Web2 inflections\u2014will accelerate building. Posture is that of an operating partner urging founders to take big swings, with no expressed market-level caution.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an a16z crypto operating partner (CSX/Crypto Startup School lead), not a markets investor, so his corpus is builder- and infrastructure-oriented; he never discusses token prices, valuations, or macro liquidity, hence tokens_excited/concerned are empty and named projects (Optimism, zkSync, Arbitrum, EigenLayer, Celestia, Farcaster, Privy, Dynamic, Pimlico) are read as sector signals rather than token calls. Highest-signal single statement is the 2024-02-09 thread, weighted most heavily. He expresses essentially no bearish crypto views; the only genuine 'concern' is regulatory navigation, and even that is framed optimistically. Non-crypto enthusiasms in the corpus (Apple Vision Pro 2024-01-19, action movies, management/operating advice, academia critique 2023-12-14) were excluded as outside his crypto market view. Conviction scores reflect intensity/recency of expression, not price-target confidence."
+}

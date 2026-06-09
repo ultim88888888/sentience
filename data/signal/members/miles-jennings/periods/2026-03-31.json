@@ -1,0 +1,507 @@
+{
+  "as_of": "2026-03-31",
+  "approach": "A2a:Miles Jennings",
+  "items": [
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Views autonomous, credibly-neutral, censorship-resistant protocols as the core of crypto's value; believes DeFi can deliver regulatory goals (best execution, conflict elimination) through onchain transparency, and that integrating non-custodial apps with regulated markets moves the financial system onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-03-17",
+          "quote": "Enabling non-custodial apps to integrate with regulated markets is a critical step towards moving the financial system onchain."
+        },
+        {
+          "date": "2025-08-01",
+          "quote": "Market structure can't work without protecting DeFi."
+        },
+        {
+          "date": "2025-11-20",
+          "quote": "DeFi systems can deliver on the goals of regulation...through the transparency that blockchains enable."
+        }
+      ]
+    },
+    {
+      "item": "network-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Central thesis: network tokens are uniquely capable of 'economic independence' \u2014 value accrual from systems that run without human control (EIP-1559, Uniswap fee switch). He wants entrepreneurs to drive real protocol revenue to tokens and believes this is a reason to exclude them from securities laws, not subject them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-11",
+          "quote": "Network tokens are the only asset in the world capable of true economic independence"
+        },
+        {
+          "date": "2025-11-06",
+          "quote": "network tokens should have revenue."
+        },
+        {
+          "date": "2025-04-15",
+          "quote": "A programmatic token buy/burn bolsters the token's economic independence from any company and reduces the need to apply securities laws."
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees SEC 'Project Crypto' and SEC-CFTC harmonization as the strongest signals that securities, derivatives and brokers will move onchain; wants safe harbors so DeFi frontends can host tokenized securities trading.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2026-02-02",
+          "quote": "The SEC-CFTC harmonization event last week was the strongest signal yet that our financial system is going to move onchain."
+        },
+        {
+          "date": "2025-08-13",
+          "quote": "This is critical for tokenized securities to trade onchain."
+        },
+        {
+          "date": "2025-12-10",
+          "quote": "he recognizes the importance of enabling tokenized securities to transact on open and decentralized networks."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Treats stablecoins as legitimized dollars onchain (GENIUS Act) and a simple, winning value proposition. Prefers issuers retain yield (not pay interest) to keep them as dollar equivalents rather than investment products.",
+      "provenance": "grounded",
+      "age_note": "Enthusiasm tempered most recently (2025-11-06) by frustration that SEC inaction on its own April guidance 'renders it far more harmful than helpful' \u2014 ties hands of compliant builders.",
+      "citations": [
+        {
+          "date": "2026-02-09",
+          "quote": "DeFi, stablecoins and tokenized securities are all going to win because their value proposition is simple"
+        },
+        {
+          "date": "2025-06-17",
+          "quote": "Moving our financial system onchain will benefit everyone."
+        },
+        {
+          "date": "2025-03-27",
+          "quote": "Stablecoins aren't investment products. They're dollar equivalents and should have a similar risk profile."
+        }
+      ]
+    },
+    {
+      "item": "dao-legal-entities",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Excited about domestic, transparent legal wrappers for token governance that provide limited liability and onchain accountability while replacing extractive offshore foundations; sees Uniswap's DUNI as proof governance isn't dying.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "New policy (CLARITY Act), emerging structures (DUNA), and smarter tooling (BORGs) enable better systems"
+        },
+        {
+          "date": "2025-11-11",
+          "quote": "Decentralized governance isn't dying."
+        },
+        {
+          "date": "2025-09-02",
+          "quote": "Legal protections for networks and tokenholders will similarly unlock U.S. blockchain innovation."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Believes IP retains value in an age of abundance via provenance, scarcity and community; urged the SEC to create an NFT safe harbor and crowdfunding regime so creators can build, favoring consumptive over speculative demand.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-27",
+          "quote": "NFTs unlock incredible opportunities for creators."
+        },
+        {
+          "date": "2025-03-27",
+          "quote": "there's a reason people pay $1000s for bags that only cost $100 to make."
+        },
+        {
+          "date": "2025-04-21",
+          "quote": "the best way to drive long-term value for creators is to build systems that focus the market on consumptive demand"
+        }
+      ]
+    },
+    {
+      "item": "perp-dex",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Most recent emerging-use-case focus: wants CFTC safe harbors and registration pathways to bring perps trading onto non-custodial DeFi in the US.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-16",
+          "quote": "How do we get crypto perps trading on DeFi in the US?"
+        },
+        {
+          "date": "2026-03-17",
+          "quote": "Enabling non-custodial apps to integrate with regulated markets is a critical step"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Named these as the consumer use cases that demonstrate trustless blockchain value and build DC support \u2014 digital identity ownership, energy grids, decentralized messaging/social/AI.",
+      "provenance": "persisted",
+      "age_note": "Stated 2024-11 to 2025-02; not strongly restated since. In 2026-02 he defended non-financial use cases (e.g., web3 gaming) as victims of past bad regulation rather than failures, but acknowledged incumbents' grip on attention is 'extreme.'",
+      "citations": [
+        {
+          "date": "2025-02-07",
+          "quote": "decentralized messaging, social and AI are all going to be key toward building broader support in DC."
+        },
+        {
+          "date": "2024-11-10",
+          "quote": "development of physical infrastructure like energy grids"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Sees them as ownership of nothing, valueless, fueled entirely by speculation and value extraction via information-asymmetry warfare; warns the line between memecoin and scamcoin is hard to discern and that markets devolving to pure speculation make value creation scarce.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-20",
+          "quote": "Memecoins are the opposite of equity \u2014 ownership of nothing versus something."
+        },
+        {
+          "date": "2025-04-21",
+          "quote": "where they're just memecoins, without any inherent value and are fueled entirely by speculation, I'm very skeptical."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "extracting value from creating and then exploiting information asymmetries is far easier than building something of value."
+        }
+      ]
+    },
+    {
+      "item": "disguised-equity-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "His sharpest recurring concern: tokens whose value derives from a controlled company (archetype FTT) carry all the risks of securities and should be regulated as such; treating them as non-securities would create a loophole that damages US capital markets (Apple/AWS/Walmart token scenario).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-30",
+          "quote": "A token that does both is just a security."
+        },
+        {
+          "date": "2025-04-02",
+          "quote": "a world of Walmart Token, AWS Token, and Apple App Store Token all offered and sold outside the bounds of securities laws."
+        },
+        {
+          "date": "2025-06-07",
+          "quote": "FTT was a security."
+        }
+      ]
+    },
+    {
+      "item": "protocol-embedded-compliance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Most recent acute concern: proposals to bake regulatory gatekeeping (dynamic risk scoring, whitelists, address censorship) into autonomous protocols via oracles would make DeFi permissioned, introduce intermediaries, and destroy credible neutrality. Argues protocols can't be regulated like companies without killing the tech.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-30",
+          "quote": "Regulating autonomous blockchain protocols is not a viable solution \u2014 it would kill the technology."
+        },
+        {
+          "date": "2025-10-30",
+          "quote": "It cannot be both because Option 2 requires delegating gatekeeping powers to an oracle."
+        },
+        {
+          "date": "2025-10-31",
+          "quote": "enabling any government in the world to censor an address from being able to transact on a protocol."
+        }
+      ]
+    },
+    {
+      "item": "foreign-foundation-structures",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly warns offshore foundations are decentralization theater that add operational complexity, hidden tax/legal risk, and enable value extraction; argues market structure (DUNA/BORGs/PBCs domestically) makes them unnecessary \u2014 'the end of crypto's foundation era.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "The end of crypto's foundation era is here."
+        },
+        {
+          "date": "2025-03-20",
+          "quote": "All the reasons they give...are nonsense. Be careful."
+        },
+        {
+          "date": "2025-08-11",
+          "quote": "End crypto offshoring."
+        }
+      ]
+    },
+    {
+      "item": "crypto-treasury-companies",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Skeptical of the DAT/treasury-company craze for less-mature tokens: unresolved PubCo disclosure, Gary Plastic, and sub-NAV problems; explicitly compares the mania to the SPAC craze and predicts class-action litigation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-05",
+          "quote": "The class action lawsuits over DATs are coming."
+        },
+        {
+          "date": "2025-07-24",
+          "quote": "I'm not sure these problems are solvable where management teams of less mature projects are spinning up and controlling these public vehicles themselves."
+        },
+        {
+          "date": "2025-08-22",
+          "quote": "Strong men create DATs. DATs create good times. And good times never end..."
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Skeptical of creator/content coins lacking an economic mechanism tying value to consumptive demand; views them as speculation vehicles where most participants lose once a post's 'moment' is over.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-22",
+          "quote": "isn't the value of the token purely based on speculative interest rather than consumptive interest?"
+        },
+        {
+          "date": "2025-04-28",
+          "quote": "memecoins have no inherent value. That's the whole point."
+        }
+      ]
+    },
+    {
+      "item": "tee-enclaves",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Warns the industry is conflating 'trusted' hardware/execution environments with genuinely trustless blockchains, which he expects to cause significant harm.",
+      "provenance": "persisted",
+      "age_note": "Stated 2025-02; not restated in the recent corpus.",
+      "citations": [
+        {
+          "date": "2025-02-10",
+          "quote": "The conflation of trusted execution environments with trustless blockchains is going to lead to a lot of pain."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "His canonical example of a decentralized network token that is NOT a security: value derives solely from a decentralized network, has a real economic model (EIP-1559 burn), and proves tokens can have value without being equity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-21",
+          "quote": "the SEC now believes ETH is a security...which obviously isn't the case."
+        },
+        {
+          "date": "2025-04-15",
+          "quote": "Ethereum does do a buy and burn. Every transaction on Ethereum results in a portion of ETH getting burned."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Treats Bitcoin as the paradigmatic decentralized commodity outside securities laws; transactions in it don't violate Howey.",
+      "provenance": "grounded",
+      "age_note": "Distinct from price/asset enthusiasm: in 2024-11 he opposed a US strategic Bitcoin reserve as a misallocated priority and government 'handout' picking winners \u2014 a stance not revisited since, so persisted.",
+      "citations": [
+        {
+          "date": "2024-12-20",
+          "quote": "If decentralization is the limiting principle of Howey, then transactions of Bitcoin are not violative of Howey."
+        },
+        {
+          "date": "2024-11-15",
+          "quote": "This is not one of them."
+        }
+      ]
+    },
+    {
+      "item": "UNI",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Showcase for his preferred model: domestic DUNA ('DUNI') governance wrapper, onchain protocol-fee revenue, and decentralized control \u2014 network effects accruing to tokenholders, not equity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-11",
+          "quote": "Through Uniswap's DUNA (\"DUNI\"), tokenholders retain the same governance powers and oversight they've always had."
+        },
+        {
+          "date": "2025-08-11",
+          "quote": "A Uniswap DUNA would prioritize: Domestic > Offshore...Onchain revenue > Offchain revenue"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Grouped with BTC/ETH as a network token whose value derives from a network rather than a company, with a pathway out of securities laws via decentralization.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "tokens that provide an interest in a network (BTC, ETH, SOL) should be regulated differently"
+        }
+      ]
+    },
+    {
+      "item": "USDC",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Cited as a clean payment-stablecoin / dollar-equivalent example outside securities laws; he personally uses it for non-speculative onchain yield-to-creators flows.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-11-19",
+          "quote": "Just used some spare USDC to generate yield for creators on @joinbond."
+        }
+      ]
+    },
+    {
+      "item": "FTT",
+      "item_type": "token",
+      "parent_sector": "cefi-intermediaries",
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "His recurring cautionary archetype: economically a profits interest in FTX with all the risks of a security despite no formal legal rights; should have been regulated as a security. Used to argue against form-over-substance loopholes.",
+      "provenance": "grounded",
+      "age_note": "Token already defunct; cited as a legal/risk archetype, not a live trade.",
+      "citations": [
+        {
+          "date": "2025-06-07",
+          "quote": "FTT was a security."
+        },
+        {
+          "date": "2025-03-21",
+          "quote": "secondary transactions of FTT should be subject to securities laws as the instrument was essentially a profits interest in FTX"
+        }
+      ]
+    },
+    {
+      "item": "TRUMP",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Classified as a memecoin \u2014 ownership of nothing, driven by speculation \u2014 and used to illustrate why such tokens are regulated differently and carry consumer-harm risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "What's the difference between ETH, FTT, USDC, TRUMP and $APPL?"
+        },
+        {
+          "date": "2025-01-20",
+          "quote": "Memecoins are the opposite of equity \u2014 ownership of nothing versus something."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "Structurally and increasingly optimistic: he sees a once-in-a-generation US regulatory turnaround (GENIUS Act passed, CLARITY through the House, SEC 'Project Crypto', SEC-CFTC harmonization, friendly CFTC/SEC leadership) that 'enshrines a freedom to build' and ends offshoring \u2014 'never been more optimistic,' 'a great time to be building in crypto in America.' But the risk-on posture is selective and substance-based: he is bullish on decentralized network tokens, DeFi, stablecoins and tokenized securities while actively warning against speculative/extractive categories (memecoins, company-backed tokens, DATs, offshore structures) and against bad regulation (compliance oracles, regulator discretion). Net: pro-building/pro-clarity optimism, not indiscriminate speculative appetite.",
+    "provenance": "grounded"
+  },
+  "notes": "Jennings is a16z crypto's policy/legal lead (effectively General Counsel-level), so his 'market view' is expressed through a regulatory, legal and structural lens rather than as trading/sector allocation calls \u2014 'sectors' and 'tokens' here are categories he wants the law to enable or constrain, and convictions reflect advocacy intensity. His single most load-bearing, fully consistent thesis across all 18 months is 'control-based decentralization': decentralization = the absence of control, network tokens (ownership of a network) must never become company-backed tokens (ownership of a company/synthetic equity), and substance (economic reality) beats form. There are no major reversals in the corpus; views deepen rather than flip. Minor aging: strategic Bitcoin reserve skepticism (2024-11) and the TEE-vs-trustless warning (2025-02) are persisted-but-not-restated. He repeatedly stresses that even with a friendly SEC, plaintiffs' firms and future administrations remain threats, so he prioritizes durable legislation (CLARITY/market structure) over reliance on regulator goodwill. BNB is treated as genuinely ambiguous (network-vs-company hybrid) rather than excited/concerned. Heavy adjacent themes not scored as market views: opposition to government 'lawfare,' free speech, and LA wildfire/infrastructure commentary."
+}

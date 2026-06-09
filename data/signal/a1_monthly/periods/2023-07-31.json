@@ -1,0 +1,572 @@
+{
+  "as_of": "2023-07-31",
+  "approach": "A1",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Seen as a foundational unlock on par with smart contracts \u2014 enabling private-by-default transactions, scaling, and broader blockchain utility. Sustained investment (Aleo, Nym, Aztec) and ongoing research focus.",
+      "provenance": "grounded",
+      "age_note": "Sustained Feb 2022 through Jul 2023; never reversed",
+      "citations": [
+        {
+          "date": "2022-08-06",
+          "quote": "I feel like the implications of zero knowledge proofs being a thing may be as dramatic as the implications of smart contracts"
+        },
+        {
+          "date": "2022-12-15",
+          "quote": "Encryption & privacy will be essential for blockchains to broaden their utility and gain widespread adoption"
+        },
+        {
+          "date": "2023-07-25",
+          "quote": "Even more scaling (believe it or not!), privacy, interoperability."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Rollups are viewed as THE scaling path for Ethereum; danksharding/data-availability sampling will make L2s dramatically cheaper and open new applications. Most concrete and current scaling thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-05-05",
+          "quote": "really, the scaling story for Ethereum is rollups... then sharding is a very elegant and efficient way to do that"
+        },
+        {
+          "date": "2023-04-27",
+          "quote": "danksharding and data availability sampling, which would radically decrease the cost of storing data on Ethereum"
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly called a breakout, surprisingly successful application; NFTs move beyond JPEGs to digital brands, composable IP, and community-owned value. Heavy, recent emphasis (Kominers/Dixon).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-14",
+          "quote": "novel IP creation... has been in my view like one of the most... breakout... successful... applications to date"
+        },
+        {
+          "date": "2023-06-01",
+          "quote": "Some NFTs just serve as ownership records, while others can become the foundation of digital brands"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Framed as the proof that trustless beats trusted intermediaries; post-FTX, repeatedly held up as the answer to CeFi's failures. On-chain lending called an essential primitive.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-07",
+          "quote": "Do the collapses of FTX, Celsius, and Terra signal the end of crypto? No, but they do show why we need #DeFi"
+        },
+        {
+          "date": "2022-07-12",
+          "quote": "We believe on-chain lending is an essential DeFi primitive"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Emerging late-2022 theme that accelerated into 2023; crypto seen as the way to decentralize ML compute, crowdsource data/models, and counter big-tech compute advantage (Gensyn).",
+      "provenance": "grounded",
+      "age_note": "Emerged Dec 2022, growing through mid-2023",
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "The future of machine learning is decentralized"
+        },
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Helium cited early as proof; thesis crystallized around 'verification cost < incumbent margin' and applying decentralization to energy, transport, wireless. Recent and expanding.",
+      "provenance": "grounded",
+      "age_note": "Helium (2022) older; framework and enthusiasm restated 2023",
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "We should have a decentralized energy grid, transportation network, and wireless network"
+        },
+        {
+          "date": "2023-01-18",
+          "quote": "The essential question when considering building a DePIN network: Verification cost < incumbent margin"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Web2 social treated as rugged ground; open protocols (Farcaster) seen as the neutral foundation, with portability/interoperability as the fix. Reinforced by Threads/Nostr commentary in 2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "Farcaster is the neutral platform we wanted all along."
+        },
+        {
+          "date": "2023-07-13",
+          "quote": "This shows why we need social media based on open protocols"
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "A very recent, explicit call that infra is under-resourced relative to apps and represents a massive opportunity for human-coordination rails \u2014 though tempered by the view that killer apps may pull infra investment.",
+      "provenance": "grounded",
+      "age_note": "Stated Jul 2023; internally caveated days later",
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "I actually think we don't have enough focus on crypto infrastructure relative to apps... massive opportunity and there is a lot to do"
+        },
+        {
+          "date": "2023-07-26",
+          "quote": "killer apps with a lot of consumer adoption may be a primary driver of infrastructure investment"
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Music called the category where web2's structural problems are worst; doubled-down conviction via leading Sound.xyz's Series A in mid-2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Sound is music without the middleman; a web3 music platform... powering the next generation of artists and their communities"
+        },
+        {
+          "date": "2022-09-21",
+          "quote": "The music industry is broken. It is the category for which the structural problems of web2 are at their very worst."
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Strong interest in shared security models (EigenLayer-style restaking, Ethereum mesh security, IBC analogues) as a way to bootstrap new services without standing up new trust networks. Partly informed by guest founders.",
+      "provenance": "extrapolated",
+      "age_note": "EigenLayer view from Aug-2022 guest transcript; team-voice mesh-security interest restated 2023",
+      "citations": [
+        {
+          "date": "2023-06-02",
+          "quote": "Mesh security <> fault/validity proofs... Restaking and mesh security also seem to overlap"
+        },
+        {
+          "date": "2023-02-08",
+          "quote": "It seems L3s (also called hyper chains) can solve many of the same challenges as L1 appchains"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 63,
+      "horizon": "structural",
+      "rationale": "Crypto-enabled games seen to unlock player-owned worlds and assets; backing established studios (CCP/EVE) and infrastructure (Halliday).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-21",
+          "quote": "We believe @CCPGames will help shape the next generation of web3 games"
+        },
+        {
+          "date": "2022-08-04",
+          "quote": "As NFTs become intertwined with modern gaming, millions of players will need accessible pathways to digital ownership"
+        }
+      ]
+    },
+    {
+      "item": "regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "The dominant, escalating concern. The house believes the SEC under Gensler aims to ban the technology, deliberately fosters uncertainty as leverage, refuses guidance, and drives builders offshore. Sees Congress, not the SEC, as the fix.",
+      "provenance": "grounded",
+      "age_note": "Intensified steadily 2022\u21922023, peaking June 2023",
+      "citations": [
+        {
+          "date": "2023-06-06",
+          "quote": "the SEC's endgame for crypto/web3 in the United States is about one thing: banning the technology"
+        },
+        {
+          "date": "2023-05-10",
+          "quote": "The SEC's murky and constantly shifting approach to web3 regulation helps bad actors flourish to the detriment of good actors and consumers"
+        }
+      ]
+    },
+    {
+      "item": "cefi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "FTX/Celsius/Voyager/BlockFi/Genesis failures treated as preventable consequences of trusted custodians taking excess risk. 'Not your keys' restated as a guiding philosophy; trust must be regulated differently than trustless.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-07",
+          "quote": "Shoutout to the CeFi players out there demonstrating unequivocally why trust inherently needs to be regulated differently than trustless"
+        },
+        {
+          "date": "2022-11-11",
+          "quote": "The risks of CeFi and DeFi are different, and attempts to regulate software will only lead to further offshoring"
+        }
+      ]
+    },
+    {
+      "item": "algorithmic-stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Terra/UST collapse blamed on bad (endogenous) collateral, not algorithms per se. Position evolved from blanket skepticism toward a nuanced 'collateralization is the real risk' \u2014 they remain positive on well-collateralized decentralized stablecoins.",
+      "provenance": "grounded",
+      "age_note": "Refined 2022: from 'meme coins' (May) to 'collateral, not algorithms' (Aug); supportive of well-collateralized designs",
+      "citations": [
+        {
+          "date": "2022-08-08",
+          "quote": "bad collateral is the root cause of recent collapses like Terra, not 'algorithmic stablecoins'"
+        },
+        {
+          "date": "2022-05-14",
+          "quote": "Uncollateralized stablecoins are basically just meme coins with no potential upside."
+        }
+      ]
+    },
+    {
+      "item": "dao-governance-dysfunction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Direct/token-only democracy seen as failing at scale (apathy, capture, no free press); most DAOs over-hyped relative to capability; lack of legal wrappers exposes members to liability.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-02",
+          "quote": "it's totally irrational for any individual person to spend substantial amounts of time monitoring and learning about each vote"
+        },
+        {
+          "date": "2022-06-23",
+          "quote": "people's expectations of what most DAOs are capable of needs to be significantly adjusted downwards"
+        }
+      ]
+    },
+    {
+      "item": "smart-contract-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Smart contract development called the opposite of agile \u2014 costly, hard, insecure; ZK circuit bugs especially hard to scrutinize since only the proof is shared. A persistent brake on safe adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-01",
+          "quote": "smart contract development is far from easy and far from secure at this stage"
+        },
+        {
+          "date": "2023-07-16",
+          "quote": "Security bugs in ZK circuits will be challenging. Since only the proof is shared, the malicious input can't be scrutinized"
+        }
+      ]
+    },
+    {
+      "item": "zk-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "tactical",
+      "rationale": "Deployed proof systems running at ~80 bits of security viewed as a live, non-academic threat to hundreds of millions in assets and a systemic risk if performance is prioritized over security.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-09",
+          "quote": "Known attacks on FRI when run non-interactively at 80 bits of security are feasible... a systemic risk to the rollup ecosystem"
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "if we prioritize performance over security, we may cause people to lose trust in the technology"
+        }
+      ]
+    },
+    {
+      "item": "security-fragmentation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Proliferation of chains and subnets seen to divide a shared security budget, making each chain easier to attack crypto-economically (51% attacks); intertwining app economics with base security is a flagged risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-01",
+          "quote": "the security of the original ecosystem basically gets divided across the different chains... all these chains are much easier to attack crypto economically"
+        }
+      ]
+    },
+    {
+      "item": "tokenomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Token-as-fundraise and consultant token-allocation pie charts dismissed as nonsense; founders warned against quick token launches and short lockups. Tokens should align incentives and decentralize, not raise money.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-10",
+          "quote": "'Tokenomics experts' who simply 'work' with you to determine 'token allocations' are a complete waste of time."
+        },
+        {
+          "date": "2023-02-01",
+          "quote": "web3 founders should be extremely weary of investment offers that are conditioned on... short lockups or penalties for not launching a token quickly"
+        }
+      ]
+    },
+    {
+      "item": "mobile-platforms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "tactical",
+      "rationale": "Centralized platforms seen as actively crippling crypto UX and arbitrarily cutting off builders \u2014 a recurring argument for why open, user-owned protocols are needed.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-01",
+          "quote": "Apple will cripple you, block you, or take your lunch if you try to offer a native experience."
+        }
+      ]
+    },
+    {
+      "item": "quantum-threat",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "A lower-probability but high-impact, long-dated concern: signature forgery, PoS forking, and PoW centralization; post-quantum signatures are large/slow. Roughly a 15-year horizon; mostly research/guest-sourced.",
+      "provenance": "grounded",
+      "age_note": "Long-dated (~15yr); primarily a Jun-2023 research transcript view",
+      "citations": [
+        {
+          "date": "2023-06-02",
+          "quote": "so basically if somebody builds a quantum computer today the internet is gone"
+        },
+        {
+          "date": "2023-06-02",
+          "quote": "if it will continue to double every year this Gap will be breached in 15 years"
+        }
+      ]
+    },
+    {
+      "item": "eth",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Treated as the clear leader by developer mindshare; the Merge made it superior (finality, security, energy); now securing a multi-hundred-billion-dollar economy and the default settlement layer for the team's theses.",
+      "provenance": "grounded",
+      "age_note": "Sustained 2022\u21922023; reinforced post-Merge",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "@ethereum is the clear leader. Its overwhelming mindshare among web3 devs"
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "I believe Ethereum will be a far superior blockchain than it was before."
+        },
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    },
+    {
+      "item": "dai-frax",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Defended explicitly against Terra comparisons on the basis of exogenous collateral; cited as the example where token-based governance actually works. Positive but narrower than ETH.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-02",
+          "quote": "The difference between endogenous and exogenous collateral is pretty significant."
+        },
+        {
+          "date": "2022-09-12",
+          "quote": "MakerDAO is probably one of the examples where this actually works."
+        }
+      ]
+    },
+    {
+      "item": "uni",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Held up as a trustless, infinitely-scalable DeFi primitive; the house is an active, engaged governance participant (and willing to oppose risky proposals), signaling conviction in the protocol.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-06-03",
+          "quote": "Uniswap is very much real and is infinitely scalable without a single developer having to lift another finger."
+        }
+      ]
+    },
+    {
+      "item": "btc",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Respected as a technically 'better gold,' but a recent, specific concern: the fee-only long-term security budget must change for Bitcoin to survive coming decades; PoW energy/sustainability also flagged. A concern about the model, not a bearish call on the asset.",
+      "provenance": "grounded",
+      "age_note": "Still viewed as 'better gold' (Mar 2023); security-budget concern is recent (Jul 2023)",
+      "citations": [
+        {
+          "date": "2023-07-24",
+          "quote": "the security model of bitcoin needs to change if it's going to last the next few decades"
+        },
+        {
+          "date": "2023-01-27",
+          "quote": "having a blockchain that's entirely secured by transaction fees is a very very scary thing to have happen"
+        }
+      ]
+    },
+    {
+      "item": "ust-luna",
+      "item_type": "token",
+      "parent_sector": "algorithmic-stablecoins",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Recurring cautionary example: collapse blamed on bad endogenous collateral. Cited to argue regulation should target collateralization, not algorithms.",
+      "provenance": "persisted",
+      "age_note": "Collapsed May 2022; cited as a settled cautionary tale, not a live position",
+      "citations": [
+        {
+          "date": "2022-08-08",
+          "quote": "bad collateral is the root cause of recent collapses like Terra"
+        },
+        {
+          "date": "2022-12-02",
+          "quote": "Terra being extremely undercollateralized"
+        }
+      ]
+    },
+    {
+      "item": "ftt",
+      "item_type": "token",
+      "parent_sector": "cefi",
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Cited as a token widely viewed with skepticism in the legal community well before collapse; emblematic of CeFi/exchange-token risk and the SEC's failure to act.",
+      "provenance": "persisted",
+      "age_note": "FTX collapsed Nov 2022; referenced as a vindicated cautionary case",
+      "citations": [
+        {
+          "date": "2022-11-14",
+          "quote": "FTT was widely viewed with skepticism in the legal community, which has consistently been advising against FTX's approach in the US"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "The house posture is structurally bullish and conviction-building despite a 2023 bear market and acute US regulatory hostility: 'we're still early,' 'keep building,' and explicit 'Stay The Course' guidance to founders, with bear markets framed as healthy ('prolong the good faith innovation phase'). The risk-on conviction is heavily conditioned and quality-gated \u2014 strongly tilted toward decentralized/trustless exposure and away from US-domiciled CeFi/centralized intermediaries, with near-term US regulatory uncertainty named as the single biggest drag. So: structurally constructive, tactically cautious on US regulatory and CeFi exposure.",
+    "provenance": "grounded"
+  },
+  "notes": "Method: synthesized from a16z crypto team statements Feb 2022\u2013Jul 2023, weighting the most recent view on each topic. Corpus skews toward a few voices \u2014 Miles Jennings (legal/regulatory, dominant), Chris Dixon & Eddy Lazzarin (thesis/protocol), Scott Kominers & Tim Roughgarden (NFTs/market design), Dan Boneh & Justin Thaler (ZK/SNARK research), Arianna Simpson & Ali Yahya (investments). Several 'transcript' entries are guest speakers (EigenLayer, Chia, consensus/Plasma researchers, Avalanche) \u2014 I treated those as weaker evidence of house conviction and marked restaking/quantum accordingly. The single loudest signal by volume is anti-SEC/pro-decentralization regulatory advocacy ('regulate apps, not protocols'; 'regulate trust, not trustless'); decentralization is the team's unifying lens for both opportunity and risk. Notable evolutions recorded in age_notes: stablecoin stance refined from blanket skepticism to 'collateralization, not algorithms'; ZK/AI-crypto/DePIN/infrastructure are rising 2023 themes; CeFi and ICO-style tokenomics concerns hardened post-FTX. Conviction scores are intensity, not probabilities. Few specific fungible tokens are discussed as investments \u2014 the team talks more in sectors and protocols than tickers \u2014 so the token lists are necessarily thinner and ETH-centric."
+}

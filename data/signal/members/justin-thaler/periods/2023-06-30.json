@@ -1,0 +1,190 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He views sum-check as the most promising path to minimizing total prover work, citing near-perfect memory locality of the sum-check prover and expecting good hardware implementations to follow.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-28",
+          "quote": "My own viewpoint is that sum-check-based SNARKs remain the most promising for minimizing total prover work, and that good hardware implementations will follow."
+        },
+        {
+          "date": "2023-03-11",
+          "quote": "We'll see more demonstrations of the power of multivariate polynomials soon!"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He believes some critical applications admit super-efficient protocols that avoid circuits/intermediate representations entirely, yielding night-and-day prover gains that recursion won't subsume.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "some critical applications are amenable to super-efficient protocols that entirely avoid circuits or other intermediate representations, and this will lead to night-and-day prover performance improvements"
+        },
+        {
+          "date": "2022-12-31",
+          "quote": "\"special-purpose monolithic SNARKs\" are not going to be subsumed by recursion"
+        }
+      ]
+    },
+    {
+      "item": "verifiable-ml",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "He flags NN training/inference \u2014 bottlenecked by small-integer matrix multiplication \u2014 as a compelling near-term SNARK application he expects to see soon, and is working on related protocols.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "One that I think we'll see soon is neural network training/inference, the bottleneck in which is often repeated matrix multiplication of small integers."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Core thesis: SNARKs are transformative for blockchain scaling; he immersed in rollup subtleties and sees an explosion of innovation in the space.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "This space is experiencing an explosion of innovation, and I think this technology can be transformative."
+        },
+        {
+          "date": "2022-08-20",
+          "quote": "The talks focus on SNARKs and their applications to blockchain scalability."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "He calls recursion extremely powerful for keeping circuit sizes in check, but frames his enthusiasm as optimism that non-recursive techniques will ultimately prove even better in many contexts.",
+      "provenance": "grounded",
+      "age_note": "Tempered by recurring security caution at large composition depth (2022-12-29 through 2022-12-31).",
+      "citations": [
+        {
+          "date": "2022-12-30",
+          "quote": "Recursion is extremely powerful... optimism that non-recursive techniques will prove to be even better in many contexts"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "He argues known attacks on non-interactively-run FRI at 80 bits are feasible today, posing a systemic risk to the rollup ecosystem and hundreds of millions in assets; he repeatedly singles out the dYdX StarkEx verifier as too low.",
+      "provenance": "grounded",
+      "age_note": "Most recent and most emphasized stance; reiterated 2023-04-18 that dYdX StarkEx remained at 80 bits.",
+      "citations": [
+        {
+          "date": "2023-03-09",
+          "quote": "Known attacks on FRI when run non-interactively at 80 bits of security are feasible. This is not an academic question."
+        },
+        {
+          "date": "2023-04-18",
+          "quote": "The dYdX StarkEx verifier remains at 80 bits of security today."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "FRI creates a tension between verifier cost and security that he fears gets resolved in favor of performance; prioritizing performance could erode trust and lead to misappropriated funds.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "With FRI, there is a tension between verifier costs and security... this tension may get resolved in favor of performance over security."
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "if we prioritize performance over security, we may cause people to lose trust in the technology and potentially see misappropriated funds"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He cautions that projects deploying Poseidon at ~95 bits or below makes it premature to relax security vigilance, given imperfectly understood security of new hashes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "while projects are deploying Poseidon with at most 95 bits of security, it's premature to relax on this"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Composed SNARKs carry heuristic security or unbounded concrete security loss that can grow exponentially with composition depth, especially with new SNARK-friendly hashes; conservative entities may avoid the tech.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "All implemented composed SNARKs have heuristic security or at least significant loss in concrete security can't be ruled out"
+        },
+        {
+          "date": "2022-09-15",
+          "quote": "there will be a concrete security loss that grows exponentially with composition depth"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 0,
+    "rationale": "As a cryptography research partner, Thaler expresses no market/asset risk posture \u2014 his statements are exclusively about SNARK technical design and protocol security. He is structurally optimistic about the underlying technology (blockchains as 'transformative') but offers nothing resembling a risk-on/risk-off investment stance, and explicitly disclaims investment advice.",
+    "provenance": "grounded"
+  },
+  "notes": "Thaler is a SNARK/cryptography researcher, not a markets commentator; his corpus contains no token theses and no sector calls in the investment sense. 'Sectors' above are rendered in his own terms as cryptographic-technology themes. He names StarkWare/StarkEx/StarkNet and dYdX only as security-posture concerns about specific deployments, not as tradeable tokens, so token lists are empty. His single dominant and most-recent concern is insufficient security bits (80-bit non-interactive FRI) as a systemic rollup risk, sustained from 2022-09 through 2023-04. His single dominant excitement is sum-check-based SNARKs for prover efficiency. He credited StarkWare for upgrading SHARP to 96 bits (2023-03-09) while continuing to flag dYdX StarkEx at 80 bits \u2014 a nuance, not a reversal. No material stance reversals detected; views are consistent and reinforced over time."
+}

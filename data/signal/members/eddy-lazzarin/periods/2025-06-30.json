@@ -1,0 +1,527 @@
+{
+  "as_of": "2025-06-30",
+  "approach": "A2a:Eddy Lazzarin",
+  "items": [
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "He leads development of Jolt and believes its sumcheck/GKR/lookup approach is becoming the dominant paradigm; sees zkVMs as core scaling and verifiable-computation infrastructure for crypto.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "Jolt is getting faster and the underlying techniques we've been advocating for \u2014 sumcheck, GKR, lookups \u2014 are becoming more popular. It's not a coincidence."
+        },
+        {
+          "date": "2025-06-17",
+          "quote": "the best teams in crypto are betting their futures on Jolt behind the scenes."
+        }
+      ]
+    },
+    {
+      "item": "proof-of-personhood",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Views a privacy-preserving unique-human ID as the necessary 'root of trust' to defend networks against AI bots, deepfakes, and impersonation, and to let humans and AI coexist online.",
+      "provenance": "grounded",
+      "age_note": "Held consistently since Jan 2024; repeatedly reaffirmed through June 2025.",
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "I believe that World ID is the most promising as the root of trust."
+        },
+        {
+          "date": "2025-06-26",
+          "quote": "Every social network will struggle. Every person will want a network where you can tell the difference."
+        }
+      ]
+    },
+    {
+      "item": "network-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Considers properly designed network tokens (ownership/value capture in a decentralized marketplace) the highest-value token category and the heart of the industry, distinct from company-backed tokens and memecoins.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Network tokens (the king \ud83d\udc51) vs. company-backed tokens (not so much)."
+        },
+        {
+          "date": "2025-05-05",
+          "quote": "We finally have the chance to build economically sustainable decentralized networks."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees clear and growing product-market fit for stablecoins (growth seemingly independent of interest rates) and believes the long-promised crypto payments stack is finally viable; wants more stablecoin experimentation.",
+      "provenance": "grounded",
+      "age_note": "Payments thesis dates to Apr 2024 but reinforced by recent (Apr 2025) stablecoin observations.",
+      "citations": [
+        {
+          "date": "2025-02-26",
+          "quote": "With increasingly obvious product-market fit for stablecoins, I expect more experiments here (no LUNA please)."
+        },
+        {
+          "date": "2025-04-18",
+          "quote": "stablecoin growth (including total supply, not pictured here) also seems relatively independent of interest rates. Very interesting!"
+        }
+      ]
+    },
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Distinguishes diffusion from control; values systems that are 'locked open' with no single trusted controller (credible neutrality) as crypto's core benefit over corporate networks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "'Decentralization' in this sense is a means to an end: a system that lacks a single controller that you need to trust."
+        },
+        {
+          "date": "2025-04-07",
+          "quote": "Censorship resistance just means it's locked open."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Wants radical privacy as the default; argues institutions should use every cryptographic tool (ZK, private biometrics) to minimize honeypots of sensitive personal data.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-15",
+          "quote": "We have the technology to make radical privacy the default. Let's build it."
+        },
+        {
+          "date": "2025-05-15",
+          "quote": "Why are we forcing institutions to collect honeypots of sensitive, slowly-changing personal data?"
+        }
+      ]
+    },
+    {
+      "item": "agentic-payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Believes autonomous AI agents will transact, pay for their own compute, and need neutral portable on-chain identity \u2014 a major unsolved opportunity at the AI-crypto intersection.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-25",
+          "quote": "Identity for agents is one of the most \"obvious\" future challenges for AI, yet there is still no clear effort to solve the problem."
+        },
+        {
+          "date": "2024-09-05",
+          "quote": "AI agents can't have bank accounts, but they can have crypto wallets."
+        }
+      ]
+    },
+    {
+      "item": "app-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Calls the arcade-token model the most underappreciated token type \u2014 lets apps/games monetize and create user value with far fewer speculative risks than copying network tokens.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-01",
+          "quote": "I called this the most underappreciated token type in crypto on the podcast recently."
+        },
+        {
+          "date": "2025-05-01",
+          "quote": "Many interesting ways to monetize a game and create value for users with far fewer speculative risks."
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Endorses Snapchain's data architecture as the right way for decentralized social networks to maximize programmability and performance while minimizing recentralization risk.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "Snapchain is how I think decentralized social networks ought to store data to max programmability + performance and min the risks of recentralization."
+        }
+      ]
+    },
+    {
+      "item": "light-clients",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Champions trust-minimized Ethereum verification in-browser and in wallets; ongoing personal investment in Helios improvements and getting light clients adopted by default.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-19",
+          "quote": "Big update for your favorite Ethereum light client, Helios!"
+        },
+        {
+          "date": "2024-10-25",
+          "quote": "You can run a Helios light client in the browser to verify Ethereum L1 + OP Mainnet + Base. It works right now."
+        }
+      ]
+    },
+    {
+      "item": "single-entity-launches",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Believes crypto can now ship decentralized projects with network tokens without the two-company/foundation structure, cutting complexity and accelerating development.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "It's time for crypto move on from the \"foundation\" model."
+        },
+        {
+          "date": "2025-06-02",
+          "quote": "now we can cut complexity and accelerate dev without compromising decentralization."
+        }
+      ]
+    },
+    {
+      "item": "open-source-funding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Wants protocols that measure impact, attribute credit, and route payment to open-source authors \u2014 completing 'Git's evolution' into capitalism's feedback loop.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-16",
+          "quote": "Merit Systems was founded to design this: a protocol for measuring impact, attributing credit, and routing payment to the authors creating value"
+        }
+      ]
+    },
+    {
+      "item": "speculation-mispricing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Sees them as net-negative externalities: not technically interesting, they make crypto look like a casino, deter great founders, and give politicized regulators ammunition, setting the industry back.",
+      "provenance": "grounded",
+      "age_note": "Most forceful critiques are Apr 2024; the underlying stance is consistently reaffirmed via his 2025 token-classification work, not reversed.",
+      "citations": [
+        {
+          "date": "2024-04-24",
+          "quote": "we shouldn't pretend that the casino doesn't set us back. Deterring great founders and giving ammo to politicized regulators has a profound effect."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "Memecoins alter how the public, regulators, and entrepreneurs see crypto. At best, it looks like a risky casino."
+        }
+      ]
+    },
+    {
+      "item": "ai-content-flooding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Expects all content to be assumed AI-generated unless cryptographically attested; sees behavioral bot-detection as already 'cooked,' threatening every social network without a sybil-resistant ID layer.",
+      "provenance": "grounded",
+      "age_note": "Originated Jan 2024; restated and intensified through May\u2013June 2025.",
+      "citations": [
+        {
+          "date": "2025-05-06",
+          "quote": "advances in AI mean identifying humans through behavior alone is cooked."
+        },
+        {
+          "date": "2024-04-04",
+          "quote": "The \"mystery meat\" scenario seems unavoidable"
+        }
+      ]
+    },
+    {
+      "item": "airdrop-farming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "tactical",
+      "rationale": "Warns farming is fully professionalized and AI now fabricates lifelike on-chain histories, so airdrops risk leaking value to sybils unless defended by supply-verification or unique-human ID.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-06",
+          "quote": "Airdrop and reward farming is completely professionalized. We don't appreciate its scale because every algorithmic feed struggles to hide it from us."
+        }
+      ]
+    },
+    {
+      "item": "disguised-equity-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Concerned that tokens controlled by a single company (or with 'pie chart' tokenomics and fake governance) are mislabeled as network tokens \u2014 no real decentralization, value, or holder protection.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-20",
+          "quote": "If the \"tokenomics\" is just a pie chart, there is no network, no potential to create value, and no point."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "If there is only one company with actual control of the system... this is not a (decentralized) network token."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Laments PCs moving from direct downloads to app stores and corporate gatekeeping as a regression eroding the open web; control over the network is the source of gatekeeping power.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-06-09",
+          "quote": "PC apps moving from direct downloads to app stores is a regression, cursed, tragic."
+        },
+        {
+          "date": "2024-06-14",
+          "quote": "You don't own your username \u2014 or anything else \u2014 on a corporate network."
+        }
+      ]
+    },
+    {
+      "item": "closed-proprietary-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Argues closed-source AI drastically limits innovation and isn't demonstrably safer; prefers open (even uncensored) models, with safety provided by crypto tools rather than secrecy.",
+      "provenance": "persisted",
+      "age_note": "Articulated mainly mid-2024 (and Jan 2025 re: DeepSeek-R1 reasoning); not contradicted since but less recently restated.",
+      "citations": [
+        {
+          "date": "2024-07-23",
+          "quote": "Closed source drastically limits innovation from startups, universities, independent researchers, etc. And it makes it more difficult to keep software safe."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Treats ETH as ownership in a decentralized network-marketplace selling blockspace; value accrues via the EIP-1559 burn (effectively automatic buybacks), with demand independent of using ETH itself for gas.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-20",
+          "quote": "The value accrues to ETH through the burn."
+        },
+        {
+          "date": "2025-06-27",
+          "quote": "I think ETH is already doing (fully automatic) buybacks via the EIP-1559 burn."
+        }
+      ]
+    },
+    {
+      "item": "UNI",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Cites UNI as a 'clear' network token that can capture protocol fees (via mechanisms like UniStaker) from the Uniswap network-marketplace \u2014 his model example of legitimate token value capture.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-25",
+          "quote": "UNI is a clear network token and we discuss the example very clearly."
+        },
+        {
+          "date": "2025-03-05",
+          "quote": "Network tokens like ETH, SOL, and UNI can capture value from their underlying networks through protocol fees."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Grouped with ETH and UNI as a legitimate network token whose holders own/use a decentralized network no single company controls.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Many companies build on and use Ethereum, Solana, and Uniswap \u2014 but they're using the network, and none of them control it."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Respects Bitcoin as the native asset of arguably the most secure and decentralized network, giving it economic characteristics unlike any memecoin; pushes back on 'bitcoin is a memecoin' takes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-20",
+          "quote": "being the native asset of what is arguably the most secure and decentralized network gives it economic characteristics... So I don't think it's a memecoin."
+        },
+        {
+          "date": "2024-12-07",
+          "quote": "It's incredible that we have bitcoin."
+        }
+      ]
+    },
+    {
+      "item": "WLD",
+      "item_type": "token",
+      "parent_sector": "proof-of-personhood",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Strongly backs the World network as the leading private, sybil-resistant identity root of trust; views its token as bootstrapping the ID network and potentially capturing fees in future.",
+      "provenance": "grounded",
+      "age_note": "Token-specific framing is lighter; enthusiasm is for the World ID network, with token role described in May 2025.",
+      "citations": [
+        {
+          "date": "2025-05-11",
+          "quote": "The tokens are to help bootstrap the ID network, and in the future may capture fees automatically."
+        },
+        {
+          "date": "2025-06-02",
+          "quote": "I believe that World ID is the most promising as the root of trust."
+        }
+      ]
+    },
+    {
+      "item": "FTT",
+      "item_type": "token",
+      "parent_sector": "disguised-equity-tokens",
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Names FTT as a canonical company-backed token whose value came uniquely from the company rather than a decentralized network \u2014 the failure mode he warns against.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "FTT was one, there are others."
+        }
+      ]
+    },
+    {
+      "item": "LUNA",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Uses LUNA as a cautionary tale when calling for renewed algorithmic-stablecoin experimentation; explicitly does not want a repeat.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-02-26",
+          "quote": "I expect more experiments here (no LUNA please)."
+        }
+      ]
+    },
+    {
+      "item": "DOGE",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Classifies Dogecoin as a store-of-value/memecoin with no enterprise value (unlike network tokens with protocol revenue) \u2014 outside the value-creating designs he favors.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-05",
+          "quote": "memecoins/store of value tokens like Dogecoin have no enterprise value (like gold)."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "Eddy is a structurally bullish builder: he repeatedly says there has never been a better time to build in crypto, citing better tech, clearer need, and a transformed regulatory environment. His risk-on posture is firmly on fundamentals and decentralized-network construction (ZK, identity, network tokens, stablecoins, payments), paired with strong risk-off on speculation (memecoins, company-backed tokens, casino dynamics). It is a long-horizon, fundamentals-first optimism rather than a tactical/market-timing bullishness.",
+    "provenance": "grounded"
+  },
+  "notes": "View is overwhelmingly that of a researcher/builder (a16z crypto CTO), not a trader \u2014 convictions reflect intensity of belief in technologies and token designs, not price calls. Strongest and most recent throughlines (2025): zkVMs/Jolt, private sybil-resistant identity as the 'root of trust' against AI bots/deepfakes, and a rigorous token taxonomy (network tokens = 'king'; arcade tokens underrated; company-backed tokens and memecoins disfavored). No major reversals detected in the corpus; the anti-memecoin stance and proof-of-personhood thesis are consistent from early 2024 through June 2025 and only intensify. The closed-source-AI concern is the least-recently restated (mid-2024) and is marked persisted. Where he discusses ETH valuation, he explicitly rejects simple commodity/DCF/'oil' analogies, framing L1 tokens as equity-like ownership in network-marketplaces."
+}

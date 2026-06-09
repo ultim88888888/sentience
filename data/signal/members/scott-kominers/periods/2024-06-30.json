@@ -1,0 +1,12 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Scott Kominers",
+  "items": [],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 72,
+    "rationale": "",
+    "provenance": "grounded"
+  },
+  "notes": "Consolidated from three time-slices (oldest\u2192newest); conflicts recency-weighted to slice 3 (May\u2013June 2024). One genuine sign reversal reconciled: REGULATION moved from a concern in slice 1 ('regulatory uncertainty', bearish) to a bullish view in slice 3 ('principles-based clarity', FIT21 advocacy) \u2014 a coherent evolution (slice 1 already endorsed well-calibrated legislation), resolved to BULLISH and flagged in age_note. Duplicates merged: NFT-brand-asset thesis (slices 1+2); web3 platform disruption/composability incl. open-protocol social (slices 1+2+3); mechanism/membership design (slices 1+2); fees/congestion incl. gas-war mint design (slices 1+2); unsustainable/regulatorily-suspect business models (slices 1+2). Strongest available citations retained (only slice 1 carried quotes). Kominers' lens is sector/structural mechanism-and-incentive design and long-term technology adoption, NOT token-price speculation \u2014 he explicitly disclaims token prices as a value measure \u2014 so the token arrays are near-empty: the sole token-level engagement is exploratory Bitcoin-ordinals participation (down-weighted, not reaffirmed in the most recent slice), and memecoins are captured as a bearish SECTOR rather than a specific ticker. Most underlying corpus is puzzles/Wordle/recreational math/Covid-policy advocacy with no market signal. Standard repeated disclaimer: 'none of this is investment, business, legal, or tax advice.'"
+}

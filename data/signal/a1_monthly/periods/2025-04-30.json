@@ -1,0 +1,497 @@
+{
+  "as_of": "2025-04-30",
+  "approach": "A1",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Seen as the first clear product-market fit in crypto and the 'killer app'; cheapest way to send a dollar, growth uncorrelated to crypto cycles and interest rates, with a regulatory tailwind (GENIUS/STABLE bills). Framed as money's 'WhatsApp moment' and the on-ramp to bring the next billion onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-12",
+          "quote": "Stablecoins are the \"killer app\" of crypto, and here's a bunch of great data that shows it."
+        },
+        {
+          "date": "2025-04-18",
+          "quote": "Stablecoins have found product market fit and this chart shows it."
+        },
+        {
+          "date": "2025-04-09",
+          "quote": "Stablecoins are our first real shot at doing for money what email did for communication: make it open, instant, and borderless."
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Viewed as the native antidote to physical-infrastructure monopolies and the most salient path to making 'atoms look like bits.' Bet on user-owned/operated physical services; backed Daylight (energy). Repeatedly named the future of consumer crypto.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-26",
+          "quote": "The future of consumer crypto? DePIN"
+        },
+        {
+          "date": "2025-03-25",
+          "quote": "DePIN provides the most salient path towards making atoms look more like bits for builders and investors alike."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Blockchains seen as essential to enforce ownership/identity/authenticity amid AI-generated content, to decentralize AI away from Big Tech, and to give autonomous agents a permissionless payment rail. Backed Story Protocol (IP layer).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-05",
+          "quote": "AI needs blockchain-enabled computing."
+        },
+        {
+          "date": "2024-09-05",
+          "quote": "AI agents can't have bank accounts, but they can have crypto wallets."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Held as the endgame for blockchain scalability and a new developer primitive that 'democratizes' SNARKs (Jolt). Long-term conviction high, but explicitly tempered in 2025 by security/performance immaturity.",
+      "provenance": "grounded",
+      "age_note": "Strong hype 2024 ('Fastest zkVM in the world'); deliberately cooled in 2025 to 'not ready for prime time' on security/perf grounds.",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "Today we're releasing Jolt Alpha \u26a1\ufe0f \u2705 Fastest zkVM in the world."
+        },
+        {
+          "date": "2024-06-06",
+          "quote": "I still think ZK is under hyped. Let's talk about why"
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Treated as the next key bottleneck now that infra and adoption are maturing; privacy 'is essential.' Backed Aleo, Seismic (private shared state), and Miden (edge/client-side proving).",
+      "provenance": "grounded",
+      "age_note": "Emerging as a top priority in 2025; less emphasized earlier.",
+      "citations": [
+        {
+          "date": "2025-04-30",
+          "quote": "Disagree on Miden. Privacy is essential"
+        },
+        {
+          "date": "2025-04-30",
+          "quote": "This all sets up privacy as a key bottleneck and important product problem that wasn't the case years ago."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Considered to have durable usage that keeps growing; focus on lowering UX friction to convert passive holders into users (Legend) and on more expressive protocols via ZK coprocessors.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "DeFi remains popular \u2014 and it's growing"
+        },
+        {
+          "date": "2025-02-11",
+          "quote": "leading the $15M seed round in @legendapp to simplify DeFi and help bring the next 100M users onchain."
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Restaking framed as a marketplace for raw cryptoeconomic security that could unlock '100x' innovation on Ethereum; still cited in 2024 H2 as the security layer for real-time-proof rollups (t1).",
+      "provenance": "grounded",
+      "age_note": "Peak enthusiasm at Feb 2024 Series B; still load-bearing in late-2024 investments but less foregrounded by 2025.",
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "EigenLayer has the potential to unlock 100x faster innovation on technologies like consensus mechanisms, novel virtual machines, decentralized oracles, bridges"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Excited by interoperable, user-owned social graphs as a counter to closed platforms; vibrant dev ecosystems forming around open protocols.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-22",
+          "quote": "The Decentralized Social experiment is underway, and vibrant developer ecosystems are emerging around open protocols like Farcaster."
+        }
+      ]
+    },
+    {
+      "item": "shared-sequencing",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Sees fragmentation as Ethereum's key rollup-era problem and seamless cross-rollup composability ('holy grail') as the fix; backed Espresso.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-06",
+          "quote": "Seamless interoperability is my holy grail for rollups"
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "The most sustained concern in the corpus: speculation with no inherent value deters quality founders, hands ammunition to politicized regulators, and damages adoption and the industry's long-term legitimacy. Distinguished sharply from value-creating network tokens.",
+      "provenance": "grounded",
+      "age_note": "Consistent stance 2023\u21922025; intensified around 2024 memecoin mania and the 2025 TRUMP/celebrity-coin wave.",
+      "citations": [
+        {
+          "date": "2024-04-04",
+          "quote": "Memecoins are the crypto equivalent of chain emails."
+        },
+        {
+          "date": "2024-04-24",
+          "quote": "we shouldn't pretend that the casino doesn't set us back. Deterring great founders and giving ammo to politicized regulators has a profound effect."
+        },
+        {
+          "date": "2025-01-20",
+          "quote": "Memecoins are the opposite of equity \u2014 ownership of nothing versus something."
+        }
+      ]
+    },
+    {
+      "item": "company-backed-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Worried that dropping decentralization standards lets centrally-controlled, equity-like tokens (e.g., FTT-type) evade securities laws \u2014 a 'form over substance' loophole that would harm consumers and US capital markets. A 2025 flagship concern as the new meta of launching company tokens emerged.",
+      "provenance": "grounded",
+      "age_note": "Sharpened in early 2025 amid the post-election 'everything is legal' narrative.",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Company-backed tokens are *not* network tokens."
+        },
+        {
+          "date": "2025-03-22",
+          "quote": "this approach would incentivize the propagation of synthetic securities\u2014issuers promising economic benefits that replicate securities, but evading securities laws"
+        }
+      ]
+    },
+    {
+      "item": "premature-secondary-liquidity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Easy early liquidity for insiders is seen as an existential threat that breeds get-rich-quick schemes and lets VCs/founders dump on retail (the SPAC analogy). Pushes 4yr/1yr cliffs and lockups tied to decentralization milestones; disclosure alone deemed insufficient.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-11",
+          "quote": "Unfettered access to secondary market liquidity is an existential threat to innovation."
+        },
+        {
+          "date": "2024-02-20",
+          "quote": "4 year/1 year cliff token lockups should be standard."
+        }
+      ]
+    },
+    {
+      "item": "tee-trust-assumptions",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Explicit warning that treating trusted execution environments as equivalent to trustless consensus will 'lead to a lot of pain'; a security-architecture concern surfacing in 2025.",
+      "provenance": "grounded",
+      "age_note": "New emphasis in early 2025.",
+      "citations": [
+        {
+          "date": "2025-02-10",
+          "quote": "\"Trusted\" and \"Trustless\" are fundamentally different. The conflation of trusted execution environments with trustless blockchains is going to lead to a lot of pain."
+        }
+      ]
+    },
+    {
+      "item": "zk-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Despite excitement, the team flags that production SNARKs are 'riddled with bugs,' protected mainly by obscurity, with formal verification years away \u2014 the biggest threat to ZK fulfilling its potential.",
+      "provenance": "grounded",
+      "age_note": "Raised mid-2024, reaffirmed forcefully March 2025.",
+      "citations": [
+        {
+          "date": "2024-05-02",
+          "quote": "they need to be secure they're not now they're riddled with bugs"
+        },
+        {
+          "date": "2025-03-11",
+          "quote": "we flirt with disaster if we pretend they're ready for prime time."
+        }
+      ]
+    },
+    {
+      "item": "regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "tactical",
+      "rationale": "Years of 'regulation-by-enforcement,' weaponized Howey, debanking and the IRS broker rule were treated as the dominant industry threat \u2014 but this concern has largely reversed into optimism in 2025 after dismissed cases, a new administration, and repealed rules.",
+      "provenance": "grounded",
+      "age_note": "Acute, top concern 2023\u20132024 under the Biden SEC; markedly eased in 2025 \u2014 now framed as 'at an end' with clarity expected this year. Residual worry shifts to getting market-structure legislation right and to plaintiffs' firms.",
+      "citations": [
+        {
+          "date": "2025-02-21",
+          "quote": "The weaponization of regulatory uncertainty by the SEC is at an end."
+        },
+        {
+          "date": "2025-02-07",
+          "quote": "I'm more optimistic than I've ever been that crypto is going to get regulatory clarity this year."
+        }
+      ]
+    },
+    {
+      "item": "foreign-foundation-structures",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "tactical",
+      "rationale": "Sees consultants manufacturing urgency to push US founders offshore; flags operational complexity, weaker geopolitical protection, tax risk, and value-extraction/conflicts. Argues the US is now a better place to build.",
+      "provenance": "grounded",
+      "age_note": "Crystallized late 2024 into 2025 alongside US regulatory optimism.",
+      "citations": [
+        {
+          "date": "2024-12-13",
+          "quote": "There couldn't be a more glaringly obvious sign that we need to kill foreign foundation structures."
+        },
+        {
+          "date": "2025-03-20",
+          "quote": "some consultants are manufacturing a sense of urgency to push them into foreign foundations as early as possible... Be careful."
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Research-grounded worry that proposer-builder separation decentralizes validation but centralizes block building via a 'proof-of-MEV' feedback loop (worsened by multi-block/cross-chain MEV).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-25",
+          "quote": "PBS is reducing centralization in validation, but might create centralization in building because of this disproof of MEV competition"
+        }
+      ]
+    },
+    {
+      "item": "eth",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Held up as the canonical decentralized network token: not a security, value accrues through protocol fees and a burn mechanism, expected to be deflationary long-term. Repeatedly the reference example of a 'good' token.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-30",
+          "quote": "ETH is not a security, nor should transactions in ETH be securities transactions."
+        },
+        {
+          "date": "2024-09-08",
+          "quote": "long term I think most of us expect eth to be a deflationary currency"
+        }
+      ]
+    },
+    {
+      "item": "btc",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Treated as digital gold and the native asset of the most secure, decentralized network \u2014 distinct from memecoins despite 'memetic' qualities. Endorsed as a legitimate store of value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-22",
+          "quote": "digital gold\u2014a store of value, albeit a volatile one."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "being the native asset of what is arguably the most secure and decentralized network gives it economic characteristics... unlike any memecoin."
+        }
+      ]
+    },
+    {
+      "item": "zro",
+      "item_type": "token",
+      "parent_sector": "interoperability",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Conviction expressed via capital: an additional $55M token purchase with a 3-year lockup in April 2025, citing the protocol enabling new businesses and complex workflows onchain. Earlier praised LayerZero v2 for decoupling security from liveness.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    },
+    {
+      "item": "uni",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Cited as a 'clear network token' whose network effects accrue to holders and which can capture protocol fees (UniStaker), contrasted favorably against company-backed tokens like FTT.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-25",
+          "quote": "UNI is a clear network token and we discuss the example very clearly."
+        },
+        {
+          "date": "2025-03-05",
+          "quote": "UNI can capture fees from the network (the switch is off right now) via a mechanism like UniStaker."
+        }
+      ]
+    },
+    {
+      "item": "sol",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Recurs in the team's metrics as the leading chain by monthly active addresses and a driver of low-fee DEX volume; grouped with ETH/BTC as a bona-fide network token rather than a security. Endorsement is data-led rather than thesis-led.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "The top chain by monthly active addresses: @solana."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Used as the archetype of value-less, purely speculative tokens that 'redistribute' rather than create capital and expose retail to harm; explicitly classified as ownership of nothing.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-20",
+          "quote": "Memecoins are the opposite of equity \u2014 ownership of nothing versus something."
+        },
+        {
+          "date": "2025-02-20",
+          "quote": "True memecoins have no intrinsic value (no utility, no company, no anything) and their price is driven purely by speculation"
+        }
+      ]
+    },
+    {
+      "item": "ftt",
+      "item_type": "token",
+      "parent_sector": "company-backed-tokens",
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "The recurring cautionary example of a 'synthetic security' \u2014 value derived solely from a centralized company (FTX), the same risk profile as equity, and what control-based frameworks must screen out. Cited as defunct/negative archetype, not an active position.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-22",
+          "quote": "this approach would treat ETH (whose value is solely derived from a decentralized network) the same as FTT (whose value was solely derived from a centralized company, FTX)."
+        },
+        {
+          "date": "2025-03-21",
+          "quote": "secondary transactions of FTT should be subject to securities laws as the instrument was essentially a profits interest in FTX"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 80,
+    "rationale": "As of April 2025 the house is markedly bullish and exhorting builders forward: regulatory wins (dismissed SEC cases, repealed IRS broker rule), burgeoning institutional adoption, all-time-high stablecoin volume exceeding Visa/Mastercard, dramatically cheaper infrastructure, and a clear agent-economy thesis. The optimism is structural and aimed at fundamentals/building, not speculation \u2014 explicitly paired with disdain for the memecoin 'casino' and insistence on decentralization, long lockups, and value-creating network tokens. Posture is 'caution good, cynicism self-defeating; keep building.'",
+    "provenance": "grounded"
+  },
+  "notes": "Corpus is dominated by a16z crypto voices spanning Oct 2023\u2013Apr 2025 (notably Chris Dixon on networks/AI, Miles Jennings on token classification & regulation, Eddy Lazzarin and a research-led writer on infra/DePIN/ZK, Justin Thaler on SNARKs/Jolt, Scott Kominers on market design/IP, Tim Roughgarden-adjacent research on MEV/PBS). Heaviest single reversal: the regulatory-lawfare concern was the industry's top fear in 2023\u20132024 but flipped to optimism in 2025 after dismissed cases and a new administration \u2014 reported here at its current, lowered intensity. The token-classification framework (network vs. company-backed vs. memecoin vs. arcade/collectible, decentralization = absence of control) is the connective tissue between the team's excitement (network tokens, stablecoins) and concern (memecoins, synthetic securities). ZK/zkVMs appear in BOTH excited and concerned lists \u2014 high structural conviction on potential, high concern on near-term security/performance readiness \u2014 which is the team's genuine, internally consistent nuance rather than a contradiction. Conviction scores reflect stated intensity/frequency, not probability of payoff."
+}

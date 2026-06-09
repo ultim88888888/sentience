@@ -1,0 +1,254 @@
+{
+  "as_of": "2025-06-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "His single most repeated and most recent thesis: AI's growth depends on crypto rails for verifiable compute and trust. Frames it as a generational platform shift on par with social/cloud/mobile.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-05",
+          "quote": "Major technology movements often come together... This time is no different: AI needs blockchain-enabled computing."
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "AI needs strong, reliable evaluation based on large-scale human input. Crypto is the trust machine that can help deliver it."
+        }
+      ]
+    },
+    {
+      "item": "agentic-payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly excited about protocols letting autonomous AI agents transact and have their own financial infrastructure; backed Catena Labs and Yupp, highlighted Skyfire/Cambrian in cohorts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-20",
+          "quote": "Inspired by @catena_labs' vision for a new financial stack for AI agents and excited to have the opportunity to work with @psneville and team!"
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "Excited to have the opportunity to work with @pankaj and @gilad on @yupp_ai."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees stablecoins as the cheapest way to move dollars and a re-platforming of payments market structure that unlocks new applications; amplified both Broner and Dixon on broad adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-14",
+          "quote": "Stablecoins are the cheapest way to send a dollar. Stablecoins can reset the market structure in the payments industry."
+        },
+        {
+          "date": "2025-04-28",
+          "quote": "We're clearly on a path to broader adoption of stablecoins. Imagine the kinds of applications that can be built."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Energized that core scaling primitives (cheaper fees, higher throughput, off-the-shelf consensus) are 'snapping into focus,' which historically accelerates developer experimentation.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2024-02-09; reaffirmed indirectly via 2025-04 CSX Infrastructure Week framing.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput."
+        },
+        {
+          "date": "2025-04-16",
+          "quote": "We're past the point... where it's necessary for new blockchains to roll their own consensus solution."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-ai",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Excited by permissionless substrates for machine training and decentralized compute marketplaces; repeatedly amplified Gensyn's vision over more than a year.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-24",
+          "quote": "The substrate on which machines train and exist has to be permissionless."
+        },
+        {
+          "date": "2025-02-26",
+          "quote": "Very exciting to see the scale and scope of... the entire @gensynai team's work and vision come into public view."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "tactical",
+      "rationale": "Views reduced onboarding friction as a key accelerant for adoption; cited embedded-wallet tooling as part of the platform stack falling into place.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2024-02-09 and not restated since; treat as a persisted, aging view.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Consistently features ZK/proof systems as a research frontier driving the next wave of apps; many backed companies (proof supply chains, verifiable compute) sit here.",
+      "provenance": "persisted",
+      "age_note": "Recurs as CSX programming theme through 2024\u20132025 rather than a sharp personal market call.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Energized by the rate at which key crypto primitives are snapping into focus!"
+        }
+      ]
+    },
+    {
+      "item": "token-first-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Believes finding PMF after a token launch is extremely hard; treats premature tokenization as a structural failure mode for crypto startups.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-05",
+          "quote": "Achieving Product-Market-Fit after you launch a token is incredibly tough. Find PMF before you launch your token."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Skeptical of networks bootstrapped by paying for demand; sees it as self-destructive tokenomics.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-05-05",
+          "quote": "Incentivizing the demand side of your network is like putting a gun to your head and playing Russian Roulette."
+        }
+      ]
+    },
+    {
+      "item": "startup-operating-discipline",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Warns that scaling functions ahead of a tight PMF lock irreversibly burns capital; a recurring operating concern across his founder guidance.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-25",
+          "quote": "Scaling any business... ahead of achieving a tight lock on product-market-fit will only serve to burn precious capital you can never get back."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "structural",
+      "rationale": "Treats navigating regulation as a core founder challenge, but his stance is now optimistic that clearer post-election US rules reduce risk rather than raise it.",
+      "provenance": "grounded",
+      "age_note": "Concern reframed as optimism after the 2024 US election; current posture (2024-11-10) is constructive, not fearful.",
+      "citations": [
+        {
+          "date": "2024-11-10",
+          "quote": "We're optimistic that with clearer rules, it will make it easier to identify and shut down bad actors and allow well-meaning projects to take off."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Central to his L2/scaling enthusiasm \u2014 cheaper fees and higher throughput on Ethereum and its rollups as the substrate for the next app wave. He speaks to the ecosystem, not a price target.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from ecosystem enthusiasm (2024-02-09); he never expresses a direct ETH token/price view.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput- @optimism, @zksync, @arbitrum."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Showcased Solana's founding story admiringly at CSX as a model high-performance infra ecosystem; positive on the network, not a stated token bet.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from admiring 2025-04 CSX coverage; no explicit token view.",
+      "citations": [
+        {
+          "date": "2025-04-28",
+          "quote": "We kicked off the morning with an inspiring conversation between @alive_ and @toly."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "Persistently and increasingly bullish: describes 2025 as a 'transformative year in crypto,' is 'energized' by maturing primitives, is actively deploying capital into many early-stage AI\u00d7crypto bets, and reads the post-election regulatory shift as a tailwind. His concerns are about how founders build (premature tokens/scaling), not about the asset class or cycle direction.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal runs a16z crypto's CSX accelerator, so most statements are founder-coaching and cohort promotion rather than explicit market/price calls; his 'excitement' is best read through where he deploys capital and which theses he amplifies. The dominant and most recent signal (late 2024 \u2192 mid 2025) is an emphatic AI\u00d7crypto convergence thesis \u2014 verifiable compute, AI-agent payments, decentralized training, and crypto-as-trust-machine for AI evaluation. Stablecoins/payments and Ethereum-L2/ZK infrastructure are durable secondary themes. He almost never expresses token- or price-level views, so the tokens arrays are thin and largely extrapolated from ecosystem enthusiasm; treat with low confidence. His 'concerns' are operating/structural failure modes (token-before-PMF, demand-side incentives, premature scaling), not sector bearishness. Regulatory worry was a real 2024 theme but has clearly flipped to optimism post-election \u2014 reported as the current stance per recency rules."
+}

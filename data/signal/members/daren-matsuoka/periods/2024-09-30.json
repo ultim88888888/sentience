@@ -1,0 +1,342 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Views stablecoins as crypto's proven 'killer app' and stablecoin payments as the path to onboarding billions onchain, hitting a tipping point where efficiency-vs-reach tradeoff flips and network effects kick in.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-12",
+          "quote": "Stablecoins are the \"killer app\" of crypto, and here's a bunch of great data that shows it."
+        },
+        {
+          "date": "2024-08-15",
+          "quote": "Stablecoin payments could be the answer to how we bring billions of people onchain."
+        }
+      ]
+    },
+    {
+      "item": "zktls-web-proofs",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Considers it an underrated category that uniquely lets networks recruit contributors with incentives exogenous to the protocol (e.g., ESPN resolving betting markets); now convinced it is critical to onboarding a billion people.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-29",
+          "quote": "zkTLS / zkEmail is an underrated category in crypto. Here are some intriguing real world use cases"
+        },
+        {
+          "date": "2024-08-28",
+          "quote": "I'm now convinced that web proofs/zkTLS will play a critical role in getting us there. It's all about incentives."
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Sees AI causing a >1,000x explosion in published content that existing infra can't handle; blockchains can provide an open global coordination layer for IP, plus proof-of-authenticity protocols and decentralized incentivized curators.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-25",
+          "quote": "We need an open, global coordination layer in order for AI generated content to thrive. And this is exactly what blockchains can provide."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "We desperately need an open, global coordination layer for IP, and I couldn't be more excited about what Story is building!"
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Powerful tool for surfacing real-time information and a better 'truth' than polls; frustrated that US restrictions keep the most-informed participants out and degrade accuracy.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-21",
+          "quote": "Prediction markets have proven to be a powerful tool for surfacing real time information."
+        },
+        {
+          "date": "2024-07-26",
+          "quote": "If people in the U.S. could participate in election markets, the outputs would be more accurate."
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Treats new SNARK designs as a new paradigm and a significant contribution toward the 'endgame solution' for blockchain scalability, with fully open-source implementations.",
+      "provenance": "grounded",
+      "age_note": "Peak enthusiasm in Apr 2024 (Jolt); ~5 months old by snapshot but consistent with a long-held theme since Aug 2023.",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "This is a significant contribution toward the endgame solution for blockchain scalability, and of course the implementation is fully open source"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt represent a new paradigm in SNARK design."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Tracks adoption via the State of Crypto Index; encouraged that mobile wallet users, active addresses, and DEX volume hit all-time highs, signaling UX improvements are bringing mainstream users in with 20x+ headroom to grow.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-07",
+          "quote": "The number of mobile wallet users in crypto is now at an all time high of 28 million"
+        },
+        {
+          "date": "2024-04-05",
+          "quote": "mobile wallet users have now grown month-over-month for 5 consecutive months. March was a breakout month with 27M active mobile wallet users"
+        }
+      ]
+    },
+    {
+      "item": "desci",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Early-stage but excited about founders using blockchains to solve some of the hardest and most important problems in the world.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-25",
+          "quote": "It's early days for DeSci, but I'm grateful for entrepreneurs ... who are using blockchains to solve some of the hardest ... problems in the world!"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Believes blockchain coordination can unlock idle physical resources (GPUs, storage, telecom) and democratize access, lowering costs for consumers.",
+      "provenance": "persisted",
+      "age_note": "Stated in the Apr 2024 broad-areas thread; part of a list rather than a singled-out recent conviction.",
+      "citations": [
+        {
+          "date": "2024-04-19",
+          "quote": "Using blockchain networks to coordinate a broader set of participants, we can unlock additional resources and democratize access to them."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Sees open social protocols as resilient alternatives that can't deplatform users or arbitrarily change rules, letting users own and port their data.",
+      "provenance": "persisted",
+      "age_note": "Core conviction restated Apr 2024, but standalone enthusiasm peaked in 2023; not a primary recent theme.",
+      "citations": [
+        {
+          "date": "2023-10-11",
+          "quote": "A huge milestone crossed on the path toward more resilient, decentralized social networks for the world."
+        },
+        {
+          "date": "2024-04-19",
+          "quote": "Decentralized social networks cannot unilaterally make decisions or change their rules for users or developers."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Worries the US is losing its web3 lead and that critical infrastructure could move offshore; frames keeping crypto onshore as a national security issue analogous to semiconductors.",
+      "provenance": "grounded",
+      "age_note": "Strongest statements Mar\u2013May 2024; recurring theme since Nov 2023, not restated in the final weeks before snapshot.",
+      "citations": [
+        {
+          "date": "2024-03-20",
+          "quote": "Keeping crypto onshore is a matter of national security. Will the U.S. learn from past experiences like semiconductor manufacturing?"
+        },
+        {
+          "date": "2023-11-17",
+          "quote": "there are signs that the US may be losing its lead in web3."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Argues closing the owner-to-active-user gap matters more than expanding the total number of investors; many holders never actually transact on-chain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-19",
+          "quote": "Let's close the gap between crypto owners and active on-chain users. This is more important ... than expanding the total number of crypto investors."
+        }
+      ]
+    },
+    {
+      "item": "wallet-over-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Flags risk that embedding wallets too deeply into the app stack abstracts blockchains away from users in a way misaligned with the web3 vision; raised as a debate prompt rather than firm position.",
+      "provenance": "grounded",
+      "age_note": "Framed as an open question soliciting both sides, not a settled personal stance.",
+      "citations": [
+        {
+          "date": "2024-07-31",
+          "quote": "There is a real risk of over-abstracting wallets and blockchains from users. Embedding wallets too deeply into the application stack is misaligned with ... web3."
+        }
+      ]
+    },
+    {
+      "item": "content-authenticity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Concerned that abundant AI-generated content and deep fakes create a need to track provenance and curate; black-box algorithms controlled by a few large companies 'won't cut it.'",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-25",
+          "quote": "Black box algorithms controlled by a few large companies won't cut it."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "it also creates a world of abundant AI-generated content, including deep fakes."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees web traffic, market cap, and AI compute consolidating into a handful of firms; views decentralized networks as a needed counterbalancing force.",
+      "provenance": "persisted",
+      "age_note": "Articulated most fully in 2023; reinforced via the Apr 2024 areas thread but not a fresh standalone statement.",
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "3 companies now generate a third of all global web traffic. 5 companies represent 50% of the Nasdaq 100's market cap."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Repeatedly cited as a leading chain on adoption metrics \u2014 top chain by monthly active addresses and, alongside Base, capturing the majority of record DEX volume thanks to low fees.",
+      "provenance": "grounded",
+      "age_note": "Praise concentrated in the Apr 2024 metrics thread; not restated near snapshot.",
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "In March there were 37M active addresses across all tracked blockchains ... The top chain by monthly active addresses: @solana."
+        },
+        {
+          "date": "2024-04-05",
+          "quote": "low-transaction fee blockchains like @base and @solana captured a majority of this activity."
+        }
+      ]
+    },
+    {
+      "item": "BASE",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Highlighted alongside Solana as a low-fee chain capturing a majority of record decentralized-exchange volume in March 2024.",
+      "provenance": "grounded",
+      "age_note": "Single Apr 2024 mention tied to DEX volume data.",
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "low-transaction fee blockchains like @base and @solana captured a majority of this activity."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Framed staking as securing a ~$400B economy of ETH, ERC20s, and NFTs \u2014 value beyond yield; treated as foundational infrastructure rather than a fresh trade.",
+      "provenance": "persisted",
+      "age_note": "Stated in 2023 (staking/Shanghai era) and never restated; old but never reversed.",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "Persistently bullish on adoption and technology: cites the State of Crypto Index and underlying metrics (active addresses, mobile wallets, DEX volume) hitting all-time highs, identifies multiple emerging 'killer apps' (stablecoins, web proofs, crypto x AI), and frames a path to onboarding billions. Notably this is tech/adoption optimism, not price speculation \u2014 he explicitly separates speculation from crypto's core value. Concerns (US policy, wallet over-abstraction) are framed as solvable headwinds, not reasons to retreat.",
+    "provenance": "grounded"
+  },
+  "notes": "Daren is a data/research-oriented a16z crypto team member; his views skew toward adoption metrics and infrastructure theses rather than token trades, so token-level signals are sparse and inferred from chain-adoption commentary (Solana, Base, ETH). Most-recent signals (Aug\u2013Sep 2024) center on stablecoins as the killer app, web proofs/zkTLS, and crypto x AI content/IP coordination \u2014 these are weighted highest. He consistently frames speculation as a byproduct separate from crypto's core value (2024-03-21), so 'risk_on' reflects conviction in technology adoption, not market-price direction. Several 2023/early-2024 theses (decentralized social, DePIN, ZK scalability, Big Tech concentration) persist as standing convictions but were not his freshest emphasis. No genuine reversals were observed in the corpus."
+}

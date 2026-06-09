@@ -1,0 +1,233 @@
+{
+  "as_of": "2025-09-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Sees stablecoins as a category that is 'obviously cooking' and a way to reset payments market structure with cheap, fast, digitally native rails unlocking new applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "A number of categories are obviously cooking: All things stablecoin and stablecoin adjacent"
+        },
+        {
+          "date": "2024-11-14",
+          "quote": "Stablecoins are the cheapest way to send a dollar. Stablecoins can reset the market structure in the payments industry"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Repeatedly frames AI and blockchain as converging technology movements; believes crypto is the 'trust machine' that delivers verifiable evaluation and compute for AI, including agent payment rails.",
+      "provenance": "grounded",
+      "age_note": "Consistent and reinforced from Jan 2025 through Aug 2025; most recent restatement Aug 2025.",
+      "citations": [
+        {
+          "date": "2025-01-05",
+          "quote": "This time is no different: AI needs blockchain-enabled computing."
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "AI needs strong, reliable evaluation based on large-scale human input. Crypto is the trust machine that can help deliver it."
+        },
+        {
+          "date": "2025-08-06",
+          "quote": "A number of categories are obviously cooking: ... The intersection of crypto and AI"
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Names bringing real world assets onchain as a category that is cooking, valued for reducing friction and expanding markets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Bringing real world assets onchain to reduce friction and expand markets (RWA tokenization)"
+        }
+      ]
+    },
+    {
+      "item": "low-fee-blockchains",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Compares current crypto infra to the internet circa 2005 / the public cloud explosion \u2014 fast, scalable chains with dirt-cheap transactions finally enabling real applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Crypto & Blockchain infra today = Internet circa 2005. Fast, scalable chains with dirt-cheap txns?"
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Excited about latest-gen wallets with slick UX, seamless login, mini apps and social primitives, comparing the moment to the viral 'invite your friends' era of early social networks.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Latest gen self custodial wallets: Slick UX, seamless login, mini apps & packed with social primitives... Virality unlocked."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Sees multichain infra and dev tooling as opening doors to bigger audiences and frictionless liquidity, breaking historical silos.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Multichain infra & dev tooling: Opening doors to bigger audiences and frictionless liquidity\u2014busting through historical silos. The floodgates are open!"
+        }
+      ]
+    },
+    {
+      "item": "app-specific-blockchains",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Identifies app-specific chains that bend the cost/performance curve as an unexplored area ripe for reinvention, enabling entirely new applications onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Verticalized, application-specific blockchains that bend the cost/performance curve in such a way that entirely new applications can move onchain."
+        }
+      ]
+    },
+    {
+      "item": "web3-messaging",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Personally championing fast, secure, decentralized messaging with seamlessly integrated apps and payments as a now-is-the-time opportunity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "The time is now for no compromises fast, secure, decentralized messaging with seamlessly integrated apps and payments."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Flags NFTs evolving across games, media and collectibles into true digital scarcity as an unexplored area ripe for reinvention.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "The evolution of NFTs from PFPs to true digital scarcity across games, media, and collectibles; what form will they take next?"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Sees harnessing crypto rails to shift the LTV curve of mobile gaming as a chance to reshape the economics of the entire industry.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Harnessing crypto rails to positively shift the LTV curve of mobile gaming; Imagine reshaping the economics of the entire industry."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Calls making DAOs workable and efficient an opportunity that extends beyond crypto to many types of organizations.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Making DAOs workable and efficient. This leads to opportunities beyond crypto too for many types of orgs"
+        }
+      ]
+    },
+    {
+      "item": "vibes-over-value",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Skeptical that crypto fads sustain value; believes they work themselves out once teams realize they must build real products used by real people, and that many ideas fail by arriving before their time or before the tech is ready.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "these kinds of fads have a way a of working themselves out once companies realize they need to build real products used by real people"
+        },
+        {
+          "date": "2025-08-06",
+          "quote": "examples from past innovation waves of ideas before their time or before the tech was ready"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Overtly bullish and optimistic: frames the moment as 'internet circa 2005' / the public cloud explosion, lists multiple sectors 'cooking,' and reads US regulatory progress (GENIUS signing, CLARITY momentum) as setting the stage for explosive innovation comparable to the 1996 Telecom Act.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal runs a16z crypto's CSX accelerator, so most of the corpus is program/event promotion and founder-coaching content with no market view. His genuine personal market signals concentrate in mid-2025 (July\u2013Aug), which are weighted most heavily here. He speaks at the sector/thesis level and names no specific tokens, so tokens_excited/concerned are empty. His stance is durable and forward-looking (structural), anchored on the crypto\u00d7AI convergence and stablecoins as the highest-conviction themes. The only real caution is a builder's skepticism of hype/fads without real products \u2014 not a macro risk-off signal. No stance reversals detected in the corpus; views build cumulatively rather than conflict."
+}

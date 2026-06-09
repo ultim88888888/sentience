@@ -1,0 +1,271 @@
+{
+  "as_of": "2023-03-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "liquid-staking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees Lido's Staking Router and unwavering decentralization commitment as advancing the post-Merge staking ecosystem; his most recent and repeated enthusiasm.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-07",
+          "quote": "The Staking Router is huge step forward. Lido's commitment to decentralization has been unwavering."
+        },
+        {
+          "date": "2022-03-03",
+          "quote": "I'm incredibly excited to support the Lido community as they continue to move the ecosystem forward"
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Believes developer growth is the engine of the crypto price-innovation cycle; actively builds tools (testnet ETH faucet, NFT analyst pack) to onboard and serve Ethereum developers.",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2021-10; most recently reinforced 2022-12-06 with the testnet ETH distribution for developers.",
+      "citations": [
+        {
+          "date": "2022-12-06",
+          "quote": "We believe Ethereum developers should have easy access to testnet ETH. This resource is the first step towards achieving a more fair distribution."
+        },
+        {
+          "date": "2021-10-08",
+          "quote": "The Ethereum developer community is more vibrant than ever."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Views NFTs as cultural artifacts whose value transcends statistical rarity; bullish on creator revenues rivaling web2 platforms and on data-driven valuation of collections.",
+      "provenance": "grounded",
+      "age_note": "Heaviest activity 2022-01 to 2022-05; thesis last touched indirectly 2023-01-05 (bot detection), so ~10-14 months old but adjacent work continues.",
+      "citations": [
+        {
+          "date": "2022-01-19",
+          "quote": "NFTs are cultural artifacts of web3. Therefore, data-driven analysis needs to look beyond statistical rarity to uncover the deeper cultural trends."
+        },
+        {
+          "date": "2022-05-17",
+          "quote": "NFTs already rival the likes of YouTube, Spotify, and Facebook when it comes to total dollars paid out"
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Expects L2 share of Ethereum fees to rise sharply from ~1.5% as rollups gain adoption; treats L2 scaling as a key metric he is watching.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2022-05-17 and not restated since; ~10 months old as of analysis date (brief 2023-03-30 L2BEAT reply does not restate the thesis).",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "rollups account for just 1.5% of fees...I expect this number to go up significantly as L2s become more widely adopted."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Champions lightweight alternatives to centralized RPC providers as a step toward reducing infrastructure centralization in Ethereum.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-07",
+          "quote": "Great work from @NoahCitron. Helios is a lightweight alternative to using a centralized RPC provider."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Frames DeFi's TVL as already rivaling large traditional banks, treating it as a growth metric worth tracking.",
+      "provenance": "persisted",
+      "age_note": "Single mention 2022-05-17; ~10 months old, never restated.",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "DeFi TVL compared to numbers from the legacy financial system. Today, DeFi would represent the 31st largest US bank"
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Excited to watch virtual worlds get built bottom-up on web3 foundations, citing ~$2B in metaverse land secondary volume.",
+      "provenance": "persisted",
+      "age_note": "Last expressed 2022-05-17; ~10 months old and not restated, conviction tempered by age.",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "We've already seen nearly $2 billion in secondary volume for metaverse land\u2026it will be exciting to watch these virtual worlds get built"
+        },
+        {
+          "date": "2022-05-06",
+          "quote": "The metaverse will be built bottom-up, not top-down."
+        }
+      ]
+    },
+    {
+      "item": "market-integrity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Concerned that bot activity and wash trading distort NFT data and market signals; actively works on detecting them via on-chain queries.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-05",
+          "quote": "Addresses touched by a dispersion contract = likely bots. A single address directly funding multiple wallets = likely bots."
+        },
+        {
+          "date": "2022-01-19",
+          "quote": "Some areas we are focused on right now include trait-specific valuation models, off-chain community/social signals, and wash trade detection."
+        }
+      ]
+    },
+    {
+      "item": "incentive-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Worries that creators who raise large upfront revenue become less incentivized to focus on long-term project success and sustainable secondary markets.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-03-31; ~12 months old, not restated.",
+      "citations": [
+        {
+          "date": "2022-03-31",
+          "quote": "creators who land large amounts of upfront revenue could become less incentivized to focus on a project's long-term success."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Flags that most DAO treasury value is still held in the protocol's own native governance token, implying concentration/diversification risk.",
+      "provenance": "persisted",
+      "age_note": "Single mention 2022-05-17; ~10 months old.",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "a large majority of value held by DAOs is still in the form of the protocol's native governance token."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Repeatedly warns users to watch out for scams around claims and on-chain interactions, signaling ongoing concern about user safety.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-12-06",
+          "quote": "As always, watch out for scams. Note that the claim process does not require any transactions on Mainnet."
+        }
+      ]
+    },
+    {
+      "item": "LDO",
+      "item_type": "token",
+      "parent_sector": "liquid-staking",
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "His most recent and clearest token-level enthusiasm: praises Lido's Staking Router and decentralization trajectory, and publicly supports the community.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-07",
+          "quote": "The Staking Router is huge step forward. Lido's commitment to decentralization has been unwavering."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Treats Ethereum as the dominant chain by block-space demand and developer activity; nearly all his work and enthusiasm centers on the Ethereum ecosystem.",
+      "provenance": "grounded",
+      "age_note": "Strongest framing dated 2022-05-17, but continuous Ethereum-centric work through 2023 reinforces it.",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "Total transaction fees paid by users, which represents the overall demand for block space... today Ethereum is unmatched."
+        }
+      ]
+    },
+    {
+      "item": "AXS",
+      "item_type": "token",
+      "parent_sector": "gaming",
+      "stance": "bullish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Expressed excitement for the Axie Infinity / Sky Mavis / Ronin team and its future building in gaming and the metaverse.",
+      "provenance": "persisted",
+      "age_note": "Stated once 2021-10-05, ~18 months old and never restated; lowest-recency view, likely stale.",
+      "citations": [
+        {
+          "date": "2021-10-05",
+          "quote": "I can't wait to see what the future holds for Axie Infinity, Sky Mavis, Lunacia, Ronin, the Metaverse, and the world"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 45,
+    "rationale": "Matsuoka is a data analyst whose statements are consistently constructive and builder-oriented across cycles \u2014 emphasizing developer growth, the price-innovation flywheel, and long-horizon adoption metrics \u2014 but he never makes explicit market-timing or price-direction calls, so the bullish posture is structural conviction in the technology rather than a tactical risk-on trade.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Matsuoka writes as an a16z crypto data/research analyst, not a trader; his corpus is overwhelmingly technical/educational (event logs, NFT data tooling, developer metrics) rather than directional market views, so risk posture is inferred. He explicitly disclaims all statements as non-investment-advice. Most-recent signal (2023-02 to 2023-03) centers on liquid staking/Lido and Ethereum decentralization infrastructure; NFT and L2/metaverse/DeFi theses are heavily concentrated in 2022 and weighted down for age where not restated. No explicit bearish or risk-off statements appear anywhere in the corpus; concerns are narrow and operational (bots, scams, creator incentives, treasury concentration) rather than macro. The Axie token view is the oldest (2021-10) and is flagged as likely stale."
+}

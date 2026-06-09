@@ -1,0 +1,261 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "He views sum-check as the right primitive to attack the real scalability bottleneck (prover time) because it minimizes the prover's cryptographic commitment costs, and believes good hardware implementations will follow.",
+      "provenance": "grounded",
+      "age_note": "First stated 2022-12-28 and repeatedly, more forcefully, reaffirmed through 2023-08; this is his current and strengthening stance, not stale.",
+      "citations": [
+        {
+          "date": "2022-12-28",
+          "quote": "sum-check-based SNARKs remain the most promising for minimizing total prover work"
+        },
+        {
+          "date": "2023-08-14",
+          "quote": "the scalability bottleneck for awhile now has been prover time. And the right technique to unlock this is sum-check"
+        }
+      ]
+    },
+    {
+      "item": "lookup-arguments",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Lasso is a new lookup argument with a far faster prover (benchmarked ~10x over Halo2, expecting 30-40x optimized) that commits only to small field elements, enabling simpler, more auditable SNARKs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso is a new lookup argument with a much faster prover"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "the initial Lasso implementation is about 10x faster than Halo2's lookup argument"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Jolt is his proposed new paradigm for zkVMs built on Lasso, decomposing instructions into lookups to slash prover commitment costs versus hand-coded optimized circuits.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Jolt builds on Lasso to offer a new paradigm in zkVM design"
+        },
+        {
+          "date": "2023-08-12",
+          "quote": "why are we spending millions of dollars and thousands of person-hours hand-coding optimized circuits, rather than just specifying evaluation tables?"
+        }
+      ]
+    },
+    {
+      "item": "polynomial-commitments",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "He expects hashing-based, field-agnostic commitments like Brakedown to beat elliptic-curve commitments whenever working over small fields makes sense, especially as recursion struggles get solved.",
+      "provenance": "grounded",
+      "age_note": "Most recent stance (2023-08-31/2023-09-03); nuances his earlier July skepticism that small fields are uniformly powerful \u2014 he now sees a clear role for them.",
+      "citations": [
+        {
+          "date": "2023-08-31",
+          "quote": "I'm excited about this approach to polynomial commitments and hopeful we'll see further improvements soon."
+        },
+        {
+          "date": "2023-09-03",
+          "quote": "for Brakedown to be better than EC-based commitments whenever working over small fields makes sense"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "He believes blockchains will reshape how society establishes trust and privacy and that the SNARK space is in an explosion of innovation with transformative potential.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-17",
+          "quote": "I believe blockchains will transform society's mechanisms for establishing trust & privacy"
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "This space is experiencing an explosion of innovation, and I think this technology can be transformative"
+        }
+      ]
+    },
+    {
+      "item": "zk-applications",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "He expects super-efficient, circuit-avoiding protocols to unlock applications like neural-network inference/training and proving statements about crypto-systems that inherently need large fields.",
+      "provenance": "grounded",
+      "age_note": "Stated 2022-12-31, reinforced 2023-07 in the large-field discussion; not restated as a focus since, but consistent with current views.",
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "neural network training/inference, the bottleneck in which is often repeated matrix multiplication of small integers"
+        },
+        {
+          "date": "2023-07-12",
+          "quote": "many applications involve proving statements about crypto-systems that inherently involve large fields"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 93,
+      "horizon": "tactical",
+      "rationale": "He warns that known attacks on FRI at 80 bits run non-interactively are feasible and pose systemic risk to the rollup ecosystem when securing hundreds of millions in assets.",
+      "provenance": "grounded",
+      "age_note": "Sustained campaign from 2022-09 through 2023-04; the dYdX StarkEx 80-bit concern was reaffirmed as still unresolved on 2023-04-18 \u2014 his most recent word on it.",
+      "citations": [
+        {
+          "date": "2023-03-09",
+          "quote": "Known attacks on FRI when run non-interactively at 80 bits of security are feasible."
+        },
+        {
+          "date": "2023-04-18",
+          "quote": "The dYdX StarkEx verifier remains at 80 bits of security today."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "He fears the community's tension between performance and security gets resolved toward performance, risking lost trust and misappropriated funds.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-14",
+          "quote": "if we prioritize performance over security, we may cause people to lose trust in the technology"
+        },
+        {
+          "date": "2022-09-14",
+          "quote": "some deployed SNARKs are being run at \"80 bits of security\" - which is not as well-defined a term as it may seem"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He remains cautious that all implemented composed SNARKs rely on heuristic security or unquantified concrete-security loss, which grows with composition depth.",
+      "provenance": "grounded",
+      "age_note": "Stated late 2022; not restated in 2023 but never reversed \u2014 he calls recursion 'extremely powerful' while keeping the security caveat. Treat as persisted.",
+      "citations": [
+        {
+          "date": "2022-12-30",
+          "quote": "I remain cautious about security especially at large depth"
+        },
+        {
+          "date": "2022-12-31",
+          "quote": "All implemented composed SNARKs have heuristic security or at least significant loss in concrete security can't be ruled out"
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "He cautions that projects deploy Poseidon at low security levels, so relaxing on hash-function security is premature.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-12-31 and not restated through 2023-09; cite with age \u2014 still his standing view absent any reversal.",
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "while projects are deploying Poseidon with at most 95 bits of security, it's premature to relax on this."
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "He argues large-field FRI deployments incur severe prover slowdowns (citing a ~33x figure) and that benchmarks are often cherry-picked to favor FRI's best-case parameters.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "using the 252-bit field is resulting in a 33x slowdown for the prover"
+        },
+        {
+          "date": "2023-08-11",
+          "quote": "Polygon zkEVM requires 250+ GBs of space"
+        }
+      ]
+    },
+    {
+      "item": "snark-cost-accounting",
+      "item_type": "sector",
+      "parent_sector": "zk",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "He sees public debate as deeply confused, conflating what projects actually do versus what they could do, and lacking rigorous cost accounting \u2014 which he tries to correct.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "the public discussion in this space has been deeply confused"
+        },
+        {
+          "date": "2023-07-12",
+          "quote": "I identify, and try to clear up, a variety of misconceptions that have been hindering progress and causing confusion"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 70,
+    "rationale": "Thaler is a cryptography researcher; his entire corpus concerns SNARK design, security, and performance, with zero statements on token prices, allocation, or market timing. He shows strong STRUCTURAL technological optimism about ZK/blockchain ('this technology can be transformative') paired with acute caution on security of live deployments \u2014 but expresses no market-level risk-on/risk-off posture, so inferring one would be extrapolation beyond his words.",
+    "provenance": "grounded"
+  },
+  "notes": "Justin Thaler's 'market view' is a technology-thesis view, not an asset view. Dominant and rising signal (Aug-Sep 2023): a strong bet that sum-check-based proving + the lookup-singularity (Lasso/Jolt) is the path to fast provers, set explicitly against FRI/large-field and proof-size-optimized SNARKs (PlonK, Marlin, Groth16, Halo2). His longest-running and highest-conviction theme is a security watchdog stance on under-secured deployments \u2014 repeatedly naming dYdX's StarkEx 80-bit FRI verifier as too low (2022-09 through 2023-04). Projects he names (StarkWare/StarkNet, dYdX StarkEx, Polygon zkEVM, RISC Zero, Matter Labs, Aztec) are discussed as technical artifacts, not investments, so they are NOT listed as tokens. Recency weighting: small-fields stance evolved from July 2023 skepticism ('counterpoint to small fields being powerful') to a balanced Sep 2023 view that small fields and Brakedown-style commitments both 'have a role to play' \u2014 current stance is the nuanced/balanced one. Recursion and Poseidon concerns are older (late 2022) and not restated in 2023, but never reversed, hence persisted."
+}

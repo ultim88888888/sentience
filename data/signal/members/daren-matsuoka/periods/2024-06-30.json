@@ -1,0 +1,304 @@
+{
+  "as_of": "2024-06-30",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Believes crypto creates permissionless markets for compute/data that democratize AI and add provenance/transparency against deep fakes and black-box models.",
+      "provenance": "grounded",
+      "age_note": "First stated 2023-12-06, restated/expanded 2024-04-19 \u2014 current and consistent.",
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized blockchains are a counterbalancing force to centralized AI."
+        },
+        {
+          "date": "2024-04-19",
+          "quote": "We can democratize AI innovation by using blockchain networks and crypto technology to decentralize access to key resources."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees Lasso/Jolt as a new SNARK paradigm and a significant step toward the 'endgame solution' for scaling, with open-source implementation.",
+      "provenance": "grounded",
+      "age_note": "Recurring excitement from 2023-08-10 through 2024-04-09; most recent is strong.",
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "This is a significant contribution toward the endgame solution for blockchain scalability, and of course the implementation is fully open source"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "Lasso and Jolt represent a new paradigm in SNARK design."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Tracks non-financial adoption hitting all-time highs (mobile wallets, active addresses); reads UX improvements as pulling mainstream users in with 20x headroom.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-07",
+          "quote": "The number of mobile wallet users in crypto is now at an all time high of 28 million"
+        },
+        {
+          "date": "2024-04-05",
+          "quote": "March was a breakout month with 27M active mobile wallet users"
+        }
+      ]
+    },
+    {
+      "item": "low-fee-blockchains",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "tactical",
+      "rationale": "Notes low-transaction-fee chains capturing majority of DEX volume and leading active-address growth \u2014 evidence cheap blockspace drives real usage.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "low-transaction fee blockchains like @base and @solana captured a majority of this activity"
+        },
+        {
+          "date": "2024-04-05",
+          "quote": "37M active addresses across all tracked blockchains, a 34% month-over-month growth. The top chain... @solana"
+        }
+      ]
+    },
+    {
+      "item": "payments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Views blockchains as a new global payment standard that removes middlemen \u2014 near-free, instant, global settlement on a $647B remittance market.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-19",
+          "quote": "Payments can be extremely cheap (<$0.01), instantly settled, and global by default - just like sending an email."
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Excited by progress toward resilient, censorship-resistant social protocols where users own and port their data and developers can't be deplatformed.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-10-11",
+          "quote": "A huge milestone crossed on the path toward more resilient, decentralized social networks for the world."
+        },
+        {
+          "date": "2024-04-19",
+          "quote": "Decentralized social networks cannot unilaterally make decisions or change their rules for users or developers."
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Sees blockchains coordinating idle physical resources (GPUs, storage, telecom) to unlock supply and democratize access at lower cost.",
+      "provenance": "grounded",
+      "age_note": "Single substantive mention (2024-04-19) within his areas-of-impact thread.",
+      "citations": [
+        {
+          "date": "2024-04-19",
+          "quote": "Using blockchain networks to coordinate a broader set of participants, we can unlock additional resources and democratize access to them."
+        }
+      ]
+    },
+    {
+      "item": "eth-staking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Frames staking as securing a large on-chain economy, not just yield; praised Lido's decentralization commitment and the Staking Router.",
+      "provenance": "persisted",
+      "age_note": "Last addressed 2023-04-20 (Lido 2023-02-07); not restated in 2024 \u2014 persisted, aging.",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "Staking is not just about earning yield. On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        },
+        {
+          "date": "2023-02-07",
+          "quote": "The Staking Router is huge step forward. Lido's commitment to decentralization has been unwavering."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Excited about expanding legal and design space for token/reputation-based governance enabling trustless coordination at scale.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-08",
+          "quote": "Huge news for expanding the ways in which DAOs can legally operate."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Worries the US is losing its web3 lead; wants regulatory clarity to keep development onshore, comparing dependence on foreign tech to semiconductors.",
+      "provenance": "grounded",
+      "age_note": "Sustained theme 2023-11-17 \u2192 2024-05-14; most recent is hopeful about getting clarity.",
+      "citations": [
+        {
+          "date": "2024-03-20",
+          "quote": "Keeping crypto onshore is a matter of national security. Will the U.S. learn from past experiences like semiconductor manufacturing?"
+        },
+        {
+          "date": "2024-05-14",
+          "quote": "The crypto industry has a real chance to get the regulatory clarity we deserve."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Sees passive ownership vs. actual usage as the bigger problem than expanding investor count; activation, not acquisition, is the growth bottleneck.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-19",
+          "quote": "Let's close the gap between crypto owners and active on-chain users. This is more important... than expanding the total number of crypto investors."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Concerned a handful of tech giants control AI compute/data and that web traffic/market cap is concentrating, plus a coming flood of AI deep fakes.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-16",
+          "quote": "3 companies now generate a third of all global web traffic. 5 companies represent 50% of the Nasdaq 100's market cap."
+        },
+        {
+          "date": "2023-12-06",
+          "quote": "it also creates a world of abundant AI-generated content, including deep fakes."
+        }
+      ]
+    },
+    {
+      "item": "nft-royalty-enforcement",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Views the unsolved difficulty of enforcing NFT royalties as a real drag that has held the sector back, though he sees promising new design ideas.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-06-26",
+          "quote": "Enforcing royalties on NFT sales has always been tricky, and it's held the industry back."
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 66,
+      "horizon": "tactical",
+      "rationale": "Leading chain by monthly active addresses and a top capturer of record DEX volume; Phantom among the fastest-growing wallets \u2014 strongest usage signal in his data.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "The top chain by monthly active addresses: @solana."
+        },
+        {
+          "date": "2024-06-07",
+          "quote": "newer mobile wallets like @phantom have been growing the fastest in recent months."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Treats ETH as securing a large multi-asset on-chain economy via staking; constructive on its post-Shanghai staking dynamics.",
+      "provenance": "persisted",
+      "age_note": "Core positive framing dates to 2023-04-20; not refreshed with a 2024 ETH-specific view.",
+      "citations": [
+        {
+          "date": "2023-04-20",
+          "quote": "On Ethereum, it's used to secure a $400 billion economy of ETH, ERC20 tokens, and NFTs."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "Consistently constructive, but his bullishness rests on rising non-financial adoption metrics (State of Crypto Index at all-time highs, active addresses, mobile wallets) rather than price. He explicitly de-emphasizes price speculation as a byproduct separate from core value, so his risk-on posture is structural/adoption-driven, not a tactical bet on token markets. Main hedge is US regulatory uncertainty.",
+    "provenance": "grounded"
+  },
+  "notes": "Daren is a16z crypto's data/metrics voice (owner of the State of Crypto Index), so his views skew toward measurable adoption and infrastructure (ZK/SNARKs, wallets, low-fee chains) over token price calls \u2014 hence an empty tokens_concerned and no individual token bear cases. He repeatedly separates speculation from crypto's 'core value proposition' (2024-03-21), which colors the structural framing of nearly every entry. Token-level views are sparse: ETH/SOL are inferred from his adoption commentary, not direct investment theses. His most recent statement (2024-06-26) on NFT royalties is the basis for treating NFTs as a concern (an unsolved design problem) rather than an excitement. Regulation/national-security is his single most-repeated worry across 18 months and trends slightly more optimistic in the most recent (2024-05-14) instance. No material reversals detected; older staking/Ethereum stances are persisted and flagged by age."
+}

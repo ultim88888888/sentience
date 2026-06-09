@@ -1,0 +1,207 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He views sum-check as the key technique to minimize prover commitment costs and total prover work \u2014 the real scalability bottleneck \u2014 superior to FFT/univariate-based systems (Plonk, Groth16, FRI).",
+      "provenance": "grounded",
+      "age_note": "Core thesis stated 2022-12-28 and continuously reaffirmed through 2023-12; current.",
+      "citations": [
+        {
+          "date": "2022-12-28",
+          "quote": "sum-check-based SNARKs remain the most promising for minimizing total prover work, and that good hardware implementations will follow"
+        },
+        {
+          "date": "2023-08-14",
+          "quote": "the scalability bottleneck for awhile now has been prover time. And the right technique to unlock this is sum-check"
+        }
+      ]
+    },
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His own flagship work; a faster lookup argument (Lasso) and lookup-centric zkVM (Jolt) that he believes will reshape SNARK design toward simpler, more auditable systems with order-of-magnitude prover speedups.",
+      "provenance": "grounded",
+      "age_note": "Launched 2023-08-10; actively being built and defended through 2023-12; current.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Introducing Lasso and Jolt, two new works that I hope will change how SNARKs are designed and built."
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "the initial Lasso implementation is about 10x faster than Halo2's lookup argument, and we expect 30x-40x after optimization"
+        }
+      ]
+    },
+    {
+      "item": "binary-field-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Most recent enthusiasm: D&P's tuning of Ligero/Brakedown over small/binary fields, especially for committing small values, which he thinks reshapes the hashing-based SNARK landscape and unlocks fast SNARKs for standard hashes.",
+      "provenance": "grounded",
+      "age_note": "Most recent major view (2023-11-20); weighted heavily for recency.",
+      "citations": [
+        {
+          "date": "2023-11-20",
+          "quote": "work just unveiled by Ben Diamond and Jim Posen (D&P) that, in my view, reshapes the landscape for hashing-based SNARKs"
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "this paves the way for much faster SNARKs for standard hash functions like Keccak"
+        }
+      ]
+    },
+    {
+      "item": "polynomial-commitments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Excited about hashing-based commitments that work over any field without expensive FFTs; expects them to beat EC-based commitments whenever small fields make sense, once recursion overhead is addressed.",
+      "provenance": "grounded",
+      "age_note": "Stated 2023-08-31 and 2023-09-03; reinforced by D&P recursion improvements 2023-11-20.",
+      "citations": [
+        {
+          "date": "2023-08-31",
+          "quote": "I'm excited about this approach to polynomial commitments and hopeful we'll see further improvements soon."
+        },
+        {
+          "date": "2023-09-03",
+          "quote": "Long-term, I expect ... Brakedown to be better than EC-based commitments whenever working over small fields makes sense."
+        }
+      ]
+    },
+    {
+      "item": "verifiable-ml",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Sees near-term, high-impact applications amenable to super-efficient circuit-free protocols, with matrix-multiplication of small integers as the bottleneck \u2014 a target for sum-check-based methods.",
+      "provenance": "persisted",
+      "age_note": "Stated once, 2022-12-31; never restated in later corpus \u2014 treat as aged.",
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "One that I think we'll see soon is neural network training/inference, the bottleneck in which is often repeated matrix multiplication of small integers."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "tactical",
+      "rationale": "He considers known attacks on non-interactive FRI at 80 bits feasible today, framing under-parameterized FRI verifiers (esp. dYdX StarkEx) as a systemic risk to the rollup ecosystem securing hundreds of millions.",
+      "provenance": "grounded",
+      "age_note": "Stated forcefully 2023-03-09 and reaffirmed 2023-04-18; ~11 months old by 2024-03-31 and not restated since, but never reversed \u2014 stance persists.",
+      "citations": [
+        {
+          "date": "2023-03-09",
+          "quote": "Known attacks on FRI when run non-interactively at 80 bits of security are feasible."
+        },
+        {
+          "date": "2023-04-18",
+          "quote": "The dYdX StarkEx verifier remains at 80 bits of security today."
+        }
+      ]
+    },
+    {
+      "item": "hash-function-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Worried that deployed SNARK-friendly hashes ship with too few security bits, making it premature to relax security assumptions in composed/recursive SNARKs.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-12-31; not restated later \u2014 aged stance, never reversed.",
+      "citations": [
+        {
+          "date": "2022-12-31",
+          "quote": "while projects are deploying Poseidon with at most 95 bits of security, it's premature to relax on this"
+        }
+      ]
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Cautious that heavy reliance on recursive composition brings overhead and imperfectly-understood security, particularly with new SNARK-friendly hashes and at large recursion depth.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-12-29/30; recursion still discussed positively as a tool in 2023-12, but the security caution itself was not restated.",
+      "citations": [
+        {
+          "date": "2022-12-29",
+          "quote": "recursion brings both overhead and imperfectly-understood security, especially when new SNARK-friendly hash functions are used"
+        },
+        {
+          "date": "2022-12-30",
+          "quote": "I remain cautious about security especially at large depth"
+        }
+      ]
+    },
+    {
+      "item": "recursive-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Argues the true sequential, non-parallelizable bottleneck for blockchain-scale proving is deep recursion; breaking work into tiny pieces raises depth and hurts latency.",
+      "provenance": "grounded",
+      "age_note": "Stated 2023-09-05; reasonably current.",
+      "citations": [
+        {
+          "date": "2023-09-05",
+          "quote": "The real sequential bottleneck to be wary of is deep recursion. You can't parallelize that"
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Believes today's FRI-based zkVMs/rollups are mis-optimized (proof-size over prover-time) and require a complete reconfiguration \u2014 from IOPs and commitments to hashes and zkVM design \u2014 to achieve scalable provers.",
+      "provenance": "grounded",
+      "age_note": "Stated 2023-11-20; most recent and current.",
+      "citations": [
+        {
+          "date": "2023-11-20",
+          "quote": "To achieve scalable SNARK provers, a complete reconfiguration of today's deployments is needed"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 90,
+    "rationale": "Thaler is a cryptography researcher; across 18 months of statements he expresses no market, macro, or risk-appetite view, and his every post carries an explicit 'none of this is investment advice' disclaimer. His 'risk' language is exclusively about cryptographic security parameters, not portfolio risk.",
+    "provenance": "grounded"
+  },
+  "notes": "This corpus is almost entirely technical SNARK/proof-systems discourse, not asset commentary. Thaler names no tokens and takes no market posture, so tokens_excited/concerned and a directional risk_regime are empty/no_view by design rather than omission. His 'sectors' are cryptographic architectures. Recency weighting: most recent strong signals (2023-11/12) are the Diamond-Posen small-binary-field/Ligero-Brakedown direction and continued Lasso/Jolt build-out \u2014 these are weighted up. The FRI 80-bit security alarm (a tactical, named-target concern about dYdX StarkEx) was stated emphatically in 2023-03/04 and never restated nor reversed by 2024-03-31; reported as current stance with an age caveat. Note an evolution, not a reversal, on recursion: he stays security-cautious about deep recursion (2022) yet actively uses GKR/recursion as a tool in Jolt (2023-12) \u2014 cautious-but-pragmatic. No statements conflict in a way requiring a reversal record beyond the age notes above."
+}

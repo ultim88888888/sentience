@@ -1,0 +1,173 @@
+{
+  "as_of": "2024-09-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Sees deep interplay between crypto and AI/ML as a frontier; repeatedly champions permissionless/decentralized AI training and compute, and stacked his most recent CSX cohort with AI-crypto startups (inference markets, personal AI, verifiable compute).",
+      "provenance": "grounded",
+      "age_note": "First flagged 2023-04-05 ('early innings'), but persistently reinforced through 2024 (Gensyn, CSX Fall 2024 AI-heavy cohort) \u2014 current and rising.",
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        },
+        {
+          "date": "2024-09-09",
+          "quote": "They're building on every level of the crypto stack, including AI, DeFi, infrastructure, and consumer applications such as photo sharing and mapping."
+        },
+        {
+          "date": "2024-05-24",
+          "quote": "co-founders of @GensynAI blew our minds with their vision of the future of distributed AI/ML"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Treats ZK/SNARK performance breakthroughs as major milestones, repeatedly amplifying them and signaling their significance to non-experts; recurring theme across the whole window.",
+      "provenance": "grounded",
+      "age_note": "Recurring 2023-08 through 2024-04 (Lasso/Jolt, CSX cryptography weeks) \u2014 sustained, current.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-11-20",
+          "quote": "Translation for folks who aren't fluent in the world of ZK- this is a big, big deal."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Views the steady cadence of L2 fee reduction and throughput gains (Optimism, zkSync, Arbitrum, EIP-4844) as a key platform accelerant analogous to prior internet platform shifts.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Continued drumbeat of L2 progress in terms of reducing Ethereum transaction fees and increasing throughput"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Singles out emerging AltDA and restaking capabilities as a near-horizon advancement; calls EigenLayer's vision 'truly next level' and joined to work with them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Increasingly robust AltDA capabilites on the horizon- @eigencloud, @CelestiaOrg"
+        },
+        {
+          "date": "2024-02-22",
+          "quote": "What @eigencloud and @sreeramkannan are building and envisioning is truly next level. Beyond excited to have the opportunity to work together."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Highlights reduced new-user onboarding friction via embedded wallets as a critical enabler that historically accelerates developer experimentation in new ecosystems.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Reduced new user onboarding friction through embedded wallets- @privy, @dynamic_xyz"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Personally enthusiastic about onchain games and consumer experiences (Pirate Nation/Proof of Play, Farcaster Frames as 'super simple and fun' app development), seeing simple/fun apps as a growth driver.",
+      "provenance": "grounded",
+      "age_note": "Pirate Nation 2023-09, Farcaster Frames 2024-02 \u2014 sustained interest, current.",
+      "citations": [
+        {
+          "date": "2024-02-09",
+          "quote": "Super simple (and fun!) app development- @farcaster_xyz Frames"
+        },
+        {
+          "date": "2023-09-21",
+          "quote": "Playing @PirateNationNFT over the last few months has been a delight."
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Cites Farcaster's surprising traction and growth over 12 months as evidence of onchain social momentum he didn't expect to materialize so fast.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-22",
+          "quote": "it would have been almost impossible to predict the traction & growth of @farcaster during the intervening 12 months"
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 40,
+      "horizon": "structural",
+      "rationale": "Treats navigating US/UK crypto regulation as a real challenge founders must actively manage, devoting CSX sessions to it \u2014 though his framing is constructive (UK as potential regulatory leader) rather than alarmed.",
+      "provenance": "grounded",
+      "age_note": "Recurring 2023-09 through 2024-07; tone is challenge-to-navigate, not existential threat \u2014 mild concern, current.",
+      "citations": [
+        {
+          "date": "2024-05-03",
+          "quote": "@BrianQuintenz and @MicheleKorver join us to unpack and decode the crypto policy & regulatory landscape across the US & UK."
+        },
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 78,
+    "rationale": "Consistently structurally bullish builder-optimist: frames crypto as in 'early innings' analogous to the early internet, energized by core primitives 'snapping into focus,' and pours his energy into accelerating founders. No bearish or risk-off signals anywhere in the corpus; his posture is conviction in long-term crypto building rather than tactical market timing.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an operating partner (CSX/Crypto Startup School lead), not an investor publishing price calls \u2014 so the corpus is dominated by founder/company-building advice (1-1s, hiring, pricing, scaling, board management) that is NOT market view. Tokens_excited/concerned are deliberately empty: he names many networks/projects (Ethereum, Optimism, Uniswap, Solana, LayerZero, Filecoin, EigenLayer, Celestia, Worldcoin) but only as ecosystems/teams to admire or work with, never as token-price or investment theses, so no grounded token-level view exists. Sector views are extracted chiefly from his 2024-02-09 'crypto primitives snapping into focus' thread (the single richest market-view artifact) and the 2024-09-09 CSX Fall cohort announcement (most recent signal, AI-heavy). His overall stance is uniformly optimistic; the lone identifiable concern (regulation) is framed as a navigable challenge, not a bearish thesis. No material stance reversals detected across the 18-month window."
+}

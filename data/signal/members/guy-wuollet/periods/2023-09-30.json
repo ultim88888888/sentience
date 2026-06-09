@@ -1,0 +1,342 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Guy Wuollet",
+  "items": [
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes core crypto coordination should extend to physical infrastructure \u2014 energy, transport, wireless \u2014 when decentralized verification cost is below the incumbent's margin. This is his most actively promoted 2023 thesis (multiple talks, the verification-cost framing).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "I'm also a big fan of applying decentralized to physical infrastructure networks. We should have a decentralized energy grid, transportation network, and wireless network"
+        },
+        {
+          "date": "2023-01-18",
+          "quote": "The essential question when considering building a DePIN network: Verification cost < incumbent margin. big if true"
+        },
+        {
+          "date": "2023-07-16",
+          "quote": "An honor to speak at @FundingCommons about DePIN (decentralized physical infrastructure networks)."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Self-described cypherpunk zealot; sees network-level and value privacy as essential, repeatedly championing Aztec, Aleo, Nym. Frames privacy as a structural pillar alongside scaling and interoperability.",
+      "provenance": "grounded",
+      "age_note": "Theme persists consistently from 2022-04 (Nym) through 2023-05 (Aztec); current and restated.",
+      "citations": [
+        {
+          "date": "2023-05-04",
+          "quote": "The next generation of Aztec is on the horizon, check out how privacy can work on Ethereum!"
+        },
+        {
+          "date": "2023-07-25",
+          "quote": "Even more scaling (believe it or not!), privacy, interoperability."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Tracks proving-system performance closely; excited by advances (JOLT, Lasso, Succinct's work) that reduce proving overhead and unlock validity-proof use cases like verifiable ML inference.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Shocking work to wrangle SNARK performance forward. Another must read banger from @SuccinctJT!"
+        },
+        {
+          "date": "2023-08-10",
+          "quote": "can we stop for the singularity ... singularity at home: JOLT + Lasso"
+        }
+      ]
+    },
+    {
+      "item": "non-financial-token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "His signature intellectual project: rebranding token+mechanism design beyond 'tokenomics' to broader societal coordination. Tokens as 'value vectors' that preserve dimensionality of value. Pushed hard via two blog posts in April 2023.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-21",
+          "quote": "tired: Tokenomics wired: Tokenology"
+        },
+        {
+          "date": "2023-04-21",
+          "quote": "If you're excited about moving beyond financial applications of tokens, please share this thread"
+        },
+        {
+          "date": "2023-01-13",
+          "quote": "Tokens are value vectors. Dollars are value scalars. Tokens matter because they allow builders to keep the high dimensionality inherent in value representations"
+        }
+      ]
+    },
+    {
+      "item": "blockchain-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Explicitly believes the space over-indexes on apps relative to infrastructure; sees building 'the rails for human coordination' as the larger opportunity.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-25",
+          "quote": "I actually think we don't have enough focus on crypto infrastructure relative to apps. Building the rails for the future of human coordination seems like a massive opportunity"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Backed Gensyn; views decentralized ML and crypto as the mechanism for distributing AI/AGI's power and aligning incentives 'at the pace of software.' Interested in verifiable on-chain inference.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-11",
+          "quote": "We're thrilled to be working with ... the team at @gensynai. The future of machine learning is decentralized"
+        },
+        {
+          "date": "2023-03-24",
+          "quote": "crypto is how we get along as the AGI that's already here becomes more evenly distributed"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-contribution",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Believes anyone should be able to contribute to a protocol/DAO and be retroactively compensated by value created; the open problem is strategyproof after-the-fact quality assessment.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-02-24",
+          "quote": "I'm very excited about the idea of permissionless contribution. ... anyone can contribute to a protocol or DAO and receive compensation in proportion to the value you created"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Led/backed Morpho; views on-chain lending as an essential DeFi primitive and the peer-to-peer-over-pool matching engine as a Pareto rate improvement and capital-efficiency unlock.",
+      "provenance": "persisted",
+      "age_note": "Core conviction stated 2022-07; only lightly restated since (2022-11 integration congrats). Older, not recently re-argued.",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "We believe on-chain lending is an essential DeFi primitive ... combining the best of both worlds to offer a Pareto improvement in lending and borrowing rates."
+        },
+        {
+          "date": "2022-07-12",
+          "quote": "Morpho has the potential to significantly lower the cost of decentralized capital and increase capital efficiency across DeFi."
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Led Entropy seed; sees MPC + smart-contract wallets as the way past the 'not your keys' tradeoff, bringing decentralization to custody and permissionless multi-chain access.",
+      "provenance": "persisted",
+      "age_note": "Stated mostly 2022-06; reaffirmed indirectly via intro offers through 2023-05 but not freshly argued.",
+      "citations": [
+        {
+          "date": "2022-06-08",
+          "quote": "Entropy has the potential to bring decentralization to custody, allowing permissionless, secure, and efficient access to almost any token for any user."
+        }
+      ]
+    },
+    {
+      "item": "intents-solvers",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "tactical",
+      "rationale": "Actively curious (not yet convicted) about whether solver coordination creates durable network effects or winner-take-all dynamics in swaps, LP management, and generalized intents.",
+      "provenance": "grounded",
+      "age_note": "Posed as open questions, August 2023 \u2014 exploratory rather than settled belief.",
+      "citations": [
+        {
+          "date": "2023-08-01",
+          "quote": "Will there be a winner take all dynamic or network effect around solvers ... what creates a long term winner coordinating the auction for inclusion?"
+        }
+      ]
+    },
+    {
+      "item": "network-layer-censorship",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "His top systemic worry: centralization at the network layer letting DNS providers and ISPs censor large portions of crypto networks \u2014 undermining decentralization's whole point.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-07-24",
+          "quote": "centralization at the network level that would allow DNS providers and ISPs to censor large portions of most crypto networks"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Sees MEV as poorly defined (conflates user-harmful and neutral extraction) and a genuine design problem at the intersection of markets and privacy; unresolved which approach solves it.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-05-12",
+          "quote": "MEV is a bad term because it includes both actions that hurt users, and actions that are neutral or helpful for users"
+        }
+      ]
+    },
+    {
+      "item": "modular-da",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Worries few validators actually persist blob data and instead query a small set of RPC providers \u2014 a centralizing pressure; floated proof-of-replication as a fix.",
+      "provenance": "persisted",
+      "age_note": "Raised 2022-05; not restated since, but unaddressed concern still live as 4844 approaches.",
+      "citations": [
+        {
+          "date": "2022-05-24",
+          "quote": "the problem where few validators actually persist the blobs and instead just query a small set of RPC providers ... it's centralizing"
+        }
+      ]
+    },
+    {
+      "item": "decentralization-efficiency-cost",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Acknowledges decentralization is always less efficient than centralization; the open question of who bears that cost and why it's worth paying is, for him, a real constraint on adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-10-22",
+          "quote": "Decentralization is always less efficient than centralization. Why is this cost worth paying, and who will bear it?"
+        }
+      ]
+    },
+    {
+      "item": "decentralized-verification",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Repeatedly names verifying that an off-chain service was actually performed as the hardest, most central unsolved problem in building any new decentralized network (incl. DePIN).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-01",
+          "quote": "Decentralized verification is the hardest problem and crux of why crypto matters"
+        },
+        {
+          "date": "2022-10-06",
+          "quote": "correctly verifying that a service has been provided/executed is almost always the hard problem when building a new decentralized network"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Default settlement and privacy/scaling substrate in nearly all his commentary \u2014 Aztec privacy 'on Ethereum,' L2/rollup roadmap analysis, validity proofs posted to Ethereum. Enthusiasm is for the platform's role, not a price call.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from consistent platform-centric framing through 2023; he never states a token price/value view.",
+      "citations": [
+        {
+          "date": "2023-05-04",
+          "quote": "check out how privacy can work on Ethereum!"
+        },
+        {
+          "date": "2023-06-02",
+          "quote": "History is rhyming in how L2s are being deployed on Ethereum"
+        }
+      ]
+    },
+    {
+      "item": "FIL",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 35,
+      "horizon": "tactical",
+      "rationale": "Curious-bullish on Filecoin's 'massive committed capacity' for DA and storing LLMs, with FVM verifying proofs \u2014 but explicitly frames latency/erasure-coding as open questions. Interest, not conviction.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-27",
+          "quote": "Anyone experimenting with Filecoin as a data availability layer? ... Filecoin has massive amounts of committed capacity"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 75,
+    "rationale": "Posture is that of a long-horizon structural builder, not a trader. Repeatedly insists 'crypto is still so early' with the ambition that anyone can redesign society at the pace of software; frames downturns as generative ('hard times create decentralized protocols,' 'when the forest burns, pine cones release their seeds') and urges optimism through the post-FTX 'vibe shift.' His risk-on stance is conviction in the technology and design space over a multi-year horizon, NOT a tactical market-timing or token-price view \u2014 he expresses essentially no near-term price/cycle positioning.",
+    "provenance": "grounded"
+  },
+  "notes": "Guy Wuollet is an a16z crypto investor and self-identified cypherpunk/decentralization 'zealot'; his statements are almost entirely about technology architecture, mechanism design, and protocol-level theses rather than tradeable token views or market timing \u2014 so token_excited/concerned entries are necessarily thin and inferred from ecosystem enthusiasm, not price calls. Recency weighting: his 2023 focus has shifted toward DePIN, Tokenology, ZK/SNARK performance, decentralized ML, and infrastructure-over-apps; 2022 themes (Morpho lending, Entropy custody, Nym privacy) persist but are less actively re-argued, so they're marked 'persisted' with lower conviction. No explicit stance reversals were detected \u2014 his core decentralization/privacy worldview is remarkably consistent across the 18-month corpus; shifts are additive (new sectors emphasized) rather than contradictory. Recurring cross-cutting belief: 'decentralized verification' is the crux of crypto and the hardest unsolved problem, which underlies both his excitement (DePIN, tokenology) and his concerns (service-delivery verification, MEV, DA centralization)."
+}

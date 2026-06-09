@@ -1,0 +1,100 @@
+[
+  {
+    "as_of": "2022-12-31",
+    "checked": 47,
+    "matched": 42,
+    "hallucinated": 5,
+    "leaked": 0
+  },
+  {
+    "as_of": "2023-03-31",
+    "checked": 0,
+    "matched": 0,
+    "hallucinated": 0,
+    "leaked": 0
+  },
+  {
+    "as_of": "2023-06-30",
+    "checked": 61,
+    "matched": 50,
+    "hallucinated": 11,
+    "leaked": 0
+  },
+  {
+    "as_of": "2023-09-30",
+    "checked": 61,
+    "matched": 50,
+    "hallucinated": 11,
+    "leaked": 0
+  },
+  {
+    "as_of": "2023-12-31",
+    "checked": 49,
+    "matched": 43,
+    "hallucinated": 6,
+    "leaked": 0
+  },
+  {
+    "as_of": "2024-03-31",
+    "checked": 0,
+    "matched": 0,
+    "hallucinated": 0,
+    "leaked": 0
+  },
+  {
+    "as_of": "2024-06-30",
+    "checked": 37,
+    "matched": 32,
+    "hallucinated": 5,
+    "leaked": 0
+  },
+  {
+    "as_of": "2024-09-30",
+    "checked": 43,
+    "matched": 38,
+    "hallucinated": 5,
+    "leaked": 0
+  },
+  {
+    "as_of": "2024-12-31",
+    "checked": 59,
+    "matched": 48,
+    "hallucinated": 11,
+    "leaked": 0
+  },
+  {
+    "as_of": "2025-03-31",
+    "checked": 40,
+    "matched": 39,
+    "hallucinated": 1,
+    "leaked": 0
+  },
+  {
+    "as_of": "2025-06-30",
+    "checked": 52,
+    "matched": 51,
+    "hallucinated": 1,
+    "leaked": 0
+  },
+  {
+    "as_of": "2025-09-30",
+    "checked": 0,
+    "matched": 0,
+    "hallucinated": 0,
+    "leaked": 0
+  },
+  {
+    "as_of": "2025-12-31",
+    "checked": 60,
+    "matched": 50,
+    "hallucinated": 10,
+    "leaked": 0
+  },
+  {
+    "as_of": "2026-03-31",
+    "checked": 46,
+    "matched": 43,
+    "hallucinated": 3,
+    "leaked": 0
+  }
+]

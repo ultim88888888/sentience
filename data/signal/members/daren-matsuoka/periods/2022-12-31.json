@@ -1,0 +1,284 @@
+{
+  "as_of": "2022-12-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Treats developer activity as the leading indicator of crypto's price-innovation cycle; personally builds tooling and most-recently shipped a testnet ETH faucet to lower builder friction.",
+      "provenance": "grounded",
+      "age_note": "Thesis first stated 2021-10-08 ('developer community more vibrant than ever'); reaffirmed by action as recently as 2022-12-06, so current, not stale.",
+      "citations": [
+        {
+          "date": "2022-12-06",
+          "quote": "We believe Ethereum developers should have easy access to testnet ETH. This resource is the first step towards achieving a more fair distribution."
+        },
+        {
+          "date": "2021-10-08",
+          "quote": "The Ethereum developer community is more vibrant than ever... more developers have entered the Ethereum ecosystem so far this year than the previous two years combined."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Sees NFTs as cultural artifacts whose value exceeds statistical rarity, and as a creator-payout rail already rivaling web2 platforms; built analytics tooling to study them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "NFTs already rival the likes of YouTube, Spotify, and Facebook when it comes to total dollars paid out."
+        },
+        {
+          "date": "2022-01-19",
+          "quote": "NFTs are cultural artifacts of web3... data-driven analysis needs to look beyond statistical rarity to uncover the deeper cultural trends."
+        }
+      ]
+    },
+    {
+      "item": "l2-scaling",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Believes rollups' tiny current share of L1 fees will grow substantially as L2 adoption scales \u2014 an explicit personal forward call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "Right now, rollups account for just 1.5% of fees...I expect this number to go up significantly as L2s become more widely adopted."
+        }
+      ]
+    },
+    {
+      "item": "liquid-staking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Tracked merge mechanics and staking-derivative demand closely; sees DeFi integrations of staking derivatives driving new demand, and supports the Lido ecosystem.",
+      "provenance": "grounded",
+      "age_note": "The Merge occurred Sept 2022; his pre-merge framing (2021-09) is now historical, but staking enthusiasm persisted to 2022-05-17 ('over $25 billion staked').",
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "The Beacon Chain (proof-of-stake) deposits and depositors ahead of its upcoming merge... There is already over $25 billion staked."
+        },
+        {
+          "date": "2022-03-03",
+          "quote": "I'm incredibly excited to support the Lido community as they continue to move the ecosystem forward"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Frames DeFi TVL as already material relative to legacy banking, positioning it as an emerging financial layer.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "DeFi TVL compared to numbers from the legacy financial system. Today, DeFi would represent the 31st largest US bank by total assets."
+        }
+      ]
+    },
+    {
+      "item": "metaverse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Excited to watch bottom-up virtual worlds get built on web3 foundations, citing ~$2B in metaverse land secondary volume.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "We've already seen nearly $2 billion in secondary volume for metaverse land...it will be exciting to watch these virtual worlds get built."
+        },
+        {
+          "date": "2022-05-06",
+          "quote": "The metaverse will be built bottom-up, not top-down."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Calls ZK developments critical to unlocking web3's full potential.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2022-04-15 and not restated; held as a standing view.",
+      "citations": [
+        {
+          "date": "2022-04-15",
+          "quote": "These technological developments [zero-knowledge proofs] are critical to unlocking the full potential of web3."
+        }
+      ]
+    },
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Watching on-chain stablecoin velocity as a signal that they are being adopted for real purchases.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "The on-chain velocity, or rate of turnover, for top stablecoins. If more people start to use stablecoins for everyday purchases, these numbers should increase."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Proactively warns users about scams around token/claim processes \u2014 his most recent expressed caution.",
+      "provenance": "grounded",
+      "age_note": "Most recent statement in corpus (2022-12-06).",
+      "citations": [
+        {
+          "date": "2022-12-06",
+          "quote": "As always, watch out for scams. Note that the claim process does not require any transactions on Mainnet."
+        }
+      ]
+    },
+    {
+      "item": "market-integrity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Flags wash-trade detection as an active research focus, implying inflated/unreliable NFT volume data.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-01-19",
+          "quote": "Some areas we are focused on right now include trait-specific valuation models, off-chain community/social signals, and wash trade detection."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Notes most DAO value remains in the protocol's own governance token, an undiversified/fragile position he is watching.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "a large majority of value held by DAOs is still in the form of the protocol's native governance token."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Warns that creators raising large upfront mint revenue may lose incentive to sustain long-term project success.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-03-31",
+          "quote": "creators who land large amounts of upfront revenue could become less incentivized to focus on a project's long-term success."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Centers nearly all analysis on Ethereum \u2014 unmatched block-space demand, dominant developer base, and the PoS transition \u2014 treating it as the core platform of web3.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-05-17",
+          "quote": "Total transaction fees paid by users, which represents the overall demand for block space... today Ethereum is unmatched."
+        }
+      ]
+    },
+    {
+      "item": "stETH",
+      "item_type": "token",
+      "parent_sector": "liquid-staking",
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Argued early that new DeFi integrations of stETH would drive a fresh wave of staking-derivative demand around the merge.",
+      "provenance": "persisted",
+      "age_note": "Core stETH-demand thesis dates to 2021-09; broad staking enthusiasm restated 2022-05-17 but stETH itself not re-cited, so treated as persisted.",
+      "citations": [
+        {
+          "date": "2021-09-24",
+          "quote": "a lot of the integrations may come before the merge, which will generate a new wave of demand for stETH (or other staking derivatives)."
+        }
+      ]
+    },
+    {
+      "item": "LDO",
+      "item_type": "token",
+      "parent_sector": "liquid-staking",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Publicly committed to supporting the Lido community advancing the staking ecosystem.",
+      "provenance": "persisted",
+      "age_note": "Single expression on 2022-03-03, not restated.",
+      "citations": [
+        {
+          "date": "2022-03-03",
+          "quote": "I'm incredibly excited to support the Lido community as they continue to move the ecosystem forward"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 65,
+    "rationale": "Despite writing through the 2022 bear market, his tone is consistently constructive and builder-focused \u2014 he frames the price-innovation cycle as self-reinforcing, cites multi-year growth analogies to the early internet, and his latest activity (Dec 2022) is shipping developer infrastructure rather than retreating. He never expresses price-level fear or a defensive posture; concerns are about market integrity and security hygiene, not directional downside. As an a16z crypto investor his posture is structurally long.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Daren is a data/research-oriented investor at a16z crypto; most statements are analytical or supportive shout-outs rather than explicit price calls, so convictions are inferred from analytical emphasis. Corpus weighting: Ethereum, NFTs, and developer tooling dominate; L2s, DeFi, metaverse, ZK, and stablecoins appear mainly in the May 2022 State of Crypto thread. No explicit risk-posture or sell statements exist, so risk_regime is extrapolated. Recency note: pre-merge staking framing (2021-09) is now historical post-Merge, but staking enthusiasm persisted into 2022; his single most recent statement (2022-12-06) reinforces the developer-infrastructure thesis and adds a scam-caution note. No tokens were expressed as concerns."
+}

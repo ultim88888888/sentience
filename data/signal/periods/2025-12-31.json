@@ -1,0 +1,630 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A1",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "Seen as crypto's clearest product-market fit since Bitcoin's store-of-value: cheapest way to send a dollar (<1s, <1c), volume rivaling/exceeding Visa & ACH, organic use uncorrelated with trading, and a vector to sustain USD/Treasury dominance. The house's #1 conviction theme and the on-ramp to onboard a billion people.",
+      "provenance": "grounded",
+      "age_note": "Called the 'killer app' in Sept 2024; conviction intensified steadily through 2025 (GENIUS Act, $1T+ monthly volume)",
+      "citations": [
+        {
+          "date": "2025-06-06",
+          "quote": "Stablecoins now present what I believe is the first credible opportunity to onboard a billion people into crypto."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "Stablecoins have found product-market fit, now rivaling the world's largest payment networks in transaction volume."
+        },
+        {
+          "date": "2025-04-18",
+          "quote": "Stablecoins have found product market fit... organic, non-speculative use appears to be widespread and growing"
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "AI agents need an economy and can't use bank accounts but can use crypto wallets; crypto provides agent-to-agent payment rails, proof-of-personhood, verifiable compute, IP provenance, and human-feedback data markets. Repeatedly framed as the convergence where crypto solves AI's bottlenecks.",
+      "provenance": "grounded",
+      "age_note": "Articulated mid-2024, scaled into multiple 2025 investments (Catena, Yupp, Poseidon, EigenCloud, Ambient)",
+      "citations": [
+        {
+          "date": "2024-09-05",
+          "quote": "AI agents can't have bank accounts, but they can have crypto wallets."
+        },
+        {
+          "date": "2025-05-20",
+          "quote": "Crypto rails are a natural fit for AI agents, which will need access to an economy to unlock their full potential."
+        },
+        {
+          "date": "2025-09-26",
+          "quote": "Micropayments are not being talked about enough... AI agents are the perfect customers."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Late-2025 the house elevated privacy to the most important moat: institutions treat lack of privacy as a dealbreaker, and 'secrets are hard to migrate' creates winner-take-most chain lock-in unlike commoditized public blockspace. Bullish on Aleo, Aztec, Seismic, Railgun, plus TEEs and collaborative SNARKs.",
+      "provenance": "grounded",
+      "age_note": "Long-held interest (coSNARKs/Aleo 2024) sharpened into a top thesis through 2025; strongest statements Dec 2025",
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "Privacy will be the most important moat in crypto. Why? Because secrets are hard to migrate."
+        },
+        {
+          "date": "2025-09-08",
+          "quote": "the lack of privacy onchain is one of the biggest sources of friction, if not a dealbreaker, for many institutions."
+        },
+        {
+          "date": "2025-12-26",
+          "quote": "Encrypted smart contracts\u2014programmable privacy for every other defi use case"
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Framed as the native antidote to physical-infrastructure monopolies \u2014 user-generated services for the physical world. Energy especially seen as an industry that needs decentralization. Now an explicit GP investment focus.",
+      "provenance": "grounded",
+      "age_note": "Consistent 2024\u20132025; elevated to core mandate when author became GP Nov 2025",
+      "citations": [
+        {
+          "date": "2025-05-19",
+          "quote": "DePIN is eating the world"
+        },
+        {
+          "date": "2025-03-25",
+          "quote": "DePIN provides the most salient path towards making atoms look more like bits for builders and investors alike."
+        },
+        {
+          "date": "2025-02-26",
+          "quote": "DePIN networks being the native antidote to physical infrastructure monopolies."
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "DeFi maturing toward institutional capital markets onchain \u2014 DEX share rising (~17-20%), perps breaking out, Solana/Jito building fair execution (BAM). Regulatory clarity expected to unlock tokenized securities trading. Core GP focus area.",
+      "provenance": "grounded",
+      "age_note": "Persisted and accelerating; 2025 institutional turn and Jito (JTO) investment",
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "20% of spot crypto trading now happens in DeFi"
+        },
+        {
+          "date": "2025-10-16",
+          "quote": "help Solana become the dominant venue for Internet Capital Markets."
+        },
+        {
+          "date": "2025-08-01",
+          "quote": "Market structure can't work without protecting DeFi."
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Framed via Hayek's knowledge problem as 'markets are the computers' \u2014 real-time information aggregation that can outperform polls/experts. Co-led Kalshi Series D; explosive volume growth cited as validation.",
+      "provenance": "grounded",
+      "age_note": "Interest expressed 2024 (Polymarket/election odds); converted to conviction investment Oct\u2013Dec 2025",
+      "citations": [
+        {
+          "date": "2025-12-02",
+          "quote": "Kalshi's trajectory has been very impressive. Volume has grown 8x since July, to more than $1B per week."
+        },
+        {
+          "date": "2025-10-10",
+          "quote": "prediction markets create an open, transparent, and incentive-driven way to aggregate beliefs about the future."
+        }
+      ]
+    },
+    {
+      "item": "revenue-generating-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 83,
+      "horizon": "structural",
+      "rationale": "The maturation thesis: tokens should capture protocol revenue via programmatic buyback/burn (EIP-1559, UniStaker) achieving 'economic independence' from any company \u2014 value accrual from systems running absent human control. Uniswap fee switch and only 22 tokens with >$1M monthly revenue framed as the beginning of a healthier token economy.",
+      "provenance": "grounded",
+      "age_note": "Long argued; crystallized in 2025 'Magnificent Seven' token taxonomy and Uniswap closed-loop proposal Nov 2025",
+      "citations": [
+        {
+          "date": "2025-11-11",
+          "quote": "Network tokens are the only asset in the world capable of true economic independence"
+        },
+        {
+          "date": "2025-08-13",
+          "quote": "Network tokens should earn revenue from their protocols. This is necessary to fuel growth, attract investment, and pay incentives."
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Bringing real-world assets onchain to reduce friction and expand markets named as an obviously-cooking category alongside stablecoins and AI; $30B already tokenized.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Bringing real world assets onchain to reduce friction and expand markets (RWA tokenization)"
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "$30B in real-world assets are tokenized onchain"
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Bullish on NFTs evolving from PFPs to functional digital scarcity (tickets, identity, collectibles) and on blockchains as the IP/provenance layer for the AI age (Story Protocol). Wants regulatory safe harbor for collectible tokens grounded in consumptive (not speculative) demand.",
+      "provenance": "grounded",
+      "age_note": "Sustained thesis 2024\u20132025; reiterated desire for 'functional rather than speculative' NFTs Oct 2025",
+      "citations": [
+        {
+          "date": "2024-08-21",
+          "quote": "We want to help Story become the infrastructure for AI systems and creative people to happily co-exist."
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "here's hoping that 2026 brings even more innovation around NFTs for functional rather than speculative purposes"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 71,
+      "horizon": "structural",
+      "rationale": "Believe proving networks will become essential infrastructure and SNARK provers are improving fast (Jolt, sum-check/Twist&Shout). Excitement explicitly tempered by 'not ready for prime time' caution \u2014 bugs, weak formal verification, >100,000x overhead.",
+      "provenance": "grounded",
+      "age_note": "Consistent technical optimism with persistent maturity caveats throughout 2024\u20132025",
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "while SNARKs and zkVMs show immense promise, they're not ready for complex, high-stakes deployments. Bugs are everywhere"
+        },
+        {
+          "date": "2025-12-11",
+          "quote": "By the end of 2026, we should hit 'Stage 2': 10,000x prover overhead relative to native execution."
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "2025 declared 'the year of institutional adoption' \u2014 banks, asset managers, fintechs making real commitments; ETFs holding $150-175B; Circle IPO. Founders advised to adopt an enterprise playbook.",
+      "provenance": "grounded",
+      "age_note": "New, defining theme of 2025; contrasted explicitly against prior hostile-regulator era",
+      "citations": [
+        {
+          "date": "2025-10-22",
+          "quote": "Some of the largest financial institutions aren't just exploring crypto, they're making real commitments."
+        },
+        {
+          "date": "2025-10-01",
+          "quote": "Crypto has exited the echo chamber and entered the enterprise."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Viewed as the next evolution of gambling with no inherent value \u2014 fickle, exposing retail to harm, and a distraction from building real economic value. Tolerated as legally distinct (not securities) but seen as detached from sustainable value creation.",
+      "provenance": "grounded",
+      "age_note": "Consistent skepticism 2024\u20132025",
+      "citations": [
+        {
+          "date": "2025-01-20",
+          "quote": "Meme coins are just the next evolution of the gambling industry."
+        },
+        {
+          "date": "2025-04-28",
+          "quote": "memecoins have no inherent value. That's the whole point."
+        }
+      ]
+    },
+    {
+      "item": "company-backed-tokens",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Deep concern that issuers dress up profits-interests-in-a-company (FTT archetype) as network tokens to evade securities laws \u2014 a 'form over substance' loophole that would damage capital markets and the industry's legitimacy. The central legal preoccupation of the house.",
+      "provenance": "grounded",
+      "age_note": "Dominant 2025 theme via token-taxonomy work; intensified with DATs and tokenized-equity trend late 2025",
+      "citations": [
+        {
+          "date": "2025-03-05",
+          "quote": "Company-backed tokens are *not* network tokens."
+        },
+        {
+          "date": "2025-06-07",
+          "quote": "If you imbue a network token with all the trust dependencies that exist with ordinary securities, then that token should be subject to securities laws."
+        }
+      ]
+    },
+    {
+      "item": "digital-asset-treasuries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 73,
+      "horizon": "tactical",
+      "rationale": "Explicitly likened to the SPAC craze \u2014 'foaming at the mouth and nonsensical jargon' \u2014 with unresolved disclosure, Gary Plastic, and sub-NAV problems, especially for less-mature projects spinning up their own vehicles. Predicts class-action litigation.",
+      "provenance": "grounded",
+      "age_note": "New concern surfacing mid-to-late 2025",
+      "citations": [
+        {
+          "date": "2025-11-05",
+          "quote": "the foaming at the mouth and nonsensical jargon were the exact same as the SPAC craze. The class action lawsuits over DATs are coming."
+        },
+        {
+          "date": "2025-07-24",
+          "quote": "I'm not sure these problems are solvable where management teams of less mature projects are spinning up and controlling these public vehicles themselves."
+        }
+      ]
+    },
+    {
+      "item": "weak-market-structure-legislation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 71,
+      "horizon": "tactical",
+      "rationale": "Worry the Senate draft 'punts all the hard stuff to regulators' and undermines CLARITY's transfer-restriction/decentralization framework, creating short-term incentives to skip decentralization and dump on retail. Also concern that SEC issues guidance but fails to act on it, harming compliant builders.",
+      "provenance": "grounded",
+      "age_note": "Shift from 'fight for existence' (2024) to 'fight over the details' (2025) \u2014 concern is now legislative quality, not survival",
+      "citations": [
+        {
+          "date": "2025-08-07",
+          "quote": "The Senate's approach is simple because it punts all the hard stuff to regulators."
+        },
+        {
+          "date": "2025-11-06",
+          "quote": "the failure of the SEC to act on that guidance renders it far more harmful than helpful."
+        }
+      ]
+    },
+    {
+      "item": "autonomous-protocol-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Strong opposition to forcing compliance (whitelists, risk-scoring oracles) into autonomous protocols \u2014 argued it would make DeFi permissioned, destroy credible neutrality, and 'kill the technology.' Regulation should target apps/frontends, not software.",
+      "provenance": "grounded",
+      "age_note": "Consistent 'regulate apps not protocols' stance since 2024; sharpened by Tornado Cash ruling and DeFi-compliance debate 2025",
+      "citations": [
+        {
+          "date": "2025-10-30",
+          "quote": "Regulating autonomous blockchain protocols is not a viable solution \u2014 it would kill the technology."
+        },
+        {
+          "date": "2025-10-30",
+          "quote": "Option 1 is DeFi. Option 2 is not."
+        }
+      ]
+    },
+    {
+      "item": "premature-secondary-liquidity",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Long-standing thesis that unfettered early liquidity (ICO/SPAC analogy) breeds vaporware and pump-and-dump; insiders (founders/VCs) should be locked up until decentralization. Disclosure alone is insufficient.",
+      "provenance": "grounded",
+      "age_note": "Heavily argued 2024; persists as the rationale behind 2025 transfer-restriction advocacy",
+      "citations": [
+        {
+          "date": "2024-09-11",
+          "quote": "Unfettered access to secondary market liquidity is an existential threat to innovation."
+        },
+        {
+          "date": "2025-04-14",
+          "quote": "A control-based decentralization framework that restricts insiders would help. Simply excluding digital assets from securities laws would not."
+        }
+      ]
+    },
+    {
+      "item": "foreign-foundation-structures",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Concern that offshore foundations are used as a shortcut to fake decentralization \u2014 extractive, run by foreign lawyers who don't understand the tech, with hidden tax/governance risks. Now seen as unnecessary given DUNA/BORG tooling and CLARITY.",
+      "provenance": "grounded",
+      "age_note": "Concern crystallized 2025; framed as a problem now being solved ('the era of crypto offshoring is over')",
+      "citations": [
+        {
+          "date": "2025-06-02",
+          "quote": "It's time for crypto move on from the 'foundation' model."
+        },
+        {
+          "date": "2025-03-20",
+          "quote": "some consultants are manufacturing a sense of urgency to push them into foreign foundations... All the reasons they give... are nonsense."
+        }
+      ]
+    },
+    {
+      "item": "quantum-threat",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 54,
+      "horizon": "structural",
+      "rationale": "Measured concern: encryption transition is urgent due to HNDL, and Bitcoin faces special migration challenges ($750B in vulnerable addresses, slow governance). But explicitly skeptical of hype \u2014 a cryptographically relevant quantum computer before 2030 is 'highly unlikely,' and near-term bugs are the bigger risk.",
+      "provenance": "grounded",
+      "age_note": "Emerged as a 2025 topic; stance is deliberately calibrated against both alarmism and dismissal",
+      "citations": [
+        {
+          "date": "2025-12-05",
+          "quote": "match urgency to actual threats. Encryption: urgent (HNDL). Signatures: deliberate."
+        },
+        {
+          "date": "2025-10-29",
+          "quote": "Today, $750 billion worth of Bitcoin sits in quantum vulnerable addresses."
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 56,
+      "horizon": "structural",
+      "rationale": "Research-side concern that PBS decentralizes validation but centralizes building (proof-of-MEV 'big get bigger'), and that multi-block/cross-chain MEV is dangerous. Treated as a design problem to solve transparently onchain rather than to regulate.",
+      "provenance": "grounded",
+      "age_note": "Persistent research concern 2024\u20132025; investment in Jito's BAM framed as a mitigation",
+      "citations": [
+        {
+          "date": "2024-10-25",
+          "quote": "PBS is reducing centralization in validation, but might create centralization in building"
+        },
+        {
+          "date": "2025-05-19",
+          "quote": "we should not rush to regulate MEV and should instead allow the evolutionary process to unfold transparently onchain."
+        }
+      ]
+    },
+    {
+      "item": "sol",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Praised as pragmatic, shipping-focused engineering that scaled blockchains ~1000x \u2014 fast, cheap, reliable, now a dominant DeFi venue and the venue for internet capital markets. Backed via Jito (JTO) investment and cited as proof infrastructure is ready.",
+      "provenance": "grounded",
+      "age_note": "Increasingly positive through 2025; strongest endorsements H2 2025",
+      "citations": [
+        {
+          "date": "2025-07-25",
+          "quote": "There are no zealots in Solana, only pragmatic engineers... shipping beats maximalism"
+        },
+        {
+          "date": "2025-12-07",
+          "quote": "transactions for under a penny in under a second on Solana"
+        }
+      ]
+    },
+    {
+      "item": "eth",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Held up as the canonical legitimate network token \u2014 deflationary via EIP-1559 burn, value accrues from a decentralized network 'absent human control,' the model for non-security network tokens. Privacy progress (Aztec) and L2 scaling cited positively.",
+      "provenance": "grounded",
+      "age_note": "Consistently the reference 'good' network token; some research debate over valuation framework and L1 fee/state design",
+      "citations": [
+        {
+          "date": "2025-04-15",
+          "quote": "Every transaction on Ethereum results in a portion of ETH getting burned."
+        },
+        {
+          "date": "2024-09-08",
+          "quote": "long term I think most of us expect eth to be a deflationary currency"
+        }
+      ]
+    },
+    {
+      "item": "uni",
+      "item_type": "token",
+      "parent_sector": "defi",
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "The flagship example of a network token completing the 'closed loop' \u2014 protocol fees captured by the token via buyback-and-burn (UniStaker/DUNI), with optional minting to fund growth. Cited as proof network tokens can be productive without becoming securities.",
+      "provenance": "grounded",
+      "age_note": "Long cited as a clean network token; conviction reinforced by Nov 2025 fee-switch proposal",
+      "citations": [
+        {
+          "date": "2025-11-10",
+          "quote": "Uniswap will finally become a 'closed loop' network token: fees paid to the decentralized protocol will be captured by the token"
+        },
+        {
+          "date": "2025-11-11",
+          "quote": "UNI is a network token... what matters is that it is integrated into a decentralized network"
+        }
+      ]
+    },
+    {
+      "item": "jto",
+      "item_type": "token",
+      "parent_sector": "mev",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Direct token investment Oct 2025; BAM (Block Assembly Marketplace) seen as solving insidious MEV to enable fair onchain order books and dark pools on Solana.",
+      "provenance": "grounded",
+      "age_note": "New conviction position Oct 2025",
+      "citations": [
+        {
+          "date": "2025-10-16",
+          "quote": "a16z crypto is making an investment in @jito_sol (JTO) tokens... to help Solana become the dominant venue for Internet Capital Markets."
+        }
+      ]
+    },
+    {
+      "item": "eigen",
+      "item_type": "token",
+      "parent_sector": "restaking",
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Added $70M token investment with lockup; EigenCloud seen as unlocking verifiable, credibly-neutral applications and infrastructure AI agents will need. Caveat: restaking carries modeled security risks.",
+      "provenance": "grounded",
+      "age_note": "Reinforced June 2025 with follow-on token purchase",
+      "citations": [
+        {
+          "date": "2025-06-17",
+          "quote": "we've invested an additional $70M in @eigencloud tokens (EIGEN) with a lockup."
+        }
+      ]
+    },
+    {
+      "item": "zro",
+      "item_type": "token",
+      "parent_sector": "interoperability",
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Added $55M in ZRO tokens with 3-year lockup; protocol cited as enabling new businesses and complex workflows moving onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-04-17",
+          "quote": "we've invested an additional $55M in @LayerZero_Core tokens (ZRO), with a 3-year lockup."
+        }
+      ]
+    },
+    {
+      "item": "btc",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Respected as the most secure/decentralized network and a genuine store of value (not a memecoin), but viewed with measured caution: extreme ossification slows upgrades and ~$750B sits in quantum-vulnerable addresses with slow governance to fix it. Excitement is qualified, not unreserved.",
+      "provenance": "grounded",
+      "age_note": "Stable respect over the period; quantum and ossification caveats grew louder late 2025",
+      "citations": [
+        {
+          "date": "2025-02-20",
+          "quote": "being the native asset of what is arguably the most secure and decentralized network gives it economic characteristics... unlike any memecoin."
+        },
+        {
+          "date": "2025-12-05",
+          "quote": "Bitcoin has to take the threat seriously... addressing these mainly non-technical issues requires years of coordination."
+        }
+      ]
+    },
+    {
+      "item": "ftt",
+      "item_type": "token",
+      "parent_sector": "company-backed-tokens",
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "The house's recurring cautionary archetype: a synthetic profits-interest in a centralized company (FTX) that, by economic reality, should have been regulated as a security. Used constantly to argue against form-over-substance loopholes. Concern is about the pattern, not a live tradable position.",
+      "provenance": "grounded",
+      "age_note": "Used as the canonical 'bad token' example throughout 2024\u20132025",
+      "citations": [
+        {
+          "date": "2025-04-02",
+          "quote": "tokens that provide a synthetic interest in a company (FTT)"
+        },
+        {
+          "date": "2025-06-07",
+          "quote": "Ultimately, FTT was a security."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "memecoins",
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Treated as valueless speculation vehicles \u2014 ownership of nothing \u2014 that, when fueled purely by speculation detached from economic value, expose consumers to harm. Creator/celebrity coins specifically called pure speculation vehicles.",
+      "provenance": "grounded",
+      "age_note": "Consistent through 2025",
+      "citations": [
+        {
+          "date": "2025-01-20",
+          "quote": "Memecoins are the opposite of equity \u2014 ownership of nothing versus something."
+        },
+        {
+          "date": "2025-04-22",
+          "quote": "Every one of those [creator coins] I've seen has been a pure speculation vehicle."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 88,
+    "rationale": "As of late 2025 the house is emphatically bullish: GENIUS Act signed and CLARITY advancing (regulatory existential threat resolved), record institutional adoption, $4T+ market cap, $1T+ monthly stablecoin volume, sub-second/sub-penny transactions, and a stated belief that 'app time' is imminent. The posture is constructive risk-on but disciplined \u2014 paired with insistence on fundamentals, decentralization, security ('Don't Blow Up'), and skepticism toward memecoins/DATs/speculation. It is offense built on a thesis that infrastructure is finally ready, not indiscriminate exuberance.",
+    "provenance": "grounded"
+  },
+  "notes": "Methodology: corpus spans ~July 2024\u2013Dec 2025; recent statements weighted heavily. The clearest reversal is regulatory posture \u2014 2024 was dominated by defensive 'lawfare/debanking/existential fight' framing (concern), which by 2025 flipped to optimism about clarity, so the live consensus is constructive even though regulatory *quality* (weak Senate draft, SEC inaction, protocol-regulation/oracle-compliance) remains an active concern. This is an aggregate of multiple distinct voices (legal/regulatory = Miles Jennings; macro-theses & books = Chris Dixon; token economics & metrics = Eddy Lazzarin, Daren Matsuoka, Scott Kominers; stablecoins = Sam Broner; SNARKs/zk = Justin Thaler; plus research-seminar transcripts from Dan Boneh, Tim Roughgarden, Ali Yahya and visiting academics). Where the 'team' speaks it is coherent on the big themes (stablecoins, AI, decentralization-as-control, network tokens with revenue, privacy), but individual emphases differ \u2014 e.g., research transcripts surface MEV/consensus/quantum nuances not always reflected in the investing-side bullishness. Conviction scores are intensity of expressed enthusiasm/worry, NOT probabilities. Several 'excited' tokens (JTO, EIGEN, ZRO) are disclosed a16z investments, so enthusiasm is partly endogenous to the book. FTT is included under tokens_concerned as a rhetorical archetype (FTX is defunct), not a live position."
+}

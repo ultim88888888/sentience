@@ -1,0 +1,455 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Daren Matsuoka",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "He calls stablecoins the 'killer app' with clear product-market fit; sub-penny fees make crypto payment rails a no-brainer that can bring billions onchain and bootstrap a global payment network.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-12",
+          "quote": "Stablecoins are the \"killer app\" of crypto, and here's a bunch of great data that shows it."
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "Stablecoin payments and AI agents are some of the clearest use cases for crypto since Bitcoin's store of value."
+        },
+        {
+          "date": "2025-01-07",
+          "quote": "Adjusted Stablecoin Transaction Volume... Stablecoin adoption is on the rise as infra developments bring down fees."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Only 5-10% of ~617M owners transact; he frames closing this gap as a bigger opportunity than growing total investors, and named it his core 2025 thesis.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-03-19",
+          "quote": "Let's close the gap between crypto owners and active on-chain users. This is more important... than expanding the total number of crypto investors."
+        },
+        {
+          "date": "2024-12-04",
+          "quote": "I believe this is the year to re-engage the 617M \"passive\" crypto holders and bring the world onchain."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Blockchains are a counterbalance to centralized AI, enabling permissionless compute/data markets; and AI agents as primary crypto users could erase traditional UX barriers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "Decentralized blockchains are a counterbalancing force to centralized AI."
+        },
+        {
+          "date": "2024-12-18",
+          "quote": "Crazy to think that if AI agents become the primary users of crypto, a lot of the UX challenges... go away."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "His favorite adoption indicator; repeated all-time highs (35M monthly users by Dec 2024) signal UX improvements drawing mainstream global users, with 20x+ headroom.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-07",
+          "quote": "The number of monthly users hit an all-time high of 35 million in December."
+        },
+        {
+          "date": "2025-02-03",
+          "quote": "Another month, another all time high for mobile wallet users."
+        }
+      ]
+    },
+    {
+      "item": "zktls-web-proofs",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "An 'underrated' category he became convinced is critical to onboarding a billion people, because it imports contributors with incentives exogenous to the protocol (e.g., ESPN resolving markets).",
+      "provenance": "persisted",
+      "age_note": "Emphasized heavily July-Aug 2024; not restated since, so treated as persisted.",
+      "citations": [
+        {
+          "date": "2024-07-29",
+          "quote": "zkTLS / zkEmail is an underrated category in crypto."
+        },
+        {
+          "date": "2024-08-28",
+          "quote": "I'm now convinced that web proofs/zkTLS will play a critical role in getting us there."
+        }
+      ]
+    },
+    {
+      "item": "ip-content-coordination",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Expects a >1,000x explosion in AI-generated content that legacy distribution/IP rails can't handle; blockchains can provide the open global coordination, provenance, and curation layer.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-25",
+          "quote": "We need an open, global coordination layer in order for AI generated content to thrive. And this is exactly what blockchains can provide."
+        },
+        {
+          "date": "2024-08-21",
+          "quote": "We desperately need an open, global coordination layer for IP, and I couldn't be more excited about what Story is building!"
+        }
+      ]
+    },
+    {
+      "item": "prediction-markets",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Sees them as a powerful real-time truth-surfacing mechanism whose accuracy improves with broader (esp. US) participation; cites the post-legalization odds shift as evidence.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-07-21",
+          "quote": "Prediction markets have proven to be a powerful tool for surfacing real time information."
+        },
+        {
+          "date": "2024-10-07",
+          "quote": "the odds notably shifted right after U.S. people... were allowed to legally participate."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 64,
+      "horizon": "structural",
+      "rationale": "Open protocols are producing vibrant developer ecosystems; he speculates on emergent data/AI-training opportunities built atop Farcaster's open data.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-22",
+          "quote": "The Decentralized Social experiment is underway, and vibrant developer ecosystems are emerging around open protocols like Farcaster."
+        },
+        {
+          "date": "2025-01-23",
+          "quote": "is there a future where Farcaster data is used to train AI models?... Maybe there's even a way to build a sustainable, open protocol around all this."
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Views DAO treasuries as an underappreciated funding pool larger than annual crypto VC, and is encouraged by expanding legal frameworks for them.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-15",
+          "quote": "DAOs are an underappreciated source of funding for builders."
+        },
+        {
+          "date": "2024-03-08",
+          "quote": "Huge news for expanding the ways in which DAOs can legally operate."
+        }
+      ]
+    },
+    {
+      "item": "depin",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Cited as a promising early experiment for unlocking idle physical resources (GPUs, storage, telecom) and democratizing access.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "we're also seeing promising early experiments in areas like gaming, social, and DePIN."
+        }
+      ]
+    },
+    {
+      "item": "desci",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Acknowledges it's early days but is enthusiastic about using blockchains for hard scientific problems and explicitly wants more builders to enter.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-09-25",
+          "quote": "It's early days for DeSci, but I'm grateful for entrepreneurs... using blockchains to solve some of the hardest... problems in the world!"
+        },
+        {
+          "date": "2024-10-16",
+          "quote": "would love to see more builders enter this space!"
+        }
+      ]
+    },
+    {
+      "item": "us-crypto-competitiveness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Repeatedly frames offshoring of web3 development as a national-security risk akin to semiconductors. Note: by early 2025 his tone shifted toward optimism as US regulatory/political tailwinds strengthened.",
+      "provenance": "grounded",
+      "age_note": "Concern strongest 2023-2024; by Oct 2024-Feb 2025 he sounds more optimistic on US policy ('political tailwinds have been strong'; praises CFTC leadership), so the worry has partly resolved.",
+      "citations": [
+        {
+          "date": "2023-11-17",
+          "quote": "there are signs that the US may be losing its lead in web3... This is a matter of national security."
+        },
+        {
+          "date": "2024-03-20",
+          "quote": "Keeping crypto onshore is a matter of national security."
+        }
+      ]
+    },
+    {
+      "item": "platform-power-consolidation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Worries that AI development is concentrated among a handful of tech giants operating black boxes; sees crypto as possibly the only credible counterbalancing force.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-11-11",
+          "quote": "This consolidation is worrisome. Crypto might be the only credible counterbalancing force out there."
+        },
+        {
+          "date": "2024-07-25",
+          "quote": "Black box algorithms controlled by a few large companies won't cut it."
+        }
+      ]
+    },
+    {
+      "item": "ai-content-flooding",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Abundant AI content and deepfakes threaten information integrity; needs proof-of-authenticity protocols plus decentralized incentivized curation to surface good content.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-06",
+          "quote": "it also creates a world of abundant AI-generated content, including deep fakes."
+        },
+        {
+          "date": "2024-07-25",
+          "quote": "authentication / provenance is important, but so is curation so that we can surface the good AI content."
+        }
+      ]
+    },
+    {
+      "item": "sybil-bot-metrics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "Low fees and incentives have made raw active-address counts a poor proxy for real users, complicating the industry's ability to gauge genuine adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-07",
+          "quote": "Active addresses have lately become a really bad measure for users (low fees + incentives to game)."
+        }
+      ]
+    },
+    {
+      "item": "wallet-over-abstraction",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Raised the risk that embedding wallets too deeply into apps could misalign with the self-custody/ownership vision of web3. Posed as a debate rather than a firm stance.",
+      "provenance": "persisted",
+      "age_note": "Stated once (July 2024) as an open question and never revisited.",
+      "citations": [
+        {
+          "date": "2024-07-31",
+          "quote": "There is a real risk of over-abstracting wallets and blockchains from users."
+        }
+      ]
+    },
+    {
+      "item": "dollar-reserve-cbdc",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Doubling of wholesale CBDC development post-sanctions threatens US dollar dominance; argues USD stablecoins are a better answer than a sovereign CBDC.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-03",
+          "quote": "wholesale CBDC developments have DOUBLED. This is a national security concern."
+        }
+      ]
+    },
+    {
+      "item": "USDC",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His clearest conviction asset class \u2014 sub-penny L2 USDC transfers achieved product-market fit and are the on-ramp for mass adoption.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-10-16",
+          "quote": "USDC transfers on Ethereum L2s now cost less than a penny."
+        },
+        {
+          "date": "2024-12-03",
+          "quote": "Over 99% are denominated in USD... why not embrace what's already working?"
+        }
+      ]
+    },
+    {
+      "item": "SOL",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Repeatedly cited as the top chain by monthly active addresses and a leader in low-fee DEX volume \u2014 framed as observational evidence of low-fee adoption rather than a price call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "low-transaction fee blockchains like @base and @solana captured a majority of this activity."
+        },
+        {
+          "date": "2024-04-05",
+          "quote": "The top chain by monthly active addresses: @solana."
+        }
+      ]
+    },
+    {
+      "item": "BASE",
+      "item_type": "token",
+      "parent_sector": "l2-scaling",
+      "stance": "bullish",
+      "conviction": 48,
+      "horizon": "structural",
+      "rationale": "Highlighted alongside Solana as a low-fee chain capturing the majority of DEX activity, consistent with his thesis that cheap blockspace drives real usage.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-05",
+          "quote": "low-transaction fee blockchains like @base and @solana captured a majority of this activity."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "institutional-adoption",
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Names ETP net flows for BTC and ETH as a key 2025 metric to watch, expecting institutional exposure to translate into rising flows \u2014 a structural-adoption read, not a trade.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-07",
+          "quote": "As more institutional investors seek to get exposure to crypto assets, it should translate into increased net flows for the ETPs."
+        }
+      ]
+    },
+    {
+      "item": "memecoins",
+      "item_type": "token",
+      "parent_sector": "speculation-mispricing",
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Dismisses them as the next evolution of the gambling industry rather than a core value driver \u2014 consistent with his repeated insistence that speculation is a byproduct, not the point.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-20",
+          "quote": "Meme coins are just the next evolution of the gambling industry... gen z is in the trenches."
+        },
+        {
+          "date": "2024-03-21",
+          "quote": "speculation is a byproduct that is separate from its core value proposition."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Consistently and increasingly bullish, builder-oriented optimist. Entering 2025 he calls it 'another exciting year' / 'looking bright', points to adoption all-time highs, sub-penny fees, strengthening US political tailwinds, and the price-innovation cycle. He is structurally long crypto's fundamentals while explicitly separating speculation from core value \u2014 so his risk-on posture is about technology adoption, not chasing price.",
+    "provenance": "grounded"
+  },
+  "notes": "Daren is a data/metrics-driven a16z crypto team member (author of the State of Crypto report); his 'views' skew toward adoption fundamentals and infrastructure rather than directional token bets, so token entries are weaker-conviction observations than his sector theses. Most recent (Q4 2024-Q1 2025) emphasis: stablecoins, re-engaging passive holders, AI agents/crypto-x-AI, and mobile-wallet adoption. The clearest evolution over the corpus is his US-policy concern softening into optimism by early 2025 as regulatory tailwinds improved (captured in age_note). zkTLS and the wallet-over-abstraction worry are 2024 stances not restated by Q1 2025, so marked persisted. He repeatedly disclaims that nothing he posts is investment advice."
+}

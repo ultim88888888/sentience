@@ -1,0 +1,287 @@
+{
+  "as_of": "2025-09-30",
+  "approach": "A2a:Justin Thaler",
+  "items": [
+    {
+      "item": "zkvm",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His flagship project; he reports it repeatedly beats other zkVMs on prover speed and crossed his own 'Speed Stage 1' (<100,000x overhead) threshold while others sit near 1M.",
+      "provenance": "grounded",
+      "age_note": "Sustained and intensifying from initial release (2024-04-09) through the 6x speedup (2025-08-14); most recent view is strongest.",
+      "citations": [
+        {
+          "date": "2025-08-14",
+          "quote": "Jolt just got a 6\u00d7 speedup. We now prove over 1,000,000 RISC-V cycles/sec on a 32-core CPU... with proofs of about 50 KB."
+        },
+        {
+          "date": "2024-04-09",
+          "quote": "We're excited to share the initial release of Jolt, a new approach to zkVM design."
+        }
+      ]
+    },
+    {
+      "item": "sumcheck-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 93,
+      "horizon": "structural",
+      "rationale": "He frames this \u2014 not field size or hashing-vs-curves \u2014 as the true performance dividing line in SNARK design, and the foundation of fast provers.",
+      "provenance": "grounded",
+      "age_note": "Stated as 'the same takeaways we've been repeating for years'; reaffirmed 2025-08-14, so current.",
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "The key performance dichotomy in SNARK design... is the sum-check protocol and multilinear polynomials vs. univariate polynomials."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "Fast provers need the sum-check protocol and multilinear polynomials, not univariate polynomials or quotienting"
+        }
+      ]
+    },
+    {
+      "item": "lookup-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He argues repeated computations should be done via lookups, which he says are both simpler and faster than circuits for almost all applications.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-14",
+          "quote": "Repeated computations call for batch-evaluation arguments (aka lookups), not circuits. For almost all applications, batch-eval arguments are both simpler and faster than circuits."
+        }
+      ]
+    },
+    {
+      "item": "memory-checking-arguments",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His newest research primitives replacing Lasso/Spice; he credits them with the bulk of Jolt's speedups and faster non-zkVM SNARKs too.",
+      "provenance": "grounded",
+      "age_note": "Introduced 2025-01-23 as projected ~3x; by 2025-08-14 they were integrated and credited for the realized 6x \u2014 view validated, not reversed.",
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "We just unveiled Twist and Shout, two new memory-checking arguments designed to supercharge the Jolt zkVM."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "The speedups largely come from integrating our new Twist and Shout memory-checking arguments. They're faster and simpler than the Lasso and Spice arguments"
+        }
+      ]
+    },
+    {
+      "item": "folding-schemes",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "He sees folding/streaming as the path to proving arbitrarily long executions in <2GB without recursion \u2014 what he calls a 'phase change' for usability and on-device proving.",
+      "provenance": "grounded",
+      "age_note": "Earlier framing centered on Nova folding (2024-11-12); most recent framing (2025-08-14) emphasizes streaming provers without recursion \u2014 an evolution of the same low-memory goal.",
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "integrating Jolt with the Nova folding scheme, which will allow for arbitrarily long RISC-V executions with under 2 GB of prover memory\u2014a phase change"
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "Next up: streaming provers... Jolt will soon prove long executions in <2 GB, without recursion."
+        }
+      ]
+    },
+    {
+      "item": "standard-tooling-reuse",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "He argues real-CPU ISAs like RISC-V are good SNARK targets, letting each instruction reduce to one Shout invocation while reusing widely-scrutinized compilers/VMs.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-14",
+          "quote": "RISC-V is a SNARK-friendly ISA. In Jolt, every RISC-V primitive instruction can be computed with a single invocation of the Shout batch-evaluation argument."
+        },
+        {
+          "date": "2024-05-05",
+          "quote": "If the compiler and VM are widely used outside of the SNARK community and hence subjected to scrutiny... this is a much better situation"
+        }
+      ]
+    },
+    {
+      "item": "curve-based-snarks",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "He favors 256-bit/binary fields and curve commitments because committing to zeros is nearly free, lowering the cost parameter d in Twist+Shout; Jolt ships with curve-based Dory.",
+      "provenance": "grounded",
+      "age_note": "Jan 2025 stressed binary/large fields generically; by Aug 2025 Jolt's shipped design uses elliptic-curve commitments (Dory) \u2014 his deployed choice is curves, with binary fields still endorsed in principle.",
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "256-bit or binary fields are better than 31-bit or 64-bit fields for SNARK performance."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "Jolt uses: \u2714 The sum-check protocol \u2714 Batch-evaluation arguments \u2714 Sparse multivariate polynomials \u2714 Elliptic-curve commitments"
+        }
+      ]
+    },
+    {
+      "item": "snark-production-readiness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "He warns the field is not ready for complex high-stakes deployments and that pretending otherwise courts disaster \u2014 an unusually cautionary stance from a core builder.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "Beware the hype: while SNARKs and zkVMs show immense promise, they're not ready for complex, high-stakes deployments."
+        },
+        {
+          "date": "2025-03-11",
+          "quote": "we flirt with disaster if we pretend they're ready for prime time."
+        }
+      ]
+    },
+    {
+      "item": "snark-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "He says bugs are everywhere and that no zkVM can truly be called secure until 'verified verifiers' (Stage 2), which he estimates is years off; he trusts only systems as simple as Zcash.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "Until we reach Stage 2, we can't really call a zkVM 'secure'\u2014and getting there is still likely several years off."
+        },
+        {
+          "date": "2025-03-12",
+          "quote": "Zcash is about the limit of what I'd trust (absent formal verification), and it's still far simpler than any zkVM pipeline"
+        }
+      ]
+    },
+    {
+      "item": "prover-performance",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Overheads exceeding 100,000x make most use cases a non-starter; this is a concern he is actively closing, with Jolt reaching his Speed Stage 1 threshold by Aug 2025.",
+      "provenance": "grounded",
+      "age_note": "Partially mitigated: Mar 2025 cited '>100,000x' as a non-starter; by Aug 2025 Jolt crossed under 100,000x (Stage 1). Concern persists for higher stages but trend is improving.",
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "overheads versus native execution still exceed 100,000\u00d7\u2014a non-starter for most use cases."
+        },
+        {
+          "date": "2025-08-14",
+          "quote": "The Jolt prover work overhead is under 100,000... That meets the threshold for what we call Speed Stage 1... Other zkVMs? Still around 1 million."
+        }
+      ]
+    },
+    {
+      "item": "snark-cost-accounting",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "tactical",
+      "rationale": "He objects that top-line benchmarks conflate proof system, engineering, hardware, and hand-tuned precompiles, obscuring true fundamental efficiency.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-03-11",
+          "quote": "many benchmarks bundle everything\u2014proof system, engineering, hardware boosts, and hand-tuned precompiles\u2014into a single top-line number, obscuring where we really stand."
+        }
+      ]
+    },
+    {
+      "item": "snark-friendly-vms-zkdsls",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "He is critical of designing bespoke SNARK-friendly VMs, arguing they merely cater to today's limits and forfeit reuse of mature, scrutinized tooling.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-23",
+          "quote": "Proposals for \"SNARK-friendly\" VMs at best cater to today's SNARK limits, and prevent reuse of mature tooling."
+        }
+      ]
+    },
+    {
+      "item": "on-chain-verification-cost",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 65,
+      "horizon": "tactical",
+      "rationale": "He notes the Dory verifier can't run directly on Ethereum (missing precompiles, G_T scalar mults), and expects on-chain costs well above Plonk/Groth16 even once enabled.",
+      "provenance": "grounded",
+      "age_note": "Active research problem as of Aug 2025; earlier (2024-11-12) he projected ~1M gas via HyperKZG, so cost framing has shifted with the move to Dory.",
+      "citations": [
+        {
+          "date": "2025-08-15",
+          "quote": "Directly running the Dory verifier on-Ethereum isn't doable, with the worst issue being the logarithmic G_T scalar mults"
+        }
+      ]
+    },
+    {
+      "item": "prover-memory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "tactical",
+      "rationale": "He flagged high prover memory as the 'final barrier' to wide Jolt adoption; being addressed via folding/streaming toward <2GB.",
+      "provenance": "grounded",
+      "age_note": "Stated as the key barrier 2024-11-12; by 2025-08-14 streaming provers are the named fix, so concern is being actively retired.",
+      "citations": [
+        {
+          "date": "2024-11-12",
+          "quote": "The final barrier to Jolt's wide adoption is high prover memory usage."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 75,
+    "rationale": "Thaler's corpus is exclusively about SNARK/zkVM cryptographic design and engineering \u2014 he makes no statements about token prices, market cycles, or risk-asset allocation, and explicitly disclaims investment advice. To the extent a posture exists, it is technically conservative on deployment: he repeatedly warns the technology is not ready for high-stakes use, which reads as caution rather than a market risk-on/risk-off call.",
+    "provenance": "grounded"
+  },
+  "notes": "Justin Thaler is a16z crypto's lead cryptographer/researcher; his public statements are a near-pure technical stream about zero-knowledge proof systems, centered on the Jolt zkVM. He names no tradeable tokens and takes no market/investment positions (he explicitly disclaims 'business or investment advice', 2024-06-03), so tokens_excited and tokens_concerned are empty by necessity, not omission. 'Sectors' here are interpreted as technical sub-domains of SNARK/zkVM design rather than crypto-investment sectors. Competitors he benchmarks against (RISC Zero, SP1) are projects, not tokens. His most distinctive and recent signal (2025-03 onward) is a builder-skeptic posture: simultaneously bullish on his own design direction (sum-check, lookups, Twist & Shout, RISC-V, folding) and publicly cautious about the entire field's security maturity and readiness, codified in his zkVM 'security stages' and 'speed stages' roadmap. Where views evolved, the trajectory is consistent advancement of the same theses (e.g., memory-checking Lasso/Spice \u2192 Twist/Shout; Nova folding \u2192 streaming provers; binary-field emphasis \u2192 shipped curve-based Dory) rather than reversals."
+}

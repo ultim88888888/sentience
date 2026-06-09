@@ -1,0 +1,287 @@
+{
+  "as_of": "2025-03-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "His central research program with Lewis-Pye: a formal hierarchy (Perm<QP<DA<FP) showing stronger participation assumptions buy accountability, optimistic responsiveness, and partition-resilience. He's energized that DA-setting impossibilities can be overcome in the QP setting.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-10",
+          "quote": "all of the impossibility results for the DA setting from the last thread can be overcome in the QP setting"
+        },
+        {
+          "date": "2024-11-02",
+          "quote": "New two-hour tutorial by @AndrewLewisPye on our \"Permissionless Consensus\" paper"
+        }
+      ]
+    },
+    {
+      "item": "cryptoeconomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Proves PoS slashing can make attacks expensive (EAAC achievable below 2/3 stake in QP setting), and formalizes the claim that the merge raised Ethereum's economic security. Sees this as foundational to PoS value.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "making precise the common belief that the merge has increased Ethereum's economic security"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "EAAC is achievable by a PoS protocol with slashing, provided the attacker controls less than *two-thirds* of the overall stake"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Original EIP-1559 theorist; the core open question (no TFM is simultaneously DSIC, MMIC, OCA-proof) was resolved, and he is actively extending the theory to a post-MEV world with active block producers and searchers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        },
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper... on transaction fee mechanism design in a post-MEV world"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "New framework for when validators can be safely reused across services; introduces an overcollateralization factor as an exposable robustness metric. Treats restaking as an important but risk-laden frontier worth rigorous modeling.",
+      "provenance": "grounded",
+      "age_note": "Most recent direct mention is the Sept 2024 talk; paper Aug 2024 \u2014 within corpus window, not restated in 2025.",
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "New paper with @n_durvasula offers a framework to reason about the risks of restaking."
+        },
+        {
+          "date": "2024-09-10",
+          "quote": "My work on restaking risks with @n_durvasula now has an accompanying talk"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Excited by hard theory becoming the 'fastest zkVM in the world' (Jolt/Succinct) and shares optimism that if SNARKs are practical, even crazier primitives will follow in coming decades.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-04-09",
+          "quote": "watching 102 pages of hard theory get turned into the fastest zkVM in the world"
+        },
+        {
+          "date": "2024-12-17",
+          "quote": "if SNARKs can be made practical, *anything* can be made practical"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Produced a full tutorial on automated market makers, arbitrage, and loss-versus-rebalancing; treats AMM design and LP economics as a serious analytical domain.",
+      "provenance": "grounded",
+      "age_note": "Tutorial videos posted Dec 2024 but reflect EC'24 (summer 2024) work.",
+      "citations": [
+        {
+          "date": "2024-12-12",
+          "quote": "Videos from my LVR tutorial with @jason_of_cs @ciamac at EC '24 last summer are up!"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Building a theory of PBS and Tullock-contest models for mining/staking/execution tickets/shared sequencing \u2014 sees the block-production supply chain as a key design surface.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-24",
+          "quote": "Toward a theory of proposer-builder separation"
+        },
+        {
+          "date": "2024-12-13",
+          "quote": "Covers mining, staking, execution tickets, shared sequencing"
+        }
+      ]
+    },
+    {
+      "item": "auction-theory",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "New theory explaining why Dutch auctions are popular in Web3 and which formats resist seller manipulation (shill bids) \u2014 connecting classical auction theory to on-chain mechanisms.",
+      "provenance": "grounded",
+      "age_note": "Paper April 2024, not restated since; persisted within window.",
+      "citations": [
+        {
+          "date": "2024-04-02",
+          "quote": "Why are Dutch auctions so popular in Web3?"
+        }
+      ]
+    },
+    {
+      "item": "web3-paradigm-education",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "His most recent (late-2024/early-2025) public-facing output frames blockchains as a layer enabling genuine ownership of digital goods, contrasting the historical lack of digital property rights.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-12-09",
+          "quote": "on (the historical lack of) property rights for what you buy or create in the digital realm"
+        },
+        {
+          "date": "2025-01-06",
+          "quote": "A non-technical 1-hour intro on how blockchain protocols work (from 30,000 feet)"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Proves that defending in-protocol requires exotic primitives (VDFs, ephemeral keys); otherwise PoS chains must fall back on out-of-protocol 'social consensus' \u2014 a fundamental, unavoidable vulnerability.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks"
+        }
+      ]
+    },
+    {
+      "item": "restaking",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 66,
+      "horizon": "structural",
+      "rationale": "Shared validators across services make security combinatorial; small shocks (e.g. a slashing bug) can cascade into larger losses, bounded only by overcollateralization buffers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-08-01",
+          "quote": "the maximum-possible length of a cascade of attacks is also governed by the overcollateralization factor"
+        },
+        {
+          "date": "2024-08-01",
+          "quote": "Security is now combinatorial... closely related to the expansion of bipartite graphs."
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Shows slashing cannot achieve its purpose in the dynamically-available or partially-synchronous settings \u2014 once an adversary can violate consistency it can also evade punishment; withdrawal delays must scale with worst-case message delay.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-05-16",
+          "quote": "slashing in a proof-of-stake protocol cannot achieve its intended purpose if message delays cannot be bounded a priori"
+        }
+      ]
+    },
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Any protocol robust to fluctuating participation (Bitcoin-style and PoS longest-chain alike) provably cannot offer accountability, optimistic responsiveness, or partition-resilience \u2014 a hard ceiling on that design family.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "if your blockchain protocol is robust to fluctuating participation... then it cannot be optimistically responsive, accountable, or robust to network partitions"
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 42,
+      "horizon": "structural",
+      "rationale": "Repeatedly held up as the well-designed aspirational case: pursuing 'best of both worlds' (longest-chain liveness plus PBFT-style finality) and gaining economic security from the merge. Note: framed as a protocol-design admiration, not an investment call.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from technical commentary; he never expresses a price/investment view.",
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds"
+        },
+        {
+          "date": "2024-05-16",
+          "quote": "the merge has increased Ethereum's economic security"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 10,
+    "rationale": "Roughgarden is a theorist; the entire corpus is research on consensus, mechanism design, and cryptoeconomic security. He makes no statements about market direction, asset allocation, valuations, or risk appetite. No risk-on/risk-off signal can be honestly extracted.",
+    "provenance": "extrapolated"
+  },
+  "notes": "Tim Roughgarden's public statements are almost exclusively academic \u2014 permissionless-consensus theory, EIP-1559/TFM design, MEV/PBS, restaking risk, slashing/EAAC, AMM/LVR, auction theory, and SNARK/zkVM progress. 'Sectors' here map his research enthusiasm and concern, not portfolio views. He names blockchains (Bitcoin, Ethereum, Algorand, Chia, Avalanche) only as technical exemplars; the lone token-level lean (Ethereum, admiring its design and merge-driven economic security) is extrapolated and low-conviction, not a market call. He expresses essentially zero view on tokens as investments or on market risk regime. His clearest 'concerns' are impossibility results \u2014 fundamental limits (long-range attacks needing exotic crypto, restaking cascades, slashing limits under weak assumptions, longest-chain trade-offs) rather than market risks. Most-recent output (Dec 2024\u2013Mar 2025) shifted toward public-education content on blockchains and digital ownership; no stance reversals detected across the 18-month span \u2014 his theoretical positions accumulate rather than conflict."
+}

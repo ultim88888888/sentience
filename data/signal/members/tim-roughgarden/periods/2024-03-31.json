@@ -1,0 +1,271 @@
+{
+  "as_of": "2024-03-31",
+  "approach": "A2a:Tim Roughgarden",
+  "items": [
+    {
+      "item": "consensus-protocol-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 95,
+      "horizon": "structural",
+      "rationale": "His dominant and most-recent research focus: a multi-part program with Andrew Lewis-Pye formalizing what consensus guarantees are achievable under PoW vs PoS and under varying participation assumptions (FP/DA/QP).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "Should proof-of-stake blockchain protocols follow the longest-chain tradition of Bitcoin, the PBFT-style tradition... The trade-offs are pretty fascinating, so let's dive in"
+        },
+        {
+          "date": "2024-01-10",
+          "quote": "Can PoS PBFT-style protocols do better? ... yes, on all counts, at least if you're willing to adopt the stronger assumptions of the quasi-permissionless (QP) setting!"
+        }
+      ]
+    },
+    {
+      "item": "transaction-fee-mechanisms",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Long-running, repeatedly-revisited interest in the incentive properties (DSIC/MMIC/OCA-proof) of blockspace pricing; treats resolving these open theory questions as central.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-02-16",
+          "quote": "the main open theory question from my original work on EIP-1559 has been resolved... no transaction fee mechanism can be DSIC, MMIC, and OCA-proof!"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Actively building theory for a 'post-MEV world' with active block producers and searchers, and launched a formal theory of proposer-builder separation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-24",
+          "quote": "Toward a theory of proposer-builder separation (with @bahrani_maryam and @PGarimidi)"
+        },
+        {
+          "date": "2024-02-24",
+          "quote": "Major update to the paper... on transaction fee mechanism design in a post-MEV world (i.e., with active block producers), now with searchers"
+        }
+      ]
+    },
+    {
+      "item": "lvr-amm-loss",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Co-authored formal work on the complexity/expressivity tradeoff of AMMs and on LVR's links to option pricing; sees AMM design as a rich problem not strictly dependent on a native currency.",
+      "provenance": "grounded",
+      "age_note": "Most active in 2022-2023 (latest LVR work 2023-06-27); not restated in the most recent months but part of a sustained research line.",
+      "citations": [
+        {
+          "date": "2023-06-27",
+          "quote": "Expanded version of the original LVR paper, which fleshes out the many connections to option pricing and adds an empirical analysis of LVR"
+        },
+        {
+          "date": "2023-03-06",
+          "quote": "formalizing the intuitive trade-off between an AMM's complexity... and its expressivity"
+        }
+      ]
+    },
+    {
+      "item": "dag-consensus",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Called recent DAG-based consensus advances the most exciting consensus development of 2022 and hosted multiple seminars on them.",
+      "provenance": "persisted",
+      "age_note": "Stated once in 2022-10-21 and not restated since; ~18 months old. Reported as persisted enthusiasm, weight accordingly.",
+      "citations": [
+        {
+          "date": "2022-10-21",
+          "quote": "One of the most exciting developments in consensus protocols in 2022 has been the recent advances in DAG-based consensus."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Signaled strong belief in the significance of lookup-argument advances ('lookup singularity') via colleague Justin Thaler's work.",
+      "provenance": "persisted",
+      "age_note": "Single notable statement 2023-08-10, ~7-8 months old, not restated; treat as persisted.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "when he calmly told me, \"I think this could be big,\" I knew to take him very, very seriously. And now... the lookup singularity is here."
+        }
+      ]
+    },
+    {
+      "item": "cryptoeconomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "Frames grand challenges: optimal layer-1 incentives with matching possibility/impossibility results, and rigorously 'making macroeconomics our own' (supply caps, deflation).",
+      "provenance": "persisted",
+      "age_note": "Articulated 2022-11-19; the underlying research program continues but this specific framing is ~16 months old.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "Grand challenge #2: Optimal layer-1 incentives. (Holy grail: matching possibility and impossibility results as complete as in the theory of consensus protocols.)"
+        }
+      ]
+    },
+    {
+      "item": "mev",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Proved that with MEV no non-trivial TFM can be both DSIC and BPIC; views MEV as breaking EIP-1559's incentive-compatibility fundamentally, not as a design artifact.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-06",
+          "quote": "with MEV, *no* non-trivial or approximately welfare-maximizing TFM can be both DSIC and BPIC!"
+        },
+        {
+          "date": "2023-07-06",
+          "quote": "EIP-1559 is no longer incentive-compatible for both users and block producers (even with a correctly set base fee)!"
+        }
+      ]
+    },
+    {
+      "item": "pos-security",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Shows in-protocol defense against long-range attacks requires exotic cryptography (VDFs, ephemeral keys) \u2014 there are no other purely in-protocol options, otherwise reliance on social consensus.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2024-01-19",
+          "quote": "fancy primitives like VDFs and ephemeral keys are the *only possible way* for proof-of-stake blockchains to defend against long-range attacks without any out-of-protocol assistance"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Proves any protocol robust to fluctuating participation (DA setting) cannot be optimistically responsive, accountable, or partition-resilient \u2014 a brutal but unavoidable tradeoff.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-21",
+          "quote": "if your blockchain protocol is robust to fluctuating participation... then it cannot be optimistically responsive, accountable, or robust to network partitions"
+        }
+      ]
+    },
+    {
+      "item": "permissionless-consensus-hardness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Frames Bitcoin's probabilistic guarantees and re-org vulnerability as a fundamental consequence of assuming nothing about participants \u2014 not patchable by clever redesign.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-13",
+          "quote": "Bitcoin's probabilistic guarantees are an unavoidable consequence of its total lack of assumptions about who might be running it"
+        }
+      ]
+    },
+    {
+      "item": "crypto-macroeconomics",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Flags the absence of rigorous arguments for/against hard supply caps or deflationary currencies as an open and important problem.",
+      "provenance": "persisted",
+      "age_note": "Raised 2022-11-19, ~16 months old, not restated; persisted open question rather than active stance.",
+      "citations": [
+        {
+          "date": "2022-11-19",
+          "quote": "rigorous argument for/against a hard cap on circulating supply, or for/against a deflationary cryptocurrency."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 45,
+      "horizon": "structural",
+      "rationale": "Describes Ethereum's design as aspiring to the 'best of both worlds' (longest-chain liveness under weak assumptions plus PBFT-style finality/accountability under stronger ones); also notes EIP-1559's burn likely makes ETH deflationary long-term. These are technical-design observations, not an investment call.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-11-29",
+          "quote": "Ethereum is effectively aspiring toward the best of both worlds: the basic guarantees of a longest-chain protocol... plus the extra benefits of a PBFT-style protocol"
+        },
+        {
+          "date": "2022-11-19",
+          "quote": "the EIP-1559 transaction fee mechanism... ETH likely deflationary in the long run"
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bearish",
+      "conviction": 50,
+      "horizon": "structural",
+      "rationale": "Repeatedly characterizes Bitcoin/Nakamoto consensus as constrained to only-probabilistic safety and liveness and exposed to long-range re-orgs given enough time \u2014 a fundamental design limitation he stresses, though framed as theory, not a bearish market view.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-12-13",
+          "quote": "the safety + liveness guarantees are only probabilistic (after enough time, even an attacker with a small amount of hashrate will get lucky enough to pull off a long re-org attack)"
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "no_view",
+    "conviction": 80,
+    "rationale": "Roughgarden's corpus is entirely academic/research commentary on consensus theory, mechanism design, and cryptoeconomics. He expresses no opinion on market direction, asset prices, or risk appetite. His 'excitement' is about research problems and his 'concern' is about provable protocol limitations \u2014 neither maps to a risk-on/risk-off posture. Inferring a market stance would be unsupported extrapolation.",
+    "provenance": "grounded"
+  },
+  "notes": "Tim Roughgarden is a theoretician (a16z crypto research / Columbia), not an investor; the corpus contains essentially no investment or price views. All 'sectors' here are research/technology themes named in my own words, and 'tokens' (ETH, BTC) appear only as objects of technical analysis, not buy/sell theses \u2014 hence low conviction and the no_view risk regime. Recency weighting strongly favors the 2023-12 to 2024-02 permissionless-consensus and TFM/MEV work, which dominates his recent attention. Older enthusiasms (DAG consensus, lookup arguments, the macroeconomics grand challenges) are marked 'persisted' with age notes since they were stated once and not restated. No clear reversals were found in the corpus; his views compound rather than contradict. A consistent throughline: he frames many results as impossibility theorems, so his 'concerns' are provable limitations (MEV vs. fee-mechanism incentive-compatibility; long-range attacks; DA-setting tradeoffs; Bitcoin's probabilistic guarantees) rather than market risks."
+}

@@ -1,0 +1,313 @@
+{
+  "as_of": "2025-12-31",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "stablecoins",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 92,
+      "horizon": "structural",
+      "rationale": "Sees stablecoins as the cheapest way to move dollars and a market-structure reset for payments; repeatedly flags them as the most obviously 'cooking' category, with confidential/private stablecoin payments as a critical missing primitive.",
+      "provenance": "grounded",
+      "age_note": "Theme restated consistently from 2024-11 through 2025-12; most recent and durable conviction.",
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "A number of categories are obviously cooking: - All things stablecoin and stablecoin adjacent"
+        },
+        {
+          "date": "2025-12-09",
+          "quote": "The ability to make private confidential stablecoin payments is a critical missing primitive in crypto."
+        }
+      ]
+    },
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 88,
+      "horizon": "structural",
+      "rationale": "Believes AI structurally needs blockchain \u2014 as a 'trust machine' for large-scale evaluation, verifiable compute, and rails for AI-agent payments/financial stacks; backed multiple companies in this lane (Catena, Yupp, Gensyn).",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-01-05",
+          "quote": "This time is no different: AI needs blockchain-enabled computing."
+        },
+        {
+          "date": "2025-06-13",
+          "quote": "AI needs strong, reliable evaluation based on large-scale human input. Crypto is the trust machine that can help deliver it."
+        }
+      ]
+    },
+    {
+      "item": "institutional-adoption",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Argues crypto has left the echo chamber for the enterprise era \u2014 ETFs, Circle's IPO, Robinhood crypto revenue \u2014 and that Global 2000 budgets dramatically raise the ceiling on TVL and protocol revenue as firms adopt 'crypto inside.'",
+      "provenance": "grounded",
+      "age_note": "Most recent and emphatic thesis (Oct 2025), reinforced by State of Crypto commentary.",
+      "citations": [
+        {
+          "date": "2025-10-01",
+          "quote": "Crypto has exited the echo chamber and entered the enterprise... The enterprise era has arrived"
+        },
+        {
+          "date": "2025-10-22",
+          "quote": "I've seen the growing institutional embrace of the industry first hand and it feels like things are only just getting started."
+        }
+      ]
+    },
+    {
+      "item": "rwa",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 75,
+      "horizon": "structural",
+      "rationale": "Names bringing real-world assets onchain to reduce friction and expand markets as one of the categories obviously working today.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Bringing real world assets onchain to reduce friction and expand markets (RWA tokenization)"
+        }
+      ]
+    },
+    {
+      "item": "wallet-infrastructure",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Sees latest-gen self-custodial wallets with slick UX, seamless login, mini-apps and social primitives as the unlock for consumer virality, analogizing to the early social-network 'invite your friends' era.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Latest gen self custodial wallets: Slick UX, seamless login, mini apps & packed with social primitives... Virality unlocked."
+        }
+      ]
+    },
+    {
+      "item": "infra-devtools",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "Views cheap, fast, scalable chains plus multichain infra/dev tooling as today's equivalent of the 2005 public-cloud explosion, busting historical liquidity and audience silos.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "Crypto & Blockchain infra today = Internet circa 2005... Fast, scalable chains with dirt-cheap txns?"
+        },
+        {
+          "date": "2025-07-17",
+          "quote": "Multichain infra & dev tooling: Opening doors to bigger audiences and frictionless liquidity... The floodgates are open!"
+        }
+      ]
+    },
+    {
+      "item": "app-specific-blockchains",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Excited by app-specific chains that bend the cost/performance curve enough to move entirely new classes of applications onchain.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "Verticalized, application-specific blockchains that bend the cost/performance curve in such a way that entirely new applications can move onchain."
+        }
+      ]
+    },
+    {
+      "item": "web3-messaging",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Believes the moment has arrived for fast, secure, decentralized messaging with seamlessly integrated apps and payments; actively championing XMTP.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "The time is now for no compromises fast, secure, decentralized messaging with seamlessly integrated apps and payments."
+        }
+      ]
+    },
+    {
+      "item": "privacy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 68,
+      "horizon": "structural",
+      "rationale": "Treats confidential onchain compute and private payments as a major frontier step toward making crypto ubiquitous and useful; praised Aleo/Circle and backed confidential-compute teams.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-12-09",
+          "quote": "Today's Aleo and Circle announcement represents a major step forward in making stablecoin payments ubiquitous and useful."
+        }
+      ]
+    },
+    {
+      "item": "nft",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Flags big ideas from the prior crypto cycle as ripe for reinvention now that infra, UX and regulation have matured \u2014 NFTs evolving beyond PFPs to true digital scarcity, workable DAOs, and crypto rails reshaping mobile-gaming economics.",
+      "provenance": "persisted",
+      "age_note": "Stated once on 2025-08-06 as open 'ripe for reinvention' areas, not since restated; framed exploratorily rather than as active conviction.",
+      "citations": [
+        {
+          "date": "2025-08-06",
+          "quote": "The evolution of NFTs from PFPs to true digital scarcity across games, media, and collectibles; what form will they take next?"
+        },
+        {
+          "date": "2025-08-06",
+          "quote": "Harnessing crypto rails to positively shift the LTV curve of mobile gaming"
+        }
+      ]
+    },
+    {
+      "item": "ai-autonomous-systems",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Personally bullish on AI beyond crypto \u2014 singled out the scale and end-to-end system integration of Tesla's self-driving stack as mind-blowing and expects strong evolution.",
+      "provenance": "grounded",
+      "age_note": "Single recent mention (2025-10-24); a personal enthusiasm, not a crypto-investment thesis.",
+      "citations": [
+        {
+          "date": "2025-10-24",
+          "quote": "The level of data scale and end to end system integration that Tesla has achieved... Very excited and bullish... over the next several years."
+        }
+      ]
+    },
+    {
+      "item": "enterprise-gtm-weakness",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 76,
+      "horizon": "structural",
+      "rationale": "As crypto moves into the Fortune 500 maze, worries founders cling to 'best product sells itself' and lack the sales/procurement discipline (ROI cases, compliance, contracts) needed to actually capture enterprise budgets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-10-01",
+          "quote": "The myth of \"best product sells itself\" dies at procurement... crypto startups need to build that muscle."
+        },
+        {
+          "date": "2025-10-01",
+          "quote": "If your pitch stops at \"it's better tech,\" you lose."
+        }
+      ]
+    },
+    {
+      "item": "founder-governance-gaps",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Concerned crypto founders resist building real boards until too late, leaving companies exposed to co-founder disputes, lawsuits and bad actors that derail otherwise strong businesses.",
+      "provenance": "grounded",
+      "age_note": "Most recent thematic concern (2025-12-15).",
+      "citations": [
+        {
+          "date": "2025-12-15",
+          "quote": "Crypto founders often resist building a board of directors until it's too late."
+        },
+        {
+          "date": "2025-12-15",
+          "quote": "Great companies aren't just built on product; they are sustained by execution and governance."
+        }
+      ]
+    },
+    {
+      "item": "vibes-over-value",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Skeptical of crypto fads, expecting them to wash out once teams confront the need to build real products used by real people for sustained benefit.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2025-07-17",
+          "quote": "these kinds of fads have a way a of working themselves out once companies realize they need to build real products used by real people"
+        }
+      ]
+    },
+    {
+      "item": "token-first-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Endorses the view that finding PMF after a token launch is extremely hard, cautioning founders against premature token issuance and demand-side incentive schemes.",
+      "provenance": "grounded",
+      "age_note": "Shared approvingly as a 'favorite gem' (2025-05-05); his endorsement, not original phrasing.",
+      "citations": [
+        {
+          "date": "2025-05-05",
+          "quote": "Achieving Product-Market-Fit after you launch a token is incredibly tough. Find PMF before you launch your token."
+        }
+      ]
+    },
+    {
+      "item": "deal-structuring",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 62,
+      "horizon": "tactical",
+      "rationale": "Worries badly structured term sheets can haunt a startup for its entire existence; spends significant time helping founders renegotiate bad early-investor terms.",
+      "provenance": "persisted",
+      "age_note": "Stated 2024-08-09 and not restated since; a durable founder-coaching concern rather than a market-cycle call.",
+      "citations": [
+        {
+          "date": "2024-08-09",
+          "quote": "A poorly structured term sheets can haunt your startup for its entire existence."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 90,
+    "rationale": "Consistently and increasingly bullish: frames crypto infra as 'internet circa 2005' with the floodgates open, calls 2025 transformative, celebrates GENIUS/CLARITY regulatory tailwinds, and declares the institutional/enterprise era has arrived and is 'just getting started.' His caveats are about founder execution (sales, governance, PMF), not macro downside, so his posture is strongly risk-on while urging operational discipline.",
+    "provenance": "grounded"
+  },
+  "notes": "Jason Rosenthal leads a16z crypto's CSX accelerator; much of his corpus is founder-coaching (fundraising, security, governance, GTM) rather than asset/market calls, so views are inferred from where he directs attention and capital. He expresses excitement at the SECTOR and COMPANY level and never names specific tokens as long/short positions \u2014 hence tokens_excited and tokens_concerned are empty rather than extrapolated. Strongest, most recent and most repeated convictions: stablecoins/payments, crypto\u00d7AI, and enterprise/institutional adoption. 'Concerns' are predominantly founder-execution risks (enterprise sales, board/governance, premature token launches, hype-without-product) rather than bearishness on any sector. No stance reversals detected across the 18-month span; older one-off items (term sheets 2024-08, last-era 'reinvention' ideas 2025-08) marked persisted with age notes. Overall posture: durably risk-on with an execution-discipline overlay."
+}

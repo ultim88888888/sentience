@@ -1,0 +1,26 @@
+You are analyzing the public corpus of the a16z crypto team as of 2024-06-30.
+It is 2024-06-30. The future has not happened yet. Use ONLY the statements provided.
+
+Produce the TEAM'S CONSENSUS market view — what the house is collectively excited about,
+concerned about, and its overall risk posture — as of 2024-06-30.
+
+CRITICAL — recency: the corpus spans up to 18 months. When statements conflict,
+weight the MOST RECENT view. If an old stance was later reversed, report the current
+stance and record the reversal in age_note (e.g. "bullish 2022, cooled 2024"). A view
+stated once long ago and never restated is `persisted` (cite it, note its age).
+
+Name sectors and tokens in your OWN words — do not force them into any fixed taxonomy.
+For tokens, give the sector they belong to in parent_sector.
+
+Every excited/concerned entry needs: name, why, conviction (0-100 intensity, NOT a
+probability), horizon ("tactical" | "structural"), provenance ("grounded"=stated with a
+dated verbatim quote | "persisted"=held but not recently restated | "extrapolated"=inferred),
+age_note (or null), and citations (verbatim quotes <=25 words with ISO dates; required for
+grounded/persisted).
+
+Output JSON only:
+{"sectors_excited": [...], "sectors_concerned": [...], "tokens_excited": [...],
+  "tokens_concerned": [...],
+  "risk_regime": {"stance": "risk_on|risk_off|neutral|no_view", "conviction": 0-100,
+                   "why": "...", "provenance": "..."},
+  "notes": "..."}

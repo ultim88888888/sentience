@@ -1,0 +1,438 @@
+{
+  "as_of": "2023-06-30",
+  "approach": "A2a:Miles Jennings",
+  "items": [
+    {
+      "item": "decentralization",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 96,
+      "horizon": "structural",
+      "rationale": "His master thesis: decentralization obviates the risks securities laws target, unlocks innovation, and is the attribute regulators/courts should reward. Frames it as the key to web3's potential and the differentiator that wins the sector.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-05-31",
+          "quote": "Decentralization is the key to unlocking web3's potential and navigating regulatory uncertainty. More Decentralization = More Innovation"
+        },
+        {
+          "date": "2023-05-03",
+          "quote": "The country that properly incentivizes decentralization is going to win web3 and reap the benefits."
+        }
+      ]
+    },
+    {
+      "item": "dao-legal-entities",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 86,
+      "horizon": "structural",
+      "rationale": "Sustained personal flagship work. Believes DAOs are fundamental to web3 but legally vulnerable; pushing pragmatic domestic entity structures (UNA over offshore foundations) and new state legislation to give DAOs legal existence, liability protection and tax pathways.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-24",
+          "quote": "This new California DAO bill could change all of that."
+        },
+        {
+          "date": "2023-05-06",
+          "quote": "The DUA would give DAOs legal existence, afford flexible governance and enable DAOs to continue to function"
+        }
+      ]
+    },
+    {
+      "item": "defi",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Views DeFi as superior policy to CeFi because trustless systems eliminate intermediary risk; most decentralized stablecoins and primitives proved robust through 2022 volatility. Sees protocols as the settlement layer of the next internet.",
+      "provenance": "grounded",
+      "age_note": "Strongest framing is 2022 (e.g. 2022-10-30 'DeFi is better policy than CeFi'); consistently reaffirmed into 2023 via 'regulate apps not protocols' work.",
+      "citations": [
+        {
+          "date": "2022-10-30",
+          "quote": "DeFi is better policy than CeFi. Can't be evil > Don't be evil"
+        },
+        {
+          "date": "2022-08-08",
+          "quote": "The vast majority of decentralized stablecoins have performed superbly."
+        }
+      ]
+    },
+    {
+      "item": "token-design",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "Excited that tokens open a design space larger than shares \u2014 enabling decentralized economies, stakeholder capitalism and value accrual to users/contributors rather than shareholders.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-04-22",
+          "quote": "Tokens aren't equity. The design space is so much bigger."
+        },
+        {
+          "date": "2022-03-23",
+          "quote": "decentralized protocols have an opportunity to create a new economic paradigm"
+        }
+      ]
+    },
+    {
+      "item": "consumer-social",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Believes decentralizing the tech stack above the base chain unlocks web3 social and turns platforms into user-owned public infrastructure; data portable and owned by users.",
+      "provenance": "grounded",
+      "age_note": "Core thesis dates to 2022 (2022-05-03, 2022-07-12); lightly reaffirmed 2023-04-11. Mostly persisted.",
+      "citations": [
+        {
+          "date": "2022-07-12",
+          "quote": "The decentralization of layers of the tech stack above the base blockchain... is going to open up a new world of possibilities"
+        },
+        {
+          "date": "2022-05-03",
+          "quote": "The decentralization of social media is going to be very obvious to the masses in retrospect."
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 70,
+      "horizon": "structural",
+      "rationale": "Sees privacy (ZK, MPC) as a frontier with the most important and complex legal/regulatory challenges in web3, and a constitutional (4th Amendment) battleground worth fighting for.",
+      "provenance": "persisted",
+      "age_note": "Last strong personal statement 2022-12-15 (Aztec work); enthusiasm for ZK recurs across 2022. ~6 months old at as-of date, not restated since.",
+      "citations": [
+        {
+          "date": "2022-12-15",
+          "quote": "Very excited to get to work on the privacy frontier again... where some of the most important and complex regulatory/legal challenges in all of web3 will play out."
+        }
+      ]
+    },
+    {
+      "item": "uk-london-crypto-hub",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Optimistic that jurisdictions taking a 'same risk, same outcome' approach (UK FCA empowered to foster innovation, excluding decentralized stablecoins) will become web3 hubs \u2014 a contrast he uses to pressure US policymakers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-29",
+          "quote": "the UK empowering its financial regulators to foster innovation is brilliant."
+        },
+        {
+          "date": "2023-05-01",
+          "quote": "we are encouraged by the Consultation's pragmatic approach to web3 regulation."
+        }
+      ]
+    },
+    {
+      "item": "nft-licensing-standards",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 62,
+      "horizon": "structural",
+      "rationale": "Championed open-source NFT licenses to remove legal ambiguity, protect creators' IP and grant holders enforceable rights \u2014 reducing an industry-wide drag.",
+      "provenance": "persisted",
+      "age_note": "Launched 2022-08-31; reaffirmed in 2023-02-10 retrospective but no new development since. Aging.",
+      "citations": [
+        {
+          "date": "2022-08-31",
+          "quote": "we're thrilled to be launching a slate of open sourced 'Can't be Evil' NFT licenses."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 96,
+      "horizon": "tactical",
+      "rationale": "His dominant, escalating concern. Believes the SEC deliberately fosters uncertainty, refuses constructive guidance (none since April 2019), and \u2014 after the June 2023 Coinbase suit \u2014 is trying to ban web3 in the US outright. Enforcement isn't scalable; harms good actors and consumers.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-06",
+          "quote": "the SEC's endgame for crypto/web3 in the United States is about one thing: banning the technology."
+        },
+        {
+          "date": "2023-03-02",
+          "quote": "Enforcement isn't scalable... it's meant to create the illusion that @GaryGensler is being proactive."
+        }
+      ]
+    },
+    {
+      "item": "protocol-vs-app-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 90,
+      "horizon": "structural",
+      "rationale": "Applying compliance obligations to protocols/DAOs (software) rather than apps/businesses would destroy decentralization and autonomy \u2014 'a road to nowhere.' His entire 'Regulate Apps, Not Protocols' series is built to prevent this.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "The regulation of protocols is a road to nowhere. Regulate apps, not protocols. Regulate businesses, not software."
+        },
+        {
+          "date": "2022-10-29",
+          "quote": "We can't regulate protocols and keep them decentralized and autonomous."
+        }
+      ]
+    },
+    {
+      "item": "founder-regulatory-risk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Recurring worry that US hostility and lack of clarity pushes founders and development out of the country, weakening US oversight and increasing risk to US users.",
+      "provenance": "grounded",
+      "age_note": "First stated 2022-05-10; reinforced repeatedly through 2022-2023.",
+      "citations": [
+        {
+          "date": "2022-05-10",
+          "quote": "We need a regulatory environment that attracts the best founders... not one that encourages US founders to leave."
+        },
+        {
+          "date": "2022-11-15",
+          "quote": "Every week a founder will ask me whether they should build outside the US to avoid regulatory uncertainty"
+        }
+      ]
+    },
+    {
+      "item": "dao-legal-entities",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 82,
+      "horizon": "structural",
+      "rationale": "DAOs without legal wrappers face unlimited liability, can't pay taxes, defend themselves, or comply \u2014 and courts/regulators (Ooki DAO) may impose treatment on them. Attacks on DAOs are growing and threaten web3's viability.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-09",
+          "quote": "If your DAO doesn't have a legal entity, the government might pick one for you."
+        },
+        {
+          "date": "2023-04-24",
+          "quote": "Attacks on DAOs are growing and threaten the viability of web3."
+        }
+      ]
+    },
+    {
+      "item": "cefi-intermediaries",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Fraud is the biggest risk to web3 users; CeFi blowups (FTX, Celsius, Voyager) show trust must be regulated differently than trustless. Under-regulated tech invites bad actors who exploit arbitrage until catastrophe and reactive enforcement.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-11-07",
+          "quote": "Shoutout to the CeFi players out there demonstrating unequivocally why trust inherently needs to be regulated differently than trustless."
+        },
+        {
+          "date": "2023-02-03",
+          "quote": "Good faith innovation leads to interest, which attracts bad faith actors who engage in regulatory arbitrage, which eventually leads to catastrophe"
+        }
+      ]
+    },
+    {
+      "item": "regulatory-capture",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 72,
+      "horizon": "tactical",
+      "rationale": "Late, very specific concern that the SEC may use narrow no-action relief to prop up Prometheum as a sham compliant venue \u2014 to dissuade Congress from passing market-structure legislation while keeping SEC control and driving the industry offshore.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-06-28",
+          "quote": "my suspicion continues to be that there's another step to this parlor trick."
+        },
+        {
+          "date": "2023-06-16",
+          "quote": "Prometheum labels all digital assets as 'digital asset securities' to placate the SEC. That's the whole point of this charade."
+        }
+      ]
+    },
+    {
+      "item": "anti-crypto-politicians",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Singles out Warren as the politician most responsible for 2022 harm by shielding Gensler and pushing an anti-crypto, anti-free-market agenda instead of effective regulation.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-01-28",
+          "quote": "@SenWarren is the person in govt most responsible for the harm crypto users experienced in 2022."
+        }
+      ]
+    },
+    {
+      "item": "ETH",
+      "item_type": "token",
+      "parent_sector": "pos-l1",
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Repeatedly argues ETH is not a security regardless of POW\u2192POS, because holders rely on no managerial efforts; its value derives from decentralized app usage, not a central party. Defends it as the canonical decentralized asset.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-18",
+          "quote": "the lack of any managerial efforts upon which ETH holders could be relying means that ETH should not be a security."
+        },
+        {
+          "date": "2023-03-10",
+          "quote": "The apps and their usage is what drives the value of ETH."
+        }
+      ]
+    },
+    {
+      "item": "BTC",
+      "item_type": "token",
+      "parent_sector": "pow-l1",
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Cites BTC as the clearest example of a sufficiently decentralized, non-security digital asset \u2014 'no group of individuals in the middle' \u2014 and uses it as the benchmark for low information-asymmetry assets.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2022-09-17",
+          "quote": "Gensler literally just said BTC wasn't a security because 'there's no group of individuals in the middle'"
+        }
+      ]
+    },
+    {
+      "item": "DAI",
+      "item_type": "token",
+      "parent_sector": "stablecoins",
+      "stance": "bullish",
+      "conviction": 74,
+      "horizon": "structural",
+      "rationale": "Favors decentralized stablecoins backed by exogenous collateral; defends Maker/DAI as fundamentally lower-risk than Terra and key to the dollar becoming web3's reserve currency. Stresses collateralization over algorithm-blaming.",
+      "provenance": "grounded",
+      "age_note": "Strongest token-specific defense 2022-12-02; general decentralized-stablecoin advocacy continues into 2023.",
+      "citations": [
+        {
+          "date": "2022-12-02",
+          "quote": "The difference between endogenous and exogenous collateral is pretty significant."
+        },
+        {
+          "date": "2022-07-13",
+          "quote": "The bill just doesn't address decentralized and algorithmic stablecoins like DAI and Frax."
+        }
+      ]
+    },
+    {
+      "item": "LUNA",
+      "item_type": "token",
+      "parent_sector": "algorithmic-stablecoins",
+      "stance": "bearish",
+      "conviction": 84,
+      "horizon": "structural",
+      "rationale": "Treats uncollateralized/endogenously-collateralized stablecoins as worthless and dangerous \u2014 'meme coins with no potential upside' \u2014 and the root cause of the Terra collapse (bad collateral, not algorithms).",
+      "provenance": "persisted",
+      "age_note": "Core statement 2022-05-14; reaffirmed via 2022-08 FT op-ed and 2022-12 comparisons. Aging but never reversed.",
+      "citations": [
+        {
+          "date": "2022-05-14",
+          "quote": "Uncollateralized stablecoins are basically just meme coins with no potential upside."
+        },
+        {
+          "date": "2022-08-08",
+          "quote": "bad collateral is the root cause of recent collapses like Terra"
+        }
+      ]
+    },
+    {
+      "item": "FTT",
+      "item_type": "token",
+      "parent_sector": "cefi-intermediaries",
+      "stance": "bearish",
+      "conviction": 70,
+      "horizon": "tactical",
+      "rationale": "Cites FTT as a token the legal community viewed with skepticism and a textbook 'not decentralized' failure; emblematic of CeFi tokens whose collapse the SEC failed to prevent.",
+      "provenance": "persisted",
+      "age_note": "Stated 2022-11 around FTX collapse; not restated since but consistent with his framing.",
+      "citations": [
+        {
+          "date": "2022-11-14",
+          "quote": "FTT was widely viewed with skepticism in the legal community, which has consistently been advising against FTX's approach"
+        },
+        {
+          "date": "2022-11-08",
+          "quote": "FTX/FTT - Not decentralized."
+        }
+      ]
+    },
+    {
+      "item": "XRP",
+      "item_type": "token",
+      "parent_sector": "payments",
+      "stance": "bearish",
+      "conviction": 58,
+      "horizon": "tactical",
+      "rationale": "Concerned about XRP's legal posture, not as an investment per se: thinks Ripple lacks a real decentralization defense and will likely lose the SEC case (though he argues the outcome shouldn't matter much to the broader industry).",
+      "provenance": "grounded",
+      "age_note": "Main statements 2022-10/11; Ripple case still pending as of the as-of date.",
+      "citations": [
+        {
+          "date": "2022-10-28",
+          "quote": "Ripple doesn't really have a decentralization claim in my view."
+        },
+        {
+          "date": "2022-11-08",
+          "quote": "Ripple - Not decentralized."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 70,
+    "rationale": "Structurally and ideologically bullish on web3/decentralization: tells founders to build in the US and 'Stay The Course,' insists good-faith builders will ultimately triumph via Congress and the courts, and predicts 'ban crypto' calls will look as absurd as banning computers. But this conviction is paired with acute near-term defensiveness \u2014 he expects a hostile US regulatory wave (SEC under Gensler, protocol-regulation threats, Prometheum) and his risk posture is regulatory/legal rather than market-directional. Net: long-term offensive, short-term guarded.",
+    "provenance": "grounded"
+  },
+  "notes": "Miles Jennings is a16z crypto's head of decentralization / General Counsel, so his 'market view' is overwhelmingly a legal-regulatory and protocol-design view, not an investment/price view \u2014 he rarely makes directional market or price calls, and tokens appear mainly as legal test cases (security vs. not, decentralized vs. not). His single organizing belief is that decentralization both unlocks innovation and neutralizes the risks securities laws target; nearly every excitement and concern flows from it. Most recent statements (May\u2013June 2023) sharpen his anti-SEC stance to its strongest level (Coinbase suit = 'banning the technology') while remaining defiantly optimistic ('Stay The Course'). No major reversals were found; older NFT-license and decentralized-social enthusiasm is persisted rather than recently restated and is weighted accordingly. The Ripple/LBRY discussions show he distinguishes 'not decentralized' issuers (likely to lose, and rightly) from the decentralized assets (BTC/ETH) he defends."
+}

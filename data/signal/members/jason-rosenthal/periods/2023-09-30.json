@@ -1,0 +1,199 @@
+{
+  "as_of": "2023-09-30",
+  "approach": "A2a:Jason Rosenthal",
+  "items": [
+    {
+      "item": "ai-crypto",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 72,
+      "horizon": "structural",
+      "rationale": "Sees an early, fast-emerging interplay between crypto and AI; explicitly endorsed efforts to decentralize AI infrastructure.",
+      "provenance": "grounded",
+      "age_note": "Theme stated 2023-04-05 and reinforced 2023-08-25, so current and consistent.",
+      "citations": [
+        {
+          "date": "2023-04-05",
+          "quote": "We're in the early innings of some fascinating interplay between crypto+AI/ML"
+        },
+        {
+          "date": "2023-08-25",
+          "quote": "complement each other well as you work to decentralize AI"
+        }
+      ]
+    },
+    {
+      "item": "zk",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 80,
+      "horizon": "structural",
+      "rationale": "Repeatedly enthusiastic about cryptographic proving breakthroughs (Lasso/Jolt, zkSync) as foundational tech web3 builders will deploy.",
+      "provenance": "grounded",
+      "age_note": "Most recent mention 2023-09-08; reinforced by 2023-08-10 and 2023-02-16 \u2014 sustained, escalating interest.",
+      "citations": [
+        {
+          "date": "2023-08-10",
+          "quote": "Get ready for some mind blowing improvements in SNARK performance with the release of Lasso & Jolt."
+        },
+        {
+          "date": "2023-09-08",
+          "quote": "Such a good way to appreciate the beauty and significance ZKPs!"
+        }
+      ]
+    },
+    {
+      "item": "gaming",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 78,
+      "horizon": "structural",
+      "rationale": "Personally plays and praises crypto-native games; led/celebrated seed and ecosystem deals, citing founders who 'see around corners'.",
+      "provenance": "grounded",
+      "age_note": "Most recent 2023-09-21 (Proof of Play); earlier 2023-04-28 (Yuga/Otherside) \u2014 recent and growing conviction.",
+      "citations": [
+        {
+          "date": "2023-09-21",
+          "quote": "Playing @PirateNationNFT over the last few months has been a delight... Delighted that @a16zcrypto is leading the @ProofOfPlay seed round!"
+        },
+        {
+          "date": "2023-04-28",
+          "quote": "Very excited to see what you are all going to build together."
+        }
+      ]
+    },
+    {
+      "item": "creator-economy",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 65,
+      "horizon": "structural",
+      "rationale": "a16z crypto led Sound.xyz Series A; he is energized by the founder's vision for on-chain music distribution.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-12",
+          "quote": "Hugely excited that @a16zcrypto is leading the @soundxyz_ Series A... his 'keep shipping' mantra is spot on."
+        }
+      ]
+    },
+    {
+      "item": "decentralized-storage",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 55,
+      "horizon": "structural",
+      "rationale": "Hailed Filecoin's FVM launch as advancing decentralized storage/compute capabilities.",
+      "provenance": "persisted",
+      "age_note": "Single statement 2023-03-14, never restated; ~6 months old as of analysis date.",
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "a tremendous step forward in advancing the capabilities of decentralized storage and compute"
+        }
+      ]
+    },
+    {
+      "item": "governance-dao",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 58,
+      "horizon": "structural",
+      "rationale": "Considers getting decentralized governance right early to be important and hard \u2014 a key build-time concern he flags positively.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-07-20",
+          "quote": "getting decentralized governance right from the get go is important & hard."
+        }
+      ]
+    },
+    {
+      "item": "web3-startup-building",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 85,
+      "horizon": "structural",
+      "rationale": "Repeatedly describes the quality, creativity and drive of crypto founders as 'incredible' and 'infectious'; reorganized his role around mentoring them.",
+      "provenance": "grounded",
+      "age_note": "Consistent theme April\u2013September 2023; most recent CSS push 2023-09-19/28.",
+      "citations": [
+        {
+          "date": "2023-04-03",
+          "quote": "The quality and creativity of entrepreneurs building the next generation of startups on top of crypto networks is incredible."
+        },
+        {
+          "date": "2023-07-21",
+          "quote": "The energy, creativity, and drive of entrepreneurs building in crypto is infectious."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bullish",
+      "conviction": 60,
+      "horizon": "structural",
+      "rationale": "Believes the UK is on a path to becoming a leader in crypto regulation, a reason a16z is opening a London office and moving CSS there.",
+      "provenance": "grounded",
+      "age_note": null,
+      "citations": [
+        {
+          "date": "2023-09-19",
+          "quote": "we believe the UK is on a path to becoming a leader in crypto regulation."
+        }
+      ]
+    },
+    {
+      "item": "crypto-policy-regulation",
+      "item_type": "sector",
+      "parent_sector": null,
+      "stance": "bearish",
+      "conviction": 35,
+      "horizon": "tactical",
+      "rationale": "Surfaces SEC v. Ripple and the need to parse rulings, implying regulatory ambiguity is a live issue \u2014 though he frames it neutrally, not alarmingly, and contrasts it with UK optimism.",
+      "provenance": "extrapolated",
+      "age_note": "Inferred from 2023-07-16 sharing of SEC v Ripple analysis and 2023-09-19 contrast favoring UK regulation; never stated as a personal worry.",
+      "citations": [
+        {
+          "date": "2023-07-16",
+          "quote": "Trying to understand the nuances of this week's SEC v Ripple ruling?"
+        }
+      ]
+    },
+    {
+      "item": "FIL",
+      "item_type": "token",
+      "parent_sector": "decentralized-storage",
+      "stance": "bullish",
+      "conviction": 52,
+      "horizon": "structural",
+      "rationale": "Praised the FVM launch as a major capability step for the Filecoin network.",
+      "provenance": "persisted",
+      "age_note": "Single 2023-03-14 mention, ~6 months old, never restated.",
+      "citations": [
+        {
+          "date": "2023-03-14",
+          "quote": "Congratulations to... the entire @Filecoin community on today's launch of #FVM."
+        }
+      ]
+    }
+  ],
+  "risk_regime": {
+    "stance": "risk_on",
+    "conviction": 82,
+    "rationale": "Joined a16z crypto during the 2023 bear market and consistently expresses aggressive builder optimism ('LFG!!'), drawing explicit parallels between crypto now and the early Internet at Netscape; no defensive or cautious market commentary appears anywhere in the corpus.",
+    "provenance": "grounded"
+  },
+  "notes": "Rosenthal is an operating partner, not an investor, so ~85% of his corpus is generic CEO/management coaching (1-1s, board mgmt, hiring/firing, pricing, biz dev) with no market signal; market views were extracted from his reactions to specific portfolio/ecosystem milestones. His signal is almost entirely on the excited side \u2014 he expresses essentially no concerns about crypto sectors or tokens, consistent with a thesis-driven a16z builder posture during a down market. 'Tokens' are sparse because he praises companies/projects (Yuga, Sound.xyz, Proof of Play, Matter Labs/zkSync) rather than liquid tokens; only Filecoin maps cleanly to a token. The crypto\u00d7AI and ZK/SNARK themes are his most-repeated and most-recent technical convictions. Recency note: nothing in the corpus shows a reversed stance \u2014 all views are either consistent over time or stated once and persisted."
+}

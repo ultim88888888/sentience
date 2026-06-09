@@ -84,11 +84,12 @@ def test_extract_member_chunks_oversized_corpus(tmp_path):
     merged = '{"sectors_excited":[{"name":"zk","why":"merged","conviction":85,"horizon":"structural","provenance":"grounded","age_note":null,"citations":[]}],"risk_regime":{"stance":"risk_on","conviction":65,"why":"m","provenance":"grounded"}}'
     calls = []
     def fake(system, user, **kw):
-        calls.append(system)
+        calls.append((system, user))
         return merged if "TIME-SLICE" in system else partial
     with patch("signals.extract.run_claude", side_effect=fake):
         out = extract_member(date(2024,6,30), "Scott", window_months=18, twitter_path=p, max_chars=120)
-    assert len(calls) >= 3                       # >=2 chunk extracts + 1 merge
-    assert any("TIME-SLICE" in c for c in calls) # merge happened
+    assert len(calls) >= 3                                   # >=2 chunk extracts + 1 merge
+    merge = [c for c in calls if "TIME-SLICE" in c[0]]
+    assert merge and merge[0][1].strip()                    # merge call MUST pass non-empty stdin (regression)
     assert out.approach == "A2a:Scott"
     assert out.items[0].item == "zk" and out.items[0].conviction == 85  # from merged

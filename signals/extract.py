@@ -122,15 +122,12 @@ _MEMBER_MAX_CHARS = 180_000
 _MEMBER_MERGE_TMPL = """You are {name} (a member of the a16z crypto team). It is {t}.
 Your statements over the last {window} months were too many to read at once, so they were split into
 {n} consecutive TIME-SLICES (slice 1 = oldest, slice {n} = most recent) and each was summarized into a
-partial market view. Below are those partial views as JSON.
+partial market view. The partial views (a JSON array, oldest-first) are provided as input.
 
 Consolidate them into your SINGLE current view as of {t}. On any conflict, weight the MORE RECENT
 slice. Union the items; merge duplicates (same sector/token) into one entry with your current stance,
 keeping the strongest supporting citation and noting reversals in age_note. Output the SAME JSON schema
-(sectors_excited/sectors_concerned/tokens_excited/tokens_concerned/risk_regime/notes).
-
-PARTIAL VIEWS:
-{partials}"""
+(sectors_excited/sectors_concerned/tokens_excited/tokens_concerned/risk_regime/notes)."""
 
 
 def _chunk_corpus(corpus: str, max_chars: int) -> list[str]:
@@ -150,8 +147,8 @@ def _merge_member_views(name: str, t, partials: list[PeriodSignal], window_month
     Small structured input → reliable, no AUP."""
     payload = json.dumps([p.to_dict() for p in partials], indent=2)
     system = _MEMBER_MERGE_TMPL.format(name=name, t=t.isoformat(), window=window_months,
-                                       n=len(partials), partials=payload)
-    return parse_extraction(run_claude(system, ""), t=t)
+                                       n=len(partials))
+    return parse_extraction(run_claude(system, payload), t=t)  # partials via stdin (non-empty)
 
 
 def extract_member(t, name: str, *, window_months: int, twitter_path, distillates=None,

@@ -3,6 +3,7 @@ market view. Free-form sector/token names (no taxonomy — canonicalize.py fits 
 later). Recency-privileging (long window contains stale + fresh statements)."""
 from __future__ import annotations
 import json
+import re
 from datetime import date
 
 from doppelganger.llm import run_claude
@@ -178,7 +179,43 @@ def _extract_json(raw: str) -> dict:
         s = s.split("```")[1]
         if s.startswith("json"):
             s = s[4:]
-    start, end = s.find("{"), s.rfind("}")
-    if start == -1 or end == -1:
+    start = s.find("{")
+    if start == -1:
         return {}
-    return json.loads(s[start:end + 1])
+    body = s[start:]
+    end = body.rfind("}")
+    candidate = body[:end + 1] if end != -1 else body
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError:
+        # Salvage: strip trailing commas (,} ,]) then close any structures the LLM left open.
+        repaired = re.sub(r",(\s*[}\]])", r"\1", _close_json(body))
+        return json.loads(repaired)
+
+
+def _close_json(s: str) -> str:
+    """Append the closing brackets/braces needed to balance `s`, ignoring delimiters inside strings.
+    Also strips a dangling trailing comma. Salvages output truncated mid-structure."""
+    stack, in_str, esc = [], False, False
+    for ch in s:
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch in "{[":
+            stack.append(ch)
+        elif ch in "}]" and stack:
+            stack.pop()
+    out = s.rstrip()
+    if in_str:                       # truncated inside a string value
+        out += '"'
+    out = out.rstrip().rstrip(",")   # drop a dangling comma before closing
+    for opener in reversed(stack):
+        out += "}" if opener == "{" else "]"
+    return out

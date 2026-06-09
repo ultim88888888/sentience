@@ -47,3 +47,17 @@ def test_audit_drops_lookahead_flagged():
 
 def test_render_framework_handles_empty():
     assert "no prior corpus stance" in _render_framework(None)
+
+
+def test_extract_json_salvages_truncated():
+    """A truncated LLM object (missing closing braces) must still parse — the A3 truncation failure mode."""
+    from signals.extract import _extract_json
+    truncated = '{"sectors_excited":[{"name":"zk","why":"maturing","conviction":80}],"risk_by_horizon":{"short":{"stance":"risk_off","why":"cut off here'
+    obj = _extract_json(truncated)
+    assert obj["sectors_excited"][0]["name"] == "zk"
+    assert obj["risk_by_horizon"]["short"]["stance"] == "risk_off"
+
+
+def test_extract_json_strips_trailing_comma():
+    from signals.extract import _extract_json
+    assert _extract_json('{"a":1,"b":[1,2,],}')["b"] == [1, 2]

@@ -45,17 +45,16 @@ YOUR ESTABLISHED FRAMEWORK / KNOWN STANCES (from your corpus, as of {t}):
 {framework}
 
 Produce YOUR calls. Every excited/concerned entry needs: name (the sector or token itself — never your own
-name), why (your reasoning, grounded in your framework + the digest — this is audited), conviction (0-100),
-horizon ("tactical"|"structural"), parent_sector (for tokens).
+name), why (ONE concise sentence, <=25 words, grounded in your framework + the digest — this is audited),
+conviction (0-100), horizon ("tactical"|"structural"), parent_sector (for tokens).
 
 Also give your RISK APPETITE BY HORIZON — your long-term VC view is likely constructive, but be honest
-about SHORT-TERM risk; if the period's action/events warrant near-term caution, say so:
+about SHORT-TERM risk; if the period's action/events warrant near-term caution, say so. Each 'why' <=20 words:
   short (<=1-3 months), medium (3-12 months), long (>12 months) — each {{"stance":"risk_on|risk_off|neutral","why":"..."}}
 
-Output JSON only:
+Keep it tight — concise reasons only, no preamble, no trailing commentary. Output JSON only:
 {{"sectors_excited":[...],"sectors_concerned":[...],"tokens_excited":[...],"tokens_concerned":[...],
-  "risk_by_horizon":{{"short":{{"stance":"...","why":"..."}},"medium":{{...}},"long":{{...}}}},
-  "notes":"..."}}"""
+  "risk_by_horizon":{{"short":{{"stance":"...","why":"..."}},"medium":{{...}},"long":{{...}}}}}}"""
 
 
 def member_call(t: date, name: str, framework_view: PeriodSignal, digest: dict,
@@ -65,6 +64,9 @@ def member_call(t: date, name: str, framework_view: PeriodSignal, digest: dict,
     user = digest_text(digest)
     raw = run_claude(system, user, model=model)
     p = parse_extraction(raw, t=t)              # items (with reasons in .rationale) parsed here
+    if not p.items:                             # stochastic empty/garbled output → one retry
+        raw = run_claude(system, user, model=model)
+        p = parse_extraction(raw, t=t)
     # capture risk-by-horizon; short-term stance drives the actionable risk_regime
     rbh = _extract_rbh(raw)
     short = rbh.get("short", {}) if isinstance(rbh, dict) else {}

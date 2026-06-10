@@ -50,7 +50,10 @@ def run_claude(system: str, user: str, *, workdir: Path | None = None,
         if proc is not None and proc.returncode == 0 and proc.stdout.strip():
             return proc.stdout.strip()
         if proc is not None:
-            last = f"exit {proc.returncode}; stderr: {proc.stderr[:300]!r}; empty={not proc.stdout.strip()}"
+            # Capture stdout too — AUP rejection, rate-limit, and context-overflow all exit 1 but carry
+            # DIFFERENT messages on stdout. Logging only stderr made them indistinguishable.
+            last = (f"exit {proc.returncode}; stdout: {proc.stdout.strip()[:200]!r}; "
+                    f"stderr: {proc.stderr.strip()[:200]!r}")
         if attempt < retries - 1:
             time.sleep(_jitter(system[:24], attempt))   # backoff, then retry
     raise RuntimeError(f"claude -p failed after {retries} attempts. last: {last}")

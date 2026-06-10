@@ -179,7 +179,7 @@ Output ONLY the Markdown soul card (starting with the first ## heading). No prea
 
 
 def extract_soul_chunked(slug: str, t0: date, *, out_dir=None, evidence_path=None,
-                         chunk_items: int = 2000, **kw) -> Path:
+                         chunk_items: int = 4000, **kw) -> Path:
     """Build a soul from the FULL corpus (no sampling) by processing it in AUP-safe chunks and merging.
     For prolific subjects (e.g. scott=13k items) whose full corpus exceeds the claude -p size ceiling but
     where sampling would drop real signal. Each chunk -> partial soul card; an LLM synthesis merges them.

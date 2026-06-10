@@ -44,8 +44,8 @@ def ensure_soul(slug: str, anchor: date, *, evidence_path: Path | None = None) -
         return canon.read_text()        # reuse the existing doppelganger soul (ali/eddy at 2022-12-31)
     # Use the FULL corpus (no sampling — the soul needs all the member's words). For prolific subjects
     # whose corpus exceeds the AUP size ceiling, chunk-and-merge processes every tweet in safe pieces.
-    # chunk_items=2500 (~222k tok/chunk) is AUP-safe and proven (scott's 7770-item=317k soul built;
-    # full 500k corpus is AUP-rejected). Each chunk clears the ceiling; the merge synthesizes them.
+    # chunk_items=2500 (~134k tok/chunk) clears AUP even for scott's hype-dense recent slices (4000
+    # tripped them; full 500k corpus is rejected). Each chunk passes; the merge synthesizes them.
     path = extract_soul_chunked(slug, anchor, out_dir=A4_SOULS_DIR / anchor.isoformat(),
                                 evidence_path=evidence_path, chunk_items=2500)
     return Path(path).read_text()

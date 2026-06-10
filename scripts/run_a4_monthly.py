@@ -23,7 +23,7 @@ if __name__ == "__main__":
     base = Path("data/signal"); a4 = base/"a4_members_m"
     print(f"[a4-monthly] {len(dates)} periods x {len(MEMBERS)} members (soul+memory+30d digest)", flush=True)
     run_a4_members(dates, interval_days=30, out_root=a4, sector_map=sm, prices=prices, oi_panel=oi,
-                   members=MEMBERS, audit=True, news=True, max_workers=3, model="opus")
+                   members=MEMBERS, audit=True, news=True, max_workers=5, model="opus")
     print("[a4-monthly] member views done; A4a-monthly consensus...", flush=True)
     run_a2a_consensus(dates, members_root=a4, out_dir=base/"a4a_consensus_m", registry_path=base/"registry.json")
     print("[a4-monthly] A4b-monthly council...", flush=True)

@@ -157,3 +157,48 @@ def extract_soul(
     path = base / "soul.md"
     path.write_text(_frontmatter(slug, identity.name, t0, evidence) + card.strip() + "\n")
     return path
+
+
+_MERGE_INSTRUCTIONS = """You are synthesizing ONE soul card for {name} from several PARTIAL soul cards,
+each built from a different consecutive TIME-SLICE of the same person's corpus (slice 1 = oldest). They
+describe the SAME person; your job is to unify them into a single, coherent characterization — using ALL
+of them, losing nothing distinctive.
+
+Output a Markdown soul card with EXACTLY these H2 sections in order:
+## Bio Lens / ## How He Thinks / ## What He Believes / ## What He Attends To / ## Open Contradictions /
+## How He Talks.
+
+RULES:
+- Union the insights across slices. Keep the most specific, concrete observations; drop only true duplicates.
+- 'What He Believes' = convictions that RECUR across slices (stable). 'Open Contradictions' = preserve every
+  genuine tension, including views that shifted between slices (note the shift) — never average them away.
+- Preserve inline citations verbatim in the format [<YYYY-MM-DD>] "exact quote". Keep the strongest 1-2
+  citations per claim.
+- Be specific. Generic statements that could describe any investor are failures.
+Output ONLY the Markdown soul card (starting with the first ## heading). No preamble."""
+
+
+def extract_soul_chunked(slug: str, t0: date, *, out_dir=None, evidence_path=None,
+                         chunk_items: int = 2000, **kw) -> Path:
+    """Build a soul from the FULL corpus (no sampling) by processing it in AUP-safe chunks and merging.
+    For prolific subjects (e.g. scott=13k items) whose full corpus exceeds the claude -p size ceiling but
+    where sampling would drop real signal. Each chunk -> partial soul card; an LLM synthesis merges them.
+    Lookahead-safe: load_soul_inputs applies the <=t0 firewall before chunking."""
+    identity, evidence = load_soul_inputs(slug, t0, evidence_path=evidence_path, **kw)
+    base = Path(out_dir or config.OUT_DIR) / slug
+    base.mkdir(parents=True, exist_ok=True)
+    path = base / "soul.md"
+    if len(evidence) <= chunk_items:
+        system, user = build_extraction_prompt(identity, evidence)
+        card = run_claude(system, user)
+    else:
+        n = (len(evidence) + chunk_items - 1) // chunk_items
+        partials = []
+        for i in range(n):
+            chunk = evidence.iloc[i * chunk_items:(i + 1) * chunk_items]
+            system, user = build_extraction_prompt(identity, chunk)
+            partials.append(f"=== PARTIAL SOUL (slice {i+1}/{n}) ===\n{run_claude(system, user).strip()}")
+        merge_sys = _MERGE_INSTRUCTIONS.format(name=identity.name)
+        card = run_claude(merge_sys, "\n\n".join(partials))
+    path.write_text(_frontmatter(slug, identity.name, t0, evidence) + card.strip() + "\n")
+    return path

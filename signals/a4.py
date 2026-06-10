@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd
 
 from doppelganger.llm import run_claude, run_claude_pool
-from doppelganger.soul import extract_soul
+from doppelganger.soul import extract_soul, extract_soul_chunked
 from doppelganger.memory import load_memory
 from signals.schema import PeriodSignal, RiskRegime
 from signals.extract import parse_extraction
@@ -42,10 +42,10 @@ def ensure_soul(slug: str, anchor: date, *, evidence_path: Path | None = None) -
     canon = Path("data/doppelganger") / slug / "soul.md"
     if canon.exists() and f"t0: {anchor.isoformat()}" in canon.read_text()[:400]:
         return canon.read_text()        # reuse the existing doppelganger soul (ali/eddy at 2022-12-31)
-    # cap evidence for prolific subjects (miles=2204 builds fine, scott=13k exceeds AUP) → 2500 keeps
-    # us in the proven-safe range; even-stride sample preserves the chronological arc, no lookahead.
-    path = extract_soul(slug, anchor, out_dir=A4_SOULS_DIR / anchor.isoformat(),
-                        evidence_path=evidence_path, max_evidence_items=2500)
+    # Use the FULL corpus (no sampling — the soul needs all the member's words). For prolific subjects
+    # whose corpus exceeds the AUP size ceiling, chunk-and-merge processes every tweet in safe pieces.
+    path = extract_soul_chunked(slug, anchor, out_dir=A4_SOULS_DIR / anchor.isoformat(),
+                                evidence_path=evidence_path, chunk_items=2000)
     return Path(path).read_text()
 
 

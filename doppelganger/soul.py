@@ -26,8 +26,12 @@ def load_soul_inputs(
     twitter_path: Path | None = None,
     articles_path: Path | None = None,
     podcast_path: Path | None = None,
+    max_evidence_items: int | None = None,
 ) -> tuple[IdentityProfile, pd.DataFrame]:
-    """Return (identity truncated to <=t0, evidence DataFrame filtered to <=t0, sorted)."""
+    """Return (identity truncated to <=t0, evidence DataFrame filtered to <=t0, sorted).
+    max_evidence_items: if set and exceeded, even-stride downsample (preserving the chronological arc)
+    AFTER the <=t0 firewall — keeps prolific subjects (e.g. 13k items) under the claude -p size ceiling
+    without lookahead leakage."""
     identity = build_identity(
         slug, linkedin_path=identity_path, team_path=team_path,
         tracked_people_path=tracked_people_path,
@@ -45,6 +49,10 @@ def load_soul_inputs(
 
     ev["timestamp"] = pd.to_datetime(ev["timestamp"], utc=True)
     ev = ev[ev["timestamp"].dt.date <= t0].sort_values("timestamp").reset_index(drop=True)
+    if max_evidence_items and len(ev) > max_evidence_items:
+        # even-stride sample across the full chronological span (keeps the arc, not just recent)
+        idx = (pd.Series(range(len(ev))) * (len(ev) - 1) / (max_evidence_items - 1)).round().astype(int)
+        ev = ev.iloc[sorted(set(idx[:max_evidence_items]))].reset_index(drop=True)
     return identity, ev
 
 
@@ -133,11 +141,13 @@ def extract_soul(
     twitter_path: Path | None = None,
     articles_path: Path | None = None,
     podcast_path: Path | None = None,
+    max_evidence_items: int | None = None,
 ) -> Path:
     identity, evidence = load_soul_inputs(
         slug, t0, evidence_path=evidence_path, identity_path=identity_path,
         team_path=team_path, tracked_people_path=tracked_people_path,
         twitter_path=twitter_path, articles_path=articles_path, podcast_path=podcast_path,
+        max_evidence_items=max_evidence_items,
     )
     system, user = build_extraction_prompt(identity, evidence)
     card = run_claude(system, user)

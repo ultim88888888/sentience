@@ -281,7 +281,7 @@ footer a{color:#F4F1E8;}
   <p class="lead">Claude searched the strategy space — these are the knobs it iterated over, and what won.</p>
   <div id="knobs"></div>
   <p class="tradedesc"><b>The trade:</b> each quarter, long the top-3 council-bullish sectors that are also outperforming BTC, equal-weight their liquid token baskets, hold BTC when none qualify, and beta-hedge in bear regimes. Rebalanced monthly.</p>
-  <h3 style="font-size:18px;margin:0 0 12px;">Performance</h3>
+  <h3 style="font-size:18px;margin:30px 0 12px;">Performance</h3>
   <div class="controls">
     <div><span class="lab">Deploy</span><span class="seg" id="seg"></span></div>
     <div><span class="lab">Scale</span><span class="seg" id="segscale">
@@ -548,7 +548,7 @@ function drawHoldings(d){
      <span class="contrib" style="color:${contrib===null?'var(--slate)':rcol(contrib)}">${contrib===null?'—':bps(contrib)}</span></div>
     ${s.tokens.length?`<div class="htoks">${s.tokens.map(t=>tokChip(t,isShort)).join('')}</div>`:''}</div>`;
  }).join('')||'<div class="hsec">No position.</div>';
- const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec btcref" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:${rcol(br)}">${rpct(br)}</span></div></div>`:'';
+ const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec btcref" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:var(--slate)">${rpct(br)}</span></div></div>`:'';
  document.getElementById('holdings').innerHTML=header+rows+btcref;
 }
 function syncChartMarker(){

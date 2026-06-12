@@ -17,8 +17,8 @@ header .wrap{padding:24px 22px;}
 .hero h1{font-size:clamp(34px,6vw,66px);line-height:.95;margin:0 0 16px;}
 .hero p{max-width:680px;font-size:15px;margin:0;}
 .hero .em{background:var(--yellow);padding:0 4px;}
-section{border-bottom:2px solid var(--ink);padding:40px 0;}
-section:nth-of-type(odd){background:#E9E5D7;}
+section{padding:42px 0;}
+section:nth-of-type(odd){background:#FFFFFF;}
 section:nth-of-type(even){background:var(--cream);}
 .stage{display:inline-block;background:var(--ink);color:var(--cream);font-size:12px;padding:3px 12px;border-radius:14px;letter-spacing:1px;margin-bottom:14px;}
 h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
@@ -45,12 +45,13 @@ ul.src li{margin:3px 0;}
 .mcardx .ic{display:flex;gap:12px;font-size:10px;color:var(--slate);}
 .mcardx .ic b{font-family:"Arial Black",sans-serif;color:var(--ink);font-size:14px;display:block;}
 /* knobs */
-.knobs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:6px;}
+.knobs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:6px;}
+@media(max-width:720px){.knobs{grid-template-columns:repeat(2,1fr);}}
 .knob{background:var(--card);border:2px solid var(--ink);padding:12px 14px;}
 .knob .kt{font-size:11px;color:var(--ink);font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;text-align:center;}
 .knob{display:flex;flex-direction:column;}
 .knob .opt{display:block;font-size:11.5px;border:1.5px solid var(--ink);border-radius:6px;padding:4px 10px;margin:3px 0 0;color:var(--slate);text-align:center;}
-.knob .opt.sel{background:var(--green);color:#fff;border-color:var(--green);font-weight:bold;}
+.knob .opt.sel{color:#fff;border-color:var(--ink);font-weight:bold;}
 /* holdings slider */
 .hslider{display:flex;align-items:center;gap:14px;margin:8px 0 12px;}
 .hslider input[type=range]{flex:1;accent-color:var(--ink);height:6px;}
@@ -61,7 +62,6 @@ ul.src li{margin:3px 0;}
 .htok.short .pw{color:var(--red);}
 /* cards (stage 3) */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px;}
-section:nth-of-type(odd) .card,section:nth-of-type(odd) .stat,section:nth-of-type(odd) .step,section:nth-of-type(odd) .mcardx,section:nth-of-type(odd) .knob{background:#FCFBF7;}
 .card{background:var(--card);border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;}
 .card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);}
 .card.win{background:var(--yellow);}
@@ -92,9 +92,9 @@ section:nth-of-type(odd) .card,section:nth-of-type(odd) .stat,section:nth-of-typ
 .hbox{background:var(--card);border:2px solid var(--ink);padding:18px;margin-top:8px;}
 .hsec{border-bottom:1.5px dashed var(--ink);padding:10px 0;}
 .hsec:last-child{border-bottom:none;}
-.hsec .sh{display:flex;justify-content:space-between;align-items:baseline;}
+.hsec .sh{display:flex;justify-content:space-between;align-items:flex-start;}
 .hsec .sn{font-family:"Arial Black",sans-serif;font-size:14px;text-transform:uppercase;}
-.hsec .sw{font-size:12px;color:var(--slate);}
+.hsec .sw{font-size:12px;color:var(--slate);display:flex;flex-direction:column;align-items:flex-end;gap:1px;}
 .htoks{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
 .htok{display:flex;align-items:center;gap:6px;background:var(--cream);border:1.5px solid var(--ink);border-radius:16px;padding:3px 10px 3px 4px;font-size:12px;}
 .htok img{width:18px;height:18px;border-radius:50%;background:#fff;}
@@ -268,8 +268,9 @@ const KNOBS=[
  {t:'Allocation',opts:[['Equal weight',1],['Conviction weight',0]]},
  {t:'Concentration',opts:[['Top 2',0],['Top 3',1],['Top 5',0],['All bullish',0]]},
 ];
-document.getElementById('knobs').innerHTML='<div class="knobs">'+KNOBS.map(k=>
- `<div class="knob"><div class="kt">${k.t}${k.sub?' '+k.sub:''}</div>${k.opts.map(([o,s])=>`<span class="opt ${s?'sel':''}">${o}</span>`).join('')}</div>`).join('')+'</div>';
+const KCOL=['#10B981','#3B82F6','#8B5CF6','#EF4444','#F59E0B','#06B6D4','#EC4899','#84CC16'];
+document.getElementById('knobs').innerHTML='<div class="knobs">'+KNOBS.map((k,ki)=>
+ `<div class="knob"><div class="kt">${k.t}${k.sub?' '+k.sub:''}</div>${k.opts.map(([o,s])=>`<span class="opt ${s?'sel':''}" ${s?`style="background:${KCOL[ki%KCOL.length]}"`:''}>${o}</span>`).join('')}</div>`).join('')+'</div>';
 
 // Stage 4: equity with START DATE
 const S=DATA.series;
@@ -319,15 +320,17 @@ function rpct(x){return x===null||x===undefined?'':((x>=0?'+':'')+Math.round(x*1
 function drawHoldings(d){
  const h=HD[d]||[];const br=DATA.btc_ret?DATA.btc_ret[d]:null;
  document.getElementById('hdate').textContent=(d===DATA.current_date?'Current · ':'')+lab(d);
+ // does the book already involve BTC (cash hold or hedge short)?
+ const involvesBTC=h.some(s=>s.tokens.some(t=>t.sym==='BTC'));
  const rows=h.map(s=>{
    const isShort=s.long===false;
    const sw=s.tokens.reduce((a,t)=>a+t.w,0);
    const r=s.ret;
    return `<div class="hsec ${isShort?'short':''}"><div class="sh"><span class="sn">${s.sector}</span>
-     <span class="sw">${sw>0?(isShort?'−':'')+(sw*100).toFixed(0)+'% of book':''}${r!==null&&r!==undefined?` · <span class="ret" style="color:${rcol(r)}">${rpct(r)}</span> that mo.`:''}</span></div>
+     <span class="sw">${sw>0?`<span>${(isShort?'−':'')+(sw*100).toFixed(0)}% of book</span>`:''}${r!==null&&r!==undefined?`<span class="ret" style="color:${rcol(r)}">${rpct(r)}</span>`:''}</span></div>
     ${s.tokens.length?`<div class="htoks">${s.tokens.map(t=>tokChip(t,isShort)).join('')}</div>`:''}</div>`;
  }).join('')||'<div class="hsec">No position.</div>';
- const btcref=(br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.7"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="sw"><span class="ret" style="color:${rcol(br)}">${rpct(br)}</span> that mo.</span></div></div>`:'';
+ const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.7"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="sw"><span class="ret" style="color:${rcol(br)}">${rpct(br)}</span></span></div></div>`:'';
  document.getElementById('holdings').innerHTML=rows+btcref;
 }
 const hr=document.getElementById('hrange');

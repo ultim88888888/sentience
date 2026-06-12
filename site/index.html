@@ -12,8 +12,7 @@
 *{box-sizing:border-box}
 ::selection{background:#d9d9d6;color:#111;}
 ::-moz-selection{background:#d9d9d6;color:#111;}
-a,button,input,dialog,.card,.mface,.jitem{outline:none;}
-a:focus,a:focus-visible,button:focus,button:focus-visible,input:focus,input:focus-visible,dialog:focus,dialog:focus-visible,.card:focus,.card:focus-visible,.mface:focus,.mface:focus-visible,.jitem:focus,.jitem:focus-visible,[tabindex]:focus,[tabindex]:focus-visible{outline:none;}
+:focus,:focus-visible,:focus-within{outline:none !important;}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-monospace,"SF Mono",Menlo,monospace;line-height:1.5;}
 .wrap{max-width:1040px;margin:0 auto;padding:0 22px;}
 h1,h2,h3,.heavy{font-family:"Arial Black","Helvetica Neue",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.5px;}

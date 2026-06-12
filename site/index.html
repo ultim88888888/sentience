@@ -460,9 +460,9 @@ document.getElementById('seg').innerHTML=years.map(y=>`<button data-y="${y}" cla
 function build(f){const out={m:[S[f].m],strat:[10],btc:[10],l1:[10]};let eS=10,eB=10,eL=10;
  for(let i=f;i<S.length;i++){const r=S[i];eS*=1+r.strat;eB*=1+r.btc;eL*=1+r.l1;out.m.push(r.m);out.strat.push(eS);out.btc.push(eB);out.l1.push(eL);}return out;}
 function metr(arr){const n=arr.length,mean=arr.reduce((a,b)=>a+b,0)/n,sd=Math.sqrt(arr.reduce((a,b)=>a+(b-mean)**2,0)/(n-1));let eq=1,pk=1,dd=0;arr.forEach(r=>{eq*=1+r;pk=Math.max(pk,eq);dd=Math.min(dd,eq/pk-1)});return{tot:eq-1,sharpe:sd>0?mean/sd*Math.sqrt(12):0,dd};}
-let chart;
+let chart,curD=null;
 function draw(){
- const f=startIdx[startY],d=build(f);
+ const f=startIdx[startY],d=build(f);curD=d;
  const rS=S.slice(f).map(r=>r.strat),rB=S.slice(f).map(r=>r.btc),rL=S.slice(f).map(r=>r.l1);
  const mS=metr(rS),mB=metr(rB),mL=metr(rL);
  document.getElementById('mcards').innerHTML=
@@ -471,11 +471,12 @@ function draw(){
    ['Sharpe',mS.sharpe.toFixed(2),`BTC ${mB.sharpe.toFixed(2)} · L1 ${mL.sharpe.toFixed(2)}`],
    ['Max drawdown',pct(mS.dd),`BTC ${pct(mB.dd)} · L1 ${pct(mL.dd)}`]]
   .map(([l,v,c])=>`<div class="mcard"><div class="ml">${l}</div><div class="mv">${v}</div><div class="cmp">${c}</div></div>`).join('');
- const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15});
+ const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15,pointHoverRadius:lab==='strategy'?6:5,pointHoverBackgroundColor:col,pointHoverBorderColor:'#F4F1E8',pointHoverBorderWidth:2});
  const cfg={type:'line',data:{labels:d.m,datasets:[mk('strategy',d.strat,'#111'),mk('BTC',d.btc,'#EF4444'),mk('L1 majors',d.l1,'#6B7280',[5,4])]},
-  options:{responsive:true,maintainAspectRatio:false,resizeDelay:80,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{enabled:false}},scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
+  options:{responsive:true,maintainAspectRatio:false,resizeDelay:80,animation:false,events:['click'],interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{enabled:false}},scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
     x:{grid:{display:false},ticks:{font:{family:'monospace'},maxTicksLimit:9,callback:function(v){return this.getLabelForValue(v).slice(0,7)}}}}}};
  if(chart)chart.destroy();chart=new Chart(document.getElementById('eq'),cfg);
+ syncChartMarker();
 }
 document.querySelectorAll('#seg button').forEach(b=>b.onclick=()=>{startY=b.dataset.y;document.querySelectorAll('#seg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw();});
 document.querySelectorAll('#segscale button').forEach(b=>b.onclick=()=>{logScale=b.dataset.s==='log';document.querySelectorAll('#segscale button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw();});
@@ -513,9 +514,19 @@ function drawHoldings(d){
  const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:${rcol(br)}">${rpct(br)}</span></div></div>`:'';
  document.getElementById('holdings').innerHTML=header+rows+btcref;
 }
+function syncChartMarker(){
+ const hrEl=document.getElementById('hrange');
+ if(!chart||!hrEl||!curD) return;
+ const hd=Object.keys(DATA.holdings).sort()[+hrEl.value];
+ const idx=curD.m.lastIndexOf(hd);
+ if(idx<1){chart.setActiveElements([]);chart.update('none');return;}
+ chart.setActiveElements(chart.data.datasets.map((_,di)=>({datasetIndex:di,index:idx})));
+ chart.update('none');
+}
 const hr=document.getElementById('hrange');
 hr.max=hdates.length-1; hr.value=hdates.length-1;
-hr.oninput=()=>drawHoldings(hdates[+hr.value]);
+hr.oninput=()=>{drawHoldings(hdates[+hr.value]);syncChartMarker();};
 drawHoldings(hdates[hdates.length-1]);
+syncChartMarker();
 </script>
 </body></html>

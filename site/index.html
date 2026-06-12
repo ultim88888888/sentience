@@ -120,6 +120,26 @@ dialog::backdrop{background:rgba(17,17,17,.45);}
 .dlg-stats .dl{font-size:9px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
 .dlg-b .sm{background:var(--card);border-left:3px solid var(--cyan);padding:10px 12px;color:#333;font-size:12.5px;}
 
+
+/* ===== Stage 5 future ===== */
+.ftgrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink);margin-bottom:26px;}
+.ftcol{padding:18px 20px;}
+.ftcol:first-child{border-right:2px solid var(--ink);}
+.fth{font-family:"Arial Black",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.5px;font-size:14px;margin-bottom:10px;}
+.ftlist{margin:0;padding-left:16px;font-size:13px;}
+.ftlist li{margin:6px 0;}
+.fthyp{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.hypcard{border:2px solid var(--ink);background:var(--yellow);padding:18px;}
+.hyptag{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#7a6f00;font-weight:bold;}
+.hyptitle{font-family:"Arial Black",sans-serif;font-weight:900;text-transform:uppercase;font-size:17px;margin:4px 0 8px;}
+.hypcard p{font-size:13px;margin:0;color:#2a2a1a;}
+.limgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.limcard{border:2px solid var(--ink);padding:18px;}
+.limnow{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--red);border:1.5px solid var(--red);border-radius:12px;padding:2px 9px;margin-bottom:8px;font-weight:bold;}
+.limtitle{font-family:"Arial Black",sans-serif;font-weight:900;text-transform:uppercase;font-size:16px;margin:0 0 8px;color:var(--green);}
+.limcard p{font-size:13px;margin:0;color:#333;}
+@media(max-width:720px){.ftgrid,.fthyp,.limgrid{grid-template-columns:1fr;}.ftcol:first-child{border-right:none;border-bottom:2px solid var(--ink);}}
+
 /* ===== State of Crypto animated header ===== */
 .socwrap{position:relative;background:#06215A;overflow:hidden;border-bottom:3px solid var(--ink);padding:34px 22px 46px;text-align:center;}
 .soc-brand{position:relative;z-index:3;text-align:left;max-width:1040px;margin:0 auto 18px;color:#F4F1E8;font-family:"Arial Black",sans-serif;font-weight:900;letter-spacing:.5px;font-size:20px;}
@@ -220,6 +240,58 @@ footer a{color:var(--ink);}
   <p class="fineprint" style="margin-top:0;">The book on any month — drag the slider. Defaults to current. Long sectors (token baskets) and any bear-regime BTC short shown.</p>
   <div class="hslider"><input type="range" id="hrange" min="0" max="0" value="0"><div class="hdate" id="hdate"></div></div>
   <div class="hbox" id="holdings"></div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="stage">Stage 5</span>
+  <h2>Future</h2>
+  <p class="lead">This is a public-data prototype. With a16z's own inputs and real-time execution, the same machine gets materially sharper. Here's where the next alpha lives.</p>
+
+  <div class="ftgrid">
+    <div class="ftcol">
+      <div class="fth">Richer inputs</div>
+      <ul class="ftlist">
+        <li>Internal memos, deal flow &amp; founder interviews — direct conviction, not just public posts</li>
+        <li>More doppelgangers across the full investing &amp; research team</li>
+        <li>Earlier corpus history for deeper backtests &amp; significance</li>
+      </ul>
+    </div>
+    <div class="ftcol">
+      <div class="fth">Better execution</div>
+      <ul class="ftlist">
+        <li>Long via spot OTC or perps</li>
+        <li>Hedge via perps</li>
+        <li>More compute bandwidth — run deeper, more frequent signal passes</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fthyp">
+    <div class="hypcard">
+      <div class="hyptag">Hypothesis 1</div>
+      <div class="hyptitle">Outsized long-term gains</div>
+      <p>The corpus front-runs themes by quarters — privacy was a conviction call years before ZEC ran +444%. Earlier, higher-fidelity conviction signals should surface more of these before they move.</p>
+    </div>
+    <div class="hypcard">
+      <div class="hyptag">Hypothesis 2</div>
+      <div class="hyptitle">Bear-market outperformance</div>
+      <p>Defensive sector selection + the regime hedge already cut drawdown to roughly half of BTC's. Sharper bear-sector reads and a real hedging desk should widen that gap.</p>
+    </div>
+  </div>
+
+  <div class="cap" style="margin-top:30px;">Known limitations — where alpha is currently capped</div>
+  <div class="limgrid">
+    <div class="limcard">
+      <div class="limnow">Now · Fixed cadence</div>
+      <div class="limtitle">React in real time</div>
+      <p>Today the signal refreshes on a set schedule. In production we'd ingest events as they break — e.g. a large BTC treasury sell-off: rather than waiting for quarter-end, conduct interviews, update the doppelgangers, and react immediately. A powerful, timely hedge input.</p>
+    </div>
+    <div class="limcard">
+      <div class="limnow">Now · Proxy baskets</div>
+      <div class="limtitle">Precise basket construction</div>
+      <p>Today we map views onto broadly-defined liquid baskets that we <i>hope</i> fit the narrative. With direct access we'd construct each sector and its constituents to align exactly with a16z's actual theses — tighter signal, less noise.</p>
+    </div>
+  </div>
 </div></section>
 
 <footer><div class="wrap">

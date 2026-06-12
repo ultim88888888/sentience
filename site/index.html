@@ -112,6 +112,8 @@ ul.src li{margin:3px 0;}
 .seg button{font-family:inherit;font-size:13px;border:none;background:var(--card);padding:6px 14px;cursor:pointer;border-right:2px solid var(--ink);}
 .seg button:last-child{border-right:none;}
 .seg button.on{background:var(--ink);color:var(--cream);}
+.tradedesc{font-size:13.5px;line-height:1.55;color:#333;max-width:880px;margin:14px 0 24px;border-left:3px solid #7420F5;padding-left:12px;}
+.tradedesc b{color:var(--ink);}
 .controls{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin:0 0 16px;}
 .controls .lab{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-right:8px;}
 .mcards{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;}
@@ -133,6 +135,7 @@ ul.src li{margin:3px 0;}
 .bookw{font-size:10px;color:var(--slate);font-weight:normal;text-transform:none;letter-spacing:0;margin-left:8px;}
 .hsec{border-bottom:1.5px dashed var(--ink);padding:10px 0;}
 .hsec:last-child{border-bottom:none;}
+.hsec:has(+ .btcref){border-bottom:2px solid var(--ink);}
 .hsec .sh{display:flex;justify-content:space-between;align-items:flex-start;}
 .hsec .sn{font-family:"Arial Black",sans-serif;font-size:14px;text-transform:uppercase;}
 .hsec .sw{font-size:12px;color:var(--slate);display:flex;flex-direction:column;align-items:flex-end;gap:1px;}
@@ -276,6 +279,8 @@ footer a{color:#F4F1E8;}
   <h2>Strategy Creation</h2>
   <p class="lead">Claude searched the strategy space — these are the knobs it iterated over, and what won.</p>
   <div id="knobs"></div>
+  <p class="tradedesc"><b>The trade:</b> each quarter, long the top-3 council-bullish sectors that are also outperforming BTC — equal-weight their liquid token baskets, hold BTC when none qualify, and beta-hedge in bear regimes. Rebalanced monthly.</p>
+  <h3 style="font-size:18px;margin:0 0 12px;">Strategy Performance</h3>
   <div class="controls">
     <div><span class="lab">Deploy</span><span class="seg" id="seg"></span></div>
     <div><span class="lab">Scale</span><span class="seg" id="segscale">
@@ -531,7 +536,7 @@ function drawHoldings(d){
  document.getElementById('hdate').textContent=(d===DATA.current_date?'Current · ':'')+lab(d);
  // total portfolio contribution = sum of weight*ret across legs
  const involvesBTC=h.some(s=>s.tokens.some(t=>t.sym==='BTC'));
- const header=`<div class="hhead"><span>Position</span><span>Contribution</span></div>`;
+ const header=`<div class="hhead"><span>Position</span><span>Portfolio Contribution</span></div>`;
  const rows=h.map(s=>{
    const isShort=s.long===false;
    const sw=s.tokens.reduce((a,t)=>a+t.w,0);
@@ -542,7 +547,7 @@ function drawHoldings(d){
      <span class="contrib" style="color:${contrib===null?'var(--slate)':rcol(contrib)}">${contrib===null?'—':bps(contrib)}</span></div>
     ${s.tokens.length?`<div class="htoks">${s.tokens.map(t=>tokChip(t,isShort)).join('')}</div>`:''}</div>`;
  }).join('')||'<div class="hsec">No position.</div>';
- const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:${rcol(br)}">${rpct(br)}</span></div></div>`:'';
+ const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec btcref" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:${rcol(br)}">${rpct(br)}</span></div></div>`:'';
  document.getElementById('holdings').innerHTML=header+rows+btcref;
 }
 function syncChartMarker(){

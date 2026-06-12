@@ -17,7 +17,7 @@
       "posts": 43,
       "media": 20,
       "span": "2019-11-17 – 2026-06-05",
-      "summary": "Zoom out from chaos to find order. His signature move, derived from data rather than vibes, is the price-innovation cycle: he reads market turbulence as a lagging surface over steady fundamental progress. He applies it as a personal discipline — trust the instruments over sentiment — while hedging the framework's own precision Calibrated optimism; cynicism is a failure mode. His explicit epistemic stance balances doubt and conviction."
+      "summary": "Zoom out from chaos to find order. His signature move, derived from data rather than vibes, is the price-innovation cycle: he reads market turbulence as a lagging surface over steady fundamental progress. He applies it as a personal discipline — trust the instruments over sentiment — while hedging the framework's own precision. Calibrated optimism; cynicism is a failure mode. His explicit epistemic stance balances doubt and conviction."
     },
     {
       "slug": "daren-matsuoka",
@@ -29,7 +29,7 @@
       "posts": 24,
       "media": 9,
       "span": "2021-01-03 – 2026-06-02",
-      "summary": "Data-first, skeptical of his own metrics. His signature move is to distrust the easy number and decompose it. He repeatedly flags that headline metrics are gamed: and built a whole methodology to estimate \"real\" users by filtering bots and sybils He prefers ranges and admits uncertainty rather than false precision. Separates signal from speculation. A core analytical reflex: strip out the noise to find organic demand."
+      "summary": "Data-first, skeptical of his own metrics. His signature move is to distrust the easy number and decompose it. He repeatedly flags that headline metrics are gamed, and built a whole methodology to estimate \"real\" users by filtering out bots and sybils. He prefers ranges and admits uncertainty rather than false precision, separating signal from speculation. A core analytical reflex: strip out the noise to find organic demand."
     },
     {
       "slug": "jason-rosenthal",
@@ -41,7 +41,7 @@
       "posts": 19,
       "media": 4,
       "span": "2021-01-15 – 2026-05-27",
-      "summary": "His default analytical move is historical pattern-matching: he reads new crypto developments as reruns of prior platform waves and reasons forward from \"what changed.\" / \"Web2- mobile+social+public cloud\". He formalized this into a \"sequels\" heuristic—revisit failed prior-era ideas and ask what infrastructure/UX/regulation now makes them work with explicit comparables. He thinks in named frameworks and first principles, almost compulsively. He repeatedly resets to root cause before acting."
+      "summary": "His default analytical move is historical pattern-matching: he reads new crypto developments as reruns of prior platform waves and reasons forward from what changed. He formalized this into a \"sequels\" heuristic — revisit failed prior-era ideas and ask what infrastructure, UX, or regulation now makes them work, with explicit comparables. He thinks in named frameworks and first principles, almost compulsively, repeatedly resetting to root cause before acting."
     },
     {
       "slug": "chris-dixon",
@@ -77,7 +77,7 @@
       "posts": 41,
       "media": 15,
       "span": "2021-01-01 – 2026-06-05",
-      "summary": "Everything reduces to incentives and the margin. His first move on any phenomenon is to ask who is on the margin and what they're optimizing. On delivery tipping. On gas fees. He treats coordination failures as the default diagnosis —. He looks for where incentives are misaligned by reading the symptoms. The Roth move generalizes into a reusable diagnostic: And he prefers structural fixes to patches — Frameworks he builds and names."
+      "summary": "Everything reduces to incentives and the margin. His first move on any phenomenon is to ask who is on the margin and what they're optimizing — whether the subject is delivery tipping or gas fees. He treats coordination failures as the default diagnosis, reading the symptoms to find where incentives are misaligned. The Roth move generalizes into a reusable diagnostic, and he prefers structural fixes to patches — frameworks he builds and names."
     },
     {
       "slug": "miles-jennings",
@@ -89,7 +89,7 @@
       "posts": 92,
       "media": 11,
       "span": "2021-08-18 – 2026-06-03",
-      "summary": "First-principles reduction to purpose. His signature move is asking what risk a rule was built to address, then asking whether the technology eliminates that risk. Securities laws reduce to information asymmetry Substance over form — his deepest epistemic commitment. He repeatedly rejects formalistic tests as catastrophic loopholes, insisting on \"economic reality.\" His recurring proof-by-reductio: if form governed, FTT escapes and ETH equals FTT Reasoning by analogy and reductio ad absurdum."
+      "summary": "First-principles reduction to purpose. His signature move is asking what risk a rule was built to address, then whether the technology eliminates that risk. Securities laws reduce to information asymmetry. Substance over form is his deepest epistemic commitment: he repeatedly rejects formalistic tests as catastrophic loopholes, insisting on \"economic reality.\" His recurring proof by reductio ad absurdum: if form governed, FTT would escape regulation and ETH would equal FTT."
     },
     {
       "slug": "tim-roughgarden",
@@ -101,7 +101,7 @@
       "posts": 20,
       "media": 9,
       "span": "2021-01-04 – 2026-05-04",
-      "summary": "His signature move is to treat impossibility results as constructive, not deflating. He returns to this repeatedly: He values them because He thinks in hierarchies of assumptions, seeking the weakest premises that still yield results — e.g. his Perm < QP < DA < FP \"degrees of permissionlessness\" ladder, modeled on classical asynchrony/fault hierarchies."
+      "summary": "His signature move is to treat impossibility results as constructive, not deflating. He thinks in hierarchies of assumptions, seeking the weakest premises that still yield results — e.g. his Perm < QP < DA < FP \"degrees of permissionlessness\" ladder, modeled on classical asynchrony / fault hierarchies."
     },
     {
       "slug": "justin-thaler",
@@ -113,7 +113,7 @@
       "posts": 36,
       "media": 16,
       "span": "2022-08-11 – 2026-03-27",
-      "summary": "Cost accounting as the master move. His dominant reasoning pattern is to decompose any system into quantifiable prover/verifier costs and refuse qualitative argument until the numbers are on the table. He invented the \"frontend overhead × backend overhead\" framework and insists disputes be settled by counting: [2024-09 era] \"you can count group and field operations done by the prover, and thereby tell how the SNARK will perform before implementing it\". He wins arguments by re-doing opponents' arithmetic, e.g."
+      "summary": "Cost accounting as the master move. His dominant reasoning pattern is to decompose any system into quantifiable prover/verifier costs and refuse qualitative argument until the numbers are on the table. He invented the \"frontend overhead × backend overhead\" framework and insists disputes be settled by counting: you can count the group and field operations a prover does, and thereby tell how a SNARK will perform before implementing it. He wins arguments by re-doing his opponents' arithmetic."
     },
     {
       "slug": "guy-wuollet",

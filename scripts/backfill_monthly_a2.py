@@ -53,18 +53,22 @@ def main():
     WAVE = 20
     for i in range(0, len(tasks), WAVE):
         wave = tasks[i:i + WAVE]
-        with ThreadPoolExecutor(max_workers=5) as ex:
+        with ThreadPoolExecutor(max_workers=3) as ex:
             raws = list(ex.map(lambda a: (_extract(a[0], a[1], a[2], a[3]), a), wave))
-        # serial canonicalize + write (registry is shared state)
+        # serial canonicalize + write (registry is shared state). Per-item try/except so one failure
+        # (e.g. a transient session-limit on the canonicalize call) never crashes the whole run.
         for raw, (slug, name, tw, t, pj) in raws:
             if raw is None:
                 continue
-            canon, registry = canonicalize_items(list(raw.items), registry)
-            period = PeriodSignal(as_of=raw.as_of, approach=f"A2a:{name}", items=tuple(canon),
-                                  risk_regime=raw.risk_regime, notes=raw.notes)
-            pj.parent.mkdir(parents=True, exist_ok=True)
-            pj.write_text(json.dumps(period.to_dict(), indent=2))
-            done += 1
+            try:
+                canon, registry = canonicalize_items(list(raw.items), registry)
+                period = PeriodSignal(as_of=raw.as_of, approach=f"A2a:{name}", items=tuple(canon),
+                                      risk_regime=raw.risk_regime, notes=raw.notes)
+                pj.parent.mkdir(parents=True, exist_ok=True)
+                pj.write_text(json.dumps(period.to_dict(), indent=2))
+                done += 1
+            except Exception as e:
+                print(f"[canon-fail] {slug} {t}: {str(e)[:90]}", flush=True)
         save_registry(registry, REG)
         print(f"[backfill] wave {i//WAVE+1}: {done}/{len(tasks)} written", flush=True)
     print(f"[backfill] DONE — {done}/{len(tasks)} member-months backfilled", flush=True)

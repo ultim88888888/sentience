@@ -80,11 +80,18 @@ ul.src li{margin:3px 0;}
 .card .metric{margin-top:10px;font-size:12px;}
 .card .metric b{font-family:"Arial Black",sans-serif;}
 .card .more{margin-top:10px;font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
-.jsonbox{background:transparent;border:2px solid var(--ink);color:#5b6b7f;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:16px 18px;margin:0 0 6px;overflow-x:auto;white-space:pre;}
+.jsonbox{background:transparent;border:none;color:#94a3b8;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:8px 2px;margin:0 0 6px;overflow-x:auto;white-space:pre;}
 .jsonbox .jk{color:#7420F5;}
 .jsonbox .js{color:#0a7d4b;}
 .jsonbox .jn{color:#b45309;}
 .jsonbox .jb{color:#b45309;}
+.jsonbox .jp{color:#94a3b8;}
+.jitem{cursor:pointer;border-radius:4px;}
+.jitem:hover{background:rgba(116,32,245,.06);}
+.jitem .jbody{display:none;}
+.jitem.open .jbody{display:inline;}
+.jitem.open .jhead{display:none;}
+.jtog{display:inline-block;width:1em;color:#7420F5;}
 .badge{display:inline-block;background:var(--green);color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:10px;letter-spacing:.5px;text-transform:uppercase;}
 .chartbox{background:transparent;border:2px solid var(--ink);padding:14px;}
 .cap{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin:0 0 10px;}
@@ -377,8 +384,8 @@ const SAMPLE={
     ]}
  ]
 };
-function hljson(o){
- let j=JSON.stringify(o,null,2).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const _esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function _hl(j){
  return j.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?)/g,m=>{
    let c='jn';
    if(/^"/.test(m)) c=/:$/.test(m)?'jk':'js';
@@ -386,7 +393,30 @@ function hljson(o){
    return '<span class="'+c+'">'+m+'</span>';
  });
 }
-document.getElementById('jsonsample').innerHTML=hljson(SAMPLE);
+function _full(it){ // full item, indented under items[]
+ return _hl(_esc(JSON.stringify(it,null,2))).split('\n')
+   .map((l,idx)=> idx===0 ? '    <span class="jtog">▾</span> '+l : '    '+l).join('\n');
+}
+function _sum(it){ // one-line collapsed preview
+ return '    <span class="jtog">▸</span> <span class="jp">{</span> '
+   +'<span class="jk">"item"</span><span class="jp">:</span> <span class="js">"'+_esc(it.item)+'"</span><span class="jp">,</span> '
+   +'<span class="jk">"stance"</span><span class="jp">:</span> <span class="js">"'+_esc(it.stance)+'"</span><span class="jp">,</span> '
+   +'<span class="jp">… }</span>';
+}
+(()=>{const it=SAMPLE.items;
+ let h='<span class="jp">{</span>\n'
+  +'  <span class="jk">"member"</span><span class="jp">:</span> <span class="js">"'+_esc(SAMPLE.member)+'"</span><span class="jp">,</span>\n'
+  +'  <span class="jk">"as_of"</span><span class="jp">:</span> <span class="js">"'+_esc(SAMPLE.as_of)+'"</span><span class="jp">,</span>\n'
+  +'  <span class="jk">"items"</span><span class="jp">:</span> <span class="jp">[</span>\n';
+ it.forEach((x,i)=>{const c=i<it.length-1?'<span class="jp">,</span>':'';
+   h+='<span class="jitem'+(i===0?' open':'')+'">'
+     +'<span class="jbody">'+_full(x)+c+'</span>'
+     +'<span class="jhead">'+_sum(x)+c+'</span>'
+     +'</span>\n';});
+ h+='  <span class="jp">]</span>\n<span class="jp">}</span>';
+ const box=document.getElementById('jsonsample');box.innerHTML=h;
+ box.querySelectorAll('.jitem').forEach(el=>el.addEventListener('click',()=>el.classList.toggle('open')));
+})();
 
 // Stage 4: knobs explored
 const KNOBS=[

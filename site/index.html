@@ -24,10 +24,10 @@ section:nth-of-type(even){background:var(--cream);}
 h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
 .lead{color:var(--slate);max-width:660px;margin:0 0 26px;font-size:14px;}
 .stats{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 8px;}
-.stat{flex:1 1 150px;background:var(--card);border:2px solid var(--ink);padding:16px;}
+.stat{flex:1 1 150px;background:transparent;border:2px solid var(--ink);padding:16px;}
 .stat .n{font-family:"Arial Black",sans-serif;font-weight:900;font-size:30px;line-height:1;}
 .stat .l{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin-top:6px;}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:2px solid var(--ink);border-bottom:none;border-right:none;background:var(--card);}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:2px solid var(--ink);border-bottom:none;border-right:none;background:transparent;}
 .step{padding:18px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);}
 .step .num{font-family:"Arial Black",sans-serif;font-weight:900;font-size:13px;color:var(--ink);background:var(--cyan);display:inline-block;width:24px;height:24px;line-height:22px;text-align:center;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:8px;}
 .step h3{font-size:14px;margin:0 0 6px;}
@@ -38,7 +38,7 @@ ul.src{margin:0;padding-left:16px;}
 ul.src li{margin:3px 0;}
 /* member cards — horizontal grid */
 .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;}
-.mcardx{background:var(--card);border:2px solid var(--ink);padding:14px;cursor:pointer;transition:.1s;}
+.mcardx{background:transparent;border:2px solid var(--ink);padding:14px;cursor:pointer;transition:.1s;}
 .mcardx:hover{background:var(--yellow);box-shadow:4px 4px 0 var(--ink);transform:translateY(-2px);}
 .mcardx .nm{font-weight:bold;font-size:14px;line-height:1.2;}
 .mcardx .tt{font-size:10.5px;color:var(--slate);margin:2px 0 10px;min-height:26px;}
@@ -47,7 +47,7 @@ ul.src li{margin:3px 0;}
 /* knobs */
 .knobs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:6px;}
 @media(max-width:720px){.knobs{grid-template-columns:repeat(2,1fr);}}
-.knob{background:var(--card);border:2px solid var(--ink);padding:12px 14px;}
+.knob{padding:4px 0;}
 .knob .kt{font-size:11px;color:var(--ink);font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;text-align:center;}
 .knob{display:flex;flex-direction:column;}
 .knob .opt{display:block;font-size:11.5px;border:1.5px solid var(--ink);border-radius:6px;padding:4px 10px;margin:3px 0 0;color:var(--slate);text-align:center;}
@@ -62,7 +62,7 @@ ul.src li{margin:3px 0;}
 .htok.short .pw{color:var(--red);}
 /* cards (stage 3) */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px;}
-.card{background:var(--card);border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;}
+.card{background:transparent;border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;}
 .card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);}
 .card.win{background:var(--yellow);}
 .card .tag{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:1px;min-height:14px;}
@@ -81,7 +81,7 @@ ul.src li{margin:3px 0;}
 .controls{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin:0 0 16px;}
 .controls .lab{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-right:8px;}
 .mcards{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;}
-.mcard{flex:1 1 150px;background:var(--card);border:2px solid var(--ink);padding:14px;}
+.mcard{flex:1 1 150px;background:transparent;border:2px solid var(--ink);padding:14px;}
 .mcard .ml{font-size:10px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
 .mcard .mv{font-family:"Arial Black",sans-serif;font-weight:900;font-size:26px;line-height:1.05;margin:6px 0 4px;color:var(--green);}
 .mcard .cmp{font-size:11px;color:var(--slate);}
@@ -89,7 +89,10 @@ ul.src li{margin:3px 0;}
 .rule b{color:var(--ink);}
 .fineprint{font-size:11px;color:var(--slate);margin-top:12px;font-style:italic;}
 /* holdings */
-.hbox{background:var(--card);border:2px solid var(--ink);padding:18px;margin-top:8px;}
+.hbox{background:transparent;border:2px solid var(--ink);padding:18px;margin-top:8px;}
+.hhead{display:flex;justify-content:space-between;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--slate);border-bottom:1.5px solid var(--ink);padding-bottom:6px;margin-bottom:4px;}
+.contrib{font-family:"Arial Black",sans-serif;font-size:15px;}
+.bookw{font-size:10px;color:var(--slate);font-weight:normal;text-transform:none;letter-spacing:0;margin-left:8px;}
 .hsec{border-bottom:1.5px dashed var(--ink);padding:10px 0;}
 .hsec:last-child{border-bottom:none;}
 .hsec .sh{display:flex;justify-content:space-between;align-items:flex-start;}
@@ -264,7 +267,8 @@ const KNOBS=[
  {t:'Directional bias',opts:[['Long only',1],['Long / short',0],['Market neutral',0]]},
  {t:'Hedge',opts:[['None',0],['Always hedged',0],['Dynamic — quant regime',1],['Dynamic — consensus risk',0]]},
  {t:'Entry gate',opts:[['None',0],['Absolute momentum',0],['Relative-to-BTC momentum',1]]},
- {t:'Rebalance cadence',opts:[['Quarterly signal',1],['Monthly signal',0]],sub:'(monthly trade timing)'},
+ {t:'Signal refresh',opts:[['Monthly',0],['Quarterly',1]]},
+ {t:'Rebalance cadence',opts:[['Weekly',0],['Monthly',1],['Quarterly',0]]},
  {t:'Allocation',opts:[['Equal weight',1],['Conviction weight',0]]},
  {t:'Concentration',opts:[['Top 2',0],['Top 3',1],['Top 5',0],['All bullish',0]]},
 ];
@@ -317,21 +321,25 @@ function tokChip(t,short){
 }
 function rcol(x){return x>=0?'var(--green)':'var(--red)';}
 function rpct(x){return x===null||x===undefined?'':((x>=0?'+':'')+Math.round(x*100)+'%');}
+function bps(x){return x===null||x===undefined?'':((x>=0?'+':'')+(x*100).toFixed(1)+'%');}
 function drawHoldings(d){
  const h=HD[d]||[];const br=DATA.btc_ret?DATA.btc_ret[d]:null;
  document.getElementById('hdate').textContent=(d===DATA.current_date?'Current · ':'')+lab(d);
- // does the book already involve BTC (cash hold or hedge short)?
+ // total portfolio contribution = sum of weight*ret across legs
  const involvesBTC=h.some(s=>s.tokens.some(t=>t.sym==='BTC'));
+ const header=`<div class="hhead"><span>Position</span><span>Contribution</span></div>`;
  const rows=h.map(s=>{
    const isShort=s.long===false;
    const sw=s.tokens.reduce((a,t)=>a+t.w,0);
    const r=s.ret;
-   return `<div class="hsec ${isShort?'short':''}"><div class="sh"><span class="sn">${s.sector}</span>
-     <span class="sw">${sw>0?`<span>${(isShort?'−':'')+(sw*100).toFixed(0)}% of book</span>`:''}${r!==null&&r!==undefined?`<span class="ret" style="color:${rcol(r)}">${rpct(r)}</span>`:''}</span></div>
+   const contrib=(r!==null&&r!==undefined)?sw*r:null;  // sw is abs weight; for short, r already = -btcRet
+   const meta=isShort?`<span class="bookw">${(sw*100).toFixed(0)}% short</span>`:'';
+   return `<div class="hsec ${isShort?'short':''}"><div class="sh"><span class="sn">${s.sector}${meta}</span>
+     <span class="contrib" style="color:${contrib===null?'var(--slate)':rcol(contrib)}">${contrib===null?'—':bps(contrib)}</span></div>
     ${s.tokens.length?`<div class="htoks">${s.tokens.map(t=>tokChip(t,isShort)).join('')}</div>`:''}</div>`;
  }).join('')||'<div class="hsec">No position.</div>';
- const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.7"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="sw"><span class="ret" style="color:${rcol(br)}">${rpct(br)}</span></span></div></div>`:'';
- document.getElementById('holdings').innerHTML=rows+btcref;
+ const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:${rcol(br)}">${rpct(br)}</span></div></div>`:'';
+ document.getElementById('holdings').innerHTML=header+rows+btcref;
 }
 const hr=document.getElementById('hrange');
 hr.max=hdates.length-1; hr.value=hdates.length-1;

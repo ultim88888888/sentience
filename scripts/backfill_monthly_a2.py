@@ -53,7 +53,7 @@ def main():
     WAVE = 20
     for i in range(0, len(tasks), WAVE):
         wave = tasks[i:i + WAVE]
-        with ThreadPoolExecutor(max_workers=3) as ex:
+        with ThreadPoolExecutor(max_workers=5) as ex:
             raws = list(ex.map(lambda a: (_extract(a[0], a[1], a[2], a[3]), a), wave))
         # serial canonicalize + write (registry is shared state). Per-item try/except so one failure
         # (e.g. a transient session-limit on the canonicalize call) never crashes the whole run.

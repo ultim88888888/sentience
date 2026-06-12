@@ -61,6 +61,8 @@ def compute_beta(returns: pd.DataFrame, *, window: int = 90, market: str = "BTC"
 
 def sector_basket(sector_map: dict, oi_at_t: dict, sector: str, *,
                   oi_floor: float = OI_FLOOR_USD) -> list[str]:
-    """Equal-weight basket = tickers mapped to `sector` whose OI at time t clears the floor."""
+    """Equal-weight basket = tickers mapped to `sector` whose OI at time t clears the floor.
+    Pure stablecoins are excluded: holding USDC/USDT/DAI is holding USD, not a tradeable expression
+    of a sector thesis (there is no liquid stablecoin-infrastructure proxy in this universe)."""
     return sorted(tk for tk, s in sector_map.items()
-                  if s == sector and (oi_at_t.get(tk) or 0) >= oi_floor)
+                  if s == sector and tk not in STABLECOINS and (oi_at_t.get(tk) or 0) >= oi_floor)

@@ -2,6 +2,8 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>State of Crypto — Doppelganger Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root{--ink:#111;--cream:#F4F1E8;--cyan:#8FDDED;--yellow:#FEFEC5;--green:#10B981;--red:#EF4444;--slate:#6B7280;--card:#FBFAF5;}
@@ -22,7 +24,7 @@ section:nth-of-type(odd){background:#FFFFFF;}
 section:nth-of-type(even){background:var(--cream);}
 .stage{display:inline-block;background:var(--ink);color:var(--cream);font-size:12px;padding:3px 12px;border-radius:14px;letter-spacing:1px;margin-bottom:14px;}
 h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
-.lead{color:var(--slate);max-width:660px;margin:0 0 26px;font-size:14px;}
+.lead{color:var(--slate);max-width:780px;margin:0 0 26px;font-size:14px;}
 .stats{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 8px;}
 .stat{flex:1 1 150px;background:transparent;border:2px solid var(--ink);padding:16px;}
 .stat .n{font-family:"Arial Black",sans-serif;font-weight:900;font-size:30px;line-height:1;}
@@ -45,12 +47,13 @@ ul.src li{margin:3px 0;}
 .mcardx .ic{display:flex;gap:12px;font-size:10px;color:var(--slate);}
 .mcardx .ic b{font-family:"Arial Black",sans-serif;color:var(--ink);font-size:14px;display:block;}
 /* knobs */
-.knobs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:6px;}
-@media(max-width:720px){.knobs{grid-template-columns:repeat(2,1fr);}}
-.knob{padding:4px 0;}
-.knob .kt{font-size:11px;color:var(--ink);font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;text-align:center;}
+.knobs{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;margin-bottom:6px;}
+@media(max-width:860px){.knobs{grid-template-columns:repeat(3,1fr);}}
+.knob{padding:0;}
+.knob .kt{font-size:9.5px;color:var(--ink);font-weight:bold;text-transform:uppercase;letter-spacing:.3px;margin:0 0 7px;text-align:center;min-height:22px;display:flex;align-items:center;justify-content:center;line-height:1.1;}
 .knob{display:flex;flex-direction:column;}
-.knob .opt{display:block;font-size:11.5px;border:1.5px solid var(--ink);border-radius:6px;padding:4px 10px;margin:3px 0 0;color:var(--slate);text-align:center;}
+.knob{display:flex;flex-direction:column;gap:5px;}
+.knob .opt{display:block;font-size:10px;border:1.5px solid var(--ink);border-radius:6px;padding:5px 4px;margin:0;color:var(--slate);text-align:center;line-height:1.15;}
 .knob .opt.sel{color:#fff;border-color:var(--ink);font-weight:bold;}
 /* holdings slider */
 .hslider{display:flex;align-items:center;gap:14px;margin:8px 0 12px;}
@@ -116,16 +119,42 @@ dialog::backdrop{background:rgba(17,17,17,.45);}
 .dlg-stats .dn{font-family:"Arial Black",sans-serif;font-size:18px;}
 .dlg-stats .dl{font-size:9px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
 .dlg-b .sm{background:var(--card);border-left:3px solid var(--cyan);padding:10px 12px;color:#333;font-size:12.5px;}
+
+/* ===== State of Crypto animated header ===== */
+.socwrap{position:relative;background:#06215A;overflow:hidden;border-bottom:3px solid var(--ink);padding:34px 22px 46px;text-align:center;}
+.soc-brand{position:relative;z-index:3;text-align:left;max-width:1040px;margin:0 auto 18px;color:#F4F1E8;font-family:"Arial Black",sans-serif;font-weight:900;letter-spacing:.5px;font-size:20px;}
+.soc-blobs{position:absolute;inset:0 0 36px 0;filter:url(#goo);z-index:1;opacity:.97;}
+.soc-blobs span{position:absolute;display:block;background:#7420F5;border-radius:42% 58% 55% 45%/55% 48% 52% 45%;width:230px;height:200px;top:38%;left:50%;}
+.soc-blobs span:nth-child(1){animation:b1 13s ease-in-out infinite;}
+.soc-blobs span:nth-child(2){width:280px;height:230px;animation:b2 16s ease-in-out infinite;}
+.soc-blobs span:nth-child(3){width:200px;height:180px;animation:b3 11s ease-in-out infinite;}
+.soc-blobs span:nth-child(4){width:250px;height:210px;animation:b4 15s ease-in-out infinite;}
+.soc-blobs span:nth-child(5){width:300px;height:240px;animation:b5 18s ease-in-out infinite;}
+@keyframes b1{0%,100%{transform:translate(-340px,-30px) scale(1)}50%{transform:translate(-300px,10px) scale(1.12)}}
+@keyframes b2{0%,100%{transform:translate(-130px,-10px) scale(1.05)}50%{transform:translate(-170px,20px) scale(.92)}}
+@keyframes b3{0%,100%{transform:translate(60px,-20px) scale(1)}50%{transform:translate(20px,15px) scale(1.15)}}
+@keyframes b4{0%,100%{transform:translate(230px,-5px) scale(1)}50%{transform:translate(270px,18px) scale(.95)}}
+@keyframes b5{0%,100%{transform:translate(-40px,5px) scale(.9)}50%{transform:translate(0px,-15px) scale(1.08)}}
+.soc-title{position:relative;z-index:3;display:flex;align-items:center;justify-content:center;gap:.18em;flex-wrap:wrap;line-height:.9;margin:6px 0 4px;}
+.soc-title .t1{font-family:"Anton",sans-serif;font-weight:400;color:#F4F1E8;font-size:clamp(52px,11vw,150px);letter-spacing:1px;}
+.soc-title .tof{font-family:"Playfair Display",serif;font-style:italic;font-weight:700;color:#F4F1E8;font-size:clamp(46px,9vw,120px);padding:0 .06em;}
+.soc-sub{position:relative;z-index:3;color:#8FDDED;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:clamp(11px,1.6vw,15px);letter-spacing:3px;margin-top:10px;}
+@media(prefers-reduced-motion:reduce){.soc-blobs span{animation:none!important}}
+
 footer{padding:26px 0;font-size:12px;color:var(--slate);text-align:center;}
 footer a{color:var(--ink);}
 </style></head>
 <body>
-<header><div class="wrap"><span class="brand heavy">a16z crypto · doppelganger study</span></div></header>
+<div class="socwrap">
+  <svg width="0" height="0"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></defs></svg>
+  <div class="soc-brand">a16zcrypto</div>
+  <div class="soc-blobs"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="soc-title"><span class="t1">STATE</span><span class="tof">of</span><span class="t1">CRYPTO</span></div>
+  <div class="soc-sub">DOPPELGANGER EDITION&nbsp;&nbsp;·&nbsp;&nbsp;A CASE STUDY BY JAX</div>
+</div>
 
 <div class="wrap">
   <div class="hero">
-    <p class="kicker">A case study by Jax</p>
-    <h1>State of Crypto:<br>Doppelganger Edition</h1>
     <p>a16z crypto's edge is largely internal knowledge + intelligence — so I tried to <span class="em">simulate it</span>. I scraped the team's research, media, and X activity, built time-gated digital <b>doppelgangers</b> of each investor, extracted a market signal, and turned it into a trading strategy. Everything below is point-in-time and lookahead-firewalled.</p>
   </div>
 </div>
@@ -180,7 +209,7 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 4</span>
   <h2>Strategy Creation</h2>
-  <p class="lead">Claude searched the strategy space — these are the knobs it iterated over, and what won. Selected settings in <span style="color:var(--green);font-weight:bold;">green</span>.</p>
+  <p class="lead">Claude searched the strategy space — these are the knobs it iterated over, and what won.</p>
   <div id="knobs"></div>
   <div class="controls">
     <div><span class="lab">Deploy</span><span class="seg" id="seg"></span></div>
@@ -262,17 +291,17 @@ window.openApp=i=>{const a=APP[i];
 
 // Stage 4: knobs explored
 const KNOBS=[
- {t:'Signal source',opts:[['Blended LLM',0],['Consensus',0],['Council',1]]},
+ {t:'Signal source',opts:[['Blended',0],['Consensus',0],['Council',1]]},
  {t:'Trade unit',opts:[['Tokens',0],['Sectors',1]]},
- {t:'Directional bias',opts:[['Long only',1],['Long / short',0],['Market neutral',0]]},
- {t:'Hedge',opts:[['None',0],['Always hedged',0],['Dynamic — quant regime',1],['Dynamic — consensus risk',0]]},
- {t:'Entry gate',opts:[['None',0],['Absolute momentum',0],['Relative-to-BTC momentum',1]]},
+ {t:'Directional bias',opts:[['Long only',1],['Long / short',0],['Mkt neutral',0]]},
+ {t:'Hedge',opts:[['None',0],['Always',0],['Quant regime',1],['Consensus',0]]},
+ {t:'Entry gate',opts:[['None',0],['Abs. mom.',0],['Rel. to BTC',1]]},
  {t:'Signal refresh',opts:[['Monthly',0],['Quarterly',1]]},
- {t:'Rebalance cadence',opts:[['Weekly',0],['Monthly',1],['Quarterly',0]]},
- {t:'Allocation',opts:[['Equal weight',1],['Conviction weight',0]]},
- {t:'Concentration',opts:[['Top 2',0],['Top 3',1],['Top 5',0],['All bullish',0]]},
+ {t:'Rebalance',opts:[['Weekly',0],['Monthly',1],['Quarterly',0]]},
+ {t:'Allocation',opts:[['Equal wt.',1],['Conviction',0]]},
+ {t:'Concentration',opts:[['Top 2',0],['Top 3',1],['Top 5',0],['All',0]]},
 ];
-const KCOL=['#10B981','#3B82F6','#8B5CF6','#EF4444','#F59E0B','#06B6D4','#EC4899','#84CC16'];
+const KCOL=['#10B981','#3B82F6','#8B5CF6','#EF4444','#F59E0B','#06B6D4','#EC4899','#0EA5E9','#D946EF'];
 document.getElementById('knobs').innerHTML='<div class="knobs">'+KNOBS.map((k,ki)=>
  `<div class="knob"><div class="kt">${k.t}${k.sub?' '+k.sub:''}</div>${k.opts.map(([o,s])=>`<span class="opt ${s?'sel':''}" ${s?`style="background:${KCOL[ki%KCOL.length]}"`:''}>${o}</span>`).join('')}</div>`).join('')+'</div>';
 
@@ -300,7 +329,7 @@ function draw(){
   .map(([l,v,c])=>`<div class="mcard"><div class="ml">${l}</div><div class="mv">${v}</div><div class="cmp">${c}</div></div>`).join('');
  const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15});
  const cfg={type:'line',data:{labels:d.m,datasets:[mk('strategy',d.strat,'#111'),mk('BTC',d.btc,'#EF4444'),mk('L1 majors',d.l1,'#6B7280',[5,4])]},
-  options:{responsive:true,animation:false,plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}}},
+  options:{responsive:true,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{backgroundColor:'#06215A',titleColor:'#8FDDED',bodyColor:'#F4F1E8',borderColor:'#111',borderWidth:1.5,padding:10,cornerRadius:0,titleFont:{family:'monospace',size:11},bodyFont:{family:'monospace',size:12.5,weight:'bold'},displayColors:true,boxWidth:9,boxHeight:9,callbacks:{title:c=>c[0].label.slice(0,7),label:c=>' '+c.dataset.label+':  $'+(c.parsed.y>=1000?(c.parsed.y/1000).toFixed(1)+'B':c.parsed.y.toFixed(0)+'mm')}}},
    scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
     x:{grid:{display:false},ticks:{font:{family:'monospace'},maxTicksLimit:9,callback:function(v){return this.getLabelForValue(v).slice(0,7)}}}}}};
  if(chart)chart.destroy();chart=new Chart(document.getElementById('eq'),cfg);

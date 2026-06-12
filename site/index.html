@@ -80,6 +80,11 @@ ul.src li{margin:3px 0;}
 .card .metric{margin-top:10px;font-size:12px;}
 .card .metric b{font-family:"Arial Black",sans-serif;}
 .card .more{margin-top:10px;font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
+.jsonbox{background:#06215A;border:2px solid var(--ink);color:#8aa4c8;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:16px 18px;margin:0 0 6px;overflow-x:auto;white-space:pre;box-shadow:4px 4px 0 rgba(17,17,17,.18);}
+.jsonbox .jk{color:#8FDDED;}
+.jsonbox .js{color:#BFF2D4;}
+.jsonbox .jn{color:#FEFEC5;}
+.jsonbox .jb{color:#C792EA;}
 .badge{display:inline-block;background:var(--green);color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:10px;letter-spacing:.5px;text-transform:uppercase;}
 .chartbox{background:transparent;border:2px solid var(--ink);padding:14px;}
 .cap{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin:0 0 10px;}
@@ -220,6 +225,9 @@ footer a{color:var(--ink);}
   <h2>Extracting Signal</h2>
   <p class="lead">Five ways to turn the doppelgangers into one house market view. Each outputs an outlook — excited / concerned sectors &amp; tokens, conviction, horizon, risk bias. Click any to dig in.</p>
   <div class="cards" id="cards"></div>
+  <div class="cap" style="margin-top:4px;">Sample consensus — the winning council's structured house view</div>
+  <pre class="jsonbox" id="jsonsample"></pre>
+  <p class="fineprint">Trimmed for display (one date, six of ~23 items). Every item also carries a cited <i>rationale</i>, <i>provenance</i> (grounded / persisted / extrapolated), and parent sector — the structure the strategy reads directly.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -338,20 +346,43 @@ const APP=[
    detail:'Mechanical aggregation: collect 10 individual outlooks, average them into a house view. Real, positive signal — but it treats every member equally and loses the disagreement structure. The council (next) does better by letting members argue.'},
  {tag:'',name:'Council',t:2.4,win:true,desc:'Doppelgangers placed in a council, prompted to deliberate and reach consensus together.',
    detail:'THE WINNER. The 10 doppelgangers deliberate — a well-argued minority view can move the room. This produces the most consistent cross-sectional sector ranking (IC t-stat 2.4, the only one clearing significance). This is the signal the strategy trades.'},
- {tag:'',name:'+ Research Digest',t:1.5,desc:'Individual &amp; council, plus a distilled news feed and trailing market / sector performance.',
-   detail:'Gave the doppelgangers a market & news digest before they deliberated, to add real-time context. It made them chase recent momentum — adding noise more than signal. More machinery did NOT beat the plain council: a key finding.'},
+ {tag:'',name:'+ Research Digest',mt:[['Indiv + digest',1.37],['Council + digest',1.46]],desc:'Individual &amp; council, each given a distilled news feed and trailing market / sector performance before deciding.',
+   detail:'Gave the doppelgangers a market & news digest before they decided — run on BOTH the individual and council layers. It made them chase recent momentum, adding noise more than signal. More machinery did NOT help: the digest dropped the council from t=2.4 to t=1.5 (and individual from 1.5 to 1.4). A key finding — the plain static council wins.'},
 ];
 document.getElementById('cards').innerHTML=APP.map((a,i)=>
  `<div class="card ${a.win?'win':''}" onclick="openApp(${i})">
    <div class="tag">${a.tag} ${a.win?'<span class=badge>Winner</span>':''}</div>
    <h3>${a.name}</h3><div class="desc">${a.desc}</div>
-   <div class="metric">Signal IC t = <b>${a.t.toFixed(1)}</b></div>
+   ${a.mt?a.mt.map(x=>`<div class="metric">${x[0]} t = <b>${x[1].toFixed(1)}</b></div>`).join(''):`<div class="metric">Signal IC t = <b>${a.t.toFixed(1)}</b></div>`}
    <div class="more">Click to expand →</div></div>`).join('');
 window.openApp=i=>{const a=APP[i];
  document.getElementById('dlg-title').textContent=a.name+(a.win?'  ★ Winner':'');
- document.getElementById('dlg-tt').textContent='Signal IC t-stat = '+a.t.toFixed(1)+(a.t>1.96?'  (significant)':a.t>0?'  (positive)':'  (no edge)');
+ document.getElementById('dlg-tt').textContent=a.mt?a.mt.map(x=>x[0]+' t = '+x[1].toFixed(1)).join('    ·    '):'Signal IC t-stat = '+a.t.toFixed(1)+(a.t>1.96?'  (significant)':a.t>0?'  (positive)':'  (no edge)');
  document.getElementById('dlg-body').innerHTML=`<div class="sm">${a.detail}</div>`;
  dlg.showModal();};
+// Sample consensus — a real (trimmed) council output, syntax-highlighted
+const SAMPLE={
+ as_of:"2023-12-31", approach:"council",
+ risk_regime:{stance:"risk_on", conviction:68},
+ items:[
+   {item:"zk",                type:"sector", stance:"bullish", conviction:91},
+   {item:"ai-crypto",         type:"sector", stance:"bullish", conviction:85},
+   {item:"gaming",            type:"sector", stance:"bullish", conviction:76},
+   {item:"policy-regulation", type:"sector", stance:"bearish", conviction:88},
+   {item:"ETH",               type:"token",  stance:"bullish", conviction:75},
+   {item:"memecoins",         type:"token",  stance:"bearish", conviction:80}
+ ]
+};
+function hljson(o){
+ let j=JSON.stringify(o,null,2).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+ return j.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?)/g,m=>{
+   let c='jn';
+   if(/^"/.test(m)) c=/:$/.test(m)?'jk':'js';
+   else if(/true|false|null/.test(m)) c='jb';
+   return '<span class="'+c+'">'+m+'</span>';
+ });
+}
+document.getElementById('jsonsample').innerHTML=hljson(SAMPLE);
 
 // Stage 4: knobs explored
 const KNOBS=[

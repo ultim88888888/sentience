@@ -39,6 +39,7 @@ h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
 .step p{font-size:12px;color:#333;margin:0 0 8px;}
 .step .src{font-size:11px;color:var(--slate);}
 .step .src b{color:var(--ink);font-weight:bold;}
+.step .src a{color:#7420F5;text-decoration:underline;text-underline-offset:2px;}
 ul.src{margin:0;padding-left:16px;}
 ul.src li{margin:3px 0;}
 /* member cards — horizontal grid */
@@ -188,8 +189,7 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 1</span>
   <h2>Data Collection</h2>
-  <p class="lead">Assemble each investor's complete public corpus, then clean and structure it into a single point-in-time record.</p>
-  <div class="stats" style="margin-bottom:22px;">
+  <div class="stats" style="margin-bottom:22px;margin-top:18px;">
     <div class="stat"><div class="n" id="s-tweets">—</div><div class="l">tweets scraped</div></div>
     <div class="stat"><div class="n">1,018</div><div class="l">research / media posts</div></div>
     <div class="stat"><div class="n">149</div><div class="l">podcast / video transcripts</div></div>
@@ -199,8 +199,8 @@ footer a{color:var(--ink);}
     <div class="step"><h3>Source the corpus</h3><p>Every public utterance, per investor.</p>
       <ul class="src">
         <li><b>X</b> — all activity since 2021 (twitterapi.io)</li>
-        <li><b>a16z research &amp; media</b> — all categories back to 2014 (Algolia + headless-Chromium WAF bypass)</li>
-        <li><b>a16z bios</b> — team-page profiles</li>
+        <li><b><a href="https://a16zcrypto.com/posts/" target="_blank" rel="noopener">a16z research &amp; media</a></b> — all categories back to 2014 (Algolia + headless-Chromium WAF bypass)</li>
+        <li><b><a href="https://a16zcrypto.com/our-team/" target="_blank" rel="noopener">a16z bios</a></b> — team-page profiles</li>
         <li><b>LinkedIn</b> — public profile parse</li>
       </ul></div>
     <div class="flowarrow">&rarr;</div>
@@ -214,7 +214,7 @@ footer a{color:var(--ink);}
       <ul class="src">
         <li><b>Speaker attribution</b> — diarize transcripts, tag each turn to a member</li>
         <li><b>Vocabulary reconciliation</b> + LLM sector/token taxonomy (fit-or-mint)</li>
-        <li>Dedupe, drop retweets &amp; low-content posts</li>
+        <li>Dedupe, drop retweets &amp; low-substance replies</li>
       </ul></div>
   </div>
 </div></section>
@@ -222,19 +222,17 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 2</span>
   <h2>Doppelganger Creation</h2>
-  <p class="lead">Ten a16z crypto investors &amp; researchers, reconstructed from their corpus — rebuilt monthly with only the data available at each point in time. Click any to see their doppelganger profile.</p>
+  <p class="lead">Each doppelganger = a "soul" (how they reason, distilled from their full corpus) + a time-gated memory feed of what they had actually said by date T. A hard <b>&le;T firewall</b> + an amnesiac Opus audit gate ensure no doppelganger ever sees information dated after the evaluation point.</p>
   <div id="members"></div>
-  <p class="fineprint">Each doppelganger = a "soul" (how they reason, distilled from their full corpus) + a time-gated memory feed of what they had actually said by date T. A hard <b>&le;T firewall</b> + an amnesiac Opus audit gate ensure no doppelganger ever sees information dated after the evaluation point.</p>
+  <p class="fineprint" style="text-align:center;">Click any to see their doppelganger.</p>
 </div></section>
 
 <section><div class="wrap">
   <span class="stage">Stage 3</span>
   <h2>Extracting Signal</h2>
-  <p class="lead">Five ways to turn the doppelgangers into one house market view. Each outputs an outlook — excited / concerned sectors &amp; tokens, conviction, horizon, risk bias. Click any to dig in.</p>
-  <div class="cards" id="cards"></div>
+  <div class="cards" id="cards" style="margin-top:18px;"></div>
   <div class="cap" style="margin-top:4px;">Sample signal — one doppelganger's structured view (the council distills ten of these)</div>
   <pre class="jsonbox" id="jsonsample"></pre>
-  <p class="fineprint">Real output, lightly trimmed. Each item carries stance + conviction + horizon, a <i>rationale</i>, a <i>provenance</i> tag (grounded / persisted / extrapolated), and a dated <i>evidence</i> trail of verbatim citations. The council reads ten of these and deliberates to the house consensus the strategy trades.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -250,10 +248,9 @@ footer a{color:var(--ink);}
   </div>
   <div class="chartbox"><canvas id="eq"></canvas></div>
   <div class="mcards" id="mcards"></div>
-  <p class="fineprint">$10mm notional, monthly rebalance. Simulations are net of funding &amp; fees, with OI-based liquidity constraints. Optimization via split + walk-forward validation. Best alpha t-stat &asymp; 1.9 (n=56) — promising, not formally significant; past performance &ne; future results.</p>
+  <p class="fineprint">Simulations are net of funding &amp; fees, with OI-based liquidity constraints. Optimization via split + walk-forward validation.</p>
 
-  <h3 style="font-size:18px;margin:30px 0 4px;">Holdings</h3>
-  <p class="fineprint" style="margin-top:0;">The book on any month — drag the slider. Defaults to current. Long sectors (token baskets) and any bear-regime BTC short shown.</p>
+  <h3 style="font-size:18px;margin:30px 0 10px;">Holdings</h3>
   <div class="hslider"><input type="range" id="hrange" min="0" max="0" value="0"><div class="hdate" id="hdate"></div></div>
   <div class="hbox" id="holdings"></div>
 </div></section>
@@ -267,17 +264,17 @@ footer a{color:var(--ink);}
     <div class="onode"><span class="onum">01</span>
       <div class="ohead">Richer inputs</div>
       <ul class="osub">
-        <li><b>Internal a16z memos, deal flow &amp; interviews</b> — direct conviction, not just public posts</li>
-        <li><b>More doppelgangers</b> across the founding investing team &amp; maybe more</li>
-        <li><b>Earlier corpus history</b> — deeper backtests, real statistical significance</li>
-        <li><b>More compute bandwidth</b> — deeper, more frequent signal passes</li>
+        <li>Internal a16z memos, deal flow &amp; interviews</li>
+        <li>More doppelgangers across the founding investing team &amp; maybe more</li>
+        <li>Earlier corpus history</li>
+        <li>More compute bandwidth</li>
       </ul>
     </div>
     <div class="onode"><span class="onum">02</span>
       <div class="ohead">What more data should reveal</div>
       <ul class="osub">
-        <li><b>The signal proving itself over time.</b> Run live, it should keep validating — and earlier or denser data may surface additional outsized gains even within our current simulation window (the corpus front-ran privacy quarters before ZEC ran +444%).</li>
-        <li><b>Edge across regimes.</b> Our backtest spans mostly one market regime; a longer history through a real bear is what would show where the edge truly holds.</li>
+        <li><b>The signal proving itself over time.</b> Run live, it should keep validating — and earlier or denser data may surface additional outsized gains even within our current simulation window (the corpus front-ran privacy well before ZEC ran +444%).</li>
+        <li><b>Edge across regimes.</b> Our backtest spans mostly a bull regime; a longer history through a bear should demonstrate further edge.</li>
       </ul>
     </div>
     <div class="onode"><span class="onum">03</span>
@@ -352,7 +349,7 @@ const APP=[
  {tag:'',name:'Individual',t:1.5,desc:'Each doppelganger gives its own outlook; an amnesiac Opus pass aggregates them to a house view.',
    detail:'Mechanical aggregation: collect 10 individual outlooks, average them into a house view. Real, positive signal — but it treats every member equally and loses the disagreement structure. The council (next) does better by letting members argue.'},
  {tag:'',name:'Council',t:2.4,win:true,desc:'Doppelgangers placed in a council, prompted to deliberate and reach consensus together.',
-   detail:'THE WINNER. The 10 doppelgangers deliberate — a well-argued minority view can move the room. This produces the most consistent cross-sectional sector ranking (IC t-stat 2.4, the only one clearing significance). This is the signal the strategy trades.'},
+   detail:'The 10 doppelgangers deliberate — a well-argued minority view can move the room. This produces the most consistent cross-sectional sector ranking (IC t-stat 2.4, the only one clearing significance). This is the signal the strategy trades.'},
  {tag:'',name:'+ Research Digest',mt:[['Indiv + digest',1.37],['Council + digest',1.46]],desc:'Individual &amp; council, each given a distilled news feed and trailing market / sector performance before deciding.',
    detail:'Gave the doppelgangers a market & news digest before they decided — run on BOTH the individual and council layers. It made them chase recent momentum, adding noise more than signal. More machinery did NOT help: the digest dropped the council from t=2.4 to t=1.5 (and individual from 1.5 to 1.4). A key finding — the plain static council wins.'},
 ];
@@ -363,7 +360,7 @@ document.getElementById('cards').innerHTML=APP.map((a,i)=>
    ${a.mt?a.mt.map(x=>`<div class="metric">${x[0]} t = <b>${x[1].toFixed(1)}</b></div>`).join(''):`<div class="metric">Signal IC t = <b>${a.t.toFixed(1)}</b></div>`}
    <div class="more">Click to expand →</div></div>`).join('');
 window.openApp=i=>{const a=APP[i];
- document.getElementById('dlg-title').textContent=a.name+(a.win?'  ★ Winner':'');
+ document.getElementById('dlg-title').textContent=a.name;
  document.getElementById('dlg-tt').textContent=a.mt?a.mt.map(x=>x[0]+' t = '+x[1].toFixed(1)).join('    ·    '):'Signal IC t-stat = '+a.t.toFixed(1)+(a.t>1.96?'  (significant)':a.t>0?'  (positive)':'  (no edge)');
  document.getElementById('dlg-body').innerHTML=`<div class="sm">${a.detail}</div>`;
  dlg.showModal();};

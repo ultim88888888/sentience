@@ -153,11 +153,6 @@ footer a{color:var(--ink);}
   <div class="soc-sub">DOPPELGANGER EDITION&nbsp;&nbsp;·&nbsp;&nbsp;A CASE STUDY BY JAX</div>
 </div>
 
-<div class="wrap">
-  <div class="hero">
-    <p>a16z crypto's edge is largely internal knowledge + intelligence — so I tried to <span class="em">simulate it</span>. I scraped the team's research, media, and X activity, built time-gated digital <b>doppelgangers</b> of each investor, extracted a market signal, and turned it into a trading strategy. Everything below is point-in-time and lookahead-firewalled.</p>
-  </div>
-</div>
 
 <section><div class="wrap">
   <span class="stage">Stage 1</span>
@@ -268,14 +263,12 @@ window.openMember=i=>{const m=M[i];
 const APP=[
  {tag:'Baseline',name:'Blended LLM',t:-0.8,desc:'One Opus pass reads the whole corpus and emits a house view. No per-member layer.',
    detail:'The member-agnostic baseline — read everything, output one view. Result: no edge (mildly contrarian). This is the null hypothesis the doppelganger approaches must beat, and it confirms the per-member decomposition is what creates signal.'},
- {tag:'',name:'Consensus',t:1.5,desc:'Each doppelganger gives its outlook; an amnesiac Opus pass aggregates to a consensus.',
+ {tag:'',name:'Individual',t:1.5,desc:'Each doppelganger gives its own outlook; an amnesiac Opus pass aggregates them to a house view.',
    detail:'Mechanical aggregation: collect 10 individual outlooks, average them into a house view. Real, positive signal — but it treats every member equally and loses the disagreement structure. The council (next) does better by letting members argue.'},
  {tag:'',name:'Council',t:2.4,win:true,desc:'Doppelgangers placed in a council, prompted to deliberate and reach consensus together.',
    detail:'THE WINNER. The 10 doppelgangers deliberate — a well-argued minority view can move the room. This produces the most consistent cross-sectional sector ranking (IC t-stat 2.4, the only one clearing significance). This is the signal the strategy trades.'},
- {tag:'',name:'+ Research Digest',t:1.5,desc:'Consensus &amp; council, plus a distilled news feed and trailing market / sector performance.',
+ {tag:'',name:'+ Research Digest',t:1.5,desc:'Individual &amp; council, plus a distilled news feed and trailing market / sector performance.',
    detail:'Gave the doppelgangers a market & news digest before they deliberated, to add real-time context. It made them chase recent momentum — adding noise more than signal. More machinery did NOT beat the plain council: a key finding.'},
- {tag:'',name:'Soul Doppelganger',t:1.4,desc:'Each member as a "soul" (how they reason, full corpus) + memory + digest, reasoning in-character.',
-   detail:'The most sophisticated build — model each how each investor actually reasons, not just their stated views, then have them reason in-character. It helped the consensus variant and ran lower-beta, but never overtook the simpler council. Sometimes the simple thing wins.'},
 ];
 document.getElementById('cards').innerHTML=APP.map((a,i)=>
  `<div class="card ${a.win?'win':''}" onclick="openApp(${i})">
@@ -329,8 +322,7 @@ function draw(){
   .map(([l,v,c])=>`<div class="mcard"><div class="ml">${l}</div><div class="mv">${v}</div><div class="cmp">${c}</div></div>`).join('');
  const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15});
  const cfg={type:'line',data:{labels:d.m,datasets:[mk('strategy',d.strat,'#111'),mk('BTC',d.btc,'#EF4444'),mk('L1 majors',d.l1,'#6B7280',[5,4])]},
-  options:{responsive:true,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{backgroundColor:'#06215A',titleColor:'#8FDDED',bodyColor:'#F4F1E8',borderColor:'#111',borderWidth:1.5,padding:10,cornerRadius:0,titleFont:{family:'monospace',size:11},bodyFont:{family:'monospace',size:12.5,weight:'bold'},displayColors:true,boxWidth:9,boxHeight:9,callbacks:{title:c=>c[0].label.slice(0,7),label:c=>' '+c.dataset.label+':  $'+(c.parsed.y>=1000?(c.parsed.y/1000).toFixed(1)+'B':c.parsed.y.toFixed(0)+'mm')}}},
-   scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
+  options:{responsive:true,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{enabled:false}},scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
     x:{grid:{display:false},ticks:{font:{family:'monospace'},maxTicksLimit:9,callback:function(v){return this.getLabelForValue(v).slice(0,7)}}}}}};
  if(chart)chart.destroy();chart=new Chart(document.getElementById('eq'),cfg);
 }

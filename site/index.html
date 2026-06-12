@@ -27,6 +27,13 @@ section:nth-of-type(even){background:#FFFFFF;}
 .stage{display:inline-block;background:var(--ink);color:var(--cream);font-size:12px;padding:3px 12px;border-radius:14px;letter-spacing:1px;margin-bottom:14px;}
 h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
 .lead{color:var(--slate);max-width:780px;margin:0 0 26px;font-size:14px;}
+.idea{margin:18px 0 4px;display:grid;gap:14px;max-width:820px;}
+.idea .row{display:flex;gap:16px;align-items:baseline;}
+.idea .k{flex:0 0 auto;min-width:104px;font-family:"Arial Black",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.5px;font-size:13px;color:#7420F5;}
+.idea .row:last-child .k{color:var(--green);}
+.idea .v{margin:0;font-size:16px;line-height:1.5;}
+.dashsep{border:none;border-top:2px dashed #c7c0aa;margin:40px 0;}
+@media(max-width:560px){.idea .row{flex-direction:column;gap:4px;}}
 .stats{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 8px;}
 .stat{flex:1 1 150px;background:transparent;border:2px solid var(--ink);padding:16px;}
 .stat .n{font-family:"Arial Black",sans-serif;font-weight:900;font-size:30px;line-height:1;}
@@ -187,6 +194,15 @@ footer a{color:var(--ink);}
 
 
 <section><div class="wrap">
+  <span class="stage">Stage 0</span>
+  <h2>Idea</h2>
+  <div class="idea">
+    <div class="row"><span class="k">Hypothesis</span><p class="v">a16z crypto has a trading edge from their internal knowledge &amp; intelligence.</p></div>
+    <div class="row"><span class="k">Test</span><p class="v">Build digital "doppelgangers" of a subset of the team from publicly available data — to structure that data and extract signal.</p></div>
+  </div>
+
+  <hr class="dashsep">
+
   <span class="stage">Stage 1</span>
   <h2>Data Collection</h2>
   <div class="stats" style="margin-bottom:22px;margin-top:18px;">
@@ -258,9 +274,8 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 5</span>
   <h2>Future</h2>
-  <p class="lead">This is a public-data prototype. With a16z's own inputs and real-time execution, the same machine gets materially sharper.</p>
 
-  <div class="outline">
+  <div class="outline" style="margin-top:18px;">
     <div class="onode"><span class="onum">01</span>
       <div class="ohead">Richer inputs</div>
       <ul class="osub">

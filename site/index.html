@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>State of Crypto — Doppelganger Edition</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{--ink:#111;--cream:#F4F1E8;--cyan:#8FDDED;--yellow:#FEFEC5;--green:#10B981;--red:#EF4444;--slate:#6B7280;--card:#FBFAF5;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-monospace,"SF Mono",Menlo,monospace;line-height:1.5;}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px;}
+h1,h2,h3,.heavy{font-family:"Arial Black","Helvetica Neue",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.5px;}
+.kicker{font-size:12px;color:var(--slate);text-transform:uppercase;letter-spacing:2px;margin:0 0 6px;}
+/* hero */
+header{background:var(--cyan);border-bottom:3px solid var(--ink);}
+header .wrap{padding:26px 22px;}
+.brand{font-size:13px;letter-spacing:1px;}
+.hero{padding:46px 0 30px;}
+.hero h1{font-size:clamp(34px,6vw,68px);line-height:.95;margin:0 0 16px;}
+.hero p{max-width:680px;font-size:15px;margin:0;}
+.hero .em{background:var(--yellow);padding:0 4px;}
+section{border-bottom:2px solid var(--ink);padding:42px 0;}
+.stage{display:inline-block;background:var(--ink);color:var(--cream);font-size:12px;padding:3px 12px;border-radius:14px;letter-spacing:1px;margin-bottom:14px;}
+h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
+.lead{color:var(--slate);max-width:640px;margin:0 0 26px;font-size:14px;}
+/* big stat row */
+.stats{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 26px;}
+.stat{flex:1 1 150px;background:var(--card);border:2px solid var(--ink);padding:16px;}
+.stat .n{font-family:"Arial Black",sans-serif;font-weight:900;font-size:30px;line-height:1;}
+.stat .l{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin-top:6px;}
+/* member bars */
+.mbar{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px;}
+.mbar .nm{width:140px;flex:none;}
+.mbar .track{flex:1;background:#e8e5da;border:1px solid var(--ink);height:18px;position:relative;}
+.mbar .fill{background:var(--cyan);height:100%;border-right:1px solid var(--ink);}
+.mbar .v{width:64px;flex:none;text-align:right;color:var(--slate);font-size:12px;}
+/* approach cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+.card{background:var(--card);border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;}
+.card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);}
+.card.win{background:var(--yellow);}
+.card .tag{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:1px;}
+.card h3{font-size:16px;margin:4px 0 8px;}
+.card .desc{font-size:12.5px;color:#333;}
+.card .metric{margin-top:10px;font-size:12px;}
+.card .metric b{font-family:"Arial Black",sans-serif;}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:10px;letter-spacing:.5px;text-transform:uppercase;}
+.detail{display:none;margin-top:10px;padding-top:10px;border-top:1.5px dashed var(--ink);font-size:12.5px;color:#333;}
+.card.open .detail{display:block;}
+/* strategy panel */
+.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:0 0 16px;}
+.controls label{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--slate);}
+select,.toggle button{font-family:inherit;font-size:13px;border:2px solid var(--ink);background:var(--card);padding:6px 10px;cursor:pointer;}
+.toggle button.on{background:var(--ink);color:var(--cream);}
+.chartbox{background:transparent;border:2px solid var(--ink);padding:14px;}
+table.m{border-collapse:collapse;font-size:12.5px;margin-top:18px;}
+table.m th,table.m td{border:1px solid var(--ink);padding:5px 11px;text-align:left;white-space:nowrap;}
+table.m thead th{background:var(--yellow);font-family:"Arial Black",sans-serif;font-weight:900;text-transform:uppercase;font-size:11px;}
+table.m td.s{font-weight:bold;color:var(--green);}
+.rule{font-size:13px;background:var(--card);border:2px solid var(--ink);padding:14px;margin-top:8px;}
+.rule b{color:var(--ink);}
+footer{padding:30px 0;font-size:12px;color:var(--slate);}
+footer a{color:var(--ink);}
+.note{font-size:11px;color:var(--slate);margin-top:8px;font-style:italic;}
+</style></head>
+<body>
+<header><div class="wrap"><span class="brand heavy">a16z crypto · doppelganger study</span></div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <p class="kicker">A case study by Jax</p>
+    <h1>State of Crypto:<br>Doppelganger Edition</h1>
+    <p>a16z crypto's edge is largely internal knowledge + intelligence — so I tried to <span class="em">simulate it</span>. I scraped the team's research, media, and X activity, built time-gated digital <b>doppelgangers</b> of each investor, extracted a market signal, and turned it into a trading strategy. Everything below is point-in-time, lookahead-firewalled, and built with Opus 4.8.</p>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <span class="stage">Stage 1</span>
+  <h2>The Doppelgangers</h2>
+  <p class="lead">Ten a16z crypto investors & researchers, reconstructed from their public corpus — recreated monthly with only the data available at each point in time.</p>
+  <div class="stats">
+    <div class="stat"><div class="n" id="s-members">10</div><div class="l">doppelgangers</div></div>
+    <div class="stat"><div class="n" id="s-tweets">—</div><div class="l">tweets scraped</div></div>
+    <div class="stat"><div class="n" id="s-posts">1,018</div><div class="l">research / media posts</div></div>
+    <div class="stat"><div class="n" id="s-pods">149</div><div class="l">podcast / video transcripts</div></div>
+    <div class="stat"><div class="n" id="s-ev">—</div><div class="l">evidence items</div></div>
+  </div>
+  <div id="members"></div>
+  <p class="note">Sources per member: X activity (since 2021), a16z research & media, podcast transcripts, LinkedIn & bios.</p>
+</div></section>
+
+<section><div class="wrap">
+  <span class="stage">Stage 2</span>
+  <h2>Extracting Signal</h2>
+  <p class="lead">Five ways to turn the corpus into a house market view. Each doppelganger outputs an outlook — excited / concerned sectors & tokens, conviction, horizon, risk bias. Click any approach.</p>
+  <div class="cards" id="cards"></div>
+  <p class="note">Outlook schema: bullish/bearish sectors & tokens · conviction · horizon · reasoning · provenance. An amnesiac Opus pass audited every output for information bleed, taxonomy, and lookahead.</p>
+</div></section>
+
+<section><div class="wrap">
+  <span class="stage">Stage 3</span>
+  <h2>The Strategy</h2>
+  <p class="lead">The winning signal (council consensus, no digest), traded as a sector rotation. Pick a hypothetical deploy date and scale to see how it compounds.</p>
+  <div class="rule">
+    <b>Rule:</b> each month, long the top-3 council-bullish <b>sectors</b> that are <b>outperforming BTC</b> (relative-momentum gate) · equal-weight liquid baskets · hold BTC when none qualify · beta-neutralize in quant-defined bear regimes. Quarterly signal refresh, monthly timing.
+  </div>
+  <div class="controls" style="margin-top:18px;">
+    <div><label>Deploy date&nbsp;</label><select id="start"></select></div>
+    <div class="toggle"><label>Scale&nbsp;</label><button id="b-log" class="on">Log</button><button id="b-lin">Linear</button></div>
+  </div>
+  <div class="chartbox"><canvas id="eq" height="150"></canvas></div>
+  <table class="m" id="mtable"></table>
+  <p class="note" id="caveat"></p>
+</div></section>
+
+<footer><div class="wrap">
+  Built end-to-end with Opus 4.8 (high effort), unique agent archetypes by task. Simulations net of funding & fees, with OI-based liquidity constraints. Optimization via split + walk-forward validation. <b>Honest caveat:</b> best alpha t-stat ≈1.9 (n=53) — promising, not formally significant. Past performance ≠ future results.
+</div></footer>
+
+<script>
+const DATA = {"members": [{"name": "Scott Kominers", "handle": "skominers", "tweets": 36459}, {"name": "Miles Jennings", "handle": "milesjennings", "tweets": 3432}, {"name": "Eddy Lazzarin", "handle": "eddylazzarin", "tweets": 1637}, {"name": "Guy Wuollet", "handle": "guywuolletjr", "tweets": 1230}, {"name": "Ali Yahya", "handle": "alive_", "tweets": 1061}, {"name": "Tim Roughgarden", "handle": "Tim_Roughgarden", "tweets": 1018}, {"name": "Chris Dixon", "handle": "cdixon", "tweets": 595}, {"name": "Jason Rosenthal", "handle": "jasonrosenthal", "tweets": 591}, {"name": "Daren Matsuoka", "handle": "DarenMatsuoka", "tweets": 502}, {"name": "Justin Thaler", "handle": "SuccinctJT", "tweets": 351}], "corpus": {"tweets": 46876, "evidence_items": 19519, "research_posts": 1018, "transcripts": 149, "members": 10}, "series": [{"m": "2021-09-30", "strat": 0.39244, "btc": 0.40076, "l1": 0.42146}, {"m": "2021-10-31", "strat": -0.07865, "btc": -0.07129, "l1": 0.01265}, {"m": "2021-11-30", "strat": -0.05326, "btc": -0.18893, "l1": -0.19348}, {"m": "2021-12-31", "strat": -0.35866, "btc": -0.16818, "l1": -0.28414}, {"m": "2022-01-31", "strat": 0.12038, "btc": 0.12269, "l1": 0.07051}, {"m": "2022-02-28", "strat": 0.05178, "btc": 0.05448, "l1": 0.13713}, {"m": "2022-03-31", "strat": -0.18094, "btc": -0.17342, "l1": -0.21837}, {"m": "2022-04-30", "strat": -0.15696, "btc": -0.15464, "l1": -0.30019}, {"m": "2022-05-31", "strat": 0.06336, "btc": -0.37343, "l1": -0.36161}, {"m": "2022-06-30", "strat": 0.16577, "btc": 0.16898, "l1": 0.33009}, {"m": "2022-07-31", "strat": 0.06364, "btc": -0.13948, "l1": -0.15679}, {"m": "2022-08-31", "strat": -0.0019, "btc": -0.03142, "l1": -0.04018}, {"m": "2022-09-30", "strat": 0.05256, "btc": 0.05514, "l1": 0.07287}, {"m": "2022-10-31", "strat": 0.03669, "btc": -0.16252, "l1": -0.30138}, {"m": "2022-12-31", "strat": 0.39444, "btc": 0.39799, "l1": 0.70737}, {"m": "2023-01-31", "strat": 0.24599, "btc": 0.00044, "l1": -0.02412}, {"m": "2023-02-28", "strat": -0.14887, "btc": 0.23024, "l1": 0.11075}, {"m": "2023-03-31", "strat": 0.02469, "btc": 0.02699, "l1": 0.04241}, {"m": "2023-04-30", "strat": -0.07194, "btc": -0.06919, "l1": -0.05043}, {"m": "2023-05-31", "strat": 0.11677, "btc": 0.11982, "l1": 0.01947}, {"m": "2023-06-30", "strat": -0.04335, "btc": -0.04069, "l1": 0.05886}, {"m": "2023-07-31", "strat": -0.11535, "btc": -0.11269, "l1": -0.13148}, {"m": "2023-08-31", "strat": 0.03825, "btc": 0.03945, "l1": 0.04572}, {"m": "2023-09-30", "strat": 0.28345, "btc": 0.28572, "l1": 0.3901}, {"m": "2023-10-31", "strat": 0.44965, "btc": 0.08846, "l1": 0.25471}, {"m": "2023-11-30", "strat": 0.26343, "btc": 0.12189, "l1": 0.31702}, {"m": "2023-12-31", "strat": -0.10724, "btc": 0.00583, "l1": -0.01426}, {"m": "2024-01-31", "strat": 0.43248, "btc": 0.43803, "l1": 0.40027}, {"m": "2024-02-29", "strat": 1.05443, "btc": 0.166, "l1": 0.28964}, {"m": "2024-03-31", "strat": -0.34154, "btc": -0.1501, "l1": -0.23314}, {"m": "2024-04-30", "strat": 0.11105, "btc": 0.11421, "l1": 0.22407}, {"m": "2024-05-31", "strat": -0.07507, "btc": -0.07121, "l1": -0.09132}, {"m": "2024-06-30", "strat": 0.22282, "btc": 0.02925, "l1": 0.04681}, {"m": "2024-07-31", "strat": 0.01358, "btc": -0.08761, "l1": -0.17406}, {"m": "2024-08-31", "strat": -0.10463, "btc": 0.07409, "l1": 0.07888}, {"m": "2024-09-30", "strat": -0.15803, "btc": 0.11077, "l1": 0.06168}, {"m": "2024-10-31", "strat": 0.36646, "btc": 0.37191, "l1": 0.41775}, {"m": "2024-11-30", "strat": -0.28529, "btc": -0.03033, "l1": -0.11133}, {"m": "2024-12-31", "strat": 0.09106, "btc": 0.0944, "l1": 0.1024}, {"m": "2025-01-31", "strat": -0.17882, "btc": -0.1766, "l1": -0.28642}, {"m": "2025-02-28", "strat": 0.00034, "btc": -0.02114, "l1": -0.12206}, {"m": "2025-03-31", "strat": -0.00147, "btc": 0.14067, "l1": 0.10317}, {"m": "2025-04-30", "strat": 0.10829, "btc": 0.1107, "l1": 0.19352}, {"m": "2025-05-31", "strat": 0.02305, "btc": 0.02432, "l1": -0.00099}, {"m": "2025-06-30", "strat": 0.07706, "btc": 0.0804, "l1": 0.22699}, {"m": "2025-07-31", "strat": -0.06762, "btc": -0.06473, "l1": 0.09594}, {"m": "2025-08-31", "strat": 0.05133, "btc": 0.05342, "l1": 0.01241}, {"m": "2025-09-30", "strat": 0.89797, "btc": -0.03888, "l1": -0.07111}, {"m": "2025-10-31", "strat": 0.09103, "btc": -0.17559, "l1": -0.22849}, {"m": "2025-11-30", "strat": 0.06593, "btc": -0.03003, "l1": -0.03416}, {"m": "2025-12-31", "strat": -0.0212, "btc": -0.1016, "l1": -0.14343}, {"m": "2026-01-31", "strat": 0.09625, "btc": -0.14954, "l1": -0.18297}, {"m": "2026-02-28", "strat": 0.11914, "btc": 0.01949, "l1": 0.02593}]};
+const fmt = n => n>=1000? '$'+(n/1000).toFixed(n>=10000?0:1)+'mm' : '$'+n.toFixed(0)+'mm';
+const pct = x => (x>=0?'+':'')+Math.round(x*100)+'%';
+
+// Stage 1
+const C=DATA.corpus;
+document.getElementById('s-tweets').textContent=C.tweets.toLocaleString();
+document.getElementById('s-ev').textContent=C.evidence_items.toLocaleString();
+const maxT=Math.max(...DATA.members.map(m=>m.tweets));
+document.getElementById('members').innerHTML=DATA.members.map(m=>
+ `<div class="mbar"><span class="nm">${m.name}</span><span class="track"><span class="fill" style="width:${(m.tweets/maxT*100).toFixed(1)}%"></span></span><span class="v">${m.tweets.toLocaleString()}</span></div>`).join('');
+
+// Stage 2 approaches
+const APPROACHES=[
+ {tag:'Baseline',name:'A1 · Blended LLM',desc:'One Opus pass reads the whole corpus and emits a house view. No per-member layer.',metric:'Signal IC: <b>null</b>',detail:'The member-agnostic baseline. Mildly contrarian / no edge — confirms the per-member decomposition matters.'},
+ {tag:'Approach 2a',name:'A2 · Consensus',desc:'Each doppelganger gives its outlook; an amnesiac Opus pass aggregates to consensus.',metric:'Signal IC t ≈ <b>1.5</b>',detail:'Mechanical aggregation of individual views. Real signal, but the council deliberation beats it.'},
+ {tag:'Approach 2b',name:'A2 · Council',desc:'Doppelgangers placed in a council, prompted to deliberate and reach consensus together.',metric:'Signal IC <b>t = 2.42</b>',win:true,detail:'THE WINNER. Deliberation (with minority-view propagation) produces the most consistent cross-sectional ranking. Beats every other approach. This is the signal the strategy trades.'},
+ {tag:'Approach 3',name:'A3 · + Research Digest',desc:'A2 consensus & council, plus a distilled news feed and trailing market/sector performance for context.',metric:'Did <b>not</b> beat A2b',detail:'Adding live market context made it react to momentum — added noise more than signal. More machinery ≠ more signal.'},
+ {tag:'Approach 4',name:'A4 · Soul Doppelganger',desc:'Each member modeled as a "soul" (how they reason, from full corpus) + memory + digest, reasoning in-character.',metric:'Did <b>not</b> beat A2b',detail:'The most sophisticated build. Helped the consensus variant but never overtook the simpler council. Lower beta, lumpier returns.'},
+];
+document.getElementById('cards').innerHTML=APPROACHES.map((a,i)=>
+ `<div class="card ${a.win?'win':''}" onclick="this.classList.toggle('open')">
+   <div class="tag">${a.tag} ${a.win?'<span class=badge>Winner</span>':''}</div>
+   <h3>${a.name}</h3><div class="desc">${a.desc}</div>
+   <div class="metric">${a.metric}</div>
+   <div class="detail">${a.detail}</div></div>`).join('');
+
+// Stage 3 interactive equity
+const S=DATA.series; // [{m,strat,btc,l1}]
+const startSel=document.getElementById('start');
+const presets=[['Full cycle — Sep 2021',0]];
+S.forEach((r,i)=>{ if(['2022-12','2023-01','2023-06','2024-01','2025-01'].includes(r.m.slice(0,7))) presets.push([r.m.slice(0,7),i]); });
+presets.forEach(([lab,i])=>{const o=document.createElement('option');o.value=i;o.textContent=lab;startSel.appendChild(o);});
+let logScale=true;
+function series(from){
+  const slice=S.slice(from); const out={m:[],strat:[],btc:[],l1:[]};
+  let eS=10,eB=10,eL=10;
+  out.m.push(S[from].m); out.strat.push(10); out.btc.push(10); out.l1.push(10);
+  slice.forEach(r=>{eS*=1+r.strat;eB*=1+r.btc;eL*=1+r.l1;out.m.push(r.m);out.strat.push(eS);out.btc.push(eB);out.l1.push(eL);});
+  return out;
+}
+function metrics(arr){ // arr of monthly returns
+  const n=arr.length, mean=arr.reduce((a,b)=>a+b,0)/n;
+  const sd=Math.sqrt(arr.reduce((a,b)=>a+(b-mean)**2,0)/(n-1));
+  const sharpe=sd>0?mean/sd*Math.sqrt(12):0;
+  let eq=1,peak=1,dd=0; arr.forEach(r=>{eq*=1+r;peak=Math.max(peak,eq);dd=Math.min(dd,eq/peak-1);});
+  return {tot:eq-1,sharpe,dd};
+}
+let chart;
+function draw(){
+  const from=+startSel.value, d=series(from);
+  const rS=S.slice(from).map(r=>r.strat),rB=S.slice(from).map(r=>r.btc),rL=S.slice(from).map(r=>r.l1);
+  const mS=metrics(rS),mB=metrics(rB),mL=metrics(rL);
+  document.getElementById('mtable').innerHTML=
+   `<thead><tr><th>Metric</th><th>Strategy</th><th>BTC</th><th>L1 majors</th></tr></thead><tbody>
+    <tr><td>$10mm grows to</td><td class=s>${fmt(d.strat.at(-1))}</td><td>${fmt(d.btc.at(-1))}</td><td>${fmt(d.l1.at(-1))}</td></tr>
+    <tr><td>Total return</td><td class=s>${pct(mS.tot)}</td><td>${pct(mB.tot)}</td><td>${pct(mL.tot)}</td></tr>
+    <tr><td>Sharpe</td><td class=s>${mS.sharpe.toFixed(2)}</td><td>${mB.sharpe.toFixed(2)}</td><td>${mL.sharpe.toFixed(2)}</td></tr>
+    <tr><td>Max drawdown</td><td>${pct(mS.dd)}</td><td>${pct(mB.dd)}</td><td>${pct(mL.dd)}</td></tr>
+    </tbody>`;
+  const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15});
+  const cfg={type:'line',data:{labels:d.m,datasets:[mk('strategy',d.strat,'#111'),mk('BTC',d.btc,'#EF4444'),mk('L1 majors',d.l1,'#6B7280',[5,4])]},
+   options:{responsive:true,animation:false,plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}}},
+    scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
+     x:{grid:{display:false},ticks:{font:{family:'monospace'},maxTicksLimit:9,callback:function(v){return this.getLabelForValue(v).slice(0,7)}}}}}};
+  if(chart)chart.destroy(); chart=new Chart(document.getElementById('eq'),cfg);
+  document.getElementById('caveat').textContent=from===0?'Full cycle includes the 2022 bear — the relative-momentum gate keeps it defensive while BTC falls.':'Deploying after the bear: the strategy rides less of the 2022-2023 recovery, isolating its post-deployment edge.';
+}
+startSel.onchange=draw;
+document.getElementById('b-log').onclick=()=>{logScale=true;document.getElementById('b-log').classList.add('on');document.getElementById('b-lin').classList.remove('on');draw();};
+document.getElementById('b-lin').onclick=()=>{logScale=false;document.getElementById('b-lin').classList.add('on');document.getElementById('b-log').classList.remove('on');draw();};
+draw();
+</script>
+</body></html>

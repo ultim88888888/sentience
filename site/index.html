@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>State of Crypto — Doppelganger Edition</title>
+<title>Case Study — Doppelganger Edition</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -29,10 +29,11 @@ h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
 .stat{flex:1 1 150px;background:transparent;border:2px solid var(--ink);padding:16px;}
 .stat .n{font-family:"Arial Black",sans-serif;font-weight:900;font-size:30px;line-height:1;}
 .stat .l{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin-top:6px;}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:2px solid var(--ink);border-bottom:none;border-right:none;background:transparent;}
-.step{padding:18px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);}
-.step .num{font-family:"Arial Black",sans-serif;font-weight:900;font-size:13px;color:var(--ink);background:var(--cyan);display:inline-block;width:24px;height:24px;line-height:22px;text-align:center;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:8px;}
-.step h3{font-size:14px;margin:0 0 6px;}
+.steps{display:flex;align-items:stretch;gap:0;background:transparent;margin-bottom:8px;}
+.step{flex:1;padding:4px 18px 4px 0;}
+.flowarrow{flex:0 0 auto;display:flex;align-items:center;justify-content:center;padding:0 14px;color:#7420F5;font-size:30px;font-weight:bold;line-height:1;}
+.step h3{font-size:15px;margin:0 0 6px;}
+@media(max-width:720px){.steps{flex-direction:column;}.step{padding:4px 0;}.flowarrow{transform:rotate(90deg);padding:10px 0;}}
 .step p{font-size:12px;color:#333;margin:0 0 8px;}
 .step .src{font-size:11px;color:var(--slate);}
 .step .src b{color:var(--ink);font-weight:bold;}
@@ -102,7 +103,7 @@ ul.src li{margin:3px 0;}
 .hsec .sn{font-family:"Arial Black",sans-serif;font-size:14px;text-transform:uppercase;}
 .hsec .sw{font-size:12px;color:var(--slate);display:flex;flex-direction:column;align-items:flex-end;gap:1px;}
 .htoks{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
-.htok{display:flex;align-items:center;gap:6px;background:var(--cream);border:1.5px solid var(--ink);border-radius:16px;padding:3px 10px 3px 4px;font-size:12px;}
+.htok{display:flex;align-items:center;gap:6px;background:transparent;border:1.5px solid var(--ink);border-radius:16px;padding:3px 10px 3px 4px;font-size:12px;}
 .htok img{width:18px;height:18px;border-radius:50%;background:#fff;}
 .htok .fb{width:18px;height:18px;border-radius:50%;background:var(--cyan);border:1px solid var(--ink);font-size:8px;display:flex;align-items:center;justify-content:center;font-weight:bold;}
 .htok .pw{color:var(--slate);}
@@ -148,7 +149,7 @@ dialog::backdrop{background:rgba(17,17,17,.45);}
 @keyframes b3{0%,100%{transform:translate(60px,-20px) scale(1)}50%{transform:translate(20px,15px) scale(1.15)}}
 @keyframes b4{0%,100%{transform:translate(230px,-5px) scale(1)}50%{transform:translate(270px,18px) scale(.95)}}
 @keyframes b5{0%,100%{transform:translate(-40px,5px) scale(.9)}50%{transform:translate(0px,-15px) scale(1.08)}}
-.soc-title{position:relative;z-index:3;display:flex;align-items:center;justify-content:center;gap:.18em;flex-wrap:wrap;line-height:.9;margin:6px 0 4px;}
+.soc-title{position:relative;z-index:3;display:flex;align-items:center;justify-content:center;gap:clamp(18px,3.5vw,46px);flex-wrap:wrap;line-height:.9;margin:6px 0 4px;}
 .soc-title .t1{font-family:"Anton",sans-serif;font-weight:400;color:#F4F1E8;font-size:clamp(52px,11vw,150px);letter-spacing:1px;}
 .soc-title .tof{font-family:"Playfair Display",serif;font-style:italic;font-weight:700;color:#F4F1E8;font-size:clamp(46px,9vw,120px);padding:0 .06em;}
 .soc-sub{position:relative;z-index:3;color:#8FDDED;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:clamp(11px,1.6vw,15px);letter-spacing:3px;margin-top:10px;}
@@ -162,8 +163,8 @@ footer a{color:var(--ink);}
   <svg width="0" height="0"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></defs></svg>
   <div class="soc-brand">a16zcrypto</div>
   <div class="soc-blobs"><span></span><span></span><span></span><span></span><span></span></div>
-  <div class="soc-title"><span class="t1">STATE</span><span class="tof">of</span><span class="t1">CRYPTO</span></div>
-  <div class="soc-sub">DOPPELGANGER EDITION&nbsp;&nbsp;·&nbsp;&nbsp;A CASE STUDY BY JAX</div>
+  <div class="soc-title"><span class="t1">CASE</span><span class="t1">STUDY</span></div>
+  <div class="soc-sub">DOPPELGANGER EDITION</div>
 </div>
 
 
@@ -178,19 +179,21 @@ footer a{color:var(--ink);}
     <div class="stat"><div class="n" id="s-ev">—</div><div class="l">structured evidence items</div></div>
   </div>
   <div class="steps">
-    <div class="step"><div class="num">1</div><h3>Source the corpus</h3><p>Every public utterance, per investor.</p>
+    <div class="step"><h3>Source the corpus</h3><p>Every public utterance, per investor.</p>
       <ul class="src">
         <li><b>X</b> — all activity since 2021 (twitterapi.io)</li>
         <li><b>a16z research &amp; media</b> — all categories back to 2014 (Algolia + headless-Chromium WAF bypass)</li>
         <li><b>a16z bios</b> — team-page profiles</li>
         <li><b>LinkedIn</b> — public profile parse</li>
       </ul></div>
-    <div class="step"><div class="num">2</div><h3>Transcribe media</h3><p>149 videos &amp; podcasts turned into searchable text.</p>
+    <div class="flowarrow">&rarr;</div>
+    <div class="step"><h3>Transcribe media</h3><p>149 videos &amp; podcasts turned into searchable text.</p>
       <ul class="src">
         <li>On-device <b>Whisper</b> (large-v3) for audio, YouTube captions where available</li>
         <li>Caption-less audio routed through a residential proxy</li>
       </ul></div>
-    <div class="step"><div class="num">3</div><h3>Clean &amp; structure</h3><p>Normalize, attribute, and structure into one record.</p>
+    <div class="flowarrow">&rarr;</div>
+    <div class="step"><h3>Clean &amp; structure</h3><p>Normalize, attribute, and structure into one record.</p>
       <ul class="src">
         <li><b>Speaker attribution</b> — diarize transcripts, tag each turn to a member</li>
         <li><b>Vocabulary reconciliation</b> + LLM sector/token taxonomy (fit-or-mint)</li>
@@ -238,7 +241,7 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 5</span>
   <h2>Future</h2>
-  <p class="lead">This is a public-data prototype. With a16z's own inputs and real-time execution, the same machine gets materially sharper. Here's the roadmap.</p>
+  <p class="lead">This is a public-data prototype. With a16z's own inputs and real-time execution, the same machine gets materially sharper.</p>
 
   <div class="outline">
     <div class="onode"><span class="onum">01</span>

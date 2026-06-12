@@ -295,7 +295,6 @@ footer a{color:var(--ink);}
   <ul class="vlist">
     <li>Out-of-sample validation</li>
     <li>Inherent model-weight bleed</li>
-    <li>Sector-vs-token granularity</li>
     <li>Momentum decomposition</li>
     <li>Beta attribution</li>
     <li>Capacity &amp; overfit checks</li>
@@ -311,16 +310,16 @@ footer a{color:var(--ink);}
     <div class="onode"><span class="onum">01</span>
       <div class="ohead">Richer inputs</div>
       <ul class="osub">
-        <li><b>Internal a16z memos, deal flow, &amp; interviews</b></li>
-        <li><b>More doppelgangers</b></li>
-        <li><b>Earlier corpus history</b></li>
-        <li><b>More compute bandwidth</b></li>
+        <li><b>Internal a16z deal flow, targeted interviews, &amp; other content</b> — direct conviction, not just public posts</li>
+        <li><b>More doppelgangers</b> — a16z team members, and perhaps other trusted partners in the space</li>
+        <li><b>Earlier corpus history</b> — earlier X and internal data</li>
+        <li><b>More compute bandwidth</b> — better models, more effort across larger datasets</li>
       </ul>
     </div>
     <div class="onode"><span class="onum">02</span>
       <div class="ohead">What more data should reveal</div>
       <ul class="osub">
-        <li><b>The signal proving itself over time.</b> Run live, it should keep validating — and earlier or denser data may surface additional outsized gains even within our current simulation window (the corpus front-ran privacy well before ZEC ran +444%).</li>
+        <li><b>The corpus front-runs themes early.</b> It flagged privacy well before ZEC ran +444%. More or earlier data should surface more such calls in-sample, and time should reveal the ones it's making now that haven't played out yet.</li>
         <li><b>Edge across regimes.</b> Our backtest spans mostly a bull regime; a longer history through a bear should demonstrate further edge.</li>
       </ul>
     </div>
@@ -502,7 +501,7 @@ function draw(){
   .map(([l,v,c])=>`<div class="mcard"><div class="ml">${l}</div><div class="mv">${v}</div><div class="cmp">${c}</div></div>`).join('');
  const mk=(lab,arr,col,dash)=>({label:lab,data:arr,borderColor:col,borderWidth:lab==='strategy'?3:2,borderDash:dash||[],pointRadius:0,tension:.15,pointHoverRadius:lab==='strategy'?6:5,pointHoverBackgroundColor:col,pointHoverBorderColor:'#F4F1E8',pointHoverBorderWidth:2});
  const cfg={type:'line',data:{labels:d.m,datasets:[mk('strategy',d.strat,'#111'),mk('BTC',d.btc,'#EF4444'),mk('L1 majors',d.l1,'#6B7280',[5,4])]},
-  options:{responsive:true,maintainAspectRatio:false,resizeDelay:80,animation:false,events:['click'],interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{enabled:false}},scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
+  options:{responsive:true,maintainAspectRatio:false,resizeDelay:80,animation:false,events:[],interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{font:{family:'monospace'},boxWidth:18}},tooltip:{enabled:false}},scales:{y:{type:logScale?'logarithmic':'linear',grid:{color:'rgba(0,0,0,.07)'},ticks:{font:{family:'monospace'},callback:v=>'$'+v}},
     x:{grid:{display:false},ticks:{font:{family:'monospace'},maxTicksLimit:9,callback:function(v){return this.getLabelForValue(v).slice(0,7)}}}}}};
  if(chart)chart.destroy();chart=new Chart(document.getElementById('eq'),cfg);
  syncChartMarker();

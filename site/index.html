@@ -520,7 +520,8 @@ function syncChartMarker(){
  const hd=Object.keys(DATA.holdings).sort()[+hrEl.value];
  const idx=curD.m.lastIndexOf(hd);
  if(idx<1){chart.setActiveElements([]);chart.update('none');return;}
- chart.setActiveElements(chart.data.datasets.map((_,di)=>({datasetIndex:di,index:idx})));
+ const ixs=[idx-1,idx];  // both interval endpoints: prior point -> selected month
+ chart.setActiveElements(chart.data.datasets.flatMap((_,di)=>ixs.map(ix=>({datasetIndex:di,index:ix}))));
  chart.update('none');
 }
 const hr=document.getElementById('hrange');

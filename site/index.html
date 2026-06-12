@@ -40,15 +40,16 @@ h2{font-size:clamp(24px,4vw,40px);margin:0 0 8px;}
 ul.src{margin:0;padding-left:16px;}
 ul.src li{margin:3px 0;}
 /* member cards — horizontal grid */
-.mrow{display:flex;justify-content:center;align-items:flex-end;gap:10px;height:140px;margin:24px 0 10px;padding:0 8px;flex-wrap:nowrap;}
-.mface{position:relative;flex:0 0 auto;width:66px;height:66px;cursor:pointer;z-index:1;transform-origin:bottom center;will-change:transform;transition:transform .12s cubic-bezier(.25,.8,.3,1);}
-.mface.big{z-index:6;}
-.mface img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2.5px solid var(--ink);background:var(--cream);display:block;box-shadow:2px 2px 0 rgba(17,17,17,.18);}
+.mrow{display:flex;justify-content:center;align-items:flex-end;gap:12px;height:74px;margin:10px 0 6px;padding:0 8px;flex-wrap:nowrap;}
+.mface{position:relative;flex:0 0 auto;width:66px;height:66px;cursor:pointer;z-index:1;transform-origin:bottom center;will-change:transform;transition:transform .14s cubic-bezier(.25,.85,.3,1);}
+.mface.focus{z-index:6;}
+.mface img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2.5px solid var(--ink);background:var(--cream);display:block;box-shadow:2px 2px 0 rgba(17,17,17,.18);filter:grayscale(1) contrast(.96);transition:filter .18s ease;}
+.mface.focus img{filter:grayscale(0) contrast(1);}
 .mface .mfb{width:100%;height:100%;border-radius:50%;border:2.5px solid var(--ink);background:var(--cyan);display:flex;align-items:center;justify-content:center;font-family:"Arial Black",sans-serif;font-weight:900;font-size:20px;color:var(--ink);}
-.mface .mlabel{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);color:#F4F1E8;font-size:11px;white-space:nowrap;padding:4px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .12s;font-family:"ABC Favorit Mono",ui-monospace,monospace;letter-spacing:.3px;}
+.mface .mlabel{position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%);background:var(--ink);color:#F4F1E8;font-size:11px;white-space:nowrap;padding:4px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .14s;font-family:"ABC Favorit Mono",ui-monospace,monospace;letter-spacing:.3px;}
 .mface .mlabel::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--ink);}
-.mface.big .mlabel{opacity:1;}
-@media(max-width:720px){.mrow{flex-wrap:wrap;height:auto;gap:14px;}.mface{width:58px;height:58px;}}
+.mface.focus .mlabel{opacity:1;}
+@media(max-width:720px){.mrow{flex-wrap:wrap;height:auto;gap:14px;}.mface{width:54px;height:54px;}.mface img{filter:none;}}
 /* knobs */
 .knobs{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;margin:-10px 0 34px;}
 @media(max-width:860px){.knobs{grid-template-columns:repeat(3,1fr);}}
@@ -291,20 +292,27 @@ document.getElementById('s-ev').textContent=DATA.corpus.evidence_items.toLocaleS
 // Stage 2: member cards (horizontal grid) + dialog
 const M=DATA.members;
 const _ini=n=>n.split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+const AVX={'eddy-lazzarin':'webp','daren-matsuoka':'webp','jason-rosenthal':'webp','chris-dixon':'webp','ali-yahya':'webp','scott-kominers':'webp','miles-jennings':'webp','guy-wuollet':'webp','tim-roughgarden':'jpeg','justin-thaler':'jpg'};
+const avsrc=s=>'avatars/'+s+'.'+(AVX[s]||'jpg');
 document.getElementById('members').innerHTML='<div class="mrow" id="mrow">'+M.map((m,i)=>
  `<div class="mface" data-i="${i}" onclick="openMember(${i})" title="${m.name}">
-    <img src="avatars/${m.slug}.jpg" alt="${m.name}" onerror="this.outerHTML='<div class=&quot;mfb&quot;>${_ini(m.name)}</div>'">
+    <img src="${avsrc(m.slug)}" alt="${m.name}" onerror="this.outerHTML='<div class=&quot;mfb&quot;>${_ini(m.name)}</div>'">
     <span class="mlabel">${m.name} · ${m.title}</span>
   </div>`).join('')+'</div>';
-// macOS-dock magnify: scale each face by proximity to cursor x
+// macOS-dock magnify: ONE focused face (nearest the cursor) pops + colors; near
+// neighbors scale down by index-distance and translate outward so nothing overlaps.
 (()=>{const row=document.getElementById('mrow');const faces=[...row.querySelectorAll('.mface')];
- const MAXS=1.85, SIG=70;  // peak scale + falloff width (px)
+ const SCALE=[1.7,1.3,1.12], PUSH=[0,34,49], PUSHMAX=53;
  row.addEventListener('mousemove',e=>{
-   faces.forEach(f=>{const r=f.getBoundingClientRect();const cx=r.left+r.width/2;
-     const d=e.clientX-cx;const s=1+(MAXS-1)*Math.exp(-(d*d)/(2*SIG*SIG));
-     f.style.transform='scale('+s.toFixed(3)+')';f.classList.toggle('big',s>1.5);});
+   let fi=0,best=1e9;
+   faces.forEach((f,i)=>{const r=f.getBoundingClientRect();const d=Math.abs(e.clientX-(r.left+r.width/2));if(d<best){best=d;fi=i;}});
+   faces.forEach((f,i)=>{const k=Math.abs(i-fi);
+     const s=SCALE[k]!==undefined?SCALE[k]:1;
+     const push=Math.sign(i-fi)*(k<PUSH.length?PUSH[k]:PUSHMAX);
+     f.style.transform='translateX('+push+'px) scale('+s+')';
+     f.classList.toggle('focus',i===fi);});
  });
- row.addEventListener('mouseleave',()=>faces.forEach(f=>{f.style.transform='scale(1)';f.classList.remove('big');}));
+ row.addEventListener('mouseleave',()=>faces.forEach(f=>{f.style.transform='';f.classList.remove('focus');}));
 })();
 window.openMember=i=>{const m=M[i];
  document.getElementById('dlg-title').textContent=m.name;

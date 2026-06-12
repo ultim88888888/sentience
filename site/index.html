@@ -72,7 +72,7 @@ ul.src li{margin:3px 0;}
 .htok.short .pw{color:var(--red);}
 /* cards (stage 3) */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px;}
-.card{background:transparent;border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;}
+.card{background:transparent;border:2px solid var(--ink);padding:16px;cursor:pointer;transition:.12s;display:flex;flex-direction:column;}
 .card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);}
 .card.win{background:var(--yellow);}
 .card .tag{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:1px;min-height:14px;}
@@ -80,7 +80,7 @@ ul.src li{margin:3px 0;}
 .card .desc{font-size:12.5px;color:#333;}
 .card .metric{margin-top:10px;font-size:12px;}
 .card .metric b{font-family:"Arial Black",sans-serif;}
-.card .more{margin-top:10px;font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
+.card .more{margin-top:auto;padding-top:12px;font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
 .jsonbox{background:transparent;border:none;color:#94a3b8;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:8px 2px;margin:0 0 6px;overflow-x:auto;white-space:pre;}
 .jsonbox .jk{color:#7420F5;}
 .jsonbox .js{color:#0a7d4b;}
@@ -264,10 +264,10 @@ footer a{color:var(--ink);}
     <div class="onode"><span class="onum">01</span>
       <div class="ohead">Richer inputs</div>
       <ul class="osub">
-        <li>Internal a16z memos, deal flow &amp; interviews</li>
-        <li>More doppelgangers across the founding investing team &amp; maybe more</li>
-        <li>Earlier corpus history</li>
-        <li>More compute bandwidth</li>
+        <li><b>Internal a16z memos, deal flow, &amp; interviews</b></li>
+        <li><b>More doppelgangers across the founding investing team &amp; maybe more</b></li>
+        <li><b>Earlier corpus history</b></li>
+        <li><b>More compute bandwidth</b></li>
       </ul>
     </div>
     <div class="onode"><span class="onum">02</span>
@@ -350,7 +350,7 @@ const APP=[
    detail:'Mechanical aggregation: collect 10 individual outlooks, average them into a house view. Real, positive signal — but it treats every member equally and loses the disagreement structure. The council (next) does better by letting members argue.'},
  {tag:'',name:'Council',t:2.4,win:true,desc:'Doppelgangers placed in a council, prompted to deliberate and reach consensus together.',
    detail:'The 10 doppelgangers deliberate — a well-argued minority view can move the room. This produces the most consistent cross-sectional sector ranking (IC t-stat 2.4, the only one clearing significance). This is the signal the strategy trades.'},
- {tag:'',name:'+ Research Digest',mt:[['Indiv + digest',1.37],['Council + digest',1.46]],desc:'Individual &amp; council, each given a distilled news feed and trailing market / sector performance before deciding.',
+ {tag:'',name:'+ Research Digest',mt:[['Indiv Signal IC',1.37],['Council Signal IC',1.46]],desc:'Individual &amp; council, each given a distilled news feed and trailing market / sector performance before deciding.',
    detail:'Gave the doppelgangers a market & news digest before they decided — run on BOTH the individual and council layers. It made them chase recent momentum, adding noise more than signal. More machinery did NOT help: the digest dropped the council from t=2.4 to t=1.5 (and individual from 1.5 to 1.4). A key finding — the plain static council wins.'},
 ];
 document.getElementById('cards').innerHTML=APP.map((a,i)=>

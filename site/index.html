@@ -122,14 +122,10 @@ ul.src li{margin:3px 0;}
 .rule{font-size:13px;background:var(--card);border:2px solid var(--ink);padding:14px;margin:0 0 18px;}
 .rule b{color:var(--ink);}
 .fineprint{font-size:11px;color:var(--slate);margin-top:12px;font-style:italic;}
-.valrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 4px;}
-.valbeat{border:2px solid var(--ink);padding:16px 16px 18px;display:flex;flex-direction:column;}
-.valbeat .vlab{font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:9px;}
-.valbeat .vstat{font-family:"Arial Black",sans-serif;font-weight:900;font-size:34px;line-height:1;margin-bottom:11px;}
-.valbeat.ok .vstat{color:var(--green);}
-.valbeat.bad .vstat{color:var(--red);}
-.valbeat .vtxt{font-size:12.5px;line-height:1.5;color:#333;}
-@media(max-width:720px){.valrow{grid-template-columns:1fr;}}
+.vlist{margin:20px 0 6px;padding-left:20px;list-style:none;max-width:900px;}
+.vlist li{position:relative;font-size:14px;line-height:1.55;margin:12px 0;color:#333;}
+.vlist li::before{content:"→";position:absolute;left:-20px;color:#7420F5;font-weight:bold;}
+.vlist li b{color:var(--ink);}
 /* holdings */
 .hbox{background:transparent;border:2px solid var(--ink);padding:18px;margin-top:8px;}
 .hhead{display:flex;justify-content:space-between;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--slate);border-bottom:1.5px solid var(--ink);padding-bottom:6px;margin-bottom:4px;}
@@ -295,25 +291,16 @@ footer a{color:var(--ink);}
 <section><div class="wrap">
   <span class="stage">Stage 4.5</span>
   <h2>Validation</h2>
-  <p class="lead">A strong backtest is easy to fake. The point of the study was to try to break this one — walk-forward (params chosen only on past data), then a fully out-of-sample regime it had never touched.</p>
-  <div class="valrow">
-    <div class="valbeat ok">
-      <div class="vlab">In-sample · council IC</div>
-      <div class="vstat">t = 2.42</div>
-      <div class="vtxt">The council's sector ranking looked significant — cross-sectionally informative, the study's apex signal.</div>
-    </div>
-    <div class="valbeat bad">
-      <div class="vlab">Out-of-sample · 2021–22</div>
-      <div class="vstat">t = −3.6</div>
-      <div class="vtxt">On an untouched regime the raw signal <b>inverted</b> — 0 of 6 quarters positive. "Long what a16z is most excited about" is long the frothiest narratives, which crash in a bear. Pro-cyclical, not skill.</div>
-    </div>
-    <div class="valbeat ok">
-      <div class="vlab">Full cycle · the deliverable</div>
-      <div class="vstat">t = 1.92</div>
-      <div class="vtxt">The <i>construction</i> was wrong, not the signal. Gate on <b>relative</b> momentum — only sectors outperforming BTC — and hedge the bear: selection + timing survives a full cycle incl. 2022, Sharpe ~2&times; BTC.</div>
-    </div>
-  </div>
-  <p class="fineprint">Still t &lt; 2 at this sample — promising, not proven; more history is the binding constraint. What the edge <i>is</i>: a sector-selection, sideways-market dispersion alpha — it earns most when BTC stalls, and defends in bears by holding only outperforming sectors while hedged.</p>
+  <p class="lead">We tried to poke holes and break the strategy.</p>
+  <ul class="vlist">
+    <li><b>Out-of-sample validation</b> — re-ran the signal on an independent 2021–22 regime it never saw. The raw signal inverted there, which forced the relative-momentum construction that survives a full cycle.</li>
+    <li><b>No look-ahead leakage</b> — a hard &le;T date cut plus an amnesiac audit pass that drops any call citing information dated after the decision point.</li>
+    <li><b>Walk-forward validation</b> — at each step, parameters fit on past data only; it kept re-selecting the same settings.</li>
+    <li><b>Momentum decomposition</b> — checked the edge isn't just momentum in disguise; the static council survives with momentum stripped out.</li>
+    <li><b>Beta attribution</b> — measured how much of the return is plain BTC beta versus real selection alpha.</li>
+    <li><b>Capacity &amp; overfit checks</b> — held the book to real open-interest / TWAP liquidity limits, and confirmed the settings plateau (not spike) and survive leave-one-out.</li>
+  </ul>
+  <p class="fineprint">The honest read: the mechanism works and the signal is real, but it stays t &lt; 2 at this sample — promising, not proven. More history is the binding constraint.</p>
 </div></section>
 
 <section><div class="wrap">

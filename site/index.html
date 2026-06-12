@@ -80,11 +80,11 @@ ul.src li{margin:3px 0;}
 .card .metric{margin-top:10px;font-size:12px;}
 .card .metric b{font-family:"Arial Black",sans-serif;}
 .card .more{margin-top:10px;font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;}
-.jsonbox{background:#06215A;border:2px solid var(--ink);color:#8aa4c8;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:16px 18px;margin:0 0 6px;overflow-x:auto;white-space:pre;box-shadow:4px 4px 0 rgba(17,17,17,.18);}
-.jsonbox .jk{color:#8FDDED;}
-.jsonbox .js{color:#BFF2D4;}
-.jsonbox .jn{color:#FEFEC5;}
-.jsonbox .jb{color:#C792EA;}
+.jsonbox{background:transparent;border:2px solid var(--ink);color:#5b6b7f;font-family:"ABC Favorit Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.6;padding:16px 18px;margin:0 0 6px;overflow-x:auto;white-space:pre;}
+.jsonbox .jk{color:#7420F5;}
+.jsonbox .js{color:#0a7d4b;}
+.jsonbox .jn{color:#b45309;}
+.jsonbox .jb{color:#b45309;}
 .badge{display:inline-block;background:var(--green);color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:10px;letter-spacing:.5px;text-transform:uppercase;}
 .chartbox{background:transparent;border:2px solid var(--ink);padding:14px;}
 .cap{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.5px;margin:0 0 10px;}
@@ -225,9 +225,9 @@ footer a{color:var(--ink);}
   <h2>Extracting Signal</h2>
   <p class="lead">Five ways to turn the doppelgangers into one house market view. Each outputs an outlook — excited / concerned sectors &amp; tokens, conviction, horizon, risk bias. Click any to dig in.</p>
   <div class="cards" id="cards"></div>
-  <div class="cap" style="margin-top:4px;">Sample consensus — the winning council's structured house view</div>
+  <div class="cap" style="margin-top:4px;">Sample signal — one doppelganger's structured view (the council distills ten of these)</div>
   <pre class="jsonbox" id="jsonsample"></pre>
-  <p class="fineprint">Trimmed for display (one date, six of ~23 items). Every item also carries a cited <i>rationale</i>, <i>provenance</i> (grounded / persisted / extrapolated), and parent sector — the structure the strategy reads directly.</p>
+  <p class="fineprint">Real output, lightly trimmed. Each item carries stance + conviction + horizon, a <i>rationale</i>, a <i>provenance</i> tag (grounded / persisted / extrapolated), and a dated <i>evidence</i> trail of verbatim citations. The council reads ten of these and deliberates to the house consensus the strategy trades.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -362,15 +362,19 @@ window.openApp=i=>{const a=APP[i];
  dlg.showModal();};
 // Sample consensus — a real (trimmed) council output, syntax-highlighted
 const SAMPLE={
- as_of:"2023-12-31", approach:"council",
- risk_regime:{stance:"risk_on", conviction:68},
+ member:"Ali Yahya", as_of:"2023-12-31",
  items:[
-   {item:"zk",                type:"sector", stance:"bullish", conviction:91},
-   {item:"ai-crypto",         type:"sector", stance:"bullish", conviction:85},
-   {item:"gaming",            type:"sector", stance:"bullish", conviction:76},
-   {item:"policy-regulation", type:"sector", stance:"bearish", conviction:88},
-   {item:"ETH",               type:"token",  stance:"bullish", conviction:75},
-   {item:"memecoins",         type:"token",  stance:"bearish", conviction:80}
+   {item:"zk", item_type:"sector", stance:"bullish", conviction:90, horizon:"structural", provenance:"grounded",
+    rationale:"Privacy is essential for adoption; bullish on ZK proving — Aztec, Noir, Lasso/Jolt.",
+    citations:[
+      {date:"2023-08-10", quote:"Lasso and Jolt are groundbreaking… the lookup singularity is here"},
+      {date:"2023-09-22", quote:"It's hard to imagine crypto reaching mainstream adoption without privacy"}
+    ]},
+   {item:"ai-crypto", item_type:"sector", stance:"bullish", conviction:85, horizon:"structural", provenance:"grounded",
+    rationale:"Crypto marketplaces can democratize the compute AI needs. Led Gensyn's Series A.",
+    citations:[
+      {date:"2023-01-05", quote:"AI + crypto = collective AI. Crypto can crowdsource data, models, and compute."}
+    ]}
  ]
 };
 function hljson(o){

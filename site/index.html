@@ -534,7 +534,7 @@ function rpct(x){return x===null||x===undefined?'':((x>=0?'+':'')+Math.round(x*1
 function bps(x){return x===null||x===undefined?'':((x>=0?'+':'')+(x*100).toFixed(1)+'%');}
 function drawHoldings(d){
  const h=HD[d]||[];const br=DATA.btc_ret?DATA.btc_ret[d]:null;
- document.getElementById('hdate').textContent=(d===DATA.current_date?'Current · ':'')+lab(d);
+ document.getElementById('hdate').textContent=lab(d);
  // total portfolio contribution = sum of weight*ret across legs
  const involvesBTC=h.some(s=>s.tokens.some(t=>t.sym==='BTC'));
  const header=`<div class="hhead"><span>Position</span><span>Portfolio Contribution</span></div>`;
@@ -548,7 +548,7 @@ function drawHoldings(d){
      <span class="contrib" style="color:${contrib===null?'var(--slate)':rcol(contrib)}">${contrib===null?'—':bps(contrib)}</span></div>
     ${s.tokens.length?`<div class="htoks">${s.tokens.map(t=>tokChip(t,isShort)).join('')}</div>`:''}</div>`;
  }).join('')||'<div class="hsec">No position.</div>';
- const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec btcref" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:var(--slate)">${rpct(br)}</span></div></div>`:'';
+ const btcref=(!involvesBTC&&br!==null&&br!==undefined)?`<div class="hsec btcref" style="opacity:.6"><div class="sh"><span class="sn" style="font-size:12px;color:var(--slate)">BTC (reference)</span><span class="contrib" style="color:var(--slate)">${bps(br)}</span></div></div>`:'';
  document.getElementById('holdings').innerHTML=header+rows+btcref;
 }
 function syncChartMarker(){
